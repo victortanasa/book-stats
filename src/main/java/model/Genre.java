@@ -2,8 +2,18 @@ package model;
 
 public enum Genre {
 
-    SCI_FI,
-    FANTASY,
-    SCIENCE,
-    HISTORICAL_FICTION
+    SCI_FI("Sci-Fi"),
+    FANTASY("Fantasy"),
+    SCIENCE("Science"),
+    HISTORICAL_FICTION("Historical Fiction");
+
+    private String genre;
+
+    Genre(final String genre) {
+        this.genre = genre;
+    }
+
+    public String getStringValue() {
+        return genre;
+    }
 }

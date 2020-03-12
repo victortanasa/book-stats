@@ -1,9 +1,14 @@
+import static com.google.common.collect.Maps.newHashMap;
+import static model.Statistic.*;
+
 import model.Book;
-import model.Genre;
+import model.Statistic;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.function.Function;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 class StatisticsService {
@@ -12,28 +17,23 @@ class StatisticsService {
 
     private static final Set<Book> LIBRARY;
 
+    private static final Map<Statistic, BookStatisticFunctions> STATISTIC_COLLECTOR_MAP;
+
     static {
         LIBRARY = BookLoader.loadBooks();
+
+        STATISTIC_COLLECTOR_MAP = newHashMap();
+        STATISTIC_COLLECTOR_MAP.put(MOST_READ_AUTHORS_BY_BOOKS_READ, new BookStatisticFunctions(Book::getAuthor, Collectors.counting()));
+        STATISTIC_COLLECTOR_MAP.put(MOST_READ_AUTHORS_BY_PAGES_READ, new BookStatisticFunctions(Book::getAuthor, Collectors.summingLong(Book::getPageNumber)));
+        STATISTIC_COLLECTOR_MAP.put(MOST_READ_GENRES, new BookStatisticFunctions(book -> book.getGenre().getStringValue(), Collectors.counting()));
+        STATISTIC_COLLECTOR_MAP.put(BOOKS_BY_DECADE, new BookStatisticFunctions(book -> getDecade(book.getReleaseYear()), Collectors.counting()));
     }
 
-    static Map<String, Long> getMostReadAuthorsByBooksRead() {
+    static Map<String, Long> getStatistic(final Statistic statistic) {
+        final BookStatisticFunctions functions = STATISTIC_COLLECTOR_MAP.get(statistic);
+
         return sortDescendingByValue(LIBRARY.stream()
-                .collect(Collectors.groupingBy(Book::getAuthor, Collectors.counting())));
-    }
-
-    static Map<String, Long> getMostReadAuthorsByPagesRead() {
-        return sortDescendingByValue(LIBRARY.stream().collect(
-                Collectors.groupingBy(Book::getAuthor, Collectors.summingLong(Book::getPageNumber))));
-    }
-
-    static Map<Genre, Long> getMostReadGenres() {
-        return sortDescendingByValue(LIBRARY.stream()
-                .collect(Collectors.groupingBy(Book::getGenre, Collectors.counting())));
-    }
-
-    static Map<String, Long> getReadBooksByDecade() {
-        return sortDescendingByValue(LIBRARY.stream()
-                .collect(Collectors.groupingBy(book -> getDecade(book.getReleaseYear()), Collectors.counting())));
+                .collect(Collectors.groupingBy(functions.getBookFunction(), functions.getBookCollector())));
     }
 
     private static <T> Map<T, Long> sortDescendingByValue(final Map<T, Long> map) {
@@ -45,6 +45,26 @@ class StatisticsService {
 
     private static String getDecade(final Integer releaseYear) {
         return String.format(DECADE_FORMAT, releaseYear % 100 - releaseYear % 10);
+    }
+
+    static class BookStatisticFunctions {
+
+        private Function<Book, String> bookFunction;
+
+        private Collector<Book, ?, Long> bookCollector;
+
+        BookStatisticFunctions(final Function<Book, String> bookFunction, final Collector<Book, ?, Long> bookCollector) {
+            this.bookCollector = bookCollector;
+            this.bookFunction = bookFunction;
+        }
+
+        Function<Book, String> getBookFunction() {
+            return bookFunction;
+        }
+
+        Collector<Book, ?, Long> getBookCollector() {
+            return bookCollector;
+        }
     }
 
 }
