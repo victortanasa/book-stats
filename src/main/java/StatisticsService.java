@@ -22,8 +22,8 @@ class StatisticsService {
     }
 
     static Map<String, Long> getMostReadAuthorsByPagesRead() {
-        return sortDescendingByValue(LIBRARY.stream()
-                .collect(Collectors.toMap(Book::getAuthor, Book::getPageNumber, (oldValue, newValue) -> oldValue + newValue)));
+        return sortDescendingByValue(LIBRARY.stream().collect(
+                Collectors.groupingBy(Book::getAuthor, Collectors.summingLong(Book::getPageNumber))));
     }
 
     static Map<Genre, Long> getMostReadGenres() {
