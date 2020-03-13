@@ -27,6 +27,7 @@ class StatisticsService {
         STATISTIC_COLLECTOR_MAP.put(MOST_READ_AUTHORS_BY_PAGES_READ, new BookStatisticFunctions(Book::getAuthor, Collectors.summingLong(Book::getPageNumber)));
         STATISTIC_COLLECTOR_MAP.put(MOST_READ_GENRES, new BookStatisticFunctions(book -> book.getGenre().getStringValue(), Collectors.counting()));
         STATISTIC_COLLECTOR_MAP.put(BOOKS_BY_DECADE, new BookStatisticFunctions(book -> getDecade(book.getReleaseYear()), Collectors.counting()));
+        STATISTIC_COLLECTOR_MAP.put(BOOKS_BY_RATING, new BookStatisticFunctions(book -> book.getRating().toString(), Collectors.counting()));
     }
 
     static Map<String, Long> getStatistic(final Statistic statistic) {

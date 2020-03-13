@@ -11,7 +11,7 @@ public class BookStats {
     private static final String NEWLINE = "\n";
 
     public static void main(final String[] args) {
-        Stream.of(MOST_READ_AUTHORS_BY_BOOKS_READ, MOST_READ_AUTHORS_BY_PAGES_READ, MOST_READ_GENRES, BOOKS_BY_DECADE)
+        Stream.of(MOST_READ_AUTHORS_BY_BOOKS_READ, MOST_READ_AUTHORS_BY_PAGES_READ, MOST_READ_GENRES, BOOKS_BY_DECADE, BOOKS_BY_RATING)
                 .forEach(statistic -> printStatistic(statistic, StatisticsService.getStatistic(statistic)));
     }
 
