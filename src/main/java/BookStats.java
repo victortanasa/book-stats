@@ -1,6 +1,8 @@
 import static model.Statistic.*;
 
 import model.Book;
+import model.SortBy;
+import model.SortOrder;
 import service.StatisticsService;
 import utils.BookLoader;
 import utils.PrinterUtils;
@@ -13,7 +15,7 @@ public class BookStats {
     public static void main(final String[] args) {
         final Set<Book> library = BookLoader.loadBooksFromFile();
 
-        PrinterUtils.printBooks(library);
+        PrinterUtils.printBooks(library, SortBy.RATING, SortOrder.ASC);
 
         final StatisticsService statisticsService = new StatisticsService(library);
 
