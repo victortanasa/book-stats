@@ -20,7 +20,7 @@ class StatisticsService {
     private static final Map<Statistic, BookStatisticFunctions> STATISTIC_COLLECTOR_MAP;
 
     static {
-        LIBRARY = BookLoader.loadBooks();
+        LIBRARY = BookLoader.loadBooksFromFile();
 
         STATISTIC_COLLECTOR_MAP = newHashMap();
         STATISTIC_COLLECTOR_MAP.put(MOST_READ_AUTHORS_BY_BOOKS_READ, new BookStatisticFunctions(Book::getAuthor, Collectors.counting()));
@@ -31,6 +31,8 @@ class StatisticsService {
     }
 
     //TODO: average rating / page number / for author
+    //TODO: most read authors per year
+    //TODO: pages per month
     //TODO: authors with most favourites
 
     static Map<String, Long> getStatistic(final Statistic statistic) {

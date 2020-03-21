@@ -2,12 +2,13 @@ package model;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
 
 import java.time.LocalDate;
 
 public class Book {
+
+    private static final String TO_STRING_FORMAT = "Title: %s\nAuthor: %s\nPage Number: %s\nRating: %s Stars\nRelease Year: %s\n" +
+            "Date Started: %s\nDate Finished: %s\nGenre %s\nFavorite: %s";
 
     private String title;
     private String author;
@@ -23,18 +24,21 @@ public class Book {
 
     private boolean isFavorite;
 
-    public Book(final String title, final String author, final Long pageNumber, final Integer rating,
-                final LocalDate dateStarted, final LocalDate dateFinished, final Integer releaseYear,
-                final Genre genre, final boolean isFavorite) {
-        this.dateFinished = dateFinished;
-        this.dateStarted = dateStarted;
-        this.releaseYear = releaseYear;
-        this.isFavorite = isFavorite;
+    public Book(final String title, final String author, final Long pageNumber, final Integer rating, final Integer releaseYear,
+                final LocalDate dateStarted, final LocalDate dateFinished, final Genre genre, final boolean isFavorite) {
+        this.title = title;
+        this.author = author;
+
         this.pageNumber = pageNumber;
         this.rating = rating;
-        this.author = author;
-        this.title = title;
+        this.releaseYear = releaseYear;
+
+        this.dateStarted = dateStarted;
+        this.dateFinished = dateFinished;
+
         this.genre = genre;
+
+        this.isFavorite = isFavorite;
     }
 
     public String getTitle() {
@@ -121,6 +125,9 @@ public class Book {
 
     @Override
     public String toString() {
-        return ToStringBuilder.reflectionToString(this, ToStringStyle.JSON_STYLE);
+        return String.format(TO_STRING_FORMAT,
+                this.title, this.author, this.pageNumber, this.rating, this.releaseYear, this.dateStarted,
+                this.dateFinished, this.genre.getStringValue(), this.isFavorite ? "Yes" : "No");
     }
+
 }
