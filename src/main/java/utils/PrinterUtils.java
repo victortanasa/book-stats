@@ -1,9 +1,12 @@
-package model;
+package utils;
+
+import model.Book;
+import model.Statistic;
 
 import java.util.Map;
 import java.util.Set;
 
-public class Printer {
+public class PrinterUtils {
 
     private static final String SEPARATOR = "-------------------------------";
     private static final String NEWLINE = "\n";

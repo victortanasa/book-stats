@@ -1,9 +1,10 @@
+package utils;
+
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Collectors.toSet;
 
 import model.Book;
 import model.Genre;
-import model.Printer;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -13,7 +14,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Set;
 
-class BookLoader {
+public class BookLoader {
 
     private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
@@ -21,8 +22,8 @@ class BookLoader {
     private static final String BOOKS_LOCATION = "src/main/resources/books.csv";
     private static final String COMMA = ",";
 
-    static Set<Book> loadBooksFromFile() {
-        return getBookLinesFromFile().stream()
+    public static Set<Book> loadBooksFromFile() {
+        return getBooksFromFile().stream()
                 .map(BookLoader::toBook)
                 .collect(toSet());
     }
@@ -41,14 +42,14 @@ class BookLoader {
                 Boolean.valueOf(split[8]));
     }
 
-    private static List<String> getBookLinesFromFile() {
+    private static List<String> getBooksFromFile() {
         try {
             return Files.readAllLines(Paths.get(BOOKS_LOCATION)).stream()
                     .skip(1)
                     .collect(toList());
         } catch (final IOException e) {
             final String message = String.format(COULD_NOT_LOAD_BOOKS_MESSAGE, e);
-            Printer.simplePrint(message);
+            PrinterUtils.simplePrint(message);
             throw new IllegalStateException(message);
         }
     }

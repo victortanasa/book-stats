@@ -1,3 +1,5 @@
+package service;
+
 import static com.google.common.collect.Maps.newHashMap;
 import static model.Statistic.*;
 
@@ -11,17 +13,18 @@ import java.util.function.Function;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
-class StatisticsService {
+//TODO: average rating / page number / for author
+//TODO: most read authors per year
+//TODO: pages per month
+//TODO: authors with most favourites
+
+public class StatisticsService {
 
     private static final String DECADE_FORMAT = "%d's";
-
-    private static final Set<Book> LIBRARY;
 
     private static final Map<Statistic, BookStatisticFunctions> STATISTIC_COLLECTOR_MAP;
 
     static {
-        LIBRARY = BookLoader.loadBooksFromFile();
-
         STATISTIC_COLLECTOR_MAP = newHashMap();
         STATISTIC_COLLECTOR_MAP.put(MOST_READ_AUTHORS_BY_BOOKS_READ, new BookStatisticFunctions(Book::getAuthor, Collectors.counting()));
         STATISTIC_COLLECTOR_MAP.put(MOST_READ_AUTHORS_BY_PAGES_READ, new BookStatisticFunctions(Book::getAuthor, Collectors.summingLong(Book::getPageNumber)));
@@ -30,15 +33,16 @@ class StatisticsService {
         STATISTIC_COLLECTOR_MAP.put(BOOKS_BY_RATING, new BookStatisticFunctions(book -> book.getRating().toString(), Collectors.counting()));
     }
 
-    //TODO: average rating / page number / for author
-    //TODO: most read authors per year
-    //TODO: pages per month
-    //TODO: authors with most favourites
+    private Set<Book> library;
 
-    static Map<String, Long> getStatistic(final Statistic statistic) {
+    public StatisticsService(final Set<Book> library) {
+        this.library = library;
+    }
+
+    public Map<String, Long> getStatistic(final Statistic statistic) {
         final BookStatisticFunctions functions = STATISTIC_COLLECTOR_MAP.get(statistic);
 
-        return sortDescendingByValue(LIBRARY.stream()
+        return sortDescendingByValue(library.stream()
                 .collect(Collectors.groupingBy(functions.getBookFunction(), functions.getBookCollector())));
     }
 
