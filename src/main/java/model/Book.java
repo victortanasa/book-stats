@@ -21,12 +21,15 @@ public class Book {
 
     private Genre genre;
 
+    private boolean isFavorite;
+
     public Book(final String title, final String author, final Long pageNumber, final Integer rating,
                 final LocalDate dateStarted, final LocalDate dateFinished, final Integer releaseYear,
-                final Genre genre) {
+                final Genre genre, final boolean isFavorite) {
         this.dateFinished = dateFinished;
         this.dateStarted = dateStarted;
         this.releaseYear = releaseYear;
+        this.isFavorite = isFavorite;
         this.pageNumber = pageNumber;
         this.rating = rating;
         this.author = author;
@@ -96,6 +99,14 @@ public class Book {
 
     public void setGenre(final Genre genre) {
         this.genre = genre;
+    }
+
+    public boolean isFavorite() {
+        return isFavorite;
+    }
+
+    public void setFavorite(final boolean favorite) {
+        isFavorite = favorite;
     }
 
     @Override

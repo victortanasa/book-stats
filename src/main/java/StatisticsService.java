@@ -30,6 +30,9 @@ class StatisticsService {
         STATISTIC_COLLECTOR_MAP.put(BOOKS_BY_RATING, new BookStatisticFunctions(book -> book.getRating().toString(), Collectors.counting()));
     }
 
+    //TODO: average rating / page number / for author
+    //TODO: authors with most favourites
+
     static Map<String, Long> getStatistic(final Statistic statistic) {
         final BookStatisticFunctions functions = STATISTIC_COLLECTOR_MAP.get(statistic);
 

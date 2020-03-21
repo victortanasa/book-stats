@@ -1,0 +1,38 @@
+title,author,pageNumber,rating,releaseYear,dateStarted,dateFinished,genre,isFavorite
+Leviathan Wakes,James S.A.Corey,561,5,2011,2018-06-02,2018-06-04,SCI_FI,false
+Caliban's War,James S.A.Corey,595,5,2012,2018-07-01,2018-07-05,SCI_FI,true
+Abaddon's Gate,James S.A.Corey,539,5,2013,2018-07-06,2018-07-10,SCI_FI,false
+Cibola Burn,James S.A.Corey,381,4,2014,2018-07-12,2018-07-23,SCI_FI,false
+Nemesis Games,James S.A.Corey,536,5,2015,2018-07-24,2018-07-30,SCI_FI,true
+Babylon's Ashes,James S.A.Corey,536,5,2016,2018-08-01,2018-08-07,SCI_FI,false
+Persepolis Rising,James S.A.Corey,608,5,2017,2018-08-08,2018-08-14,SCI_FI,false
+Children of Time,Adrian Tchaikovsky,600,5,2015,2018-08-14,2018-08-21,SCI_FI,false
+The Three-Body Problem,Cixin Liu,399,4,2008,2018-08-21,2018-08-25,SCI_FI,false
+The Dark Forest,Cixin Liu,512,5,2008,2018-08-25,2018-08-30,SCI_FI,false
+Dogs of War,Adrian Tchaikovsky,346,4,2017,2018-08-30,2018-09-04,SCI_FI,false
+Prelude to Foundation,Isaac Asimov,402,5,1988,2018-08-04,2018-09-09,SCI_FI,false
+Death's End,Cixin Liu,604,5,2010,2018-09-09,2018-09-12,SCI_FI,true
+The Forever War,Joe Haldeman,241,2,1974,2018-09-15,2018-09-18,SCI_FI,false
+We are Legion,Dennis E. Taylor,383,5,2016,2018-09-18,2018-09-25,SCI_FI,false
+Forward the Foundation,Isaac Asimov,464,4,1993,2018-09-25,2018-09-30,SCI_FI,false
+Foundation,Isaac Asimov,240,5,1951,2018-09-30,2018-10-03,SCI_FI,true
+Foundation and Empire,Isaac Asimov,230,5,1952,2018-10-03,2018-10-09,SCI_FI,false
+Second Foundation,Isaac Asimov,227,5,1953,2018-10-10,2018-10-13,SCI_FI,true
+For We Are Many,Dennis E. Taylor,320,4,2017,2018-10-13,2018-10-15,SCI_FI,false
+All These Worlds,Dennis E. Taylor,280,4,2017,2018-10-15,2018-10-18,SCI_FI,false
+Ubik,Philip K. Dick,224,5,1969,2018-10-19,2018-10-23,SCI_FI,false
+The Sirens Of Titan,Kurt Vonnegut,224,5,1959,2018-10-23,2018-10-26,SCI_FI,true
+The Dispossessed,Ursula K. Le Guin,336,5,1974,2018-10-26,2018-10-31,SCI_FI,true
+House of Suns,Alastair Reynolds,512,4,2008,2018-11-01,2018-11-04,SCI_FI,false
+Dark Matter,Blake Crouch,416,4,2016,2018-11-05,2018-11-08,SCI_FI,false
+Roadside Picnic,Arkady Strugatsky,209,2,1972,2018-11-08,2018-11-10,SCI_FI,false
+Pandora's Star,Peter F. Hamilton,1114,5,2004,2018-11-10,2018-11-23,SCI_FI,true
+Judas Unchained,Peter F. Hamilton,1247,5,2005,2018-11-23,2018-12-08,SCI_FI,true
+Do Androids Dream of Electric Sheep,Philip K. Dick,215,4,1968,2005,2018-12-09,2018-12-10,SCI_FI,false
+The End of Eternity,Isaac Asimov,189,5,1955,2018-12-10,2018-12-11,SCI_FI,false
+Blindsight,Peter Watts,384,4,2006,2018-12-13,2018-12-17,SCI_FI,false
+The Moon is a Harsh Mistress,Robert A. Heinlein,382,4,1966,2018-12-17,2018-12-20,SCI_FI,false
+The Lathe of Heaven,Ursula K. Le Guin,184,5,1971,2018-12-20,2018-12-21,SCI_FI,false
+Cat's Cradle,Kurt Vonnegut,218,5,1963,2018-12-26,2018-12-27,SCI_FI,false
+Hyperion,Dan Simmons,482,5,1989,2018-12-29,2019-01-04,SCI_FI,true
+The Fall of Hyperion,Dan Simmons,517,5,1990,2019-01-0,2019-01-11,SCI_FI,true
