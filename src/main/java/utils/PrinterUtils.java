@@ -7,13 +7,17 @@ import model.SortBy;
 import model.SortOrder;
 import model.Statistic;
 
+import java.text.DecimalFormat;
 import java.util.Comparator;
 import java.util.Map;
 import java.util.Set;
 
 public class PrinterUtils {
 
+    private static final DecimalFormat DECIMAL_FORMAT = new DecimalFormat("#.##");
+
     private static final String SEPARATOR = "-------------------------------";
+    private static final String STATISTIC_PRINT_FORMAT = "%s: %s";
     private static final String NEWLINE = "\n";
 
     private static final Map<SortBy, Comparator<Book>> SORT_FUNCTIONS;
@@ -41,13 +45,17 @@ public class PrinterUtils {
     public static void printStatistic(final Statistic statistic, final Map<String, ? extends Number> map) {
         System.out.println(statistic.getStringValue() + NEWLINE);
 
-        map.entrySet().forEach(System.out::println);
+        map.forEach((key, value) -> System.out.println(String.format(STATISTIC_PRINT_FORMAT, key, formatDoubleIfNecessary(value))));
 
         System.out.println(SEPARATOR);
     }
 
     static void simplePrint(final String string) {
         System.out.println(string);
+    }
+
+    private static Object formatDoubleIfNecessary(final Object value) {
+        return value instanceof Double ? DECIMAL_FORMAT.format(value) : value;
     }
 
 }
