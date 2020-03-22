@@ -3,9 +3,11 @@ package model;
 public enum Genre {
 
     SCI_FI("Sci-Fi"),
+    SPACE_OPERA("Space Opera"),
     FANTASY("Fantasy"),
     SCIENCE("Science"),
-    HISTORICAL_FICTION("Historical Fiction");
+    HISTORICAL_FICTION("Historical Fiction"),
+    BIOGRAPHY("Biography");
 
     private String genre;
 

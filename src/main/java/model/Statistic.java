@@ -13,6 +13,11 @@ public enum Statistic {
     BOOKS_PER_MONTH("Books per month"),
     PAGES_PER_MONTH("Pages per month");
 
+    //TODO: average time to read a book, optionally for author
+    //TODO: top shortest 10 books, top longest books
+    //TODO: days not reading books
+    //TODO: Average pages / books per month
+
     private String statistic;
 
     Statistic(final String statistic) {
