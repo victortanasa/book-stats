@@ -38,6 +38,9 @@ public class BookStats {
 
         final Map<String, Long> mostReadGenres = statisticsService.getMostReadGenres();
         PrinterUtils.printStatistic(Statistic.MOST_READ_GENRES, mostReadGenres);
+
+        final Map<String, Double> averagePageNumberForAuthors = statisticsService.getAveragePageNumberForAuthors();
+        PrinterUtils.printStatistic(Statistic.AVERAGE_PAGE_NUMBER_FOR_AUTHORS, averagePageNumberForAuthors);
     }
 
 }

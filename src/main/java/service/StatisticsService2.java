@@ -50,6 +50,11 @@ public class StatisticsService2 {
                 .collect(Collectors.groupingBy(Book::getAuthor, Collectors.averagingInt(Book::getRating))));
     }
 
+    public Map<String, Double> getAveragePageNumberForAuthors() {
+        return sortDescendingByValue(library.stream()
+                .collect(Collectors.groupingBy(Book::getAuthor, Collectors.averagingInt(Book::getPageNumber))));
+    }
+
     public Map<String, Long> getAuthorsWithMostFavourites() {
         return sortDescendingByValue(library.stream()
                 .filter(Book::isFavorite)
