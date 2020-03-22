@@ -2,7 +2,7 @@ import model.Book;
 import model.SortBy;
 import model.SortOrder;
 import model.Statistic;
-import service.StatisticsService2;
+import service.StatisticsService;
 import utils.BookLoader;
 import utils.PrinterUtils;
 
@@ -16,7 +16,7 @@ public class BookStats {
 
         PrinterUtils.printBooks(library, SortBy.RATING, SortOrder.ASC);
 
-        final StatisticsService2 statisticsService = new StatisticsService2(library);
+        final StatisticsService statisticsService = new StatisticsService(library);
 
         final Map<String, Long> authorsWithMostFavourites = statisticsService.getAuthorsWithMostFavourites();
         PrinterUtils.printStatistic(Statistic.AUTHORS_WITH_MOST_FAVOURITES, authorsWithMostFavourites);
