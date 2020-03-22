@@ -50,7 +50,7 @@ public class PrinterUtils {
         System.out.println(SEPARATOR);
     }
 
-    static void simplePrint(final String string) {
+    public static void simplePrint(final String string) {
         System.out.println(string);
     }
 

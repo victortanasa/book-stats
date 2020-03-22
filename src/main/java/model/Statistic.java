@@ -11,7 +11,12 @@ public enum Statistic {
     AVERAGE_RATING_FOR_AUTHORS("Average rating for authors"),
     AVERAGE_PAGE_NUMBER_FOR_AUTHORS("Average page number for authors"),
     BOOKS_READ_PER_MONTH("Books read per month"),
-    PAGES_READ_PER_MONTH("Pages red per month");
+    PAGES_READ_PER_MONTH("Pages red per month"),
+    SHORTEST_BOOKS("Shortest Books"),
+    LONGEST_BOOKS("Longest Books"),
+    AVERAGE_DAYS_TO_READ_A_BOOK("Average time to read a book"),
+    AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR("Average time to read a book per author");
+
 
     //TODO: average time to read a book, optionally for author
     //TODO: top shortest 10 books, top longest books

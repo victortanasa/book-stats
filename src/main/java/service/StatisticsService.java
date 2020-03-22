@@ -38,6 +38,7 @@ public class StatisticsService {
 
         statisticsMethodsMap.put(AVERAGE_PAGE_NUMBER_FOR_AUTHORS, this::getAveragePageCountForAuthors);
         statisticsMethodsMap.put(AVERAGE_RATING_FOR_AUTHORS, this::getAverageRatingsForAuthors);
+        statisticsMethodsMap.put(AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR, this::getAverageDaysToReadABookPerAuthor);
     }
 
     public Map<String, ?> getStatistic(final Statistic statistic) {
@@ -93,6 +94,18 @@ public class StatisticsService {
         return library.stream()
                 .filter(Book::isFavorite)
                 .collect(Collectors.groupingBy(Book::getAuthor, Collectors.counting()));
+    }
+
+    private Map<String, ?> getAverageDaysToReadABookPerAuthor() {
+        return library.stream()
+                .collect(Collectors.groupingBy(Book::getAuthor, Collectors.averagingLong(Book::getDaysReadIn)));
+    }
+
+    public Double getAverageDaysToReadABook() {
+        return library.stream()
+                .mapToLong(Book::getDaysReadIn)
+                .average()
+                .orElse(-1);
     }
 
     private Map<String, ?> sortDescendingByValue(final Map<String, ?> map) {

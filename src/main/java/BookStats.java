@@ -28,8 +28,12 @@ public class BookStats {
                 AVERAGE_RATING_FOR_AUTHORS,
                 AVERAGE_PAGE_NUMBER_FOR_AUTHORS,
                 BOOKS_READ_PER_MONTH,
-                PAGES_READ_PER_MONTH)
+                PAGES_READ_PER_MONTH,
+                AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR)
                 .forEach(statistic -> PrinterUtils.printStatistic(statistic, statisticsService.getStatistic(statistic)));
+
+        final Double averageDaysToReadABook = statisticsService.getAverageDaysToReadABook();
+        PrinterUtils.simplePrint(AVERAGE_DAYS_TO_READ_A_BOOK + ": " + averageDaysToReadABook);
     }
 
 }

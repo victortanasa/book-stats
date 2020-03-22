@@ -1,5 +1,7 @@
 package model;
 
+import static java.time.temporal.ChronoUnit.DAYS;
+
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
@@ -111,6 +113,11 @@ public class Book {
 
     public void setFavorite(final boolean favorite) {
         isFavorite = favorite;
+    }
+
+    public long getDaysReadIn() {
+        final long difference = DAYS.between(dateStarted, dateFinished);
+        return difference == 0 ? 1 : difference;
     }
 
     @Override
