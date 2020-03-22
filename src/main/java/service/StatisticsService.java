@@ -6,7 +6,6 @@ import static model.Statistic.*;
 import model.Book;
 import model.Statistic;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.function.Function;
@@ -31,7 +30,11 @@ public class StatisticsService {
         STATISTIC_COLLECTOR_MAP.put(MOST_READ_GENRES, new BookStatisticFunctions(book -> book.getGenre().getStringValue(), Collectors.counting()));
         STATISTIC_COLLECTOR_MAP.put(BOOKS_BY_DECADE, new BookStatisticFunctions(book -> getDecade(book.getReleaseYear()), Collectors.counting()));
         STATISTIC_COLLECTOR_MAP.put(BOOKS_BY_RATING, new BookStatisticFunctions(book -> book.getRating().toString(), Collectors.counting()));
+        STATISTIC_COLLECTOR_MAP.put(AVERAGE_RATING_FOR_AUTHORS, new BookStatisticFunctions(Book::getAuthor, Collectors.averagingInt(Book::getRating)));
+        STATISTIC_COLLECTOR_MAP.put(AUTHORS_WITH_MOST_FAVOURITES, new BookStatisticFunctions(Book::getAuthor, Collectors.summingInt(Book::isFavoriteInteger)));
     }
+
+    //TODO: rewrite - one method for each statistic, place "function in map"
 
     private Set<Book> library;
 
@@ -39,19 +42,19 @@ public class StatisticsService {
         this.library = library;
     }
 
-    public Map<String, Long> getStatistic(final Statistic statistic) {
+    public Map<String, ? extends Number> getStatistic(final Statistic statistic) {
         final BookStatisticFunctions functions = STATISTIC_COLLECTOR_MAP.get(statistic);
 
-        return sortDescendingByValue(library.stream()
-                .collect(Collectors.groupingBy(functions.getBookFunction(), functions.getBookCollector())));
+        return library.stream()
+                .collect(Collectors.groupingBy(functions.getBookFunction(), functions.getBookCollector()));
     }
 
-    private static <T> Map<T, Long> sortDescendingByValue(final Map<T, Long> map) {
-        return map.entrySet()
-                .stream()
-                .sorted((Map.Entry.<T, Long>comparingByValue().reversed()))
-                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
-    }
+//    private static <T> Map<T, Long> sortDescendingByValue(final Map<T, Long> map) {
+//        return map.entrySet()
+//                .stream()
+//                .sorted((Map.Entry.<T, Long>comparingByValue().reversed()))
+//                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
+//    }
 
     private static String getDecade(final Integer releaseYear) {
         return String.format(DECADE_FORMAT, releaseYear % 100 - releaseYear % 10);
@@ -61,9 +64,9 @@ public class StatisticsService {
 
         private Function<Book, String> bookFunction;
 
-        private Collector<Book, ?, Long> bookCollector;
+        private Collector<Book, ?, ? extends Number> bookCollector;
 
-        BookStatisticFunctions(final Function<Book, String> bookFunction, final Collector<Book, ?, Long> bookCollector) {
+        BookStatisticFunctions(final Function<Book, String> bookFunction, final Collector<Book, ?, ? extends Number> bookCollector) {
             this.bookCollector = bookCollector;
             this.bookFunction = bookFunction;
         }
@@ -72,7 +75,7 @@ public class StatisticsService {
             return bookFunction;
         }
 
-        Collector<Book, ?, Long> getBookCollector() {
+        Collector<Book, ?, ? extends Number> getBookCollector() {
             return bookCollector;
         }
     }

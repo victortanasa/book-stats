@@ -109,6 +109,10 @@ public class Book {
         return isFavorite;
     }
 
+    public int isFavoriteInteger() {
+        return isFavorite ? 1 : 0;
+    }
+
     public void setFavorite(final boolean favorite) {
         isFavorite = favorite;
     }

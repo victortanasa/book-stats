@@ -38,7 +38,7 @@ public class PrinterUtils {
                 .forEach(book -> System.out.println(book + NEWLINE + SEPARATOR));
     }
 
-    public static void printStatistic(final Statistic statistic, final Map<String, Long> map) {
+    public static void printStatistic(final Statistic statistic, final Map<String, ? extends Number> map) {
         System.out.println(statistic.getStringValue() + NEWLINE);
 
         map.entrySet().forEach(System.out::println);

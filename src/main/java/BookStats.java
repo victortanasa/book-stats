@@ -23,7 +23,9 @@ public class BookStats {
                 MOST_READ_AUTHORS_BY_PAGES_READ,
                 MOST_READ_GENRES,
                 BOOKS_BY_DECADE,
-                BOOKS_BY_RATING)
+                BOOKS_BY_RATING,
+                AVERAGE_RATING_FOR_AUTHORS,
+                AUTHORS_WITH_MOST_FAVOURITES)
                 .forEach(statistic -> PrinterUtils.printStatistic(statistic, statisticsService.getStatistic(statistic)));
     }
 

@@ -6,7 +6,9 @@ public enum Statistic {
     MOST_READ_AUTHORS_BY_PAGES_READ("Most read authors by pages read"),
     MOST_READ_GENRES("Most read genres"),
     BOOKS_BY_DECADE("Books by decade"),
-    BOOKS_BY_RATING("Books by rating");
+    BOOKS_BY_RATING("Books by rating"),
+    AUTHORS_WITH_MOST_FAVOURITES("Authors with most favourites"),
+    AVERAGE_RATING_FOR_AUTHORS("Average rating for authors");
 
     private String statistic;
 
