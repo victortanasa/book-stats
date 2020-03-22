@@ -3,6 +3,7 @@ package service;
 import static com.google.common.collect.Maps.newHashMap;
 import static model.Statistic.*;
 
+import com.google.common.base.Function;
 import com.google.common.base.Supplier;
 import model.Book;
 import model.Statistic;
@@ -20,31 +21,45 @@ public class StatisticsService {
 
     private Set<Book> library;
 
-    private Map<Statistic, Supplier<Map<String, ?>>> statisticsMethodsMap = newHashMap();
+    private Map<Statistic, Function<Integer, List<String>>> listStatistics = newHashMap();
+    private Map<Statistic, Supplier<Map<String, ?>>> mapStatistic = newHashMap();
+    private Map<Statistic, Supplier<Double>> singleValueStatistics = newHashMap();
 
-    //TODO: create list of single value / map return methods
     //TODO: most read authors per year - books and page number - sort by what
     public StatisticsService(final Set<Book> library) {
         this.library = library;
 
-        statisticsMethodsMap.put(MOST_READ_AUTHORS_BY_PAGE_COUNT, this::getMostReadAuthorsByPageCount);
-        statisticsMethodsMap.put(MOST_READ_AUTHORS_BY_BOOK_COUNT, this::getMostReadAuthorsBookCount);
-        statisticsMethodsMap.put(MOST_BOOKS_READ_BY_GENRE, this::getMostBooksReadByGenre);
-        statisticsMethodsMap.put(MOST_BOOKS_READ_BY_PUBLISHED_DECADE, this::getMostBooksReadByPublishedDecade);
+        mapStatistic.put(MOST_READ_AUTHORS_BY_PAGE_COUNT, this::getMostReadAuthorsByPageCount);
+        mapStatistic.put(MOST_READ_AUTHORS_BY_BOOK_COUNT, this::getMostReadAuthorsBookCount);
+        mapStatistic.put(MOST_BOOKS_READ_BY_GENRE, this::getMostBooksReadByGenre);
+        mapStatistic.put(MOST_BOOKS_READ_BY_PUBLISHED_DECADE, this::getMostBooksReadByPublishedDecade);
 
-        statisticsMethodsMap.put(TOTAL_RATINGS, this::getTotalRatings);
-        statisticsMethodsMap.put(BOOKS_READ_PER_MONTH, this::getBooksReadPerMonth);
-        statisticsMethodsMap.put(PAGES_READ_PER_MONTH, this::getPagesReadPerMonth);
+        mapStatistic.put(TOTAL_RATINGS, this::getTotalRatings);
+        mapStatistic.put(BOOKS_READ_PER_MONTH, this::getBooksReadPerMonth);
+        mapStatistic.put(PAGES_READ_PER_MONTH, this::getPagesReadPerMonth);
 
-        statisticsMethodsMap.put(AUTHORS_WITH_MOST_FAVOURITES, this::getAuthorsWithMostFavourites);
+        mapStatistic.put(AUTHORS_WITH_MOST_FAVOURITES, this::getAuthorsWithMostFavourites);
 
-        statisticsMethodsMap.put(AVERAGE_PAGE_NUMBER_FOR_AUTHORS, this::getAveragePageCountForAuthors);
-        statisticsMethodsMap.put(AVERAGE_RATING_FOR_AUTHORS, this::getAverageRatingsForAuthors);
-        statisticsMethodsMap.put(AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR, this::getAverageDaysToReadABookPerAuthor);
+        mapStatistic.put(AVERAGE_PAGE_NUMBER_FOR_AUTHORS, this::getAveragePageCountForAuthors);
+        mapStatistic.put(AVERAGE_RATING_FOR_AUTHORS, this::getAverageRatingsForAuthors);
+        mapStatistic.put(AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR, this::getAverageDaysToReadABookPerAuthor);
+
+        listStatistics.put(SHORTEST_BOOKS, this::getShortestBooks);
+        listStatistics.put(LONGEST_BOOKS, this::getLongestBooks);
+
+        singleValueStatistics.put(AVERAGE_DAYS_TO_READ_A_BOOK, this::getAverageDaysToReadABook);
     }
 
-    public Map<String, ?> getStatistic(final Statistic statistic) {
-        return sortDescendingByValue(statisticsMethodsMap.get(statistic).get());
+    public Map<String, ?> getMapStatistic(final Statistic statistic) {
+        return sortDescendingByValue(mapStatistic.get(statistic).get());
+    }
+
+    public List<String> getListStatistic(final Statistic statistic, final Integer limit) {
+        return listStatistics.get(statistic).apply(limit);
+    }
+
+    public Number getSingeValueStatistic(final Statistic statistic) {
+        return singleValueStatistics.get(statistic).get();
     }
 
     private Map<String, ?> getMostReadAuthorsByPageCount() {
@@ -103,16 +118,14 @@ public class StatisticsService {
                 .collect(Collectors.groupingBy(Book::getAuthor, Collectors.averagingLong(Book::getDaysReadIn)));
     }
 
-    //TODO: make private
-    public Double getAverageDaysToReadABook() {
+    private Double getAverageDaysToReadABook() {
         return library.stream()
                 .mapToLong(Book::getDaysReadIn)
                 .average()
                 .orElse(-1);
     }
 
-    //TODO: make private
-    public List<String> getShortestBooks(final int limit) {
+    private List<String> getShortestBooks(final int limit) {
         return library.stream().
                 sorted(Comparator.comparing(Book::getPageNumber))
                 .limit(limit)
@@ -120,8 +133,8 @@ public class StatisticsService {
                 .collect(Collectors.toList());
     }
 
-    //TODO: make private and extract something
-    public List<String> getLongestBooks(final int limit) {
+    //TODO: extract something
+    private List<String> getLongestBooks(final int limit) {
         return library.stream().
                 sorted(Comparator.comparing(Book::getPageNumber).reversed())
                 .limit(limit)

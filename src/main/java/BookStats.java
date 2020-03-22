@@ -7,7 +7,6 @@ import service.StatisticsService;
 import utils.BookLoader;
 import utils.PrinterUtils;
 
-import java.util.List;
 import java.util.Set;
 import java.util.stream.Stream;
 
@@ -31,18 +30,15 @@ public class BookStats {
                 BOOKS_READ_PER_MONTH,
                 PAGES_READ_PER_MONTH,
                 AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR)
-                .forEach(statistic -> PrinterUtils.printStatistic(statistic, statisticsService.getStatistic(statistic)));
+                .forEach(statistic -> PrinterUtils.printStatistic(statistic, statisticsService.getMapStatistic(statistic)));
 
-        final Double averageDaysToReadABook = statisticsService.getAverageDaysToReadABook();
-        PrinterUtils.simplePrint(AVERAGE_DAYS_TO_READ_A_BOOK + ": " + averageDaysToReadABook);
+        //TODO: printer for list statistic
+        Stream.of(SHORTEST_BOOKS, LONGEST_BOOKS)
+                .forEach(statistic -> PrinterUtils.simplePrint(statisticsService.getListStatistic(statistic, 8).toString()));
 
-        System.out.println("-------------------------");
-
-        final List<String> shortestBooks = statisticsService.getShortestBooks(5);
-        shortestBooks.forEach(PrinterUtils::simplePrint);
-
-        final List<String> longestBooks = statisticsService.getLongestBooks(5);
-        longestBooks.forEach(PrinterUtils::simplePrint);
+        //TODO: printer for single value statistic
+        final Number averageDaysToReadABook = statisticsService.getSingeValueStatistic(AVERAGE_DAYS_TO_READ_A_BOOK);
+        PrinterUtils.simplePrint(averageDaysToReadABook.toString());
     }
 
 }
