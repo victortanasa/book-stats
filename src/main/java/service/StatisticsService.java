@@ -22,6 +22,8 @@ public class StatisticsService {
 
     private Map<Statistic, Supplier<Map<String, ?>>> statisticsMethodsMap = newHashMap();
 
+    //TODO: create list of single value / map return methods
+    //TODO: most read authors per year - books and page number - sort by what
     public StatisticsService(final Set<Book> library) {
         this.library = library;
 
