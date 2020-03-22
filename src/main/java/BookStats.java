@@ -32,6 +32,12 @@ public class BookStats {
 
         final Map<String, Double> averageRatingForAuthors = statisticsService.getAverageRatingForAuthors();
         PrinterUtils.printStatistic(Statistic.AVERAGE_RATING_FOR_AUTHORS, averageRatingForAuthors);
+
+        final Map<String, Long> booksByRating = statisticsService.getBooksByRating();
+        PrinterUtils.printStatistic(Statistic.BOOKS_BY_RATING, booksByRating);
+
+        final Map<String, Long> mostReadGenres = statisticsService.getMostReadGenres();
+        PrinterUtils.printStatistic(Statistic.MOST_READ_GENRES, mostReadGenres);
     }
 
 }

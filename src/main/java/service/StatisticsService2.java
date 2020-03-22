@@ -40,7 +40,7 @@ public class StatisticsService2 {
                 .collect(Collectors.groupingBy(book -> book.getRating().toString(), Collectors.counting())));
     }
 
-    public Map<String, Long> getBooksByGenre() {
+    public Map<String, Long> getMostReadGenres() {
         return sortDescendingByValue(library.stream()
                 .collect(Collectors.groupingBy(book -> book.getGenre().getStringValue(), Collectors.counting())));
     }
@@ -56,7 +56,7 @@ public class StatisticsService2 {
                 .collect(Collectors.groupingBy(Book::getAuthor, Collectors.counting())));
     }
 
-    private static <T extends Comparable<T>> Map<String, T> sortDescendingByValue(final Map<String, T> map) {
+    private static <T, V extends Comparable<V>> Map<T, V> sortDescendingByValue(final Map<T, V> map) {
         return map.entrySet()
                 .stream()
                 .sorted(Collections.reverseOrder(comparingByValue()))
