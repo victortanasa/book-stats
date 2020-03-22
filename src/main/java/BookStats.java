@@ -1,13 +1,14 @@
+import static model.Statistic.*;
+
 import model.Book;
 import model.SortBy;
 import model.SortOrder;
-import model.Statistic;
 import service.StatisticsService;
 import utils.BookLoader;
 import utils.PrinterUtils;
 
-import java.util.Map;
 import java.util.Set;
+import java.util.stream.Stream;
 
 public class BookStats {
 
@@ -18,29 +19,15 @@ public class BookStats {
 
         final StatisticsService statisticsService = new StatisticsService(library);
 
-        final Map<String, Long> authorsWithMostFavourites = statisticsService.getAuthorsWithMostFavourites();
-        PrinterUtils.printStatistic(Statistic.AUTHORS_WITH_MOST_FAVOURITES, authorsWithMostFavourites);
-
-        final Map<String, Long> booksByDecade = statisticsService.getBooksByDecade();
-        PrinterUtils.printStatistic(Statistic.BOOKS_BY_DECADE, booksByDecade);
-
-        final Map<String, Long> mostReadAuthorsByPageCount = statisticsService.getMostReadAuthorsByPageCount();
-        PrinterUtils.printStatistic(Statistic.MOST_READ_AUTHORS_BY_PAGE_COUNT, mostReadAuthorsByPageCount);
-
-        final Map<String, Long> mostReadAuthorsByBookCount = statisticsService.getMostReadAuthorsByBookCount();
-        PrinterUtils.printStatistic(Statistic.MOST_READ_AUTHORS_BY_BOOK_COUNT, mostReadAuthorsByBookCount);
-
-        final Map<String, Double> averageRatingForAuthors = statisticsService.getAverageRatingForAuthors();
-        PrinterUtils.printStatistic(Statistic.AVERAGE_RATING_FOR_AUTHORS, averageRatingForAuthors);
-
-        final Map<String, Long> booksByRating = statisticsService.getBooksByRating();
-        PrinterUtils.printStatistic(Statistic.BOOKS_BY_RATING, booksByRating);
-
-        final Map<String, Long> mostReadGenres = statisticsService.getMostReadGenres();
-        PrinterUtils.printStatistic(Statistic.MOST_READ_GENRES, mostReadGenres);
-
-        final Map<String, Double> averagePageNumberForAuthors = statisticsService.getAveragePageNumberForAuthors();
-        PrinterUtils.printStatistic(Statistic.AVERAGE_PAGE_NUMBER_FOR_AUTHORS, averagePageNumberForAuthors);
+        Stream.of(MOST_READ_AUTHORS_BY_PAGE_COUNT,
+                MOST_READ_AUTHORS_BY_BOOK_COUNT,
+                MOST_READ_GENRES,
+                BOOKS_BY_DECADE,
+                BOOKS_BY_RATING,
+                AUTHORS_WITH_MOST_FAVOURITES,
+                AVERAGE_RATING_FOR_AUTHORS,
+                AVERAGE_PAGE_NUMBER_FOR_AUTHORS)
+                .forEach(statistic -> PrinterUtils.printStatistic(statistic, statisticsService.getStatistic(statistic)));
     }
 
 }
