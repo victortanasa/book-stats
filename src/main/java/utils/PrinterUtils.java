@@ -42,7 +42,7 @@ public class PrinterUtils {
                 .forEach(book -> System.out.println(book + NEWLINE + SEPARATOR));
     }
 
-    public static void printStatistic(final Statistic statistic, final Map<String, ? extends Number> map) {
+    public static void printStatistic(final Statistic statistic, final Map<String, ?> map) {
         System.out.println(statistic.getStringValue() + NEWLINE);
 
         map.forEach((key, value) -> System.out.println(String.format(STATISTIC_PRINT_FORMAT, key, formatDoubleIfNecessary(value))));

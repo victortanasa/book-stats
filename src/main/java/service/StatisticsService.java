@@ -7,10 +7,7 @@ import static model.Statistic.*;
 import model.Book;
 import model.Statistic;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 import java.util.function.Predicate;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
@@ -26,15 +23,13 @@ public class StatisticsService {
 
     private static final List<Statistic> AVERAGE_STATISTICS;
 
-    //TODO: filter map -> default none
-
     static {
         LONG_STATISTIC_COLLECTOR_MAP = newHashMap();
         LONG_STATISTIC_COLLECTOR_MAP.put(MOST_READ_AUTHORS_BY_PAGE_COUNT, Collectors.groupingBy(Book::getAuthor, Collectors.summingLong(Book::getPageNumber)));
         LONG_STATISTIC_COLLECTOR_MAP.put(AUTHORS_WITH_MOST_FAVOURITES, Collectors.groupingBy(Book::getAuthor, Collectors.counting()));
         LONG_STATISTIC_COLLECTOR_MAP.put(MOST_READ_AUTHORS_BY_BOOK_COUNT, Collectors.groupingBy(Book::getAuthor, Collectors.counting()));
         LONG_STATISTIC_COLLECTOR_MAP.put(MOST_READ_GENRES, Collectors.groupingBy(book -> book.getGenre().getStringValue(), Collectors.counting()));
-        LONG_STATISTIC_COLLECTOR_MAP.put(BOOKS_BY_DECADE, Collectors.groupingBy(Book::getAuthor, Collectors.counting()));
+        LONG_STATISTIC_COLLECTOR_MAP.put(BOOKS_BY_DECADE, Collectors.groupingBy(book -> getDecade(book.getReleaseYear()), Collectors.counting()));
         LONG_STATISTIC_COLLECTOR_MAP.put(BOOKS_BY_RATING, Collectors.groupingBy(book -> book.getRating().toString(), Collectors.counting()));
 
         DOUBLE_STATISTIC_COLLECTOR_MAP = newHashMap();
@@ -55,7 +50,7 @@ public class StatisticsService {
         this.library = library;
     }
 
-    public <K, V> Map<K, V> getStatistic(final Statistic statistic) {
+    public Map<String, ?> getStatistic(final Statistic statistic) {
         final Collector<Book, ?, ? extends Map<String, ?>> collector = AVERAGE_STATISTICS.contains(statistic) ?
                 DOUBLE_STATISTIC_COLLECTOR_MAP.get(statistic) : LONG_STATISTIC_COLLECTOR_MAP.get(statistic);
 
@@ -66,15 +61,20 @@ public class StatisticsService {
                 .collect(collector));
     }
 
-//    private static <T, V extends Comparable<V>> Map<T, V> sortDescendingByValue(final Map<T, V> map) {
-//        return map.entrySet()
-//                .stream()
-//                .sorted(Collections.reverseOrder(comparingByValue()))
-//                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
-//    }
+    private Map<String, ?> sortDescendingByValue(final Map<String, ?> map) {
+        return map.entrySet().stream()
+                .sorted(Collections.reverseOrder(getDescendingEntryComparator()))
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
+    }
 
-    private static Map sortDescendingByValue(final Map map) {
-        return map;
+    private static Comparator<Map.Entry<String, ?>> getDescendingEntryComparator() {
+        return (o1, o2) -> {
+            final Double firstDouble = new Double(o1.getValue().toString());
+            final Double secondDouble = new Double(o2.getValue().toString());
+
+            return firstDouble.equals(secondDouble) ? 0 : firstDouble > secondDouble ? 1 : -1;
+
+        };
     }
 
     private static String getDecade(final Integer releaseYear) {
