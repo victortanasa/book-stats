@@ -20,7 +20,7 @@ public class StatisticsServiceOld {
 
     static {
         STATISTIC_COLLECTOR_MAP = newHashMap();
-        STATISTIC_COLLECTOR_MAP.put(MOST_READ_AUTHORS_BY_BOOKS_COUNT, new BookStatisticFunctions(Book::getAuthor, Collectors.counting()));
+        STATISTIC_COLLECTOR_MAP.put(MOST_READ_AUTHORS_BY_BOOK_COUNT, new BookStatisticFunctions(Book::getAuthor, Collectors.counting()));
         STATISTIC_COLLECTOR_MAP.put(MOST_READ_AUTHORS_BY_PAGE_COUNT, new BookStatisticFunctions(Book::getAuthor, Collectors.summingLong(Book::getPageNumber)));
         STATISTIC_COLLECTOR_MAP.put(MOST_READ_GENRES, new BookStatisticFunctions(book -> book.getGenre().getStringValue(), Collectors.counting()));
         STATISTIC_COLLECTOR_MAP.put(BOOKS_BY_DECADE, new BookStatisticFunctions(book -> getDecade(book.getReleaseYear()), Collectors.counting()));

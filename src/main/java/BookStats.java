@@ -28,7 +28,7 @@ public class BookStats {
         PrinterUtils.printStatistic(Statistic.MOST_READ_AUTHORS_BY_PAGE_COUNT, mostReadAuthorsByPageCount);
 
         final Map<String, Long> mostReadAuthorsByBookCount = statisticsService.getMostReadAuthorsByBookCount();
-        PrinterUtils.printStatistic(Statistic.MOST_READ_AUTHORS_BY_BOOKS_COUNT, mostReadAuthorsByBookCount);
+        PrinterUtils.printStatistic(Statistic.MOST_READ_AUTHORS_BY_BOOK_COUNT, mostReadAuthorsByBookCount);
 
         final Map<String, Double> averageRatingForAuthors = statisticsService.getAverageRatingForAuthors();
         PrinterUtils.printStatistic(Statistic.AVERAGE_RATING_FOR_AUTHORS, averageRatingForAuthors);

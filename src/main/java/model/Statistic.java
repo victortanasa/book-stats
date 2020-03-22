@@ -2,7 +2,7 @@ package model;
 
 public enum Statistic {
 
-    MOST_READ_AUTHORS_BY_BOOKS_COUNT("Most read authors by book count"),
+    MOST_READ_AUTHORS_BY_BOOK_COUNT("Most read authors by book count"),
     MOST_READ_AUTHORS_BY_PAGE_COUNT("Most read authors by page count"),
     MOST_READ_GENRES("Most read genres"),
     BOOKS_BY_DECADE("Books by decade"),
