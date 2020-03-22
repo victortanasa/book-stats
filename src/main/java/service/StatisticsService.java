@@ -7,12 +7,16 @@ import static model.Statistic.*;
 import model.Book;
 import model.Statistic;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.function.Predicate;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class StatisticsService {
+
+    private static final DateTimeFormatter MONTH_ONLY_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM");
 
     private static final String DECADE_FORMAT = "%d's";
 
@@ -26,11 +30,13 @@ public class StatisticsService {
     static {
         LONG_STATISTIC_COLLECTOR_MAP = newHashMap();
         LONG_STATISTIC_COLLECTOR_MAP.put(MOST_READ_AUTHORS_BY_PAGE_COUNT, Collectors.groupingBy(Book::getAuthor, Collectors.summingLong(Book::getPageNumber)));
-        LONG_STATISTIC_COLLECTOR_MAP.put(AUTHORS_WITH_MOST_FAVOURITES, Collectors.groupingBy(Book::getAuthor, Collectors.counting()));
-        LONG_STATISTIC_COLLECTOR_MAP.put(MOST_READ_AUTHORS_BY_BOOK_COUNT, Collectors.groupingBy(Book::getAuthor, Collectors.counting()));
         LONG_STATISTIC_COLLECTOR_MAP.put(MOST_READ_GENRES, Collectors.groupingBy(book -> book.getGenre().getStringValue(), Collectors.counting()));
         LONG_STATISTIC_COLLECTOR_MAP.put(BOOKS_BY_DECADE, Collectors.groupingBy(book -> getDecade(book.getReleaseYear()), Collectors.counting()));
         LONG_STATISTIC_COLLECTOR_MAP.put(BOOKS_BY_RATING, Collectors.groupingBy(book -> book.getRating().toString(), Collectors.counting()));
+        LONG_STATISTIC_COLLECTOR_MAP.put(MOST_READ_AUTHORS_BY_BOOK_COUNT, Collectors.groupingBy(Book::getAuthor, Collectors.counting()));
+        LONG_STATISTIC_COLLECTOR_MAP.put(AUTHORS_WITH_MOST_FAVOURITES, Collectors.groupingBy(Book::getAuthor, Collectors.counting()));
+        LONG_STATISTIC_COLLECTOR_MAP.put(BOOKS_PER_MONTH, Collectors.groupingBy(book -> getMonth(book.getDateFinished()), Collectors.counting()));
+        LONG_STATISTIC_COLLECTOR_MAP.put(PAGES_PER_MONTH, Collectors.groupingBy(book -> getMonth(book.getDateFinished()), Collectors.summingLong(Book::getPageNumber)));
 
         DOUBLE_STATISTIC_COLLECTOR_MAP = newHashMap();
         DOUBLE_STATISTIC_COLLECTOR_MAP.put(AVERAGE_PAGE_NUMBER_FOR_AUTHORS, Collectors.groupingBy(Book::getAuthor, Collectors.averagingInt(Book::getPageNumber)));
@@ -44,8 +50,7 @@ public class StatisticsService {
 
     private Set<Book> library;
 
-    //TODO: pages per month
-    //TODO: most read authors per year - books and page number
+    //TODO: most read authors per year - books and page number - sort by what
     public StatisticsService(final Set<Book> library) {
         this.library = library;
     }
@@ -79,6 +84,10 @@ public class StatisticsService {
 
     private static String getDecade(final Integer releaseYear) {
         return String.format(DECADE_FORMAT, releaseYear - releaseYear % 10);
+    }
+
+    private static String getMonth(final LocalDate dateRead) {
+        return MONTH_ONLY_FORMATTER.format(dateRead.withDayOfMonth(1));
     }
 
 }

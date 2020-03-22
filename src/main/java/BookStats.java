@@ -26,7 +26,9 @@ public class BookStats {
                 BOOKS_BY_RATING,
                 AUTHORS_WITH_MOST_FAVOURITES,
                 AVERAGE_RATING_FOR_AUTHORS,
-                AVERAGE_PAGE_NUMBER_FOR_AUTHORS)
+                AVERAGE_PAGE_NUMBER_FOR_AUTHORS,
+                BOOKS_PER_MONTH,
+                PAGES_PER_MONTH)
                 .forEach(statistic -> PrinterUtils.printStatistic(statistic, statisticsService.getStatistic(statistic)));
     }
 

@@ -9,7 +9,9 @@ public enum Statistic {
     BOOKS_BY_RATING("Books by rating"),
     AUTHORS_WITH_MOST_FAVOURITES("Authors with most favourites"),
     AVERAGE_RATING_FOR_AUTHORS("Average rating for authors"),
-    AVERAGE_PAGE_NUMBER_FOR_AUTHORS("Average page number for authors");
+    AVERAGE_PAGE_NUMBER_FOR_AUTHORS("Average page number for authors"),
+    BOOKS_PER_MONTH("Books per month"),
+    PAGES_PER_MONTH("Pages per month");
 
     private String statistic;
 
