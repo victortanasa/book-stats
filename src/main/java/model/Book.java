@@ -12,6 +12,8 @@ public class Book {
     private static final String TO_STRING_FORMAT = "Title: %s\nAuthor: %s\nPage Number: %s\nRating: %s Stars\nRelease Year: %s\n" +
             "Date Started: %s\nDate Finished: %s\nGenre %s\nFavorite: %s";
 
+    private static final String TO_STRING_SHORT_FORMAT = "Title: %s\nAuthor: %s\nPage Number: %s";
+
     private String title;
     private String author;
 
@@ -135,6 +137,10 @@ public class Book {
         return String.format(TO_STRING_FORMAT,
                 this.title, this.author, this.pageNumber, this.rating, this.releaseYear, this.dateStarted,
                 this.dateFinished, this.genre.getStringValue(), this.isFavorite ? "Yes" : "No");
+    }
+
+    public String toStringShortFormat() {
+        return String.format(TO_STRING_SHORT_FORMAT, title, author, pageNumber);
     }
 
 }

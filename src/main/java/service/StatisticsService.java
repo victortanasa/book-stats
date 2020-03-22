@@ -103,11 +103,30 @@ public class StatisticsService {
                 .collect(Collectors.groupingBy(Book::getAuthor, Collectors.averagingLong(Book::getDaysReadIn)));
     }
 
+    //TODO: make private
     public Double getAverageDaysToReadABook() {
         return library.stream()
                 .mapToLong(Book::getDaysReadIn)
                 .average()
                 .orElse(-1);
+    }
+
+    //TODO: make private
+    public List<String> getShortestBooks(final int limit) {
+        return library.stream().
+                sorted(Comparator.comparing(Book::getPageNumber))
+                .limit(limit)
+                .map(Book::toStringShortFormat)
+                .collect(Collectors.toList());
+    }
+
+    //TODO: make private and extract something
+    public List<String> getLongestBooks(final int limit) {
+        return library.stream().
+                sorted(Comparator.comparing(Book::getPageNumber).reversed())
+                .limit(limit)
+                .map(Book::toStringShortFormat)
+                .collect(Collectors.toList());
     }
 
     private Map<String, ?> sortDescendingByValue(final Map<String, ?> map) {

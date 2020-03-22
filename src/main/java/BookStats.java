@@ -7,6 +7,7 @@ import service.StatisticsService;
 import utils.BookLoader;
 import utils.PrinterUtils;
 
+import java.util.List;
 import java.util.Set;
 import java.util.stream.Stream;
 
@@ -34,6 +35,14 @@ public class BookStats {
 
         final Double averageDaysToReadABook = statisticsService.getAverageDaysToReadABook();
         PrinterUtils.simplePrint(AVERAGE_DAYS_TO_READ_A_BOOK + ": " + averageDaysToReadABook);
+
+        System.out.println("-------------------------");
+
+        final List<String> shortestBooks = statisticsService.getShortestBooks(5);
+        shortestBooks.forEach(PrinterUtils::simplePrint);
+
+        final List<String> longestBooks = statisticsService.getLongestBooks(5);
+        longestBooks.forEach(PrinterUtils::simplePrint);
     }
 
 }
