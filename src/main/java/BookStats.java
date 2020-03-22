@@ -1,14 +1,13 @@
-import static model.Statistic.*;
-
 import model.Book;
 import model.SortBy;
 import model.SortOrder;
-import service.StatisticsService;
+import model.Statistic;
+import service.StatisticsService2;
 import utils.BookLoader;
 import utils.PrinterUtils;
 
+import java.util.Map;
 import java.util.Set;
-import java.util.stream.Stream;
 
 public class BookStats {
 
@@ -17,16 +16,22 @@ public class BookStats {
 
         PrinterUtils.printBooks(library, SortBy.RATING, SortOrder.ASC);
 
-        final StatisticsService statisticsService = new StatisticsService(library);
+        final StatisticsService2 statisticsService = new StatisticsService2(library);
 
-        Stream.of(MOST_READ_AUTHORS_BY_BOOKS_READ,
-                MOST_READ_AUTHORS_BY_PAGES_READ,
-                MOST_READ_GENRES,
-                BOOKS_BY_DECADE,
-                BOOKS_BY_RATING,
-                AVERAGE_RATING_FOR_AUTHORS,
-                AUTHORS_WITH_MOST_FAVOURITES)
-                .forEach(statistic -> PrinterUtils.printStatistic(statistic, statisticsService.getStatistic(statistic)));
+        final Map<String, Long> authorsWithMostFavourites = statisticsService.getAuthorsWithMostFavourites();
+        PrinterUtils.printStatistic(Statistic.AUTHORS_WITH_MOST_FAVOURITES, authorsWithMostFavourites);
+
+        final Map<String, Long> booksByDecade = statisticsService.getBooksByDecade();
+        PrinterUtils.printStatistic(Statistic.BOOKS_BY_DECADE, booksByDecade);
+
+        final Map<String, Long> mostReadAuthorsByPageCount = statisticsService.getMostReadAuthorsByPageCount();
+        PrinterUtils.printStatistic(Statistic.MOST_READ_AUTHORS_BY_PAGE_COUNT, mostReadAuthorsByPageCount);
+
+        final Map<String, Long> mostReadAuthorsByBookCount = statisticsService.getMostReadAuthorsByBookCount();
+        PrinterUtils.printStatistic(Statistic.MOST_READ_AUTHORS_BY_BOOKS_COUNT, mostReadAuthorsByBookCount);
+
+        final Map<String, Double> averageRatingForAuthors = statisticsService.getAverageRatingForAuthors();
+        PrinterUtils.printStatistic(Statistic.AVERAGE_RATING_FOR_AUTHORS, averageRatingForAuthors);
     }
 
 }

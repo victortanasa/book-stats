@@ -25,13 +25,13 @@ public class StatisticsService {
 
     static {
         STATISTIC_COLLECTOR_MAP = newHashMap();
-        STATISTIC_COLLECTOR_MAP.put(MOST_READ_AUTHORS_BY_BOOKS_READ, new BookStatisticFunctions(Book::getAuthor, Collectors.counting()));
-        STATISTIC_COLLECTOR_MAP.put(MOST_READ_AUTHORS_BY_PAGES_READ, new BookStatisticFunctions(Book::getAuthor, Collectors.summingLong(Book::getPageNumber)));
+        STATISTIC_COLLECTOR_MAP.put(MOST_READ_AUTHORS_BY_BOOKS_COUNT, new BookStatisticFunctions(Book::getAuthor, Collectors.counting()));
+        STATISTIC_COLLECTOR_MAP.put(MOST_READ_AUTHORS_BY_PAGE_COUNT, new BookStatisticFunctions(Book::getAuthor, Collectors.summingLong(Book::getPageNumber)));
         STATISTIC_COLLECTOR_MAP.put(MOST_READ_GENRES, new BookStatisticFunctions(book -> book.getGenre().getStringValue(), Collectors.counting()));
         STATISTIC_COLLECTOR_MAP.put(BOOKS_BY_DECADE, new BookStatisticFunctions(book -> getDecade(book.getReleaseYear()), Collectors.counting()));
         STATISTIC_COLLECTOR_MAP.put(BOOKS_BY_RATING, new BookStatisticFunctions(book -> book.getRating().toString(), Collectors.counting()));
         STATISTIC_COLLECTOR_MAP.put(AVERAGE_RATING_FOR_AUTHORS, new BookStatisticFunctions(Book::getAuthor, Collectors.averagingInt(Book::getRating)));
-        STATISTIC_COLLECTOR_MAP.put(AUTHORS_WITH_MOST_FAVOURITES, new BookStatisticFunctions(Book::getAuthor, Collectors.summingInt(Book::isFavoriteInteger)));
+//        STATISTIC_COLLECTOR_MAP.put(AUTHORS_WITH_MOST_FAVOURITES, new BookStatisticFunctions(Book::getAuthor, Collectors.summingInt(Book::isFavoriteInteger)));
     }
 
     //TODO: rewrite - one method for each statistic, place "function in map"
