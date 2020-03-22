@@ -64,7 +64,7 @@ public class StatisticsService2 {
     }
 
     private static String getDecade(final Integer releaseYear) {
-        return String.format(DECADE_FORMAT, releaseYear % 100 - releaseYear % 10);
+        return String.format(DECADE_FORMAT, releaseYear - releaseYear % 10);
     }
 
 }
