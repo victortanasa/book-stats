@@ -13,7 +13,7 @@ public class Book {
     private String title;
     private String author;
 
-    private Long pageNumber;
+    private Integer pageNumber;
     private Integer rating;
     private Integer releaseYear;
 
@@ -24,7 +24,7 @@ public class Book {
 
     private boolean isFavorite;
 
-    public Book(final String title, final String author, final Long pageNumber, final Integer rating, final Integer releaseYear,
+    public Book(final String title, final String author, final Integer pageNumber, final Integer rating, final Integer releaseYear,
                 final LocalDate dateStarted, final LocalDate dateFinished, final Genre genre, final boolean isFavorite) {
         this.title = title;
         this.author = author;
@@ -57,11 +57,11 @@ public class Book {
         this.author = author;
     }
 
-    public Long getPageNumber() {
+    public Integer getPageNumber() {
         return pageNumber;
     }
 
-    public void setPageNumber(final Long pageNumber) {
+    public void setPageNumber(final Integer pageNumber) {
         this.pageNumber = pageNumber;
     }
 
@@ -107,10 +107,6 @@ public class Book {
 
     public boolean isFavorite() {
         return isFavorite;
-    }
-
-    public int isFavoriteInteger() {
-        return isFavorite ? 1 : 0;
     }
 
     public void setFavorite(final boolean favorite) {

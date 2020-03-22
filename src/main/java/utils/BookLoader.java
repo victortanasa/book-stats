@@ -31,15 +31,15 @@ public class BookLoader {
     private static Book toBook(final String fileLine) {
         final String[] split = fileLine.split(COMMA);
 
-        return new Book(split[0],
-                split[1],
-                Long.valueOf(split[2]),
-                Integer.valueOf(split[3]),
-                Integer.valueOf(split[4]),
-                LocalDate.parse(split[5], DATE_FORMATTER),
-                LocalDate.parse(split[6], DATE_FORMATTER),
-                Genre.valueOf(split[7]),
-                Boolean.valueOf(split[8]));
+        return new Book(split[0], //title
+                split[1], //author
+                Integer.valueOf(split[2]), //page number
+                Integer.valueOf(split[3]), //rating
+                Integer.valueOf(split[4]), //release year
+                LocalDate.parse(split[5], DATE_FORMATTER), //date started
+                LocalDate.parse(split[6], DATE_FORMATTER), //date finished
+                Genre.valueOf(split[7]), //genre
+                Boolean.valueOf(split[8])); //is favorite
     }
 
     private static List<String> getBooksFromFile() {
