@@ -1,7 +1,11 @@
 package service;
 
+import static java.util.Map.Entry.comparingByValue;
+
 import model.Book;
 
+import java.util.Collections;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -17,39 +21,46 @@ public class StatisticsService2 {
     }
 
     public Map<String, Long> getMostReadAuthorsByBookCount() {
-        return library.stream()
-                .collect(Collectors.groupingBy(Book::getAuthor, Collectors.counting()));
+        return sortDescendingByValue(library.stream()
+                .collect(Collectors.groupingBy(Book::getAuthor, Collectors.counting())));
     }
 
     public Map<String, Long> getMostReadAuthorsByPageCount() {
-        return library.stream()
-                .collect(Collectors.groupingBy(Book::getAuthor, Collectors.summingLong(Book::getPageNumber)));
+        return sortDescendingByValue(library.stream()
+                .collect(Collectors.groupingBy(Book::getAuthor, Collectors.summingLong(Book::getPageNumber))));
     }
 
     public Map<String, Long> getBooksByDecade() {
-        return library.stream()
-                .collect(Collectors.groupingBy(book -> getDecade(book.getReleaseYear()), Collectors.counting()));
+        return sortDescendingByValue(library.stream()
+                .collect(Collectors.groupingBy(book -> getDecade(book.getReleaseYear()), Collectors.counting())));
     }
 
     public Map<String, Long> getBooksByRating() {
-        return library.stream()
-                .collect(Collectors.groupingBy(book -> book.getRating().toString(), Collectors.counting()));
+        return sortDescendingByValue(library.stream()
+                .collect(Collectors.groupingBy(book -> book.getRating().toString(), Collectors.counting())));
     }
 
     public Map<String, Long> getBooksByGenre() {
-        return library.stream()
-                .collect(Collectors.groupingBy(book -> book.getGenre().getStringValue(), Collectors.counting()));
+        return sortDescendingByValue(library.stream()
+                .collect(Collectors.groupingBy(book -> book.getGenre().getStringValue(), Collectors.counting())));
     }
 
     public Map<String, Double> getAverageRatingForAuthors() {
-        return library.stream()
-                .collect(Collectors.groupingBy(Book::getAuthor, Collectors.averagingInt(Book::getRating)));
+        return sortDescendingByValue(library.stream()
+                .collect(Collectors.groupingBy(Book::getAuthor, Collectors.averagingInt(Book::getRating))));
     }
 
     public Map<String, Long> getAuthorsWithMostFavourites() {
-        return library.stream()
+        return sortDescendingByValue(library.stream()
                 .filter(Book::isFavorite)
-                .collect(Collectors.groupingBy(Book::getAuthor, Collectors.counting()));
+                .collect(Collectors.groupingBy(Book::getAuthor, Collectors.counting())));
+    }
+
+    private static <T extends Comparable<T>> Map<String, T> sortDescendingByValue(final Map<String, T> map) {
+        return map.entrySet()
+                .stream()
+                .sorted(Collections.reverseOrder(comparingByValue()))
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
     }
 
     private static String getDecade(final Integer releaseYear) {
