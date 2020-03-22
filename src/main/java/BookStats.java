@@ -30,11 +30,10 @@ public class BookStats {
                 BOOKS_READ_PER_MONTH,
                 PAGES_READ_PER_MONTH,
                 AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR)
-                .forEach(statistic -> PrinterUtils.printStatistic(statistic, statisticsService.getMapStatistic(statistic)));
+                .forEach(statistic -> PrinterUtils.printMapStatistic(statistic, statisticsService.getMapStatistic(statistic)));
 
-        //TODO: printer for list statistic
         Stream.of(SHORTEST_BOOKS, LONGEST_BOOKS)
-                .forEach(statistic -> PrinterUtils.simplePrint(statisticsService.getListStatistic(statistic, 8).toString()));
+                .forEach(statistic -> PrinterUtils.printListStatistic(statistic, statisticsService.getListStatistic(statistic, 8)));
 
         //TODO: printer for single value statistic
         final Number averageDaysToReadABook = statisticsService.getSingeValueStatistic(AVERAGE_DAYS_TO_READ_A_BOOK);

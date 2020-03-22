@@ -6,9 +6,11 @@ import model.Book;
 import model.SortBy;
 import model.SortOrder;
 import model.Statistic;
+import org.apache.commons.lang3.StringUtils;
 
 import java.text.DecimalFormat;
 import java.util.Comparator;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -16,7 +18,8 @@ public class PrinterUtils {
 
     private static final DecimalFormat DECIMAL_FORMAT = new DecimalFormat("#.##");
 
-    private static final String SEPARATOR = "-------------------------------";
+    private static final String SEPARATOR_LARGE = StringUtils.repeat("-", 60);
+    private static final String SEPARATOR_SMALL = StringUtils.repeat("-", 30);
     private static final String STATISTIC_PRINT_FORMAT = "%s: %s";
     private static final String NEWLINE = "\n";
 
@@ -39,15 +42,23 @@ public class PrinterUtils {
 
         books.stream().
                 sorted(comparator)
-                .forEach(book -> System.out.println(book + NEWLINE + SEPARATOR));
+                .forEach(book -> System.out.println(book + NEWLINE + SEPARATOR_LARGE));
     }
 
-    public static void printStatistic(final Statistic statistic, final Map<String, ?> map) {
+    public static void printMapStatistic(final Statistic statistic, final Map<String, ?> map) {
         System.out.println(statistic.getStringValue() + NEWLINE);
 
         map.forEach((key, value) -> System.out.println(String.format(STATISTIC_PRINT_FORMAT, key, formatDoubleIfNecessary(value))));
 
-        System.out.println(SEPARATOR);
+        System.out.println(SEPARATOR_LARGE);
+    }
+
+    public static void printListStatistic(final Statistic statistic, final List<String> list) {
+        System.out.println(statistic.getStringValue() + NEWLINE);
+
+        list.forEach(element -> System.out.println(element + NEWLINE + SEPARATOR_SMALL));
+
+        System.out.println(SEPARATOR_LARGE);
     }
 
     public static void simplePrint(final String string) {

@@ -6,6 +6,7 @@ import static model.Statistic.*;
 import com.google.common.base.Function;
 import com.google.common.base.Supplier;
 import model.Book;
+import model.SortOrder;
 import model.Statistic;
 
 import java.time.LocalDate;
@@ -126,17 +127,19 @@ public class StatisticsService {
     }
 
     private List<String> getShortestBooks(final int limit) {
-        return library.stream().
-                sorted(Comparator.comparing(Book::getPageNumber))
-                .limit(limit)
-                .map(Book::toStringShortFormat)
-                .collect(Collectors.toList());
+        return getBooksByLength(SortOrder.DESC, limit);
     }
 
-    //TODO: extract something
     private List<String> getLongestBooks(final int limit) {
+        return getBooksByLength(SortOrder.ASC, limit);
+    }
+
+    private List<String> getBooksByLength(final SortOrder sortOrder, final int limit) {
+        final Comparator<Book> comparator = SortOrder.ASC.equals(sortOrder) ?
+                Comparator.comparing(Book::getPageNumber).reversed() : Comparator.comparing(Book::getPageNumber);
+
         return library.stream().
-                sorted(Comparator.comparing(Book::getPageNumber).reversed())
+                sorted(comparator)
                 .limit(limit)
                 .map(Book::toStringShortFormat)
                 .collect(Collectors.toList());
