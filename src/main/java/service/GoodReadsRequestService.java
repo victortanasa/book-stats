@@ -25,6 +25,7 @@ public class GoodReadsRequestService {
 //    private static final String GET_READ_BOOKS_URL = "review/list?v=2&key=aB9VcY1rOGCzxMONqjk8Ug&id=60626198&shelf=read&page=1,200&per_page=200";
 
     private WebClient webClient;
+    private GoodReadsDeserializer goodReadsDeserializer;
 
     public GoodReadsRequestService() {
         final ExchangeStrategies exchangeStrategies = ExchangeStrategies.builder()
@@ -34,6 +35,8 @@ public class GoodReadsRequestService {
                 .exchangeStrategies(exchangeStrategies)
                 .baseUrl(GOOD_READS_BASE_URL)
                 .build();
+
+        goodReadsDeserializer = new GoodReadsDeserializer();
     }
 
     public void getBookInfo() {
@@ -52,7 +55,7 @@ public class GoodReadsRequestService {
                 .exchange()
                 .timeout(Duration.ofSeconds(DEFAULT_TIMEOUT_IN_SECONDS)).block().bodyToMono(String.class).block();
 
-        return GoodReadsDeserializer.getNumberOfBookRead(response);
+        return goodReadsDeserializer.getNumberOfBookRead(response);
     }
 
     public List<GoodReadsBook> getAllBooksRead(final Integer numberOfBooksToRetrieve) {
@@ -67,7 +70,7 @@ public class GoodReadsRequestService {
 
         final String response = clientResponse.bodyToMono(String.class).block();
 
-        return GoodReadsDeserializer.getBooksFromStringResponse(response);
+        return goodReadsDeserializer.getBooksFromStringResponse(response);
     }
 
 }
