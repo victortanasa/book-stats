@@ -16,5 +16,14 @@ public class GoodReadsBookLoader {
 
     //TODO: DATA VALIDATOR -> what stats will be unreliable or unavailable -> local list of good values
 
+    //TODO: https://www.goodreads.com/book/isbn/0441172717?key=xQXvrwOTLq7xonOLcjt2A
+    //TODO: get top shelves, exlude below, select 3 genres
+//    genreExceptions = [
+//            'to-read', 'currently-reading', 'owned', 'default', 'favorites', 'books-i-own',
+//            'ebook', 'kindle', 'library', 'audiobook', 'owned-books', 'audiobooks', 'my-books',
+//            'ebooks', 'to-buy', 'english', 'calibre', 'books', 'british', 'audio', 'my-library',
+//            'favourites', 're-read', 'general', 'e-books'
+//            ]
+
 
 }
