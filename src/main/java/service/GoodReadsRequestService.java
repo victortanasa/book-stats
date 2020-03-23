@@ -16,13 +16,11 @@ public class GoodReadsRequestService {
 
     private static final String GOOD_READS_BASE_URL = "https://www.goodreads.com/";
 
-    private static final String SEARCH_BOOK_URL = "search/index.xml?q=1857987632&key=aB9VcY1rOGCzxMONqjk8Ug";
+    private static final String SEARCH_BOOK_URL = "search/index.xml?q=%s&key=aB9VcY1rOGCzxMONqjk8Ug";
     //TODO: extract token
     private static final String GET_READ_SHELF_URL = "shelf/list.xml?key=aB9VcY1rOGCzxMONqjk8Ug&user_id=60626198&page=1";
 
-    //TODO: page, leave 1, but per page -> value from read shelves
     private static final String GET_READ_BOOKS_URL = "review/list?v=2&key=aB9VcY1rOGCzxMONqjk8Ug&id=60626198&shelf=read&page=1&per_page=%s";
-//    private static final String GET_READ_BOOKS_URL = "review/list?v=2&key=aB9VcY1rOGCzxMONqjk8Ug&id=60626198&shelf=read&page=1,200&per_page=200";
 
     private WebClient webClient;
     private GoodReadsDeserializer goodReadsDeserializer;
@@ -39,28 +37,27 @@ public class GoodReadsRequestService {
         goodReadsDeserializer = new GoodReadsDeserializer();
     }
 
-    public void getBookInfo() {
-        final String response = webClient.get()
-                .uri(SEARCH_BOOK_URL)
-                .exchange()
-                .timeout(Duration.ofSeconds(DEFAULT_TIMEOUT_IN_SECONDS)).block().bodyToMono(String.class).block();
+    public Integer getPublicationYear(final String searchTerm, final Long bookId) {
+        final String response = doRequest(String.format(SEARCH_BOOK_URL, searchTerm));
 
-        System.out.println(response);
+        return goodReadsDeserializer.getPublicationYear(response, bookId);
     }
 
     public Integer getNumberOfBooksRead() {
-        //TODO: one method
-        final String response = webClient.get()
-                .uri(GET_READ_SHELF_URL)
-                .exchange()
-                .timeout(Duration.ofSeconds(DEFAULT_TIMEOUT_IN_SECONDS)).block().bodyToMono(String.class).block();
+        final String response = doRequest(GET_READ_SHELF_URL);
 
         return goodReadsDeserializer.getNumberOfBookRead(response);
     }
 
     public List<GoodReadsBook> getAllBooksRead(final Integer numberOfBooksToRetrieve) {
+        final String response = doRequest(String.format(GET_READ_BOOKS_URL, numberOfBooksToRetrieve));
+
+        return goodReadsDeserializer.getBooksFromStringResponse(response);
+    }
+
+    private String doRequest(final String endpoint) {
         final ClientResponse clientResponse = webClient.get()
-                .uri(String.format(GET_READ_BOOKS_URL, numberOfBooksToRetrieve))
+                .uri(endpoint)
                 .exchange()
                 .timeout(Duration.ofSeconds(DEFAULT_TIMEOUT_IN_SECONDS)).block();
 
@@ -68,9 +65,7 @@ public class GoodReadsRequestService {
             throw new IllegalStateException(COULD_NOT_LOAD_BOOKS_ERROR_MESSAGE);
         }
 
-        final String response = clientResponse.bodyToMono(String.class).block();
-
-        return goodReadsDeserializer.getBooksFromStringResponse(response);
+        return clientResponse.bodyToMono(String.class).block();
     }
 
 }

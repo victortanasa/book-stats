@@ -1,4 +1,4 @@
-title,author,pageNumber,rating,releaseYear,dateStarted,dateFinished,genre,isFavorite
+title,author,pageNumber,rating,publicationYear,dateStarted,dateFinished,genre,isFavorite
 Leviathan Wakes,James S.A.Corey,561,5,2011,2018-06-02,2018-06-04,SPACE_OPERA,true
 Caliban's War,James S.A.Corey,595,5,2012,2018-07-01,2018-07-05,SPACE_OPERA,true
 Abaddon's Gate,James S.A.Corey,539,5,2013,2018-07-06,2018-07-10,SPACE_OPERA,false

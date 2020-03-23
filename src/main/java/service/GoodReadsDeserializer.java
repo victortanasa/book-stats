@@ -1,6 +1,5 @@
 package service;
 
-import static com.google.common.collect.Lists.newArrayList;
 import static java.util.stream.Collectors.toList;
 
 import model.GoodReadsBook;
@@ -8,34 +7,33 @@ import org.apache.commons.lang3.StringUtils;
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.input.SAXBuilder;
-import utils.BookLoader;
+import utils.PrinterUtils;
 
 import java.io.ByteArrayInputStream;
 import java.util.List;
 
-public class GoodReadsDeserializer {
+class GoodReadsDeserializer {
+
+    private static final String COULD_NOT_GET_ORIGINAL_RELEASE_YEAR_FROM_API_MESSAGE = "Could not get original release year for response %s\n. Exception was: %s";
+    private static final String COULD_NOT_GET_NUMBER_OF_BOOKS_READ_FROM_API_MESSAGE = "Could not get number of books read from response %s\n.  Exception was: %s";
+    private static final String COULD_NOT_GET_BOOKS_FROM_API_MESSAGE = "Could not get book from response %s\n. Exception was: %s";
 
     private static final SAXBuilder SAX_BUILDER = new SAXBuilder();
 
-    public static void main(final String[] args) {
-        deserializeSearch();
-    }
-
-    static void deserializeSearch() {
-        final String bookSearchResponse = BookLoader.getResponseFromFile(true);
+    Integer getPublicationYear(final String response, final Long expectedBookId) {
         try {
-            final Document document = SAX_BUILDER.build(new ByteArrayInputStream(bookSearchResponse.getBytes()));
+            final Document document = SAX_BUILDER.build(new ByteArrayInputStream(response.getBytes()));
 
-            final List<Element> searchResults = document.getRootElement().getChild("search").getChild("results").getChildren("work");
+            final List<Element> foundBooks = document.getRootElement().getChild("search").getChild("results").getChildren("work");
 
-            searchResults.stream().forEach(element -> {
-                System.out.println(element);
-                final String original_publication_year = element.getChild("original_publication_year").getValue();
-                final String bookId = element.getChild("best_book").getChild("id").getValue();//44280099
-            });
-
+            return foundBooks.stream().
+                    filter(book -> expectedBookId.equals(getLong(book.getChild("best_book").getChild("id").getValue())))
+                    .map(book -> getInteger(book.getChild("original_publication_year").getValue()))
+                    .findFirst()
+                    .orElse(-1);
         } catch (final Exception e) {
-            e.printStackTrace();
+            PrinterUtils.printSimple(String.format(COULD_NOT_GET_ORIGINAL_RELEASE_YEAR_FROM_API_MESSAGE, response, e.getMessage()));
+            return null;
         }
     }
 
@@ -51,7 +49,7 @@ public class GoodReadsDeserializer {
 
             return getInteger(bookCount);
         } catch (final Exception e) {
-            //TODO: nice
+            PrinterUtils.printSimple(String.format(COULD_NOT_GET_NUMBER_OF_BOOKS_READ_FROM_API_MESSAGE, response, e.getMessage()));
             return null;
         }
     }
@@ -60,13 +58,13 @@ public class GoodReadsDeserializer {
         try {
             final Document document = SAX_BUILDER.build(new ByteArrayInputStream(response.getBytes()));
             final List<Element> elements = document.getRootElement().getChild("reviews").getChildren("review");
+
             return elements.stream()
                     .map(this::toBook)
                     .collect(toList());
         } catch (final Exception e) {
-            //TODO: nice
-            e.printStackTrace();
-            return newArrayList();
+            PrinterUtils.printSimple(String.format(COULD_NOT_GET_BOOKS_FROM_API_MESSAGE, response, e.getMessage()));
+            return null;
         }
     }
 
@@ -108,6 +106,10 @@ public class GoodReadsDeserializer {
 
     private static Integer getInteger(final String value) {
         return !StringUtils.isBlank(value) ? Integer.parseInt(value) : -123;
+    }
+
+    private static Long getLong(final String value) {
+        return !StringUtils.isBlank(value) ? Long.parseLong(value) : -123;
     }
 
     private static Double getDouble(final String value) {

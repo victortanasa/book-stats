@@ -34,7 +34,7 @@ public class BookLoader {
         try {
             return new String(Files.readAllBytes(Paths.get(isSearch ? SEARCH_XML : SHELVE_XML)));
         } catch (final Exception e) {
-            PrinterUtils.simplePrint(e.toString());
+            PrinterUtils.printSimple(e.toString());
             return null;
         }
     }
@@ -60,7 +60,7 @@ public class BookLoader {
                     .collect(toList());
         } catch (final IOException e) {
             final String message = String.format(COULD_NOT_LOAD_BOOKS_MESSAGE, e);
-            PrinterUtils.simplePrint(message);
+            PrinterUtils.printSimple(message);
             throw new IllegalStateException(message);
         }
     }

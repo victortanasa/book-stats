@@ -20,6 +20,7 @@ public class GoodReadsBook {
     private Integer readCount;
     private Integer pageNumber;
     private Integer ratingsCount;
+    private Integer publicationYear;
 
     private Double averageRating;
 
@@ -104,6 +105,14 @@ public class GoodReadsBook {
         this.pageNumber = pageNumber;
     }
 
+    public Integer getPublicationYear() {
+        return publicationYear;
+    }
+
+    public void setPublicationYear(final Integer publicationYear) {
+        this.publicationYear = publicationYear;
+    }
+
     public Integer getRatingsCount() {
         return ratingsCount;
     }
@@ -150,6 +159,11 @@ public class GoodReadsBook {
 
     public void setAuthors(final List<String> authors) {
         this.authors = authors;
+    }
+
+    public GoodReadsBook withPublicationYear(final Integer originalPublicationYear) {
+        this.publicationYear = originalPublicationYear;
+        return this;
     }
 
     @Override

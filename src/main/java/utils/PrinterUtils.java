@@ -69,7 +69,7 @@ public class PrinterUtils {
         System.out.println(SEPARATOR_LARGE);
     }
 
-    static void simplePrint(final String string) {
+    public static void printSimple(final String string) {
         System.out.println(string);
     }
 
