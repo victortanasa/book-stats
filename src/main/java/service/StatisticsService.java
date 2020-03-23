@@ -121,20 +121,12 @@ public class StatisticsService {
                 .collect(Collectors.groupingBy(Book::getAuthor, Collectors.averagingLong(Book::getDaysReadIn)));
     }
 
-    //TODO: extract method
     private Double getAveragePagesReadPerMonth() {
-        return getPagesReadPerMonth().entrySet().stream()
-                .mapToDouble(entry -> Double.valueOf(entry.getValue().toString()))
-                .average()
-                .orElse(-1);
+        return getAverageFromMapValues(getPagesReadPerMonth());
     }
 
-    //TODO: extract method
     private Double getAverageBooksReadPerMonth() {
-        return getBooksReadPerMonth().entrySet().stream()
-                .mapToDouble(entry -> Double.valueOf(entry.getValue().toString()))
-                .average()
-                .orElse(-1);
+        return getAverageFromMapValues(getBooksReadPerMonth());
     }
 
     private Double getAverageDaysToReadABook() {
@@ -145,14 +137,14 @@ public class StatisticsService {
     }
 
     private List<String> getShortestBooks(final int limit) {
-        return getBooksByLength(SortOrder.DESC, limit);
+        return getBooksByLength(library, SortOrder.DESC, limit);
     }
 
     private List<String> getLongestBooks(final int limit) {
-        return getBooksByLength(SortOrder.ASC, limit);
+        return getBooksByLength(library, SortOrder.ASC, limit);
     }
 
-    private List<String> getBooksByLength(final SortOrder sortOrder, final int limit) {
+    private static List<String> getBooksByLength(final Set<Book> library, final SortOrder sortOrder, final int limit) {
         final Comparator<Book> comparator = SortOrder.ASC.equals(sortOrder) ?
                 Comparator.comparing(Book::getPageNumber).reversed() : Comparator.comparing(Book::getPageNumber);
 
@@ -163,7 +155,14 @@ public class StatisticsService {
                 .collect(Collectors.toList());
     }
 
-    private Map<String, ?> sortDescendingByValue(final Map<String, ?> map) {
+    private static Double getAverageFromMapValues(final Map<String, ?> map) {
+        return map.entrySet().stream()
+                .mapToDouble(entry -> Double.valueOf(entry.getValue().toString()))
+                .average()
+                .orElse(-1);
+    }
+
+    private static Map<String, ?> sortDescendingByValue(final Map<String, ?> map) {
         return map.entrySet().stream()
                 .sorted(Collections.reverseOrder(getDescendingEntryComparator()))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
