@@ -7,6 +7,7 @@ import model.SortBy;
 import model.SortOrder;
 import model.Statistic;
 import org.apache.commons.lang3.StringUtils;
+import service.BookValidator;
 
 import java.text.DecimalFormat;
 import java.util.Comparator;
@@ -17,6 +18,7 @@ import java.util.Set;
 public class PrinterUtils {
 
     private static final DecimalFormat DECIMAL_FORMAT = new DecimalFormat("#.##");
+    private static final String MISSING_DATA = "Books with missing data: %s";
 
     private static final String SEPARATOR_LARGE = StringUtils.repeat("-", 60);
     private static final String SEPARATOR_SMALL = StringUtils.repeat("-", 30);
@@ -65,6 +67,14 @@ public class PrinterUtils {
         System.out.println(statistic.getStringValue() + NEWLINE);
 
         System.out.println(formatDoubleIfNecessary(value));
+
+        System.out.println(SEPARATOR_LARGE);
+    }
+
+    public static void printMissingData(final List<BookValidator.MissingDataResult> missingDataResults) {
+        System.out.println(String.format(MISSING_DATA, missingDataResults.size()) + NEWLINE);
+
+        missingDataResults.forEach(element -> System.out.println(element + NEWLINE + SEPARATOR_SMALL));
 
         System.out.println(SEPARATOR_LARGE);
     }

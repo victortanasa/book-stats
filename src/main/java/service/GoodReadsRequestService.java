@@ -4,14 +4,18 @@ import model.GoodReadsBook;
 import org.springframework.web.reactive.function.client.ClientResponse;
 import org.springframework.web.reactive.function.client.ExchangeStrategies;
 import org.springframework.web.reactive.function.client.WebClient;
+import utils.PrinterUtils;
 
 import java.time.Duration;
 import java.util.List;
 import java.util.Objects;
+import java.util.concurrent.TimeUnit;
 
 public class GoodReadsRequestService {
 
     private static final String COULD_NOT_LOAD_BOOKS_ERROR_MESSAGE = "Could not load books, cannot continue.";
+    private static final String INTERRUPTED_MESSAGE = "Something interrupted!";
+
     private static final int DEFAULT_TIMEOUT_IN_SECONDS = 10;
 
     private static final String GOOD_READS_BASE_URL = "https://www.goodreads.com/";
@@ -56,6 +60,12 @@ public class GoodReadsRequestService {
     }
 
     private String doRequest(final String endpoint) {
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (final InterruptedException e) {
+            PrinterUtils.printSimple(INTERRUPTED_MESSAGE + e.getMessage());
+        }
+
         final ClientResponse clientResponse = webClient.get()
                 .uri(endpoint)
                 .exchange()

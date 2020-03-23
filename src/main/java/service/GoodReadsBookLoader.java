@@ -26,4 +26,14 @@ public class GoodReadsBookLoader {
 //            ]
 
 
+    //TODO: most important!
+    //https://www.goodreads.com/book/show/50.xml?key=aB9VcY1rOGCzxMONqjk8Ug
+    //get original_publication_year and shelves in one call!!
+
+    //TODO: OR research         ISBNdb API
+    //https://openlibrary.org/developers/api
+
+    //TODO: idea - if can't get isbn from edition, try others
+
+
 }

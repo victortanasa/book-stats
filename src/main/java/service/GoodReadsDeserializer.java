@@ -30,7 +30,7 @@ class GoodReadsDeserializer {
                     filter(book -> expectedBookId.equals(getLong(book.getChild("best_book").getChild("id").getValue())))
                     .map(book -> getInteger(book.getChild("original_publication_year").getValue()))
                     .findFirst()
-                    .orElse(-1);
+                    .orElse(null);
         } catch (final Exception e) {
             PrinterUtils.printSimple(String.format(COULD_NOT_GET_ORIGINAL_RELEASE_YEAR_FROM_API_MESSAGE, response, e.getMessage()));
             return null;
@@ -45,7 +45,8 @@ class GoodReadsDeserializer {
             final String bookCount = shelves.stream()
                     .filter(shelve -> "read".equals(shelve.getChild("name").getValue()))
                     .map(shelve -> shelve.getChild("book_count").getValue())
-                    .findFirst().orElse("-456");
+                    .findFirst()
+                    .orElse(null);
 
             return getInteger(bookCount);
         } catch (final Exception e) {
@@ -90,9 +91,9 @@ class GoodReadsDeserializer {
                 .collect(toList());
 
         return new GoodReadsBook(Long.valueOf(id),
-                isbn,
-                title,
-                format,
+                getNullIfBlank(isbn),
+                getNullIfBlank(title),
+                getNullIfBlank(format),
                 getInteger(rating),
                 getInteger(readCount),
                 getInteger(pageNumber),
@@ -104,15 +105,19 @@ class GoodReadsDeserializer {
                 authors);
     }
 
+    private static String getNullIfBlank(final String value) {
+        return StringUtils.isBlank(value) ? null : value;
+    }
+
     private static Integer getInteger(final String value) {
-        return !StringUtils.isBlank(value) ? Integer.parseInt(value) : -123;
+        return !StringUtils.isBlank(value) ? Integer.parseInt(value) : null;
     }
 
     private static Long getLong(final String value) {
-        return !StringUtils.isBlank(value) ? Long.parseLong(value) : -123;
+        return !StringUtils.isBlank(value) ? Long.parseLong(value) : null;
     }
 
     private static Double getDouble(final String value) {
-        return !StringUtils.isBlank(value) ? Double.parseDouble(value) : -123;
+        return !StringUtils.isBlank(value) ? Double.parseDouble(value) : null;
     }
 }
