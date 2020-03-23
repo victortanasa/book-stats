@@ -61,7 +61,15 @@ public class PrinterUtils {
         System.out.println(SEPARATOR_LARGE);
     }
 
-    public static void simplePrint(final String string) {
+    public static void printSingleValueStatistic(final Statistic statistic, final Number value) {
+        System.out.println(statistic.getStringValue() + NEWLINE);
+
+        System.out.println(formatDoubleIfNecessary(value));
+
+        System.out.println(SEPARATOR_LARGE);
+    }
+
+    static void simplePrint(final String string) {
         System.out.println(string);
     }
 

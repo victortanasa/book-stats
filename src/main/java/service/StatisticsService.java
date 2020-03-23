@@ -49,6 +49,8 @@ public class StatisticsService {
         listStatistics.put(LONGEST_BOOKS, this::getLongestBooks);
 
         singleValueStatistics.put(AVERAGE_DAYS_TO_READ_A_BOOK, this::getAverageDaysToReadABook);
+        singleValueStatistics.put(AVERAGE_PAGES_READ_PER_MONTH, this::getAveragePagesReadPerMonth);
+        singleValueStatistics.put(AVERAGE_BOOKS_READ_PER_MONTH, this::getAverageBooksReadPerMonth);
     }
 
     public Map<String, ?> getMapStatistic(final Statistic statistic) {
@@ -117,6 +119,22 @@ public class StatisticsService {
     private Map<String, ?> getAverageDaysToReadABookPerAuthor() {
         return library.stream()
                 .collect(Collectors.groupingBy(Book::getAuthor, Collectors.averagingLong(Book::getDaysReadIn)));
+    }
+
+    //TODO: extract method
+    private Double getAveragePagesReadPerMonth() {
+        return getPagesReadPerMonth().entrySet().stream()
+                .mapToDouble(entry -> Double.valueOf(entry.getValue().toString()))
+                .average()
+                .orElse(-1);
+    }
+
+    //TODO: extract method
+    private Double getAverageBooksReadPerMonth() {
+        return getBooksReadPerMonth().entrySet().stream()
+                .mapToDouble(entry -> Double.valueOf(entry.getValue().toString()))
+                .average()
+                .orElse(-1);
     }
 
     private Double getAverageDaysToReadABook() {

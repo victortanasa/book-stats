@@ -35,9 +35,10 @@ public class BookStats {
         Stream.of(SHORTEST_BOOKS, LONGEST_BOOKS)
                 .forEach(statistic -> PrinterUtils.printListStatistic(statistic, statisticsService.getListStatistic(statistic, 8)));
 
-        //TODO: printer for single value statistic
-        final Number averageDaysToReadABook = statisticsService.getSingeValueStatistic(AVERAGE_DAYS_TO_READ_A_BOOK);
-        PrinterUtils.simplePrint(averageDaysToReadABook.toString());
+        Stream.of(AVERAGE_DAYS_TO_READ_A_BOOK,
+                AVERAGE_PAGES_READ_PER_MONTH,
+                AVERAGE_BOOKS_READ_PER_MONTH)
+                .forEach(statistic -> PrinterUtils.printSingleValueStatistic(statistic, statisticsService.getSingeValueStatistic(statistic)));
     }
 
 }
