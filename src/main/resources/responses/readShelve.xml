@@ -1,0 +1,1644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GoodreadsResponse>
+    <Request>
+        <authentication>true</authentication>
+        <key>
+            <![CDATA[aB9VcY1rOGCzxMONqjk8Ug]]>
+        </key>
+        <method>
+            <![CDATA[review_list]]>
+        </method>
+    </Request>
+    <shelf exclusive='true' id='198105365' name='read' sortable='false'></shelf>
+    <reviews start="1" end="20" total="123">
+        <review>
+            <id>3233353151</id>
+            <book>
+                <id type="integer">33296259</id>
+                <isbn>0316229245</isbn>
+                <isbn13>9780316229241</isbn13>
+                <text_reviews_count type="integer">179</text_reviews_count>
+                <uri>kca://book/amzn1.gr.book.v1.z02V1pZ4dS1_FcX2ZjI0yA</uri>
+                <title>The Stone Sky (The Broken Earth, #3)</title>
+                <title_without_series>The Stone Sky</title_without_series>
+                <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1481596150l/33296259._SX98_.jpg</image_url>
+                <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1481596150l/33296259._SY75_.jpg</small_image_url>
+                <large_image_url/>
+                <link>https://www.goodreads.com/book/show/33296259-the-stone-sky</link>
+                <num_pages>419</num_pages>
+                <format>Paperback</format>
+                <edition_information/>
+                <publisher>Orbit</publisher>
+                <publication_day>15</publication_day>
+                <publication_year>2017</publication_year>
+                <publication_month>8</publication_month>
+                <average_rating>4.35</average_rating>
+                <ratings_count>55892</ratings_count>
+                <description>THIS IS THE WAY THE WORLD ENDS... FOR THE LAST TIME.&lt;br /&gt;&lt;br /&gt;The Moon will soon return. Whether this heralds the destruction of
+                    humankind or something worse will depend on two women.&lt;br /&gt;&lt;br /&gt;Essun has inherited the power of Alabaster Tenring. With it, she hopes to find her
+                    daughter Nassun and forge a world in which every orogene child can grow up safe.&lt;br /&gt;&lt;br /&gt;For Nassun, her mother's mastery of the Obelisk Gate
+                    comes too late. She has seen the evil of the world, and accepted what her mother will not admit: that sometimes what is corrupt cannot be cleansed, only
+                    destroyed.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;The remarkable conclusion to the post-apocalyptic and highly acclaimed trilogy that began with the
+                    multi-award-nominated &lt;i&gt;The Fifth Season.&lt;/i&gt;&lt;/b&gt;
+                </description>
+                <authors>
+                    <author>
+                        <id>2917917</id>
+                        <name>N.K. Jemisin</name>
+                        <role></role>
+                        <image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1438215930p5/2917917.jpg]]>
+                        </image_url>
+                        <small_image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1438215930p2/2917917.jpg]]>
+                        </small_image_url>
+                        <link>
+                            <![CDATA[https://www.goodreads.com/author/show/2917917.N_K_Jemisin]]>
+                        </link>
+                        <average_rating>4.19</average_rating>
+                        <ratings_count>388681</ratings_count>
+                        <text_reviews_count>41946</text_reviews_count>
+                    </author>
+                </authors>
+                <published>2017</published>
+                <work>
+                    <id>52472813</id>
+                    <uri>kca://work/amzn1.gr.work.v1.2BvsOnFnSgv-sNwm1MPZow</uri>
+                </work>
+            </book>
+            <rating>5</rating>
+            <votes>0</votes>
+            <spoiler_flag>false</spoiler_flag>
+            <spoilers_state>none</spoilers_state>
+            <shelves>
+                <shelf name="read" exclusive="true" id="198105365" review_shelf_id=""/>
+            </shelves>
+            <recommended_for></recommended_for>
+            <recommended_by></recommended_by>
+            <started_at>Mon Mar 16 00:00:00 -0700 2020</started_at>
+            <read_at>Sat Mar 21 08:03:56 -0700 2020</read_at>
+            <date_added>Mon Mar 16 09:49:30 -0700 2020</date_added>
+            <date_updated>Sat Mar 21 08:03:56 -0700 2020</date_updated>
+            <read_count>1</read_count>
+            <body>
+            </body>
+            <comments_count>0</comments_count>
+            <url>
+                <![CDATA[https://www.goodreads.com/review/show/3233353151]]>
+            </url>
+            <link>
+                <![CDATA[https://www.goodreads.com/review/show/3233353151]]>
+            </link>
+            <owned>1</owned>
+        </review>
+        <review>
+            <id>3228323906</id>
+            <book>
+                <id type="integer">26228034</id>
+                <isbn nil="true"/>
+                <isbn13 nil="true"/>
+                <text_reviews_count type="integer">4722</text_reviews_count>
+                <uri>kca://book/amzn1.gr.book.v1.dCa9rX8-FxPfDzh8BCztDw</uri>
+                <title>The Obelisk Gate (The Broken Earth, #2)</title>
+                <title_without_series>The Obelisk Gate</title_without_series>
+                <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1578523237l/26228034._SX98_.jpg</image_url>
+                <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1578523237l/26228034._SY75_.jpg</small_image_url>
+                <large_image_url/>
+                <link>https://www.goodreads.com/book/show/26228034-the-obelisk-gate</link>
+                <num_pages>410</num_pages>
+                <format>Paperback</format>
+                <edition_information/>
+                <publisher>Orbit</publisher>
+                <publication_day>18</publication_day>
+                <publication_year>2016</publication_year>
+                <publication_month>8</publication_month>
+                <average_rating>4.32</average_rating>
+                <ratings_count>70619</ratings_count>
+                <description>This is the way the world ends... for the last time.&lt;br /&gt;&lt;br /&gt;The season of endings grows darker as civilization fades into the long cold
+                    night. Alabaster Tenring – madman, world-crusher, savior – has returned with a mission: to train his successor, Essun, and thus seal the fate of the Stillness
+                    forever.&lt;br /&gt;&lt;br /&gt;It continues with a lost daughter, found by the enemy.&lt;br /&gt;&lt;br /&gt;It continues with the obelisks, and an ancient
+                    mystery converging on answers at last.&lt;br /&gt;&lt;br /&gt;The Stillness is the wall which stands against the flow of tradition, the spark of hope long
+                    buried under the thickening ashfall. And it will not be broken.
+                </description>
+                <authors>
+                    <author>
+                        <id>2917917</id>
+                        <name>N.K. Jemisin</name>
+                        <role></role>
+                        <image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1438215930p5/2917917.jpg]]>
+                        </image_url>
+                        <small_image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1438215930p2/2917917.jpg]]>
+                        </small_image_url>
+                        <link>
+                            <![CDATA[https://www.goodreads.com/author/show/2917917.N_K_Jemisin]]>
+                        </link>
+                        <average_rating>4.19</average_rating>
+                        <ratings_count>388681</ratings_count>
+                        <text_reviews_count>41946</text_reviews_count>
+                    </author>
+                </authors>
+                <published>2016</published>
+                <work>
+                    <id>46213537</id>
+                    <uri>kca://work/amzn1.gr.work.v1.mW0Yorx_cH7zazy9-ANxrA</uri>
+                </work>
+            </book>
+            <rating>4</rating>
+            <votes>0</votes>
+            <spoiler_flag>false</spoiler_flag>
+            <spoilers_state>none</spoilers_state>
+            <shelves>
+                <shelf name="read" exclusive="true" id="198105365" review_shelf_id=""/>
+            </shelves>
+            <recommended_for></recommended_for>
+            <recommended_by></recommended_by>
+            <started_at>Thu Mar 12 00:00:00 -0700 2020</started_at>
+            <read_at>Mon Mar 16 00:00:00 -0700 2020</read_at>
+            <date_added>Thu Mar 12 10:58:57 -0700 2020</date_added>
+            <date_updated>Sat Mar 21 02:20:58 -0700 2020</date_updated>
+            <read_count>1</read_count>
+            <body>
+            </body>
+            <comments_count>0</comments_count>
+            <url>
+                <![CDATA[https://www.goodreads.com/review/show/3228323906]]>
+            </url>
+            <link>
+                <![CDATA[https://www.goodreads.com/review/show/3228323906]]>
+            </link>
+            <owned>1</owned>
+        </review>
+        <review>
+            <id>3224633935</id>
+            <book>
+                <id type="integer">16032905</id>
+                <isbn>0006546064</isbn>
+                <isbn13>9780006546061</isbn13>
+                <text_reviews_count type="integer">207</text_reviews_count>
+                <uri>kca://book/amzn1.gr.book.v1.i8dUn-xIE3QAggnWH45z8A</uri>
+                <title>Fahrenheit 451</title>
+                <title_without_series>Fahrenheit 451</title_without_series>
+                <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1545295746l/16032905._SX98_.jpg</image_url>
+                <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1545295746l/16032905._SY75_.jpg</small_image_url>
+                <large_image_url/>
+                <link>https://www.goodreads.com/book/show/16032905-fahrenheit-451</link>
+                <num_pages>227</num_pages>
+                <format>Paperback</format>
+                <edition_information/>
+                <publisher>HarperVoyager</publisher>
+                <publication_day>4</publication_day>
+                <publication_year>2008</publication_year>
+                <publication_month>8</publication_month>
+                <average_rating>3.99</average_rating>
+                <ratings_count>1553692</ratings_count>
+                <description>&lt;i&gt;Alternate covers for this ISBN can be found &lt;a href="https://www.goodreads.com/book/show/160014.Fahrenheit_451" rel="nofollow"&gt;here&lt;/a&gt;
+                    and &lt;a href="https://www.goodreads.com/book/show/13451770-fahrenheit-451" rel="nofollow"&gt;here&lt;/a&gt;&lt;/i&gt;&lt;br /&gt;&lt;br /&gt;&lt;b&gt; THE
+                    TERRIFYING PROPHETIC NOVEL OF A POST-LITERATURE FUTURE...&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;Guy Montag is a fireman. His job is to destroy the most illegal of
+                    commodities, the source of all discord and unhappiness: the printed book. &lt;br /&gt;&lt;br /&gt;Montag never questions the destruction or his own bland life,
+                    until he is shown a past where people didn’t live in fear and a present where one sees the world through the ideas in books instead of the mindless chatter of
+                    television.&lt;br /&gt;&lt;br /&gt;Montag begins to question everything he has ever known and starts hiding books in his home, and when his pilfering is
+                    discovered, the fireman has to run for his life.&lt;br /&gt;&lt;br /&gt;The classic novel of a post-literate future, Fahrenheit 451 stands alongside Orwell's
+                    1984 and Huxley's Brave New World as prophetic account of Western civilization's enslavement by the media, drugs and conformity.&lt;br /&gt;&lt;br /&gt;Bradbury's
+                    powerful and poetic prose combines with uncanny insight into the potential of technology to create a classic of twentieth-century literature which over fifty
+                    years from first publication, still has the power to dazzle and shock.
+                </description>
+                <authors>
+                    <author>
+                        <id>1630</id>
+                        <name>Ray Bradbury</name>
+                        <role></role>
+                        <image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1445955959p5/1630.jpg]]>
+                        </image_url>
+                        <small_image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1445955959p2/1630.jpg]]>
+                        </small_image_url>
+                        <link>
+                            <![CDATA[https://www.goodreads.com/author/show/1630.Ray_Bradbury]]>
+                        </link>
+                        <average_rating>4.01</average_rating>
+                        <ratings_count>2221560</ratings_count>
+                        <text_reviews_count>85369</text_reviews_count>
+                    </author>
+                </authors>
+                <published>2008</published>
+                <work>
+                    <id>1272463</id>
+                    <uri>kca://work/amzn1.gr.work.v1.Gc35TQN16pcDHysc-gwWBg</uri>
+                </work>
+            </book>
+            <rating>4</rating>
+            <votes>0</votes>
+            <spoiler_flag>false</spoiler_flag>
+            <spoilers_state>none</spoilers_state>
+            <shelves>
+                <shelf name="read" exclusive="true" id="198105365" review_shelf_id=""/>
+            </shelves>
+            <recommended_for></recommended_for>
+            <recommended_by></recommended_by>
+            <started_at>Mon Mar 09 00:00:00 -0700 2020</started_at>
+            <read_at>Wed Mar 11 00:00:00 -0700 2020</read_at>
+            <date_added>Mon Mar 09 14:01:47 -0700 2020</date_added>
+            <date_updated>Thu Mar 12 00:21:15 -0700 2020</date_updated>
+            <read_count>1</read_count>
+            <body>
+                <![CDATA[I'm torn between a 3* and a 4* rating. While the novel packs a punch idea-wise, reading enjoyment is not that high.]]>
+
+            </body>
+            <comments_count>0</comments_count>
+            <url>
+                <![CDATA[https://www.goodreads.com/review/show/3224633935]]>
+            </url>
+            <link>
+                <![CDATA[https://www.goodreads.com/review/show/3224633935]]>
+            </link>
+            <owned>1</owned>
+        </review>
+        <review>
+            <id>3220323294</id>
+            <book>
+                <id type="integer">44280099</id>
+                <isbn>1857987632</isbn>
+                <isbn13>9781857987638</isbn13>
+                <text_reviews_count type="integer">10</text_reviews_count>
+                <uri>kca://book/amzn1.gr.book.v1.ydEztASmcKaOrpkqTQTAKg</uri>
+                <title>The City and the Stars</title>
+                <title_without_series>The City and the Stars</title_without_series>
+                <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1551771499l/44280099._SX98_.jpg</image_url>
+                <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1551771499l/44280099._SY75_.jpg</small_image_url>
+                <large_image_url/>
+                <link>https://www.goodreads.com/book/show/44280099-the-city-and-the-stars</link>
+                <num_pages>256</num_pages>
+                <format>Paperback</format>
+                <edition_information>SF Masterworks</edition_information>
+                <publisher>Gollancz</publisher>
+                <publication_day>8</publication_day>
+                <publication_year>2001</publication_year>
+                <publication_month>3</publication_month>
+                <average_rating>4.09</average_rating>
+                <ratings_count>26273</ratings_count>
+                <description>Clarke's masterful evocation of the far future of humanity, considered his finest novel.&lt;br /&gt;&lt;br /&gt;Men had built cities before, but never
+                    such a city as Diaspar. For millennia its protective dome shut out the creeping decay and danger of the world outside. Once, it held powers that rule the stars.&lt;br
+                    /&gt;&lt;br /&gt;But then, as legend has it, the invaders came, driving humanity into this last refuge. It takes one man, a Unique, to break through Diaspar's
+                    stifling inertia, to smash the legend and discover the true nature of the Invaders.
+                </description>
+                <authors>
+                    <author>
+                        <id>7779</id>
+                        <name>Arthur C. Clarke</name>
+                        <role></role>
+                        <image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1357191481p5/7779.jpg]]>
+                        </image_url>
+                        <small_image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1357191481p2/7779.jpg]]>
+                        </small_image_url>
+                        <link>
+                            <![CDATA[https://www.goodreads.com/author/show/7779.Arthur_C_Clarke]]>
+                        </link>
+                        <average_rating>3.97</average_rating>
+                        <ratings_count>1037252</ratings_count>
+                        <text_reviews_count>32127</text_reviews_count>
+                    </author>
+                </authors>
+                <published>2001</published>
+                <work>
+                    <id>925052</id>
+                    <uri>kca://work/amzn1.gr.work.v1.ed75xIckxMStnSzTMCRTZw</uri>
+                </work>
+            </book>
+            <rating>5</rating>
+            <votes>0</votes>
+            <spoiler_flag>false</spoiler_flag>
+            <spoilers_state>none</spoilers_state>
+            <shelves>
+                <shelf name="read" exclusive="true" id="198105365" review_shelf_id=""/>
+            </shelves>
+            <recommended_for></recommended_for>
+            <recommended_by></recommended_by>
+            <started_at>Fri Mar 06 00:00:00 -0800 2020</started_at>
+            <read_at>Mon Mar 09 09:43:52 -0700 2020</read_at>
+            <date_added>Fri Mar 06 08:46:15 -0800 2020</date_added>
+            <date_updated>Mon Mar 09 09:43:52 -0700 2020</date_updated>
+            <read_count>1</read_count>
+            <body>
+                <![CDATA[<i>The City and the Stars</i> is a classic 50's Sci-Fi novel, with a very interesting premise - the last humans on Earth have isolated themselves in a great city and are afraid of leaving it. The book tackles many themes and ideas, has a likable if not very developed main character and is surprisingly not dated. Clarke's clear and concise language was like a breath of fresh air.<br /><br />The pace slackens a bit in the middle but overall it was a great read.]]>
+
+            </body>
+            <comments_count>0</comments_count>
+            <url>
+                <![CDATA[https://www.goodreads.com/review/show/3220323294]]>
+            </url>
+            <link>
+                <![CDATA[https://www.goodreads.com/review/show/3220323294]]>
+            </link>
+            <owned>1</owned>
+        </review>
+        <review>
+            <id>3209278277</id>
+            <book>
+                <id type="integer">50236218</id>
+                <isbn>0356508196</isbn>
+                <isbn13>9780356508191</isbn13>
+                <text_reviews_count type="integer">8</text_reviews_count>
+                <uri>kca://book/amzn1.gr.book.v3.OkzuQT2kCmWns785</uri>
+                <title>The Fifth Season (The Broken Earth, #1)</title>
+                <title_without_series>The Fifth Season</title_without_series>
+                <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1578833632l/50236218._SX98_.jpg</image_url>
+                <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1578833632l/50236218._SY75_.jpg</small_image_url>
+                <large_image_url/>
+                <link>https://www.goodreads.com/book/show/50236218-the-fifth-season</link>
+                <num_pages>512</num_pages>
+                <format>Paperback</format>
+                <edition_information/>
+                <publisher>Orbit</publisher>
+                <publication_day/>
+                <publication_year>2020</publication_year>
+                <publication_month>1</publication_month>
+                <average_rating>4.30</average_rating>
+                <ratings_count>116040</ratings_count>
+                <description>&lt;b&gt;This is the way the world ends... for the last time.&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;It starts with the great red rift across the heart of
+                    the world's sole continent, spewing ash that blots out the sun. &lt;br /&gt;&lt;br /&gt;It starts with death, with a murdered son and a missing daughter. &lt;br
+                    /&gt;&lt;br /&gt;It starts with betrayal, and long dormant wounds rising up to fester. &lt;br /&gt;&lt;br /&gt;This is the Stillness, a land long familiar with
+                    catastrophe, where the power of the earth is wielded as a weapon. And where there is no mercy.
+                </description>
+                <authors>
+                    <author>
+                        <id>2917917</id>
+                        <name>N.K. Jemisin</name>
+                        <role></role>
+                        <image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1438215930p5/2917917.jpg]]>
+                        </image_url>
+                        <small_image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1438215930p2/2917917.jpg]]>
+                        </small_image_url>
+                        <link>
+                            <![CDATA[https://www.goodreads.com/author/show/2917917.N_K_Jemisin]]>
+                        </link>
+                        <average_rating>4.19</average_rating>
+                        <ratings_count>388681</ratings_count>
+                        <text_reviews_count>41946</text_reviews_count>
+                    </author>
+                </authors>
+                <published>2020</published>
+                <work>
+                    <id>26115977</id>
+                    <uri>kca://work/amzn1.gr.work.v1.yRAVQ2GlHsed_JXBqiZfkg</uri>
+                </work>
+            </book>
+            <rating>5</rating>
+            <votes>3</votes>
+            <spoiler_flag>false</spoiler_flag>
+            <spoilers_state>none</spoilers_state>
+            <shelves>
+                <shelf name="read" exclusive="true" id="198105365" review_shelf_id=""/>
+            </shelves>
+            <recommended_for></recommended_for>
+            <recommended_by></recommended_by>
+            <started_at>Thu Feb 27 00:00:00 -0800 2020</started_at>
+            <read_at>Sat Feb 29 00:00:00 -0800 2020</read_at>
+            <date_added>Thu Feb 27 09:38:54 -0800 2020</date_added>
+            <date_updated>Sun Mar 01 05:39:47 -0800 2020</date_updated>
+            <read_count>1</read_count>
+            <body>
+                <![CDATA[I only bought the first book in the series. I regret this decision.]]>
+
+            </body>
+            <comments_count>0</comments_count>
+            <url>
+                <![CDATA[https://www.goodreads.com/review/show/3209278277]]>
+            </url>
+            <link>
+                <![CDATA[https://www.goodreads.com/review/show/3209278277]]>
+            </link>
+            <owned>1</owned>
+        </review>
+        <review>
+            <id>3186490519</id>
+            <book>
+                <id type="integer">34496163</id>
+                <isbn>1847496768</isbn>
+                <isbn13>9781847496768</isbn13>
+                <text_reviews_count type="integer">9</text_reviews_count>
+                <uri>kca://book/amzn1.gr.book.v1.sYfu96SLpJxrXMkCBOIT9g</uri>
+                <title>We</title>
+                <title_without_series>We</title_without_series>
+                <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1488835234l/34496163._SX98_.jpg</image_url>
+                <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1488835234l/34496163._SY75_.jpg</small_image_url>
+                <large_image_url/>
+                <link>https://www.goodreads.com/book/show/34496163-we</link>
+                <num_pages>233</num_pages>
+                <format>Paperback</format>
+                <edition_information/>
+                <publisher>Alma Books</publisher>
+                <publication_day>23</publication_day>
+                <publication_year>2017</publication_year>
+                <publication_month>11</publication_month>
+                <average_rating>3.94</average_rating>
+                <ratings_count>62896</ratings_count>
+                <description>&lt;em&gt;We&lt;/em&gt; takes place in a distant future, where humans are forced to submit their wills to the requirements of the state, under the rule
+                    of the all-powerful Benefactor, and dreams are regarded as a sign of mental illness. In a city of straight lines, protected by green walls and a glass dome, a
+                    spaceship is being built in order to spearhead the conquest of new planets. Its chief engineer, a man called D-503, keeps a journal of his life and activities:
+                    to his mathematical mind everything seems to make sense and proceed as it should, until a chance encounter with a woman threatens to shatter the very
+                    foundations of the world he lives in.&lt;br /&gt;&lt;br /&gt;Written in a highly charged, direct and concise style, Zamyatin’s 1921 seminal novel – here
+                    presented in Hugh Aplin’s crisp translation – is not only an indictment of the Soviet Russia of his time and a precursor of the works of Orwell and the
+                    dystopian genre, but also a prefiguration of much of twentieth-century history and a harbinger of the ominous future that may still lay ahead of us.
+                </description>
+                <authors>
+                    <author>
+                        <id>43298</id>
+                        <name>Yevgeny Zamyatin</name>
+                        <role>Translation</role>
+                        <image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1330778824p5/43298.jpg]]>
+                        </image_url>
+                        <small_image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1330778824p2/43298.jpg]]>
+                        </small_image_url>
+                        <link>
+                            <![CDATA[https://www.goodreads.com/author/show/43298.Yevgeny_Zamyatin]]>
+                        </link>
+                        <average_rating>3.94</average_rating>
+                        <ratings_count>64661</ratings_count>
+                        <text_reviews_count>4283</text_reviews_count>
+                    </author>
+                </authors>
+                <published>2017</published>
+                <work>
+                    <id>2144026</id>
+                    <uri>kca://work/amzn1.gr.work.v1.uwlOzG7Bx8a_ZujQjKDz_w</uri>
+                </work>
+            </book>
+            <rating>4</rating>
+            <votes>1</votes>
+            <spoiler_flag>false</spoiler_flag>
+            <spoilers_state>none</spoilers_state>
+            <shelves>
+                <shelf name="read" exclusive="true" id="198105365" review_shelf_id=""/>
+            </shelves>
+            <recommended_for></recommended_for>
+            <recommended_by></recommended_by>
+            <started_at>Tue Feb 11 13:01:57 -0800 2020</started_at>
+            <read_at>Fri Feb 14 09:33:00 -0800 2020</read_at>
+            <date_added>Tue Feb 11 13:01:57 -0800 2020</date_added>
+            <date_updated>Fri Feb 14 06:11:02 -0800 2020</date_updated>
+            <read_count>1</read_count>
+            <body>
+                <![CDATA[Surprisingly modern for a book written in 1921. Told as a series of journal entries written by a mathematician, <i>We</i> follows Delta-503's life after a chance encounter with a woman that threatens to shatter the very foundations of the world he lives in (the blurb says it best).<br /><br />There are a lot of ideas and themes, brilliantly executed here, that will later resurface in other dystopian works. I expected to be a bit bored with the obvious freedom is good and "unfreedom" is bad parts, but they were done in a unique way, so no complaints there.<br /><br />The prose, though, was not my favourite ever. It can be incoherent; there's plenty of sawed-off sentences and dialogue that leaves the reader wondering just what the hell is going on. I get and appreciate that the style perfectly reflects the main character's turmoil and confused thoughts, but that doesn't make it a joy or easy to read.<br /><br />Also, fantastic cover art.]]>
+
+            </body>
+            <comments_count>0</comments_count>
+            <url>
+                <![CDATA[https://www.goodreads.com/review/show/3186490519]]>
+            </url>
+            <link>
+                <![CDATA[https://www.goodreads.com/review/show/3186490519]]>
+            </link>
+            <owned>1</owned>
+        </review>
+        <review>
+            <id>3183516233</id>
+            <book>
+                <id type="integer">16181585</id>
+                <isbn>0575134291</isbn>
+                <isbn13>9780575134294</isbn13>
+                <text_reviews_count type="integer">34</text_reviews_count>
+                <uri>kca://book/amzn1.gr.book.v1.IdVqisFKCZK0t2hxHl2qrA</uri>
+                <title>Redshirts</title>
+                <title_without_series>Redshirts</title_without_series>
+                <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1354284007l/16181585._SX98_.jpg</image_url>
+                <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1354284007l/16181585._SY75_.jpg</small_image_url>
+                <large_image_url/>
+                <link>https://www.goodreads.com/book/show/16181585-redshirts</link>
+                <num_pages>306</num_pages>
+                <format>Paperback</format>
+                <edition_information/>
+                <publisher>Gollancz</publisher>
+                <publication_day>14</publication_day>
+                <publication_year>2012</publication_year>
+                <publication_month>11</publication_month>
+                <average_rating>3.85</average_rating>
+                <ratings_count>81399</ratings_count>
+                <description>Ensign Andrew Dahl has just been assigned to the Universal Union Capital Ship &lt;i&gt;Intrepid&lt;/i&gt;, flagship of the Universal Union since the
+                    year 2456. It’s a prestige posting, and Andrew is thrilled all the more to be assigned to the ship’s Xenobiology laboratory.&lt;br /&gt;&lt;br /&gt;Life
+                    couldn’t be better…until Andrew begins to pick up on the fact that: &lt;br /&gt;(1) every Away Mission involves some kind of lethal confrontation with alien
+                    forces &lt;br /&gt;(2) the ship’s captain, its chief science officer, and the handsome Lieutenant Kerensky always survive these confrontations &lt;br /&gt;(3)
+                    at least one low-ranked crew member is, sadly, always killed.&lt;br /&gt;&lt;br /&gt;Not surprisingly, a great deal of energy below decks is expended on
+                    avoiding, at all costs, being assigned to an Away Mission. Then Andrew stumbles on information that completely transforms his and his colleagues’ understanding
+                    of what the starship &lt;i&gt;Intrepid&lt;/i&gt; really is…and offers them a crazy, high-risk chance to save their own lives.
+                </description>
+                <authors>
+                    <author>
+                        <id>4763</id>
+                        <name>John Scalzi</name>
+                        <role></role>
+                        <image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1562613145p5/4763.jpg]]>
+                        </image_url>
+                        <small_image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1562613145p2/4763.jpg]]>
+                        </small_image_url>
+                        <link>
+                            <![CDATA[https://www.goodreads.com/author/show/4763.John_Scalzi]]>
+                        </link>
+                        <average_rating>4.03</average_rating>
+                        <ratings_count>693576</ratings_count>
+                        <text_reviews_count>55817</text_reviews_count>
+                    </author>
+                </authors>
+                <published>2012</published>
+                <work>
+                    <id>18130445</id>
+                    <uri>kca://work/amzn1.gr.work.v1.1NXlUf-xSeQjrIZfZBH1gg</uri>
+                </work>
+            </book>
+            <rating>4</rating>
+            <votes>0</votes>
+            <spoiler_flag>false</spoiler_flag>
+            <spoilers_state>none</spoilers_state>
+            <shelves>
+                <shelf name="read" exclusive="true" id="198105365" review_shelf_id=""/>
+            </shelves>
+            <recommended_for></recommended_for>
+            <recommended_by></recommended_by>
+            <started_at>Sun Feb 09 13:41:45 -0800 2020</started_at>
+            <read_at>Tue Feb 11 09:16:57 -0800 2020</read_at>
+            <date_added>Sun Feb 09 13:41:44 -0800 2020</date_added>
+            <date_updated>Tue Feb 11 09:16:57 -0800 2020</date_updated>
+            <read_count>1</read_count>
+            <body>
+                <![CDATA[So meta.<br /><br />I expected to find a plot that's OK at best, sprinkled with jokes about expendable crew members. While Scalzi certainly delivers in the humor department, he also crafts a cool and imaginative story, with a very likable central cast of characters. Animatedly, you don't get to know a great deal about them, but I think that factors in with the tropes the author is playing with. <br /><br />But it's not just play. Besides making fun of said tropes, like needlessly killing off characters (before the commercial brake, for MAXIMUM DRAMATIC EFFECT), illogical plotlines and plot armor, there's emotion and even a message in there. <i>Redshirts</i> is the richer for it.<br /><br />The codas I could happily ignore, as I was very satisfied where and how the story ended; they're completely different in tone to the rest of the book and unnecessary in my opinion.]]>
+
+            </body>
+            <comments_count>0</comments_count>
+            <url>
+                <![CDATA[https://www.goodreads.com/review/show/3183516233]]>
+            </url>
+            <link>
+                <![CDATA[https://www.goodreads.com/review/show/3183516233]]>
+            </link>
+            <owned>1</owned>
+        </review>
+        <review>
+            <id>3176132138</id>
+            <book>
+                <id type="integer">41045102</id>
+                <isbn>1408890046</isbn>
+                <isbn13>9781408890042</isbn13>
+                <text_reviews_count type="integer">474</text_reviews_count>
+                <uri>kca://book/amzn1.gr.book.v1.ys745i7YODeiqtfwA98ZEQ</uri>
+                <title>Circe</title>
+                <title_without_series>Circe</title_without_series>
+                <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1558525179l/41045102._SX98_.jpg</image_url>
+                <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1558525179l/41045102._SY75_.jpg</small_image_url>
+                <large_image_url/>
+                <link>https://www.goodreads.com/book/show/41045102-circe</link>
+                <num_pages>333</num_pages>
+                <format>Paperback</format>
+                <edition_information/>
+                <publisher></publisher>
+                <publication_day></publication_day>
+                <publication_year></publication_year>
+                <publication_month></publication_month>
+                <average_rating>4.28</average_rating>
+                <ratings_count>244372</ratings_count>
+                <description>In the house of Helios, god of the sun and mightiest of the Titans, a daughter is born. But Circe has neither the look nor the voice of divinity, and
+                    is scorned and rejected by her kin. Increasingly isolated, she turns to mortals for companionship, leading her to discover a power forbidden to the gods:
+                    witchcraft.&lt;br /&gt;&lt;br /&gt;When love drives Circe to cast a dark spell, wrathful Zeus banishes her to the remote island of Aiaia. There she learns to
+                    harness her occult craft, drawing strength from nature. But she will not always be alone; many are destined to pass through Circe's place of exile, entwining
+                    their fates with hers. The messenger god, Hermes. The craftsman, Daedalus. A ship bearing a golden fleece. And wily Odysseus, on his epic voyage home.&lt;br /&gt;&lt;br
+                    /&gt;There is danger for a solitary woman in this world, and Circe's independence draws the wrath of men and gods alike. To protect what she holds dear, Circe
+                    must decide whether she belongs with the deities she is born from, or the mortals she has come to love.
+                </description>
+                <authors>
+                    <author>
+                        <id>176372</id>
+                        <name>Madeline Miller</name>
+                        <role></role>
+                        <image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1322861610p5/176372.jpg]]>
+                        </image_url>
+                        <small_image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1322861610p2/176372.jpg]]>
+                        </small_image_url>
+                        <link>
+                            <![CDATA[https://www.goodreads.com/author/show/176372.Madeline_Miller]]>
+                        </link>
+                        <average_rating>4.30</average_rating>
+                        <ratings_count>423943</ratings_count>
+                        <text_reviews_count>52026</text_reviews_count>
+                    </author>
+                </authors>
+                <published></published>
+                <work>
+                    <id>53043399</id>
+                    <uri>kca://work/amzn1.gr.work.v1.KKKqx7sCYz6i4_SKwxjVoA</uri>
+                </work>
+            </book>
+            <rating>5</rating>
+            <votes>2</votes>
+            <spoiler_flag>false</spoiler_flag>
+            <spoilers_state>none</spoilers_state>
+            <shelves>
+                <shelf name="read" exclusive="true" id="198105365" review_shelf_id=""/>
+                <shelf exclusive='false' id='301447988' name='favorites' review_shelf_id='2823824599' sortable='false'></shelf>
+            </shelves>
+            <recommended_for></recommended_for>
+            <recommended_by></recommended_by>
+            <started_at>Tue Feb 04 13:03:26 -0800 2020</started_at>
+            <read_at>Sat Feb 08 07:28:26 -0800 2020</read_at>
+            <date_added>Tue Feb 04 13:03:25 -0800 2020</date_added>
+            <date_updated>Sat Feb 08 03:31:55 -0800 2020</date_updated>
+            <read_count>1</read_count>
+            <body>
+                <![CDATA[Absolutely beautiful, I was hooked from the first page.<br /><br />Following Circe's journey was a treat, her struggles being surprisingly relatable and modern. I loved how she crossed paths with other figures from mythology, be they mere mortals, heroes or gods. <br /><br />The way the story balances Circe's more intimate surroundings and actions with the complicated, cruel and punishing world of the gods was really well done - she is constrained by the latter and must always take into account the consequences of her decisions; although she does this, there are quite a few missteps along the way. But it's only more satisfying when she gets it right.<br /><br />This was an absolute joy to read, and it opened my appetite for more. I can't wait to get my hands on Miller's <i>The Song of Achilles</i> as well as Dan Simmon's<i>Ilium</i> and<i>Olympos</i>.]]>
+
+            </body>
+            <comments_count>0</comments_count>
+            <url>
+                <![CDATA[https://www.goodreads.com/review/show/3176132138]]>
+            </url>
+            <link>
+                <![CDATA[https://www.goodreads.com/review/show/3176132138]]>
+            </link>
+            <owned>1</owned>
+        </review>
+        <review>
+            <id>3137685854</id>
+            <book>
+                <id type="integer">43358993</id>
+                <isbn nil="true"/>
+                <isbn13>9781509868612</isbn13>
+                <text_reviews_count type="integer">0</text_reviews_count>
+                <uri>kca://book/amzn1.gr.book.v1.a6U2Nqfzu0idMuuSrC2wRA</uri>
+                <title>The Neutronium Alchemist</title>
+                <title_without_series>The Neutronium Alchemist</title_without_series>
+                <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>
+                <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>
+                <large_image_url/>
+                <link>https://www.goodreads.com/book/show/43358993-the-neutronium-alchemist</link>
+                <num_pages></num_pages>
+                <format></format>
+                <edition_information/>
+                <publisher></publisher>
+                <publication_day></publication_day>
+                <publication_year></publication_year>
+                <publication_month></publication_month>
+                <average_rating>4.26</average_rating>
+                <ratings_count>16897</ratings_count>
+                <description>The ancient menace has finally escaped from Lalonde, shattering the Confederation's peaceful existence. Those who succumbed to it have acquired godlike
+                    powers, but now follow a far from divine gospel as they advance inexorably from world to world.&lt;br /&gt;&lt;br /&gt;On planets and asteroids, individuals
+                    battle for survival against the strange and brutal forces unleashed upon the universe. Governments teeter on the brink of anarchy, the Conferderation Navy is
+                    dangerously over-stretched, and a dark messiah prepares to invoke his own version of the final Night.&lt;br /&gt;&lt;br /&gt;In such desperate times the last
+                    thing the galaxy needs is a new and terrifyingly powerful weapon. Yet Dr Alkad Mzu is determined to retrieve the Alchemist - so she can complete her thirty-year
+                    vendetta to slay a star. Which means Joshua Calvert has to find Dr. Mzu and bring her back before the alchemist can be reactivated.&lt;br /&gt;&lt;br /&gt;But
+                    he's not alone in the chase, and there are people on both sides who have their own ideas about how to use the ultimate doomsday device.
+                </description>
+                <authors>
+                    <author>
+                        <id>25375</id>
+                        <name>Peter F. Hamilton</name>
+                        <role></role>
+                        <image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1235123752p5/25375.jpg]]>
+                        </image_url>
+                        <small_image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1235123752p2/25375.jpg]]>
+                        </small_image_url>
+                        <link>
+                            <![CDATA[https://www.goodreads.com/author/show/25375.Peter_F_Hamilton]]>
+                        </link>
+                        <average_rating>4.19</average_rating>
+                        <ratings_count>310622</ratings_count>
+                        <text_reviews_count>12319</text_reviews_count>
+                    </author>
+                </authors>
+                <published></published>
+                <work>
+                    <id>6519560</id>
+                    <uri>kca://work/amzn1.gr.work.v1.CwUcQG58BXsTldkfjBQuKg</uri>
+                </work>
+            </book>
+            <rating>5</rating>
+            <votes>0</votes>
+            <spoiler_flag>false</spoiler_flag>
+            <spoilers_state>none</spoilers_state>
+            <shelves>
+                <shelf name="read" exclusive="true" id="198105365" review_shelf_id=""/>
+            </shelves>
+            <recommended_for></recommended_for>
+            <recommended_by></recommended_by>
+            <started_at>Sun Jan 12 04:23:56 -0800 2020</started_at>
+            <read_at>Fri Jan 24 04:08:19 -0800 2020</read_at>
+            <date_added>Sun Jan 12 04:23:55 -0800 2020</date_added>
+            <date_updated>Fri Jan 24 04:08:19 -0800 2020</date_updated>
+            <read_count>1</read_count>
+            <body>
+            </body>
+            <comments_count>0</comments_count>
+            <url>
+                <![CDATA[https://www.goodreads.com/review/show/3137685854]]>
+            </url>
+            <link>
+                <![CDATA[https://www.goodreads.com/review/show/3137685854]]>
+            </link>
+            <owned>1</owned>
+        </review>
+        <review>
+            <id>3106637317</id>
+            <book>
+                <id type="integer">41480895</id>
+                <isbn>1509868607</isbn>
+                <isbn13>9781509868605</isbn13>
+                <text_reviews_count type="integer">3</text_reviews_count>
+                <uri>kca://book/amzn1.gr.book.v1.mcWZr3Z1-Am_OBTsMy971Q</uri>
+                <title>The Reality Dysfunction</title>
+                <title_without_series>The Reality Dysfunction</title_without_series>
+                <image_url>https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png</image_url>
+                <small_image_url>https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png</small_image_url>
+                <large_image_url/>
+                <link>https://www.goodreads.com/book/show/41480895-the-reality-dysfunction</link>
+                <num_pages></num_pages>
+                <format></format>
+                <edition_information/>
+                <publisher></publisher>
+                <publication_day></publication_day>
+                <publication_year></publication_year>
+                <publication_month></publication_month>
+                <average_rating>4.13</average_rating>
+                <ratings_count>30125</ratings_count>
+                <description>In AD 2600, the human race is finally beginning to realize its full potential. Hundreds of colonized planets scattered across the galaxy host a
+                    multitude of prosperous and wildly diverse cultures. Genetic engineering has pushed evolution far beyond nature's boundaries, defeating disease and producing
+                    extraordinary spaceborn creatures. Huge fleets of sentient trader starships thrive on the wealth created by the industrialization of entire star systems. And
+                    throughout inhabited space the Confederation Navy keeps the peace. A true golden age is within our grasp. But now something has gone catastrophically wrong. On
+                    a primitive colony planet a renegade criminal's chance encounter with an utterly alien entity unleashes the most primal of all our fears. An extinct race, which
+                    inhabited the galaxy aeons ago called it
+                </description>
+                <authors>
+                    <author>
+                        <id>25375</id>
+                        <name>Peter F. Hamilton</name>
+                        <role></role>
+                        <image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1235123752p5/25375.jpg]]>
+                        </image_url>
+                        <small_image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1235123752p2/25375.jpg]]>
+                        </small_image_url>
+                        <link>
+                            <![CDATA[https://www.goodreads.com/author/show/25375.Peter_F_Hamilton]]>
+                        </link>
+                        <average_rating>4.19</average_rating>
+                        <ratings_count>310622</ratings_count>
+                        <text_reviews_count>12319</text_reviews_count>
+                    </author>
+                </authors>
+                <published></published>
+                <work>
+                    <id>747250</id>
+                    <uri>kca://work/amzn1.gr.work.v1.WMQPVlfbp2tudGVX_kfjTA</uri>
+                </work>
+            </book>
+            <rating>5</rating>
+            <votes>0</votes>
+            <spoiler_flag>false</spoiler_flag>
+            <spoilers_state>none</spoilers_state>
+            <shelves>
+                <shelf name="read" exclusive="true" id="198105365" review_shelf_id=""/>
+            </shelves>
+            <recommended_for></recommended_for>
+            <recommended_by></recommended_by>
+            <started_at>Sun Dec 29 08:32:10 -0800 2019</started_at>
+            <read_at>Sun Jan 12 04:21:12 -0800 2020</read_at>
+            <date_added>Sun Dec 29 08:32:09 -0800 2019</date_added>
+            <date_updated>Sun Jan 12 04:21:12 -0800 2020</date_updated>
+            <read_count>1</read_count>
+            <body>
+                <![CDATA[Disclaimer: I'm a sucker for Hamilton's door-stoppers, so it's easier for me to gloss over their faults.<br /><br />As was the case with the Commonwealth series and Great North Road, I thoroughly enjoyed the author's strengths: fascinating world-building, thrilling action and a huge cast of mostly interesting characters to follow (there's no list for this one, so taking notes proved very useful).<br /><br />One thing has me worried though, and it's the baddies. They started out firmly in the Sci-Fi realm and then went into Fantasy or something of the like. I'm really curios where it all leads to, and I hope the sequels will provide an answer that I'll like :)<br /><br />Overall, a great start to the series. Only about 2400 pages to go...]]>
+
+            </body>
+            <comments_count>0</comments_count>
+            <url>
+                <![CDATA[https://www.goodreads.com/review/show/3106637317]]>
+            </url>
+            <link>
+                <![CDATA[https://www.goodreads.com/review/show/3106637317]]>
+            </link>
+            <owned>1</owned>
+        </review>
+        <review>
+            <id>3096447852</id>
+            <book>
+                <id type="integer">2599432</id>
+                <isbn>0575083115</isbn>
+                <isbn13>9780575083110</isbn13>
+                <text_reviews_count type="integer">26</text_reviews_count>
+                <uri>kca://book/amzn1.gr.book.v1.g1znzth9T5I8b9WeeHY3Og</uri>
+                <title>Pushing Ice</title>
+                <title_without_series>Pushing Ice</title_without_series>
+                <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1421012552l/2599432._SX98_.jpg</image_url>
+                <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1421012552l/2599432._SY75_.jpg</small_image_url>
+                <large_image_url/>
+                <link>https://www.goodreads.com/book/show/2599432-pushing-ice</link>
+                <num_pages>517</num_pages>
+                <format>Paperback</format>
+                <edition_information/>
+                <publisher>Gollancz</publisher>
+                <publication_day>11</publication_day>
+                <publication_year>2008</publication_year>
+                <publication_month>12</publication_month>
+                <average_rating>4.04</average_rating>
+                <ratings_count>13874</ratings_count>
+                <description>The burgeoning new economies in near-Earth space are fuelled by a steady stream of comets, steered back home by huge nuclear-powered mining ships like
+                    Bella Lind's Rockhopper. Bella and her crew are desperate for some much-needed R&amp;amp;R - until Janus, one of Saturn's ice moons, inexplicably leaves its
+                    natural orbit.
+                </description>
+                <authors>
+                    <author>
+                        <id>51204</id>
+                        <name>Alastair Reynolds</name>
+                        <role></role>
+                        <image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1521740247p5/51204.jpg]]>
+                        </image_url>
+                        <small_image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1521740247p2/51204.jpg]]>
+                        </small_image_url>
+                        <link>
+                            <![CDATA[https://www.goodreads.com/author/show/51204.Alastair_Reynolds]]>
+                        </link>
+                        <average_rating>4.01</average_rating>
+                        <ratings_count>251529</ratings_count>
+                        <text_reviews_count>14976</text_reviews_count>
+                    </author>
+                </authors>
+                <published>2008</published>
+                <work>
+                    <id>2622804</id>
+                    <uri>kca://work/amzn1.gr.work.v1.vX0XD2S2kqqWt6Ndaov14Q</uri>
+                </work>
+            </book>
+            <rating>5</rating>
+            <votes>0</votes>
+            <spoiler_flag>false</spoiler_flag>
+            <spoilers_state>none</spoilers_state>
+            <shelves>
+                <shelf name="read" exclusive="true" id="198105365" review_shelf_id=""/>
+            </shelves>
+            <recommended_for></recommended_for>
+            <recommended_by></recommended_by>
+            <started_at>Mon Dec 23 05:05:02 -0800 2019</started_at>
+            <read_at>Sun Dec 29 06:39:08 -0800 2019</read_at>
+            <date_added>Mon Dec 23 05:05:01 -0800 2019</date_added>
+            <date_updated>Sun Dec 29 06:39:08 -0800 2019</date_updated>
+            <read_count>1</read_count>
+            <body>
+            </body>
+            <comments_count>0</comments_count>
+            <url>
+                <![CDATA[https://www.goodreads.com/review/show/3096447852]]>
+            </url>
+            <link>
+                <![CDATA[https://www.goodreads.com/review/show/3096447852]]>
+            </link>
+            <owned>1</owned>
+        </review>
+        <review>
+            <id>3092450360</id>
+            <book>
+                <id type="integer">41593261</id>
+                <isbn nil="true"/>
+                <isbn13>9780751573756</isbn13>
+                <text_reviews_count type="integer">12</text_reviews_count>
+                <uri>kca://book/amzn1.gr.book.v1.eJZhrFovtNFEVT5xBsq-ng</uri>
+                <title>2001: A Space Odyssey (Space Odyssey, #1)</title>
+                <title_without_series>2001: A Space Odyssey</title_without_series>
+                <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1535882669l/41593261._SX98_.jpg</image_url>
+                <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1535882669l/41593261._SY75_.jpg</small_image_url>
+                <large_image_url/>
+                <link>https://www.goodreads.com/book/show/41593261-2001</link>
+                <num_pages>288</num_pages>
+                <format>Paperback</format>
+                <edition_information/>
+                <publisher></publisher>
+                <publication_day>30</publication_day>
+                <publication_year>2018</publication_year>
+                <publication_month>8</publication_month>
+                <average_rating>4.15</average_rating>
+                <ratings_count>243488</ratings_count>
+                <description>On the Moon, an enigma is uncovered.&lt;br /&gt;&lt;br /&gt;So great are the implications of this discovery that for the first time men are sent out
+                    deep into our solar system.&lt;br /&gt;&lt;br /&gt;But long before their destination is reached, things begin to go horribly, inexplicably wrong...&lt;br /&gt;&lt;br
+                    /&gt;One of the greatest-selling science fiction novels of our time, this classic book will grip you to the very end.
+                </description>
+                <authors>
+                    <author>
+                        <id>7779</id>
+                        <name>Arthur C. Clarke</name>
+                        <role></role>
+                        <image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1357191481p5/7779.jpg]]>
+                        </image_url>
+                        <small_image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1357191481p2/7779.jpg]]>
+                        </small_image_url>
+                        <link>
+                            <![CDATA[https://www.goodreads.com/author/show/7779.Arthur_C_Clarke]]>
+                        </link>
+                        <average_rating>3.97</average_rating>
+                        <ratings_count>1037252</ratings_count>
+                        <text_reviews_count>32127</text_reviews_count>
+                    </author>
+                </authors>
+                <published>2018</published>
+                <work>
+                    <id>208362</id>
+                    <uri>kca://work/amzn1.gr.work.v1.AZuLk6FsSzbckZV3cEk7Xw</uri>
+                </work>
+            </book>
+            <rating>5</rating>
+            <votes>0</votes>
+            <spoiler_flag>false</spoiler_flag>
+            <spoilers_state>none</spoilers_state>
+            <shelves>
+                <shelf name="read" exclusive="true" id="198105365" review_shelf_id=""/>
+            </shelves>
+            <recommended_for></recommended_for>
+            <recommended_by></recommended_by>
+            <started_at>Fri Dec 20 00:04:25 -0800 2019</started_at>
+            <read_at>Sun Dec 22 08:05:44 -0800 2019</read_at>
+            <date_added>Fri Dec 20 00:04:24 -0800 2019</date_added>
+            <date_updated>Sun Dec 22 08:05:44 -0800 2019</date_updated>
+            <read_count>1</read_count>
+            <body>
+            </body>
+            <comments_count>0</comments_count>
+            <url>
+                <![CDATA[https://www.goodreads.com/review/show/3092450360]]>
+            </url>
+            <link>
+                <![CDATA[https://www.goodreads.com/review/show/3092450360]]>
+            </link>
+            <owned>1</owned>
+        </review>
+        <review>
+            <id>3090636591</id>
+            <book>
+                <id type="integer">32922275</id>
+                <isbn>0857666614</isbn>
+                <isbn13>9780857666611</isbn13>
+                <text_reviews_count type="integer">83</text_reviews_count>
+                <uri>kca://book/amzn1.gr.book.v1.yf9N2nZFiU0dLTRY3kNYkg</uri>
+                <title>The Stars Are Legion</title>
+                <title_without_series>The Stars Are Legion</title_without_series>
+                <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1478618024l/32922275._SX98_.jpg</image_url>
+                <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1478618024l/32922275._SY75_.jpg</small_image_url>
+                <large_image_url/>
+                <link>https://www.goodreads.com/book/show/32922275-the-stars-are-legion</link>
+                <num_pages>396</num_pages>
+                <format>Paperback</format>
+                <edition_information/>
+                <publisher>Angry Robot</publisher>
+                <publication_day>2</publication_day>
+                <publication_year>2017</publication_year>
+                <publication_month>2</publication_month>
+                <average_rating>3.66</average_rating>
+                <ratings_count>6874</ratings_count>
+                <description>Set within a system of decaying world-ships travelling through deep space, this breakout novel of epic science fiction follows a pair of sisters who
+                    must wrest control of their war-torn legion of worlds—and may have to destroy everything they know in order to survive.&lt;br /&gt;&lt;br /&gt;On the outer rim
+                    of the universe, a galactic war has been waged for centuries upon hundreds of world-ships. But these worlds will continue to die through decay and constant war
+                    unless a desperate plan succeeds.&lt;br /&gt;&lt;br /&gt;Anat, leader of the Katazyrna world-ship and the most fearsome raiding force on the Outer Rim, wants
+                    peace. To do so she offers the hand of her daughter, Jayd, to her rival. Jayd has dreamed about leading her mother’s armies to victory her whole life—but she
+                    has a unique ability, and that makes her leverage, not a leader. As Anat convinces her to spend the rest of her life wed to her family’s greatest enemy, it is
+                    up to Jayd’s sister Zan—with no stomach for war—to lead the cast off warriors she has banded together to victory and rescue Jayd. But the war does not go at all
+                    as planned…&lt;br /&gt;&lt;br /&gt;In the tradition of &lt;i&gt;The Fall of Hyperion&lt;/i&gt; and &lt;i&gt;Dune&lt;/i&gt;, &lt;i&gt;The Stars are Legion&lt;/i&gt;
+                    is an epic and thrilling tale about familial love, revenge, and war as imagined by one of the genre’s most imaginative new writers.
+                </description>
+                <authors>
+                    <author>
+                        <id>4369922</id>
+                        <name>Kameron Hurley</name>
+                        <role></role>
+                        <image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1553527161p5/4369922.jpg]]>
+                        </image_url>
+                        <small_image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1553527161p2/4369922.jpg]]>
+                        </small_image_url>
+                        <link>
+                            <![CDATA[https://www.goodreads.com/author/show/4369922.Kameron_Hurley]]>
+                        </link>
+                        <average_rating>3.78</average_rating>
+                        <ratings_count>32731</ratings_count>
+                        <text_reviews_count>5994</text_reviews_count>
+                    </author>
+                </authors>
+                <published>2017</published>
+                <work>
+                    <id>21836212</id>
+                    <uri>kca://work/amzn1.gr.work.v1.f_b4vetu9LiB_oYPy4pBSg</uri>
+                </work>
+            </book>
+            <rating>1</rating>
+            <votes>1</votes>
+            <spoiler_flag>false</spoiler_flag>
+            <spoilers_state>none</spoilers_state>
+            <shelves>
+                <shelf name="read" exclusive="true" id="198105365" review_shelf_id=""/>
+            </shelves>
+            <recommended_for></recommended_for>
+            <recommended_by></recommended_by>
+            <started_at>Fri Feb 14 14:10:56 -0800 2020</started_at>
+            <read_at>Sun Feb 16 14:36:52 -0800 2020</read_at>
+            <date_added>Wed Dec 18 14:20:52 -0800 2019</date_added>
+            <date_updated>Mon Feb 17 04:46:59 -0800 2020</date_updated>
+            <read_count>1</read_count>
+            <body>
+                <![CDATA[I think I kept reading because I had a HUGE amount of questions. There were no answers. <br /><br />Another reviewer asked "What the heck is a cephalopod gun?". Surely a silly example out of a myriad of more important ones, but I too would like an answer :)<br /><br />The worldbuilding is indeed creative, and I was intrigued at first, but when two characters depart their spaceship straddling bio-mechanical vehicles (space-horses, basically) which shoot yellow vapour from their behinds, all the while communicating with each other <b>using sign language</b> I started asking myself some questions. "What?!?" being the most prevalent.<br /><br />I was genuinely curios how the Legion came to be, the nature of the worlds they inhabited, how large are they, how gravity works there, what's the point of the thin atmosphere if nobody lives on the surface, how the internal levels were actually devised and so on. I had a hard time imagining these levels, as the images the author paints are not very revealing and sometimes confusing. <br /><br />The main character has amnesia and you spend a great length of the book in the dark, following her and a few others in a boring journey to the top of the world, set piece to set piece. Remarkably little mystery is revealed throughout this journey and when it hits, I was long passed the point of caring. <br /><br />During this journey a character almost dies, but is ultimately saved by a spirit. That only she can see. It's never explained of touched upon again. "What?!?".<br /><br />Oh yeah, about the inexistence of men in this novel, as in not even mentioned. I don't care as long as it's explained (which it isn't), although it does feel a bit shallow. Is it supposed to be refreshing? Feminist? Just because it's an all woman cast it's a good thing? If I'm reading early Sci-Fi that has shit women characters (so much cringe there), does that mean that the reverse is OK? I really liked how the author played with genders in the other novel of hers that I've read, <i>The Light Brigade</i>, where the main character could be read as either male or female. Implying that gender doesn't matter seems to me a better message than whatever the absence of men was meant to be.<br /><br />While <i>The Stars Are Legion</i> has some good parts, they are massively overshadowed by its faults. Would not recommend.]]>
+
+            </body>
+            <comments_count>2</comments_count>
+            <url>
+                <![CDATA[https://www.goodreads.com/review/show/3090636591]]>
+            </url>
+            <link>
+                <![CDATA[https://www.goodreads.com/review/show/3090636591]]>
+            </link>
+            <owned>1</owned>
+        </review>
+        <review>
+            <id>3086401505</id>
+            <book>
+                <id type="integer">42141498</id>
+                <isbn>0857668234</isbn>
+                <isbn13>9780857668233</isbn13>
+                <text_reviews_count type="integer">23</text_reviews_count>
+                <uri>kca://book/amzn1.gr.book.v1.vxOCDU3fJOltxAoNxcXKRg</uri>
+                <title>The Light Brigade</title>
+                <title_without_series>The Light Brigade</title_without_series>
+                <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1552755257l/42141498._SX98_.jpg</image_url>
+                <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1552755257l/42141498._SY75_.jpg</small_image_url>
+                <large_image_url/>
+                <link>https://www.goodreads.com/book/show/42141498-the-light-brigade</link>
+                <num_pages></num_pages>
+                <format></format>
+                <edition_information/>
+                <publisher></publisher>
+                <publication_day></publication_day>
+                <publication_year></publication_year>
+                <publication_month></publication_month>
+                <average_rating>3.99</average_rating>
+                <ratings_count>3978</ratings_count>
+                <description>&lt;b&gt;From the Hugo Award­­–winning author of &lt;i&gt;The Stars Are Legion &lt;/i&gt;comes a brand-new science fiction thriller about a futuristic
+                    war during which soldiers are broken down into light in order to get them to the front lines on Mars.&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;&lt;i&gt;They said the
+                    war would turn us into light. &lt;/i&gt;&lt;br /&gt; &lt;i&gt;I wanted to be counted among the heroes who gave us this better world. &lt;/i&gt;&lt;br /&gt; &lt;br
+                    /&gt;The Light Brigade: it’s what soldiers fighting the war against Mars call the ones who come back…different. Grunts in the corporate corps get busted down
+                    into light to travel to and from interplanetary battlefronts. Everyone is changed by what the corps must do in order to break them down into light. Those who
+                    survive learn to stick to the mission brief—no matter what actually happens during combat.&lt;br /&gt; &lt;br /&gt;Dietz, a fresh recruit in the infantry,
+                    begins to experience combat drops that don’t sync up with the platoon’s. And Dietz’s bad drops tell a story of the war that’s not at all what the corporate
+                    brass want the soldiers to think is going on.&lt;br /&gt; &lt;br /&gt;Is Dietz really experiencing the war differently, or is it combat madness? Trying to
+                    untangle memory from mission brief and survive with sanity intact, Dietz is ready to become a hero—or maybe a villain; in war it’s hard to tell the difference.&lt;br
+                    /&gt; &lt;br /&gt;A worthy successor to classic stories like &lt;i&gt;Downbelow Station&lt;/i&gt;, &lt;i&gt;Starship Troopers&lt;/i&gt;, and&lt;i&gt; The
+                    Forever War&lt;/i&gt;,&lt;i&gt; The Light Brigade&lt;/i&gt; is award-winning author Kameron Hurley’s gritty time-bending take on the future of war.
+                </description>
+                <authors>
+                    <author>
+                        <id>4369922</id>
+                        <name>Kameron Hurley</name>
+                        <role></role>
+                        <image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1553527161p5/4369922.jpg]]>
+                        </image_url>
+                        <small_image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1553527161p2/4369922.jpg]]>
+                        </small_image_url>
+                        <link>
+                            <![CDATA[https://www.goodreads.com/author/show/4369922.Kameron_Hurley]]>
+                        </link>
+                        <average_rating>3.78</average_rating>
+                        <ratings_count>32731</ratings_count>
+                        <text_reviews_count>5994</text_reviews_count>
+                    </author>
+                </authors>
+                <published></published>
+                <work>
+                    <id>62896440</id>
+                    <uri>kca://work/amzn1.gr.work.v1.TszWX_ZVsjZ2aaleFUYNDA</uri>
+                </work>
+            </book>
+            <rating>4</rating>
+            <votes>3</votes>
+            <spoiler_flag>false</spoiler_flag>
+            <spoilers_state>none</spoilers_state>
+            <shelves>
+                <shelf name="read" exclusive="true" id="198105365" review_shelf_id=""/>
+            </shelves>
+            <recommended_for></recommended_for>
+            <recommended_by></recommended_by>
+            <started_at>Sun Dec 15 14:18:29 -0800 2019</started_at>
+            <read_at>Thu Dec 19 11:19:43 -0800 2019</read_at>
+            <date_added>Sun Dec 15 14:18:28 -0800 2019</date_added>
+            <date_updated>Sat Feb 15 01:08:25 -0800 2020</date_updated>
+            <read_count>1</read_count>
+            <body>
+                <![CDATA[The book starts with Dietz, a native of Brazil, joining the military out of a sense of duty, after a catastrophic event that killed people in the millions. Sound familiar? At this point I was a bit worried, as I was basically reading <i>Starship Troopers</i>.<br /><br />But then Dietz goes on the first combat drop and things go in a wild and unexpected direction, both for Dietz and the reader :)<br /><br />It's hard to talk about the strengths of <i>The Light Brigade</i> without spoiling the fun of discovering them yourselves. But I will say that you get a piece of the puzzle revealed in every chapter, which makes it very exciting and hard to put down; it's well written, fast paced and never boring. Besides war, it also addresses current issues like climate change, corporate greed, the control of information and others.<br /><br />And it's the first Mil SciFi where I wasn't bored with all the combat descriptions!<br /><br />Excellent read.]]>
+
+            </body>
+            <comments_count>3</comments_count>
+            <url>
+                <![CDATA[https://www.goodreads.com/review/show/3086401505]]>
+            </url>
+            <link>
+                <![CDATA[https://www.goodreads.com/review/show/3086401505]]>
+            </link>
+            <owned>1</owned>
+        </review>
+        <review>
+            <id>3082706446</id>
+            <book>
+                <id type="integer">46221848</id>
+                <isbn>0099842602</isbn>
+                <isbn13>9780099842606</isbn13>
+                <text_reviews_count type="integer">9</text_reviews_count>
+                <uri>kca://book/amzn1.gr.book.v1.WTT42tEFq9pFI6CZUPV1UA</uri>
+                <title>Breakfast of Champions</title>
+                <title_without_series>Breakfast of Champions</title_without_series>
+                <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1560078033l/46221848._SX98_.jpg</image_url>
+                <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1560078033l/46221848._SY75_.jpg</small_image_url>
+                <large_image_url/>
+                <link>https://www.goodreads.com/book/show/46221848-breakfast-of-champions</link>
+                <num_pages>295</num_pages>
+                <format>Paperback</format>
+                <edition_information/>
+                <publisher>Vintage</publisher>
+                <publication_day/>
+                <publication_year/>
+                <publication_month/>
+                <average_rating>4.07</average_rating>
+                <ratings_count>214974</ratings_count>
+                <description>In a frolic of cartoon and comic outbursts against rule and reason, a miraculous weaving of science fiction, memoir, parable, fairy tale and farce,
+                    Kurt Vonnegut attacks the whole spectrum of American society, releasing some of his best-loved literary creations on the scene.
+                </description>
+                <authors>
+                    <author>
+                        <id>2778055</id>
+                        <name>Kurt Vonnegut Jr.</name>
+                        <role></role>
+                        <image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1433582280p5/2778055.jpg]]>
+                        </image_url>
+                        <small_image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1433582280p2/2778055.jpg]]>
+                        </small_image_url>
+                        <link>
+                            <![CDATA[https://www.goodreads.com/author/show/2778055.Kurt_Vonnegut_Jr_]]>
+                        </link>
+                        <average_rating>4.06</average_rating>
+                        <ratings_count>2373539</ratings_count>
+                        <text_reviews_count>76730</text_reviews_count>
+                    </author>
+                </authors>
+                <published/>
+                <work>
+                    <id>2859378</id>
+                    <uri>kca://work/amzn1.gr.work.v1.nzUL4qsMezJG_29EpyMYOA</uri>
+                </work>
+            </book>
+            <rating>5</rating>
+            <votes>0</votes>
+            <spoiler_flag>false</spoiler_flag>
+            <spoilers_state>none</spoilers_state>
+            <shelves>
+                <shelf name="read" exclusive="true" id="198105365" review_shelf_id=""/>
+            </shelves>
+            <recommended_for></recommended_for>
+            <recommended_by></recommended_by>
+            <started_at>Thu Dec 12 14:18:29 -0800 2019</started_at>
+            <read_at>Sun Dec 15 09:03:33 -0800 2019</read_at>
+            <date_added>Thu Dec 12 14:18:28 -0800 2019</date_added>
+            <date_updated>Sun Dec 15 09:03:33 -0800 2019</date_updated>
+            <read_count>1</read_count>
+            <body>
+            </body>
+            <comments_count>0</comments_count>
+            <url>
+                <![CDATA[https://www.goodreads.com/review/show/3082706446]]>
+            </url>
+            <link>
+                <![CDATA[https://www.goodreads.com/review/show/3082706446]]>
+            </link>
+            <owned>1</owned>
+        </review>
+        <review>
+            <id>3077449773</id>
+            <book>
+                <id type="integer">23593321</id>
+                <isbn>1447268970</isbn>
+                <isbn13>9781447268970</isbn13>
+                <text_reviews_count type="integer">968</text_reviews_count>
+                <uri>kca://book/amzn1.gr.book.v1.voyqR8-tY_KzUyGWTIniRA</uri>
+                <title>Station Eleven</title>
+                <title_without_series>Station Eleven</title_without_series>
+                <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1416499186l/23593321._SX98_.jpg</image_url>
+                <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1416499186l/23593321._SY75_.jpg</small_image_url>
+                <large_image_url/>
+                <link>https://www.goodreads.com/book/show/23593321-station-eleven</link>
+                <num_pages>339</num_pages>
+                <format>Paperback</format>
+                <edition_information/>
+                <publisher>Picador</publisher>
+                <publication_day>1</publication_day>
+                <publication_year>2015</publication_year>
+                <publication_month>1</publication_month>
+                <average_rating>4.04</average_rating>
+                <ratings_count>282295</ratings_count>
+                <description>Set in the days of civilization's collapse, &lt;i&gt;Station Eleven&lt;/i&gt; tells the story of a Hollywood star, his would-be savior, and a nomadic
+                    group of actors roaming the scattered outposts of the Great Lakes region, risking everything for art and humanity.&lt;br /&gt;&lt;br /&gt;One snowy night a
+                    famous Hollywood actor slumps over and dies onstage during a production of &lt;i&gt;King Lear&lt;/i&gt;. Hours later, the world as we know it begins to
+                    dissolve. Moving back and forth in time—from the actor's early days as a film star to fifteen years in the future, when a theater troupe known as the Traveling
+                    Symphony roams the wasteland of what remains—this suspenseful, elegiac, spellbinding novel charts the strange twists of fate that connect five people: the
+                    actor, the man who tried to save him, the actor's first wife, his oldest friend, and a young actress with the Traveling Symphony, caught in the crosshairs of a
+                    dangerous self-proclaimed prophet.
+                </description>
+                <authors>
+                    <author>
+                        <id>2786093</id>
+                        <name>Emily St. John Mandel</name>
+                        <role></role>
+                        <image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1576606299p5/2786093.jpg]]>
+                        </image_url>
+                        <small_image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1576606299p2/2786093.jpg]]>
+                        </small_image_url>
+                        <link>
+                            <![CDATA[https://www.goodreads.com/author/show/2786093.Emily_St_John_Mandel]]>
+                        </link>
+                        <average_rating>4.01</average_rating>
+                        <ratings_count>300836</ratings_count>
+                        <text_reviews_count>37280</text_reviews_count>
+                    </author>
+                </authors>
+                <published>2015</published>
+                <work>
+                    <id>28098716</id>
+                    <uri>kca://work/amzn1.gr.work.v1.XymgjwJTWVJ3uQyqa3sGcw</uri>
+                </work>
+            </book>
+            <rating>4</rating>
+            <votes>1</votes>
+            <spoiler_flag>false</spoiler_flag>
+            <spoilers_state>none</spoilers_state>
+            <shelves>
+                <shelf name="read" exclusive="true" id="198105365" review_shelf_id=""/>
+            </shelves>
+            <recommended_for></recommended_for>
+            <recommended_by></recommended_by>
+            <started_at>Sun Dec 08 13:57:22 -0800 2019</started_at>
+            <read_at>Thu Dec 12 03:34:48 -0800 2019</read_at>
+            <date_added>Sun Dec 08 13:57:21 -0800 2019</date_added>
+            <date_updated>Thu Dec 12 03:31:11 -0800 2019</date_updated>
+            <read_count>1</read_count>
+            <body>
+            </body>
+            <comments_count>0</comments_count>
+            <url>
+                <![CDATA[https://www.goodreads.com/review/show/3077449773]]>
+            </url>
+            <link>
+                <![CDATA[https://www.goodreads.com/review/show/3077449773]]>
+            </link>
+            <owned>1</owned>
+        </review>
+        <review>
+            <id>3074893920</id>
+            <book>
+                <id type="integer">23272094</id>
+                <isbn nil="true"/>
+                <isbn13 nil="true"/>
+                <text_reviews_count type="integer">9</text_reviews_count>
+                <uri>kca://book/amzn1.gr.book.v1.2ZnFj2guklC5RW3pFib64Q</uri>
+                <title>Feersum Endjinn</title>
+                <title_without_series>Feersum Endjinn</title_without_series>
+                <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1411688527l/23272094._SX98_.jpg</image_url>
+                <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1411688527l/23272094._SY75_.jpg</small_image_url>
+                <large_image_url/>
+                <link>https://www.goodreads.com/book/show/23272094-feersum-endjinn</link>
+                <num_pages>279</num_pages>
+                <format>Paperback</format>
+                <edition_information/>
+                <publisher>Orbit</publisher>
+                <publication_day/>
+                <publication_year>1994</publication_year>
+                <publication_month/>
+                <average_rating>3.82</average_rating>
+                <ratings_count>9361</ratings_count>
+                <description>&lt;i&gt;Librarian's note: Alternate cover edition of ISBN10: 1857232739 ISBN13: 9781857232738.&lt;/i&gt;&lt;br /&gt;&lt;br /&gt;Count Sessine is about
+                    to die for the very last time ...Chief Scientist Gadfium is about to receive the mysterious message she has been waiting for from the Plain of Sliding Stones
+                    ...And Bascule the Teller, in search of an ant, is about to enter the chaos of the crypt ...And everything is about to change ...For this is the time of the
+                    encroachment and, although the dimming sun still shines on the vast, towering walls of Serehfa Fastness, the end is close at hand. The King knows it, his
+                    closest advisers know it, yet sill they prosecute the war against the clan Engineers with increasing savagery. The crypt knows it too; so an emissary has been
+                    sent, an emissary who holds the key to all their futures.
+                </description>
+                <authors>
+                    <author>
+                        <id>5807106</id>
+                        <name>Iain M. Banks</name>
+                        <role></role>
+                        <image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1352410520p5/5807106.jpg]]>
+                        </image_url>
+                        <small_image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1352410520p2/5807106.jpg]]>
+                        </small_image_url>
+                        <link>
+                            <![CDATA[https://www.goodreads.com/author/show/5807106.Iain_M_Banks]]>
+                        </link>
+                        <average_rating>4.08</average_rating>
+                        <ratings_count>345051</ratings_count>
+                        <text_reviews_count>15515</text_reviews_count>
+                    </author>
+                </authors>
+                <published>1994</published>
+                <work>
+                    <id>851516</id>
+                    <uri>kca://work/amzn1.gr.work.v1.iqCTwIU9Vnd64nVLh-xtjA</uri>
+                </work>
+            </book>
+            <rating>3</rating>
+            <votes>1</votes>
+            <spoiler_flag>false</spoiler_flag>
+            <spoilers_state>none</spoilers_state>
+            <shelves>
+                <shelf name="read" exclusive="true" id="198105365" review_shelf_id=""/>
+            </shelves>
+            <recommended_for></recommended_for>
+            <recommended_by></recommended_by>
+            <started_at>Mon Feb 24 00:00:00 -0800 2020</started_at>
+            <read_at>Thu Feb 27 09:51:07 -0800 2020</read_at>
+            <date_added>Fri Dec 06 09:16:40 -0800 2019</date_added>
+            <date_updated>Thu Feb 27 05:30:17 -0800 2020</date_updated>
+            <read_count>1</read_count>
+            <body>
+                <![CDATA[Some parts are beautifully written, others very hard to read. The "progris riports" from <i>Flowers for Algernon</i> were a breeze to go through compared to Bascule's chapters. Although story-wise, they were among the most compelling.<br /><br />Definitely weird, and not 100% enjoyable. But an OK novel overall.]]>
+
+            </body>
+            <comments_count>0</comments_count>
+            <url>
+                <![CDATA[https://www.goodreads.com/review/show/3074893920]]>
+            </url>
+            <link>
+                <![CDATA[https://www.goodreads.com/review/show/3074893920]]>
+            </link>
+            <owned>1</owned>
+        </review>
+        <review>
+            <id>3064478616</id>
+            <book>
+                <id type="integer">567798</id>
+                <isbn>1841492299</isbn>
+                <isbn13>9781841492292</isbn13>
+                <text_reviews_count type="integer">111</text_reviews_count>
+                <uri>kca://book/amzn1.gr.book.v1.ThX3f0B98_OP84iU4Qhs7Q</uri>
+                <title>The Algebraist</title>
+                <title_without_series>The Algebraist</title_without_series>
+                <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327905456l/567798._SX98_.jpg</image_url>
+                <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327905456l/567798._SY75_.jpg</small_image_url>
+                <large_image_url/>
+                <link>https://www.goodreads.com/book/show/567798.The_Algebraist</link>
+                <num_pages>534</num_pages>
+                <format>Paperback</format>
+                <edition_information/>
+                <publisher>Orbit</publisher>
+                <publication_day>4</publication_day>
+                <publication_year>2005</publication_year>
+                <publication_month>7</publication_month>
+                <average_rating>4.02</average_rating>
+                <ratings_count>17529</ratings_count>
+                <description>It is 4034 AD. Humanity has made it to the stars.&lt;br /&gt;&lt;br /&gt;Seconded to a military-religious order he's barely heard of, Fassin Taak must
+                    travel amongst the Dwellers of the gas giant Nasqueron, in search of a secret hidden for half a billion years. Any help they offer will be on their own terms
+                    and in their own time.&lt;br /&gt;&lt;br /&gt;But time is one thing Fassin Taak doesn't have, with each passing day bringing the system closer to war - a war
+                    that threatens to overwhelm everything and everyone he's ever known.&lt;br /&gt;&lt;br /&gt;
+                </description>
+                <authors>
+                    <author>
+                        <id>5807106</id>
+                        <name>Iain M. Banks</name>
+                        <role></role>
+                        <image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1352410520p5/5807106.jpg]]>
+                        </image_url>
+                        <small_image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1352410520p2/5807106.jpg]]>
+                        </small_image_url>
+                        <link>
+                            <![CDATA[https://www.goodreads.com/author/show/5807106.Iain_M_Banks]]>
+                        </link>
+                        <average_rating>4.08</average_rating>
+                        <ratings_count>345051</ratings_count>
+                        <text_reviews_count>15515</text_reviews_count>
+                    </author>
+                </authors>
+                <published>2005</published>
+                <work>
+                    <id>2465248</id>
+                    <uri>kca://work/amzn1.gr.work.v1.PDhrGjdOc1i_Zk2UgQvfJg</uri>
+                </work>
+            </book>
+            <rating>5</rating>
+            <votes>5</votes>
+            <spoiler_flag>false</spoiler_flag>
+            <spoilers_state>none</spoilers_state>
+            <shelves>
+                <shelf name="read" exclusive="true" id="198105365" review_shelf_id=""/>
+                <shelf exclusive='false' id='301447988' name='favorites' review_shelf_id='2722372558' sortable='false'></shelf>
+            </shelves>
+            <recommended_for></recommended_for>
+            <recommended_by></recommended_by>
+            <started_at>Wed Nov 27 13:24:14 -0800 2019</started_at>
+            <read_at>Fri Dec 06 10:44:16 -0800 2019</read_at>
+            <date_added>Wed Nov 27 13:24:13 -0800 2019</date_added>
+            <date_updated>Fri Dec 06 09:12:20 -0800 2019</date_updated>
+            <read_count>1</read_count>
+            <body>
+                <![CDATA[Straight to the favourites shelve. <br /><br /><i>The Algebraist</i> has all the hallmarks of excellent space opera: great world-building and characters, mystery, fascinating concepts, exciting plot, interesting aliens, lots of reveals and (in this case especially) humour.<br /><br />What I liked most about this novel though are the Dwellers. They're an ancient, galaxy-spanning species of aliens that live inside the atmosphere of gas giants. They have a very laissez-faire attitude towards events outside their homeworlds or indeed the whole Milky Way; they're quirky, secretive, deceptive and not at all easy to deal with. It's a joy to see them interact with the human characters of the book, and often hilarious as well.<br /><br />Lost some sleep to this one.<br />5/5.]]>
+
+            </body>
+            <comments_count>1</comments_count>
+            <url>
+                <![CDATA[https://www.goodreads.com/review/show/3064478616]]>
+            </url>
+            <link>
+                <![CDATA[https://www.goodreads.com/review/show/3064478616]]>
+            </link>
+            <owned>1</owned>
+        </review>
+        <review>
+            <id>3053534695</id>
+            <book>
+                <id type="integer">2482243</id>
+                <isbn>0765315963</isbn>
+                <isbn13>9780765315960</isbn13>
+                <text_reviews_count type="integer">22</text_reviews_count>
+                <uri>kca://book/amzn1.gr.book.v1._gjUodtAxELzrkPl-6nmZA</uri>
+                <title>Starfish (Rifters, #1)</title>
+                <title_without_series>Starfish</title_without_series>
+                <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1499396143l/2482243._SX98_.jpg</image_url>
+                <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1499396143l/2482243._SY75_.jpg</small_image_url>
+                <large_image_url/>
+                <link>https://www.goodreads.com/book/show/2482243.Starfish</link>
+                <num_pages>317</num_pages>
+                <format>Paperback</format>
+                <edition_information/>
+                <publisher>Tor Books</publisher>
+                <publication_day>29</publication_day>
+                <publication_year>2008</publication_year>
+                <publication_month>4</publication_month>
+                <average_rating>3.97</average_rating>
+                <ratings_count>6386</ratings_count>
+                <description>&lt;b&gt;Civilization rests on the backs of its outcasts.&lt;/b&gt;&lt;br /&gt;&lt;b&gt;&lt;/b&gt;&lt;br /&gt;&lt;b&gt;&lt;/b&gt;So when civilization
+                    needs someone to run generating stations three kilometers below the surface of the Pacific, it seeks out a special sort of person for its Rifters program. It
+                    recruits those whose histories have preadapted them to dangerous environments, people so used to broken bodies and chronic stress that life on the edge of an
+                    undersea volcano would actually be a step up. Nobody worries too much about job satisfaction; if you haven't spent a lifetime learning the futility of fighting
+                    back, you wouldn't be a rifter in the first place. It's a small price to keep the lights going, back on shore.&lt;br /&gt;&lt;br /&gt;But there are things among
+                    the cliffs and trenches of the Juan de Fuca Ridge that no one expected to find, and enough pressure can forge the most obedient career-victim into something
+                    made of iron. At first, not even the rifters know what they have in them--and by the time anyone else finds out, the outcast and the downtrodden have their
+                    hands on a kill switch for the whole damn planet...
+                </description>
+                <authors>
+                    <author>
+                        <id>27167</id>
+                        <name>Peter Watts</name>
+                        <role></role>
+                        <image_url nophoto='true'>
+                            <![CDATA[https://s.gr-assets.com/assets/nophoto/user/m_200x266-d279b33f8eec0f27b7272477f09806be.png]]>
+                        </image_url>
+                        <small_image_url nophoto='true'>
+                            <![CDATA[https://s.gr-assets.com/assets/nophoto/user/m_50x66-82093808bca726cb3249a493fbd3bd0f.png]]>
+                        </small_image_url>
+                        <link>
+                            <![CDATA[https://www.goodreads.com/author/show/27167.Peter_Watts]]>
+                        </link>
+                        <average_rating>3.93</average_rating>
+                        <ratings_count>61916</ratings_count>
+                        <text_reviews_count>5712</text_reviews_count>
+                    </author>
+                </authors>
+                <published>2008</published>
+                <work>
+                    <id>2489444</id>
+                    <uri>kca://work/amzn1.gr.work.v1.wvu5-nzdwAClmr0CAvKf6w</uri>
+                </work>
+            </book>
+            <rating>4</rating>
+            <votes>1</votes>
+            <spoiler_flag>false</spoiler_flag>
+            <spoilers_state>none</spoilers_state>
+            <shelves>
+                <shelf name="read" exclusive="true" id="198105365" review_shelf_id=""/>
+            </shelves>
+            <recommended_for></recommended_for>
+            <recommended_by></recommended_by>
+            <started_at>Mon Nov 18 09:12:49 -0800 2019</started_at>
+            <read_at>Thu Nov 21 11:28:14 -0800 2019</read_at>
+            <date_added>Mon Nov 18 09:12:49 -0800 2019</date_added>
+            <date_updated>Thu Nov 21 11:28:14 -0800 2019</date_updated>
+            <read_count>1</read_count>
+            <body>
+                <![CDATA[<b>Very</b> dark.<br /><br />While it mostly explores the psychology of some very fucked up characters, it also delves into AI, genetic engineering, deep sea life and evolution.<br /><br />As is the case with the more recent <i>Blindsight</i>, the novel is pretty uneven. There's no plot for the first two thirds of the book - but that's OK, because reading about dysfunctional people living on the bottom of the ocean is surprisingly gripping. The trouble is that when said plot starts, it feels a bit rushed.<br /><br />Issues notwithstanding, Peter Watts has a unique style of tackling some heavy themes, and that alone makes <i>Starfish</i> a worthwhile read.]]>
+
+            </body>
+            <comments_count>0</comments_count>
+            <url>
+                <![CDATA[https://www.goodreads.com/review/show/3053534695]]>
+            </url>
+            <link>
+                <![CDATA[https://www.goodreads.com/review/show/3053534695]]>
+            </link>
+            <owned>1</owned>
+        </review>
+        <review>
+            <id>3050116423</id>
+            <book>
+                <id type="integer">19286510</id>
+                <isbn>0765378485</isbn>
+                <isbn13>9780765378484</isbn13>
+                <text_reviews_count type="integer">38</text_reviews_count>
+                <uri>kca://book/amzn1.gr.book.v1.zp1ginW38fm780635atAmA</uri>
+                <title>Ender's Game</title>
+                <title_without_series>Ender's Game</title_without_series>
+                <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1396821486l/19286510._SX98_.jpg</image_url>
+                <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1396821486l/19286510._SY75_.jpg</small_image_url>
+                <large_image_url/>
+                <link>https://www.goodreads.com/book/show/19286510-ender-s-game</link>
+                <num_pages>368</num_pages>
+                <format>Paperback</format>
+                <edition_information/>
+                <publisher>Tor Teen</publisher>
+                <publication_day>4</publication_day>
+                <publication_year>2014</publication_year>
+                <publication_month>3</publication_month>
+                <average_rating>4.30</average_rating>
+                <ratings_count>1072089</ratings_count>
+                <description>The worldwide bestseller, &lt;i&gt;Ender's Game&lt;/i&gt; by Orson Scott Card comes to the screen at last in a major motion picture event in November
+                    2013. Starring Hugo's Asa Butterfield, Harrison Ford, and Ben Kingsley, the movie is sure to inspire a new audience of fans to read the book that started it
+                    all.&lt;br /&gt;&lt;br /&gt;Once again, Earth is under attack. An alien species is poised for a final assault. The survival of humanity depends on a military
+                    genius who can defeat the aliens. But who?&lt;br /&gt;&lt;br /&gt;Ender Wiggin. Brilliant. Ruthless. Cunning. A tactical and strategic master. And a child.&lt;br
+                    /&gt;&lt;br /&gt;Recruited for military training by the world government, Ender's childhood ends the moment he enters his new home: Battle School. Among the
+                    elite recruits Ender proves himself to be a genius among geniuses. He excels in simulated war games. But is the pressure and loneliness taking its toll on
+                    Ender? Simulations are one thing. How will Ender perform in real combat conditions? After all, Battle School is just a game. Isn't it?
+                </description>
+                <authors>
+                    <author>
+                        <id>589</id>
+                        <name>Orson Scott Card</name>
+                        <role></role>
+                        <image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1294099952p5/589.jpg]]>
+                        </image_url>
+                        <small_image_url nophoto='false'>
+                            <![CDATA[https://images.gr-assets.com/authors/1294099952p2/589.jpg]]>
+                        </small_image_url>
+                        <link>
+                            <![CDATA[https://www.goodreads.com/author/show/589.Orson_Scott_Card]]>
+                        </link>
+                        <average_rating>4.09</average_rating>
+                        <ratings_count>2555060</ratings_count>
+                        <text_reviews_count>104589</text_reviews_count>
+                    </author>
+                </authors>
+                <published>2014</published>
+                <work>
+                    <id>2422333</id>
+                    <uri>kca://work/amzn1.gr.work.v1.VGZlxSHM4ngy3MUPG3VaQg</uri>
+                </work>
+            </book>
+            <rating>4</rating>
+            <votes>0</votes>
+            <spoiler_flag>false</spoiler_flag>
+            <spoilers_state>none</spoilers_state>
+            <shelves>
+                <shelf name="read" exclusive="true" id="198105365" review_shelf_id=""/>
+            </shelves>
+            <recommended_for></recommended_for>
+            <recommended_by></recommended_by>
+            <started_at>Fri Nov 15 11:38:38 -0800 2019</started_at>
+            <read_at>Sun Nov 17 13:48:00 -0800 2019</read_at>
+            <date_added>Fri Nov 15 11:38:38 -0800 2019</date_added>
+            <date_updated>Wed Feb 19 05:14:31 -0800 2020</date_updated>
+            <read_count>1</read_count>
+            <body>
+            </body>
+            <comments_count>0</comments_count>
+            <url>
+                <![CDATA[https://www.goodreads.com/review/show/3050116423]]>
+            </url>
+            <link>
+                <![CDATA[https://www.goodreads.com/review/show/3050116423]]>
+            </link>
+            <owned>1</owned>
+        </review>
+    </reviews>
+</GoodreadsResponse>

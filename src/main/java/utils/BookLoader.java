@@ -21,11 +21,22 @@ public class BookLoader {
     private static final String COULD_NOT_LOAD_BOOKS_MESSAGE = "Could not load books! Exception is: %s";
     private static final String BOOKS_LOCATION = "src/main/resources/books.csv";
     private static final String COMMA = ",";
+    private static final String SEARCH_XML = "src/main/resources/responses/bookSearch.xml";
+    private static final String SHELVE_XML = "src/main/resources/responses/readShelve.xml";
 
     public static Set<Book> loadBooksFromFile() {
         return getBooksFromFile().stream()
                 .map(BookLoader::toBook)
                 .collect(toSet());
+    }
+
+    public static String getResponseFromFile(boolean isSearch) {
+        try {
+            return new String(Files.readAllBytes(Paths.get(isSearch ? SEARCH_XML : SHELVE_XML)));
+        } catch (final Exception e) {
+            PrinterUtils.simplePrint(e.toString());
+            return null;
+        }
     }
 
     private static Book toBook(final String fileLine) {

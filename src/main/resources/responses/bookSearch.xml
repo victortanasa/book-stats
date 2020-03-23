@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GoodreadsResponse>
+    <Request>
+        <authentication>true</authentication>
+        <key><![CDATA[aB9VcY1rOGCzxMONqjk8Ug]]></key>
+        <method><![CDATA[search_index]]></method>
+    </Request>
+    <search>
+        <query><![CDATA[1857987632]]></query>
+        <results-start>1</results-start>
+        <results-end>1</results-end>
+        <total-results>1</total-results>
+        <source>Goodreads</source>
+        <query-time-seconds>0.01</query-time-seconds>
+        <results>
+            <work>
+                <id type="integer">925052</id>
+                <books_count type="integer">115</books_count>
+                <ratings_count type="integer">26273</ratings_count>
+                <text_reviews_count type="integer">970</text_reviews_count>
+                <original_publication_year type="integer">1956</original_publication_year>
+                <original_publication_month type="integer">10</original_publication_month>
+                <original_publication_day type="integer" nil="true"/>
+                <average_rating>4.09</average_rating>
+                <best_book type="Book">
+                    <id type="integer">44280099</id>
+                    <title>The City and the Stars</title>
+                    <author>
+                        <id type="integer">7779</id>
+                        <name>Arthur C. Clarke</name>
+                    </author>
+                    <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1551771499l/44280099._SX98_.jpg</image_url>
+                    <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1551771499l/44280099._SY75_.jpg</small_image_url>
+                </best_book>
+            </work>
+
+            <id type="integer">925052</id>
+            <books_count type="integer">115</books_count>
+            <ratings_count type="integer">26273</ratings_count>
+            <text_reviews_count type="integer">970</text_reviews_count>
+            <original_publication_year type="integer">1956</original_publication_year>
+            <original_publication_month type="integer">10</original_publication_month>
+            <original_publication_day type="integer" nil="true"/>
+            <average_rating>4.09</average_rating>
+            <best_book type="Book">
+                <id type="integer">44280099</id>
+                <title>The City and the Stars</title>
+                <author>
+                    <id type="integer">7779</id>
+                    <name>Arthur C. Clarke</name>
+                </author>
+                <image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1551771499l/44280099._SX98_.jpg</image_url>
+                <small_image_url>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1551771499l/44280099._SY75_.jpg</small_image_url>
+            </best_book>
+
+        </results>
+    </search>
+</GoodreadsResponse>
