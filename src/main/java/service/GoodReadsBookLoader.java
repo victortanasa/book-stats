@@ -25,6 +25,14 @@ public class GoodReadsBookLoader {
 //            'favourites', 're-read', 'general', 'e-books'
 //            ]
 
+    //TODO: merge
+//    <shelf name="science-fiction" count="623"/>
+//    <shelf name="sci-fi" count="461"/>
+//    <shelf name="scifi" count="151"/>
+//    <shelf name="sf" count="80"/>
+//    <shelf name="sci-fi-fantasy" count="19"/>
+//    <shelf name="scifi-fantasy" count="19"/>
+
 
     //TODO: most important!
     //https://www.goodreads.com/book/show/50.xml?key=aB9VcY1rOGCzxMONqjk8Ug
