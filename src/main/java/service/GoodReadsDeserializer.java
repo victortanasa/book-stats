@@ -11,6 +11,7 @@ import utils.PrinterUtils;
 
 import java.io.ByteArrayInputStream;
 import java.util.List;
+import java.util.Objects;
 
 class GoodReadsDeserializer {
 
@@ -48,7 +49,7 @@ class GoodReadsDeserializer {
                     .findFirst()
                     .orElse(null);
 
-            return getInteger(bookCount);
+            return !Objects.isNull(bookCount) ? getInteger(bookCount) : null;
         } catch (final Exception e) {
             PrinterUtils.printSimple(String.format(COULD_NOT_GET_NUMBER_OF_BOOKS_READ_FROM_API_MESSAGE, response, e.getMessage()));
             return null;
