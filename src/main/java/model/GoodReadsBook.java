@@ -13,6 +13,7 @@ public class GoodReadsBook {
     private Long id;
 
     private String isbn;
+    private String isbn13;
     private String title;
     private String format;
 
@@ -31,22 +32,23 @@ public class GoodReadsBook {
 
     private List<String> authors;
 
-    public GoodReadsBook(final Long id, final String isbn, final String title, final String format, final Integer rating, final Integer readCount,
+    public GoodReadsBook(final Long id, final String isbn, final String isbn13, final String title, final String format, final Integer rating, final Integer readCount,
                          final Integer pageNumber, final Integer ratingsCount, final Double averageRating, final LocalDate dateStarted,
                          final LocalDate dateFinished, final Boolean owned, final List<String> authors) {
-        this.id = id;
-        this.isbn = isbn;
-        this.title = title;
+        this.averageRating = averageRating;
+        this.ratingsCount = ratingsCount;
+        this.dateFinished = dateFinished;
+        this.dateStarted = dateStarted;
+        this.pageNumber = pageNumber;
+        this.readCount = readCount;
+        this.authors = authors;
+        this.isbn13 = isbn13;
         this.format = format;
         this.rating = rating;
-        this.readCount = readCount;
-        this.pageNumber = pageNumber;
-        this.ratingsCount = ratingsCount;
-        this.averageRating = averageRating;
-        this.dateStarted = dateStarted;
-        this.dateFinished = dateFinished;
+        this.title = title;
         this.owned = owned;
-        this.authors = authors;
+        this.isbn = isbn;
+        this.id = id;
     }
 
     public Long getId() {
@@ -63,6 +65,14 @@ public class GoodReadsBook {
 
     public void setIsbn(final String isbn) {
         this.isbn = isbn;
+    }
+
+    public String getIsbn13() {
+        return isbn13;
+    }
+
+    public void setIsbn13(final String isbn13) {
+        this.isbn13 = isbn13;
     }
 
     public String getTitle() {

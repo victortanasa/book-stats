@@ -17,10 +17,17 @@ public class BookValidator {
     static {
         FIELD_GETTERS = newHashMap();
         FIELD_GETTERS.put(BookField.ISNB, GoodReadsBook::getIsbn);
+        FIELD_GETTERS.put(BookField.OWNED, GoodReadsBook::getOwned);
+        FIELD_GETTERS.put(BookField.TITLE, GoodReadsBook::getTitle);
         FIELD_GETTERS.put(BookField.FORMAT, GoodReadsBook::getFormat);
+        FIELD_GETTERS.put(BookField.RATING, GoodReadsBook::getRating);
+        FIELD_GETTERS.put(BookField.ISBN_13, GoodReadsBook::getIsbn13);
+        FIELD_GETTERS.put(BookField.AUTHORS, GoodReadsBook::getAuthors);
+        FIELD_GETTERS.put(BookField.READ_COUNT, GoodReadsBook::getReadCount);
         FIELD_GETTERS.put(BookField.PAGE_NUMBER, GoodReadsBook::getPageNumber);
+        FIELD_GETTERS.put(BookField.RATINGS_COUNT, GoodReadsBook::getRatingsCount);
+        FIELD_GETTERS.put(BookField.AVERAGE_RATING, GoodReadsBook::getAverageRating);
         FIELD_GETTERS.put(BookField.PUBLICATION_YEAR, GoodReadsBook::getPublicationYear);
-        //TODO: add all fields
     }
 
     public List<MissingDataResult> getMissingData(final List<GoodReadsBook> books) {
@@ -66,8 +73,16 @@ public class BookValidator {
 
     public enum BookField {
         PUBLICATION_YEAR,
+        AVERAGE_RATING,
+        RATINGS_COUNT,
         PAGE_NUMBER,
+        READ_COUNT,
+        AUTHORS,
+        ISBN_13,
         FORMAT,
+        RATING,
+        OWNED,
+        TITLE,
         ISNB
     }
 }

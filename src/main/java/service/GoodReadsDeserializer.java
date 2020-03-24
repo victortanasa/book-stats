@@ -75,6 +75,7 @@ class GoodReadsDeserializer {
 
         final String id = book.getChild("id").getValue();
         final String isbn = element.getChild("book").getChild("isbn").getValue();
+        final String isbn13 = element.getChild("book").getChild("isbn13").getValue();
         final String format = element.getChild("book").getChild("format").getValue();
         final String pageNumber = element.getChild("book").getChild("num_pages").getValue();
         final String title = element.getChild("book").getChild("title_without_series").getValue();
@@ -93,6 +94,7 @@ class GoodReadsDeserializer {
 
         return new GoodReadsBook(Long.valueOf(id),
                 getNullIfBlank(isbn),
+                getNullIfBlank(isbn13),
                 getNullIfBlank(title),
                 getNullIfBlank(format),
                 getInteger(rating),
