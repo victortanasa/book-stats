@@ -1,7 +1,7 @@
 import static java.util.stream.Collectors.toList;
 
 import model.GoodReadsBook;
-import org.apache.commons.lang3.StringUtils;
+import model.MissingDetails;
 import service.BookExcluder;
 import service.BookValidator;
 import service.GoodReadsRequestService;
@@ -20,16 +20,15 @@ public class GoodReadsTester {
 
         final List<GoodReadsBook> filteredBooks = BookExcluder.removeExcludedBooks(readBooks);
 
-        final List<GoodReadsBook> booksWithPublicationYear = filteredBooks.stream()
-                .map(book -> {
-                    final Integer originalPublicationYear = requestService.getPublicationYear(!StringUtils.isBlank(book.getIsbn()) ? book.getIsbn() : book.getTitle(), book.getId());
-                    return book.withPublicationYear(originalPublicationYear);
-                }).collect(toList());
-
-        System.out.println("Size is : " + filteredBooks.size());
-
-        //TODO: investigate publication year (most likely absent without isbn), page number
-        booksWithPublicationYear.forEach(System.out::println);
+        final List<GoodReadsBook> finalBooks = filteredBooks.stream().map(book -> {
+            final MissingDetails missingBookDetails = requestService.getMissingBookDetails(book.getId());
+            return book.withPublicationYear(missingBookDetails.getPublicationYear())
+                    .withShelves(missingBookDetails.getShelves());
+        }).collect(toList());
+//
+        System.out.println("Library size is : " + filteredBooks.size());
+//
+        finalBooks.forEach(System.out::println);
 
         final BookValidator bookValidator = new BookValidator();
         final List<BookValidator.MissingDataResult> missingData = bookValidator.getMissingData(filteredBooks);

@@ -32,6 +32,8 @@ public class GoodReadsBook {
 
     private List<String> authors;
 
+    private List<String> shelves;
+
     public GoodReadsBook(final Long id, final String isbn, final String isbn13, final String title, final String format, final Integer rating, final Integer readCount,
                          final Integer pageNumber, final Integer ratingsCount, final Double averageRating, final LocalDate dateStarted,
                          final LocalDate dateFinished, final Boolean owned, final List<String> authors) {
@@ -171,8 +173,21 @@ public class GoodReadsBook {
         this.authors = authors;
     }
 
-    public GoodReadsBook withPublicationYear(final Integer originalPublicationYear) {
-        this.publicationYear = originalPublicationYear;
+    public List<String> getShelves() {
+        return shelves;
+    }
+
+    public void setShelves(final List<String> shelves) {
+        this.shelves = shelves;
+    }
+
+    public GoodReadsBook withPublicationYear(final Integer publicationYear) {
+        this.publicationYear = publicationYear;
+        return this;
+    }
+
+    public GoodReadsBook withShelves(final List<String> shelves) {
+        this.shelves = shelves;
         return this;
     }
 

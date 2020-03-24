@@ -23,6 +23,7 @@ public class BookValidator {
         FIELD_GETTERS.put(BookField.RATING, GoodReadsBook::getRating);
         FIELD_GETTERS.put(BookField.ISBN_13, GoodReadsBook::getIsbn13);
         FIELD_GETTERS.put(BookField.AUTHORS, GoodReadsBook::getAuthors);
+        FIELD_GETTERS.put(BookField.SHELVES, GoodReadsBook::getShelves);
         FIELD_GETTERS.put(BookField.READ_COUNT, GoodReadsBook::getReadCount);
         FIELD_GETTERS.put(BookField.PAGE_NUMBER, GoodReadsBook::getPageNumber);
         FIELD_GETTERS.put(BookField.RATINGS_COUNT, GoodReadsBook::getRatingsCount);
@@ -77,6 +78,7 @@ public class BookValidator {
         RATINGS_COUNT,
         PAGE_NUMBER,
         READ_COUNT,
+        SHELVES,
         AUTHORS,
         ISBN_13,
         FORMAT,
