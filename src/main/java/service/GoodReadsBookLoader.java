@@ -35,5 +35,8 @@ public class GoodReadsBookLoader {
 
     //TODO: idea - if can't get isbn from edition, try others
 
+    //TODO: get books from DNF
+    //TODO: how popular are the books you read - by ratings number; most "popular authors"
+
 
 }
