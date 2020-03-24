@@ -22,7 +22,8 @@ public class GoodReadsTester {
 
         final List<GoodReadsBook> finalBooks = filteredBooks.stream().map(book -> {
             final MissingDetails missingBookDetails = requestService.getMissingBookDetails(book.getId());
-            return book.withPublicationYear(missingBookDetails.getPublicationYear())
+            return book
+                    .withPublicationYear(missingBookDetails.getPublicationYear())
                     .withShelves(missingBookDetails.getShelves());
         }).collect(toList());
 //
