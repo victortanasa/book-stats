@@ -17,6 +17,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import java.util.Optional;
 import java.util.function.BiConsumer;
 import java.util.stream.Collectors;
 
@@ -43,8 +44,7 @@ public class BookFieldFiller {
         FIELD_SETTERS.put(BookField.DATE_FINISHED, (goodReadsBook, dateFinished) -> goodReadsBook.setDateFinished(getDate(DATE_FORMATTER, dateFinished.toString())));
     }
 
-    //TODO: 1) pretty
-    //TODO: 2) NAMING -  missingDataResults not so ok
+    //TODO: naming?
     public BookFieldFiller() {
         BookLoader.getFileContent(STORED_DATA_FILE);
     }
@@ -56,25 +56,26 @@ public class BookFieldFiller {
     }
 
     private GoodReadsBook fillMissingBookFields(final GoodReadsBook book, final List<BookField> missingFields) {
-        final StoredBookData storedDataForBook = getStoredDataForBook(book);
+        final Optional<StoredBookData> storedDataForBook = getStoredDataForBook(book);
 
-        if (!Objects.isNull(storedDataForBook)) {
-            missingFields.forEach(field -> {
-                final Object fieldValue = storedDataForBook.getFieldValue(field);
-                if (!Objects.isNull(fieldValue)) {
-                    FIELD_SETTERS.get(field).accept(book, fieldValue);
-                }
-            });
-        }
+        storedDataForBook.ifPresent(data -> fillMissingFields(book, missingFields, storedDataForBook.get()));
 
         return book;
     }
 
-    private StoredBookData getStoredDataForBook(final GoodReadsBook book) {
+    private void fillMissingFields(final GoodReadsBook book, final List<BookField> missingFields, final StoredBookData storedBookData) {
+        missingFields.forEach(field -> {
+            final Object fieldValue = storedBookData.getFieldValue(field);
+            if (!Objects.isNull(fieldValue)) {
+                FIELD_SETTERS.get(field).accept(book, fieldValue);
+            }
+        });
+    }
+
+    private Optional<StoredBookData> getStoredDataForBook(final GoodReadsBook book) {
         return STORED_DATA.stream()
                 .filter(data -> data.getId().equals(book.getId()))
-                .findFirst()
-                .orElse(null);
+                .findFirst();
     }
 
     private static List<StoredBookData> loadStoredData() {
