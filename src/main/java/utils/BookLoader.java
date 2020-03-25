@@ -30,9 +30,9 @@ public class BookLoader {
                 .collect(toSet());
     }
 
-    public static String getResponseFromFile(boolean isSearch) {
+    public static String getFileContent(final String fileName) {
         try {
-            return new String(Files.readAllBytes(Paths.get(isSearch ? SEARCH_XML : SHELVE_XML)));
+            return new String(Files.readAllBytes(Paths.get("src/main/resources/" + fileName)));
         } catch (final Exception e) {
             PrinterUtils.printSimple(e.toString());
             return null;

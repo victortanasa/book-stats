@@ -1,18 +1,17 @@
 package service;
 
 import static java.util.stream.Collectors.toList;
+import static utils.TransformationUtils.*;
 
 import model.GoodReadsBook;
 import model.MissingDetails;
 import model.Shelve;
-import org.apache.commons.lang3.StringUtils;
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.input.SAXBuilder;
 import utils.PrinterUtils;
 
 import java.io.ByteArrayInputStream;
-import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Locale;
@@ -21,7 +20,6 @@ import java.util.Objects;
 class GoodReadsDeserializer {
 
     private static final String COULD_NOT_BUILD_RESPONSE_MESSAGE = "Could not build document from response  %s. Exception was: %s";
-    private static final String COULD_NOT_EXTRACT_DATE_MESSAGE = "Could not extract date from %s. Exception was: %s";
 
     private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("EEE MMM dd HH:mm:ss Z yyyy").withLocale(Locale.US);
 
@@ -129,37 +127,11 @@ class GoodReadsDeserializer {
                 getInteger(pageNumber),
                 getInteger(ratingsCount),
                 getDouble(averageRating),
-                getDate(dateStarted),
-                getDate(dateFinished),
+                getDate(DATE_FORMATTER, dateStarted),
+                getDate(DATE_FORMATTER, dateFinished),
                 "1".equals(owned),
                 authors);
     }
 
-    private static String getNullIfBlank(final String value) {
-        return StringUtils.isBlank(value) ? null : value;
-    }
 
-    private static Integer getInteger(final String value) {
-        return !StringUtils.isBlank(value) ? Integer.parseInt(value) : null;
-    }
-
-    private static Long getLong(final String value) {
-        return !StringUtils.isBlank(value) ? Long.parseLong(value) : null;
-    }
-
-    private static Double getDouble(final String value) {
-        return !StringUtils.isBlank(value) ? Double.parseDouble(value) : null;
-    }
-
-    private static LocalDate getDate(final String value) {
-        if (!StringUtils.isBlank(value)) {
-            try {
-                return LocalDate.parse(value, DATE_FORMATTER);
-            } catch (final Exception e) {
-                PrinterUtils.printSimple(String.format(COULD_NOT_EXTRACT_DATE_MESSAGE, value, e.getMessage()));
-                return null;
-            }
-        }
-        return null;
-    }
 }

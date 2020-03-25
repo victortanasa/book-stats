@@ -2,12 +2,8 @@ package utils;
 
 import static com.google.common.collect.Maps.newHashMap;
 
-import model.Book;
-import model.SortBy;
-import model.SortOrder;
-import model.Statistic;
+import model.*;
 import org.apache.commons.lang3.StringUtils;
-import service.BookValidator;
 
 import java.text.DecimalFormat;
 import java.util.Comparator;
@@ -71,7 +67,7 @@ public class PrinterUtils {
         System.out.println(SEPARATOR_LARGE);
     }
 
-    public static void printMissingData(final List<BookValidator.MissingDataResult> missingDataResults) {
+    public static void printMissingData(final List<MissingDataResult> missingDataResults) {
         System.out.println(String.format(MISSING_DATA, missingDataResults.size()) + NEWLINE);
 
         missingDataResults.forEach(element -> System.out.println(element + NEWLINE + SEPARATOR_SMALL));

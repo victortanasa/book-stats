@@ -1,10 +1,12 @@
 import static java.util.stream.Collectors.toList;
 
 import model.GoodReadsBook;
+import model.MissingDataResult;
 import model.MissingDetails;
 import service.BookExcluder;
 import service.BookValidator;
 import service.GoodReadsRequestService;
+import service.MissingBookDataFiller;
 import utils.PrinterUtils;
 
 import java.util.List;
@@ -27,13 +29,37 @@ public class GoodReadsTester {
                     .withShelves(missingBookDetails.getShelves());
         }).collect(toList());
 
-        System.out.println("Library size is : " + filteredBooks.size());
+        System.out.println("Library size is : " + finalBooks.size());
 
         finalBooks.forEach(System.out::println);
 
         final BookValidator bookValidator = new BookValidator();
-        final List<BookValidator.MissingDataResult> missingData = bookValidator.getMissingData(filteredBooks);
+        final List<MissingDataResult> missingData = bookValidator.getMissingData(filteredBooks);
         PrinterUtils.printMissingData(missingData);
+
+        final MissingBookDataFiller missingBookDataFiller = new MissingBookDataFiller();
+        final List<GoodReadsBook> booksWithAllDataLoaded = missingBookDataFiller.fillMissingBooksData(missingData);
+
+        PrinterUtils.printMissingData(bookValidator.getMissingData(booksWithAllDataLoaded));
     }
 
+    //TODO:
+//    Id: 35014337
+//    Title: We Are Legion (We Are Bob)
+//    Authors: [Dennis E. Taylor]
+//    Missing Fields: [FORMAT, PAGE_NUMBER]
+
+    //TODO:
+//    Books with missing data: 2
+//
+//    Id: 32617610
+//    Title: Sea of Rust
+//    Authors: [C. Robert Cargill]
+//    Missing Fields: [FORMAT]
+//            ------------------------------
+//    Id: 12591698
+//    Title: Caliban's War
+//    Authors: [James S.A. Corey]
+//    Missing Fields: [DATE_FINISHED]
+//            ------------------------------
 }

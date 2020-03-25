@@ -1,0 +1,79 @@
+[
+  {
+    "id": 42141498,
+    "fieldValueMap": {
+      "FORMAT": "paperback",
+      "PAGE_NUMBER": "358"
+    }
+  },
+  {
+    "id": 50885244,
+    "fieldValueMap": {
+      "FORMAT": "paperback",
+      "PAGE_NUMBER": "320"
+    }
+  },
+  {
+    "id": 36429921,
+    "fieldValueMap": {
+      "FORMAT": "paperback",
+      "PAGE_NUMBER": "288"
+    }
+  },
+  {
+    "id": 535060,
+    "fieldValueMap": {
+      "FORMAT": "paperback"
+    }
+  },
+  {
+    "id": 21059333,
+    "fieldValueMap": {
+      "FORMAT": "paperback"
+    }
+  },
+  {
+    "id": 12591698,
+    "fieldValueMap": {
+      "DATE_FINISHED": "2018-07-05"
+    }
+  },
+  {
+    "id": 12012,
+    "fieldValueMap": {
+      "FORMAT": "paperback"
+    }
+  },
+  {
+    "id": 40031983,
+    "fieldValueMap": {
+      "FORMAT": "paperback"
+    }
+  },
+  {
+    "id": 34639452,
+    "fieldValueMap": {
+      "FORMAT": "paperback",
+      "PAGE_NUMBER": "416"
+    }
+  },
+  {
+    "id": 12007,
+    "fieldValueMap": {
+      "FORMAT": "paperback"
+    }
+  },
+  {
+    "id": 39892317,
+    "fieldValueMap": {
+      "FORMAT": "paperback"
+    }
+  },
+  {
+    "id": 35014337,
+    "fieldValueMap": {
+      "FORMAT": "paperback",
+      "PAGE_NUMBER": "308"
+    }
+  }
+]
