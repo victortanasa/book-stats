@@ -6,7 +6,7 @@ import static model.Statistic.*;
 import com.google.common.base.Function;
 import com.google.common.base.Supplier;
 import model.Book;
-import model.SortOrder;
+import model.sorting.SortOrder;
 import model.Statistic;
 
 import java.time.LocalDate;

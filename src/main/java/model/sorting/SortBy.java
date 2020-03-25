@@ -1,4 +1,4 @@
-package model;
+package model.sorting;
 
 public enum SortBy {
     TITLE,

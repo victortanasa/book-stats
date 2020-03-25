@@ -1,4 +1,4 @@
-package service;
+package service.api;
 
 import static java.util.stream.Collectors.toList;
 import static utils.TransformationUtils.*;
@@ -9,6 +9,7 @@ import model.Shelve;
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.input.SAXBuilder;
+import service.processing.ShelveAggregator;
 import utils.PrinterUtils;
 
 import java.io.ByteArrayInputStream;
@@ -17,7 +18,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
 
-class GoodReadsDeserializer {
+class ResponseParser {
 
     private static final String COULD_NOT_BUILD_RESPONSE_MESSAGE = "Could not build document from response  %s. Exception was: %s";
 
@@ -27,7 +28,7 @@ class GoodReadsDeserializer {
 
     private static final SAXBuilder SAX_BUILDER = new SAXBuilder();
 
-    List<GoodReadsBook> getBooksFromStringResponse(final String response) {
+    List<GoodReadsBook> getBooks(final String response) {
         final Document document = buildDocument(response);
 
         final List<Element> elements = document.getRootElement()
@@ -39,7 +40,7 @@ class GoodReadsDeserializer {
                 .collect(toList());
     }
 
-    Integer getNumberOfBooksRead(final String response) {
+    Integer getNumberOfBooksToRetrieve(final String response) {
         final Document document = buildDocument(response);
 
         final List<Element> shelves = document.getRootElement()
@@ -55,7 +56,7 @@ class GoodReadsDeserializer {
         return !Objects.isNull(bookCount) ? getInteger(bookCount) : null;
     }
 
-    MissingDetails getMissingBookDetails(final String response) {
+    MissingDetails getMissingDetails(final String response) {
         final Document document = buildDocument(response);
 
         final String publicationYear = document.getRootElement()
@@ -74,7 +75,7 @@ class GoodReadsDeserializer {
                 .limit(SHELF_LIMIT)
                 .collect(toList());
 
-        return new MissingDetails(getInteger(publicationYear), ShelveAnalyzer.getTopShelves(popularShelves));
+        return new MissingDetails(getInteger(publicationYear), ShelveAggregator.getTopShelves(popularShelves));
     }
 
     private Document buildDocument(final String response) {

@@ -1,4 +1,4 @@
-package service;
+package service.processing;
 
 import static com.google.common.collect.Maps.newHashMap;
 import static java.util.stream.Collectors.toList;
@@ -6,13 +6,13 @@ import static java.util.stream.Collectors.toList;
 import com.google.common.base.Function;
 import model.BookField;
 import model.GoodReadsBook;
-import model.MissingDataResult;
+import model.MissingBookFields;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
-public class BookValidator {
+public class BookFieldValidator {
 
     private static final Map<BookField, Function<GoodReadsBook, ?>> FIELD_GETTERS;
 
@@ -36,9 +36,10 @@ public class BookValidator {
         FIELD_GETTERS.put(BookField.PUBLICATION_YEAR, GoodReadsBook::getPublicationYear);
     }
 
-    public List<MissingDataResult> getMissingData(final List<GoodReadsBook> books) {
+    //TODO: maybe Map<Book,Fields>?
+    public List<MissingBookFields> getMissingData(final List<GoodReadsBook> books) {
         return books.stream()
-                .map(book -> new MissingDataResult(book, getFieldsWithNoValue(book)))
+                .map(book -> new MissingBookFields(book, getFieldsWithNoValue(book)))
                 .filter(missingData -> !missingData.getMissingFields().isEmpty())
                 .collect(toList());
     }

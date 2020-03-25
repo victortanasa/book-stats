@@ -1,8 +1,8 @@
 import static model.Statistic.*;
 
 import model.Book;
-import model.SortBy;
-import model.SortOrder;
+import model.sorting.SortBy;
+import model.sorting.SortOrder;
 import service.StatisticsService;
 import utils.BookLoader;
 import utils.PrinterUtils;

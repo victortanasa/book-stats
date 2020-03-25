@@ -1,4 +1,4 @@
-package service;
+package service.processing;
 
 import static com.google.common.collect.Maps.newHashMap;
 import static utils.TransformationUtils.getDate;
@@ -8,7 +8,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import model.BookField;
 import model.GoodReadsBook;
-import model.MissingDataResult;
+import model.MissingBookFields;
 import model.StoredBookData;
 import utils.BookLoader;
 import utils.PrinterUtils;
@@ -21,7 +21,7 @@ import java.util.Objects;
 import java.util.function.BiConsumer;
 import java.util.stream.Collectors;
 
-public class MissingBookDataFiller {
+public class BookFieldFiller {
 
     private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
@@ -47,29 +47,30 @@ public class MissingBookDataFiller {
     //TODO: 1) pretty
     //TODO: 2) NAMING -  missingDataResults not so ok
     //TODO: 3) move classes to correct packages
-    public MissingBookDataFiller() {
+    public BookFieldFiller() {
         BookLoader.getFileContent(STORED_DATA_FILE);
     }
 
-    public List<GoodReadsBook> fillMissingBooksData(final List<MissingDataResult> missingDataResults) {
-        return missingDataResults.stream()
-                .map(this::fillMissingBookData)
+    //TODO: RETURNS ONLY FILTERED BOOKS!
+    public List<GoodReadsBook> fillMissingFieldsForBooks(final List<MissingBookFields> missingBookFields) {
+        return missingBookFields.stream()
+                .map(this::fillMissingBookFields)
                 .collect(Collectors.toList());
     }
 
-    private GoodReadsBook fillMissingBookData(final MissingDataResult missingDataResult) {
-        final StoredBookData storedDataForBook = getStoredDataForBook(missingDataResult.getBook());
+    private GoodReadsBook fillMissingBookFields(final MissingBookFields missingBookFields) {
+        final StoredBookData storedDataForBook = getStoredDataForBook(missingBookFields.getBook());
 
         if (!Objects.isNull(storedDataForBook)) {
-            missingDataResult.getMissingFields().forEach(field -> {
+            missingBookFields.getMissingFields().forEach(field -> {
                 final Object fieldValue = storedDataForBook.getFieldValue(field);
                 if (!Objects.isNull(fieldValue)) {
-                    FIELD_SETTERS.get(field).accept(missingDataResult.getBook(), fieldValue);
+                    FIELD_SETTERS.get(field).accept(missingBookFields.getBook(), fieldValue);
                 }
             });
         }
 
-        return missingDataResult.getBook();
+        return missingBookFields.getBook();
     }
 
     private StoredBookData getStoredDataForBook(final GoodReadsBook book) {

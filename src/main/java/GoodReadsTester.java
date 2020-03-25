@@ -1,46 +1,47 @@
 import static java.util.stream.Collectors.toList;
 
 import model.GoodReadsBook;
-import model.MissingDataResult;
+import model.MissingBookFields;
 import model.MissingDetails;
-import service.BookExcluder;
-import service.BookValidator;
-import service.GoodReadsRequestService;
-import service.MissingBookDataFiller;
+import service.api.GoodReadsAPIService;
+import service.processing.BookFieldFiller;
+import service.processing.BookFieldValidator;
+import service.processing.BookFilter;
 import utils.PrinterUtils;
 
 import java.util.List;
 
 public class GoodReadsTester {
 
+    private static final GoodReadsAPIService GOOD_READS_API_SERVICE = new GoodReadsAPIService();
+    private static final BookFieldValidator BOOK_FIELD_VALIDATOR = new BookFieldValidator();
+    private static final BookFieldFiller BOOK_FIELD_FILLER = new BookFieldFiller();
+    private static final BookFilter BOOK_FILTER = new BookFilter();
+
     public static void main(final String[] args) {
-        final GoodReadsRequestService requestService = new GoodReadsRequestService();
+        final Integer numberOfBooksRead = GOOD_READS_API_SERVICE.getNumberOfBooksToRetrieve();
+        final List<GoodReadsBook> readBooks = GOOD_READS_API_SERVICE.getAllBooksRead(numberOfBooksRead);
+        final List<GoodReadsBook> wantedBooks = BOOK_FILTER.filterUnwantedBooks(readBooks);
 
-        final Integer numberOfBooksRead = requestService.getNumberOfBooksRead();
+        System.out.println("wanted books size: " + wantedBooks.size());
 
-        final List<GoodReadsBook> readBooks = requestService.getAllBooksRead(numberOfBooksRead);
+        final List<GoodReadsBook> booksWithAllDataLoaded = wantedBooks.stream()
+                .map(GoodReadsTester::setAdditionalFields)
+                .collect(toList());
 
-        final List<GoodReadsBook> filteredBooks = BookExcluder.removeExcludedBooks(readBooks);
+        final List<MissingBookFields> missingBookFields = BOOK_FIELD_VALIDATOR.getMissingData(booksWithAllDataLoaded);
+        final List<GoodReadsBook> booksFilledWithStoredDetails = BOOK_FIELD_FILLER.fillMissingFieldsForBooks(missingBookFields);
 
-        final List<GoodReadsBook> finalBooks = filteredBooks.stream().map(book -> {
-            final MissingDetails missingBookDetails = requestService.getMissingBookDetails(book.getId());
-            return book
-                    .withPublicationYear(missingBookDetails.getPublicationYear())
-                    .withShelves(missingBookDetails.getShelves());
-        }).collect(toList());
+        PrinterUtils.printMissingData(BOOK_FIELD_VALIDATOR.getMissingData(booksFilledWithStoredDetails));
 
-        System.out.println("Library size is : " + finalBooks.size());
+        booksFilledWithStoredDetails.forEach(System.out::println);
+    }
 
-        finalBooks.forEach(System.out::println);
-
-        final BookValidator bookValidator = new BookValidator();
-        final List<MissingDataResult> missingData = bookValidator.getMissingData(filteredBooks);
-        PrinterUtils.printMissingData(missingData);
-
-        final MissingBookDataFiller missingBookDataFiller = new MissingBookDataFiller();
-        final List<GoodReadsBook> booksWithAllDataLoaded = missingBookDataFiller.fillMissingBooksData(missingData);
-
-        PrinterUtils.printMissingData(bookValidator.getMissingData(booksWithAllDataLoaded));
+    private static GoodReadsBook setAdditionalFields(final GoodReadsBook book) {
+        final MissingDetails missingBookDetails = GOOD_READS_API_SERVICE.getMissingBookDetails(book.getId());
+        return book
+                .withPublicationYear(missingBookDetails.getPublicationYear())
+                .withShelves(missingBookDetails.getShelves());
     }
 
     //TODO:

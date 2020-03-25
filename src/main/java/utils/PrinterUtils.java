@@ -3,6 +3,8 @@ package utils;
 import static com.google.common.collect.Maps.newHashMap;
 
 import model.*;
+import model.sorting.SortBy;
+import model.sorting.SortOrder;
 import org.apache.commons.lang3.StringUtils;
 
 import java.text.DecimalFormat;
@@ -67,10 +69,10 @@ public class PrinterUtils {
         System.out.println(SEPARATOR_LARGE);
     }
 
-    public static void printMissingData(final List<MissingDataResult> missingDataResults) {
-        System.out.println(String.format(MISSING_DATA, missingDataResults.size()) + NEWLINE);
+    public static void printMissingData(final List<MissingBookFields> missingBookFields) {
+        System.out.println(String.format(MISSING_DATA, missingBookFields.size()) + NEWLINE);
 
-        missingDataResults.forEach(element -> System.out.println(element + NEWLINE + SEPARATOR_SMALL));
+        missingBookFields.forEach(element -> System.out.println(element + NEWLINE + SEPARATOR_SMALL));
 
         System.out.println(SEPARATOR_LARGE);
     }

@@ -2,7 +2,7 @@ package model;
 
 import java.util.List;
 
-public class MissingDataResult {
+public class MissingBookFields {
 
     private final static String TO_STRING_FORMAT = "Id: %s\nTitle: %s\nAuthors: %s\nMissing Fields: %s";
 
@@ -10,9 +10,9 @@ public class MissingDataResult {
 
     private List<BookField> missingFields;
 
-    public MissingDataResult(final GoodReadsBook book, final List<BookField> missingFields) {
-        this.book = book;
+    public MissingBookFields(final GoodReadsBook book, final List<BookField> missingFields) {
         this.missingFields = missingFields;
+        this.book = book;
     }
 
     public GoodReadsBook getBook() {

@@ -1,4 +1,4 @@
-package service;
+package service.api;
 
 import model.GoodReadsBook;
 import model.MissingDetails;
@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
-public class GoodReadsRequestService {
+public class GoodReadsAPIService {
 
     private static final String COULD_NOT_LOAD_BOOKS_ERROR_MESSAGE = "Could not load books, cannot continue.";
     private static final String INTERRUPTED_MESSAGE = "Something interrupted!";
@@ -28,10 +28,10 @@ public class GoodReadsRequestService {
 
     private static final String GET_BOOK_DETAILS_URL = "book/show/%s.xml?key=aB9VcY1rOGCzxMONqjk8Ug";
 
+    private ResponseParser responseParser;
     private WebClient webClient;
-    private GoodReadsDeserializer goodReadsDeserializer;
 
-    public GoodReadsRequestService() {
+    public GoodReadsAPIService() {
         final ExchangeStrategies exchangeStrategies = ExchangeStrategies.builder()
                 .codecs(configurer -> configurer.defaultCodecs().maxInMemorySize(1024 * 1000)).build();
 
@@ -40,25 +40,25 @@ public class GoodReadsRequestService {
                 .baseUrl(GOOD_READS_BASE_URL)
                 .build();
 
-        goodReadsDeserializer = new GoodReadsDeserializer();
+        responseParser = new ResponseParser();
     }
 
-    public Integer getNumberOfBooksRead() {
+    public Integer getNumberOfBooksToRetrieve() {
         final String response = doRequest(GET_READ_SHELF_URL);
 
-        return goodReadsDeserializer.getNumberOfBooksRead(response);
+        return responseParser.getNumberOfBooksToRetrieve(response);
     }
 
     public List<GoodReadsBook> getAllBooksRead(final Integer numberOfBooksToRetrieve) {
         final String response = doRequest(String.format(GET_READ_BOOKS_URL, numberOfBooksToRetrieve));
 
-        return goodReadsDeserializer.getBooksFromStringResponse(response);
+        return responseParser.getBooks(response);
     }
 
     public MissingDetails getMissingBookDetails(final Long bookId) {
         final String response = doRequest(String.format(GET_BOOK_DETAILS_URL, bookId));
 
-        return goodReadsDeserializer.getMissingBookDetails(response);
+        return responseParser.getMissingDetails(response);
     }
 
     private String doRequest(final String endpoint) {

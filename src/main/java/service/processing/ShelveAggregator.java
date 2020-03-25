@@ -1,4 +1,4 @@
-package service;
+package service.processing;
 
 import static com.google.common.collect.Lists.newArrayList;
 import static java.util.Comparator.comparing;
@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-class ShelveAnalyzer {
+public class ShelveAggregator {
 
     //TODO: maybe top category, sub-category
 
@@ -40,11 +40,11 @@ class ShelveAnalyzer {
         SHELVE_NAMES_STARTS_WITH_FILTER = newArrayList("read-in", "hugo", "nebula");
     }
 
-    static List<String> getTopShelves(final List<Shelve> allShelves) {
+    public static List<String> getTopShelves(final List<Shelve> allShelves) {
         final List<Shelve> normalizedAndFilteredShelves = allShelves.stream()
-                .filter(ShelveAnalyzer::shelveNotInFilterList)
-                .filter(ShelveAnalyzer::shelveNotInStartsWithFilterList)
-                .map(ShelveAnalyzer::normalizeShelveName)
+                .filter(ShelveAggregator::shelveNotInFilterList)
+                .filter(ShelveAggregator::shelveNotInStartsWithFilterList)
+                .map(ShelveAggregator::normalizeShelveName)
                 .collect(toList());
 
         final Map<String, Integer> shelvesPopularityMap = normalizedAndFilteredShelves.stream()

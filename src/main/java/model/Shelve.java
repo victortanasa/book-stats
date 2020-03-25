@@ -10,8 +10,8 @@ public class Shelve {
     private Integer popularity;
 
     public Shelve(final String name, final Integer popularity) {
-        this.name = name;
         this.popularity = popularity;
+        this.name = name;
     }
 
     public String getName() {

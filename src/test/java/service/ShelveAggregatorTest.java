@@ -7,13 +7,14 @@ import static org.hamcrest.Matchers.is;
 import model.Shelve;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
+import service.processing.ShelveAggregator;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Locale;
 
-public class ShelveAnalyzerTest {
+public class ShelveAggregatorTest {
 
     private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
@@ -28,7 +29,7 @@ public class ShelveAnalyzerTest {
                 new Shelve("fantasy", 2000),
                 new Shelve("post-apocalyptic", 1000));
 
-        final List<String> strings = ShelveAnalyzer.getTopShelves(shelvesToClean);
+        final List<String> strings = ShelveAggregator.getTopShelves(shelvesToClean);
 
         System.out.println("Result: " + strings);
 
