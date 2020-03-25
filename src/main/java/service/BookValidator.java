@@ -26,6 +26,8 @@ public class BookValidator {
         FIELD_GETTERS.put(BookField.SHELVES, GoodReadsBook::getShelves);
         FIELD_GETTERS.put(BookField.READ_COUNT, GoodReadsBook::getReadCount);
         FIELD_GETTERS.put(BookField.PAGE_NUMBER, GoodReadsBook::getPageNumber);
+        FIELD_GETTERS.put(BookField.DATE_STARTED, GoodReadsBook::getDateStarted);
+        FIELD_GETTERS.put(BookField.DATE_FINISHED, GoodReadsBook::getDateFinished);
         FIELD_GETTERS.put(BookField.RATINGS_COUNT, GoodReadsBook::getRatingsCount);
         FIELD_GETTERS.put(BookField.AVERAGE_RATING, GoodReadsBook::getAverageRating);
         FIELD_GETTERS.put(BookField.PUBLICATION_YEAR, GoodReadsBook::getPublicationYear);
@@ -75,7 +77,9 @@ public class BookValidator {
     public enum BookField {
         PUBLICATION_YEAR,
         AVERAGE_RATING,
+        DATE_FINISHED,
         RATINGS_COUNT,
+        DATE_STARTED,
         PAGE_NUMBER,
         READ_COUNT,
         SHELVES,

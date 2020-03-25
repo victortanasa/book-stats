@@ -12,12 +12,18 @@ import org.jdom2.input.SAXBuilder;
 import utils.PrinterUtils;
 
 import java.io.ByteArrayInputStream;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.Locale;
 import java.util.Objects;
 
 class GoodReadsDeserializer {
 
     private static final String COULD_NOT_BUILD_RESPONSE_MESSAGE = "Could not build document from response  %s. Exception was: %s";
+    private static final String COULD_NOT_EXTRACT_DATE_MESSAGE = "Could not extract date from %s. Exception was: %s";
+
+    private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("EEE MMM dd HH:mm:ss Z yyyy").withLocale(Locale.US);
 
     private static final int SHELF_LIMIT = 100;
 
@@ -123,8 +129,8 @@ class GoodReadsDeserializer {
                 getInteger(pageNumber),
                 getInteger(ratingsCount),
                 getDouble(averageRating),
-                null, //TODO: dateStarted
-                null, //TODO: dateFinished
+                getDate(dateStarted),
+                getDate(dateFinished),
                 "1".equals(owned),
                 authors);
     }
@@ -143,5 +149,17 @@ class GoodReadsDeserializer {
 
     private static Double getDouble(final String value) {
         return !StringUtils.isBlank(value) ? Double.parseDouble(value) : null;
+    }
+
+    private static LocalDate getDate(final String value) {
+        if (!StringUtils.isBlank(value)) {
+            try {
+                return LocalDate.parse(value, DATE_FORMATTER);
+            } catch (final Exception e) {
+                PrinterUtils.printSimple(String.format(COULD_NOT_EXTRACT_DATE_MESSAGE, value, e.getMessage()));
+                return null;
+            }
+        }
+        return null;
     }
 }

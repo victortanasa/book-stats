@@ -24,12 +24,10 @@ class ShelveAnalyzer {
             "audio-books", "audible", "book-club", "series", "sf-masterworks", "abandoned", "dnf", "the-expanse", "expanse", "asimov", "fiction", "non-fiction",
             "nonfiction", "philip-k-dick", "culture", "isaac-asimov", "vonnegut", "peter-f-hamilton", "alastair-reynolds", "foundation",
             "revelation-space");
-    //read-in-2015 [any year]
-
-    private static final List<String> SHELVE_NAMES_STARTS_WITH_FILTER = newArrayList("read-in", "hugo", "nebula");
 
     private static final int SHELVE_LIMIT = 3;
 
+    private static final List<String> SHELVE_NAMES_STARTS_WITH_FILTER;
     private static final List<ShelveMapping> SHELVE_NAME_MAPPINGS;
 
     static {
@@ -38,6 +36,8 @@ class ShelveAnalyzer {
         SHELVE_NAME_MAPPINGS.add(new ShelveMapping("mil-sci-fi", newArrayList("military-sci-fi", "military-science-fiction", "mil-sci-fi")));
         SHELVE_NAME_MAPPINGS.add(new ShelveMapping("sci-fi-fantasy", newArrayList("sci-fi-fantasy", "scifi-fantasy")));
         SHELVE_NAME_MAPPINGS.add(new ShelveMapping("dystopian", newArrayList("dystopian", "dystopia"))); // post-apocalyptic?
+
+        SHELVE_NAMES_STARTS_WITH_FILTER = newArrayList("read-in", "hugo", "nebula");
     }
 
     static List<String> getTopShelves(final List<Shelve> allShelves) {

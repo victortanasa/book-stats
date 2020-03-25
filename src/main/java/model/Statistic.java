@@ -21,6 +21,7 @@ public enum Statistic {
 
     //TODO: average time to read a book, optionally for author
     //TODO: days not reading books
+    //TODO: days (or average) between adding a book and reading it
 
     private String statistic;
 
