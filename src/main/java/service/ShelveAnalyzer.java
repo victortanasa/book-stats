@@ -17,10 +17,16 @@ class ShelveAnalyzer {
 
     //TODO: Docs
     //TODO: add more shelve mappings
-    private static final List<String> SHELVES_TO_FILTER = newArrayList("to-read", "currently-reading", "owned", "default", "favorites",
+    //TODO: initialize list of authors from get all Books step and compose authors shelves; maybe series name? (foundation)
+    private static final List<String> SHELVE_NAMES_FILTER = newArrayList("to-read", "currently-reading", "owned", "default", "favorites",
             "books-i-own", "ebook", "kindle", "library", "audiobook", "owned-books", "audiobooks", "my-books", "ebooks", "to-buy",
-            "english", "calibre", "books", "british", "audio", "my-library", "favourites", "re-read", "general", "e-books",
-            "audible", "book-club", "series", "sf-masterworks", "abandoned", "dnf", "the-expanse", "asimov");
+            "english", "calibre", "books", "british", "audio", "my-library", "favourites", "re-read", "general", "e-books", "audio-book",
+            "audio-books", "audible", "book-club", "series", "sf-masterworks", "abandoned", "dnf", "the-expanse", "expanse", "asimov", "fiction", "non-fiction",
+            "nonfiction", "philip-k-dick", "culture", "isaac-asimov", "vonnegut", "peter-f-hamilton", "alastair-reynolds", "foundation",
+            "revelation-space");
+    //read-in-2015 [any year]
+
+    private static final List<String> SHELVE_NAMES_STARTS_WITH_FILTER = newArrayList("read-in", "hugo", "nebula");
 
     private static final int SHELVE_LIMIT = 3;
 
@@ -35,12 +41,13 @@ class ShelveAnalyzer {
     }
 
     static List<String> getTopShelves(final List<Shelve> allShelves) {
-        final List<Shelve> shelvesWithNormalizedNames = allShelves.stream()
-                .filter(shelve -> !SHELVES_TO_FILTER.contains(shelve.getName()))
+        final List<Shelve> normalizedAndFilteredShelves = allShelves.stream()
+                .filter(ShelveAnalyzer::shelveNotInFilterList)
+                .filter(ShelveAnalyzer::shelveNotInStartsWithFilterList)
                 .map(ShelveAnalyzer::normalizeShelveName)
                 .collect(toList());
 
-        final Map<String, Integer> shelvesPopularityMap = shelvesWithNormalizedNames.stream()
+        final Map<String, Integer> shelvesPopularityMap = normalizedAndFilteredShelves.stream()
                 .collect(Collectors.groupingBy(Shelve::getName, Collectors.summingInt(Shelve::getPopularity)));
 
         return shelvesPopularityMap.entrySet().stream()
@@ -51,12 +58,21 @@ class ShelveAnalyzer {
     }
 
     private static Shelve normalizeShelveName(final Shelve shelve) {
-        for (final ShelveMapping mapping : SHELVE_NAME_MAPPINGS) {
-            if (mapping.getPotentialValues().contains(shelve.getName())) {
-                return new Shelve(mapping.getNormalizedValue(), shelve.getPopularity());
-            }
-        }
+        SHELVE_NAME_MAPPINGS.stream()
+                .filter(mapping -> mapping.getPotentialValues().contains(shelve.getName()))
+                .findFirst()
+                .ifPresent(mapping -> shelve.setName(mapping.getNormalizedValue()));
+
         return shelve;
+    }
+
+    private static boolean shelveNotInFilterList(final Shelve shelve) {
+        return !SHELVE_NAMES_FILTER.contains(shelve.getName());
+    }
+
+    private static boolean shelveNotInStartsWithFilterList(final Shelve shelve) {
+        return SHELVE_NAMES_STARTS_WITH_FILTER.stream()
+                .noneMatch(shelveNameToFilter -> shelve.getName().startsWith(shelveNameToFilter));
     }
 
     static class ShelveMapping {

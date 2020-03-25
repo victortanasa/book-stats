@@ -20,7 +20,7 @@ public class ShelveAnalyzerTest {
                 new Shelve("sf", 300),
                 new Shelve("sci-fi", 4600),
                 new Shelve("fantasy", 2000),
-                new Shelve("fiction", 1000));
+                new Shelve("post-apocalyptic", 1000));
 
         final List<String> strings = ShelveAnalyzer.getTopShelves(shelvesToClean);
 
@@ -29,7 +29,7 @@ public class ShelveAnalyzerTest {
         assertThat(strings.size(), is(3));
         assertThat(strings.get(0), is("sci-fi"));
         assertThat(strings.get(1), is("fantasy"));
-        assertThat(strings.get(2), is("fiction"));
+        assertThat(strings.get(2), is("post-apocalyptic"));
     }
 
 }

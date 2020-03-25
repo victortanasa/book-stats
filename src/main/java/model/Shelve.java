@@ -22,6 +22,10 @@ public class Shelve {
         return popularity;
     }
 
+    public void setName(final String name) {
+        this.name = name;
+    }
+
     @Override
     public boolean equals(final Object o) {
         return EqualsBuilder.reflectionEquals(this, o);

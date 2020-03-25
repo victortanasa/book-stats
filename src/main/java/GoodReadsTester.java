@@ -26,9 +26,9 @@ public class GoodReadsTester {
                     .withPublicationYear(missingBookDetails.getPublicationYear())
                     .withShelves(missingBookDetails.getShelves());
         }).collect(toList());
-//
+
         System.out.println("Library size is : " + filteredBooks.size());
-//
+
         finalBooks.forEach(System.out::println);
 
         final BookValidator bookValidator = new BookValidator();
