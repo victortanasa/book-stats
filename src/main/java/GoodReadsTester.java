@@ -49,17 +49,4 @@ public class GoodReadsTester {
 //    Authors: [Dennis E. Taylor]
 //    Missing Fields: [FORMAT, PAGE_NUMBER]
 
-    //TODO:
-//    Books with missing data: 2
-//
-//    Id: 32617610
-//    Title: Sea of Rust
-//    Authors: [C. Robert Cargill]
-//    Missing Fields: [FORMAT]
-//            ------------------------------
-//    Id: 12591698
-//    Title: Caliban's War
-//    Authors: [James S.A. Corey]
-//    Missing Fields: [DATE_FINISHED]
-//            ------------------------------
 }
