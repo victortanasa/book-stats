@@ -36,7 +36,6 @@ public class BookFieldValidator {
         FIELD_GETTERS.put(BookField.PUBLICATION_YEAR, GoodReadsBook::getPublicationYear);
     }
 
-    //TODO: maybe Map<Book,Fields>?
     public Map<GoodReadsBook, List<BookField>> getMissingFields(final List<GoodReadsBook> books) {
         return books.stream()
                 .collect(toMap(GoodReadsBook::getThis, this::getFieldsWithNoValue));

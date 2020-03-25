@@ -1,4 +1,7 @@
+package service;
+
 import static java.util.stream.Collectors.toList;
+import static service.BookLoader.Source.GOODREADS;
 
 import model.BookField;
 import model.GoodReadsBook;
@@ -7,34 +10,38 @@ import service.api.GoodReadsAPIService;
 import service.processing.BookFieldFiller;
 import service.processing.BookFieldValidator;
 import service.processing.BookFilter;
-import utils.PrinterUtils;
 
 import java.util.List;
 import java.util.Map;
 
-public class GoodReadsTester {
+public class BookLoader {
 
     private static final GoodReadsAPIService GOOD_READS_API_SERVICE = new GoodReadsAPIService();
     private static final BookFieldValidator BOOK_FIELD_VALIDATOR = new BookFieldValidator();
     private static final BookFieldFiller BOOK_FIELD_FILLER = new BookFieldFiller();
+    private static final StorageService STORAGE_SERVICE = new StorageService();
     private static final BookFilter BOOK_FILTER = new BookFilter();
 
-    public static void main(final String[] args) {
+    public List<GoodReadsBook> loadBooks(final Source source) {
+        return source.equals(GOODREADS) ? getBooksFromGoodReads() : STORAGE_SERVICE.loadBooks();
+    }
+
+    private List<GoodReadsBook> getBooksFromGoodReads() {
         final Integer numberOfBooksToRetrieve = GOOD_READS_API_SERVICE.getNumberOfBooksToRetrieve();
         final List<GoodReadsBook> readBooks = GOOD_READS_API_SERVICE.getAllBooksRead(numberOfBooksToRetrieve);
         final List<GoodReadsBook> wantedBooks = BOOK_FILTER.filterUnwantedBooks(readBooks);
 
         final List<GoodReadsBook> booksWithAllDataLoaded = wantedBooks.stream()
-                .map(GoodReadsTester::setAdditionalFields)
+                .map(BookLoader::setAdditionalFields)
                 .collect(toList());
 
         final Map<GoodReadsBook, List<BookField>> missingFieldsMap = BOOK_FIELD_VALIDATOR.getMissingFields(booksWithAllDataLoaded);
 
-        PrinterUtils.printMissingData(missingFieldsMap);
+        final List<GoodReadsBook> goodReadsBooks = BOOK_FIELD_FILLER.fillMissingFieldsForBooks(missingFieldsMap);
 
-        final List<GoodReadsBook> booksFilledWithStoredDetails = BOOK_FIELD_FILLER.fillMissingFieldsForBooks(missingFieldsMap);
+        STORAGE_SERVICE.saveBooks(goodReadsBooks);
 
-        booksFilledWithStoredDetails.forEach(System.out::println);
+        return goodReadsBooks;
     }
 
     private static GoodReadsBook setAdditionalFields(final GoodReadsBook book) {
@@ -44,10 +51,8 @@ public class GoodReadsTester {
                 .withShelves(missingBookDetails.getShelves());
     }
 
-    //TODO:
-//    Id: 35014337
-//    Title: We Are Legion (We Are Bob)
-//    Authors: [Dennis E. Taylor]
-//    Missing Fields: [FORMAT, PAGE_NUMBER]
-
+    public enum Source {
+        GOODREADS,
+        STORAGE
+    }
 }

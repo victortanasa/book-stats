@@ -1,6 +1,6 @@
 package service;
 
-public class GoodReadsBookLoader {
+public class TODOHolder {
 
     //TODO: request shelves
     //https://www.goodreads.com/shelf/list.xml?key=aB9VcY1rOGCzxMONqjk8Ug&user_id=60626198&page=1
@@ -47,6 +47,12 @@ public class GoodReadsBookLoader {
     //TODO: how popular are the books you read - by ratings number; most "popular authors"
 
     //TODO: missing dates thread: https://www.goodreads.com/topic/show/19351061-missing-started-at-and-read-at
+
+    //TODO:
+//    Id: 35014337
+//    Title: We Are Legion (We Are Bob)
+//    Authors: [Dennis E. Taylor]
+//    Missing Fields: [FORMAT, PAGE_NUMBER]
 
 
 }

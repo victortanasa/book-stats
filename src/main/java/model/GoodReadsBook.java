@@ -1,5 +1,10 @@
 package model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
+import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
@@ -10,7 +15,7 @@ import java.util.List;
 
 public class GoodReadsBook {
 
-    private final static String TO_STRING_SHORT_FORMAT = "Id: %s\nTitle: %s\nAuthors: %s";
+    private static final String TO_STRING_SHORT_FORMAT = "Id: %s\nTitle: %s\nAuthors: %s";
 
     private Long id;
 
@@ -27,7 +32,11 @@ public class GoodReadsBook {
 
     private Double averageRating;
 
+    @JsonDeserialize(using = LocalDateDeserializer.class)
+    @JsonSerialize(using = LocalDateSerializer.class)
     private LocalDate dateStarted;
+    @JsonDeserialize(using = LocalDateDeserializer.class)
+    @JsonSerialize(using = LocalDateSerializer.class)
     private LocalDate dateFinished;
 
     private Boolean owned;
@@ -35,6 +44,9 @@ public class GoodReadsBook {
     private List<String> authors;
 
     private List<String> shelves;
+
+    public GoodReadsBook() {
+    }
 
     public GoodReadsBook(final Long id, final String isbn, final String isbn13, final String title, final String format, final Integer rating, final Integer readCount,
                          final Integer pageNumber, final Integer ratingsCount, final Double averageRating, final LocalDate dateStarted,
@@ -193,6 +205,7 @@ public class GoodReadsBook {
         return this;
     }
 
+    @JsonIgnore
     public GoodReadsBook getThis() {
         return this;
     }
