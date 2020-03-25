@@ -8,7 +8,6 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import model.BookField;
 import model.GoodReadsBook;
-import model.MissingBookFields;
 import model.StoredBookData;
 import utils.BookLoader;
 import utils.PrinterUtils;
@@ -46,31 +45,29 @@ public class BookFieldFiller {
 
     //TODO: 1) pretty
     //TODO: 2) NAMING -  missingDataResults not so ok
-    //TODO: 3) move classes to correct packages
     public BookFieldFiller() {
         BookLoader.getFileContent(STORED_DATA_FILE);
     }
 
-    //TODO: RETURNS ONLY FILTERED BOOKS!
-    public List<GoodReadsBook> fillMissingFieldsForBooks(final List<MissingBookFields> missingBookFields) {
-        return missingBookFields.stream()
-                .map(this::fillMissingBookFields)
+    public List<GoodReadsBook> fillMissingFieldsForBooks(final Map<GoodReadsBook, List<BookField>> books) {
+        return books.entrySet().stream()
+                .map(entry -> fillMissingBookFields(entry.getKey(), entry.getValue()))
                 .collect(Collectors.toList());
     }
 
-    private GoodReadsBook fillMissingBookFields(final MissingBookFields missingBookFields) {
-        final StoredBookData storedDataForBook = getStoredDataForBook(missingBookFields.getBook());
+    private GoodReadsBook fillMissingBookFields(final GoodReadsBook book, final List<BookField> missingFields) {
+        final StoredBookData storedDataForBook = getStoredDataForBook(book);
 
         if (!Objects.isNull(storedDataForBook)) {
-            missingBookFields.getMissingFields().forEach(field -> {
+            missingFields.forEach(field -> {
                 final Object fieldValue = storedDataForBook.getFieldValue(field);
                 if (!Objects.isNull(fieldValue)) {
-                    FIELD_SETTERS.get(field).accept(missingBookFields.getBook(), fieldValue);
+                    FIELD_SETTERS.get(field).accept(book, fieldValue);
                 }
             });
         }
 
-        return missingBookFields.getBook();
+        return book;
     }
 
     private StoredBookData getStoredDataForBook(final GoodReadsBook book) {

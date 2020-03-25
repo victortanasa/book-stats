@@ -2,7 +2,10 @@ package utils;
 
 import static com.google.common.collect.Maps.newHashMap;
 
-import model.*;
+import model.Book;
+import model.BookField;
+import model.GoodReadsBook;
+import model.Statistic;
 import model.sorting.SortBy;
 import model.sorting.SortOrder;
 import org.apache.commons.lang3.StringUtils;
@@ -12,11 +15,13 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class PrinterUtils {
 
     private static final DecimalFormat DECIMAL_FORMAT = new DecimalFormat("#.##");
     private static final String MISSING_DATA = "Books with missing data: %s";
+    private static final String MISSING_FIELDS = "Missing Fields: ";
 
     private static final String SEPARATOR_LARGE = StringUtils.repeat("-", 60);
     private static final String SEPARATOR_SMALL = StringUtils.repeat("-", 30);
@@ -69,10 +74,19 @@ public class PrinterUtils {
         System.out.println(SEPARATOR_LARGE);
     }
 
-    public static void printMissingData(final List<MissingBookFields> missingBookFields) {
-        System.out.println(String.format(MISSING_DATA, missingBookFields.size()) + NEWLINE);
+    public static void printMissingData(final Map<GoodReadsBook, List<BookField>> bookMissingFieldMap) {
+        final Map<GoodReadsBook, List<BookField>> mapWithValues = bookMissingFieldMap.entrySet().stream()
+                .filter(entry -> !entry.getValue().isEmpty())
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
 
-        missingBookFields.forEach(element -> System.out.println(element + NEWLINE + SEPARATOR_SMALL));
+        System.out.println(String.format(MISSING_DATA, mapWithValues.size()) + NEWLINE);
+
+        mapWithValues.forEach((book, missingFields) -> System.out.println(book.toStringShort()
+                + NEWLINE
+                + MISSING_FIELDS
+                + missingFields
+                + NEWLINE
+                + SEPARATOR_SMALL));
 
         System.out.println(SEPARATOR_LARGE);
     }

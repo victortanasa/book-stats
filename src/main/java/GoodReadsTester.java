@@ -1,7 +1,7 @@
 import static java.util.stream.Collectors.toList;
 
+import model.BookField;
 import model.GoodReadsBook;
-import model.MissingBookFields;
 import model.MissingDetails;
 import service.api.GoodReadsAPIService;
 import service.processing.BookFieldFiller;
@@ -10,6 +10,7 @@ import service.processing.BookFilter;
 import utils.PrinterUtils;
 
 import java.util.List;
+import java.util.Map;
 
 public class GoodReadsTester {
 
@@ -19,20 +20,19 @@ public class GoodReadsTester {
     private static final BookFilter BOOK_FILTER = new BookFilter();
 
     public static void main(final String[] args) {
-        final Integer numberOfBooksRead = GOOD_READS_API_SERVICE.getNumberOfBooksToRetrieve();
-        final List<GoodReadsBook> readBooks = GOOD_READS_API_SERVICE.getAllBooksRead(numberOfBooksRead);
+        final Integer numberOfBooksToRetrieve = GOOD_READS_API_SERVICE.getNumberOfBooksToRetrieve();
+        final List<GoodReadsBook> readBooks = GOOD_READS_API_SERVICE.getAllBooksRead(numberOfBooksToRetrieve);
         final List<GoodReadsBook> wantedBooks = BOOK_FILTER.filterUnwantedBooks(readBooks);
-
-        System.out.println("wanted books size: " + wantedBooks.size());
 
         final List<GoodReadsBook> booksWithAllDataLoaded = wantedBooks.stream()
                 .map(GoodReadsTester::setAdditionalFields)
                 .collect(toList());
 
-        final List<MissingBookFields> missingBookFields = BOOK_FIELD_VALIDATOR.getMissingData(booksWithAllDataLoaded);
-        final List<GoodReadsBook> booksFilledWithStoredDetails = BOOK_FIELD_FILLER.fillMissingFieldsForBooks(missingBookFields);
+        final Map<GoodReadsBook, List<BookField>> missingFieldsMap = BOOK_FIELD_VALIDATOR.getMissingFields(booksWithAllDataLoaded);
 
-        PrinterUtils.printMissingData(BOOK_FIELD_VALIDATOR.getMissingData(booksFilledWithStoredDetails));
+        PrinterUtils.printMissingData(missingFieldsMap);
+
+        final List<GoodReadsBook> booksFilledWithStoredDetails = BOOK_FIELD_FILLER.fillMissingFieldsForBooks(missingFieldsMap);
 
         booksFilledWithStoredDetails.forEach(System.out::println);
     }

@@ -2,11 +2,11 @@ package service.processing;
 
 import static com.google.common.collect.Maps.newHashMap;
 import static java.util.stream.Collectors.toList;
+import static java.util.stream.Collectors.toMap;
 
 import com.google.common.base.Function;
 import model.BookField;
 import model.GoodReadsBook;
-import model.MissingBookFields;
 
 import java.util.List;
 import java.util.Map;
@@ -37,11 +37,9 @@ public class BookFieldValidator {
     }
 
     //TODO: maybe Map<Book,Fields>?
-    public List<MissingBookFields> getMissingData(final List<GoodReadsBook> books) {
+    public Map<GoodReadsBook, List<BookField>> getMissingFields(final List<GoodReadsBook> books) {
         return books.stream()
-                .map(book -> new MissingBookFields(book, getFieldsWithNoValue(book)))
-                .filter(missingData -> !missingData.getMissingFields().isEmpty())
-                .collect(toList());
+                .collect(toMap(GoodReadsBook::getThis, this::getFieldsWithNoValue));
     }
 
     private List<BookField> getFieldsWithNoValue(final GoodReadsBook book) {

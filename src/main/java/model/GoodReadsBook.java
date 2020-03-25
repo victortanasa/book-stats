@@ -10,6 +10,8 @@ import java.util.List;
 
 public class GoodReadsBook {
 
+    private final static String TO_STRING_SHORT_FORMAT = "Id: %s\nTitle: %s\nAuthors: %s";
+
     private Long id;
 
     private String isbn;
@@ -191,6 +193,10 @@ public class GoodReadsBook {
         return this;
     }
 
+    public GoodReadsBook getThis() {
+        return this;
+    }
+
     @Override
     public boolean equals(final Object o) {
         return EqualsBuilder.reflectionEquals(this, o);
@@ -204,5 +210,9 @@ public class GoodReadsBook {
     @Override
     public String toString() {
         return ToStringBuilder.reflectionToString(this, ToStringStyle.JSON_STYLE);
+    }
+
+    public String toStringShort() {
+        return String.format(TO_STRING_SHORT_FORMAT, id, title, authors);
     }
 }
