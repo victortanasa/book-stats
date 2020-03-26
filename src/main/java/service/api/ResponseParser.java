@@ -3,7 +3,7 @@ package service.api;
 import static java.util.stream.Collectors.toList;
 import static utils.TransformationUtils.*;
 
-import model.GoodReadsBook;
+import model.Book;
 import model.MissingDetails;
 import model.Shelve;
 import org.jdom2.Document;
@@ -28,7 +28,7 @@ class ResponseParser {
 
     private static final SAXBuilder SAX_BUILDER = new SAXBuilder();
 
-    List<GoodReadsBook> getBooks(final String response) {
+    List<Book> getBooks(final String response) {
         final Document document = buildDocument(response);
 
         final List<Element> elements = document.getRootElement()
@@ -93,7 +93,7 @@ class ResponseParser {
         return new Shelve(name, popularity);
     }
 
-    private GoodReadsBook toBook(final Element element) {
+    private Book toBook(final Element element) {
         final Element book = element.getChild("book");
 
         final String id = book.getChild("id").getValue();
@@ -118,7 +118,7 @@ class ResponseParser {
                 .map(author -> author.getChild("name").getValue())
                 .collect(toList());
 
-        return new GoodReadsBook(Long.valueOf(id),
+        return new Book(Long.valueOf(id),
                 getNullIfBlank(isbn),
                 getNullIfBlank(isbn13),
                 getNullIfBlank(title),

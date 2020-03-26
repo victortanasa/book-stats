@@ -4,8 +4,8 @@ import static com.google.common.collect.Maps.newHashMap;
 import static utils.TransformationUtils.getDate;
 import static utils.TransformationUtils.getInteger;
 
+import model.Book;
 import model.BookField;
-import model.GoodReadsBook;
 import model.StoredBookData;
 import service.StorageService;
 
@@ -21,7 +21,7 @@ public class BookFieldFiller {
 
     private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
-    private static final Map<BookField, BiConsumer<GoodReadsBook, Object>> FIELD_SETTERS;
+    private static final Map<BookField, BiConsumer<Book, Object>> FIELD_SETTERS;
 
     static {
 
@@ -39,13 +39,13 @@ public class BookFieldFiller {
         STORED_DATA = new StorageService().loadStoredBookData();
     }
 
-    public List<GoodReadsBook> fillMissingFieldsForBooks(final Map<GoodReadsBook, List<BookField>> books) {
+    public List<Book> fillMissingFieldsForBooks(final Map<Book, List<BookField>> books) {
         return books.entrySet().stream()
                 .map(entry -> fillMissingBookFields(entry.getKey(), entry.getValue()))
                 .collect(Collectors.toList());
     }
 
-    private GoodReadsBook fillMissingBookFields(final GoodReadsBook book, final List<BookField> missingFields) {
+    private Book fillMissingBookFields(final Book book, final List<BookField> missingFields) {
         final Optional<StoredBookData> storedDataForBook = getStoredDataForBook(book);
 
         storedDataForBook.ifPresent(data -> fillMissingFields(book, missingFields, storedDataForBook.get()));
@@ -53,7 +53,7 @@ public class BookFieldFiller {
         return book;
     }
 
-    private void fillMissingFields(final GoodReadsBook book, final List<BookField> missingFields, final StoredBookData storedBookData) {
+    private void fillMissingFields(final Book book, final List<BookField> missingFields, final StoredBookData storedBookData) {
         missingFields.forEach(field -> {
             final Object fieldValue = storedBookData.getFieldValue(field);
             if (!Objects.isNull(fieldValue)) {
@@ -62,7 +62,7 @@ public class BookFieldFiller {
         });
     }
 
-    private Optional<StoredBookData> getStoredDataForBook(final GoodReadsBook book) {
+    private Optional<StoredBookData> getStoredDataForBook(final Book book) {
         return STORED_DATA.stream()
                 .filter(data -> data.getBookId().equals(book.getId()))
                 .findFirst();

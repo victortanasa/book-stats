@@ -5,7 +5,7 @@ import static model.Statistic.LONGEST_BOOKS;
 import static model.Statistic.SHORTEST_BOOKS;
 
 import com.google.common.base.Function;
-import model.GoodReadsBook;
+import model.Book;
 import model.Statistic;
 import model.sorting.SortOrder;
 
@@ -18,9 +18,9 @@ public class BookListingService {
 
     private Map<Statistic, Function<Integer, List<String>>> bookListings;
 
-    private List<GoodReadsBook> library;
+    private List<Book> library;
 
-    public BookListingService(final List<GoodReadsBook> library) {
+    public BookListingService(final List<Book> library) {
         this.library = library;
 
         bookListings = newHashMap();
@@ -43,14 +43,14 @@ public class BookListingService {
         return getBooksByLength(library, SortOrder.ASC, limit);
     }
 
-    private static List<String> getBooksByLength(final List<GoodReadsBook> library, final SortOrder sortOrder, final int limit) {
-        final Comparator<GoodReadsBook> comparator = SortOrder.ASC.equals(sortOrder) ?
-                Comparator.comparing(GoodReadsBook::getPageNumber).reversed() : Comparator.comparing(GoodReadsBook::getPageNumber);
+    private static List<String> getBooksByLength(final List<Book> library, final SortOrder sortOrder, final int limit) {
+        final Comparator<Book> comparator = SortOrder.ASC.equals(sortOrder) ?
+                Comparator.comparing(Book::getPageNumber).reversed() : Comparator.comparing(Book::getPageNumber);
 
         return library.stream().
                 sorted(comparator)
                 .limit(limit)
-                .map(GoodReadsBook::toStringShort)
+                .map(Book::toStringShort)
                 .collect(Collectors.toList());
     }
 }

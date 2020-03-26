@@ -2,7 +2,7 @@ package runner;
 
 import static model.Statistic.*;
 
-import model.GoodReadsBook;
+import model.Book;
 import service.BookLoaderService;
 import service.StatisticsService;
 import utils.PrinterUtils;
@@ -15,7 +15,7 @@ public class BookStats {
     private static final BookLoaderService BOOK_LOADER_SERVICE = new BookLoaderService();
 
     public static void main(final String[] args) {
-        final List<GoodReadsBook> books = BOOK_LOADER_SERVICE.loadBooks(BookLoaderService.Source.STORAGE);
+        final List<Book> books = BOOK_LOADER_SERVICE.loadBooks(BookLoaderService.Source.STORAGE);
 
         final StatisticsService statisticsService = new StatisticsService(books);
 

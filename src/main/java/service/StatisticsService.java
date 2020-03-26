@@ -4,7 +4,7 @@ import static com.google.common.collect.Maps.newHashMap;
 import static model.Statistic.*;
 
 import com.google.common.base.Supplier;
-import model.GoodReadsBook;
+import model.Book;
 import model.Statistic;
 
 import java.time.LocalDate;
@@ -21,9 +21,9 @@ public class StatisticsService {
     private Map<Statistic, Supplier<Double>> singleValueStatistics;
     private Map<Statistic, Supplier<Map<String, ?>>> mapStatistic;
 
-    private List<GoodReadsBook> library;
+    private List<Book> library;
 
-    public StatisticsService(final List<GoodReadsBook> library) {
+    public StatisticsService(final List<Book> library) {
         this.library = library;
 
         mapStatistic = newHashMap();
@@ -58,12 +58,12 @@ public class StatisticsService {
 
     private Map<String, ?> getMostReadAuthorsByPageCount() {
         return library.stream()
-                .collect(Collectors.groupingBy(GoodReadsBook::getAuthorAsString, Collectors.summingLong(GoodReadsBook::getPageNumber)));
+                .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.summingLong(Book::getPageNumber)));
     }
 
     private Map<String, ?> getMostReadAuthorsBookCount() {
         return library.stream()
-                .collect(Collectors.groupingBy(GoodReadsBook::getAuthorAsString, Collectors.counting()));
+                .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.counting()));
     }
 
     private Map<String, ?> getBooksReadPerMonth() {
@@ -73,22 +73,22 @@ public class StatisticsService {
 
     private Map<String, ?> getPagesReadPerMonth() {
         return library.stream()
-                .collect(Collectors.groupingBy(book -> getMonth(book.getDateFinished()), Collectors.summingLong(GoodReadsBook::getPageNumber)));
+                .collect(Collectors.groupingBy(book -> getMonth(book.getDateFinished()), Collectors.summingLong(Book::getPageNumber)));
     }
 
     private Map<String, ?> getAverageRatingsForAuthors() {
         return library.stream()
-                .collect(Collectors.groupingBy(GoodReadsBook::getAuthorAsString, Collectors.averagingInt(GoodReadsBook::getRating)));
+                .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingInt(Book::getRating)));
     }
 
     private Map<String, ?> getAveragePageCountForAuthors() {
         return library.stream()
-                .collect(Collectors.groupingBy(GoodReadsBook::getAuthorAsString, Collectors.averagingInt(GoodReadsBook::getPageNumber)));
+                .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingInt(Book::getPageNumber)));
     }
 
     private Map<String, ?> getAverageDaysToReadABookPerAuthor() {
         return library.stream()
-                .collect(Collectors.groupingBy(GoodReadsBook::getAuthorAsString, Collectors.averagingLong(GoodReadsBook::getDaysReadIn)));
+                .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingLong(Book::getDaysReadIn)));
     }
 
     private Map<String, ?> getMostBooksReadByPublishedDecade() {
@@ -103,14 +103,14 @@ public class StatisticsService {
 
     private Double getAverageRating() {
         return library.stream()
-                .mapToInt(GoodReadsBook::getRating)
+                .mapToInt(Book::getRating)
                 .average()
                 .orElse(-1);
     }
 
     private Double getAverageDaysToReadABook() {
         return library.stream()
-                .mapToLong(GoodReadsBook::getDaysReadIn)
+                .mapToLong(Book::getDaysReadIn)
                 .average()
                 .orElse(-1);
     }

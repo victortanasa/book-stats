@@ -1,6 +1,6 @@
 package service.api;
 
-import model.GoodReadsBook;
+import model.Book;
 import model.MissingDetails;
 import org.springframework.web.reactive.function.client.ClientResponse;
 import org.springframework.web.reactive.function.client.ExchangeStrategies;
@@ -49,7 +49,7 @@ public class GoodReadsAPIService {
         return responseParser.getNumberOfBooksToRetrieve(response);
     }
 
-    public List<GoodReadsBook> getAllBooksRead(final Integer numberOfBooksToRetrieve) {
+    public List<Book> getAllBooksRead(final Integer numberOfBooksToRetrieve) {
         final String response = doRequest(String.format(GET_READ_BOOKS_URL, numberOfBooksToRetrieve));
 
         return responseParser.getBooks(response);

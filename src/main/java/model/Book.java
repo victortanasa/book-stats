@@ -15,7 +15,7 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 import java.time.LocalDate;
 import java.util.List;
 
-public class GoodReadsBook {
+public class Book {
 
     private static final String TO_STRING_SHORT_FORMAT = "Id: %s\nTitle: %s\nAuthors: %s";
 
@@ -47,12 +47,12 @@ public class GoodReadsBook {
 
     private List<String> shelves;
 
-    public GoodReadsBook() {
+    public Book() {
     }
 
-    public GoodReadsBook(final Long id, final String isbn, final String isbn13, final String title, final String format, final Integer rating, final Integer readCount,
-                         final Integer pageNumber, final Integer ratingsCount, final Double averageRating, final LocalDate dateStarted,
-                         final LocalDate dateFinished, final Boolean owned, final List<String> authors) {
+    public Book(final Long id, final String isbn, final String isbn13, final String title, final String format, final Integer rating, final Integer readCount,
+                final Integer pageNumber, final Integer ratingsCount, final Double averageRating, final LocalDate dateStarted,
+                final LocalDate dateFinished, final Boolean owned, final List<String> authors) {
         this.averageRating = averageRating;
         this.ratingsCount = ratingsCount;
         this.dateFinished = dateFinished;
@@ -197,18 +197,18 @@ public class GoodReadsBook {
         this.shelves = shelves;
     }
 
-    public GoodReadsBook withPublicationYear(final Integer publicationYear) {
+    public Book withPublicationYear(final Integer publicationYear) {
         this.publicationYear = publicationYear;
         return this;
     }
 
-    public GoodReadsBook withShelves(final List<String> shelves) {
+    public Book withShelves(final List<String> shelves) {
         this.shelves = shelves;
         return this;
     }
 
     @JsonIgnore
-    public GoodReadsBook getThis() {
+    public Book getThis() {
         return this;
     }
 

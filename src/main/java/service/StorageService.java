@@ -2,7 +2,7 @@ package service;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import model.GoodReadsBook;
+import model.Book;
 import model.StoredBookData;
 import utils.PrinterUtils;
 
@@ -23,7 +23,7 @@ public class StorageService {
 
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
 
-    void saveBooks(final List<GoodReadsBook> books) {
+    void saveBooks(final List<Book> books) {
         try {
             final String booksJson = OBJECT_MAPPER.writeValueAsString(books);
             Files.write(Paths.get(String.format(STORAGE_LOCATION, BOOKS_FILE)), booksJson.getBytes());
@@ -32,10 +32,10 @@ public class StorageService {
         }
     }
 
-    List<GoodReadsBook> loadBooks() {
+    List<Book> loadBooks() {
         try {
             final String booksJson = new String(Files.readAllBytes(Paths.get(String.format(STORAGE_LOCATION, BOOKS_FILE))));
-            return OBJECT_MAPPER.readValue(booksJson, new TypeReference<List<GoodReadsBook>>() {
+            return OBJECT_MAPPER.readValue(booksJson, new TypeReference<List<Book>>() {
             });
         } catch (IOException e) {
             PrinterUtils.printSimple(String.format(COULD_NOT_LOAD_BOOKS_MESSAGE, e));
