@@ -13,12 +13,11 @@ import java.text.DecimalFormat;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 public class PrinterUtils {
 
-    private static final DecimalFormat DECIMAL_FORMAT = new DecimalFormat("#.##");
+    private static final DecimalFormat DECIMAL_FORMAT = new DecimalFormat("###,###.##");
     private static final String MISSING_DATA = "Books with missing data: %s";
     private static final String MISSING_FIELDS = "Missing Fields: ";
 
@@ -39,19 +38,19 @@ public class PrinterUtils {
         SORT_FUNCTIONS.put(SortBy.TITLE, Comparator.comparing(Book::getTitle));
     }
 
-    public static void printBooks(final Set<Book> books, final SortBy sortBy, final SortOrder sortOrder) {
+    public static void printBooks(final List<Book> books, final SortBy sortBy, final SortOrder sortOrder) {
         final Comparator<Book> comparator = SortOrder.ASC.equals(sortOrder) ?
                 SORT_FUNCTIONS.get(sortBy) : SORT_FUNCTIONS.get(sortBy).reversed();
 
-        books.stream().
-                sorted(comparator)
+        books.stream()
+                .sorted(comparator)
                 .forEach(book -> System.out.println(book + NEWLINE + SEPARATOR_LARGE));
     }
 
     public static void printMapStatistic(final Statistic statistic, final Map<String, ?> map) {
         System.out.println(statistic.getStringValue() + NEWLINE);
 
-        map.forEach((key, value) -> System.out.println(String.format(STATISTIC_PRINT_FORMAT, key, formatDoubleIfNecessary(value))));
+        map.forEach((key, value) -> System.out.println(String.format(STATISTIC_PRINT_FORMAT, key, formatNumber(value))));
 
         System.out.println(SEPARATOR_LARGE);
     }
@@ -67,7 +66,7 @@ public class PrinterUtils {
     public static void printSingleValueStatistic(final Statistic statistic, final Number value) {
         System.out.println(statistic.getStringValue() + NEWLINE);
 
-        System.out.println(formatDoubleIfNecessary(value));
+        System.out.println(formatNumber(value));
 
         System.out.println(SEPARATOR_LARGE);
     }
@@ -93,8 +92,8 @@ public class PrinterUtils {
         System.out.println(string);
     }
 
-    private static Object formatDoubleIfNecessary(final Object value) {
-        return value instanceof Double ? DECIMAL_FORMAT.format(value) : value;
+    private static Object formatNumber(final Object value) {
+        return DECIMAL_FORMAT.format(value);
     }
 
 }
