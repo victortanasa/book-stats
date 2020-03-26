@@ -24,8 +24,6 @@ public enum Statistic {
     //TODO: days not reading books
     //TODO: days (or average) between adding a book and reading it
 
-    //TODO: most read authors per year - books and page number - sort by what
-
     private String statistic;
 
     Statistic(final String statistic) {
