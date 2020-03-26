@@ -31,10 +31,17 @@ public class StatisticsService {
         mapStatistic = newHashMap();
         mapStatistic.put(MOST_READ_AUTHORS_BY_PAGE_COUNT, this::getMostReadAuthorsByPageCount);
         mapStatistic.put(MOST_READ_AUTHORS_BY_BOOK_COUNT, this::getMostReadAuthorsBookCount);
+
         mapStatistic.put(MOST_BOOKS_READ_BY_PUBLISHED_DECADE, this::getMostBooksReadByPublishedDecade);
+
         mapStatistic.put(BOOKS_READ_PER_MONTH, this::getBooksReadPerMonth);
         mapStatistic.put(PAGES_READ_PER_MONTH, this::getPagesReadPerMonth);
+
         mapStatistic.put(RATINGS_DISTRIBUTION, this::getRatingsDistribution);
+
+        mapStatistic.put(AVERAGE_PAGE_NUMBER_FOR_AUTHORS, this::getAveragePageCountForAuthors);
+        mapStatistic.put(AVERAGE_RATING_FOR_AUTHORS, this::getAverageRatingsForAuthors);
+        mapStatistic.put(AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR, this::getAverageDaysToReadABookPerAuthor);
 
         listStatistics = newHashMap();
 
@@ -66,9 +73,24 @@ public class StatisticsService {
                 .collect(Collectors.groupingBy(GoodReadsBook::getAuthorAsString, Collectors.counting()));
     }
 
+    private Map<String, ?> getAveragePageCountForAuthors() {
+        return library.stream()
+                .collect(Collectors.groupingBy(GoodReadsBook::getAuthorAsString, Collectors.averagingInt(GoodReadsBook::getPageNumber)));
+    }
+
     private Map<String, ?> getMostBooksReadByPublishedDecade() {
         return library.stream()
                 .collect(Collectors.groupingBy(book -> getDecade(book.getPublicationYear()), Collectors.counting()));
+    }
+
+    private Map<String, ?> getAverageRatingsForAuthors() {
+        return library.stream()
+                .collect(Collectors.groupingBy(GoodReadsBook::getAuthorAsString, Collectors.averagingInt(GoodReadsBook::getRating)));
+    }
+
+    private Map<String, ?> getAverageDaysToReadABookPerAuthor() {
+        return library.stream()
+                .collect(Collectors.groupingBy(GoodReadsBook::getAuthorAsString, Collectors.averagingLong(GoodReadsBook::getDaysReadIn)));
     }
 
     private Map<String, ?> getBooksReadPerMonth() {
