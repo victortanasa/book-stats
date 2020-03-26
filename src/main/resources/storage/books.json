@@ -1,37 +1,5 @@
 [
   {
-    "id": 33830160,
-    "isbn": "1473221625",
-    "isbn13": "9781473221628",
-    "title": "The Left Hand of Darkness",
-    "format": "Paperback",
-    "rating": 4,
-    "readCount": 1,
-    "pageNumber": 304,
-    "ratingsCount": 110006,
-    "publicationYear": 1969,
-    "averageRating": 4.07,
-    "dateStarted": [
-      2019,
-      8,
-      4
-    ],
-    "dateFinished": [
-      2019,
-      8,
-      5
-    ],
-    "owned": true,
-    "authors": [
-      "Ursula K. Le Guin"
-    ],
-    "shelves": [
-      "sci-fi",
-      "fantasy",
-      "classics"
-    ]
-  },
-  {
     "id": 12224530,
     "isbn": "1407230026",
     "isbn13": "9781407230023",
@@ -40,7 +8,7 @@
     "rating": 4,
     "readCount": 1,
     "pageNumber": 215,
-    "ratingsCount": 319826,
+    "ratingsCount": 319829,
     "publicationYear": 1968,
     "averageRating": 4.08,
     "dateStarted": [
@@ -104,7 +72,7 @@
     "rating": 4,
     "readCount": 1,
     "pageNumber": 256,
-    "ratingsCount": 75328,
+    "ratingsCount": 75331,
     "publicationYear": 1954,
     "averageRating": 4.17,
     "dateStarted": [
@@ -128,35 +96,35 @@
     ]
   },
   {
-    "id": 61535,
-    "isbn": "0199291152",
-    "isbn13": "9780199291151",
-    "title": "The Selfish Gene",
+    "id": 33830160,
+    "isbn": "1473221625",
+    "isbn13": "9781473221628",
+    "title": "The Left Hand of Darkness",
     "format": "Paperback",
-    "rating": 5,
+    "rating": 4,
     "readCount": 1,
-    "pageNumber": 360,
-    "ratingsCount": 129672,
-    "publicationYear": 1976,
-    "averageRating": 4.14,
+    "pageNumber": 304,
+    "ratingsCount": 110009,
+    "publicationYear": 1969,
+    "averageRating": 4.07,
     "dateStarted": [
       2019,
-      5,
-      30
+      8,
+      4
     ],
     "dateFinished": [
       2019,
-      6,
+      8,
       5
     ],
     "owned": true,
     "authors": [
-      "Richard Dawkins"
+      "Ursula K. Le Guin"
     ],
     "shelves": [
-      "science",
-      "biology",
-      "evolution"
+      "sci-fi",
+      "fantasy",
+      "classics"
     ]
   },
   {
@@ -192,35 +160,35 @@
     ]
   },
   {
-    "id": 50885244,
-    "isbn": "0099740915",
-    "isbn13": "9780099740919",
-    "title": "The Handmaid's Tale",
-    "format": "paperback",
-    "rating": 5,
+    "id": 22359148,
+    "isbn": "0356504174",
+    "isbn13": "9780356504179",
+    "title": "Cibola Burn",
+    "format": "Paperback",
+    "rating": 4,
     "readCount": 1,
-    "pageNumber": 320,
-    "ratingsCount": 1322929,
-    "publicationYear": 1985,
-    "averageRating": 4.11,
+    "pageNumber": 581,
+    "ratingsCount": 57971,
+    "publicationYear": 2014,
+    "averageRating": 4.17,
     "dateStarted": [
-      2019,
-      10,
-      13
+      2018,
+      7,
+      12
     ],
     "dateFinished": [
-      2019,
-      10,
-      16
+      2018,
+      7,
+      23
     ],
     "owned": true,
     "authors": [
-      "Margaret Atwood"
+      "James S.A. Corey"
     ],
     "shelves": [
-      "dystopian",
-      "classics",
-      "sci-fi"
+      "sci-fi",
+      "space-opera",
+      "sci-fi-fantasy"
     ]
   },
   {
@@ -320,38 +288,6 @@
     ]
   },
   {
-    "id": 42141498,
-    "isbn": "0857668234",
-    "isbn13": "9780857668233",
-    "title": "The Light Brigade",
-    "format": "paperback",
-    "rating": 4,
-    "readCount": 1,
-    "pageNumber": 358,
-    "ratingsCount": 4008,
-    "publicationYear": 2019,
-    "averageRating": 3.99,
-    "dateStarted": [
-      2019,
-      12,
-      15
-    ],
-    "dateFinished": [
-      2019,
-      12,
-      19
-    ],
-    "owned": true,
-    "authors": [
-      "Kameron Hurley"
-    ],
-    "shelves": [
-      "sci-fi",
-      "time-travel",
-      "dystopian"
-    ]
-  },
-  {
     "id": 17736403,
     "isbn": "0575129050",
     "isbn13": "9780575129054",
@@ -448,6 +384,38 @@
     ]
   },
   {
+    "id": 3071559,
+    "isbn": "0575083093",
+    "isbn13": "9780575083097",
+    "title": "Revelation Space",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 568,
+    "ratingsCount": 42082,
+    "publicationYear": 2000,
+    "averageRating": 3.98,
+    "dateStarted": [
+      2019,
+      9,
+      16
+    ],
+    "dateFinished": [
+      2019,
+      9,
+      26
+    ],
+    "owned": false,
+    "authors": [
+      "Alastair Reynolds"
+    ],
+    "shelves": [
+      "sci-fi",
+      "space-opera",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
     "id": 26166883,
     "isbn": "178497157X",
     "isbn13": "9781784971571",
@@ -512,6 +480,38 @@
     ]
   },
   {
+    "id": 31380528,
+    "isbn": "0008117535",
+    "isbn13": "9780008117535",
+    "title": "Foundation and Earth",
+    "format": "Paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 512,
+    "ratingsCount": 52362,
+    "publicationYear": 1986,
+    "averageRating": 4.05,
+    "dateStarted": [
+      2019,
+      1,
+      6
+    ],
+    "dateFinished": [
+      2019,
+      2,
+      9
+    ],
+    "owned": true,
+    "authors": [
+      "Isaac Asimov"
+    ],
+    "shelves": [
+      "sci-fi",
+      "sci-fi-fantasy",
+      "classics"
+    ]
+  },
+  {
     "id": 25772375,
     "isbn": "0340960191",
     "isbn13": "9780340960196",
@@ -544,67 +544,35 @@
     ]
   },
   {
-    "id": 40226738,
-    "isbn": "0008279551",
-    "isbn13": "9780008279554",
-    "title": "I, Robot",
+    "id": 27069120,
+    "isbn": "0544817281",
+    "isbn13": "9780544817289",
+    "title": "The Man in the High Castle",
     "format": "Paperback",
-    "rating": 5,
+    "rating": 4,
     "readCount": 1,
-    "pageNumber": 244,
-    "ratingsCount": 259606,
-    "publicationYear": 1950,
-    "averageRating": 4.19,
+    "pageNumber": 288,
+    "ratingsCount": 159537,
+    "publicationYear": 1962,
+    "averageRating": 3.62,
     "dateStarted": [
       2019,
-      1,
-      19
+      11,
+      3
     ],
     "dateFinished": [
       2019,
-      1,
-      23
+      11,
+      5
     ],
     "owned": true,
     "authors": [
-      "Isaac Asimov"
+      "Philip K. Dick"
     ],
     "shelves": [
       "sci-fi",
-      "classics",
-      "short-stories"
-    ]
-  },
-  {
-    "id": 8855321,
-    "isbn": "1841499889",
-    "isbn13": "9781841499888",
-    "title": "Leviathan Wakes",
-    "format": "Paperback",
-    "rating": 5,
-    "readCount": 1,
-    "pageNumber": 561,
-    "ratingsCount": 149335,
-    "publicationYear": 2011,
-    "averageRating": 4.26,
-    "dateStarted": [
-      2018,
-      6,
-      2
-    ],
-    "dateFinished": [
-      2018,
-      6,
-      4
-    ],
-    "owned": true,
-    "authors": [
-      "James S.A. Corey"
-    ],
-    "shelves": [
-      "sci-fi",
-      "space-opera",
-      "sci-fi-fantasy"
+      "dystopian",
+      "classics"
     ]
   },
   {
@@ -704,35 +672,67 @@
     ]
   },
   {
-    "id": 32884495,
-    "isbn": "1784971650",
-    "isbn13": "9781784971656",
-    "title": "Death's End",
+    "id": 76679,
+    "isbn": "0553565079",
+    "isbn13": "9780553565072",
+    "title": "Forward the Foundation",
     "format": "Paperback",
-    "rating": 5,
+    "rating": 4,
     "readCount": 1,
-    "pageNumber": 724,
-    "ratingsCount": 40112,
-    "publicationYear": 2010,
-    "averageRating": 4.44,
+    "pageNumber": 464,
+    "ratingsCount": 42250,
+    "publicationYear": 1993,
+    "averageRating": 4.16,
     "dateStarted": [
       2018,
       9,
-      9
+      25
     ],
     "dateFinished": [
       2018,
       9,
-      15
+      30
     ],
-    "owned": false,
+    "owned": true,
     "authors": [
-      "Liu Cixin"
+      "Isaac Asimov"
     ],
     "shelves": [
       "sci-fi",
       "sci-fi-fantasy",
-      "china"
+      "science"
+    ]
+  },
+  {
+    "id": 40031983,
+    "isbn": "0008277796",
+    "isbn13": "9780008277796",
+    "title": "Robots and Empire",
+    "format": "paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 436,
+    "ratingsCount": 24634,
+    "publicationYear": 1985,
+    "averageRating": 4.2,
+    "dateStarted": [
+      2019,
+      2,
+      2
+    ],
+    "dateFinished": [
+      2019,
+      2,
+      6
+    ],
+    "owned": true,
+    "authors": [
+      "Isaac Asimov"
+    ],
+    "shelves": [
+      "sci-fi",
+      "sci-fi-fantasy",
+      "robots"
     ]
   },
   {
@@ -768,58 +768,26 @@
     ]
   },
   {
-    "id": 33296259,
-    "isbn": "0316229245",
-    "isbn13": "9780316229241",
-    "title": "The Stone Sky",
+    "id": 31380515,
+    "isbn": "0008117527",
+    "isbn13": "9780008117528",
+    "title": "Foundation's Edge",
     "format": "Paperback",
     "rating": 5,
     "readCount": 1,
-    "pageNumber": 419,
-    "ratingsCount": 56065,
-    "publicationYear": 2017,
-    "averageRating": 4.35,
-    "dateStarted": [
-      2020,
-      3,
-      16
-    ],
-    "dateFinished": [
-      2020,
-      3,
-      21
-    ],
-    "owned": true,
-    "authors": [
-      "N.K. Jemisin"
-    ],
-    "shelves": [
-      "fantasy",
-      "sci-fi",
-      "dystopian"
-    ]
-  },
-  {
-    "id": 40031983,
-    "isbn": "0008277796",
-    "isbn13": "9780008277796",
-    "title": "Robots and Empire",
-    "format": "paperback",
-    "rating": 5,
-    "readCount": 1,
-    "pageNumber": 436,
-    "ratingsCount": 24633,
-    "publicationYear": 1985,
-    "averageRating": 4.2,
+    "pageNumber": 432,
+    "ratingsCount": 65136,
+    "publicationYear": 1982,
+    "averageRating": 4.12,
     "dateStarted": [
       2019,
-      2,
-      2
+      1,
+      13
     ],
     "dateFinished": [
       2019,
-      2,
-      6
+      1,
+      17
     ],
     "owned": true,
     "authors": [
@@ -828,7 +796,39 @@
     "shelves": [
       "sci-fi",
       "sci-fi-fantasy",
-      "robots"
+      "classics"
+    ]
+  },
+  {
+    "id": 17883935,
+    "isbn": "0345539435",
+    "isbn13": "9780345539434",
+    "title": "Cosmos",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 425,
+    "ratingsCount": 107485,
+    "publicationYear": 1980,
+    "averageRating": 4.37,
+    "dateStarted": [
+      2019,
+      5,
+      9
+    ],
+    "dateFinished": [
+      2019,
+      5,
+      19
+    ],
+    "owned": true,
+    "authors": [
+      "Carl Sagan"
+    ],
+    "shelves": [
+      "science",
+      "astronomy",
+      "physics"
     ]
   },
   {
@@ -864,6 +864,38 @@
     ]
   },
   {
+    "id": 25739181,
+    "isbn": "1101903589",
+    "isbn13": "9781101903582",
+    "title": "The Martian",
+    "format": "Paperback",
+    "rating": 3,
+    "readCount": 1,
+    "pageNumber": 369,
+    "ratingsCount": 756861,
+    "publicationYear": 2012,
+    "averageRating": 4.4,
+    "dateStarted": [
+      2019,
+      10,
+      12
+    ],
+    "dateFinished": [
+      2019,
+      10,
+      13
+    ],
+    "owned": true,
+    "authors": [
+      "Andy Weir"
+    ],
+    "shelves": [
+      "sci-fi",
+      "adventure",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
     "id": 50236218,
     "isbn": "0356508196",
     "isbn13": "9780356508191",
@@ -893,38 +925,6 @@
       "fantasy",
       "sci-fi",
       "dystopian"
-    ]
-  },
-  {
-    "id": 40219019,
-    "isbn": null,
-    "isbn13": "9780008277772",
-    "title": "The Naked Sun",
-    "format": "Paperback",
-    "rating": 5,
-    "readCount": 1,
-    "pageNumber": 242,
-    "ratingsCount": 40410,
-    "publicationYear": 1956,
-    "averageRating": 4.16,
-    "dateStarted": [
-      2019,
-      1,
-      26
-    ],
-    "dateFinished": [
-      2019,
-      1,
-      27
-    ],
-    "owned": true,
-    "authors": [
-      "Isaac Asimov"
-    ],
-    "shelves": [
-      "sci-fi",
-      "mystery",
-      "sci-fi-fantasy"
     ]
   },
   {
@@ -1056,6 +1056,38 @@
     ]
   },
   {
+    "id": 16032905,
+    "isbn": "0006546064",
+    "isbn13": "9780006546061",
+    "title": "Fahrenheit 451",
+    "format": "Paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 227,
+    "ratingsCount": 1556376,
+    "publicationYear": 1953,
+    "averageRating": 3.99,
+    "dateStarted": [
+      2020,
+      3,
+      9
+    ],
+    "dateFinished": [
+      2020,
+      3,
+      11
+    ],
+    "owned": true,
+    "authors": [
+      "Ray Bradbury"
+    ],
+    "shelves": [
+      "classics",
+      "sci-fi",
+      "dystopian"
+    ]
+  },
+  {
     "id": 17737035,
     "isbn": "0345526678",
     "isbn13": "9780345526670",
@@ -1085,70 +1117,6 @@
       "sci-fi",
       "mystery",
       "space-opera"
-    ]
-  },
-  {
-    "id": 22359148,
-    "isbn": "0356504174",
-    "isbn13": "9780356504179",
-    "title": "Cibola Burn",
-    "format": "Paperback",
-    "rating": 4,
-    "readCount": 1,
-    "pageNumber": 581,
-    "ratingsCount": 57970,
-    "publicationYear": 2014,
-    "averageRating": 4.17,
-    "dateStarted": [
-      2018,
-      7,
-      12
-    ],
-    "dateFinished": [
-      2018,
-      7,
-      23
-    ],
-    "owned": true,
-    "authors": [
-      "James S.A. Corey"
-    ],
-    "shelves": [
-      "sci-fi",
-      "space-opera",
-      "sci-fi-fantasy"
-    ]
-  },
-  {
-    "id": 8935689,
-    "isbn": "1857231384",
-    "isbn13": "9781857231380",
-    "title": "Consider Phlebas",
-    "format": "Paperback",
-    "rating": 5,
-    "readCount": 1,
-    "pageNumber": 471,
-    "ratingsCount": 70166,
-    "publicationYear": 1987,
-    "averageRating": 3.86,
-    "dateStarted": [
-      2019,
-      4,
-      20
-    ],
-    "dateFinished": [
-      2019,
-      4,
-      26
-    ],
-    "owned": true,
-    "authors": [
-      "Iain M. Banks"
-    ],
-    "shelves": [
-      "sci-fi",
-      "space-opera",
-      "sci-fi-fantasy"
     ]
   },
   {
@@ -1184,35 +1152,99 @@
     ]
   },
   {
-    "id": 16032905,
-    "isbn": "0006546064",
-    "isbn13": "9780006546061",
-    "title": "Fahrenheit 451",
+    "id": 756970,
+    "isbn": "1857988825",
+    "isbn13": "9781857988826",
+    "title": "The Dispossessed",
     "format": "Paperback",
-    "rating": 4,
+    "rating": 5,
     "readCount": 1,
-    "pageNumber": 227,
-    "ratingsCount": 1556353,
-    "publicationYear": 1953,
-    "averageRating": 3.99,
+    "pageNumber": 336,
+    "ratingsCount": 78064,
+    "publicationYear": 1974,
+    "averageRating": 4.22,
     "dateStarted": [
-      2020,
-      3,
-      9
+      2018,
+      10,
+      26
     ],
     "dateFinished": [
-      2020,
-      3,
-      11
+      2018,
+      10,
+      31
     ],
     "owned": true,
     "authors": [
-      "Ray Bradbury"
+      "Ursula K. Le Guin"
     ],
     "shelves": [
-      "classics",
       "sci-fi",
-      "dystopian"
+      "dystopian",
+      "fantasy"
+    ]
+  },
+  {
+    "id": 61535,
+    "isbn": "0199291152",
+    "isbn13": "9780199291151",
+    "title": "The Selfish Gene",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 360,
+    "ratingsCount": 129673,
+    "publicationYear": 1976,
+    "averageRating": 4.14,
+    "dateStarted": [
+      2019,
+      5,
+      30
+    ],
+    "dateFinished": [
+      2019,
+      6,
+      5
+    ],
+    "owned": true,
+    "authors": [
+      "Richard Dawkins"
+    ],
+    "shelves": [
+      "science",
+      "biology",
+      "evolution"
+    ]
+  },
+  {
+    "id": 17307614,
+    "isbn": "0099580489",
+    "isbn13": "9780099580485",
+    "title": "Wool",
+    "format": "Paperback",
+    "rating": 2,
+    "readCount": 1,
+    "pageNumber": 537,
+    "ratingsCount": 150445,
+    "publicationYear": 2012,
+    "averageRating": 4.23,
+    "dateStarted": [
+      2019,
+      8,
+      14
+    ],
+    "dateFinished": [
+      2019,
+      8,
+      19
+    ],
+    "owned": true,
+    "authors": [
+      "Hugh Howey"
+    ],
+    "shelves": [
+      "sci-fi",
+      "dystopian",
+      "post-apocalyptic"
     ]
   },
   {
@@ -1280,34 +1312,34 @@
     ]
   },
   {
-    "id": 25739181,
-    "isbn": "1101903589",
-    "isbn13": "9781101903582",
-    "title": "The Martian",
+    "id": 29501976,
+    "isbn": null,
+    "isbn13": null,
+    "title": "Children of Time",
     "format": "Paperback",
-    "rating": 3,
+    "rating": 5,
     "readCount": 1,
-    "pageNumber": 369,
-    "ratingsCount": 756859,
-    "publicationYear": 2012,
-    "averageRating": 4.4,
+    "pageNumber": 600,
+    "ratingsCount": 47049,
+    "publicationYear": 2015,
+    "averageRating": 4.29,
     "dateStarted": [
-      2019,
-      10,
-      12
+      2018,
+      8,
+      14
     ],
     "dateFinished": [
-      2019,
-      10,
-      13
+      2018,
+      8,
+      21
     ],
     "owned": true,
     "authors": [
-      "Andy Weir"
+      "Adrian Tchaikovsky"
     ],
     "shelves": [
       "sci-fi",
-      "adventure",
+      "space-opera",
       "sci-fi-fantasy"
     ]
   },
@@ -1408,34 +1440,34 @@
     ]
   },
   {
-    "id": 3071559,
-    "isbn": "0575083093",
-    "isbn13": "9780575083097",
-    "title": "Revelation Space",
-    "format": "Paperback",
-    "rating": 5,
+    "id": 35470101,
+    "isbn": null,
+    "isbn13": "9781473217485",
+    "title": "Starship Troopers",
+    "format": "Hardcover",
+    "rating": 4,
     "readCount": 1,
-    "pageNumber": 568,
-    "ratingsCount": 42081,
-    "publicationYear": 2000,
-    "averageRating": 3.98,
+    "pageNumber": 288,
+    "ratingsCount": 180286,
+    "publicationYear": 1959,
+    "averageRating": 4.01,
     "dateStarted": [
       2019,
-      9,
-      16
+      3,
+      26
     ],
     "dateFinished": [
       2019,
-      9,
-      26
+      3,
+      30
     ],
-    "owned": false,
+    "owned": true,
     "authors": [
-      "Alastair Reynolds"
+      "Robert A. Heinlein"
     ],
     "shelves": [
       "sci-fi",
-      "space-opera",
+      "classics",
       "sci-fi-fantasy"
     ]
   },
@@ -1472,30 +1504,30 @@
     ]
   },
   {
-    "id": 31380440,
-    "isbn": "0008117497",
-    "isbn13": "9780008117498",
-    "title": "Foundation",
+    "id": 8493755,
+    "isbn": "0575094192",
+    "isbn13": "9780575094192",
+    "title": "The Stars My Destination",
     "format": "Paperback",
     "rating": 5,
     "readCount": 1,
-    "pageNumber": 231,
-    "ratingsCount": 383011,
-    "publicationYear": 1951,
-    "averageRating": 4.16,
+    "pageNumber": 244,
+    "ratingsCount": 40228,
+    "publicationYear": 1955,
+    "averageRating": 4.11,
     "dateStarted": [
-      2018,
-      9,
-      4
+      2019,
+      2,
+      13
     ],
     "dateFinished": [
-      2018,
-      10,
-      3
+      2019,
+      2,
+      17
     ],
     "owned": true,
     "authors": [
-      "Isaac Asimov"
+      "Alfred Bester"
     ],
     "shelves": [
       "sci-fi",
@@ -1568,35 +1600,35 @@
     ]
   },
   {
-    "id": 28335696,
-    "isbn": "0316332828",
-    "isbn13": "9780316332828",
-    "title": "Persepolis Rising",
-    "format": "ebook",
-    "rating": 5,
+    "id": 16118280,
+    "isbn": "0575093137",
+    "isbn13": "9780575093133",
+    "title": "Roadside Picnic",
+    "format": "Paperback",
+    "rating": 2,
     "readCount": 1,
-    "pageNumber": 608,
-    "ratingsCount": 30093,
-    "publicationYear": 2017,
-    "averageRating": 4.36,
+    "pageNumber": 209,
+    "ratingsCount": 38250,
+    "publicationYear": 1972,
+    "averageRating": 4.19,
     "dateStarted": [
       2018,
-      8,
+      11,
       8
     ],
     "dateFinished": [
       2018,
-      8,
-      14
+      11,
+      10
     ],
     "owned": true,
     "authors": [
-      "James S.A. Corey"
+      "Arkady Strugatsky"
     ],
     "shelves": [
       "sci-fi",
-      "space-opera",
-      "sci-fi-fantasy"
+      "russian",
+      "classics"
     ]
   },
   {
@@ -1664,30 +1696,62 @@
     ]
   },
   {
-    "id": 13334093,
-    "isbn": "1780220375",
-    "isbn13": "9781780220376",
-    "title": "Ubik",
+    "id": 7046300,
+    "isbn": "0575094141",
+    "isbn13": "9780575094147",
+    "title": "The Forever War",
     "format": "Paperback",
-    "rating": 5,
+    "rating": 2,
     "readCount": 1,
-    "pageNumber": 208,
-    "ratingsCount": 78687,
-    "publicationYear": 1969,
-    "averageRating": 4.09,
+    "pageNumber": 241,
+    "ratingsCount": 130046,
+    "publicationYear": 1974,
+    "averageRating": 4.15,
     "dateStarted": [
       2018,
-      10,
-      19
+      9,
+      15
     ],
     "dateFinished": [
       2018,
-      10,
-      23
+      9,
+      18
     ],
-    "owned": false,
+    "owned": true,
     "authors": [
-      "Philip K. Dick"
+      "Joe Haldeman"
+    ],
+    "shelves": [
+      "sci-fi",
+      "war",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 41593261,
+    "isbn": null,
+    "isbn13": "9780751573756",
+    "title": "2001: A Space Odyssey",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 288,
+    "ratingsCount": 243658,
+    "publicationYear": 1968,
+    "averageRating": 4.15,
+    "dateStarted": [
+      2019,
+      12,
+      20
+    ],
+    "dateFinished": [
+      2019,
+      12,
+      22
+    ],
+    "owned": true,
+    "authors": [
+      "Arthur C. Clarke"
     ],
     "shelves": [
       "sci-fi",
@@ -1760,38 +1824,6 @@
     ]
   },
   {
-    "id": 756970,
-    "isbn": "1857988825",
-    "isbn13": "9781857988826",
-    "title": "The Dispossessed",
-    "format": "Paperback",
-    "rating": 5,
-    "readCount": 1,
-    "pageNumber": 336,
-    "ratingsCount": 78062,
-    "publicationYear": 1974,
-    "averageRating": 4.22,
-    "dateStarted": [
-      2018,
-      10,
-      26
-    ],
-    "dateFinished": [
-      2018,
-      10,
-      31
-    ],
-    "owned": true,
-    "authors": [
-      "Ursula K. Le Guin"
-    ],
-    "shelves": [
-      "sci-fi",
-      "dystopian",
-      "fantasy"
-    ]
-  },
-  {
     "id": 22946272,
     "isbn": "1447279689",
     "isbn13": "9781447279686",
@@ -1821,6 +1853,38 @@
       "sci-fi",
       "space-opera",
       "fantasy"
+    ]
+  },
+  {
+    "id": 77566,
+    "isbn": "0553283685",
+    "isbn13": "9780553283686",
+    "title": "Hyperion",
+    "format": "Mass Market Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 482,
+    "ratingsCount": 171815,
+    "publicationYear": 1989,
+    "averageRating": 4.24,
+    "dateStarted": [
+      2018,
+      12,
+      29
+    ],
+    "dateFinished": [
+      2019,
+      1,
+      4
+    ],
+    "owned": true,
+    "authors": [
+      "Dan Simmons"
+    ],
+    "shelves": [
+      "sci-fi",
+      "fantasy",
+      "sci-fi-fantasy"
     ]
   },
   {
@@ -1856,34 +1920,34 @@
     ]
   },
   {
-    "id": 7046300,
-    "isbn": "0575094141",
-    "isbn13": "9780575094147",
-    "title": "The Forever War",
-    "format": "Paperback",
-    "rating": 2,
+    "id": 3242353,
+    "isbn": "0575082410",
+    "isbn13": "9780575082410",
+    "title": "The Moon is a Harsh Mistress",
+    "format": "Hardcover",
+    "rating": 4,
     "readCount": 1,
-    "pageNumber": 241,
-    "ratingsCount": 130044,
-    "publicationYear": 1974,
-    "averageRating": 4.15,
+    "pageNumber": 382,
+    "ratingsCount": 103413,
+    "publicationYear": 1966,
+    "averageRating": 4.17,
     "dateStarted": [
       2018,
-      9,
-      15
+      12,
+      17
     ],
     "dateFinished": [
       2018,
-      9,
-      18
+      12,
+      20
     ],
     "owned": true,
     "authors": [
-      "Joe Haldeman"
+      "Robert A. Heinlein"
     ],
     "shelves": [
       "sci-fi",
-      "war",
+      "classics",
       "sci-fi-fantasy"
     ]
   },
@@ -1912,70 +1976,6 @@
     "owned": true,
     "authors": [
       "Isaac Asimov"
-    ],
-    "shelves": [
-      "sci-fi",
-      "classics",
-      "sci-fi-fantasy"
-    ]
-  },
-  {
-    "id": 12012,
-    "isbn": "1857231465",
-    "isbn13": "9781857231465",
-    "title": "The Player of Games",
-    "format": "paperback",
-    "rating": 5,
-    "readCount": 1,
-    "pageNumber": 309,
-    "ratingsCount": 56164,
-    "publicationYear": 1988,
-    "averageRating": 4.27,
-    "dateStarted": [
-      2019,
-      4,
-      28
-    ],
-    "dateFinished": [
-      2019,
-      5,
-      3
-    ],
-    "owned": true,
-    "authors": [
-      "Iain M. Banks"
-    ],
-    "shelves": [
-      "sci-fi",
-      "space-opera",
-      "sci-fi-fantasy"
-    ]
-  },
-  {
-    "id": 35470101,
-    "isbn": null,
-    "isbn13": "9781473217485",
-    "title": "Starship Troopers",
-    "format": "Hardcover",
-    "rating": 4,
-    "readCount": 1,
-    "pageNumber": 288,
-    "ratingsCount": 180285,
-    "publicationYear": 1959,
-    "averageRating": 4.01,
-    "dateStarted": [
-      2019,
-      3,
-      26
-    ],
-    "dateFinished": [
-      2019,
-      3,
-      30
-    ],
-    "owned": true,
-    "authors": [
-      "Robert A. Heinlein"
     ],
     "shelves": [
       "sci-fi",
@@ -2048,38 +2048,6 @@
     ]
   },
   {
-    "id": 27914988,
-    "isbn": "1784971618",
-    "isbn13": "9781784971618",
-    "title": "The Dark Forest",
-    "format": "Paperback",
-    "rating": 5,
-    "readCount": 1,
-    "pageNumber": 550,
-    "ratingsCount": 53293,
-    "publicationYear": 2008,
-    "averageRating": 4.41,
-    "dateStarted": [
-      2018,
-      8,
-      25
-    ],
-    "dateFinished": [
-      2018,
-      8,
-      30
-    ],
-    "owned": false,
-    "authors": [
-      "Liu Cixin"
-    ],
-    "shelves": [
-      "sci-fi",
-      "china",
-      "sci-fi-fantasy"
-    ]
-  },
-  {
     "id": 25822007,
     "isbn": "1447279700",
     "isbn13": "9781447279709",
@@ -2112,102 +2080,6 @@
     ]
   },
   {
-    "id": 16118280,
-    "isbn": "0575093137",
-    "isbn13": "9780575093133",
-    "title": "Roadside Picnic",
-    "format": "Paperback",
-    "rating": 2,
-    "readCount": 1,
-    "pageNumber": 209,
-    "ratingsCount": 38248,
-    "publicationYear": 1972,
-    "averageRating": 4.19,
-    "dateStarted": [
-      2018,
-      11,
-      8
-    ],
-    "dateFinished": [
-      2018,
-      11,
-      10
-    ],
-    "owned": true,
-    "authors": [
-      "Arkady Strugatsky"
-    ],
-    "shelves": [
-      "sci-fi",
-      "russian",
-      "classics"
-    ]
-  },
-  {
-    "id": 17307614,
-    "isbn": "0099580489",
-    "isbn13": "9780099580485",
-    "title": "Wool",
-    "format": "Paperback",
-    "rating": 2,
-    "readCount": 1,
-    "pageNumber": 537,
-    "ratingsCount": 150444,
-    "publicationYear": 2012,
-    "averageRating": 4.23,
-    "dateStarted": [
-      2019,
-      8,
-      14
-    ],
-    "dateFinished": [
-      2019,
-      8,
-      19
-    ],
-    "owned": true,
-    "authors": [
-      "Hugh Howey"
-    ],
-    "shelves": [
-      "sci-fi",
-      "dystopian",
-      "post-apocalyptic"
-    ]
-  },
-  {
-    "id": 28409581,
-    "isbn": "1473211956",
-    "isbn13": "9781473211957",
-    "title": "A Fire Upon the Deep",
-    "format": "Paperback",
-    "rating": 4,
-    "readCount": 1,
-    "pageNumber": 579,
-    "ratingsCount": 49334,
-    "publicationYear": 1992,
-    "averageRating": 4.14,
-    "dateStarted": [
-      2019,
-      10,
-      25
-    ],
-    "dateFinished": [
-      2019,
-      10,
-      31
-    ],
-    "owned": true,
-    "authors": [
-      "Vernor Vinge"
-    ],
-    "shelves": [
-      "sci-fi",
-      "space-opera",
-      "sci-fi-fantasy"
-    ]
-  },
-  {
     "id": 35942178,
     "isbn": "1680680609",
     "isbn13": "9781680680607",
@@ -2236,6 +2108,102 @@
     "shelves": [
       "sci-fi",
       "space-opera",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 40219019,
+    "isbn": null,
+    "isbn13": "9780008277772",
+    "title": "The Naked Sun",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 242,
+    "ratingsCount": 40411,
+    "publicationYear": 1956,
+    "averageRating": 4.16,
+    "dateStarted": [
+      2019,
+      1,
+      26
+    ],
+    "dateFinished": [
+      2019,
+      1,
+      27
+    ],
+    "owned": true,
+    "authors": [
+      "Isaac Asimov"
+    ],
+    "shelves": [
+      "sci-fi",
+      "mystery",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 32884495,
+    "isbn": "1784971650",
+    "isbn13": "9781784971656",
+    "title": "Death's End",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 724,
+    "ratingsCount": 40113,
+    "publicationYear": 2010,
+    "averageRating": 4.44,
+    "dateStarted": [
+      2018,
+      9,
+      9
+    ],
+    "dateFinished": [
+      2018,
+      9,
+      15
+    ],
+    "owned": false,
+    "authors": [
+      "Liu Cixin"
+    ],
+    "shelves": [
+      "sci-fi",
+      "sci-fi-fantasy",
+      "china"
+    ]
+  },
+  {
+    "id": 31380440,
+    "isbn": "0008117497",
+    "isbn13": "9780008117498",
+    "title": "Foundation",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 231,
+    "ratingsCount": 383015,
+    "publicationYear": 1951,
+    "averageRating": 4.16,
+    "dateStarted": [
+      2018,
+      9,
+      4
+    ],
+    "dateFinished": [
+      2018,
+      10,
+      3
+    ],
+    "owned": true,
+    "authors": [
+      "Isaac Asimov"
+    ],
+    "shelves": [
+      "sci-fi",
+      "classics",
       "sci-fi-fantasy"
     ]
   },
@@ -2464,6 +2432,38 @@
     ]
   },
   {
+    "id": 16181585,
+    "isbn": "0575134291",
+    "isbn13": "9780575134294",
+    "title": "Redshirts",
+    "format": "Paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 306,
+    "ratingsCount": 81482,
+    "publicationYear": 2012,
+    "averageRating": 3.85,
+    "dateStarted": [
+      2020,
+      2,
+      9
+    ],
+    "dateFinished": [
+      2020,
+      2,
+      11
+    ],
+    "owned": true,
+    "authors": [
+      "John Scalzi"
+    ],
+    "shelves": [
+      "sci-fi",
+      "humor",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
     "id": 76740,
     "isbn": "1857988221",
     "isbn13": "9781857988222",
@@ -2496,6 +2496,38 @@
     ]
   },
   {
+    "id": 33019686,
+    "isbn": null,
+    "isbn13": null,
+    "title": "Cat's Cradle",
+    "format": "Hardcover",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 218,
+    "ratingsCount": 326277,
+    "publicationYear": 1963,
+    "averageRating": 4.16,
+    "dateStarted": [
+      2018,
+      12,
+      26
+    ],
+    "dateFinished": [
+      2018,
+      12,
+      27
+    ],
+    "owned": true,
+    "authors": [
+      "Kurt Vonnegut Jr."
+    ],
+    "shelves": [
+      "sci-fi",
+      "classics",
+      "dystopian"
+    ]
+  },
+  {
     "id": 17735116,
     "isbn": "1407239953",
     "isbn13": "9781407239958",
@@ -2525,6 +2557,38 @@
       "sci-fi",
       "classics",
       "humor"
+    ]
+  },
+  {
+    "id": 13334093,
+    "isbn": "1780220375",
+    "isbn13": "9781780220376",
+    "title": "Ubik",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 208,
+    "ratingsCount": 78689,
+    "publicationYear": 1969,
+    "averageRating": 4.09,
+    "dateStarted": [
+      2018,
+      10,
+      19
+    ],
+    "dateFinished": [
+      2018,
+      10,
+      23
+    ],
+    "owned": false,
+    "authors": [
+      "Philip K. Dick"
+    ],
+    "shelves": [
+      "sci-fi",
+      "classics",
+      "sci-fi-fantasy"
     ]
   },
   {
@@ -2588,6 +2652,38 @@
     "shelves": [
       "sci-fi",
       "space-opera",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 77565,
+    "isbn": "0553288202",
+    "isbn13": "9780553288209",
+    "title": "The Fall of Hyperion",
+    "format": "Mass Market Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 517,
+    "ratingsCount": 90345,
+    "publicationYear": 1990,
+    "averageRating": 4.2,
+    "dateStarted": [
+      2019,
+      1,
+      4
+    ],
+    "dateFinished": [
+      2019,
+      1,
+      11
+    ],
+    "owned": true,
+    "authors": [
+      "Dan Simmons"
+    ],
+    "shelves": [
+      "sci-fi",
+      "fantasy",
       "sci-fi-fantasy"
     ]
   },
@@ -2656,70 +2752,6 @@
     ]
   },
   {
-    "id": 42289412,
-    "isbn": "1783290218",
-    "isbn13": "9781783290215",
-    "title": "Vicious",
-    "format": "Paperback",
-    "rating": 3,
-    "readCount": 1,
-    "pageNumber": 340,
-    "ratingsCount": 85589,
-    "publicationYear": 2013,
-    "averageRating": 4.24,
-    "dateStarted": [
-      2020,
-      2,
-      2
-    ],
-    "dateFinished": [
-      2020,
-      2,
-      4
-    ],
-    "owned": true,
-    "authors": [
-      "V.E. Schwab"
-    ],
-    "shelves": [
-      "fantasy",
-      "sci-fi",
-      "adult"
-    ]
-  },
-  {
-    "id": 76679,
-    "isbn": "0553565079",
-    "isbn13": "9780553565072",
-    "title": "Forward the Foundation",
-    "format": "Paperback",
-    "rating": 4,
-    "readCount": 1,
-    "pageNumber": 464,
-    "ratingsCount": 42249,
-    "publicationYear": 1993,
-    "averageRating": 4.16,
-    "dateStarted": [
-      2018,
-      9,
-      25
-    ],
-    "dateFinished": [
-      2018,
-      9,
-      30
-    ],
-    "owned": true,
-    "authors": [
-      "Isaac Asimov"
-    ],
-    "shelves": [
-      "sci-fi",
-      "sci-fi-fantasy",
-      "science"
-    ]
-  },
-  {
     "id": 25821989,
     "isbn": "1447279697",
     "isbn13": "9781447279693",
@@ -2784,6 +2816,70 @@
     ]
   },
   {
+    "id": 26228034,
+    "isbn": null,
+    "isbn13": null,
+    "title": "The Obelisk Gate",
+    "format": "Paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 410,
+    "ratingsCount": 70808,
+    "publicationYear": 2016,
+    "averageRating": 4.32,
+    "dateStarted": [
+      2020,
+      3,
+      12
+    ],
+    "dateFinished": [
+      2020,
+      3,
+      16
+    ],
+    "owned": true,
+    "authors": [
+      "N.K. Jemisin"
+    ],
+    "shelves": [
+      "fantasy",
+      "sci-fi",
+      "dystopian"
+    ]
+  },
+  {
+    "id": 42141498,
+    "isbn": "0857668234",
+    "isbn13": "9780857668233",
+    "title": "The Light Brigade",
+    "format": "paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 358,
+    "ratingsCount": 4009,
+    "publicationYear": 2019,
+    "averageRating": 3.99,
+    "dateStarted": [
+      2019,
+      12,
+      15
+    ],
+    "dateFinished": [
+      2019,
+      12,
+      19
+    ],
+    "owned": true,
+    "authors": [
+      "Kameron Hurley"
+    ],
+    "shelves": [
+      "sci-fi",
+      "time-travel",
+      "dystopian"
+    ]
+  },
+  {
     "id": 21059333,
     "isbn": "1447259947",
     "isbn13": "9781447259947",
@@ -2816,38 +2912,6 @@
     ]
   },
   {
-    "id": 77565,
-    "isbn": "0553288202",
-    "isbn13": "9780553288209",
-    "title": "The Fall of Hyperion",
-    "format": "Mass Market Paperback",
-    "rating": 5,
-    "readCount": 1,
-    "pageNumber": 517,
-    "ratingsCount": 90344,
-    "publicationYear": 1990,
-    "averageRating": 4.2,
-    "dateStarted": [
-      2019,
-      1,
-      4
-    ],
-    "dateFinished": [
-      2019,
-      1,
-      11
-    ],
-    "owned": true,
-    "authors": [
-      "Dan Simmons"
-    ],
-    "shelves": [
-      "sci-fi",
-      "fantasy",
-      "sci-fi-fantasy"
-    ]
-  },
-  {
     "id": 31380409,
     "isbn": "0008117489",
     "isbn13": "9780008117481",
@@ -2877,6 +2941,38 @@
       "sci-fi",
       "sci-fi-fantasy",
       "classics"
+    ]
+  },
+  {
+    "id": 28409581,
+    "isbn": "1473211956",
+    "isbn13": "9781473211957",
+    "title": "A Fire Upon the Deep",
+    "format": "Paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 579,
+    "ratingsCount": 49335,
+    "publicationYear": 1992,
+    "averageRating": 4.14,
+    "dateStarted": [
+      2019,
+      10,
+      25
+    ],
+    "dateFinished": [
+      2019,
+      10,
+      31
+    ],
+    "owned": true,
+    "authors": [
+      "Vernor Vinge"
+    ],
+    "shelves": [
+      "sci-fi",
+      "space-opera",
+      "sci-fi-fantasy"
     ]
   },
   {
@@ -2944,99 +3040,67 @@
     ]
   },
   {
-    "id": 77566,
-    "isbn": "0553283685",
-    "isbn13": "9780553283686",
-    "title": "Hyperion",
-    "format": "Mass Market Paperback",
+    "id": 41045102,
+    "isbn": "1408890046",
+    "isbn13": "9781408890042",
+    "title": "Circe",
+    "format": "Paperback",
     "rating": 5,
     "readCount": 1,
-    "pageNumber": 482,
-    "ratingsCount": 171814,
-    "publicationYear": 1989,
-    "averageRating": 4.24,
+    "pageNumber": 333,
+    "ratingsCount": 245605,
+    "publicationYear": 2018,
+    "averageRating": 4.28,
     "dateStarted": [
-      2018,
-      12,
-      29
+      2020,
+      2,
+      4
+    ],
+    "dateFinished": [
+      2020,
+      2,
+      8
+    ],
+    "owned": true,
+    "authors": [
+      "Madeline Miller"
+    ],
+    "shelves": [
+      "fantasy",
+      "mythology",
+      "historical-fiction"
+    ]
+  },
+  {
+    "id": 40219094,
+    "isbn": "0008277788",
+    "isbn13": "9780008277789",
+    "title": "The Robots of Dawn",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 423,
+    "ratingsCount": 36493,
+    "publicationYear": 1983,
+    "averageRating": 4.16,
+    "dateStarted": [
+      2019,
+      1,
+      27
     ],
     "dateFinished": [
       2019,
       1,
-      4
+      31
     ],
     "owned": true,
     "authors": [
-      "Dan Simmons"
+      "Isaac Asimov"
     ],
     "shelves": [
       "sci-fi",
-      "fantasy",
+      "mystery",
       "sci-fi-fantasy"
-    ]
-  },
-  {
-    "id": 16181585,
-    "isbn": "0575134291",
-    "isbn13": "9780575134294",
-    "title": "Redshirts",
-    "format": "Paperback",
-    "rating": 4,
-    "readCount": 1,
-    "pageNumber": 306,
-    "ratingsCount": 81481,
-    "publicationYear": 2012,
-    "averageRating": 3.85,
-    "dateStarted": [
-      2020,
-      2,
-      9
-    ],
-    "dateFinished": [
-      2020,
-      2,
-      11
-    ],
-    "owned": true,
-    "authors": [
-      "John Scalzi"
-    ],
-    "shelves": [
-      "sci-fi",
-      "humor",
-      "sci-fi-fantasy"
-    ]
-  },
-  {
-    "id": 33019686,
-    "isbn": null,
-    "isbn13": null,
-    "title": "Cat's Cradle",
-    "format": "Hardcover",
-    "rating": 5,
-    "readCount": 1,
-    "pageNumber": 218,
-    "ratingsCount": 326273,
-    "publicationYear": 1963,
-    "averageRating": 4.16,
-    "dateStarted": [
-      2018,
-      12,
-      26
-    ],
-    "dateFinished": [
-      2018,
-      12,
-      27
-    ],
-    "owned": true,
-    "authors": [
-      "Kurt Vonnegut Jr."
-    ],
-    "shelves": [
-      "sci-fi",
-      "classics",
-      "dystopian"
     ]
   },
   {
@@ -3069,6 +3133,38 @@
       "religion",
       "science",
       "philosophy"
+    ]
+  },
+  {
+    "id": 12012,
+    "isbn": "1857231465",
+    "isbn13": "9781857231465",
+    "title": "The Player of Games",
+    "format": "paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 309,
+    "ratingsCount": 56165,
+    "publicationYear": 1988,
+    "averageRating": 4.27,
+    "dateStarted": [
+      2019,
+      4,
+      28
+    ],
+    "dateFinished": [
+      2019,
+      5,
+      3
+    ],
+    "owned": true,
+    "authors": [
+      "Iain M. Banks"
+    ],
+    "shelves": [
+      "sci-fi",
+      "space-opera",
+      "sci-fi-fantasy"
     ]
   },
   {
@@ -3200,38 +3296,6 @@
     ]
   },
   {
-    "id": 29501976,
-    "isbn": null,
-    "isbn13": null,
-    "title": "Children of Time",
-    "format": "Paperback",
-    "rating": 5,
-    "readCount": 1,
-    "pageNumber": 600,
-    "ratingsCount": 47048,
-    "publicationYear": 2015,
-    "averageRating": 4.29,
-    "dateStarted": [
-      2018,
-      8,
-      14
-    ],
-    "dateFinished": [
-      2018,
-      8,
-      21
-    ],
-    "owned": true,
-    "authors": [
-      "Adrian Tchaikovsky"
-    ],
-    "shelves": [
-      "sci-fi",
-      "space-opera",
-      "sci-fi-fantasy"
-    ]
-  },
-  {
     "id": 31380497,
     "isbn": "0008117519",
     "isbn13": "9780008117511",
@@ -3264,131 +3328,67 @@
     ]
   },
   {
-    "id": 26228034,
-    "isbn": null,
-    "isbn13": null,
-    "title": "The Obelisk Gate",
-    "format": "Paperback",
-    "rating": 4,
-    "readCount": 1,
-    "pageNumber": 410,
-    "ratingsCount": 70806,
-    "publicationYear": 2016,
-    "averageRating": 4.32,
-    "dateStarted": [
-      2020,
-      3,
-      12
-    ],
-    "dateFinished": [
-      2020,
-      3,
-      16
-    ],
-    "owned": true,
-    "authors": [
-      "N.K. Jemisin"
-    ],
-    "shelves": [
-      "fantasy",
-      "sci-fi",
-      "dystopian"
-    ]
-  },
-  {
-    "id": 31380515,
-    "isbn": "0008117527",
-    "isbn13": "9780008117528",
-    "title": "Foundation's Edge",
+    "id": 40226738,
+    "isbn": "0008279551",
+    "isbn13": "9780008279554",
+    "title": "I, Robot",
     "format": "Paperback",
     "rating": 5,
     "readCount": 1,
-    "pageNumber": 432,
-    "ratingsCount": 65133,
-    "publicationYear": 1982,
-    "averageRating": 4.12,
+    "pageNumber": 244,
+    "ratingsCount": 259611,
+    "publicationYear": 1950,
+    "averageRating": 4.19,
     "dateStarted": [
       2019,
       1,
-      13
+      19
     ],
     "dateFinished": [
       2019,
       1,
-      17
+      23
     ],
     "owned": true,
     "authors": [
       "Isaac Asimov"
-    ],
-    "shelves": [
-      "sci-fi",
-      "sci-fi-fantasy",
-      "classics"
-    ]
-  },
-  {
-    "id": 3242353,
-    "isbn": "0575082410",
-    "isbn13": "9780575082410",
-    "title": "The Moon is a Harsh Mistress",
-    "format": "Hardcover",
-    "rating": 4,
-    "readCount": 1,
-    "pageNumber": 382,
-    "ratingsCount": 103411,
-    "publicationYear": 1966,
-    "averageRating": 4.17,
-    "dateStarted": [
-      2018,
-      12,
-      17
-    ],
-    "dateFinished": [
-      2018,
-      12,
-      20
-    ],
-    "owned": true,
-    "authors": [
-      "Robert A. Heinlein"
     ],
     "shelves": [
       "sci-fi",
       "classics",
-      "sci-fi-fantasy"
+      "short-stories"
     ]
   },
   {
-    "id": 31380528,
-    "isbn": "0008117535",
-    "isbn13": "9780008117535",
-    "title": "Foundation and Earth",
+    "id": 27914988,
+    "isbn": "1784971618",
+    "isbn13": "9781784971618",
+    "title": "The Dark Forest",
     "format": "Paperback",
-    "rating": 4,
+    "rating": 5,
     "readCount": 1,
-    "pageNumber": 512,
-    "ratingsCount": 52359,
-    "publicationYear": 1986,
-    "averageRating": 4.05,
+    "pageNumber": 550,
+    "ratingsCount": 53296,
+    "publicationYear": 2008,
+    "averageRating": 4.41,
     "dateStarted": [
-      2019,
-      1,
-      6
+      2018,
+      8,
+      25
     ],
     "dateFinished": [
-      2019,
-      2,
-      9
+      2018,
+      8,
+      30
     ],
-    "owned": true,
+    "owned": false,
     "authors": [
-      "Isaac Asimov"
+      "Liu Cixin"
     ],
     "shelves": [
       "sci-fi",
-      "sci-fi-fantasy",
-      "classics"
+      "china",
+      "sci-fi-fantasy"
     ]
   },
   {
@@ -3456,99 +3456,163 @@
     ]
   },
   {
-    "id": 40219094,
-    "isbn": "0008277788",
-    "isbn13": "9780008277789",
-    "title": "The Robots of Dawn",
+    "id": 42289412,
+    "isbn": "1783290218",
+    "isbn13": "9781783290215",
+    "title": "Vicious",
     "format": "Paperback",
-    "rating": 5,
+    "rating": 3,
     "readCount": 1,
-    "pageNumber": 423,
-    "ratingsCount": 36491,
-    "publicationYear": 1983,
-    "averageRating": 4.16,
+    "pageNumber": 340,
+    "ratingsCount": 85592,
+    "publicationYear": 2013,
+    "averageRating": 4.24,
     "dateStarted": [
-      2019,
-      1,
-      27
+      2020,
+      2,
+      2
     ],
     "dateFinished": [
-      2019,
-      1,
-      31
-    ],
-    "owned": true,
-    "authors": [
-      "Isaac Asimov"
-    ],
-    "shelves": [
-      "sci-fi",
-      "mystery",
-      "sci-fi-fantasy"
-    ]
-  },
-  {
-    "id": 27069120,
-    "isbn": "0544817281",
-    "isbn13": "9780544817289",
-    "title": "The Man in the High Castle",
-    "format": "Paperback",
-    "rating": 4,
-    "readCount": 1,
-    "pageNumber": 288,
-    "ratingsCount": 159536,
-    "publicationYear": 1962,
-    "averageRating": 3.62,
-    "dateStarted": [
-      2019,
-      11,
-      3
-    ],
-    "dateFinished": [
-      2019,
-      11,
-      5
-    ],
-    "owned": true,
-    "authors": [
-      "Philip K. Dick"
-    ],
-    "shelves": [
-      "sci-fi",
-      "dystopian",
-      "classics"
-    ]
-  },
-  {
-    "id": 41045102,
-    "isbn": "1408890046",
-    "isbn13": "9781408890042",
-    "title": "Circe",
-    "format": "Paperback",
-    "rating": 5,
-    "readCount": 1,
-    "pageNumber": 333,
-    "ratingsCount": 245596,
-    "publicationYear": 2018,
-    "averageRating": 4.28,
-    "dateStarted": [
       2020,
       2,
       4
     ],
-    "dateFinished": [
-      2020,
-      2,
-      8
-    ],
     "owned": true,
     "authors": [
-      "Madeline Miller"
+      "V.E. Schwab"
     ],
     "shelves": [
       "fantasy",
-      "mythology",
-      "historical-fiction"
+      "sci-fi",
+      "adult"
+    ]
+  },
+  {
+    "id": 50885244,
+    "isbn": "0099740915",
+    "isbn13": "9780099740919",
+    "title": "The Handmaid's Tale",
+    "format": "paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 320,
+    "ratingsCount": 1322945,
+    "publicationYear": 1985,
+    "averageRating": 4.11,
+    "dateStarted": [
+      2019,
+      10,
+      13
+    ],
+    "dateFinished": [
+      2019,
+      10,
+      16
+    ],
+    "owned": true,
+    "authors": [
+      "Margaret Atwood"
+    ],
+    "shelves": [
+      "dystopian",
+      "classics",
+      "sci-fi"
+    ]
+  },
+  {
+    "id": 33296259,
+    "isbn": "0316229245",
+    "isbn13": "9780316229241",
+    "title": "The Stone Sky",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 419,
+    "ratingsCount": 56068,
+    "publicationYear": 2017,
+    "averageRating": 4.35,
+    "dateStarted": [
+      2020,
+      3,
+      16
+    ],
+    "dateFinished": [
+      2020,
+      3,
+      21
+    ],
+    "owned": true,
+    "authors": [
+      "N.K. Jemisin"
+    ],
+    "shelves": [
+      "fantasy",
+      "sci-fi",
+      "dystopian"
+    ]
+  },
+  {
+    "id": 8855321,
+    "isbn": "1841499889",
+    "isbn13": "9781841499888",
+    "title": "Leviathan Wakes",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 561,
+    "ratingsCount": 149340,
+    "publicationYear": 2011,
+    "averageRating": 4.26,
+    "dateStarted": [
+      2018,
+      6,
+      2
+    ],
+    "dateFinished": [
+      2018,
+      6,
+      4
+    ],
+    "owned": true,
+    "authors": [
+      "James S.A. Corey"
+    ],
+    "shelves": [
+      "sci-fi",
+      "space-opera",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 28335696,
+    "isbn": "0316332828",
+    "isbn13": "9780316332828",
+    "title": "Persepolis Rising",
+    "format": "ebook",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 608,
+    "ratingsCount": 30094,
+    "publicationYear": 2017,
+    "averageRating": 4.36,
+    "dateStarted": [
+      2018,
+      8,
+      8
+    ],
+    "dateFinished": [
+      2018,
+      8,
+      14
+    ],
+    "owned": true,
+    "authors": [
+      "James S.A. Corey"
+    ],
+    "shelves": [
+      "sci-fi",
+      "space-opera",
+      "sci-fi-fantasy"
     ]
   },
   {
@@ -3680,99 +3744,35 @@
     ]
   },
   {
-    "id": 41593261,
-    "isbn": null,
-    "isbn13": "9780751573756",
-    "title": "2001: A Space Odyssey",
+    "id": 8935689,
+    "isbn": "1857231384",
+    "isbn13": "9781857231380",
+    "title": "Consider Phlebas",
     "format": "Paperback",
     "rating": 5,
     "readCount": 1,
-    "pageNumber": 288,
-    "ratingsCount": 243657,
-    "publicationYear": 1968,
-    "averageRating": 4.15,
+    "pageNumber": 471,
+    "ratingsCount": 70167,
+    "publicationYear": 1987,
+    "averageRating": 3.86,
     "dateStarted": [
       2019,
-      12,
+      4,
       20
     ],
     "dateFinished": [
       2019,
-      12,
-      22
+      4,
+      26
     ],
     "owned": true,
     "authors": [
-      "Arthur C. Clarke"
+      "Iain M. Banks"
     ],
     "shelves": [
       "sci-fi",
-      "classics",
+      "space-opera",
       "sci-fi-fantasy"
-    ]
-  },
-  {
-    "id": 8493755,
-    "isbn": "0575094192",
-    "isbn13": "9780575094192",
-    "title": "The Stars My Destination",
-    "format": "Paperback",
-    "rating": 5,
-    "readCount": 1,
-    "pageNumber": 244,
-    "ratingsCount": 40227,
-    "publicationYear": 1955,
-    "averageRating": 4.11,
-    "dateStarted": [
-      2019,
-      2,
-      13
-    ],
-    "dateFinished": [
-      2019,
-      2,
-      17
-    ],
-    "owned": true,
-    "authors": [
-      "Alfred Bester"
-    ],
-    "shelves": [
-      "sci-fi",
-      "classics",
-      "sci-fi-fantasy"
-    ]
-  },
-  {
-    "id": 17883935,
-    "isbn": "0345539435",
-    "isbn13": "9780345539434",
-    "title": "Cosmos",
-    "format": "Paperback",
-    "rating": 5,
-    "readCount": 1,
-    "pageNumber": 425,
-    "ratingsCount": 107482,
-    "publicationYear": 1980,
-    "averageRating": 4.37,
-    "dateStarted": [
-      2019,
-      5,
-      9
-    ],
-    "dateFinished": [
-      2019,
-      5,
-      19
-    ],
-    "owned": true,
-    "authors": [
-      "Carl Sagan"
-    ],
-    "shelves": [
-      "science",
-      "astronomy",
-      "physics"
     ]
   },
   {

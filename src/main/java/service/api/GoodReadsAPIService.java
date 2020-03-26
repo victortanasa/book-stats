@@ -17,22 +17,25 @@ public class GoodReadsAPIService {
     private static final String COULD_NOT_LOAD_BOOKS_ERROR_MESSAGE = "Could not load books, cannot continue.";
     private static final String INTERRUPTED_MESSAGE = "Something interrupted!";
 
+    private static final String API_KEY = "aB9VcY1rOGCzxMONqjk8Ug";
+
     private static final int DEFAULT_TIMEOUT_IN_SECONDS = 10;
 
     private static final String GOOD_READS_BASE_URL = "https://www.goodreads.com/";
 
-    //TODO: extract token
-    private static final String GET_READ_SHELF_URL = "shelf/list.xml?key=aB9VcY1rOGCzxMONqjk8Ug&user_id=60626198&page=1";
+    private static final String GET_READ_BOOKS_URL = "review/list?v=2&key=%s&id=%s&shelf=read&page=1&per_page=%s";
+    private static final String GET_READ_SHELF_URL = "shelf/list.xml?key=%s&user_id=%s&page=1";
+    private static final String GET_BOOK_DETAILS_URL = "book/show/%s.xml?key=%s";
 
-    private static final String GET_READ_BOOKS_URL = "review/list?v=2&key=aB9VcY1rOGCzxMONqjk8Ug&id=60626198&shelf=read&page=1&per_page=%s";
+    private final ResponseParser responseParser;
+    private final WebClient webClient;
+    private final String userId;
 
-    private static final String GET_BOOK_DETAILS_URL = "book/show/%s.xml?key=aB9VcY1rOGCzxMONqjk8Ug";
+    public GoodReadsAPIService(final String userId) {
+        this.userId = userId;
 
-    private ResponseParser responseParser;
-    private WebClient webClient;
-
-    public GoodReadsAPIService() {
-        final ExchangeStrategies exchangeStrategies = ExchangeStrategies.builder()
+        final ExchangeStrategies exchangeStrategies = ExchangeStrategies
+                .builder()
                 .codecs(configurer -> configurer.defaultCodecs().maxInMemorySize(1024 * 1000)).build();
 
         webClient = WebClient.builder()
@@ -44,19 +47,19 @@ public class GoodReadsAPIService {
     }
 
     public Integer getNumberOfBooksToRetrieve() {
-        final String response = doRequest(GET_READ_SHELF_URL);
+        final String response = doRequest(String.format(GET_READ_SHELF_URL, API_KEY, userId));
 
         return responseParser.getNumberOfBooksToRetrieve(response);
     }
 
     public List<Book> getAllBooksRead(final Integer numberOfBooksToRetrieve) {
-        final String response = doRequest(String.format(GET_READ_BOOKS_URL, numberOfBooksToRetrieve));
+        final String response = doRequest(String.format(GET_READ_BOOKS_URL, API_KEY, userId, numberOfBooksToRetrieve));
 
         return responseParser.getBooks(response);
     }
 
     public MissingDetails getMissingBookDetails(final Long bookId) {
-        final String response = doRequest(String.format(GET_BOOK_DETAILS_URL, bookId));
+        final String response = doRequest(String.format(GET_BOOK_DETAILS_URL, bookId, API_KEY));
 
         return responseParser.getMissingDetails(response);
     }
