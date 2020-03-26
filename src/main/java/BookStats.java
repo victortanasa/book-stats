@@ -1,5 +1,3 @@
-package runner;
-
 import static model.Statistic.*;
 
 import model.Book;

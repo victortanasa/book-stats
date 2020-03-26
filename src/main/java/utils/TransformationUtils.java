@@ -17,10 +17,6 @@ public class TransformationUtils {
         return !StringUtils.isBlank(value) ? Integer.parseInt(value) : null;
     }
 
-    public static Long getLong(final String value) {
-        return !StringUtils.isBlank(value) ? Long.parseLong(value) : null;
-    }
-
     public static Double getDouble(final String value) {
         return !StringUtils.isBlank(value) ? Double.parseDouble(value) : null;
     }
