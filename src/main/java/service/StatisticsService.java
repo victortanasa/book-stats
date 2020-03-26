@@ -10,7 +10,6 @@ import model.Statistic;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
-import java.util.function.ToLongFunction;
 import java.util.stream.Collectors;
 
 public class StatisticsService {
