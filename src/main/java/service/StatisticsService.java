@@ -42,6 +42,7 @@ public class StatisticsService {
         mapStatistic.put(RATINGS_DISTRIBUTION, this::getRatingsDistribution);
 
         singleValueStatistics = newHashMap();
+        singleValueStatistics.put(AVERAGE_RATING, this::getAverageRating);
         singleValueStatistics.put(AVERAGE_DAYS_TO_READ_A_BOOK, this::getAverageDaysToReadABook);
         singleValueStatistics.put(AVERAGE_PAGES_READ_PER_MONTH, this::getAveragePagesReadPerMonth);
         singleValueStatistics.put(AVERAGE_BOOKS_READ_PER_MONTH, this::getAverageBooksReadPerMonth);
@@ -98,6 +99,13 @@ public class StatisticsService {
     private Map<String, ?> getRatingsDistribution() {
         return library.stream()
                 .collect(Collectors.groupingBy(book -> book.getRating().toString(), Collectors.counting()));
+    }
+
+    private Double getAverageRating() {
+        return library.stream()
+                .mapToInt(GoodReadsBook::getRating)
+                .average()
+                .orElse(-1);
     }
 
     private Double getAverageDaysToReadABook() {

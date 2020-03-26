@@ -9,6 +9,7 @@ public enum Statistic {
     RATINGS_DISTRIBUTION("Ratings distribution"),
     AUTHORS_WITH_MOST_FAVOURITES("Authors with most favourites"),
     AVERAGE_RATING_FOR_AUTHORS("Average rating for authors"),
+    AVERAGE_RATING("Average rating"),
     AVERAGE_PAGE_NUMBER_FOR_AUTHORS("Average page number for authors"),
     BOOKS_READ_PER_MONTH("Books read per month"),
     PAGES_READ_PER_MONTH("Pages red per month"),
@@ -19,7 +20,6 @@ public enum Statistic {
     AVERAGE_PAGES_READ_PER_MONTH("Average pages read per month"),
     AVERAGE_BOOKS_READ_PER_MONTH("Average books read per month");
 
-    //TODO: average time to read a book, optionally for author
     //TODO: days not reading books
     //TODO: days (or average) between adding a book and reading it
 
