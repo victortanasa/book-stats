@@ -3,7 +3,7 @@ import static model.Statistic.*;
 import model.Book;
 import model.sorting.SortBy;
 import model.sorting.SortOrder;
-import service.StatisticsService;
+import service.StatisticsServiceOld;
 import utils.BookLoader;
 import utils.PrinterUtils;
 
@@ -17,7 +17,7 @@ public class BookStatsOld {
 
         PrinterUtils.printBooks(library, SortBy.RATING, SortOrder.ASC);
 
-        final StatisticsService statisticsService = new StatisticsService(library);
+        final StatisticsServiceOld statisticsServiceOld = new StatisticsServiceOld(library);
 
         Stream.of(MOST_READ_AUTHORS_BY_PAGE_COUNT,
                 MOST_READ_AUTHORS_BY_BOOK_COUNT,
@@ -30,15 +30,15 @@ public class BookStatsOld {
                 BOOKS_READ_PER_MONTH,
                 PAGES_READ_PER_MONTH,
                 AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR)
-                .forEach(statistic -> PrinterUtils.printMapStatistic(statistic, statisticsService.getMapStatistic(statistic)));
+                .forEach(statistic -> PrinterUtils.printMapStatistic(statistic, statisticsServiceOld.getMapStatistic(statistic)));
 
         Stream.of(SHORTEST_BOOKS, LONGEST_BOOKS)
-                .forEach(statistic -> PrinterUtils.printListStatistic(statistic, statisticsService.getListStatistic(statistic, 8)));
+                .forEach(statistic -> PrinterUtils.printListStatistic(statistic, statisticsServiceOld.getListStatistic(statistic, 8)));
 
         Stream.of(AVERAGE_DAYS_TO_READ_A_BOOK,
                 AVERAGE_PAGES_READ_PER_MONTH,
                 AVERAGE_BOOKS_READ_PER_MONTH)
-                .forEach(statistic -> PrinterUtils.printSingleValueStatistic(statistic, statisticsService.getSingeValueStatistic(statistic)));
+                .forEach(statistic -> PrinterUtils.printSingleValueStatistic(statistic, statisticsServiceOld.getSingeValueStatistic(statistic)));
     }
 
 }
