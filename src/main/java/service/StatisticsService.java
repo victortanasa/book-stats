@@ -38,6 +38,8 @@ public class StatisticsService {
 
         singleValueStatistics = newHashMap();
         singleValueStatistics.put(AVERAGE_DAYS_TO_READ_A_BOOK, this::getAverageDaysToReadABook);
+        singleValueStatistics.put(AVERAGE_PAGES_READ_PER_MONTH, this::getAveragePagesReadPerMonth);
+        singleValueStatistics.put(AVERAGE_BOOKS_READ_PER_MONTH, this::getAverageBooksReadPerMonth);
     }
 
     public Map<String, ?> getMapStatistic(final Statistic statistic) {
@@ -72,9 +74,24 @@ public class StatisticsService {
                 .collect(Collectors.groupingBy(book -> book.getRating().toString(), Collectors.counting()));
     }
 
+    private Double getAveragePagesReadPerMonth() {
+        return getAverageFromMapValues(getPagesReadPerMonth());
+    }
+
+    private Double getAverageBooksReadPerMonth() {
+        return getAverageFromMapValues(getBooksReadPerMonth());
+    }
+
     private Double getAverageDaysToReadABook() {
         return library.stream()
                 .mapToLong(GoodReadsBook::getDaysReadIn)
+                .average()
+                .orElse(-1);
+    }
+
+    private static Double getAverageFromMapValues(final Map<String, ?> map) {
+        return map.entrySet().stream()
+                .mapToDouble(entry -> Double.valueOf(entry.getValue().toString()))
                 .average()
                 .orElse(-1);
     }

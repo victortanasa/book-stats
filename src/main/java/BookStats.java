@@ -23,7 +23,9 @@ public class BookStats {
                 RATINGS_DISTRIBUTION)
                 .forEach(statistic -> PrinterUtils.printMapStatistic(statistic, statisticsService.getMapStatistic(statistic)));
 
-        Stream.of(AVERAGE_DAYS_TO_READ_A_BOOK)
+        Stream.of(AVERAGE_DAYS_TO_READ_A_BOOK,
+                AVERAGE_PAGES_READ_PER_MONTH,
+                AVERAGE_BOOKS_READ_PER_MONTH)
                 .forEach(statistic -> PrinterUtils.printSingleValueStatistic(statistic, statisticsService.getSingeValueStatistic(statistic)));
     }
 
