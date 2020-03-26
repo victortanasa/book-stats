@@ -29,6 +29,8 @@ public class StatisticsService {
         this.library = library;
 
         mapStatistic = newHashMap();
+        mapStatistic.put(MOST_READ_AUTHORS_BY_PAGE_COUNT, this::getMostReadAuthorsByPageCount);
+        mapStatistic.put(MOST_READ_AUTHORS_BY_BOOK_COUNT, this::getMostReadAuthorsBookCount);
         mapStatistic.put(MOST_BOOKS_READ_BY_PUBLISHED_DECADE, this::getMostBooksReadByPublishedDecade);
         mapStatistic.put(BOOKS_READ_PER_MONTH, this::getBooksReadPerMonth);
         mapStatistic.put(PAGES_READ_PER_MONTH, this::getPagesReadPerMonth);
@@ -52,6 +54,16 @@ public class StatisticsService {
 
     public Number getSingeValueStatistic(final Statistic statistic) {
         return singleValueStatistics.get(statistic).get();
+    }
+
+    private Map<String, ?> getMostReadAuthorsByPageCount() {
+        return library.stream()
+                .collect(Collectors.groupingBy(GoodReadsBook::getAuthorAsString, Collectors.summingLong(GoodReadsBook::getPageNumber)));
+    }
+
+    private Map<String, ?> getMostReadAuthorsBookCount() {
+        return library.stream()
+                .collect(Collectors.groupingBy(GoodReadsBook::getAuthorAsString, Collectors.counting()));
     }
 
     private Map<String, ?> getMostBooksReadByPublishedDecade() {

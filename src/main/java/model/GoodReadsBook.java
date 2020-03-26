@@ -213,6 +213,11 @@ public class GoodReadsBook {
     }
 
     @JsonIgnore
+    public String getAuthorAsString() {
+        return String.join(",", authors);
+    }
+
+    @JsonIgnore
     public long getDaysReadIn() {
         final long difference = DAYS.between(dateStarted, dateFinished);
         return difference == 0 ? 1 : difference;

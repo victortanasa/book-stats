@@ -17,7 +17,9 @@ public class BookStats {
 
         final StatisticsService statisticsService = new StatisticsService(books);
 
-        Stream.of(MOST_BOOKS_READ_BY_PUBLISHED_DECADE,
+        Stream.of(MOST_READ_AUTHORS_BY_BOOK_COUNT,
+                MOST_READ_AUTHORS_BY_PAGE_COUNT,
+                MOST_BOOKS_READ_BY_PUBLISHED_DECADE,
                 BOOKS_READ_PER_MONTH,
                 PAGES_READ_PER_MONTH,
                 RATINGS_DISTRIBUTION)
