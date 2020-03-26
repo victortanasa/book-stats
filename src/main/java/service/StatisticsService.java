@@ -38,6 +38,7 @@ public class StatisticsService {
         mapStatistic.put(AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR, this::getAverageDaysToReadABookPerAuthor);
 
         mapStatistic.put(MOST_BOOKS_READ_BY_PUBLISHED_DECADE, this::getMostBooksReadByPublishedDecade);
+        mapStatistic.put(MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS, this::getMostPopularAuthorsByAverageNumberOfRatings);
 
         mapStatistic.put(RATINGS_DISTRIBUTION, this::getRatingsDistribution);
 
@@ -58,7 +59,7 @@ public class StatisticsService {
 
     private Map<String, ?> getMostReadAuthorsByPageCount() {
         return library.stream()
-                .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.summingLong(Book::getPageNumber)));
+                .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.summingInt(Book::getPageNumber)));
     }
 
     private Map<String, ?> getMostReadAuthorsBookCount() {
@@ -73,7 +74,7 @@ public class StatisticsService {
 
     private Map<String, ?> getPagesReadPerMonth() {
         return library.stream()
-                .collect(Collectors.groupingBy(book -> getMonth(book.getDateFinished()), Collectors.summingLong(Book::getPageNumber)));
+                .collect(Collectors.groupingBy(book -> getMonth(book.getDateFinished()), Collectors.summingInt(Book::getPageNumber)));
     }
 
     private Map<String, ?> getAverageRatingsForAuthors() {
@@ -94,6 +95,11 @@ public class StatisticsService {
     private Map<String, ?> getMostBooksReadByPublishedDecade() {
         return library.stream()
                 .collect(Collectors.groupingBy(book -> getDecade(book.getPublicationYear()), Collectors.counting()));
+    }
+
+    private Map<String, ?> getMostPopularAuthorsByAverageNumberOfRatings() {
+        return library.stream()
+                .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingInt(Book::getRatingsCount)));
     }
 
     private Map<String, ?> getRatingsDistribution() {

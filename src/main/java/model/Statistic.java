@@ -18,7 +18,8 @@ public enum Statistic {
     AVERAGE_DAYS_TO_READ_A_BOOK("Average days to read a book"),
     AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR("Average days to read a book per author"),
     AVERAGE_PAGES_READ_PER_MONTH("Average pages read per month"),
-    AVERAGE_BOOKS_READ_PER_MONTH("Average books read per month");
+    AVERAGE_BOOKS_READ_PER_MONTH("Average books read per month"),
+    MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS("Most popular authors by average number of ratings");
 
     //TODO: days not reading books
     //TODO: days (or average) between adding a book and reading it
@@ -36,4 +37,5 @@ public enum Statistic {
     public String getStringValue() {
         return statistic;
     }
+
 }
