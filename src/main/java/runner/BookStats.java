@@ -28,7 +28,8 @@ public class BookStats {
                 AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR,
                 BOOKS_READ_PER_MONTH,
                 PAGES_READ_PER_MONTH,
-                RATINGS_DISTRIBUTION)
+                RATINGS_DISTRIBUTION,
+                MOST_POPULAR_SHELVES)
                 .forEach(statistic -> PrinterUtils.printMapStatistic(statistic, statisticsService.getMapStatistic(statistic)));
 
         Stream.of(AVERAGE_RATING,

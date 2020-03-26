@@ -41,6 +41,7 @@ public class StatisticsService {
         mapStatistic.put(MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS, this::getMostPopularAuthorsByAverageNumberOfRatings);
 
         mapStatistic.put(RATINGS_DISTRIBUTION, this::getRatingsDistribution);
+        mapStatistic.put(MOST_POPULAR_SHELVES, this::getMostPopularShelves);
 
         singleValueStatistics = newHashMap();
         singleValueStatistics.put(AVERAGE_RATING, this::getAverageRating);
@@ -105,6 +106,16 @@ public class StatisticsService {
     private Map<String, ?> getRatingsDistribution() {
         return library.stream()
                 .collect(Collectors.groupingBy(book -> book.getRating().toString(), Collectors.counting()));
+    }
+
+    private Map<String, ?> getMostPopularShelves() {
+        final List<String> shelves = library.stream()
+                .map(Book::getShelves)
+                .flatMap(Collection::stream)
+                .collect(Collectors.toList());
+
+        return shelves.stream()
+                .collect(Collectors.groupingBy(shelve -> shelve, Collectors.counting()));
     }
 
     private Double getAverageRating() {

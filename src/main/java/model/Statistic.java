@@ -4,7 +4,7 @@ public enum Statistic {
 
     MOST_READ_AUTHORS_BY_BOOK_COUNT("Most read authors by book count"),
     MOST_READ_AUTHORS_BY_PAGE_COUNT("Most read authors by page count"),
-    MOST_BOOKS_READ_BY_GENRE("Most books read by genre"),
+    MOST_POPULAR_SHELVES("Most popular shelves"),
     MOST_BOOKS_READ_BY_PUBLISHED_DECADE("Most books read by published decade"),
     RATINGS_DISTRIBUTION("Ratings distribution"),
     AUTHORS_WITH_MOST_FAVOURITES("Authors with most favourites"),

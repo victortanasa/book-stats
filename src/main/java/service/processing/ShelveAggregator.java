@@ -13,11 +13,13 @@ import java.util.stream.Collectors;
 
 public class ShelveAggregator {
 
+    //TODO: move to file
     //TODO: maybe top category, sub-category
 
     //TODO: Docs
     //TODO: add more shelve mappings
     //TODO: initialize list of authors from get all Books step and compose authors shelves; maybe series name? (foundation)
+    //TODO: space: 5 -> wtf?? same with classics || dystopian?? nu apare
 
     private static final List<String> SHELVE_NAMES_FILTER = newArrayList("to-read", "currently-reading", "owned", "default", "favorites",
             "books-i-own", "ebook", "kindle", "library", "audiobook", "owned-books", "audiobooks", "my-books", "ebooks", "to-buy",
@@ -33,10 +35,11 @@ public class ShelveAggregator {
 
     static {
         SHELVE_NAME_MAPPINGS = newArrayList();
-        SHELVE_NAME_MAPPINGS.add(new ShelveMapping("sci-fi", newArrayList("science-fiction", "scifi", "sf", "sci-fi")));
+        SHELVE_NAME_MAPPINGS.add(new ShelveMapping("sci-fi", newArrayList("science-fiction", "scifi", "sf", "sci-fi", "space")));
         SHELVE_NAME_MAPPINGS.add(new ShelveMapping("mil-sci-fi", newArrayList("military-sci-fi", "military-science-fiction", "mil-sci-fi")));
         SHELVE_NAME_MAPPINGS.add(new ShelveMapping("sci-fi-fantasy", newArrayList("sci-fi-fantasy", "scifi-fantasy")));
         SHELVE_NAME_MAPPINGS.add(new ShelveMapping("dystopian", newArrayList("dystopian", "dystopia"))); // post-apocalyptic?
+        SHELVE_NAME_MAPPINGS.add(new ShelveMapping("classics", newArrayList("classic", "classics")));
 
         SHELVE_NAMES_STARTS_WITH_FILTER = newArrayList("read-in", "read-", "hugo", "nebula");
     }
