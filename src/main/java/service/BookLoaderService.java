@@ -22,19 +22,21 @@ public class BookLoaderService {
     private static final StorageService STORAGE_SERVICE = new StorageService();
     private static final BookFilter BOOK_FILTER = new BookFilter();
 
-    private final GoodReadsAPIService goodReadsAPIService;
+    private static final GoodReadsAPIService GOOD_READS_API_SERVICE = new GoodReadsAPIService();
+
+    private final String userId;
 
     public BookLoaderService(final String userId) {
-        this.goodReadsAPIService = new GoodReadsAPIService(userId);
+        this.userId = userId;
     }
 
     public List<Book> loadBooks(final Source source) {
-        return source.equals(GOODREADS) ? getBooksFromGoodReads() : STORAGE_SERVICE.loadBooks();
+        return source.equals(GOODREADS) ? getBooksFromGoodReads(userId) : STORAGE_SERVICE.loadBooks(userId);
     }
 
-    private List<Book> getBooksFromGoodReads() {
-        final Integer numberOfBooksToRetrieve = goodReadsAPIService.getNumberOfBooksToRetrieve();
-        final List<Book> readBooks = goodReadsAPIService.getAllBooksRead(numberOfBooksToRetrieve);
+    private List<Book> getBooksFromGoodReads(final String userId) {
+        final Integer numberOfBooksToRetrieve = GOOD_READS_API_SERVICE.getNumberOfBooksToRetrieve(userId);
+        final List<Book> readBooks = GOOD_READS_API_SERVICE.getAllBooksRead(userId, numberOfBooksToRetrieve);
         final List<Book> wantedBooks = BOOK_FILTER.filterUnwantedBooks(readBooks);
 
         final List<Book> booksWithAllDataLoaded = wantedBooks.stream()
@@ -43,9 +45,9 @@ public class BookLoaderService {
 
         final Map<Book, List<BookField>> missingFieldsMap = BOOK_FIELD_VALIDATOR.getMissingFields(booksWithAllDataLoaded);
 
-        final List<Book> books = BOOK_FIELD_FILLER.fillMissingFieldsForBooks(missingFieldsMap);
+        final List<Book> books = BOOK_FIELD_FILLER.fillMissingFieldsForBooks(userId, missingFieldsMap);
 
-        STORAGE_SERVICE.saveBooks(books);
+        STORAGE_SERVICE.saveBooks(userId, books);
 
         PrinterUtils.printMissingData(BOOK_FIELD_VALIDATOR.getMissingFields(books));
 
@@ -53,7 +55,7 @@ public class BookLoaderService {
     }
 
     private Book setAdditionalFields(final Book book) {
-        final MissingDetails missingBookDetails = goodReadsAPIService.getMissingBookDetails(book.getId());
+        final MissingDetails missingBookDetails = GOOD_READS_API_SERVICE.getMissingBookDetails(book.getId());
         return book.withPublicationYear(missingBookDetails.getPublicationYear()).withShelves(missingBookDetails.getShelves());
     }
 

@@ -24,7 +24,6 @@ public class BookFieldFiller {
     private static final Map<BookField, BiConsumer<Book, Object>> FIELD_SETTERS;
 
     static {
-
         FIELD_SETTERS = newHashMap();
         FIELD_SETTERS.put(BookField.ISNB, (goodReadsBook, isbn) -> goodReadsBook.setIsbn(isbn.toString()));
         FIELD_SETTERS.put(BookField.FORMAT, (goodReadsBook, format) -> goodReadsBook.setFormat(format.toString()));
@@ -33,24 +32,27 @@ public class BookFieldFiller {
         FIELD_SETTERS.put(BookField.DATE_FINISHED, (goodReadsBook, dateFinished) -> goodReadsBook.setDateFinished(getDate(DATE_FORMATTER, dateFinished.toString())));
     }
 
-    private List<StoredBookData> STORED_DATA;
+    private static final StorageService STORAGE_SERVICE = new StorageService();
 
-    public BookFieldFiller() {
-        STORED_DATA = new StorageService().loadStoredBookData();
-    }
-
-    public List<Book> fillMissingFieldsForBooks(final Map<Book, List<BookField>> books) {
+    //TODO: better code, passing that user id a lot
+    public List<Book> fillMissingFieldsForBooks(final String userId, final Map<Book, List<BookField>> books) {
         return books.entrySet().stream()
-                .map(entry -> fillMissingBookFields(entry.getKey(), entry.getValue()))
+                .map(entry -> fillMissingBookFields(userId, entry.getKey(), entry.getValue()))
                 .collect(Collectors.toList());
     }
 
-    private Book fillMissingBookFields(final Book book, final List<BookField> missingFields) {
-        final Optional<StoredBookData> storedDataForBook = getStoredDataForBook(book);
+    private Book fillMissingBookFields(final String userId, final Book book, final List<BookField> missingFields) {
+        final Optional<StoredBookData> storedDataForBook = getStoredDataForBook(userId, book);
 
         storedDataForBook.ifPresent(data -> fillMissingFields(book, missingFields, storedDataForBook.get()));
 
         return book;
+    }
+
+    private Optional<StoredBookData> getStoredDataForBook(final String userId, final Book book) {
+        return STORAGE_SERVICE.loadStoredBookData(userId).stream()
+                .filter(data -> data.getBookId().equals(book.getId()))
+                .findFirst();
     }
 
     private void fillMissingFields(final Book book, final List<BookField> missingFields, final StoredBookData storedBookData) {
@@ -60,12 +62,6 @@ public class BookFieldFiller {
                 FIELD_SETTERS.get(field).accept(book, fieldValue);
             }
         });
-    }
-
-    private Optional<StoredBookData> getStoredDataForBook(final Book book) {
-        return STORED_DATA.stream()
-                .filter(data -> data.getBookId().equals(book.getId()))
-                .findFirst();
     }
 
 }

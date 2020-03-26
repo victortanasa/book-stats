@@ -17,24 +17,24 @@ public class StorageService {
     private static final String COULD_NOT_SAVE_BOOKS_MESSAGE = "Could not save books. Exception was: %s";
     private static final String COULD_NOT_LOAD_BOOKS_MESSAGE = "Could not load books. Exception was: %s";
 
-    private static final String STORAGE_LOCATION = "src/main/resources/storage/%s";
-    private static final String STORED_DATA_FILE = "storedBookData.json";
-    private static final String BOOKS_FILE = "books.json";
+    private static final String STORAGE_LOCATION = "src/main/resources/storage/";
+    private static final String STORED_DATA_FILE = "storedBookData-%s.json";
+    private static final String BOOKS_FILE = "books-%s.json";
 
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
 
-    void saveBooks(final List<Book> books) {
+    void saveBooks(final String userId, final List<Book> books) {
         try {
             final String booksJson = OBJECT_MAPPER.writeValueAsString(books);
-            Files.write(Paths.get(String.format(STORAGE_LOCATION, BOOKS_FILE)), booksJson.getBytes());
+            Files.write(Paths.get(STORAGE_LOCATION + String.format(BOOKS_FILE, userId)), booksJson.getBytes());
         } catch (final Exception e) {
             PrinterUtils.printSimple(String.format(COULD_NOT_SAVE_BOOKS_MESSAGE, e));
         }
     }
 
-    List<Book> loadBooks() {
+    List<Book> loadBooks(final String userId) {
         try {
-            final String booksJson = new String(Files.readAllBytes(Paths.get(String.format(STORAGE_LOCATION, BOOKS_FILE))));
+            final String booksJson = new String(Files.readAllBytes(Paths.get(STORAGE_LOCATION + String.format(BOOKS_FILE, userId))));
             return OBJECT_MAPPER.readValue(booksJson, new TypeReference<List<Book>>() {
             });
         } catch (IOException e) {
@@ -43,9 +43,9 @@ public class StorageService {
         }
     }
 
-    public List<StoredBookData> loadStoredBookData() {
+    public List<StoredBookData> loadStoredBookData(final String userId) {
         try {
-            final String missingDataJson = new String(Files.readAllBytes(Paths.get(String.format(STORAGE_LOCATION, STORED_DATA_FILE))));
+            final String missingDataJson = new String(Files.readAllBytes(Paths.get(STORAGE_LOCATION + String.format(STORED_DATA_FILE, userId))));
             return OBJECT_MAPPER.readValue(missingDataJson, new TypeReference<List<StoredBookData>>() {
             });
         } catch (final IOException e) {

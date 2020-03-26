@@ -29,11 +29,8 @@ public class GoodReadsAPIService {
 
     private final ResponseParser responseParser;
     private final WebClient webClient;
-    private final String userId;
 
-    public GoodReadsAPIService(final String userId) {
-        this.userId = userId;
-
+    public GoodReadsAPIService() {
         final ExchangeStrategies exchangeStrategies = ExchangeStrategies
                 .builder()
                 .codecs(configurer -> configurer.defaultCodecs().maxInMemorySize(1024 * 1000)).build();
@@ -46,13 +43,13 @@ public class GoodReadsAPIService {
         responseParser = new ResponseParser();
     }
 
-    public Integer getNumberOfBooksToRetrieve() {
+    public Integer getNumberOfBooksToRetrieve(final String userId) {
         final String response = doRequest(String.format(GET_READ_SHELF_URL, API_KEY, userId));
 
         return responseParser.getNumberOfBooksToRetrieve(response);
     }
 
-    public List<Book> getAllBooksRead(final Integer numberOfBooksToRetrieve) {
+    public List<Book> getAllBooksRead(final String userId, final Integer numberOfBooksToRetrieve) {
         final String response = doRequest(String.format(GET_READ_BOOKS_URL, API_KEY, userId, numberOfBooksToRetrieve));
 
         return responseParser.getBooks(response);
