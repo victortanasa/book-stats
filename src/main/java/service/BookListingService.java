@@ -31,6 +31,7 @@ public class BookListingService {
 
     //TODO: not string, but book;
     //TODO: move SHORTEST_BOOKS out of statistics
+    //TODO: most popular books (by ratings num)
     public List<String> getBookListing(final Statistic statistic, final int limit) {
         return bookListings.get(statistic).apply(limit);
     }
