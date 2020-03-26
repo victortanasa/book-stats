@@ -1,11 +1,11 @@
 package model.sorting;
 
 public enum SortBy {
-    TITLE,
-    AUTHOR,
-    PAGE_NUMBER,
-    RATING,
-    RELEASE_YEAR,
+    PUBLICATION_YEAR,
     DATE_FINISHED,
+    PAGE_NUMBER,
+    AUTHOR,
+    RATING,
+    TITLE,
     GENRE
 }

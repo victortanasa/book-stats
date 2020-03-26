@@ -1,7 +1,7 @@
 package service;
 
 import static java.util.stream.Collectors.toList;
-import static service.BookLoader.Source.GOODREADS;
+import static service.BookLoaderService.Source.GOODREADS;
 
 import model.BookField;
 import model.GoodReadsBook;
@@ -15,7 +15,7 @@ import utils.PrinterUtils;
 import java.util.List;
 import java.util.Map;
 
-public class BookLoader {
+public class BookLoaderService {
 
     private static final GoodReadsAPIService GOOD_READS_API_SERVICE = new GoodReadsAPIService();
     private static final BookFieldValidator BOOK_FIELD_VALIDATOR = new BookFieldValidator();
@@ -33,7 +33,7 @@ public class BookLoader {
         final List<GoodReadsBook> wantedBooks = BOOK_FILTER.filterUnwantedBooks(readBooks);
 
         final List<GoodReadsBook> booksWithAllDataLoaded = wantedBooks.stream()
-                .map(BookLoader::setAdditionalFields)
+                .map(BookLoaderService::setAdditionalFields)
                 .collect(toList());
 
         final Map<GoodReadsBook, List<BookField>> missingFieldsMap = BOOK_FIELD_VALIDATOR.getMissingFields(booksWithAllDataLoaded);

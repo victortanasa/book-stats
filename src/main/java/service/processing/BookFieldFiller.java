@@ -64,7 +64,7 @@ public class BookFieldFiller {
 
     private Optional<StoredBookData> getStoredDataForBook(final GoodReadsBook book) {
         return STORED_DATA.stream()
-                .filter(data -> data.getId().equals(book.getId()))
+                .filter(data -> data.getBookId().equals(book.getId()))
                 .findFirst();
     }
 

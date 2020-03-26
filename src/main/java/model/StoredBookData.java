@@ -4,35 +4,35 @@ import java.util.Map;
 
 public class StoredBookData {
 
-    private Long id;
+    private Long bookId;
 
-    private Map<BookField, Object> fieldValueMap;
+    private Map<BookField, Object> fieldValues;
 
     public StoredBookData() {
     }
 
-    public StoredBookData(Long id, Map<BookField, Object> fieldValueMap) {
-        this.id = id;
-        this.fieldValueMap = fieldValueMap;
+    public StoredBookData(final Long bookId, final Map<BookField, Object> fieldValues) {
+        this.fieldValues = fieldValues;
+        this.bookId = bookId;
     }
 
-    public Long getId() {
-        return id;
+    public Long getBookId() {
+        return bookId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setBookId(final Long bookId) {
+        this.bookId = bookId;
     }
 
-    public Map<BookField, Object> getFieldValueMap() {
-        return fieldValueMap;
+    public Map<BookField, Object> getFieldValues() {
+        return fieldValues;
     }
 
-    public void setFieldValueMap(Map<BookField, Object> fieldValueMap) {
-        this.fieldValueMap = fieldValueMap;
+    public void setFieldValues(final Map<BookField, Object> fieldValues) {
+        this.fieldValues = fieldValues;
     }
 
     public Object getFieldValue(final BookField bookField) {
-        return fieldValueMap.get(bookField);
+        return fieldValues.get(bookField);
     }
 }

@@ -1,90 +1,90 @@
 [
   {
-    "id": 42141498,
-    "fieldValueMap": {
+    "bookId": 42141498,
+    "fieldValues": {
       "FORMAT": "paperback",
       "PAGE_NUMBER": "358"
     }
   },
   {
-    "id": 50885244,
-    "fieldValueMap": {
+    "bookId": 50885244,
+    "fieldValues": {
       "FORMAT": "paperback",
       "PAGE_NUMBER": "320"
     }
   },
   {
-    "id": 36429921,
-    "fieldValueMap": {
+    "bookId": 36429921,
+    "fieldValues": {
       "FORMAT": "paperback",
       "PAGE_NUMBER": "288"
     }
   },
   {
-    "id": 535060,
-    "fieldValueMap": {
+    "bookId": 535060,
+    "fieldValues": {
       "FORMAT": "paperback"
     }
   },
   {
-    "id": 21059333,
-    "fieldValueMap": {
+    "bookId": 21059333,
+    "fieldValues": {
       "FORMAT": "paperback"
     }
   },
   {
-    "id": 12591698,
-    "fieldValueMap": {
+    "bookId": 12591698,
+    "fieldValues": {
       "DATE_FINISHED": "2018-07-05"
     }
   },
   {
-    "id": 12012,
-    "fieldValueMap": {
+    "bookId": 12012,
+    "fieldValues": {
       "FORMAT": "paperback"
     }
   },
   {
-    "id": 40031983,
-    "fieldValueMap": {
+    "bookId": 40031983,
+    "fieldValues": {
       "FORMAT": "paperback"
     }
   },
   {
-    "id": 34639452,
-    "fieldValueMap": {
+    "bookId": 34639452,
+    "fieldValues": {
       "FORMAT": "paperback",
       "PAGE_NUMBER": "416"
     }
   },
   {
-    "id": 12007,
-    "fieldValueMap": {
+    "bookId": 12007,
+    "fieldValues": {
       "FORMAT": "paperback"
     }
   },
   {
-    "id": 39892317,
-    "fieldValueMap": {
+    "bookId": 39892317,
+    "fieldValues": {
       "FORMAT": "paperback"
     }
   },
   {
-    "id": 35014337,
-    "fieldValueMap": {
+    "bookId": 35014337,
+    "fieldValues": {
       "FORMAT": "paperback",
       "PAGE_NUMBER": "308"
     }
   },
   {
-    "id": 32617610,
-    "fieldValueMap": {
+    "bookId": 32617610,
+    "fieldValues": {
       "FORMAT": "paperback"
     }
   },
   {
-    "id": 26166883,
-    "fieldValueMap": {
+    "bookId": 26166883,
+    "fieldValues": {
       "FORMAT": "paperback"
     }
   }

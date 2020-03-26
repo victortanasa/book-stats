@@ -2,7 +2,6 @@ package utils;
 
 import static com.google.common.collect.Maps.newHashMap;
 
-import model.Book;
 import model.BookField;
 import model.GoodReadsBook;
 import model.Statistic;
@@ -28,21 +27,20 @@ public class PrinterUtils {
     private static final String STATISTIC_PRINT_FORMAT = "%s: %s";
     private static final String NEWLINE = "\n";
 
-    private static final Map<SortBy, Comparator<Book>> SORT_FUNCTIONS;
+    private static final Map<SortBy, Comparator<GoodReadsBook>> SORT_FUNCTIONS;
 
     static {
         SORT_FUNCTIONS = newHashMap();
-        SORT_FUNCTIONS.put(SortBy.DATE_FINISHED, Comparator.comparing(Book::getDateFinished));
-        SORT_FUNCTIONS.put(SortBy.RELEASE_YEAR, Comparator.comparing(Book::getReleaseYear));
-        SORT_FUNCTIONS.put(SortBy.PAGE_NUMBER, Comparator.comparing(Book::getPageNumber));
-        SORT_FUNCTIONS.put(SortBy.AUTHOR, Comparator.comparing(Book::getAuthor));
-        SORT_FUNCTIONS.put(SortBy.RATING, Comparator.comparing(Book::getRating));
-        SORT_FUNCTIONS.put(SortBy.TITLE, Comparator.comparing(Book::getTitle));
-        SORT_FUNCTIONS.put(SortBy.GENRE, Comparator.comparing(Book::getGenre));
+        SORT_FUNCTIONS.put(SortBy.DATE_FINISHED, Comparator.comparing(GoodReadsBook::getDateFinished));
+        SORT_FUNCTIONS.put(SortBy.PUBLICATION_YEAR, Comparator.comparing(GoodReadsBook::getPublicationYear));
+        SORT_FUNCTIONS.put(SortBy.PAGE_NUMBER, Comparator.comparing(GoodReadsBook::getPageNumber));
+        SORT_FUNCTIONS.put(SortBy.AUTHOR, Comparator.comparing(GoodReadsBook::getAuthorAsString));
+        SORT_FUNCTIONS.put(SortBy.RATING, Comparator.comparing(GoodReadsBook::getRating));
+        SORT_FUNCTIONS.put(SortBy.TITLE, Comparator.comparing(GoodReadsBook::getTitle));
     }
 
-    public static void printBooks(final Set<Book> books, final SortBy sortBy, final SortOrder sortOrder) {
-        final Comparator<Book> comparator = SortOrder.ASC.equals(sortOrder) ?
+    public static void printBooks(final Set<GoodReadsBook> books, final SortBy sortBy, final SortOrder sortOrder) {
+        final Comparator<GoodReadsBook> comparator = SortOrder.ASC.equals(sortOrder) ?
                 SORT_FUNCTIONS.get(sortBy) : SORT_FUNCTIONS.get(sortBy).reversed();
 
         books.stream().

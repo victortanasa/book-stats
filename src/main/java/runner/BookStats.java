@@ -3,7 +3,7 @@ package runner;
 import static model.Statistic.*;
 
 import model.GoodReadsBook;
-import service.BookLoader;
+import service.BookLoaderService;
 import service.StatisticsService;
 import utils.PrinterUtils;
 
@@ -12,10 +12,10 @@ import java.util.stream.Stream;
 
 public class BookStats {
 
-    private static final BookLoader BOOK_LOADER = new BookLoader();
+    private static final BookLoaderService BOOK_LOADER_SERVICE = new BookLoaderService();
 
     public static void main(final String[] args) {
-        final List<GoodReadsBook> books = BOOK_LOADER.loadBooks(BookLoader.Source.STORAGE);
+        final List<GoodReadsBook> books = BOOK_LOADER_SERVICE.loadBooks(BookLoaderService.Source.STORAGE);
 
         final StatisticsService statisticsService = new StatisticsService(books);
 
