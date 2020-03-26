@@ -8,11 +8,8 @@ public class BookStats {
     private static final BookLoader BOOK_LOADER = new BookLoader();
 
     public static void main(final String[] args) {
-        final List<GoodReadsBook> books = BOOK_LOADER.loadBooks(BookLoader.Source.STORAGE);
+        final List<GoodReadsBook> books = BOOK_LOADER.loadBooks(BookLoader.Source.GOODREADS);
         books.forEach(System.out::println);
     }
-
-
-
 
 }

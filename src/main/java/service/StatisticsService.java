@@ -27,6 +27,7 @@ public class StatisticsService {
     private Map<Statistic, Supplier<Double>> singleValueStatistics = newHashMap();
 
     //TODO: most read authors per year - books and page number - sort by what
+    //TODO: most popular books (by ratings num)
     public StatisticsService(final Set<Book> library) {
         this.library = library;
 

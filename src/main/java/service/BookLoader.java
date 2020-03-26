@@ -10,6 +10,7 @@ import service.api.GoodReadsAPIService;
 import service.processing.BookFieldFiller;
 import service.processing.BookFieldValidator;
 import service.processing.BookFilter;
+import utils.PrinterUtils;
 
 import java.util.List;
 import java.util.Map;
@@ -40,6 +41,8 @@ public class BookLoader {
         final List<GoodReadsBook> goodReadsBooks = BOOK_FIELD_FILLER.fillMissingFieldsForBooks(missingFieldsMap);
 
         STORAGE_SERVICE.saveBooks(goodReadsBooks);
+
+        PrinterUtils.printMissingData(BOOK_FIELD_VALIDATOR.getMissingFields(goodReadsBooks));
 
         return goodReadsBooks;
     }
