@@ -19,8 +19,6 @@ public class ShelveAggregator {
     //TODO: add more shelve mappings
     //TODO: initialize list of authors from get all Books step and compose authors shelves; maybe series name? (foundation)
 
-    //TODO: {"id":39892317,"isbn":"1786693909","isbn13":"9781786693907","title":"Dogs of War","format":"paperback","rating":4,"readCount":1,"pageNumber":346,"ratingsCount":3606,"publicationYear":2017,"averageRating":4.27,"dateStarted":"2018-08-30",
-    // "dateFinished":"2018-09-04","owned":true,"authors":[Adrian Tchaikovsky],"shelves":[sci-fi, animals, read-2019]}
     private static final List<String> SHELVE_NAMES_FILTER = newArrayList("to-read", "currently-reading", "owned", "default", "favorites",
             "books-i-own", "ebook", "kindle", "library", "audiobook", "owned-books", "audiobooks", "my-books", "ebooks", "to-buy",
             "english", "calibre", "books", "british", "audio", "my-library", "favourites", "re-read", "general", "e-books", "audio-book",
@@ -40,7 +38,7 @@ public class ShelveAggregator {
         SHELVE_NAME_MAPPINGS.add(new ShelveMapping("sci-fi-fantasy", newArrayList("sci-fi-fantasy", "scifi-fantasy")));
         SHELVE_NAME_MAPPINGS.add(new ShelveMapping("dystopian", newArrayList("dystopian", "dystopia"))); // post-apocalyptic?
 
-        SHELVE_NAMES_STARTS_WITH_FILTER = newArrayList("read-in", "hugo", "nebula");
+        SHELVE_NAMES_STARTS_WITH_FILTER = newArrayList("read-in", "read-", "hugo", "nebula");
     }
 
     public static List<String> getTopShelves(final List<Shelve> allShelves) {

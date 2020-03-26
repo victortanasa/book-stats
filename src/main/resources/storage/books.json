@@ -1,37 +1,5 @@
 [
   {
-    "id": 35014337,
-    "isbn": "1680680587",
-    "isbn13": "9781680680584",
-    "title": "We Are Legion (We Are Bob)",
-    "format": "paperback",
-    "rating": 5,
-    "readCount": 1,
-    "pageNumber": 308,
-    "ratingsCount": 47307,
-    "publicationYear": 2016,
-    "averageRating": 4.29,
-    "dateStarted": [
-      2018,
-      9,
-      18
-    ],
-    "dateFinished": [
-      2018,
-      9,
-      25
-    ],
-    "owned": false,
-    "authors": [
-      "Dennis E. Taylor"
-    ],
-    "shelves": [
-      "sci-fi",
-      "space-opera",
-      "sci-fi-fantasy"
-    ]
-  },
-  {
     "id": 756979,
     "isbn": "1857989511",
     "isbn13": "9781857989519",
@@ -480,6 +448,38 @@
     ]
   },
   {
+    "id": 41716930,
+    "isbn": "031645253X",
+    "isbn13": "9780316452533",
+    "title": "Children of Ruin",
+    "format": "Paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 571,
+    "ratingsCount": 9543,
+    "publicationYear": 2019,
+    "averageRating": 4.09,
+    "dateStarted": [
+      2019,
+      5,
+      23
+    ],
+    "dateFinished": [
+      2019,
+      5,
+      29
+    ],
+    "owned": true,
+    "authors": [
+      "Adrian Tchaikovsky"
+    ],
+    "shelves": [
+      "sci-fi",
+      "space-opera",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
     "id": 33222332,
     "isbn": "0141983213",
     "isbn13": "9780141983219",
@@ -512,38 +512,6 @@
     ]
   },
   {
-    "id": 41045102,
-    "isbn": "1408890046",
-    "isbn13": "9781408890042",
-    "title": "Circe",
-    "format": "Paperback",
-    "rating": 5,
-    "readCount": 1,
-    "pageNumber": 333,
-    "ratingsCount": 245513,
-    "publicationYear": 2018,
-    "averageRating": 4.28,
-    "dateStarted": [
-      2020,
-      2,
-      4
-    ],
-    "dateFinished": [
-      2020,
-      2,
-      8
-    ],
-    "owned": true,
-    "authors": [
-      "Madeline Miller"
-    ],
-    "shelves": [
-      "fantasy",
-      "mythology",
-      "historical-fiction"
-    ]
-  },
-  {
     "id": 12012,
     "isbn": "1857231465",
     "isbn13": "9781857231465",
@@ -573,38 +541,6 @@
       "sci-fi",
       "space-opera",
       "sci-fi-fantasy"
-    ]
-  },
-  {
-    "id": 30165919,
-    "isbn": "1784161926",
-    "isbn13": "9781784161927",
-    "title": "The God Delusion",
-    "format": "Paperback",
-    "rating": 5,
-    "readCount": 1,
-    "pageNumber": 471,
-    "ratingsCount": 217895,
-    "publicationYear": 2006,
-    "averageRating": 3.9,
-    "dateStarted": [
-      2019,
-      7,
-      29
-    ],
-    "dateFinished": [
-      2019,
-      8,
-      7
-    ],
-    "owned": true,
-    "authors": [
-      "Richard Dawkins"
-    ],
-    "shelves": [
-      "religion",
-      "science",
-      "philosophy"
     ]
   },
   {
@@ -797,6 +733,38 @@
       "sci-fi",
       "space-opera",
       "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 30165919,
+    "isbn": "1784161926",
+    "isbn13": "9781784161927",
+    "title": "The God Delusion",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 471,
+    "ratingsCount": 217896,
+    "publicationYear": 2006,
+    "averageRating": 3.9,
+    "dateStarted": [
+      2019,
+      7,
+      29
+    ],
+    "dateFinished": [
+      2019,
+      8,
+      7
+    ],
+    "owned": true,
+    "authors": [
+      "Richard Dawkins"
+    ],
+    "shelves": [
+      "religion",
+      "science",
+      "philosophy"
     ]
   },
   {
@@ -1024,6 +992,38 @@
     ]
   },
   {
+    "id": 34639452,
+    "isbn": "1509853782",
+    "isbn13": "9781509853786",
+    "title": "Dark Matter",
+    "format": "paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 416,
+    "ratingsCount": 218966,
+    "publicationYear": 2016,
+    "averageRating": 4.1,
+    "dateStarted": [
+      2018,
+      11,
+      5
+    ],
+    "dateFinished": [
+      2018,
+      11,
+      8
+    ],
+    "owned": true,
+    "authors": [
+      "Blake Crouch"
+    ],
+    "shelves": [
+      "sci-fi",
+      "thriller",
+      "mystery"
+    ]
+  },
+  {
     "id": 40219094,
     "isbn": "0008277788",
     "isbn13": "9780008277789",
@@ -1152,38 +1152,6 @@
     ]
   },
   {
-    "id": 16032905,
-    "isbn": "0006546064",
-    "isbn13": "9780006546061",
-    "title": "Fahrenheit 451",
-    "format": "Paperback",
-    "rating": 4,
-    "readCount": 1,
-    "pageNumber": 227,
-    "ratingsCount": 1556223,
-    "publicationYear": 1953,
-    "averageRating": 3.99,
-    "dateStarted": [
-      2020,
-      3,
-      9
-    ],
-    "dateFinished": [
-      2020,
-      3,
-      11
-    ],
-    "owned": true,
-    "authors": [
-      "Ray Bradbury"
-    ],
-    "shelves": [
-      "classics",
-      "sci-fi",
-      "dystopian"
-    ]
-  },
-  {
     "id": 17737035,
     "isbn": "0345526678",
     "isbn13": "9780345526670",
@@ -1245,38 +1213,6 @@
       "sci-fi",
       "horror",
       "sci-fi-fantasy"
-    ]
-  },
-  {
-    "id": 43081136,
-    "isbn": null,
-    "isbn13": null,
-    "title": "Slaughterhouse-Five",
-    "format": "Paperback",
-    "rating": 5,
-    "readCount": 1,
-    "pageNumber": 215,
-    "ratingsCount": 1075361,
-    "publicationYear": 1969,
-    "averageRating": 4.08,
-    "dateStarted": [
-      2019,
-      9,
-      2
-    ],
-    "dateFinished": [
-      2019,
-      9,
-      4
-    ],
-    "owned": true,
-    "authors": [
-      "Kurt Vonnegut Jr."
-    ],
-    "shelves": [
-      "classics",
-      "sci-fi",
-      "classic"
     ]
   },
   {
@@ -1536,38 +1472,6 @@
     ]
   },
   {
-    "id": 50885244,
-    "isbn": "0099740915",
-    "isbn13": "9780099740919",
-    "title": "The Handmaid's Tale",
-    "format": "paperback",
-    "rating": 5,
-    "readCount": 1,
-    "pageNumber": 320,
-    "ratingsCount": 1322749,
-    "publicationYear": 1985,
-    "averageRating": 4.11,
-    "dateStarted": [
-      2019,
-      10,
-      13
-    ],
-    "dateFinished": [
-      2019,
-      10,
-      16
-    ],
-    "owned": true,
-    "authors": [
-      "Margaret Atwood"
-    ],
-    "shelves": [
-      "dystopian",
-      "sci-fi",
-      "classics"
-    ]
-  },
-  {
     "id": 7046300,
     "isbn": "0575094141",
     "isbn13": "9780575094147",
@@ -1597,6 +1501,38 @@
       "sci-fi",
       "war",
       "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 43081136,
+    "isbn": null,
+    "isbn13": null,
+    "title": "Slaughterhouse-Five",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 215,
+    "ratingsCount": 1075363,
+    "publicationYear": 1969,
+    "averageRating": 4.08,
+    "dateStarted": [
+      2019,
+      9,
+      2
+    ],
+    "dateFinished": [
+      2019,
+      9,
+      4
+    ],
+    "owned": true,
+    "authors": [
+      "Kurt Vonnegut Jr."
+    ],
+    "shelves": [
+      "classics",
+      "sci-fi",
+      "classic"
     ]
   },
   {
@@ -1692,38 +1628,6 @@
     "shelves": [
       "sci-fi",
       "space-opera",
-      "sci-fi-fantasy"
-    ]
-  },
-  {
-    "id": 17972009,
-    "isbn": null,
-    "isbn13": null,
-    "title": "Contact",
-    "format": "Mass Market Paperback",
-    "rating": 5,
-    "readCount": 1,
-    "pageNumber": 432,
-    "ratingsCount": 115356,
-    "publicationYear": 1985,
-    "averageRating": 4.14,
-    "dateStarted": [
-      2019,
-      11,
-      6
-    ],
-    "dateFinished": [
-      2019,
-      11,
-      10
-    ],
-    "owned": true,
-    "authors": [
-      "Carl Sagan"
-    ],
-    "shelves": [
-      "sci-fi",
-      "science",
       "sci-fi-fantasy"
     ]
   },
@@ -1952,6 +1856,38 @@
     ]
   },
   {
+    "id": 50885244,
+    "isbn": "0099740915",
+    "isbn13": "9780099740919",
+    "title": "The Handmaid's Tale",
+    "format": "paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 320,
+    "ratingsCount": 1322758,
+    "publicationYear": 1985,
+    "averageRating": 4.11,
+    "dateStarted": [
+      2019,
+      10,
+      13
+    ],
+    "dateFinished": [
+      2019,
+      10,
+      16
+    ],
+    "owned": true,
+    "authors": [
+      "Margaret Atwood"
+    ],
+    "shelves": [
+      "dystopian",
+      "sci-fi",
+      "classics"
+    ]
+  },
+  {
     "id": 25261823,
     "isbn": null,
     "isbn13": "9781447279679",
@@ -2076,70 +2012,6 @@
     "shelves": [
       "sci-fi",
       "mystery",
-      "sci-fi-fantasy"
-    ]
-  },
-  {
-    "id": 24624674,
-    "isbn": null,
-    "isbn13": null,
-    "title": "Flowers for Algernon",
-    "format": "Paperback",
-    "rating": 5,
-    "readCount": 1,
-    "pageNumber": 224,
-    "ratingsCount": 450493,
-    "publicationYear": 1966,
-    "averageRating": 4.13,
-    "dateStarted": [
-      2019,
-      3,
-      31
-    ],
-    "dateFinished": [
-      2019,
-      4,
-      1
-    ],
-    "owned": true,
-    "authors": [
-      "Daniel Keyes"
-    ],
-    "shelves": [
-      "classics",
-      "sci-fi",
-      "young-adult"
-    ]
-  },
-  {
-    "id": 41716930,
-    "isbn": "031645253X",
-    "isbn13": "9780316452533",
-    "title": "Children of Ruin",
-    "format": "Paperback",
-    "rating": 4,
-    "readCount": 1,
-    "pageNumber": 571,
-    "ratingsCount": 9542,
-    "publicationYear": 2019,
-    "averageRating": 4.09,
-    "dateStarted": [
-      2019,
-      5,
-      23
-    ],
-    "dateFinished": [
-      2019,
-      5,
-      29
-    ],
-    "owned": true,
-    "authors": [
-      "Adrian Tchaikovsky"
-    ],
-    "shelves": [
-      "sci-fi",
-      "space-opera",
       "sci-fi-fantasy"
     ]
   },
@@ -2400,38 +2272,6 @@
     ]
   },
   {
-    "id": 6315566,
-    "isbn": "0330508113",
-    "isbn13": "9780330508117",
-    "title": "The Hitchhiker's Guide to the Galaxy",
-    "format": "Paperback",
-    "rating": 4,
-    "readCount": 1,
-    "pageNumber": 184,
-    "ratingsCount": 1337909,
-    "publicationYear": 1979,
-    "averageRating": 4.22,
-    "dateStarted": [
-      2019,
-      4,
-      2
-    ],
-    "dateFinished": [
-      2019,
-      4,
-      3
-    ],
-    "owned": true,
-    "authors": [
-      "Douglas Adams"
-    ],
-    "shelves": [
-      "sci-fi",
-      "humor",
-      "fantasy"
-    ]
-  },
-  {
     "id": 77565,
     "isbn": "0553288202",
     "isbn13": "9780553288209",
@@ -2616,6 +2456,38 @@
     "owned": true,
     "authors": [
       "Adrian Tchaikovsky"
+    ],
+    "shelves": [
+      "sci-fi",
+      "space-opera",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 35014337,
+    "isbn": "1680680587",
+    "isbn13": "9781680680584",
+    "title": "We Are Legion (We Are Bob)",
+    "format": "paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 308,
+    "ratingsCount": 47308,
+    "publicationYear": 2016,
+    "averageRating": 4.29,
+    "dateStarted": [
+      2018,
+      9,
+      18
+    ],
+    "dateFinished": [
+      2018,
+      9,
+      25
+    ],
+    "owned": false,
+    "authors": [
+      "Dennis E. Taylor"
     ],
     "shelves": [
       "sci-fi",
@@ -3136,35 +3008,35 @@
     ]
   },
   {
-    "id": 34639452,
-    "isbn": "1509853782",
-    "isbn13": "9781509853786",
-    "title": "Dark Matter",
-    "format": "paperback",
+    "id": 16032905,
+    "isbn": "0006546064",
+    "isbn13": "9780006546061",
+    "title": "Fahrenheit 451",
+    "format": "Paperback",
     "rating": 4,
     "readCount": 1,
-    "pageNumber": 416,
-    "ratingsCount": 218960,
-    "publicationYear": 2016,
-    "averageRating": 4.1,
+    "pageNumber": 227,
+    "ratingsCount": 1556229,
+    "publicationYear": 1953,
+    "averageRating": 3.99,
     "dateStarted": [
-      2018,
-      11,
-      5
+      2020,
+      3,
+      9
     ],
     "dateFinished": [
-      2018,
-      11,
-      8
+      2020,
+      3,
+      11
     ],
     "owned": true,
     "authors": [
-      "Blake Crouch"
+      "Ray Bradbury"
     ],
     "shelves": [
+      "classics",
       "sci-fi",
-      "thriller",
-      "mystery"
+      "dystopian"
     ]
   },
   {
@@ -3328,6 +3200,102 @@
     ]
   },
   {
+    "id": 6315566,
+    "isbn": "0330508113",
+    "isbn13": "9780330508117",
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "format": "Paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 184,
+    "ratingsCount": 1337913,
+    "publicationYear": 1979,
+    "averageRating": 4.22,
+    "dateStarted": [
+      2019,
+      4,
+      2
+    ],
+    "dateFinished": [
+      2019,
+      4,
+      3
+    ],
+    "owned": true,
+    "authors": [
+      "Douglas Adams"
+    ],
+    "shelves": [
+      "sci-fi",
+      "humor",
+      "fantasy"
+    ]
+  },
+  {
+    "id": 41045102,
+    "isbn": "1408890046",
+    "isbn13": "9781408890042",
+    "title": "Circe",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 333,
+    "ratingsCount": 245517,
+    "publicationYear": 2018,
+    "averageRating": 4.28,
+    "dateStarted": [
+      2020,
+      2,
+      4
+    ],
+    "dateFinished": [
+      2020,
+      2,
+      8
+    ],
+    "owned": true,
+    "authors": [
+      "Madeline Miller"
+    ],
+    "shelves": [
+      "fantasy",
+      "mythology",
+      "historical-fiction"
+    ]
+  },
+  {
+    "id": 39892317,
+    "isbn": "1786693909",
+    "isbn13": "9781786693907",
+    "title": "Dogs of War",
+    "format": "paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 346,
+    "ratingsCount": 3607,
+    "publicationYear": 2017,
+    "averageRating": 4.27,
+    "dateStarted": [
+      2018,
+      8,
+      30
+    ],
+    "dateFinished": [
+      2018,
+      9,
+      4
+    ],
+    "owned": true,
+    "authors": [
+      "Adrian Tchaikovsky"
+    ],
+    "shelves": [
+      "sci-fi",
+      "animals",
+      "fantasy"
+    ]
+  },
+  {
     "id": 33019686,
     "isbn": null,
     "isbn13": null,
@@ -3488,35 +3456,35 @@
     ]
   },
   {
-    "id": 39892317,
-    "isbn": "1786693909",
-    "isbn13": "9781786693907",
-    "title": "Dogs of War",
-    "format": "paperback",
-    "rating": 4,
+    "id": 24624674,
+    "isbn": null,
+    "isbn13": null,
+    "title": "Flowers for Algernon",
+    "format": "Paperback",
+    "rating": 5,
     "readCount": 1,
-    "pageNumber": 346,
-    "ratingsCount": 3607,
-    "publicationYear": 2017,
-    "averageRating": 4.27,
+    "pageNumber": 224,
+    "ratingsCount": 450495,
+    "publicationYear": 1966,
+    "averageRating": 4.13,
     "dateStarted": [
-      2018,
-      8,
-      30
+      2019,
+      3,
+      31
     ],
     "dateFinished": [
-      2018,
-      9,
-      4
+      2019,
+      4,
+      1
     ],
     "owned": true,
     "authors": [
-      "Adrian Tchaikovsky"
+      "Daniel Keyes"
     ],
     "shelves": [
+      "classics",
       "sci-fi",
-      "animals",
-      "read-2019"
+      "young-adult"
     ]
   },
   {
@@ -3645,6 +3613,38 @@
       "sci-fi",
       "sci-fi-fantasy",
       "china"
+    ]
+  },
+  {
+    "id": 17972009,
+    "isbn": null,
+    "isbn13": null,
+    "title": "Contact",
+    "format": "Mass Market Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 432,
+    "ratingsCount": 115357,
+    "publicationYear": 1985,
+    "averageRating": 4.14,
+    "dateStarted": [
+      2019,
+      11,
+      6
+    ],
+    "dateFinished": [
+      2019,
+      11,
+      10
+    ],
+    "owned": true,
+    "authors": [
+      "Carl Sagan"
+    ],
+    "shelves": [
+      "sci-fi",
+      "science",
+      "sci-fi-fantasy"
     ]
   },
   {
