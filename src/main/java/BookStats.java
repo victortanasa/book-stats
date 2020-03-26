@@ -15,7 +15,7 @@ public class BookStats {
     private static final BookLoaderService BOOK_LOADER_SERVICE = new BookLoaderService(MY_USER_ID);
 
     public static void main(final String[] args) {
-        final List<Book> books = BOOK_LOADER_SERVICE.loadBooks(BookLoaderService.Source.GOODREADS);
+        final List<Book> books = BOOK_LOADER_SERVICE.loadBooks(BookLoaderService.Source.STORAGE);
 
         final StatisticsService statisticsService = new StatisticsService(books);
 

@@ -1,5 +1,7 @@
 package service;
 
+import static com.google.common.collect.Lists.newArrayList;
+
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import model.Book;
@@ -9,6 +11,7 @@ import utils.PrinterUtils;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.List;
 
 public class StorageService {
@@ -23,10 +26,12 @@ public class StorageService {
 
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
 
+    //TODO: create file if it doesn't exist
+
     void saveBooks(final String userId, final List<Book> books) {
         try {
             final String booksJson = OBJECT_MAPPER.writeValueAsString(books);
-            Files.write(Paths.get(STORAGE_LOCATION + String.format(BOOKS_FILE, userId)), booksJson.getBytes());
+            Files.write(Paths.get(STORAGE_LOCATION + String.format(BOOKS_FILE, userId)), booksJson.getBytes(), StandardOpenOption.CREATE);
         } catch (final Exception e) {
             PrinterUtils.printSimple(String.format(COULD_NOT_SAVE_BOOKS_MESSAGE, e));
         }
@@ -50,7 +55,7 @@ public class StorageService {
             });
         } catch (final IOException e) {
             PrinterUtils.printSimple(String.format(COULD_NOT_LOAD_STORED_DATA_MESSAGE, e));
-            return null;
+            return newArrayList();
         }
     }
 }
