@@ -44,7 +44,7 @@ public class TODOHolder {
     //TODO: idea - if can't get isbn from edition, try others
 
     //TODO: get books from DNF
-    //TODO: how popular are the books you read - by ratings number; most "popular authors"
+
 
     //TODO: missing dates thread: https://www.goodreads.com/topic/show/19351061-missing-started-at-and-read-at
 

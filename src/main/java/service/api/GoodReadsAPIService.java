@@ -66,6 +66,7 @@ public class GoodReadsAPIService {
             TimeUnit.SECONDS.sleep(1);
         } catch (final InterruptedException e) {
             PrinterUtils.printSimple(INTERRUPTED_MESSAGE + e.getMessage());
+            throw new IllegalStateException(COULD_NOT_LOAD_BOOKS_ERROR_MESSAGE);
         }
 
         final ClientResponse clientResponse = webClient.get()

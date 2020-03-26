@@ -25,7 +25,7 @@ public enum Statistic {
 
     //TODO: most read authors per year - books and page number - sort by what
     //TODO: most popular books (by ratings num)
-    //TODO: average rating
+    //TODO: how popular are the books you read - by ratings number; most "popular authors"
 
     private String statistic;
 
