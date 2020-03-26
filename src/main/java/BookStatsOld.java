@@ -23,7 +23,7 @@ public class BookStatsOld {
                 MOST_READ_AUTHORS_BY_BOOK_COUNT,
                 MOST_BOOKS_READ_BY_GENRE,
                 MOST_BOOKS_READ_BY_PUBLISHED_DECADE,
-                TOTAL_RATINGS,
+                RATINGS_DISTRIBUTION,
                 AUTHORS_WITH_MOST_FAVOURITES,
                 AVERAGE_RATING_FOR_AUTHORS,
                 AVERAGE_PAGE_NUMBER_FOR_AUTHORS,

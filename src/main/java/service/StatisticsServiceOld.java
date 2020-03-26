@@ -26,8 +26,6 @@ public class StatisticsServiceOld {
     private Map<Statistic, Supplier<Map<String, ?>>> mapStatistic = newHashMap();
     private Map<Statistic, Supplier<Double>> singleValueStatistics = newHashMap();
 
-    //TODO: most read authors per year - books and page number - sort by what
-    //TODO: most popular books (by ratings num)
     public StatisticsServiceOld(final Set<Book> library) {
         this.library = library;
 
@@ -36,7 +34,7 @@ public class StatisticsServiceOld {
         mapStatistic.put(MOST_BOOKS_READ_BY_GENRE, this::getMostBooksReadByGenre);
         mapStatistic.put(MOST_BOOKS_READ_BY_PUBLISHED_DECADE, this::getMostBooksReadByPublishedDecade);
 
-        mapStatistic.put(TOTAL_RATINGS, this::getTotalRatings);
+        mapStatistic.put(RATINGS_DISTRIBUTION, this::getTotalRatings);
         mapStatistic.put(BOOKS_READ_PER_MONTH, this::getBooksReadPerMonth);
         mapStatistic.put(PAGES_READ_PER_MONTH, this::getPagesReadPerMonth);
 

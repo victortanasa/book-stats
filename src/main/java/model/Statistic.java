@@ -6,7 +6,7 @@ public enum Statistic {
     MOST_READ_AUTHORS_BY_PAGE_COUNT("Most read authors by page count"),
     MOST_BOOKS_READ_BY_GENRE("Most books read by genre"),
     MOST_BOOKS_READ_BY_PUBLISHED_DECADE("Most books read by published decade"),
-    TOTAL_RATINGS("Total Ratings"),
+    RATINGS_DISTRIBUTION("Ratings distribution"),
     AUTHORS_WITH_MOST_FAVOURITES("Authors with most favourites"),
     AVERAGE_RATING_FOR_AUTHORS("Average rating for authors"),
     AVERAGE_PAGE_NUMBER_FOR_AUTHORS("Average page number for authors"),
@@ -22,6 +22,10 @@ public enum Statistic {
     //TODO: average time to read a book, optionally for author
     //TODO: days not reading books
     //TODO: days (or average) between adding a book and reading it
+
+    //TODO: most read authors per year - books and page number - sort by what
+    //TODO: most popular books (by ratings num)
+    //TODO: average rating
 
     private String statistic;
 

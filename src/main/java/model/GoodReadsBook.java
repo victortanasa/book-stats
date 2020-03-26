@@ -1,5 +1,7 @@
 package model;
 
+import static java.time.temporal.ChronoUnit.DAYS;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
@@ -208,6 +210,12 @@ public class GoodReadsBook {
     @JsonIgnore
     public GoodReadsBook getThis() {
         return this;
+    }
+
+    @JsonIgnore
+    public long getDaysReadIn() {
+        final long difference = DAYS.between(dateStarted, dateFinished);
+        return difference == 0 ? 1 : difference;
     }
 
     @Override
