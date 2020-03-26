@@ -31,6 +31,7 @@ public class StatisticsServiceOld {
 
         mapStatistic.put(MOST_READ_AUTHORS_BY_PAGE_COUNT, this::getMostReadAuthorsByPageCount);
         mapStatistic.put(MOST_READ_AUTHORS_BY_BOOK_COUNT, this::getMostReadAuthorsBookCount);
+        //no genres
         mapStatistic.put(MOST_BOOKS_READ_BY_GENRE, this::getMostBooksReadByGenre);
         mapStatistic.put(MOST_BOOKS_READ_BY_PUBLISHED_DECADE, this::getMostBooksReadByPublishedDecade);
 
@@ -38,6 +39,7 @@ public class StatisticsServiceOld {
         mapStatistic.put(BOOKS_READ_PER_MONTH, this::getBooksReadPerMonth);
         mapStatistic.put(PAGES_READ_PER_MONTH, this::getPagesReadPerMonth);
 
+        //no favs
         mapStatistic.put(AUTHORS_WITH_MOST_FAVOURITES, this::getAuthorsWithMostFavourites);
 
         mapStatistic.put(AVERAGE_PAGE_NUMBER_FOR_AUTHORS, this::getAveragePageCountForAuthors);

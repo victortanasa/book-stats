@@ -3,7 +3,6 @@ package service;
 import static com.google.common.collect.Maps.newHashMap;
 import static model.Statistic.*;
 
-import com.google.common.base.Function;
 import com.google.common.base.Supplier;
 import model.GoodReadsBook;
 import model.Statistic;
@@ -19,9 +18,8 @@ public class StatisticsService {
 
     private static final String DECADE_FORMAT = "%d's";
 
-    private Map<Statistic, Function<Integer, List<String>>> listStatistics;
-    private Map<Statistic, Supplier<Map<String, ?>>> mapStatistic;
     private Map<Statistic, Supplier<Double>> singleValueStatistics;
+    private Map<Statistic, Supplier<Map<String, ?>>> mapStatistic;
 
     private List<GoodReadsBook> library;
 
@@ -43,8 +41,6 @@ public class StatisticsService {
 
         mapStatistic.put(RATINGS_DISTRIBUTION, this::getRatingsDistribution);
 
-        listStatistics = newHashMap();
-
         singleValueStatistics = newHashMap();
         singleValueStatistics.put(AVERAGE_DAYS_TO_READ_A_BOOK, this::getAverageDaysToReadABook);
         singleValueStatistics.put(AVERAGE_PAGES_READ_PER_MONTH, this::getAveragePagesReadPerMonth);
@@ -53,10 +49,6 @@ public class StatisticsService {
 
     public Map<String, ?> getMapStatistic(final Statistic statistic) {
         return sortDescendingByValue(mapStatistic.get(statistic).get());
-    }
-
-    public List<String> getListStatistic(final Statistic statistic, final Integer limit) {
-        return listStatistics.get(statistic).apply(limit);
     }
 
     public Number getSingeValueStatistic(final Statistic statistic) {

@@ -1,3 +1,5 @@
+package runner;
+
 import static model.Statistic.*;
 
 import model.GoodReadsBook;
