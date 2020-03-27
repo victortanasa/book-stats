@@ -21,6 +21,7 @@ public enum Statistic {
     AVERAGE_BOOKS_READ_PER_MONTH("Average books read per month"),
     MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS("Most popular authors by average number of ratings");
 
+    //TODO: number of books read by year
     //TODO: days not reading books
     //TODO: days (or average) between adding a book and reading it
 

@@ -6,6 +6,7 @@ import static service.BookLoaderService.Source.GOODREADS;
 import model.Book;
 import model.BookField;
 import model.MissingDetails;
+import model.Shelve;
 import service.api.GoodReadsAPIService;
 import service.processing.BookFieldFiller;
 import service.processing.BookFieldValidator;
@@ -35,8 +36,10 @@ public class BookLoaderService {
     }
 
     private List<Book> getBooksFromGoodReads(final String userId) {
-        final Integer numberOfBooksToRetrieve = GOOD_READS_API_SERVICE.getNumberOfBooksToRetrieve(userId);
-        final List<Book> readBooks = GOOD_READS_API_SERVICE.getAllBooksRead(userId, numberOfBooksToRetrieve);
+        final List<Shelve> shelves = GOOD_READS_API_SERVICE.getNumberOfBooksToRetrieve(userId);
+        final List<Book> readBooks = GOOD_READS_API_SERVICE.getBooksForShelve(userId, getShelve(shelves, "read"));
+        final List<Book> favoriteBooks = GOOD_READS_API_SERVICE.getBooksForShelve(userId, getShelve(shelves, "favorites"));
+        final List<Book> dnfBooks = GOOD_READS_API_SERVICE.getBooksForShelve(userId, getShelve(shelves, "dnf"));
         final List<Book> wantedBooks = BOOK_FILTER.filterUnwantedBooks(readBooks);
 
         final List<Book> booksWithAllDataLoaded = wantedBooks.stream()
@@ -62,5 +65,12 @@ public class BookLoaderService {
     public enum Source {
         GOODREADS,
         STORAGE
+    }
+
+    private Shelve getShelve(final List<Shelve> shelves, final String shelveName) {
+        return shelves.stream()
+                .filter(shelve -> shelveName.equals(shelve.getName()))
+                .findFirst()
+                .orElse(null);
     }
 }

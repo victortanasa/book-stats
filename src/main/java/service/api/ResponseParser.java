@@ -1,5 +1,6 @@
 package service.api;
 
+import static com.google.common.collect.Lists.newArrayList;
 import static java.util.stream.Collectors.toList;
 import static utils.TransformationUtils.*;
 
@@ -11,6 +12,7 @@ import org.jdom2.Element;
 import org.jdom2.input.SAXBuilder;
 import service.processing.ShelveAggregator;
 import utils.PrinterUtils;
+import utils.TransformationUtils;
 
 import java.io.ByteArrayInputStream;
 import java.time.format.DateTimeFormatter;
@@ -28,32 +30,42 @@ class ResponseParser {
 
     private static final SAXBuilder SAX_BUILDER = new SAXBuilder();
 
+    //TODO: better
+    private static final List<String> SHELVE_NAMES = newArrayList("read", "favorites", "favourites", "dnf", "abandoned");
+
     List<Book> getBooks(final String response) {
         final Document document = buildDocument(response);
 
-        final List<Element> elements = document.getRootElement()
+        final List<Element> books = document.getRootElement()
                 .getChild("reviews")
                 .getChildren("review");
 
-        return elements.stream()
+        return books.stream()
                 .map(this::toBook)
                 .collect(toList());
     }
 
-    Integer getNumberOfBooksToRetrieve(final String response) {
+    List<Shelve> getNumberOfBooksToRetrieve(final String response) {
         final Document document = buildDocument(response);
 
         final List<Element> shelves = document.getRootElement()
                 .getChild("shelves")
                 .getChildren("user_shelf");
 
-        final String bookCount = shelves.stream()
-                .filter(shelve -> "read".equals(shelve.getChild("name").getValue()))
+        return SHELVE_NAMES.stream()
+                .map(shelveName -> new Shelve(shelveName, getBookCountForShelve(shelves, shelveName)))
+                .filter(shelve -> Objects.nonNull(shelve.getPopularity()))
+                .collect(toList());
+    }
+
+    private Integer getBookCountForShelve(final List<Element> shelves, final String shelveName) {
+        return shelves.stream()
+                .filter(shelve -> shelveName.equals(shelve.getChild("name").getValue()))
                 .map(shelve -> shelve.getChild("book_count").getValue())
+                .filter(Objects::nonNull)
+                .map(TransformationUtils::getInteger)
                 .findFirst()
                 .orElse(null);
-
-        return !Objects.isNull(bookCount) ? getInteger(bookCount) : null;
     }
 
     MissingDetails getMissingDetails(final String response) {
@@ -83,6 +95,7 @@ class ResponseParser {
             return SAX_BUILDER.build(new ByteArrayInputStream(response.getBytes()));
         } catch (final Exception e) {
             PrinterUtils.printSimple(String.format(COULD_NOT_BUILD_RESPONSE_MESSAGE, response, e.getMessage()));
+            //TODO: message
             throw new IllegalStateException("");
         }
     }
@@ -133,6 +146,5 @@ class ResponseParser {
                 "1".equals(owned),
                 authors);
     }
-
 
 }
