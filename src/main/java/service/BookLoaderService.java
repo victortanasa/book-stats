@@ -66,7 +66,6 @@ public class BookLoaderService {
         return getBooksPerShelve(userId, Stream.of(Shelve.values()).collect(toSet()));
     }
 
-    //TODO: check code for stuff like this, eliminate helper objects
     private Map<Shelve, List<Book>> getBooksPerShelve(final String userId, final Set<Shelve> shelves) {
         return shelves.stream()
                 .map(shelf -> Pair.of(shelf, STORAGE_SERVICE.loadBooks(userId, shelf)))

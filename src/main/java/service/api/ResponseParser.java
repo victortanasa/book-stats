@@ -7,6 +7,7 @@ import model.Book;
 import model.MissingDetails;
 import model.UserShelve;
 import model.enums.Shelve;
+import org.apache.commons.lang3.tuple.Pair;
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.input.SAXBuilder;
@@ -53,9 +54,9 @@ class ResponseParser {
                 .getChildren("user_shelf");
 
         return Stream.of(Shelve.values())
-                .map(shelve -> new ShelveBookCountPair(shelve, getBookCountForShelve(shelve.getValue(), userShelves)))
-                .filter(pair -> Objects.nonNull(pair.getBookCount()))
-                .collect(Collectors.toMap(ShelveBookCountPair::getShelve, ShelveBookCountPair::getBookCount));
+                .map(shelve -> Pair.of(shelve, getBookCountForShelve(shelve.getValue(), userShelves)))
+                .filter(pair -> Objects.nonNull(pair.getValue()))
+                .collect(Collectors.toMap(Pair::getKey, Pair::getValue));
     }
 
     private Integer getBookCountForShelve(final String shelveName, final List<Element> userShelves) {
@@ -143,26 +144,6 @@ class ResponseParser {
                 getDate(DATE_FORMATTER, dateFinished),
                 "1".equals(owned),
                 authors);
-    }
-
-    class ShelveBookCountPair {
-
-        private Shelve shelve;
-
-        private Integer bookCount;
-
-        ShelveBookCountPair(final Shelve shelve, final Integer bookCount) {
-            this.bookCount = bookCount;
-            this.shelve = shelve;
-        }
-
-        Shelve getShelve() {
-            return shelve;
-        }
-
-        Integer getBookCount() {
-            return bookCount;
-        }
     }
 
 }

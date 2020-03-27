@@ -25,4 +25,5 @@ public class TODOHolder {
 
     //TODO: //review/list?v=2&key=aB9VcY1rOGCzxMONqjk8Ug&id=748293&shelf=read&page=1&per_page=580 get number of results, divide by total -> do more requests
 
+    //TODO: replace UserShelve with Pair? same for ShelveMapping
 }
