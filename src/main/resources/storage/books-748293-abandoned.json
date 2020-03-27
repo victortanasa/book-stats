@@ -1,0 +1,150 @@
+[
+  {
+    "id": 187880,
+    "isbn": "0099470462",
+    "isbn13": "9780099470465",
+    "title": "Catch-22",
+    "format": "Paperback",
+    "rating": 1,
+    "readCount": 1,
+    "pageNumber": 519,
+    "ratingsCount": 694920,
+    "publicationYear": 1961,
+    "averageRating": 3.98,
+    "dateStarted": [
+      2010,
+      6,
+      25
+    ],
+    "dateFinished": [
+      2010,
+      7,
+      1
+    ],
+    "owned": false,
+    "authors": [
+      "Joseph Heller"
+    ],
+    "shelves": [
+      "classics",
+      "mil-sci-fi",
+      "historical-fiction"
+    ]
+  },
+  {
+    "id": 4981,
+    "isbn": "0385333846",
+    "isbn13": "9780385333849",
+    "title": "Slaughterhouse-Five",
+    "format": "Paperback",
+    "rating": 1,
+    "readCount": 1,
+    "pageNumber": 275,
+    "ratingsCount": 1075636,
+    "publicationYear": 1969,
+    "averageRating": 4.08,
+    "dateStarted": null,
+    "dateFinished": [
+      2008,
+      3,
+      3
+    ],
+    "owned": false,
+    "authors": [
+      "Kurt Vonnegut Jr."
+    ],
+    "shelves": [
+      "classics",
+      "sci-fi",
+      "mil-sci-fi"
+    ]
+  },
+  {
+    "id": 64923,
+    "isbn": "0345459814",
+    "isbn13": "9780345459817",
+    "title": "Darwin's Radio",
+    "format": "Paperback",
+    "rating": 0,
+    "readCount": 0,
+    "pageNumber": 448,
+    "ratingsCount": 12896,
+    "publicationYear": 1999,
+    "averageRating": 3.7,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Greg Bear"
+    ],
+    "shelves": [
+      "sci-fi",
+      "sci-fi-fantasy",
+      "science"
+    ]
+  },
+  {
+    "id": 24606415,
+    "isbn": null,
+    "isbn13": null,
+    "title": "The Transmigration of Timothy Archer",
+    "format": null,
+    "rating": 1,
+    "readCount": 1,
+    "pageNumber": null,
+    "ratingsCount": 6786,
+    "publicationYear": 1982,
+    "averageRating": 3.88,
+    "dateStarted": [
+      2016,
+      10,
+      2
+    ],
+    "dateFinished": [
+      2016,
+      11,
+      14
+    ],
+    "owned": false,
+    "authors": [
+      "Philip K. Dick"
+    ],
+    "shelves": [
+      "sci-fi",
+      "pkd",
+      "religion"
+    ]
+  },
+  {
+    "id": 18807143,
+    "isbn": null,
+    "isbn13": "978140007877",
+    "title": "Never Let Me Go",
+    "format": "ebook",
+    "rating": 1,
+    "readCount": 1,
+    "pageNumber": 534,
+    "ratingsCount": 435502,
+    "publicationYear": 2005,
+    "averageRating": 3.82,
+    "dateStarted": [
+      2017,
+      7,
+      24
+    ],
+    "dateFinished": [
+      2017,
+      7,
+      28
+    ],
+    "owned": false,
+    "authors": [
+      "Kazuo Ishiguro"
+    ],
+    "shelves": [
+      "sci-fi",
+      "dystopian",
+      "contemporary"
+    ]
+  }
+]

@@ -1,0 +1,2754 @@
+[
+  {
+    "id": 42432,
+    "isbn": "0575075066",
+    "isbn13": "9780575075061",
+    "title": "God Emperor of Dune",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 454,
+    "ratingsCount": 62942,
+    "publicationYear": 1981,
+    "averageRating": 3.85,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Frank Herbert"
+    ],
+    "shelves": [
+      "sci-fi",
+      "dune",
+      "fantasy"
+    ]
+  },
+  {
+    "id": 112,
+    "isbn": null,
+    "isbn13": null,
+    "title": "Children of Dune",
+    "format": "Mass Market Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 408,
+    "ratingsCount": 98942,
+    "publicationYear": 1976,
+    "averageRating": 3.93,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Frank Herbert"
+    ],
+    "shelves": [
+      "sci-fi",
+      "fantasy",
+      "dune"
+    ]
+  },
+  {
+    "id": 6218281,
+    "isbn": "0385342306",
+    "isbn13": "9780385342308",
+    "title": "The Sweetness at the Bottom of the Pie",
+    "format": "Hardcover",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 374,
+    "ratingsCount": 134634,
+    "publicationYear": 2009,
+    "averageRating": 3.82,
+    "dateStarted": [
+      2017,
+      1,
+      3
+    ],
+    "dateFinished": [
+      2017,
+      1,
+      15
+    ],
+    "owned": false,
+    "authors": [
+      "Alan Bradley"
+    ],
+    "shelves": [
+      "mystery",
+      "historical-fiction",
+      "mysteries"
+    ]
+  },
+  {
+    "id": 18483489,
+    "isbn": null,
+    "isbn13": null,
+    "title": "Vicious",
+    "format": "Audible Audio",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 10,
+    "ratingsCount": 85685,
+    "publicationYear": 2013,
+    "averageRating": 4.24,
+    "dateStarted": [
+      2018,
+      12,
+      14
+    ],
+    "dateFinished": [
+      2018,
+      12,
+      29
+    ],
+    "owned": false,
+    "authors": [
+      "V.E. Schwab"
+    ],
+    "shelves": [
+      "fantasy",
+      "sci-fi",
+      "adult"
+    ]
+  },
+  {
+    "id": 12769263,
+    "isbn": null,
+    "isbn13": "9789731020211",
+    "title": "Programatorul Divin",
+    "format": "Paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 391,
+    "ratingsCount": 8253,
+    "publicationYear": 2000,
+    "averageRating": 3.84,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Robert J. Sawyer"
+    ],
+    "shelves": [
+      "sci-fi",
+      "religion",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 4407,
+    "isbn": null,
+    "isbn13": null,
+    "title": "American Gods",
+    "format": "Paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 635,
+    "ratingsCount": 716418,
+    "publicationYear": 2001,
+    "averageRating": 4.11,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Neil Gaiman"
+    ],
+    "shelves": [
+      "fantasy",
+      "urban-fantasy",
+      "sci-fi"
+    ]
+  },
+  {
+    "id": 3972321,
+    "isbn": "9735010453",
+    "isbn13": null,
+    "title": "Spuma zilelor",
+    "format": "Paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 176,
+    "ratingsCount": 25183,
+    "publicationYear": 1947,
+    "averageRating": 3.99,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Boris Vian"
+    ],
+    "shelves": [
+      "french",
+      "classics",
+      "french-literature"
+    ]
+  },
+  {
+    "id": 581125,
+    "isbn": "0375421874",
+    "isbn13": "9780375421877",
+    "title": "The Minority Report",
+    "format": "Hardcover",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 103,
+    "ratingsCount": 16759,
+    "publicationYear": 1956,
+    "averageRating": 3.83,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Philip K. Dick"
+    ],
+    "shelves": [
+      "sci-fi",
+      "dystopian",
+      "short-stories"
+    ]
+  },
+  {
+    "id": 13,
+    "isbn": "0345453743",
+    "isbn13": "9780345453747",
+    "title": "The Ultimate Hitchhiker's Guide to the Galaxy",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 815,
+    "ratingsCount": 272383,
+    "publicationYear": 1996,
+    "averageRating": 4.37,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Douglas Adams"
+    ],
+    "shelves": [
+      "sci-fi",
+      "humor",
+      "fantasy"
+    ]
+  },
+  {
+    "id": 105,
+    "isbn": "0441102670",
+    "isbn13": "9780441102679",
+    "title": "Chapterhouse: Dune",
+    "format": "Mass Market Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 436,
+    "ratingsCount": 43903,
+    "publicationYear": 1985,
+    "averageRating": 3.91,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Frank Herbert"
+    ],
+    "shelves": [
+      "sci-fi",
+      "dune",
+      "fantasy"
+    ]
+  },
+  {
+    "id": 52397,
+    "isbn": "0446675504",
+    "isbn13": "9780446675505",
+    "title": "Parable of the Sower",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 345,
+    "ratingsCount": 50813,
+    "publicationYear": 1993,
+    "averageRating": 4.16,
+    "dateStarted": [
+      2019,
+      6,
+      13
+    ],
+    "dateFinished": [
+      2019,
+      6,
+      20
+    ],
+    "owned": false,
+    "authors": [
+      "Octavia E. Butler"
+    ],
+    "shelves": [
+      "sci-fi",
+      "dystopian",
+      "fantasy"
+    ]
+  },
+  {
+    "id": 15714547,
+    "isbn": null,
+    "isbn13": null,
+    "title": "Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch",
+    "format": "Audible Audio",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 10,
+    "ratingsCount": 495823,
+    "publicationYear": 1990,
+    "averageRating": 4.25,
+    "dateStarted": [
+      2017,
+      10,
+      2
+    ],
+    "dateFinished": [
+      2017,
+      10,
+      6
+    ],
+    "owned": false,
+    "authors": [
+      "Terry Pratchett"
+    ],
+    "shelves": [
+      "fantasy",
+      "humor",
+      "humour"
+    ]
+  },
+  {
+    "id": 16299,
+    "isbn": "0312330871",
+    "isbn13": "9780312330873",
+    "title": "And Then There Were None",
+    "format": "Paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 264,
+    "ratingsCount": 728707,
+    "publicationYear": 1939,
+    "averageRating": 4.26,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Agatha Christie"
+    ],
+    "shelves": [
+      "mystery",
+      "classics",
+      "agatha-christie"
+    ]
+  },
+  {
+    "id": 6561679,
+    "isbn": null,
+    "isbn13": null,
+    "title": "Cartea cu Apolodor",
+    "format": "Paperback",
+    "rating": 0,
+    "readCount": 1,
+    "pageNumber": 125,
+    "ratingsCount": 692,
+    "publicationYear": 1959,
+    "averageRating": 4.33,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Gellu Naum"
+    ],
+    "shelves": [
+      "poetry",
+      "romanian-literature",
+      "children"
+    ]
+  },
+  {
+    "id": 15792120,
+    "isbn": null,
+    "isbn13": "9786065792036",
+    "title": "Regele, inţeleptul şi bufonul",
+    "format": "Hardcover",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 274,
+    "ratingsCount": 400,
+    "publicationYear": 1998,
+    "averageRating": 3.71,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Shafique Keshavjee"
+    ],
+    "shelves": [
+      "philosophy",
+      "religion",
+      "romance"
+    ]
+  },
+  {
+    "id": 40445,
+    "isbn": "0345457692",
+    "isbn13": null,
+    "title": "Altered Carbon",
+    "format": "Mass Market Paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 526,
+    "ratingsCount": 81322,
+    "publicationYear": 2002,
+    "averageRating": 4.05,
+    "dateStarted": [
+      2014,
+      10,
+      2
+    ],
+    "dateFinished": [
+      2014,
+      10,
+      17
+    ],
+    "owned": false,
+    "authors": [
+      "Richard K. Morgan"
+    ],
+    "shelves": [
+      "sci-fi",
+      "cyberpunk",
+      "mystery"
+    ]
+  },
+  {
+    "id": 4392,
+    "isbn": "0141019425",
+    "isbn13": "9780141019420",
+    "title": "Living to Tell the Tale",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 496,
+    "ratingsCount": 8986,
+    "publicationYear": 2002,
+    "averageRating": 3.99,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Gabriel García Márquez"
+    ],
+    "shelves": [
+      "biography",
+      "memoir",
+      "autobiography"
+    ]
+  },
+  {
+    "id": 18007564,
+    "isbn": "0804139024",
+    "isbn13": "9780804139021",
+    "title": "The Martian",
+    "format": "Hardcover",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 369,
+    "ratingsCount": 757189,
+    "publicationYear": 2012,
+    "averageRating": 4.4,
+    "dateStarted": [
+      2015,
+      10,
+      4
+    ],
+    "dateFinished": [
+      2015,
+      10,
+      10
+    ],
+    "owned": false,
+    "authors": [
+      "Andy Weir"
+    ],
+    "shelves": [
+      "sci-fi",
+      "adventure",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 11122407,
+    "isbn": null,
+    "isbn13": null,
+    "title": "The Magicians' Guild",
+    "format": null,
+    "rating": 3,
+    "readCount": 1,
+    "pageNumber": 480,
+    "ratingsCount": 67286,
+    "publicationYear": 2001,
+    "averageRating": 3.95,
+    "dateStarted": [
+      2015,
+      8,
+      15
+    ],
+    "dateFinished": [
+      2015,
+      8,
+      17
+    ],
+    "owned": false,
+    "authors": [
+      "Trudi Canavan"
+    ],
+    "shelves": [
+      "fantasy",
+      "magic",
+      "young-adult"
+    ]
+  },
+  {
+    "id": 60932,
+    "isbn": "0446610380",
+    "isbn13": "9780446610384",
+    "title": "Parable of the Talents",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 448,
+    "ratingsCount": 20059,
+    "publicationYear": 1998,
+    "averageRating": 4.25,
+    "dateStarted": [
+      2019,
+      6,
+      25
+    ],
+    "dateFinished": [
+      2019,
+      7,
+      29
+    ],
+    "owned": false,
+    "authors": [
+      "Octavia E. Butler"
+    ],
+    "shelves": [
+      "sci-fi",
+      "dystopian",
+      "fantasy"
+    ]
+  },
+  {
+    "id": 17227406,
+    "isbn": null,
+    "isbn13": "9786066091992",
+    "title": "Un veac de singurătate",
+    "format": "Paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 480,
+    "ratingsCount": 706248,
+    "publicationYear": 1967,
+    "averageRating": 4.07,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Gabriel García Márquez"
+    ],
+    "shelves": [
+      "classics",
+      "magical-realism",
+      "literature"
+    ]
+  },
+  {
+    "id": 17563539,
+    "isbn": null,
+    "isbn13": null,
+    "title": "The Egg",
+    "format": "Online",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 3,
+    "ratingsCount": 15839,
+    "publicationYear": 2009,
+    "averageRating": 4.18,
+    "dateStarted": [
+      2017,
+      12,
+      9
+    ],
+    "dateFinished": [
+      2017,
+      12,
+      9
+    ],
+    "owned": false,
+    "authors": [
+      "Andy Weir"
+    ],
+    "shelves": [
+      "short-stories",
+      "sci-fi",
+      "short-story"
+    ]
+  },
+  {
+    "id": 18459497,
+    "isbn": null,
+    "isbn13": null,
+    "title": "Formula lui Dumnezeu",
+    "format": "Paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 584,
+    "ratingsCount": 7112,
+    "publicationYear": 2006,
+    "averageRating": 3.91,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "José Rodrigues dos Santos"
+    ],
+    "shelves": [
+      "thriller",
+      "romance",
+      "portuguese"
+    ]
+  },
+  {
+    "id": 34,
+    "isbn": "0618346252",
+    "isbn13": "9780618346257",
+    "title": "The Fellowship of the Ring",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 3,
+    "pageNumber": 398,
+    "ratingsCount": 2239659,
+    "publicationYear": 1954,
+    "averageRating": 4.36,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "J.R.R. Tolkien"
+    ],
+    "shelves": [
+      "fantasy",
+      "classics",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 18399086,
+    "isbn": "1781102546",
+    "isbn13": "9781781102541",
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "format": "Audiobook",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 12,
+    "ratingsCount": 2575253,
+    "publicationYear": 1999,
+    "averageRating": 4.56,
+    "dateStarted": [
+      2017,
+      2,
+      13
+    ],
+    "dateFinished": [
+      2017,
+      2,
+      15
+    ],
+    "owned": false,
+    "authors": [
+      "J.K. Rowling"
+    ],
+    "shelves": [
+      "fantasy",
+      "young-adult",
+      "harry-potter"
+    ]
+  },
+  {
+    "id": 31933913,
+    "isbn": null,
+    "isbn13": null,
+    "title": "Despre eroi și morminte",
+    "format": "Paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 504,
+    "ratingsCount": 8283,
+    "publicationYear": 1961,
+    "averageRating": 4.28,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Ernesto Sabato"
+    ],
+    "shelves": [
+      "argentina",
+      "español",
+      "novela"
+    ]
+  },
+  {
+    "id": 768777,
+    "isbn": null,
+    "isbn13": "9789735915889",
+    "title": "Ultima noapte de dragoste, întâia noapte de război",
+    "format": "Paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 288,
+    "ratingsCount": 10431,
+    "publicationYear": 1930,
+    "averageRating": 3.63,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Camil Petrescu"
+    ],
+    "shelves": [
+      "romanian-literature",
+      "romanian",
+      "classics"
+    ]
+  },
+  {
+    "id": 10959,
+    "isbn": "1857993284",
+    "isbn13": "9781857993288",
+    "title": "Sophie's World",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 403,
+    "ratingsCount": 184415,
+    "publicationYear": 1991,
+    "averageRating": 3.92,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Jostein Gaarder"
+    ],
+    "shelves": [
+      "philosophy",
+      "classics",
+      "young-adult"
+    ]
+  },
+  {
+    "id": 70535,
+    "isbn": "0451457994",
+    "isbn13": "9780451457998",
+    "title": "2001: A Space Odyssey",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 297,
+    "ratingsCount": 243728,
+    "publicationYear": 1968,
+    "averageRating": 4.15,
+    "dateStarted": [
+      2015,
+      12,
+      18
+    ],
+    "dateFinished": [
+      2015,
+      12,
+      22
+    ],
+    "owned": false,
+    "authors": [
+      "Arthur C. Clarke"
+    ],
+    "shelves": [
+      "sci-fi",
+      "classics",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 20518872,
+    "isbn": "0765377063",
+    "isbn13": "9780765377067",
+    "title": "The Three-Body Problem",
+    "format": "Hardcover",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 399,
+    "ratingsCount": 121761,
+    "publicationYear": 2008,
+    "averageRating": 4.06,
+    "dateStarted": [
+      2018,
+      2,
+      19
+    ],
+    "dateFinished": [
+      2018,
+      2,
+      25
+    ],
+    "owned": false,
+    "authors": [
+      "Liu Cixin"
+    ],
+    "shelves": [
+      "sci-fi",
+      "china",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 12958067,
+    "isbn": null,
+    "isbn13": null,
+    "title": "Daughter of Smoke & Bone",
+    "format": "Audible Audio",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 13,
+    "ratingsCount": 291188,
+    "publicationYear": 2011,
+    "averageRating": 4.02,
+    "dateStarted": [
+      2017,
+      12,
+      28
+    ],
+    "dateFinished": [
+      2018,
+      1,
+      9
+    ],
+    "owned": false,
+    "authors": [
+      "Laini Taylor"
+    ],
+    "shelves": [
+      "fantasy",
+      "young-adult",
+      "ya"
+    ]
+  },
+  {
+    "id": 18373,
+    "isbn": "0156030306",
+    "isbn13": "9780156030304",
+    "title": "Flowers for Algernon",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 311,
+    "ratingsCount": 450639,
+    "publicationYear": 1966,
+    "averageRating": 4.13,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Daniel Keyes"
+    ],
+    "shelves": [
+      "classics",
+      "sci-fi",
+      "young-adult"
+    ]
+  },
+  {
+    "id": 15241,
+    "isbn": "0618346260",
+    "isbn13": "9780618346264",
+    "title": "The Two Towers",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 3,
+    "pageNumber": 322,
+    "ratingsCount": 669507,
+    "publicationYear": 1954,
+    "averageRating": 4.44,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "J.R.R. Tolkien"
+    ],
+    "shelves": [
+      "fantasy",
+      "classics",
+      "tolkien"
+    ]
+  },
+  {
+    "id": 2013,
+    "isbn": "0441385397",
+    "isbn13": "9780441385393",
+    "title": "The Jesus Incident",
+    "format": "Paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": null,
+    "ratingsCount": 4848,
+    "publicationYear": 1979,
+    "averageRating": 3.72,
+    "dateStarted": [
+      2015,
+      3,
+      16
+    ],
+    "dateFinished": [
+      2015,
+      3,
+      31
+    ],
+    "owned": false,
+    "authors": [
+      "Frank Herbert"
+    ],
+    "shelves": [
+      "sci-fi",
+      "sci-fi-fantasy",
+      "frank-herbert"
+    ]
+  },
+  {
+    "id": 117833,
+    "isbn": "0679760806",
+    "isbn13": "9780679760801",
+    "title": "The Master and Margarita",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 335,
+    "ratingsCount": 221702,
+    "publicationYear": 1967,
+    "averageRating": 4.3,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Mikhail Bulgakov"
+    ],
+    "shelves": [
+      "classics",
+      "russian",
+      "fantasy"
+    ]
+  },
+  {
+    "id": 12355534,
+    "isbn": null,
+    "isbn13": null,
+    "title": "The Moon Is a Harsh Mistress",
+    "format": "Audiobook",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 15,
+    "ratingsCount": 103429,
+    "publicationYear": 1966,
+    "averageRating": 4.17,
+    "dateStarted": [
+      2017,
+      12,
+      3
+    ],
+    "dateFinished": [
+      2017,
+      12,
+      9
+    ],
+    "owned": false,
+    "authors": [
+      "Robert A. Heinlein"
+    ],
+    "shelves": [
+      "sci-fi",
+      "classics",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 13612291,
+    "isbn": "1781102236",
+    "isbn13": "9781781102237",
+    "title": "Harry Potter and the Half-Blood Prince",
+    "format": "Audiobook",
+    "rating": 5,
+    "readCount": 3,
+    "pageNumber": 21,
+    "ratingsCount": 2276960,
+    "publicationYear": 2005,
+    "averageRating": 4.57,
+    "dateStarted": [
+      2017,
+      2,
+      27
+    ],
+    "dateFinished": [
+      2017,
+      3,
+      4
+    ],
+    "owned": false,
+    "authors": [
+      "J.K. Rowling"
+    ],
+    "shelves": [
+      "fantasy",
+      "young-adult",
+      "harry-potter"
+    ]
+  },
+  {
+    "id": 18423,
+    "isbn": null,
+    "isbn13": null,
+    "title": "The Left Hand of Darkness",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 304,
+    "ratingsCount": 110072,
+    "publicationYear": 1969,
+    "averageRating": 4.07,
+    "dateStarted": [
+      2015,
+      5,
+      3
+    ],
+    "dateFinished": [
+      2015,
+      5,
+      16
+    ],
+    "owned": false,
+    "authors": [
+      "Ursula K. Le Guin"
+    ],
+    "shelves": [
+      "sci-fi",
+      "fantasy",
+      "classics"
+    ]
+  },
+  {
+    "id": 5,
+    "isbn": "043965548X",
+    "isbn13": "9780439655484",
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "format": "Mass Market Paperback",
+    "rating": 5,
+    "readCount": 3,
+    "pageNumber": 435,
+    "ratingsCount": 2575253,
+    "publicationYear": 1999,
+    "averageRating": 4.56,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "J.K. Rowling"
+    ],
+    "shelves": [
+      "fantasy",
+      "young-adult",
+      "harry-potter"
+    ]
+  },
+  {
+    "id": 26199336,
+    "isbn": null,
+    "isbn13": null,
+    "title": "Elite Dangerous : Reclamation",
+    "format": "Audiobook",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": null,
+    "ratingsCount": 290,
+    "publicationYear": 2014,
+    "averageRating": 4.02,
+    "dateStarted": [
+      2016,
+      2,
+      3
+    ],
+    "dateFinished": [
+      2016,
+      2,
+      19
+    ],
+    "owned": false,
+    "authors": [
+      "Drew Wagar"
+    ],
+    "shelves": [
+      "sci-fi",
+      "elite-dangerous",
+      "cyberpunk"
+    ]
+  },
+  {
+    "id": 4921,
+    "isbn": "0140621334",
+    "isbn13": "9780140621334",
+    "title": "Three Men in a Boat",
+    "format": "Mass Market Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 185,
+    "ratingsCount": 51956,
+    "publicationYear": 1889,
+    "averageRating": 3.89,
+    "dateStarted": [
+      2018,
+      3,
+      13
+    ],
+    "dateFinished": [
+      2018,
+      3,
+      16
+    ],
+    "owned": false,
+    "authors": [
+      "Jerome K. Jerome"
+    ],
+    "shelves": [
+      "classics",
+      "humor",
+      "humour"
+    ]
+  },
+  {
+    "id": 778267,
+    "isbn": "9739132308",
+    "isbn13": "9789739132305",
+    "title": "Pădurea spânzuraţilor",
+    "format": "Paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 316,
+    "ratingsCount": 6897,
+    "publicationYear": 1922,
+    "averageRating": 3.99,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Liviu Rebreanu"
+    ],
+    "shelves": [
+      "romanian-literature",
+      "romanian",
+      "classics"
+    ]
+  },
+  {
+    "id": 13023,
+    "isbn": "0517223627",
+    "isbn13": "9780517223628",
+    "title": "Alice in Wonderland",
+    "format": "Hardcover",
+    "rating": 5,
+    "readCount": 5,
+    "pageNumber": 92,
+    "ratingsCount": 366168,
+    "publicationYear": 1865,
+    "averageRating": 4.03,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Lewis Carroll"
+    ],
+    "shelves": [
+      "classics",
+      "fantasy",
+      "childrens"
+    ]
+  },
+  {
+    "id": 17861465,
+    "isbn": "1781102554",
+    "isbn13": "9781781102558",
+    "title": "Harry Potter and the Goblet of Fire",
+    "format": "Audiobook",
+    "rating": 5,
+    "readCount": 4,
+    "pageNumber": 21,
+    "ratingsCount": 2401375,
+    "publicationYear": 2000,
+    "averageRating": 4.56,
+    "dateStarted": [
+      2017,
+      2,
+      15
+    ],
+    "dateFinished": [
+      2017,
+      2,
+      20
+    ],
+    "owned": false,
+    "authors": [
+      "J.K. Rowling"
+    ],
+    "shelves": [
+      "fantasy",
+      "young-adult",
+      "harry-potter"
+    ]
+  },
+  {
+    "id": 11570030,
+    "isbn": null,
+    "isbn13": null,
+    "title": "The Last Wish",
+    "format": null,
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 292,
+    "ratingsCount": 145376,
+    "publicationYear": 1993,
+    "averageRating": 4.17,
+    "dateStarted": [
+      2016,
+      7,
+      24
+    ],
+    "dateFinished": [
+      2016,
+      8,
+      6
+    ],
+    "owned": false,
+    "authors": [
+      "Andrzej Sapkowski"
+    ],
+    "shelves": [
+      "fantasy",
+      "short-stories",
+      "the-witcher"
+    ]
+  },
+  {
+    "id": 234225,
+    "isbn": "0340839937",
+    "isbn13": "9780340839935",
+    "title": "Dune",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 2,
+    "pageNumber": 604,
+    "ratingsCount": 680317,
+    "publicationYear": 1965,
+    "averageRating": 4.22,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Frank Herbert"
+    ],
+    "shelves": [
+      "sci-fi",
+      "fantasy",
+      "classics"
+    ]
+  },
+  {
+    "id": 433567,
+    "isbn": "048627263X",
+    "isbn13": "9780486272634",
+    "title": "Flatland: A Romance of Many Dimensions",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 96,
+    "ratingsCount": 49969,
+    "publicationYear": 1884,
+    "averageRating": 3.82,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Edwin A. Abbott"
+    ],
+    "shelves": [
+      "sci-fi",
+      "classics",
+      "science"
+    ]
+  },
+  {
+    "id": 14050,
+    "isbn": "0965818675",
+    "isbn13": "9780965818674",
+    "title": "The Time Traveler's Wife",
+    "format": "Paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 540,
+    "ratingsCount": 1514128,
+    "publicationYear": 2003,
+    "averageRating": 3.97,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Audrey Niffenegger"
+    ],
+    "shelves": [
+      "romance",
+      "sci-fi",
+      "fantasy"
+    ]
+  },
+  {
+    "id": 27712,
+    "isbn": "0525457585",
+    "isbn13": "9780525457589",
+    "title": "The Neverending Story",
+    "format": "Hardcover",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 396,
+    "ratingsCount": 152497,
+    "publicationYear": 1979,
+    "averageRating": 4.18,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Michael Ende"
+    ],
+    "shelves": [
+      "fantasy",
+      "classics",
+      "young-adult"
+    ]
+  },
+  {
+    "id": 13651,
+    "isbn": "0061054887",
+    "isbn13": "9780061054884",
+    "title": "The Dispossessed",
+    "format": "Paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 387,
+    "ratingsCount": 78108,
+    "publicationYear": 1974,
+    "averageRating": 4.22,
+    "dateStarted": [
+      2015,
+      5,
+      16
+    ],
+    "dateFinished": [
+      2015,
+      5,
+      25
+    ],
+    "owned": false,
+    "authors": [
+      "Ursula K. Le Guin"
+    ],
+    "shelves": [
+      "sci-fi",
+      "dystopian",
+      "fantasy"
+    ]
+  },
+  {
+    "id": 21691788,
+    "isbn": null,
+    "isbn13": null,
+    "title": "Magic Bites",
+    "format": "Audiobook",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 9,
+    "ratingsCount": 96470,
+    "publicationYear": 2007,
+    "averageRating": 4.07,
+    "dateStarted": [
+      2018,
+      7,
+      19
+    ],
+    "dateFinished": [
+      2018,
+      7,
+      26
+    ],
+    "owned": false,
+    "authors": [
+      "Ilona Andrews"
+    ],
+    "shelves": [
+      "urban-fantasy",
+      "fantasy",
+      "paranormal"
+    ]
+  },
+  {
+    "id": 13568309,
+    "isbn": "9736972607",
+    "isbn13": "9789736977138",
+    "title": "Lunea începe sîmbăta",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 262,
+    "ratingsCount": 11476,
+    "publicationYear": 1965,
+    "averageRating": 4.26,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Arkady Strugatsky"
+    ],
+    "shelves": [
+      "sci-fi",
+      "fantasy",
+      "russian"
+    ]
+  },
+  {
+    "id": 33395557,
+    "isbn": null,
+    "isbn13": null,
+    "title": "For We Are Many",
+    "format": "Audible Audio",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 9,
+    "ratingsCount": 29520,
+    "publicationYear": 2017,
+    "averageRating": 4.38,
+    "dateStarted": [
+      2018,
+      11,
+      20
+    ],
+    "dateFinished": [
+      2018,
+      11,
+      23
+    ],
+    "owned": false,
+    "authors": [
+      "Dennis E. Taylor"
+    ],
+    "shelves": [
+      "sci-fi",
+      "space-opera",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 13130287,
+    "isbn": null,
+    "isbn13": null,
+    "title": "Revelation Space",
+    "format": "Audiobook",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 22,
+    "ratingsCount": 42095,
+    "publicationYear": 2000,
+    "averageRating": 3.98,
+    "dateStarted": null,
+    "dateFinished": [
+      2019,
+      11,
+      20
+    ],
+    "owned": false,
+    "authors": [
+      "Alastair Reynolds"
+    ],
+    "shelves": [
+      "sci-fi",
+      "space-opera",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 106,
+    "isbn": "0441172695",
+    "isbn13": "9780441172696",
+    "title": "Dune Messiah",
+    "format": "Mass Market Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 331,
+    "ratingsCount": 118689,
+    "publicationYear": 1969,
+    "averageRating": 3.88,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Frank Herbert"
+    ],
+    "shelves": [
+      "sci-fi",
+      "fantasy",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 823766,
+    "isbn": "0747579512",
+    "isbn13": "9780747579519",
+    "title": "Jonathan Strange & Mr Norrell",
+    "format": "Audio CD",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 32,
+    "ratingsCount": 185823,
+    "publicationYear": 2004,
+    "averageRating": 3.82,
+    "dateStarted": [
+      2016,
+      4,
+      14
+    ],
+    "dateFinished": [
+      2016,
+      4,
+      30
+    ],
+    "owned": false,
+    "authors": [
+      "Susanna Clarke"
+    ],
+    "shelves": [
+      "fantasy",
+      "historical-fiction",
+      "historical"
+    ]
+  },
+  {
+    "id": 77711,
+    "isbn": "0812515285",
+    "isbn13": "9780812515282",
+    "title": "A Fire Upon the Deep",
+    "format": "Mass Market Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 613,
+    "ratingsCount": 49341,
+    "publicationYear": 1992,
+    "averageRating": 4.14,
+    "dateStarted": [
+      2014,
+      9,
+      13
+    ],
+    "dateFinished": [
+      2014,
+      10,
+      20
+    ],
+    "owned": false,
+    "authors": [
+      "Vernor Vinge"
+    ],
+    "shelves": [
+      "sci-fi",
+      "space-opera",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 29917370,
+    "isbn": "1781102694",
+    "isbn13": "9781781102695",
+    "title": "Harry Potter and the Deathly Hallows",
+    "format": "Audiobook",
+    "rating": 5,
+    "readCount": 2,
+    "pageNumber": 759,
+    "ratingsCount": 2638633,
+    "publicationYear": 2007,
+    "averageRating": 4.62,
+    "dateStarted": [
+      2017,
+      3,
+      4
+    ],
+    "dateFinished": [
+      2017,
+      3,
+      5
+    ],
+    "owned": false,
+    "authors": [
+      "J.K. Rowling"
+    ],
+    "shelves": [
+      "fantasy",
+      "young-adult",
+      "harry-potter"
+    ]
+  },
+  {
+    "id": 23705512,
+    "isbn": "1476785651",
+    "isbn13": "9781476785653",
+    "title": "You're Never Weird on the Internet",
+    "format": "Hardcover",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 272,
+    "ratingsCount": 42492,
+    "publicationYear": 2015,
+    "averageRating": 4.12,
+    "dateStarted": [
+      2015,
+      8,
+      11
+    ],
+    "dateFinished": [
+      2015,
+      8,
+      13
+    ],
+    "owned": false,
+    "authors": [
+      "Felicia Day"
+    ],
+    "shelves": [
+      "memoir",
+      "biography",
+      "humor"
+    ]
+  },
+  {
+    "id": 905756,
+    "isbn": "0345496213",
+    "isbn13": "9780345496218",
+    "title": "Mushishi, Vol. 1",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 229,
+    "ratingsCount": 6314,
+    "publicationYear": 2000,
+    "averageRating": 4.28,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Yuki Urushibara"
+    ],
+    "shelves": [
+      "manga",
+      "fantasy",
+      "Ｍａｎｇａ"
+    ]
+  },
+  {
+    "id": 9835778,
+    "isbn": "1400179580",
+    "isbn13": "9781400179589",
+    "title": "Absolution Gap",
+    "format": "Audiobook",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 28,
+    "ratingsCount": 16862,
+    "publicationYear": 2003,
+    "averageRating": 4.02,
+    "dateStarted": [
+      2020,
+      1,
+      11
+    ],
+    "dateFinished": [
+      2020,
+      1,
+      20
+    ],
+    "owned": false,
+    "authors": [
+      "Alastair Reynolds"
+    ],
+    "shelves": [
+      "sci-fi",
+      "space-opera",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 24213,
+    "isbn": "0451527747",
+    "isbn13": "9780451527745",
+    "title": "Alice's Adventures in Wonderland & Through the Looking-Glass",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 239,
+    "ratingsCount": 438771,
+    "publicationYear": 1871,
+    "averageRating": 4.07,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Lewis Carroll"
+    ],
+    "shelves": [
+      "classics",
+      "fantasy",
+      "childrens"
+    ]
+  },
+  {
+    "id": 157993,
+    "isbn": null,
+    "isbn13": null,
+    "title": "The Little Prince",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 93,
+    "ratingsCount": 1229338,
+    "publicationYear": 1943,
+    "averageRating": 4.31,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Antoine de Saint-Exupéry"
+    ],
+    "shelves": [
+      "classics",
+      "fantasy",
+      "childrens"
+    ]
+  },
+  {
+    "id": 375802,
+    "isbn": "0812550706",
+    "isbn13": "9780812550702",
+    "title": "Ender's Game",
+    "format": "Audiobook",
+    "rating": 5,
+    "readCount": 2,
+    "pageNumber": 324,
+    "ratingsCount": 1073290,
+    "publicationYear": 1985,
+    "averageRating": 4.3,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Orson Scott Card"
+    ],
+    "shelves": [
+      "sci-fi",
+      "young-adult",
+      "fantasy"
+    ]
+  },
+  {
+    "id": 26045686,
+    "isbn": "9738202094",
+    "isbn13": null,
+    "title": "Cartea nunții",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 208,
+    "ratingsCount": 1349,
+    "publicationYear": 1933,
+    "averageRating": 3.49,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "George Călinescu"
+    ],
+    "shelves": [
+      "romanian-literature",
+      "romanian",
+      "classics"
+    ]
+  },
+  {
+    "id": 13453029,
+    "isbn": null,
+    "isbn13": null,
+    "title": "Wool Omnibus",
+    "format": "Kindle Edition",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 509,
+    "ratingsCount": 150465,
+    "publicationYear": 2012,
+    "averageRating": 4.23,
+    "dateStarted": [
+      2018,
+      11,
+      5
+    ],
+    "dateFinished": [
+      2018,
+      11,
+      15
+    ],
+    "owned": false,
+    "authors": [
+      "Hugh Howey"
+    ],
+    "shelves": [
+      "sci-fi",
+      "dystopian",
+      "post-apocalyptic"
+    ]
+  },
+  {
+    "id": 6390348,
+    "isbn": "0307577589",
+    "isbn13": "9780307577580",
+    "title": "The Girl with the Dragon Tattoo",
+    "format": "Audio CD",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 17,
+    "ratingsCount": 2460994,
+    "publicationYear": 2005,
+    "averageRating": 4.13,
+    "dateStarted": [
+      2016,
+      2,
+      20
+    ],
+    "dateFinished": [
+      2016,
+      3,
+      11
+    ],
+    "owned": false,
+    "authors": [
+      "Stieg Larsson"
+    ],
+    "shelves": [
+      "mystery",
+      "thriller",
+      "crime"
+    ]
+  },
+  {
+    "id": 509784,
+    "isbn": "0449016196",
+    "isbn13": "9780449016190",
+    "title": "The End of Eternity",
+    "format": "Mass Market Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 192,
+    "ratingsCount": 40993,
+    "publicationYear": 1955,
+    "averageRating": 4.24,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Isaac Asimov"
+    ],
+    "shelves": [
+      "sci-fi",
+      "time-travel",
+      "classics"
+    ]
+  },
+  {
+    "id": 19217963,
+    "isbn": null,
+    "isbn13": "9789734626427",
+    "title": "Portretul lui Dorian Gray",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 252,
+    "ratingsCount": 891714,
+    "publicationYear": 1890,
+    "averageRating": 4.08,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Oscar Wilde"
+    ],
+    "shelves": [
+      "classics",
+      "horror",
+      "fantasy"
+    ]
+  },
+  {
+    "id": 24037092,
+    "isbn": null,
+    "isbn13": null,
+    "title": "The Electric Ant",
+    "format": null,
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": null,
+    "ratingsCount": 399,
+    "publicationYear": 1969,
+    "averageRating": 3.85,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Philip K. Dick"
+    ],
+    "shelves": [
+      "sci-fi",
+      "comics",
+      "graphic-novels"
+    ]
+  },
+  {
+    "id": 6935871,
+    "isbn": "1572702125",
+    "isbn13": "9781572702127",
+    "title": "Murder on the Orient Express",
+    "format": "Audio CD",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 7,
+    "ratingsCount": 337131,
+    "publicationYear": 1934,
+    "averageRating": 4.17,
+    "dateStarted": [
+      2018,
+      1,
+      29
+    ],
+    "dateFinished": [
+      2018,
+      2,
+      2
+    ],
+    "owned": false,
+    "authors": [
+      "Agatha Christie"
+    ],
+    "shelves": [
+      "mystery",
+      "classics",
+      "agatha-christie"
+    ]
+  },
+  {
+    "id": 83346,
+    "isbn": "0688120490",
+    "isbn13": "9780688120498",
+    "title": "Through the Looking-Glass and What Alice Found There",
+    "format": "Hardcover",
+    "rating": 5,
+    "readCount": 5,
+    "pageNumber": 228,
+    "ratingsCount": 113238,
+    "publicationYear": 1871,
+    "averageRating": 4.07,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Lewis Carroll"
+    ],
+    "shelves": [
+      "classics",
+      "fantasy",
+      "childrens"
+    ]
+  },
+  {
+    "id": 15704307,
+    "isbn": "1607066017",
+    "isbn13": "9781607066019",
+    "title": "Saga, Vol. 1",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 176,
+    "ratingsCount": 227821,
+    "publicationYear": 2012,
+    "averageRating": 4.2,
+    "dateStarted": [
+      2017,
+      12,
+      18
+    ],
+    "dateFinished": [
+      2017,
+      12,
+      18
+    ],
+    "owned": false,
+    "authors": [
+      "Brian K. Vaughan"
+    ],
+    "shelves": [
+      "graphic-novels",
+      "comics",
+      "sci-fi"
+    ]
+  },
+  {
+    "id": 22590,
+    "isbn": "8498000831",
+    "isbn13": "9788498000832",
+    "title": "Ubik",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 288,
+    "ratingsCount": 78718,
+    "publicationYear": 1969,
+    "averageRating": 4.09,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Philip K. Dick"
+    ],
+    "shelves": [
+      "sci-fi",
+      "classics",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 1206605,
+    "isbn": "0486255883",
+    "isbn13": "9780486255880",
+    "title": "Sylvie and Bruno",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 3,
+    "pageNumber": 448,
+    "ratingsCount": 1054,
+    "publicationYear": 1889,
+    "averageRating": 3.45,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Lewis Carroll"
+    ],
+    "shelves": [
+      "fantasy",
+      "classics",
+      "childrens"
+    ]
+  },
+  {
+    "id": 70539,
+    "isbn": "0345413970",
+    "isbn13": "9780345413970",
+    "title": "2010: Odyssey Two",
+    "format": "Paperback",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 320,
+    "ratingsCount": 47653,
+    "publicationYear": 1982,
+    "averageRating": 3.91,
+    "dateStarted": [
+      2015,
+      12,
+      22
+    ],
+    "dateFinished": [
+      2016,
+      1,
+      5
+    ],
+    "owned": false,
+    "authors": [
+      "Arthur C. Clarke"
+    ],
+    "shelves": [
+      "sci-fi",
+      "sci-fi-fantasy",
+      "arthur-c-clarke"
+    ]
+  },
+  {
+    "id": 25468013,
+    "isbn": null,
+    "isbn13": null,
+    "title": "An Astronaut's Guide to Life on Earth",
+    "format": "Audible Audio",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 9,
+    "ratingsCount": 41981,
+    "publicationYear": 2013,
+    "averageRating": 4.17,
+    "dateStarted": [
+      2016,
+      4,
+      11
+    ],
+    "dateFinished": [
+      2016,
+      4,
+      14
+    ],
+    "owned": false,
+    "authors": [
+      "Chris Hadfield"
+    ],
+    "shelves": [
+      "science",
+      "biography",
+      "sci-fi"
+    ]
+  },
+  {
+    "id": 42073143,
+    "isbn": null,
+    "isbn13": null,
+    "title": "Vengeful",
+    "format": "Audible Audio",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 13,
+    "ratingsCount": 28531,
+    "publicationYear": 2018,
+    "averageRating": 4.25,
+    "dateStarted": [
+      2018,
+      12,
+      29
+    ],
+    "dateFinished": [
+      2019,
+      1,
+      16
+    ],
+    "owned": false,
+    "authors": [
+      "V.E. Schwab"
+    ],
+    "shelves": [
+      "fantasy",
+      "sci-fi",
+      "adult"
+    ]
+  },
+  {
+    "id": 6601050,
+    "isbn": null,
+    "isbn13": null,
+    "title": "Impostor",
+    "format": "ebook",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": null,
+    "ratingsCount": 575,
+    "publicationYear": 1953,
+    "averageRating": 3.85,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Philip K. Dick"
+    ],
+    "shelves": [
+      "sci-fi",
+      "short-stories",
+      "short-story"
+    ]
+  },
+  {
+    "id": 186074,
+    "isbn": "075640407X",
+    "isbn13": "9780756404079",
+    "title": "The Name of the Wind",
+    "format": "Hardcover",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 662,
+    "ratingsCount": 661608,
+    "publicationYear": 2007,
+    "averageRating": 4.54,
+    "dateStarted": [
+      2017,
+      10,
+      19
+    ],
+    "dateFinished": [
+      2017,
+      10,
+      31
+    ],
+    "owned": false,
+    "authors": [
+      "Patrick Rothfuss"
+    ],
+    "shelves": [
+      "fantasy",
+      "epic-fantasy",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 24294443,
+    "isbn": null,
+    "isbn13": "9789736893643",
+    "title": "Casa Spiritelor",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 440,
+    "ratingsCount": 175745,
+    "publicationYear": 1982,
+    "averageRating": 4.23,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Isabel Allende"
+    ],
+    "shelves": [
+      "magical-realism",
+      "historical-fiction",
+      "classics"
+    ]
+  },
+  {
+    "id": 3744438,
+    "isbn": "0141036141",
+    "isbn13": "9780141036144",
+    "title": "1984",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 326,
+    "ratingsCount": 2881717,
+    "publicationYear": 1949,
+    "averageRating": 4.18,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "George Orwell"
+    ],
+    "shelves": [
+      "classics",
+      "sci-fi",
+      "dystopian"
+    ]
+  },
+  {
+    "id": 18194405,
+    "isbn": null,
+    "isbn13": null,
+    "title": "The Ocean at the End of the Lane",
+    "format": "Audible Audio",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 6,
+    "ratingsCount": 453069,
+    "publicationYear": 2013,
+    "averageRating": 4.0,
+    "dateStarted": [
+      2016,
+      5,
+      24
+    ],
+    "dateFinished": [
+      2016,
+      5,
+      26
+    ],
+    "owned": false,
+    "authors": [
+      "Neil Gaiman"
+    ],
+    "shelves": [
+      "fantasy",
+      "horror",
+      "magical-realism"
+    ]
+  },
+  {
+    "id": 1618,
+    "isbn": "1400032717",
+    "isbn13": "9781400032716",
+    "title": "The Curious Incident of the Dog in the Night-Time",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 226,
+    "ratingsCount": 1129574,
+    "publicationYear": 2003,
+    "averageRating": 3.88,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Mark Haddon"
+    ],
+    "shelves": [
+      "mystery",
+      "young-adult",
+      "contemporary"
+    ]
+  },
+  {
+    "id": 15735170,
+    "isbn": "1781102562",
+    "isbn13": "9781781102565",
+    "title": "Harry Potter and the Order of the Phoenix",
+    "format": "Audiobook",
+    "rating": 5,
+    "readCount": 4,
+    "pageNumber": 27,
+    "ratingsCount": 2336286,
+    "publicationYear": 2003,
+    "averageRating": 4.49,
+    "dateStarted": [
+      2017,
+      2,
+      20
+    ],
+    "dateFinished": [
+      2017,
+      2,
+      27
+    ],
+    "owned": false,
+    "authors": [
+      "J.K. Rowling"
+    ],
+    "shelves": [
+      "fantasy",
+      "young-adult",
+      "harry-potter"
+    ]
+  },
+  {
+    "id": 18512,
+    "isbn": null,
+    "isbn13": null,
+    "title": "The Return of the King",
+    "format": "Mass Market Paperback",
+    "rating": 5,
+    "readCount": 3,
+    "pageNumber": 404,
+    "ratingsCount": 637307,
+    "publicationYear": 1955,
+    "averageRating": 4.53,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "J.R.R. Tolkien"
+    ],
+    "shelves": [
+      "fantasy",
+      "classics",
+      "tolkien"
+    ]
+  },
+  {
+    "id": 15989430,
+    "isbn": null,
+    "isbn13": null,
+    "title": "The Handmaid's Tale",
+    "format": "Audible Audio",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 11,
+    "ratingsCount": 1323662,
+    "publicationYear": 1985,
+    "averageRating": 4.11,
+    "dateStarted": [
+      2017,
+      3,
+      21
+    ],
+    "dateFinished": [
+      2017,
+      3,
+      29
+    ],
+    "owned": false,
+    "authors": [
+      "Margaret Atwood"
+    ],
+    "shelves": [
+      "dystopian",
+      "classics",
+      "sci-fi"
+    ]
+  },
+  {
+    "id": 7082,
+    "isbn": "0345404475",
+    "isbn13": "9780345404473",
+    "title": "Do Androids Dream of Electric Sheep?",
+    "format": "Audiobook",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 244,
+    "ratingsCount": 319946,
+    "publicationYear": 1968,
+    "averageRating": 4.08,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Philip K. Dick"
+    ],
+    "shelves": [
+      "sci-fi",
+      "dystopian",
+      "classics"
+    ]
+  },
+  {
+    "id": 8855321,
+    "isbn": "1841499889",
+    "isbn13": "9781841499888",
+    "title": "Leviathan Wakes",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 561,
+    "ratingsCount": 149431,
+    "publicationYear": 2011,
+    "averageRating": 4.26,
+    "dateStarted": [
+      2016,
+      5,
+      8
+    ],
+    "dateFinished": [
+      2016,
+      6,
+      7
+    ],
+    "owned": false,
+    "authors": [
+      "James S.A. Corey"
+    ],
+    "shelves": [
+      "sci-fi",
+      "space-opera",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 117,
+    "isbn": "0441328008",
+    "isbn13": "9780441328000",
+    "title": "Heretics of Dune",
+    "format": "Mass Market Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 471,
+    "ratingsCount": 51610,
+    "publicationYear": 1984,
+    "averageRating": 3.86,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Frank Herbert"
+    ],
+    "shelves": [
+      "sci-fi",
+      "dune",
+      "fantasy"
+    ]
+  },
+  {
+    "id": 7967,
+    "isbn": "0812550757",
+    "isbn13": "9780812550757",
+    "title": "Speaker for the Dead",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 382,
+    "ratingsCount": 214063,
+    "publicationYear": 1986,
+    "averageRating": 4.07,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Orson Scott Card"
+    ],
+    "shelves": [
+      "sci-fi",
+      "sci-fi-fantasy",
+      "fantasy"
+    ]
+  },
+  {
+    "id": 28335698,
+    "isbn": "0316332879",
+    "isbn13": "9780316332873",
+    "title": "Tiamat's Wrath",
+    "format": "Hardcover",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 534,
+    "ratingsCount": 23290,
+    "publicationYear": 2019,
+    "averageRating": 4.59,
+    "dateStarted": [
+      2019,
+      5,
+      17
+    ],
+    "dateFinished": [
+      2019,
+      6,
+      13
+    ],
+    "owned": false,
+    "authors": [
+      "James S.A. Corey"
+    ],
+    "shelves": [
+      "sci-fi",
+      "space-opera",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 61666,
+    "isbn": "2266079999",
+    "isbn13": "9782266079990",
+    "title": "Contact",
+    "format": "Mass Market Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 580,
+    "ratingsCount": 115393,
+    "publicationYear": 1985,
+    "averageRating": 4.14,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Carl Sagan"
+    ],
+    "shelves": [
+      "sci-fi",
+      "science",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 77566,
+    "isbn": "0553283685",
+    "isbn13": "9780553283686",
+    "title": "Hyperion",
+    "format": "Mass Market Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 482,
+    "ratingsCount": 171874,
+    "publicationYear": 1989,
+    "averageRating": 4.24,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Dan Simmons"
+    ],
+    "shelves": [
+      "sci-fi",
+      "fantasy",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 6365102,
+    "isbn": null,
+    "isbn13": null,
+    "title": "Vampire Academy",
+    "format": "Audible Audio",
+    "rating": 3,
+    "readCount": 1,
+    "pageNumber": 8,
+    "ratingsCount": 524900,
+    "publicationYear": 2007,
+    "averageRating": 4.13,
+    "dateStarted": null,
+    "dateFinished": [
+      2016,
+      3,
+      21
+    ],
+    "owned": false,
+    "authors": [
+      "Richelle Mead"
+    ],
+    "shelves": [
+      "young-adult",
+      "fantasy",
+      "vampires"
+    ]
+  },
+  {
+    "id": 15769460,
+    "isbn": "1781102538",
+    "isbn13": "9781781102534",
+    "title": "Harry Potter and the Chamber of Secrets",
+    "format": "Audiobook",
+    "rating": 5,
+    "readCount": 4,
+    "pageNumber": 9,
+    "ratingsCount": 2531521,
+    "publicationYear": 1998,
+    "averageRating": 4.42,
+    "dateStarted": [
+      2017,
+      2,
+      10
+    ],
+    "dateFinished": [
+      2017,
+      2,
+      13
+    ],
+    "owned": false,
+    "authors": [
+      "J.K. Rowling"
+    ],
+    "shelves": [
+      "fantasy",
+      "young-adult",
+      "harry-potter"
+    ]
+  },
+  {
+    "id": 21801144,
+    "isbn": null,
+    "isbn13": null,
+    "title": "Red Rising",
+    "format": "Audible Audio",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 17,
+    "ratingsCount": 218666,
+    "publicationYear": 2014,
+    "averageRating": 4.27,
+    "dateStarted": [
+      2020,
+      1,
+      21
+    ],
+    "dateFinished": [
+      2020,
+      2,
+      2
+    ],
+    "owned": false,
+    "authors": [
+      "Pierce Brown"
+    ],
+    "shelves": [
+      "sci-fi",
+      "dystopian",
+      "fantasy"
+    ]
+  },
+  {
+    "id": 13605377,
+    "isbn": null,
+    "isbn13": null,
+    "title": "The Man Who Mistook His Wife for a Hat: and Other Clinical Tales",
+    "format": "Audiobook",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 10,
+    "ratingsCount": 153666,
+    "publicationYear": 1985,
+    "averageRating": 4.06,
+    "dateStarted": [
+      2018,
+      3,
+      21
+    ],
+    "dateFinished": [
+      2018,
+      3,
+      24
+    ],
+    "owned": false,
+    "authors": [
+      "Oliver Sacks"
+    ],
+    "shelves": [
+      "psychology",
+      "science",
+      "medicine"
+    ]
+  },
+  {
+    "id": 36668402,
+    "isbn": null,
+    "isbn13": null,
+    "title": "Station Eleven",
+    "format": "Audible Audio",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 11,
+    "ratingsCount": 283105,
+    "publicationYear": 2014,
+    "averageRating": 4.04,
+    "dateStarted": [
+      2017,
+      11,
+      28
+    ],
+    "dateFinished": [
+      2017,
+      12,
+      3
+    ],
+    "owned": false,
+    "authors": [
+      "Emily St. John Mandel"
+    ],
+    "shelves": [
+      "sci-fi",
+      "dystopian",
+      "post-apocalyptic"
+    ]
+  }
+]

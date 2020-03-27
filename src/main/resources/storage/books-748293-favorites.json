@@ -1,0 +1,282 @@
+[
+  {
+    "id": 21611,
+    "isbn": "0060510862",
+    "isbn13": "9780060510862",
+    "title": "The Forever War",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 278,
+    "ratingsCount": 130075,
+    "publicationYear": 1974,
+    "averageRating": 4.15,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Joe Haldeman"
+    ],
+    "shelves": [
+      "sci-fi",
+      "mil-sci-fi",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 17228778,
+    "isbn": "973917742x",
+    "isbn13": null,
+    "title": "Domn al luminii",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 3,
+    "pageNumber": 318,
+    "ratingsCount": 26187,
+    "publicationYear": 1967,
+    "averageRating": 4.1,
+    "dateStarted": [
+      2011,
+      9,
+      17
+    ],
+    "dateFinished": [
+      2011,
+      10,
+      2
+    ],
+    "owned": false,
+    "authors": [
+      "Roger Zelazny"
+    ],
+    "shelves": [
+      "sci-fi",
+      "fantasy",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 7607427,
+    "isbn": null,
+    "isbn13": null,
+    "title": "Dune",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 605,
+    "ratingsCount": 680280,
+    "publicationYear": 1965,
+    "averageRating": 4.22,
+    "dateStarted": [
+      2010,
+      12,
+      14
+    ],
+    "dateFinished": [
+      2010,
+      12,
+      21
+    ],
+    "owned": false,
+    "authors": [
+      "Frank Herbert"
+    ],
+    "shelves": [
+      "sci-fi",
+      "fantasy",
+      "classics"
+    ]
+  },
+  {
+    "id": 61535,
+    "isbn": "0199291152",
+    "isbn13": "9780199291151",
+    "title": "The Selfish Gene",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 360,
+    "ratingsCount": 129729,
+    "publicationYear": 1976,
+    "averageRating": 4.14,
+    "dateStarted": null,
+    "dateFinished": [
+      2008,
+      8,
+      11
+    ],
+    "owned": false,
+    "authors": [
+      "Richard Dawkins"
+    ],
+    "shelves": [
+      "science",
+      "biology",
+      "evolution"
+    ]
+  },
+  {
+    "id": 375802,
+    "isbn": "0812550706",
+    "isbn13": "9780812550702",
+    "title": "Ender's Game",
+    "format": "Audiobook",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 324,
+    "ratingsCount": 1073261,
+    "publicationYear": 1985,
+    "averageRating": 4.3,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Orson Scott Card"
+    ],
+    "shelves": [
+      "sci-fi",
+      "young-adult",
+      "fantasy"
+    ]
+  },
+  {
+    "id": 9188338,
+    "isbn": null,
+    "isbn13": null,
+    "title": "The Way of Kings",
+    "format": null,
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 1137,
+    "ratingsCount": 266441,
+    "publicationYear": 2010,
+    "averageRating": 4.65,
+    "dateStarted": [
+      2016,
+      7,
+      17
+    ],
+    "dateFinished": [
+      2016,
+      7,
+      30
+    ],
+    "owned": false,
+    "authors": [
+      "Brandon Sanderson"
+    ],
+    "shelves": [
+      "fantasy",
+      "epic-fantasy",
+      "high-fantasy"
+    ]
+  },
+  {
+    "id": 573607,
+    "isbn": "055277331X",
+    "isbn13": "9780552773317",
+    "title": "The God Delusion",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 463,
+    "ratingsCount": 217959,
+    "publicationYear": 2006,
+    "averageRating": 3.9,
+    "dateStarted": null,
+    "dateFinished": [
+      2008,
+      2,
+      3
+    ],
+    "owned": false,
+    "authors": [
+      "Richard Dawkins"
+    ],
+    "shelves": [
+      "religion",
+      "science",
+      "philosophy"
+    ]
+  },
+  {
+    "id": 17161031,
+    "isbn": "973951698x",
+    "isbn13": null,
+    "title": "Vânătorul de recompense",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 190,
+    "ratingsCount": 319939,
+    "publicationYear": 1968,
+    "averageRating": 4.08,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Philip K. Dick"
+    ],
+    "shelves": [
+      "sci-fi",
+      "dystopian",
+      "classics"
+    ]
+  },
+  {
+    "id": 25912578,
+    "isbn": null,
+    "isbn13": null,
+    "title": "Nine Princes in Amber",
+    "format": null,
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": null,
+    "ratingsCount": 48303,
+    "publicationYear": 1970,
+    "averageRating": 4.09,
+    "dateStarted": [
+      2015,
+      9,
+      28
+    ],
+    "dateFinished": [
+      2015,
+      9,
+      30
+    ],
+    "owned": false,
+    "authors": [
+      "Roger Zelazny"
+    ],
+    "shelves": [
+      "fantasy",
+      "sci-fi",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 22590,
+    "isbn": "8498000831",
+    "isbn13": "9788498000832",
+    "title": "Ubik",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 288,
+    "ratingsCount": 78716,
+    "publicationYear": 1969,
+    "averageRating": 4.09,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Philip K. Dick"
+    ],
+    "shelves": [
+      "sci-fi",
+      "classics",
+      "sci-fi-fantasy"
+    ]
+  }
+]
