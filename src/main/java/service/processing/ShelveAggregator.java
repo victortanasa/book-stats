@@ -5,7 +5,9 @@ import static java.util.Comparator.comparing;
 import static java.util.Comparator.reverseOrder;
 import static java.util.stream.Collectors.toList;
 
+import model.ShelveMapping;
 import model.UserShelve;
+import service.StorageService;
 
 import java.util.List;
 import java.util.Map;
@@ -13,14 +15,11 @@ import java.util.stream.Collectors;
 
 public class ShelveAggregator {
 
-    //TODO: move to file
-    //TODO: maybe top category, sub-category
-
     //TODO: Docs
-    //TODO: add more shelve mappings
+    //TODO: maybe top category, sub-category
     //TODO: initialize list of authors from get all Books step and compose authors shelves; maybe series name? (foundation)
 
-    private static final List<String> SHELVE_NAMES_FILTER = newArrayList("to-read", "currently-reading", "owned", "default", "favorites",
+    private static final List<String> SHELVE_TO_EXCLUDE = newArrayList("to-read", "currently-reading", "owned", "default", "favorites",
             "books-i-own", "ebook", "kindle", "library", "audiobook", "owned-books", "audiobooks", "my-books", "ebooks", "to-buy",
             "english", "calibre", "books", "british", "audio", "my-library", "favourites", "re-read", "general", "e-books", "audio-book",
             "audio-books", "audible", "book-club", "series", "sf-masterworks", "abandoned", "dnf", "the-expanse", "expanse", "asimov", "fiction", "non-fiction",
@@ -29,25 +28,20 @@ public class ShelveAggregator {
 
     private static final int SHELVE_LIMIT = 3;
 
-    private static final List<String> SHELVE_NAMES_STARTS_WITH_FILTER;
-    private static final List<ShelveMapping> SHELVE_NAME_MAPPINGS;
+    private static final List<String> SHELVE_NAMES_STARTS_WITH_FILTER = newArrayList("read-", "hugo", "nebula");
 
-    static {
-        SHELVE_NAME_MAPPINGS = newArrayList();
-        SHELVE_NAME_MAPPINGS.add(new ShelveMapping("sci-fi", newArrayList("science-fiction", "scifi", "sf", "sci-fi", "space")));
-        SHELVE_NAME_MAPPINGS.add(new ShelveMapping("mil-sci-fi", newArrayList("military-sci-fi", "military-science-fiction", "mil-sci-fi", "military", "war")));
-        SHELVE_NAME_MAPPINGS.add(new ShelveMapping("sci-fi-fantasy", newArrayList("sci-fi-fantasy", "scifi-fantasy")));
-        SHELVE_NAME_MAPPINGS.add(new ShelveMapping("dystopian", newArrayList("dystopian", "dystopia")));
-        SHELVE_NAME_MAPPINGS.add(new ShelveMapping("classics", newArrayList("classic", "classics")));
+    private static final StorageService STORAGE_SERVICE = new StorageService();
+    private List<ShelveMapping> shelveMappings;
 
-        SHELVE_NAMES_STARTS_WITH_FILTER = newArrayList("read-in", "read-", "hugo", "nebula");
+    public ShelveAggregator() {
+        shelveMappings = STORAGE_SERVICE.loadShelveMappings();
     }
 
-    public static List<String> getTopShelves(final List<UserShelve> allShelves) {
+    public List<String> getTopShelves(final List<UserShelve> allShelves) {
         final List<UserShelve> normalizedAndFilteredShelves = allShelves.stream()
-                .filter(ShelveAggregator::shelveNotInFilterList)
-                .filter(ShelveAggregator::shelveNotInStartsWithFilterList)
-                .map(ShelveAggregator::normalizeShelveName)
+                .filter(this::shelveNotExcluded)
+                .filter(this::shelveNotInStartsWithFilterList)
+                .map(this::normalizeShelveName)
                 .collect(toList());
 
         final Map<String, Integer> shelvesPopularityMap = normalizedAndFilteredShelves.stream()
@@ -60,8 +54,8 @@ public class ShelveAggregator {
                 .collect(toList());
     }
 
-    private static UserShelve normalizeShelveName(final UserShelve userShelve) {
-        SHELVE_NAME_MAPPINGS.stream()
+    private UserShelve normalizeShelveName(final UserShelve userShelve) {
+        shelveMappings.stream()
                 .filter(mapping -> mapping.getAlternateValues().contains(userShelve.getName()))
                 .findFirst()
                 .ifPresent(mapping -> userShelve.setName(mapping.getNormalizedValue()));
@@ -69,33 +63,13 @@ public class ShelveAggregator {
         return userShelve;
     }
 
-    private static boolean shelveNotInFilterList(final UserShelve userShelve) {
-        return !SHELVE_NAMES_FILTER.contains(userShelve.getName());
+    private boolean shelveNotExcluded(final UserShelve userShelve) {
+        return !SHELVE_TO_EXCLUDE.contains(userShelve.getName());
     }
 
-    private static boolean shelveNotInStartsWithFilterList(final UserShelve userShelve) {
+    private boolean shelveNotInStartsWithFilterList(final UserShelve userShelve) {
         return SHELVE_NAMES_STARTS_WITH_FILTER.stream()
                 .noneMatch(shelveNameToFilter -> userShelve.getName().startsWith(shelveNameToFilter));
-    }
-
-    static class ShelveMapping {
-
-        private String normalizedValue;
-
-        private List<String> alternateValues;
-
-        ShelveMapping(final String normalizedValue, final List<String> alternateValues) {
-            this.normalizedValue = normalizedValue;
-            this.alternateValues = alternateValues;
-        }
-
-        String getNormalizedValue() {
-            return normalizedValue;
-        }
-
-        List<String> getAlternateValues() {
-            return alternateValues;
-        }
     }
 
 }

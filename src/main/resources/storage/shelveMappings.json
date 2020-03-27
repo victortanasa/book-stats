@@ -1,0 +1,43 @@
+[
+  {
+    "normalizedValue": "sci-fi",
+    "alternateValues": [
+      "science-fiction",
+      "scifi",
+      "sf",
+      "sci-fi",
+      "space"
+    ]
+  },
+  {
+    "normalizedValue": "mil-sci-fi",
+    "alternateValues": [
+      "military-sci-fi",
+      "military-science-fiction",
+      "mil-sci-fi",
+      "military",
+      "war"
+    ]
+  },
+  {
+    "normalizedValue": "sci-fi-fantasy",
+    "alternateValues": [
+      "sci-fi-fantasy",
+      "scifi-fantasy"
+    ]
+  },
+  {
+    "normalizedValue": "dystopian",
+    "alternateValues": [
+      "dystopian",
+      "dystopia"
+    ]
+  },
+  {
+    "normalizedValue": "classics",
+    "alternateValues": [
+      "classic",
+      "classics"
+    ]
+  }
+]

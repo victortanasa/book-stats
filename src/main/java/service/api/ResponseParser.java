@@ -32,6 +32,7 @@ class ResponseParser {
 
     private static final int SHELF_LIMIT = 100;
 
+    private static final ShelveAggregator SHELVE_AGGREGATOR = new ShelveAggregator();
     private static final SAXBuilder SAX_BUILDER = new SAXBuilder();
 
     List<Book> getBooks(final String response) {
@@ -87,7 +88,7 @@ class ResponseParser {
                 .limit(SHELF_LIMIT)
                 .collect(toList());
 
-        return new MissingDetails(getInteger(publicationYear), ShelveAggregator.getTopShelves(popularShelves));
+        return new MissingDetails(getInteger(publicationYear), SHELVE_AGGREGATOR.getTopShelves(popularShelves));
     }
 
     private Document buildDocument(final String response) {
