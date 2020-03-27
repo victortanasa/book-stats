@@ -4,7 +4,7 @@ import static com.google.common.collect.Lists.newArrayList;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 
-import model.Shelve;
+import model.UserShelve;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 import service.processing.ShelveAggregator;
@@ -14,20 +14,20 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Locale;
 
-public class ShelveAggregatorTest {
+public class UserShelveAggregatorTest {
 
     private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
     @Test
     public void clean() {
-        final List<Shelve> shelvesToClean = newArrayList(
-                new Shelve("currently-reading", 2000),
-                new Shelve("science-fiction", 4500),
-                new Shelve("scifi", 3200),
-                new Shelve("sf", 300),
-                new Shelve("sci-fi", 4600),
-                new Shelve("fantasy", 2000),
-                new Shelve("post-apocalyptic", 1000));
+        final List<UserShelve> shelvesToClean = newArrayList(
+                new UserShelve("currently-reading", 2000),
+                new UserShelve("science-fiction", 4500),
+                new UserShelve("scifi", 3200),
+                new UserShelve("sf", 300),
+                new UserShelve("sci-fi", 4600),
+                new UserShelve("fantasy", 2000),
+                new UserShelve("post-apocalyptic", 1000));
 
         final List<String> strings = ShelveAggregator.getTopShelves(shelvesToClean);
 

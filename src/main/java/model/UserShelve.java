@@ -3,13 +3,13 @@ package model;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
-public class Shelve {
+public class UserShelve {
 
     private String name;
 
     private Integer popularity;
 
-    public Shelve(final String name, final Integer popularity) {
+    public UserShelve(final String name, final Integer popularity) {
         this.popularity = popularity;
         this.name = name;
     }

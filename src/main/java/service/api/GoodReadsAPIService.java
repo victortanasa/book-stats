@@ -4,7 +4,7 @@ import static java.util.stream.Collectors.toList;
 
 import model.Book;
 import model.MissingDetails;
-import model.Shelve;
+import model.UserShelve;
 import org.springframework.web.reactive.function.client.ClientResponse;
 import org.springframework.web.reactive.function.client.ExchangeStrategies;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -49,15 +49,15 @@ public class GoodReadsAPIService {
         responseParser = new ResponseParser();
     }
 
-    public List<Shelve> getNumberOfBooksToRetrieve(final String userId) {
+    public List<UserShelve> getNumberOfBooksToRetrieve(final String userId) {
         final String response = doRequest(String.format(GET_READ_SHELF_URL, API_KEY, userId));
 
         return responseParser.getNumberOfBooksToRetrieve(response);
     }
 
-    public List<Book> getBooksForShelve(final String userId, final Shelve shelve) {
-        return IntStream.rangeClosed(1, getNumberOfCalls(shelve.getPopularity()))
-                .mapToObj(pageNumber -> getBooks(userId, shelve.getName(), pageNumber))
+    public List<Book> getBooksForShelve(final String userId, final UserShelve userShelve) {
+        return IntStream.rangeClosed(1, getNumberOfCalls(userShelve.getPopularity()))
+                .mapToObj(pageNumber -> getBooks(userId, userShelve.getName(), pageNumber))
                 .flatMap(Collection::stream)
                 .collect(toList());
     }

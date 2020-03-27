@@ -6,7 +6,7 @@ import static utils.TransformationUtils.*;
 
 import model.Book;
 import model.MissingDetails;
-import model.Shelve;
+import model.UserShelve;
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.input.SAXBuilder;
@@ -45,7 +45,7 @@ class ResponseParser {
                 .collect(toList());
     }
 
-    List<Shelve> getNumberOfBooksToRetrieve(final String response) {
+    List<UserShelve> getNumberOfBooksToRetrieve(final String response) {
         final Document document = buildDocument(response);
 
         final List<Element> shelves = document.getRootElement()
@@ -53,7 +53,7 @@ class ResponseParser {
                 .getChildren("user_shelf");
 
         return SHELVE_NAMES.stream()
-                .map(shelveName -> new Shelve(shelveName, getBookCountForShelve(shelves, shelveName)))
+                .map(shelveName -> new UserShelve(shelveName, getBookCountForShelve(shelves, shelveName)))
                 .filter(shelve -> Objects.nonNull(shelve.getPopularity()))
                 .collect(toList());
     }
@@ -82,8 +82,8 @@ class ResponseParser {
                 .getChild("popular_shelves")
                 .getChildren("shelf");
 
-        final List<Shelve> popularShelves = allShelves.stream()
-                .map(this::toShelve)
+        final List<UserShelve> popularShelves = allShelves.stream()
+                .map(this::toUserShelve)
                 .limit(SHELF_LIMIT)
                 .collect(toList());
 
@@ -95,15 +95,14 @@ class ResponseParser {
             return SAX_BUILDER.build(new ByteArrayInputStream(response.getBytes()));
         } catch (final Exception e) {
             PrinterUtils.printSimple(String.format(COULD_NOT_BUILD_RESPONSE_MESSAGE, response, e.getMessage()));
-            //TODO: message
-            throw new IllegalStateException("");
+            throw new IllegalStateException(String.format(COULD_NOT_BUILD_RESPONSE_MESSAGE, response, e.getMessage()), e);
         }
     }
 
-    private Shelve toShelve(final Element shelve) {
+    private UserShelve toUserShelve(final Element shelve) {
         final String name = shelve.getAttribute("name").getValue();
         final Integer popularity = getInteger(shelve.getAttribute("count").getValue());
-        return new Shelve(name, popularity);
+        return new UserShelve(name, popularity);
     }
 
     private Book toBook(final Element element) {

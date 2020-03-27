@@ -5,7 +5,7 @@ import static java.util.Comparator.comparing;
 import static java.util.Comparator.reverseOrder;
 import static java.util.stream.Collectors.toList;
 
-import model.Shelve;
+import model.UserShelve;
 
 import java.util.List;
 import java.util.Map;
@@ -19,7 +19,6 @@ public class ShelveAggregator {
     //TODO: Docs
     //TODO: add more shelve mappings
     //TODO: initialize list of authors from get all Books step and compose authors shelves; maybe series name? (foundation)
-    //TODO: space: 5 -> wtf?? same with classics || dystopian?? nu apare
 
     private static final List<String> SHELVE_NAMES_FILTER = newArrayList("to-read", "currently-reading", "owned", "default", "favorites",
             "books-i-own", "ebook", "kindle", "library", "audiobook", "owned-books", "audiobooks", "my-books", "ebooks", "to-buy",
@@ -44,15 +43,15 @@ public class ShelveAggregator {
         SHELVE_NAMES_STARTS_WITH_FILTER = newArrayList("read-in", "read-", "hugo", "nebula");
     }
 
-    public static List<String> getTopShelves(final List<Shelve> allShelves) {
-        final List<Shelve> normalizedAndFilteredShelves = allShelves.stream()
+    public static List<String> getTopShelves(final List<UserShelve> allShelves) {
+        final List<UserShelve> normalizedAndFilteredShelves = allShelves.stream()
                 .filter(ShelveAggregator::shelveNotInFilterList)
                 .filter(ShelveAggregator::shelveNotInStartsWithFilterList)
                 .map(ShelveAggregator::normalizeShelveName)
                 .collect(toList());
 
         final Map<String, Integer> shelvesPopularityMap = normalizedAndFilteredShelves.stream()
-                .collect(Collectors.groupingBy(Shelve::getName, Collectors.summingInt(Shelve::getPopularity)));
+                .collect(Collectors.groupingBy(UserShelve::getName, Collectors.summingInt(UserShelve::getPopularity)));
 
         return shelvesPopularityMap.entrySet().stream()
                 .sorted(comparing(Map.Entry::getValue, reverseOrder()))
@@ -61,41 +60,41 @@ public class ShelveAggregator {
                 .collect(toList());
     }
 
-    private static Shelve normalizeShelveName(final Shelve shelve) {
+    private static UserShelve normalizeShelveName(final UserShelve userShelve) {
         SHELVE_NAME_MAPPINGS.stream()
-                .filter(mapping -> mapping.getPotentialValues().contains(shelve.getName()))
+                .filter(mapping -> mapping.getAlternateValues().contains(userShelve.getName()))
                 .findFirst()
-                .ifPresent(mapping -> shelve.setName(mapping.getNormalizedValue()));
+                .ifPresent(mapping -> userShelve.setName(mapping.getNormalizedValue()));
 
-        return shelve;
+        return userShelve;
     }
 
-    private static boolean shelveNotInFilterList(final Shelve shelve) {
-        return !SHELVE_NAMES_FILTER.contains(shelve.getName());
+    private static boolean shelveNotInFilterList(final UserShelve userShelve) {
+        return !SHELVE_NAMES_FILTER.contains(userShelve.getName());
     }
 
-    private static boolean shelveNotInStartsWithFilterList(final Shelve shelve) {
+    private static boolean shelveNotInStartsWithFilterList(final UserShelve userShelve) {
         return SHELVE_NAMES_STARTS_WITH_FILTER.stream()
-                .noneMatch(shelveNameToFilter -> shelve.getName().startsWith(shelveNameToFilter));
+                .noneMatch(shelveNameToFilter -> userShelve.getName().startsWith(shelveNameToFilter));
     }
 
     static class ShelveMapping {
 
         private String normalizedValue;
 
-        private List<String> potentialValues;
+        private List<String> alternateValues;
 
-        ShelveMapping(final String normalizedValue, final List<String> potentialValues) {
+        ShelveMapping(final String normalizedValue, final List<String> alternateValues) {
             this.normalizedValue = normalizedValue;
-            this.potentialValues = potentialValues;
+            this.alternateValues = alternateValues;
         }
 
         String getNormalizedValue() {
             return normalizedValue;
         }
 
-        List<String> getPotentialValues() {
-            return potentialValues;
+        List<String> getAlternateValues() {
+            return alternateValues;
         }
     }
 
