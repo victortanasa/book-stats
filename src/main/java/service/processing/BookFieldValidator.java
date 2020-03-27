@@ -6,7 +6,7 @@ import static java.util.stream.Collectors.toMap;
 
 import com.google.common.base.Function;
 import model.Book;
-import model.BookField;
+import model.enums.BookField;
 
 import java.util.List;
 import java.util.Map;

@@ -3,10 +3,10 @@ package utils;
 import static com.google.common.collect.Maps.newHashMap;
 
 import model.Book;
-import model.BookField;
-import model.Statistic;
-import model.sorting.SortBy;
-import model.sorting.SortOrder;
+import model.enums.BookField;
+import model.enums.Statistic;
+import model.enums.sort.SortBy;
+import model.enums.sort.SortOrder;
 import org.apache.commons.lang3.StringUtils;
 
 import java.text.DecimalFormat;

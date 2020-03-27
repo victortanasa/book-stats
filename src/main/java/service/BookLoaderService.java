@@ -4,7 +4,7 @@ import static java.util.stream.Collectors.toList;
 import static service.BookLoaderService.Source.GOODREADS;
 
 import model.Book;
-import model.BookField;
+import model.enums.BookField;
 import model.MissingDetails;
 import model.UserShelve;
 import service.api.GoodReadsAPIService;

@@ -1,5 +1,7 @@
 package model;
 
+import model.enums.BookField;
+
 import java.util.Map;
 
 public class StoredBookData {

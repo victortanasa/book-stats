@@ -1,4 +1,4 @@
-package model.sorting;
+package model.enums.sort;
 
 public enum SortBy {
     PUBLICATION_YEAR,

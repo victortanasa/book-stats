@@ -1,13 +1,13 @@
 package service;
 
 import static com.google.common.collect.Maps.newHashMap;
-import static model.Statistic.LONGEST_BOOKS;
-import static model.Statistic.SHORTEST_BOOKS;
+import static model.enums.Statistic.LONGEST_BOOKS;
+import static model.enums.Statistic.SHORTEST_BOOKS;
 
 import com.google.common.base.Function;
 import model.Book;
-import model.Statistic;
-import model.sorting.SortOrder;
+import model.enums.Statistic;
+import model.enums.sort.SortOrder;
 
 import java.util.Comparator;
 import java.util.List;

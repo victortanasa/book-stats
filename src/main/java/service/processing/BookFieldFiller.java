@@ -5,7 +5,7 @@ import static utils.TransformationUtils.getDate;
 import static utils.TransformationUtils.getInteger;
 
 import model.Book;
-import model.BookField;
+import model.enums.BookField;
 import model.StoredBookData;
 import service.StorageService;
 

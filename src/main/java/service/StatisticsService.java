@@ -1,11 +1,11 @@
 package service;
 
 import static com.google.common.collect.Maps.newHashMap;
-import static model.Statistic.*;
+import static model.enums.Statistic.*;
 
 import com.google.common.base.Supplier;
 import model.Book;
-import model.Statistic;
+import model.enums.Statistic;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
