@@ -28,34 +28,6 @@
     ]
   },
   {
-    "id": 31363503,
-    "isbn": "0756412749",
-    "isbn13": "9780756412746",
-    "title": "Terminal Alliance",
-    "format": "Hardcover",
-    "rating": 0,
-    "readCount": 0,
-    "pageNumber": 358,
-    "ratingsCount": 2003,
-    "publicationYear": 2017,
-    "averageRating": 4.04,
-    "dateStarted": [
-      2019,
-      9,
-      5
-    ],
-    "dateFinished": null,
-    "owned": false,
-    "authors": [
-      "Jim C. Hines"
-    ],
-    "shelves": [
-      "sci-fi",
-      "humor",
-      "space-opera"
-    ]
-  },
-  {
     "id": 38337005,
     "isbn": "1473223679",
     "isbn13": "9781473223677",
@@ -64,7 +36,7 @@
     "rating": 0,
     "readCount": 0,
     "pageNumber": 471,
-    "ratingsCount": 81320,
+    "ratingsCount": 81328,
     "publicationYear": 2002,
     "averageRating": 4.05,
     "dateStarted": [
@@ -144,6 +116,34 @@
     ]
   },
   {
+    "id": 31363503,
+    "isbn": "0756412749",
+    "isbn13": "9780756412746",
+    "title": "Terminal Alliance",
+    "format": "Hardcover",
+    "rating": 0,
+    "readCount": 0,
+    "pageNumber": 358,
+    "ratingsCount": 2004,
+    "publicationYear": 2017,
+    "averageRating": 4.04,
+    "dateStarted": [
+      2019,
+      9,
+      5
+    ],
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Jim C. Hines"
+    ],
+    "shelves": [
+      "sci-fi",
+      "humor",
+      "space-opera"
+    ]
+  },
+  {
     "id": 6276734,
     "isbn": "0099519976",
     "isbn13": "9780099519973",
@@ -152,7 +152,7 @@
     "rating": 0,
     "readCount": 0,
     "pageNumber": 584,
-    "ratingsCount": 11307,
+    "ratingsCount": 11308,
     "publicationYear": 2008,
     "averageRating": 4.12,
     "dateStarted": null,
@@ -176,7 +176,7 @@
     "rating": 0,
     "readCount": 0,
     "pageNumber": 384,
-    "ratingsCount": 495791,
+    "ratingsCount": 495866,
     "publicationYear": 1990,
     "averageRating": 4.25,
     "dateStarted": [

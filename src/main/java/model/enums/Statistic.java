@@ -7,12 +7,15 @@ public enum Statistic {
     MOST_POPULAR_SHELVES("Most popular shelves"),
     MOST_BOOKS_READ_BY_PUBLISHED_DECADE("Most books read by published decade"),
     RATINGS_DISTRIBUTION("Ratings distribution"),
+    FORMATS_DISTRIBUTION("Formats distribution"),
     AUTHORS_WITH_MOST_FAVOURITES("Authors with most favourites"),
     AVERAGE_RATING_FOR_AUTHORS("Average rating for authors"),
     AVERAGE_RATING("Average rating"),
     AVERAGE_PAGE_NUMBER_FOR_AUTHORS("Average page number for authors"),
     BOOKS_READ_PER_MONTH("Books read per month"),
     PAGES_READ_PER_MONTH("Pages red per month"),
+    BOOKS_READ_PER_YEAR("Books read per year"),
+    PAGES_READ_PER_YEAR("Pages read per year"),
     SHORTEST_BOOKS("Shortest Books"),
     LONGEST_BOOKS("Longest Books"),
     AVERAGE_DAYS_TO_READ_A_BOOK("Average days to read a book"),
@@ -21,12 +24,8 @@ public enum Statistic {
     AVERAGE_BOOKS_READ_PER_MONTH("Average books read per month"),
     MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS("Most popular authors by average number of ratings");
 
-    //TODO: number of books read by year
     //TODO: days not reading books
-    //TODO: days (or average) between adding a book and reading it
     //TODO: pages read per month -> pages / days if month finished != month started
-
-    //TODO: formats
 
     private String statistic;
 

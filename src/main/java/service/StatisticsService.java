@@ -15,6 +15,7 @@ import java.util.stream.Collectors;
 public class StatisticsService {
 
     private static final DateTimeFormatter MONTH_ONLY_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM");
+    private static final DateTimeFormatter YEAR_ONLY_FORMATTER = DateTimeFormatter.ofPattern("yyyy");
 
     private static final String DECADE_FORMAT = "%d's";
 
@@ -32,6 +33,8 @@ public class StatisticsService {
 
         mapStatistic.put(BOOKS_READ_PER_MONTH, this::getBooksReadPerMonth);
         mapStatistic.put(PAGES_READ_PER_MONTH, this::getPagesReadPerMonth);
+        mapStatistic.put(BOOKS_READ_PER_YEAR, this::getBooksReadPerYear);
+        mapStatistic.put(PAGES_READ_PER_YEAR, this::getPagesReadPerYear);
 
         mapStatistic.put(AVERAGE_RATING_FOR_AUTHORS, this::getAverageRatingsForAuthors);
         mapStatistic.put(AVERAGE_PAGE_NUMBER_FOR_AUTHORS, this::getAveragePageCountForAuthors);
@@ -41,6 +44,7 @@ public class StatisticsService {
         mapStatistic.put(MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS, this::getMostPopularAuthorsByAverageNumberOfRatings);
 
         mapStatistic.put(RATINGS_DISTRIBUTION, this::getRatingsDistribution);
+        mapStatistic.put(FORMATS_DISTRIBUTION, this::getFormatsDistribution);
         mapStatistic.put(MOST_POPULAR_SHELVES, this::getMostPopularShelves);
 
         singleValueStatistics = newHashMap();
@@ -78,6 +82,16 @@ public class StatisticsService {
                 .collect(Collectors.groupingBy(book -> getMonth(book.getDateFinished()), Collectors.summingInt(Book::getPageNumber)));
     }
 
+    private Map<String, ?> getBooksReadPerYear() {
+        return library.stream()
+                .collect(Collectors.groupingBy(book -> getYear(book.getDateFinished()), Collectors.counting()));
+    }
+
+    private Map<String, ?> getPagesReadPerYear() {
+        return library.stream()
+                .collect(Collectors.groupingBy(book -> getYear(book.getDateFinished()), Collectors.summingInt(Book::getPageNumber)));
+    }
+
     private Map<String, ?> getAverageRatingsForAuthors() {
         return library.stream()
                 .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingInt(Book::getRating)));
@@ -106,6 +120,11 @@ public class StatisticsService {
     private Map<String, ?> getRatingsDistribution() {
         return library.stream()
                 .collect(Collectors.groupingBy(book -> book.getRating().toString(), Collectors.counting()));
+    }
+
+    private Map<String, ?> getFormatsDistribution() {
+        return library.stream()
+                .collect(Collectors.groupingBy(Book::getFormat, Collectors.counting()));
     }
 
     private Map<String, ?> getMostPopularShelves() {
@@ -168,6 +187,10 @@ public class StatisticsService {
 
     private static String getMonth(final LocalDate dateRead) {
         return MONTH_ONLY_FORMATTER.format(dateRead.withDayOfMonth(1));
+    }
+
+    private static String getYear(final LocalDate dateRead) {
+        return YEAR_ONLY_FORMATTER.format(dateRead);
     }
 
 }

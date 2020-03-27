@@ -28,4 +28,6 @@ public class TODOHolder {
     //TODO: replace UserShelve with Pair? same for ShelveMapping
 
     //TODO: pages read per month -> pages / days if month finished != month started
+
+    //TODO: something to show what stats are available for given data.
 }

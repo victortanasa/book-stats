@@ -2,34 +2,34 @@
   {
     "bookId": 42141498,
     "fieldValues": {
-      "FORMAT": "paperback",
+      "FORMAT": "Paperback",
       "PAGE_NUMBER": "358"
     }
   },
   {
     "bookId": 50885244,
     "fieldValues": {
-      "FORMAT": "paperback",
+      "FORMAT": "Paperback",
       "PAGE_NUMBER": "320"
     }
   },
   {
     "bookId": 36429921,
     "fieldValues": {
-      "FORMAT": "paperback",
+      "FORMAT": "Paperback",
       "PAGE_NUMBER": "288"
     }
   },
   {
     "bookId": 535060,
     "fieldValues": {
-      "FORMAT": "paperback"
+      "FORMAT": "Paperback"
     }
   },
   {
     "bookId": 21059333,
     "fieldValues": {
-      "FORMAT": "paperback"
+      "FORMAT": "Paperback"
     }
   },
   {
@@ -41,51 +41,51 @@
   {
     "bookId": 12012,
     "fieldValues": {
-      "FORMAT": "paperback"
+      "FORMAT": "Paperback"
     }
   },
   {
     "bookId": 40031983,
     "fieldValues": {
-      "FORMAT": "paperback"
+      "FORMAT": "Paperback"
     }
   },
   {
     "bookId": 34639452,
     "fieldValues": {
-      "FORMAT": "paperback",
+      "FORMAT": "Paperback",
       "PAGE_NUMBER": "416"
     }
   },
   {
     "bookId": 12007,
     "fieldValues": {
-      "FORMAT": "paperback"
+      "FORMAT": "Paperback"
     }
   },
   {
     "bookId": 39892317,
     "fieldValues": {
-      "FORMAT": "paperback"
+      "FORMAT": "Paperback"
     }
   },
   {
     "bookId": 35014337,
     "fieldValues": {
-      "FORMAT": "paperback",
+      "FORMAT": "Paperback",
       "PAGE_NUMBER": "308"
     }
   },
   {
     "bookId": 32617610,
     "fieldValues": {
-      "FORMAT": "paperback"
+      "FORMAT": "Paperback"
     }
   },
   {
     "bookId": 26166883,
     "fieldValues": {
-      "FORMAT": "paperback"
+      "FORMAT": "Paperback"
     }
   }
 ]
