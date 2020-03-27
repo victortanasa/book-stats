@@ -33,6 +33,7 @@ public class StatisticsService {
 
         mapStatistic.put(BOOKS_READ_PER_MONTH, this::getBooksReadPerMonth);
         mapStatistic.put(PAGES_READ_PER_MONTH, this::getPagesReadPerMonth);
+        mapStatistic.put(PAGES_READ_PER_MONTH_MEDIAN, this::getPagesReadPerMonth);
         mapStatistic.put(BOOKS_READ_PER_YEAR, this::getBooksReadPerYear);
         mapStatistic.put(PAGES_READ_PER_YEAR, this::getPagesReadPerYear);
 
@@ -80,6 +81,10 @@ public class StatisticsService {
     private Map<String, ?> getPagesReadPerMonth() {
         return library.stream()
                 .collect(Collectors.groupingBy(book -> getMonth(book.getDateFinished()), Collectors.summingInt(Book::getPageNumber)));
+    }
+
+    private Map<String, ?> getPagesReadPerMonthMedian() {
+        return null;
     }
 
     private Map<String, ?> getBooksReadPerYear() {

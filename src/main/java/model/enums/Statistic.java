@@ -14,6 +14,7 @@ public enum Statistic {
     AVERAGE_PAGE_NUMBER_FOR_AUTHORS("Average page number for authors"),
     BOOKS_READ_PER_MONTH("Books read per month"),
     PAGES_READ_PER_MONTH("Pages red per month"),
+    PAGES_READ_PER_MONTH_MEDIAN("Pages red per month median"),
     BOOKS_READ_PER_YEAR("Books read per year"),
     PAGES_READ_PER_YEAR("Pages read per year"),
     SHORTEST_BOOKS("Shortest Books"),

@@ -3,6 +3,7 @@ package model;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
+//TODO: replace with Pair<>
 public class UserShelve {
 
     private String name;

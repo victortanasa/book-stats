@@ -12,7 +12,7 @@ public class TODOHolder {
 //    Authors: [Dennis E. Taylor]
 //    Missing Fields: [FORMAT, PAGE_NUMBER]
 
-    //TODO: replace UserShelve with Pair? same for ShelveMapping
+    //TODO: replace UserShelve with Pair?
 
     //TODO: pages read per month -> pages / days if month finished != month started
 

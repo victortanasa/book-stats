@@ -1,1 +1,198 @@
-[{"id":325344,"isbn":"1857231791","isbn13":"9781857231793","title":"Against a Dark Background","format":"Paperback","rating":0,"readCount":0,"pageNumber":487,"ratingsCount":14193,"publicationYear":1993,"averageRating":4.11,"dateStarted":[2019,11,12],"dateFinished":null,"owned":false,"authors":["Iain M. Banks"],"shelves":["sci-fi","space-opera","sci-fi-fantasy"]},{"id":38337005,"isbn":"1473223679","isbn13":"9781473223677","title":"Altered Carbon","format":"Paperback","rating":0,"readCount":0,"pageNumber":471,"ratingsCount":81328,"publicationYear":2002,"averageRating":4.05,"dateStarted":[2019,4,9],"dateFinished":null,"owned":false,"authors":["Richard K. Morgan"],"shelves":["sci-fi","cyberpunk","mystery"]},{"id":21005523,"isbn":"1473208297","isbn13":"9781473208292","title":"Hard to Be a God","format":null,"rating":0,"readCount":0,"pageNumber":256,"ratingsCount":9473,"publicationYear":1964,"averageRating":4.19,"dateStarted":[2019,3,31],"dateFinished":null,"owned":false,"authors":["Arkady Strugatsky"],"shelves":["sci-fi","russian","fantasy"]},{"id":1281518,"isbn":"0575082097","isbn13":"9780575082090","title":"Diaspora","format":"Paperback","rating":0,"readCount":1,"pageNumber":346,"ratingsCount":6673,"publicationYear":1997,"averageRating":4.13,"dateStarted":[2018,12,23],"dateFinished":[2018,12,26],"owned":true,"authors":["Greg Egan"],"shelves":["sci-fi","cyberpunk","science"]},{"id":40536331,"isbn":"0062697250","isbn13":"9780062697257","title":"Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch","format":"Paperback","rating":0,"readCount":0,"pageNumber":384,"ratingsCount":495869,"publicationYear":1990,"averageRating":4.25,"dateStarted":[2019,12,7],"dateFinished":null,"owned":false,"authors":["Terry Pratchett"],"shelves":["fantasy","humor","humour"]},{"id":31363503,"isbn":"0756412749","isbn13":"9780756412746","title":"Terminal Alliance","format":"Hardcover","rating":0,"readCount":0,"pageNumber":358,"ratingsCount":2004,"publicationYear":2017,"averageRating":4.04,"dateStarted":[2019,9,5],"dateFinished":null,"owned":false,"authors":["Jim C. Hines"],"shelves":["sci-fi","humor","space-opera"]},{"id":6276734,"isbn":"0099519976","isbn13":"9780099519973","title":"The Gone-Away World","format":"Paperback","rating":0,"readCount":0,"pageNumber":584,"ratingsCount":11308,"publicationYear":2008,"averageRating":4.12,"dateStarted":null,"dateFinished":null,"owned":false,"authors":["Nick Harkaway"],"shelves":["sci-fi","fantasy","dystopian"]}]
+[
+  {
+    "id": 325344,
+    "isbn": "1857231791",
+    "isbn13": "9781857231793",
+    "title": "Against a Dark Background",
+    "format": "Paperback",
+    "rating": 0,
+    "readCount": 0,
+    "pageNumber": 487,
+    "ratingsCount": 14193,
+    "publicationYear": 1993,
+    "averageRating": 4.11,
+    "dateStarted": [
+      2019,
+      11,
+      12
+    ],
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Iain M. Banks"
+    ],
+    "shelves": [
+      "sci-fi",
+      "space-opera",
+      "sci-fi-fantasy"
+    ]
+  },
+  {
+    "id": 40536331,
+    "isbn": "0062697250",
+    "isbn13": "9780062697257",
+    "title": "Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch",
+    "format": "Paperback",
+    "rating": 0,
+    "readCount": 0,
+    "pageNumber": 384,
+    "ratingsCount": 495874,
+    "publicationYear": 1990,
+    "averageRating": 4.25,
+    "dateStarted": [
+      2019,
+      12,
+      7
+    ],
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Terry Pratchett"
+    ],
+    "shelves": [
+      "fantasy",
+      "humor",
+      "humour"
+    ]
+  },
+  {
+    "id": 21005523,
+    "isbn": "1473208297",
+    "isbn13": "9781473208292",
+    "title": "Hard to Be a God",
+    "format": null,
+    "rating": 0,
+    "readCount": 0,
+    "pageNumber": 256,
+    "ratingsCount": 9473,
+    "publicationYear": 1964,
+    "averageRating": 4.19,
+    "dateStarted": [
+      2019,
+      3,
+      31
+    ],
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Arkady Strugatsky"
+    ],
+    "shelves": [
+      "sci-fi",
+      "russian",
+      "fantasy"
+    ]
+  },
+  {
+    "id": 1281518,
+    "isbn": "0575082097",
+    "isbn13": "9780575082090",
+    "title": "Diaspora",
+    "format": "Paperback",
+    "rating": 0,
+    "readCount": 1,
+    "pageNumber": 346,
+    "ratingsCount": 6673,
+    "publicationYear": 1997,
+    "averageRating": 4.13,
+    "dateStarted": [
+      2018,
+      12,
+      23
+    ],
+    "dateFinished": [
+      2018,
+      12,
+      26
+    ],
+    "owned": true,
+    "authors": [
+      "Greg Egan"
+    ],
+    "shelves": [
+      "sci-fi",
+      "cyberpunk",
+      "science"
+    ]
+  },
+  {
+    "id": 38337005,
+    "isbn": "1473223679",
+    "isbn13": "9781473223677",
+    "title": "Altered Carbon",
+    "format": "Paperback",
+    "rating": 0,
+    "readCount": 0,
+    "pageNumber": 471,
+    "ratingsCount": 81329,
+    "publicationYear": 2002,
+    "averageRating": 4.05,
+    "dateStarted": [
+      2019,
+      4,
+      9
+    ],
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Richard K. Morgan"
+    ],
+    "shelves": [
+      "sci-fi",
+      "cyberpunk",
+      "mystery"
+    ]
+  },
+  {
+    "id": 31363503,
+    "isbn": "0756412749",
+    "isbn13": "9780756412746",
+    "title": "Terminal Alliance",
+    "format": "Hardcover",
+    "rating": 0,
+    "readCount": 0,
+    "pageNumber": 358,
+    "ratingsCount": 2004,
+    "publicationYear": 2017,
+    "averageRating": 4.04,
+    "dateStarted": [
+      2019,
+      9,
+      5
+    ],
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Jim C. Hines"
+    ],
+    "shelves": [
+      "sci-fi",
+      "humor",
+      "space-opera"
+    ]
+  },
+  {
+    "id": 6276734,
+    "isbn": "0099519976",
+    "isbn13": "9780099519973",
+    "title": "The Gone-Away World",
+    "format": "Paperback",
+    "rating": 0,
+    "readCount": 0,
+    "pageNumber": 584,
+    "ratingsCount": 11308,
+    "publicationYear": 2008,
+    "averageRating": 4.12,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Nick Harkaway"
+    ],
+    "shelves": [
+      "sci-fi",
+      "fantasy",
+      "dystopian"
+    ]
+  }
+]

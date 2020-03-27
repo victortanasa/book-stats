@@ -12,25 +12,39 @@ import model.StoredBookData;
 import model.enums.Shelve;
 import utils.PrinterUtils;
 
+import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.Properties;
 
 public class StorageService {
 
     private static final String COULD_NOT_LOAD_STORED_DATA_MESSAGE = "Could not load stored book data. Exception was: %s";
     private static final String COULD_NOT_LOAD_SHELVE_MAPPINGS = "Could not load shelve mappings. Exception was: %s";
+    private static final String COULD_NOT_LOAD_PROPERTIES_MESSAGE = "Could not load properties. Exception was: %s";
     private static final String COULD_NOT_SAVE_BOOKS_MESSAGE = "Could not save books. Exception was: %s";
     private static final String COULD_NOT_LOAD_BOOKS_MESSAGE = "Could not load books. Exception was: %s";
 
-    private static final String STORAGE_LOCATION = "src/main/resources/storage/";
+    private static final String RESOURCES_LOCATION = "src/main/resources/";
+    private static final String STORAGE_LOCATION = RESOURCES_LOCATION + "storage/";
+
+    private static final String BOOK_STATS_PROPERTIES_FILE = "bookStats.properties";
     private static final String STORED_BOOK_DATA_FILE = "storedBookData-%s.json";
     private static final String SHELVE_MAPPING_FILE = "shelveMappings.json";
     private static final String BOOKS_FILE = "books-%s-%s.json";
 
-    private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
+    private static final String SHELVES_TO_EXCLUDE_THAT_START_WITH = "shelvesToExcludeThatStartWith";
+    private static final String SHELVES_TO_EXCLUDE = "shelvesToExclude";
+    private static final String COMMA = ",";
 
+    private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
+    private static final Properties PROPERTIES = new Properties();
+
+    public StorageService() {
+        loadProperties();
+    }
 
     void saveBooks(final String userId, final Shelve shelve, final List<Book> books) {
         try {
@@ -74,8 +88,26 @@ public class StorageService {
         }
     }
 
+    public List<String> getShelvesToExclude() {
+        return newArrayList(PROPERTIES.getProperty(SHELVES_TO_EXCLUDE).split(COMMA));
+    }
+
+    public List<String> getShelvesToExcludeThatStartWith() {
+        return newArrayList(PROPERTIES.getProperty(SHELVES_TO_EXCLUDE_THAT_START_WITH).split(COMMA));
+    }
+
     private String readFileContent(final String fileName) throws IOException {
         return new String(Files.readAllBytes(Paths.get(STORAGE_LOCATION + fileName)));
+    }
+
+    private void loadProperties() {
+        try {
+            PROPERTIES.load(new FileReader(RESOURCES_LOCATION + BOOK_STATS_PROPERTIES_FILE));
+        } catch (final IOException e) {
+            final String message = String.format(COULD_NOT_LOAD_PROPERTIES_MESSAGE, e);
+            PrinterUtils.printSimple(message);
+            throw new IllegalStateException(message);
+        }
     }
 
 }
