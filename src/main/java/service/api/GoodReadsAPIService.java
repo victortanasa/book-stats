@@ -5,6 +5,7 @@ import static java.util.stream.Collectors.toList;
 import model.Book;
 import model.MissingDetails;
 import model.enums.Shelve;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.reactive.function.client.ClientResponse;
 import org.springframework.web.reactive.function.client.ExchangeStrategies;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -20,13 +21,13 @@ import java.util.stream.IntStream;
 
 public class GoodReadsAPIService {
 
-    private static final String COULD_NOT_LOAD_BOOKS_ERROR_MESSAGE = "Could not load books, cannot continue.";
-    private static final String INTERRUPTED_MESSAGE = "Something interrupted!";
+    private static final String REQUEST_FAILED_MESSAGE = "Request failed for endpoint [%s]. Exception was: %s";
+    private static final String RESPONSE_IS_EMPTY_MESSAGE = "Response is empty for endpoint [%s]";
 
     private static final String API_KEY = "aB9VcY1rOGCzxMONqjk8Ug";
 
     private static final int BOOK_LIMIT_PER_CALL = 100;
-    private static final int DEFAULT_TIMEOUT_IN_SECONDS = 10;
+    private static final int DEFAULT_TIMEOUT_IN_SECONDS = 20;
 
     private static final String GOOD_READS_BASE_URL = "https://www.goodreads.com/";
 
@@ -78,21 +79,21 @@ public class GoodReadsAPIService {
     private String doRequest(final String endpoint) {
         try {
             TimeUnit.SECONDS.sleep(1);
-        } catch (final InterruptedException e) {
-            PrinterUtils.printSimple(INTERRUPTED_MESSAGE + e.getMessage());
-            throw new IllegalStateException(COULD_NOT_LOAD_BOOKS_ERROR_MESSAGE);
+
+            final ClientResponse clientResponse = webClient.get()
+                    .uri(endpoint)
+                    .exchange()
+                    .timeout(Duration.ofSeconds(DEFAULT_TIMEOUT_IN_SECONDS)).block();
+
+            if (Objects.isNull(clientResponse)) {
+                throw new IllegalStateException(String.format(RESPONSE_IS_EMPTY_MESSAGE, endpoint));
+            }
+
+            return clientResponse.bodyToMono(String.class).block();
+        } catch (final Exception e) {
+            PrinterUtils.printSimple(String.format(REQUEST_FAILED_MESSAGE, endpoint, e));
+            return StringUtils.EMPTY;
         }
-
-        final ClientResponse clientResponse = webClient.get()
-                .uri(endpoint)
-                .exchange()
-                .timeout(Duration.ofSeconds(DEFAULT_TIMEOUT_IN_SECONDS)).block();
-
-        if (Objects.isNull(clientResponse)) {
-            throw new IllegalStateException(COULD_NOT_LOAD_BOOKS_ERROR_MESSAGE);
-        }
-
-        return clientResponse.bodyToMono(String.class).block();
     }
 
     //TODO: pretty

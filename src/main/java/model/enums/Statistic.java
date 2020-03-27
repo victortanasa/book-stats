@@ -24,6 +24,9 @@ public enum Statistic {
     //TODO: number of books read by year
     //TODO: days not reading books
     //TODO: days (or average) between adding a book and reading it
+    //TODO: pages read per month -> pages / days if month finished != month started
+
+    //TODO: formats
 
     private String statistic;
 

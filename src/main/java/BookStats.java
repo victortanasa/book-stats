@@ -13,9 +13,11 @@ import java.util.stream.Stream;
 public class BookStats {
 
     private static final String RADU_USER_ID = "748293";
+    private static final String ILIE_USER_ID = "70582685";
     private static final String MY_USER_ID = "60626198";
+    private static final String FLAVIA_USER_ID = "29721538";
 
-    private static final BookLoaderService BOOK_LOADER_SERVICE = new BookLoaderService(RADU_USER_ID);
+    private static final BookLoaderService BOOK_LOADER_SERVICE = new BookLoaderService(FLAVIA_USER_ID);
 
     public static void main(final String[] args) {
         final Map<Shelve, List<Book>> shelvesAndBook = BOOK_LOADER_SERVICE.loadBooks(BookLoaderService.Source.GOODREADS);
