@@ -36,9 +36,9 @@ public class ShelveAggregator {
     static {
         SHELVE_NAME_MAPPINGS = newArrayList();
         SHELVE_NAME_MAPPINGS.add(new ShelveMapping("sci-fi", newArrayList("science-fiction", "scifi", "sf", "sci-fi", "space")));
-        SHELVE_NAME_MAPPINGS.add(new ShelveMapping("mil-sci-fi", newArrayList("military-sci-fi", "military-science-fiction", "mil-sci-fi")));
+        SHELVE_NAME_MAPPINGS.add(new ShelveMapping("mil-sci-fi", newArrayList("military-sci-fi", "military-science-fiction", "mil-sci-fi", "military", "war")));
         SHELVE_NAME_MAPPINGS.add(new ShelveMapping("sci-fi-fantasy", newArrayList("sci-fi-fantasy", "scifi-fantasy")));
-        SHELVE_NAME_MAPPINGS.add(new ShelveMapping("dystopian", newArrayList("dystopian", "dystopia"))); // post-apocalyptic?
+        SHELVE_NAME_MAPPINGS.add(new ShelveMapping("dystopian", newArrayList("dystopian", "dystopia")));
         SHELVE_NAME_MAPPINGS.add(new ShelveMapping("classics", newArrayList("classic", "classics")));
 
         SHELVE_NAMES_STARTS_WITH_FILTER = newArrayList("read-in", "read-", "hugo", "nebula");
