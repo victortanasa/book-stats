@@ -8,6 +8,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import model.Book;
 import model.StoredBookData;
+import model.enums.Shelve;
 import utils.PrinterUtils;
 
 import java.io.IOException;
@@ -23,27 +24,27 @@ public class StorageService {
 
     private static final String STORAGE_LOCATION = "src/main/resources/storage/";
     private static final String STORED_DATA_FILE = "storedBookData-%s.json";
-    private static final String BOOKS_FILE = "books-%s.json";
+    private static final String BOOKS_FILE = "books-%s-%s.json";
 
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
 
-    void saveBooks(final String userId, final List<Book> books) {
+    void saveBooks(final String userId, final Shelve shelve, final List<Book> books) {
         try {
             final String booksJson = OBJECT_MAPPER.writeValueAsString(books);
-            Files.write(Paths.get(STORAGE_LOCATION + String.format(BOOKS_FILE, userId)), booksJson.getBytes(), CREATE, TRUNCATE_EXISTING);
+            Files.write(Paths.get(STORAGE_LOCATION + String.format(BOOKS_FILE, userId, shelve.getValue())), booksJson.getBytes(), CREATE, TRUNCATE_EXISTING);
         } catch (final Exception e) {
             PrinterUtils.printSimple(String.format(COULD_NOT_SAVE_BOOKS_MESSAGE, e));
         }
     }
 
-    List<Book> loadBooks(final String userId) {
+    List<Book> loadBooks(final String userId, final Shelve shelve) {
         try {
-            final String booksJson = new String(Files.readAllBytes(Paths.get(STORAGE_LOCATION + String.format(BOOKS_FILE, userId))));
+            final String booksJson = new String(Files.readAllBytes(Paths.get(STORAGE_LOCATION + String.format(BOOKS_FILE, userId, shelve.getValue()))));
             return OBJECT_MAPPER.readValue(booksJson, new TypeReference<List<Book>>() {
             });
         } catch (IOException e) {
             PrinterUtils.printSimple(String.format(COULD_NOT_LOAD_BOOKS_MESSAGE, e));
-            return null;
+            return newArrayList();
         }
     }
 

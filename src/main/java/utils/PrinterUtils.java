@@ -4,6 +4,7 @@ import static com.google.common.collect.Maps.newHashMap;
 
 import model.Book;
 import model.enums.BookField;
+import model.enums.Shelve;
 import model.enums.Statistic;
 import model.enums.sort.SortBy;
 import model.enums.sort.SortOrder;
@@ -18,7 +19,7 @@ import java.util.stream.Collectors;
 public class PrinterUtils {
 
     private static final DecimalFormat DECIMAL_FORMAT = new DecimalFormat("###,###.##");
-    private static final String MISSING_DATA = "Books with missing data: %s";
+    private static final String MISSING_DATA = "Books with missing data in shelf [%s]: %s";
     private static final String MISSING_FIELDS = "Missing Fields: ";
 
     private static final String SEPARATOR_LARGE = StringUtils.repeat("-", 60);
@@ -71,12 +72,12 @@ public class PrinterUtils {
         System.out.println(SEPARATOR_LARGE);
     }
 
-    public static void printMissingData(final Map<Book, List<BookField>> bookMissingFieldMap) {
+    public static void printMissingData(final Shelve shelve, final Map<Book, List<BookField>> bookMissingFieldMap) {
         final Map<Book, List<BookField>> mapWithValues = bookMissingFieldMap.entrySet().stream()
                 .filter(entry -> !entry.getValue().isEmpty())
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
 
-        System.out.println(String.format(MISSING_DATA, mapWithValues.size()) + NEWLINE);
+        System.out.println(String.format(MISSING_DATA, shelve, mapWithValues.size()) + NEWLINE);
 
         mapWithValues.forEach((book, missingFields) -> System.out.println(book.toStringShort()
                 + NEWLINE

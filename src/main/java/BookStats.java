@@ -1,11 +1,13 @@
 import static model.enums.Statistic.*;
 
 import model.Book;
+import model.enums.Shelve;
 import service.BookLoaderService;
 import service.StatisticsService;
 import utils.PrinterUtils;
 
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Stream;
 
 public class BookStats {
@@ -16,9 +18,9 @@ public class BookStats {
     private static final BookLoaderService BOOK_LOADER_SERVICE = new BookLoaderService(MY_USER_ID);
 
     public static void main(final String[] args) {
-        final List<Book> books = BOOK_LOADER_SERVICE.loadBooks(BookLoaderService.Source.STORAGE);
+        final Map<Shelve, List<Book>> shelvesAndBook = BOOK_LOADER_SERVICE.loadBooks(BookLoaderService.Source.STORAGE);
 
-        final StatisticsService statisticsService = new StatisticsService(books);
+        final StatisticsService statisticsService = new StatisticsService(shelvesAndBook.get(Shelve.READ));
 
         Stream.of(MOST_READ_AUTHORS_BY_BOOK_COUNT,
                 MOST_READ_AUTHORS_BY_PAGE_COUNT,

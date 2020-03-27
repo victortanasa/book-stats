@@ -4,7 +4,7 @@ import static java.util.stream.Collectors.toList;
 
 import model.Book;
 import model.MissingDetails;
-import model.UserShelve;
+import model.enums.Shelve;
 import org.springframework.web.reactive.function.client.ClientResponse;
 import org.springframework.web.reactive.function.client.ExchangeStrategies;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -13,6 +13,7 @@ import utils.PrinterUtils;
 import java.time.Duration;
 import java.util.Collection;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.IntStream;
@@ -49,15 +50,15 @@ public class GoodReadsAPIService {
         responseParser = new ResponseParser();
     }
 
-    public List<UserShelve> getNumberOfBooksToRetrieve(final String userId) {
+    public Map<Shelve, Integer> getBookCountToRetrievePerShelf(final String userId) {
         final String response = doRequest(String.format(GET_READ_SHELF_URL, API_KEY, userId));
 
-        return responseParser.getNumberOfBooksToRetrieve(response);
+        return responseParser.getBookCountToRetrievePerShelf(response);
     }
 
-    public List<Book> getBooksForShelve(final String userId, final UserShelve userShelve) {
-        return IntStream.rangeClosed(1, getNumberOfCalls(userShelve.getPopularity()))
-                .mapToObj(pageNumber -> getBooks(userId, userShelve.getName(), pageNumber))
+    public List<Book> getBooksForShelve(final String userId, final Shelve shelve, final Integer numberOfBooks) {
+        return IntStream.rangeClosed(1, getNumberOfCalls(numberOfBooks))
+                .mapToObj(pageNumber -> getBooks(userId, shelve.getValue(), pageNumber))
                 .flatMap(Collection::stream)
                 .collect(toList());
     }
