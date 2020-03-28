@@ -7,5 +7,9 @@ public enum SortBy {
     AUTHOR,
     RATING,
     TITLE,
-    GENRE
+    GENRE,
+
+    //TODO: separate enum?
+    KEY,
+    VALUE;
 }

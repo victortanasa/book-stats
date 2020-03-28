@@ -1,8 +1,9 @@
-import static model.enums.StatisticName.*;
+import static model.enums.StatisticType.MAP;
+import static model.enums.StatisticType.SINGLE_VALUE;
 
 import model.Book;
+import model.Statistic;
 import model.enums.Shelve;
-import model.enums.StatisticName;
 import service.AvailableStatisticsService;
 import service.BookLoaderService;
 import service.StatisticsService;
@@ -10,7 +11,6 @@ import utils.PrinterUtils;
 
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Stream;
 
 public class BookStats {
 
@@ -20,40 +20,22 @@ public class BookStats {
     private static final String RADU_USER_ID = "748293";
     private static final String MY_USER_ID = "60626198";
 
+    private static final AvailableStatisticsService AVAILABLE_STATISTICS_SERVICE = new AvailableStatisticsService();
     private static final BookLoaderService BOOK_LOADER_SERVICE = new BookLoaderService(MY_USER_ID);
 
     public static void main(final String[] args) {
-        final Map<Shelve, List<Book>> shelvesAndBook = BOOK_LOADER_SERVICE.loadBooks(BookLoaderService.Source.GOODREADS);
+        final Map<Shelve, List<Book>> shelvesAndBook = BOOK_LOADER_SERVICE.loadBooks(BookLoaderService.Source.STORAGE);
 
-        final AvailableStatisticsService availableStatisticsService = new AvailableStatisticsService();
-
-        //TODO: single value vs map statistic
-        //TODO: rung good reads again for shelve mapping
-//        final List<StatisticName> availableStatisticNames = availableStatisticsService.getAvailableStatistics(shelvesAndBook.get(Shelve.READ));
+        final List<Statistic> availableStatistics = AVAILABLE_STATISTICS_SERVICE.getAvailableStatistics(shelvesAndBook.get(Shelve.READ));
 
         final StatisticsService statisticsService = new StatisticsService(shelvesAndBook.get(Shelve.READ));
 
-        Stream.of(MOST_READ_AUTHORS_BY_BOOK_COUNT,
-                MOST_READ_AUTHORS_BY_PAGE_COUNT,
-                AVERAGE_PAGE_NUMBER_FOR_AUTHORS,
-                MOST_BOOKS_READ_BY_PUBLISHED_DECADE,
-                MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS,
-                AVERAGE_RATING_FOR_AUTHORS,
-                AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR,
-                BOOKS_READ_PER_MONTH,
-                PAGES_READ_PER_MONTH,
-                PAGES_READ_PER_MONTH_MEDIAN,
-                BOOKS_READ_PER_YEAR,
-                PAGES_READ_PER_YEAR,
-                RATINGS_DISTRIBUTION,
-                FORMATS_DISTRIBUTION,
-                MOST_POPULAR_SHELVES)
+        availableStatistics.stream()
+                .filter(statistic -> MAP.equals(statistic.getType()))
                 .forEach(statistic -> PrinterUtils.printMapStatistic(statistic, statisticsService.getMapStatistic(statistic)));
 
-        Stream.of(AVERAGE_RATING,
-                AVERAGE_DAYS_TO_READ_A_BOOK,
-                AVERAGE_PAGES_READ_PER_MONTH,
-                AVERAGE_BOOKS_READ_PER_MONTH)
+        availableStatistics.stream()
+                .filter(statistic -> SINGLE_VALUE.equals(statistic.getType()))
                 .forEach(statistic -> PrinterUtils.printSingleValueStatistic(statistic, statisticsService.getSingeValueStatistic(statistic)));
     }
 

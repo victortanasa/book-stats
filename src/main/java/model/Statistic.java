@@ -1,24 +1,23 @@
 package model;
 
-import model.enums.StatisticName;
 import model.enums.StatisticType;
 
 public class Statistic {
 
-    private StatisticName statisticName;
+    private String name;
 
-    private StatisticType statisticType;
+    private StatisticType type;
 
-    public Statistic(final StatisticName statisticName, final StatisticType statisticType) {
-        this.statisticName = statisticName;
-        this.statisticType = statisticType;
+    public Statistic(final String name, final StatisticType type) {
+        this.name = name;
+        this.type = type;
     }
 
-    public StatisticName getStatisticName() {
-        return statisticName;
+    public String getName() {
+        return name;
     }
 
-    public StatisticType getStatisticType() {
-        return statisticType;
+    public StatisticType getType() {
+        return type;
     }
 }

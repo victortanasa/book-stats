@@ -1,9 +1,9 @@
 package service;
 
 import static com.google.common.collect.Lists.newArrayList;
-import static model.enums.StatisticName.PAGES_READ_PER_MONTH_MEDIAN;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
+import static service.StatisticsHolder.PAGES_READ_PER_MONTH_MEDIAN;
 
 import model.Book;
 import org.junit.Test;

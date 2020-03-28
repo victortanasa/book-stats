@@ -3,11 +3,11 @@ package service;
 import static com.google.common.collect.Lists.newArrayList;
 import static com.google.common.collect.Maps.newHashMap;
 import static java.util.stream.Collectors.toList;
-import static model.enums.StatisticName.*;
+import static service.StatisticsHolder.*;
 
 import model.Book;
+import model.Statistic;
 import model.enums.BookField;
-import model.enums.StatisticName;
 import service.processing.BookFieldValidator;
 
 import java.util.Collection;
@@ -19,10 +19,9 @@ public class AvailableStatisticsService {
 
     private static final BookFieldValidator BOOK_FIELD_VALIDATOR = new BookFieldValidator();
 
-    private static final Map<BookField, List<StatisticName>> REQUIRED_FIELDS_FOR_STATISTICS;
-    private static final List<StatisticName> ALWAYS_AVAILABLE_STATISTIC_NAMES;
+    private static final Map<BookField, List<Statistic>> REQUIRED_FIELDS_FOR_STATISTICS;
+    private static final List<Statistic> ALWAYS_AVAILABLE_STATISTIC_NAMES;
 
-    //TODO: single value vs map statistic
     //TODO: unavailable stats?
     static {
         ALWAYS_AVAILABLE_STATISTIC_NAMES = newArrayList();
@@ -53,7 +52,7 @@ public class AvailableStatisticsService {
         REQUIRED_FIELDS_FOR_STATISTICS.put(BookField.AVERAGE_RATING, newArrayList(MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS));
     }
 
-    public List<StatisticName> getAvailableStatistics(final List<Book> books) {
+    public List<Statistic> getAvailableStatistics(final List<Book> books) {
         final Map<Book, List<BookField>> missingFieldsMap = BOOK_FIELD_VALIDATOR.getMissingFields(books);
 
         final List<BookField> missingFields = missingFieldsMap.values().stream()
@@ -61,7 +60,7 @@ public class AvailableStatisticsService {
                 .distinct()
                 .collect(toList());
 
-        final List<StatisticName> availableStatisticNames = REQUIRED_FIELDS_FOR_STATISTICS.entrySet().stream()
+        final List<Statistic> availableStatisticNames = REQUIRED_FIELDS_FOR_STATISTICS.entrySet().stream()
                 .filter(entry -> !missingFields.contains(entry.getKey()))
                 .map(Map.Entry::getValue)
                 .flatMap(Collection::stream)
