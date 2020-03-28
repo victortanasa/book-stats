@@ -39,5 +39,25 @@
       "classic",
       "classics"
     ]
+  },
+  {
+    "normalizedValue": "young-adult",
+    "alternateValues": [
+      "young-adult",
+      "ya"
+    ]
+  },
+  {
+    "normalizedValue": "romanian",
+    "alternateValues": [
+      "romanian",
+      "romanian-authors",
+      "romanian-literature",
+      "romana",
+      "literatura-română",
+      "ro",
+      "romanesti",
+      "romania"
+    ]
   }
 ]

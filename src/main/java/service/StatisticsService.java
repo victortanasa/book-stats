@@ -5,11 +5,11 @@ import static com.google.common.collect.Maps.newHashMap;
 import static java.time.temporal.ChronoUnit.DAYS;
 import static java.time.temporal.TemporalAdjusters.firstDayOfMonth;
 import static java.time.temporal.TemporalAdjusters.lastDayOfMonth;
-import static model.enums.Statistic.*;
+import static model.enums.StatisticName.*;
 
 import com.google.common.base.Supplier;
 import model.Book;
-import model.enums.Statistic;
+import model.enums.StatisticName;
 import org.apache.commons.lang3.tuple.Pair;
 
 import java.time.LocalDate;
@@ -24,8 +24,8 @@ public class StatisticsService {
 
     private static final String DECADE_FORMAT = "%d's";
 
-    private Map<Statistic, Supplier<Double>> singleValueStatistics;
-    private Map<Statistic, Supplier<Map<String, ?>>> mapStatistic;
+    private Map<StatisticName, Supplier<Double>> singleValueStatistics;
+    private Map<StatisticName, Supplier<Map<String, ?>>> mapStatistic;
 
     private List<Book> library;
 
@@ -60,12 +60,12 @@ public class StatisticsService {
         singleValueStatistics.put(AVERAGE_BOOKS_READ_PER_MONTH, this::getAverageBooksReadPerMonth);
     }
 
-    public Map<String, ?> getMapStatistic(final Statistic statistic) {
-        return sortDescendingByValue(mapStatistic.get(statistic).get());
+    public Map<String, ?> getMapStatistic(final StatisticName statisticName) {
+        return sortDescendingByValue(mapStatistic.get(statisticName).get());
     }
 
-    public Number getSingeValueStatistic(final Statistic statistic) {
-        return singleValueStatistics.get(statistic).get();
+    public Number getSingeValueStatistic(final StatisticName statisticName) {
+        return singleValueStatistics.get(statisticName).get();
     }
 
     private Map<String, ?> getMostReadAuthorsByPageCount() {

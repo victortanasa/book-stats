@@ -5,7 +5,7 @@ import static com.google.common.collect.Maps.newHashMap;
 import model.Book;
 import model.enums.BookField;
 import model.enums.Shelve;
-import model.enums.Statistic;
+import model.enums.StatisticName;
 import model.enums.sort.SortBy;
 import model.enums.sort.SortOrder;
 import org.apache.commons.lang3.StringUtils;
@@ -48,24 +48,24 @@ public class PrinterUtils {
                 .forEach(book -> System.out.println(book + NEWLINE + SEPARATOR_LARGE));
     }
 
-    public static void printMapStatistic(final Statistic statistic, final Map<String, ?> map) {
-        System.out.println(statistic.getStringValue() + NEWLINE);
+    public static void printMapStatistic(final StatisticName statisticName, final Map<String, ?> map) {
+        System.out.println(statisticName.getStringValue() + NEWLINE);
 
         map.forEach((key, value) -> System.out.println(String.format(STATISTIC_PRINT_FORMAT, key, formatNumber(value))));
 
         System.out.println(SEPARATOR_LARGE);
     }
 
-    public static void printListStatistic(final Statistic statistic, final List<String> list) {
-        System.out.println(statistic.getStringValue() + NEWLINE);
+    public static void printListStatistic(final StatisticName statisticName, final List<String> list) {
+        System.out.println(statisticName.getStringValue() + NEWLINE);
 
         list.forEach(element -> System.out.println(element + NEWLINE + SEPARATOR_SMALL));
 
         System.out.println(SEPARATOR_LARGE);
     }
 
-    public static void printSingleValueStatistic(final Statistic statistic, final Number value) {
-        System.out.println(statistic.getStringValue() + NEWLINE);
+    public static void printSingleValueStatistic(final StatisticName statisticName, final Number value) {
+        System.out.println(statisticName.getStringValue() + NEWLINE);
 
         System.out.println(formatNumber(value));
 

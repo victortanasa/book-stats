@@ -18,9 +18,6 @@ public class BookFieldValidator {
 
     static {
         FIELD_GETTERS = newHashMap();
-//        FIELD_GETTERS.put(BookField.ISNB, Book::getIsbn);
-//        FIELD_GETTERS.put(BookField.ISBN_13, Book::getIsbn13);
-
         FIELD_GETTERS.put(BookField.OWNED, Book::getOwned);
         FIELD_GETTERS.put(BookField.TITLE, Book::getTitle);
         FIELD_GETTERS.put(BookField.FORMAT, Book::getFormat);

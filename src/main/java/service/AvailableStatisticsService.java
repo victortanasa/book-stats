@@ -1,0 +1,75 @@
+package service;
+
+import static com.google.common.collect.Lists.newArrayList;
+import static com.google.common.collect.Maps.newHashMap;
+import static java.util.stream.Collectors.toList;
+import static model.enums.StatisticName.*;
+
+import model.Book;
+import model.enums.BookField;
+import model.enums.StatisticName;
+import service.processing.BookFieldValidator;
+
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Stream;
+
+public class AvailableStatisticsService {
+
+    private static final BookFieldValidator BOOK_FIELD_VALIDATOR = new BookFieldValidator();
+
+    private static final Map<BookField, List<StatisticName>> REQUIRED_FIELDS_FOR_STATISTICS;
+    private static final List<StatisticName> ALWAYS_AVAILABLE_STATISTIC_NAMES;
+
+    //TODO: single value vs map statistic
+    //TODO: unavailable stats?
+    static {
+        ALWAYS_AVAILABLE_STATISTIC_NAMES = newArrayList();
+        ALWAYS_AVAILABLE_STATISTIC_NAMES.add(MOST_READ_AUTHORS_BY_BOOK_COUNT);
+        ALWAYS_AVAILABLE_STATISTIC_NAMES.add(MOST_POPULAR_SHELVES);
+        ALWAYS_AVAILABLE_STATISTIC_NAMES.add(BOOKS_READ_PER_MONTH);
+        ALWAYS_AVAILABLE_STATISTIC_NAMES.add(BOOKS_READ_PER_YEAR);
+
+        REQUIRED_FIELDS_FOR_STATISTICS = newHashMap();
+        REQUIRED_FIELDS_FOR_STATISTICS.put(BookField.FORMAT, newArrayList(FORMATS_DISTRIBUTION));
+        REQUIRED_FIELDS_FOR_STATISTICS.put(BookField.PAGE_NUMBER, newArrayList(
+                PAGES_READ_PER_MONTH,
+                PAGES_READ_PER_MONTH_MEDIAN,
+                PAGES_READ_PER_YEAR,
+                MOST_READ_AUTHORS_BY_PAGE_COUNT,
+                AVERAGE_PAGE_NUMBER_FOR_AUTHORS,
+                AVERAGE_PAGES_READ_PER_MONTH));
+        REQUIRED_FIELDS_FOR_STATISTICS.put(BookField.DATE_FINISHED, newArrayList(
+                AVERAGE_DAYS_TO_READ_A_BOOK,
+                AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR,
+                AVERAGE_BOOKS_READ_PER_MONTH));
+        REQUIRED_FIELDS_FOR_STATISTICS.put(BookField.RATING, newArrayList(
+                AVERAGE_RATING,
+                RATINGS_DISTRIBUTION,
+                AVERAGE_RATING_FOR_AUTHORS));
+        REQUIRED_FIELDS_FOR_STATISTICS.put(BookField.PUBLICATION_YEAR, newArrayList(MOST_BOOKS_READ_BY_PUBLISHED_DECADE));
+        REQUIRED_FIELDS_FOR_STATISTICS.put(BookField.RATINGS_COUNT, newArrayList(MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS));
+        REQUIRED_FIELDS_FOR_STATISTICS.put(BookField.AVERAGE_RATING, newArrayList(MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS));
+    }
+
+    public List<StatisticName> getAvailableStatistics(final List<Book> books) {
+        final Map<Book, List<BookField>> missingFieldsMap = BOOK_FIELD_VALIDATOR.getMissingFields(books);
+
+        final List<BookField> missingFields = missingFieldsMap.values().stream()
+                .flatMap(Collection::stream)
+                .distinct()
+                .collect(toList());
+
+        final List<StatisticName> availableStatisticNames = REQUIRED_FIELDS_FOR_STATISTICS.entrySet().stream()
+                .filter(entry -> !missingFields.contains(entry.getKey()))
+                .map(Map.Entry::getValue)
+                .flatMap(Collection::stream)
+                .collect(toList());
+
+        return Stream.concat(
+                availableStatisticNames.stream(),
+                ALWAYS_AVAILABLE_STATISTIC_NAMES.stream())
+                .collect(toList());
+    }
+}

@@ -1,6 +1,6 @@
 package model.enums;
 
-public enum Statistic {
+public enum StatisticName {
 
     MOST_READ_AUTHORS_BY_BOOK_COUNT("Most read authors by book count"),
     MOST_READ_AUTHORS_BY_PAGE_COUNT("Most read authors by page count"),
@@ -30,7 +30,7 @@ public enum Statistic {
 
     private String statistic;
 
-    Statistic(final String statistic) {
+    StatisticName(final String statistic) {
         this.statistic = statistic;
     }
 

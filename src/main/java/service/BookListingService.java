@@ -1,12 +1,12 @@
 package service;
 
 import static com.google.common.collect.Maps.newHashMap;
-import static model.enums.Statistic.LONGEST_BOOKS;
-import static model.enums.Statistic.SHORTEST_BOOKS;
+import static model.enums.StatisticName.LONGEST_BOOKS;
+import static model.enums.StatisticName.SHORTEST_BOOKS;
 
 import com.google.common.base.Function;
 import model.Book;
-import model.enums.Statistic;
+import model.enums.StatisticName;
 import model.enums.sort.SortOrder;
 
 import java.util.Comparator;
@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 
 public class BookListingService {
 
-    private Map<Statistic, Function<Integer, List<String>>> bookListings;
+    private Map<StatisticName, Function<Integer, List<String>>> bookListings;
 
     private List<Book> library;
 
@@ -32,8 +32,8 @@ public class BookListingService {
     //TODO: not string, but book;
     //TODO: move SHORTEST_BOOKS out of statistics
     //TODO: most popular books (by ratings num)
-    public List<String> getBookListing(final Statistic statistic, final int limit) {
-        return bookListings.get(statistic).apply(limit);
+    public List<String> getBookListing(final StatisticName statisticName, final int limit) {
+        return bookListings.get(statisticName).apply(limit);
     }
 
     private List<String> getShortestBooks(final int limit) {
