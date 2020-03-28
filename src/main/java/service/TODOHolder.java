@@ -14,8 +14,10 @@ public class TODOHolder {
 
     //TODO: replace UserShelve with Pair?
 
-    //TODO: pages read per month -> pages / days if month finished != month started
+    //TODO: Most popular shelves, Most read authors by book count - limit number
+    //TODO: Average rating for authors - more than x books
 
-    //TODO: something to show what stats are available for given data.
-    //TODO: guard against NPE for metrics
+    //TODO:     "title": "The Fall of Hyperion", - radu has duplicates
+
+    //TODO: ilie Isaac Asimov: 2 average rating
 }

@@ -27,8 +27,6 @@ public class AvailableStatisticsService {
         ALWAYS_AVAILABLE_STATISTIC_NAMES = newArrayList();
         ALWAYS_AVAILABLE_STATISTIC_NAMES.add(MOST_READ_AUTHORS_BY_BOOK_COUNT);
         ALWAYS_AVAILABLE_STATISTIC_NAMES.add(MOST_POPULAR_SHELVES);
-        ALWAYS_AVAILABLE_STATISTIC_NAMES.add(BOOKS_READ_PER_MONTH);
-        ALWAYS_AVAILABLE_STATISTIC_NAMES.add(BOOKS_READ_PER_YEAR);
 
         REQUIRED_FIELDS_FOR_STATISTICS = newHashMap();
         REQUIRED_FIELDS_FOR_STATISTICS.put(BookField.FORMAT, newArrayList(FORMATS_DISTRIBUTION));
@@ -40,6 +38,12 @@ public class AvailableStatisticsService {
                 AVERAGE_PAGE_NUMBER_FOR_AUTHORS,
                 AVERAGE_PAGES_READ_PER_MONTH));
         REQUIRED_FIELDS_FOR_STATISTICS.put(BookField.DATE_FINISHED, newArrayList(
+                AVERAGE_DAYS_TO_READ_A_BOOK,
+                AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR,
+                AVERAGE_BOOKS_READ_PER_MONTH,
+                BOOKS_READ_PER_MONTH,
+                BOOKS_READ_PER_YEAR));
+        REQUIRED_FIELDS_FOR_STATISTICS.put(BookField.DATE_STARTED, newArrayList(
                 AVERAGE_DAYS_TO_READ_A_BOOK,
                 AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR,
                 AVERAGE_BOOKS_READ_PER_MONTH));
@@ -64,6 +68,7 @@ public class AvailableStatisticsService {
                 .filter(entry -> !missingFields.contains(entry.getKey()))
                 .map(Map.Entry::getValue)
                 .flatMap(Collection::stream)
+                .distinct()
                 .collect(toList());
 
         return Stream.concat(

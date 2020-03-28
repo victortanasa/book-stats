@@ -32,5 +32,6 @@ public class Statistics {
     public static Statistic AUTHORS_WITH_MOST_FAVOURITES = new Statistic("Average rating", MAP);
 
     //TODO: days not reading books
+    //TODO: number of authors read
 
 }
