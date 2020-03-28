@@ -13,6 +13,7 @@ import java.util.stream.Stream;
 public class BookStats {
 
     private static final String FLAVIA_USER_ID = "29721538";
+    private static final String IOANA_USER_ID = "19636467";
     private static final String ILIE_USER_ID = "70582685";
     private static final String RADU_USER_ID = "748293";
     private static final String MY_USER_ID = "60626198";
