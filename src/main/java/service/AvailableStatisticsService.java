@@ -3,7 +3,7 @@ package service;
 import static com.google.common.collect.Lists.newArrayList;
 import static com.google.common.collect.Maps.newHashMap;
 import static java.util.stream.Collectors.toList;
-import static service.StatisticsHolder.*;
+import static service.Statistics.*;
 
 import model.Book;
 import model.Statistic;

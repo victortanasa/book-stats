@@ -5,7 +5,7 @@ import static com.google.common.collect.Maps.newHashMap;
 import static java.time.temporal.ChronoUnit.DAYS;
 import static java.time.temporal.TemporalAdjusters.firstDayOfMonth;
 import static java.time.temporal.TemporalAdjusters.lastDayOfMonth;
-import static service.StatisticsHolder.*;
+import static service.Statistics.*;
 
 import com.google.common.base.Supplier;
 import model.Book;
