@@ -1,11 +1,16 @@
 package service;
 
+import static com.google.common.collect.Lists.newArrayList;
 import static com.google.common.collect.Maps.newHashMap;
+import static java.time.temporal.ChronoUnit.DAYS;
+import static java.time.temporal.TemporalAdjusters.firstDayOfMonth;
+import static java.time.temporal.TemporalAdjusters.lastDayOfMonth;
 import static model.enums.Statistic.*;
 
 import com.google.common.base.Supplier;
 import model.Book;
 import model.enums.Statistic;
+import org.apache.commons.lang3.tuple.Pair;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -33,7 +38,7 @@ public class StatisticsService {
 
         mapStatistic.put(BOOKS_READ_PER_MONTH, this::getBooksReadPerMonth);
         mapStatistic.put(PAGES_READ_PER_MONTH, this::getPagesReadPerMonth);
-        mapStatistic.put(PAGES_READ_PER_MONTH_MEDIAN, this::getPagesReadPerMonth);
+        mapStatistic.put(PAGES_READ_PER_MONTH_MEDIAN, this::getPagesReadPerMonthMedian);
         mapStatistic.put(BOOKS_READ_PER_YEAR, this::getBooksReadPerYear);
         mapStatistic.put(PAGES_READ_PER_YEAR, this::getPagesReadPerYear);
 
@@ -84,7 +89,10 @@ public class StatisticsService {
     }
 
     private Map<String, ?> getPagesReadPerMonthMedian() {
-        return null;
+        return library.stream()
+                .map(this::getPairs)
+                .flatMap(Collection::stream)
+                .collect(Collectors.groupingBy(Pair::getKey, Collectors.summingDouble(Pair::getValue)));
     }
 
     private Map<String, ?> getBooksReadPerYear() {
@@ -169,6 +177,29 @@ public class StatisticsService {
                 .mapToDouble(entry -> Double.valueOf(entry.getValue().toString()))
                 .average()
                 .orElse(-1);
+    }
+
+    private ArrayList<Pair<String, Double>> getPairs(final Book book) {
+        final Integer pageNumber = book.getPageNumber();
+        final LocalDate dateStarted = book.getDateStarted();
+        final LocalDate dateFinished = book.getDateFinished();
+
+        if (!dateStarted.getMonth().equals(dateFinished.getMonth())) {
+            final long daysUntilLastOfMonth = DAYS.between(dateStarted, dateStarted.with(lastDayOfMonth())) + 1;
+            final long daysSinceFirstOfMonth = DAYS.between(dateFinished.with(firstDayOfMonth()), dateFinished) + 1;
+
+            final double pagesPerDay = ((double) pageNumber / (daysUntilLastOfMonth + daysSinceFirstOfMonth));
+
+            final double toAddForPrev = pagesPerDay * daysUntilLastOfMonth;
+            final double toAddForNext = pagesPerDay * daysSinceFirstOfMonth;
+
+            final Pair<String, Double> prevMonth = Pair.of(getMonth(dateStarted), toAddForPrev);
+            final Pair<String, Double> nextMonth = Pair.of(getMonth(dateFinished), toAddForNext);
+
+            return newArrayList(prevMonth, nextMonth);
+        } else {
+            return newArrayList(Pair.of(getMonth(dateFinished), new Double(pageNumber)));
+        }
     }
 
     private static Map<String, ?> sortDescendingByValue(final Map<String, ?> map) {

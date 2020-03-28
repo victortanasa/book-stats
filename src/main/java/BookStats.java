@@ -20,7 +20,7 @@ public class BookStats {
     private static final BookLoaderService BOOK_LOADER_SERVICE = new BookLoaderService(MY_USER_ID);
 
     public static void main(final String[] args) {
-        final Map<Shelve, List<Book>> shelvesAndBook = BOOK_LOADER_SERVICE.loadBooks(BookLoaderService.Source.GOODREADS);
+        final Map<Shelve, List<Book>> shelvesAndBook = BOOK_LOADER_SERVICE.loadBooks(BookLoaderService.Source.STORAGE);
 
         final StatisticsService statisticsService = new StatisticsService(shelvesAndBook.get(Shelve.READ));
 
@@ -33,6 +33,7 @@ public class BookStats {
                 AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR,
                 BOOKS_READ_PER_MONTH,
                 PAGES_READ_PER_MONTH,
+                PAGES_READ_PER_MONTH_MEDIAN,
                 BOOKS_READ_PER_YEAR,
                 PAGES_READ_PER_YEAR,
                 RATINGS_DISTRIBUTION,
