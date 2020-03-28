@@ -5,6 +5,7 @@ import static com.google.common.collect.Maps.newHashMap;
 import static java.time.temporal.ChronoUnit.DAYS;
 import static java.time.temporal.TemporalAdjusters.firstDayOfMonth;
 import static java.time.temporal.TemporalAdjusters.lastDayOfMonth;
+import static java.util.stream.Collectors.toSet;
 import static service.Statistics.*;
 
 import com.google.common.base.Supplier;
@@ -24,7 +25,7 @@ public class StatisticsService {
 
     private static final String DECADE_FORMAT = "%d's";
 
-    private Map<Statistic, Supplier<Double>> singleValueStatistics;
+    private Map<Statistic, Supplier<Number>> singleValueStatistics;
     private Map<Statistic, Supplier<Map<String, ?>>> mapStatistic;
 
     private List<Book> library;
@@ -55,6 +56,7 @@ public class StatisticsService {
 
         singleValueStatistics = newHashMap();
         singleValueStatistics.put(AVERAGE_RATING, this::getAverageRating);
+        singleValueStatistics.put(NUMBER_OF_AUTHORS_READ, this::getNumberOfAuthorsRead);
         singleValueStatistics.put(AVERAGE_DAYS_TO_READ_A_BOOK, this::getAverageDaysToReadABook);
         singleValueStatistics.put(AVERAGE_PAGES_READ_PER_MONTH, this::getAveragePagesReadPerMonth);
         singleValueStatistics.put(AVERAGE_BOOKS_READ_PER_MONTH, this::getAverageBooksReadPerMonth);
@@ -155,6 +157,13 @@ public class StatisticsService {
                 .mapToInt(Book::getRating)
                 .average()
                 .orElse(-1);
+    }
+
+    private Integer getNumberOfAuthorsRead() {
+        return library.stream()
+                .map(Book::getAuthorAsString)
+                .collect(toSet())
+                .size();
     }
 
     private Double getAverageDaysToReadABook() {

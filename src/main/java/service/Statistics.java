@@ -26,12 +26,12 @@ public class Statistics {
     static Statistic AVERAGE_PAGES_READ_PER_MONTH = new Statistic("Average pages read per month", SINGLE_VALUE);
     static Statistic AVERAGE_BOOKS_READ_PER_MONTH = new Statistic("Average books read per month", SINGLE_VALUE);
     static Statistic AVERAGE_DAYS_TO_READ_A_BOOK = new Statistic("Average days to read a book", SINGLE_VALUE);
+    static Statistic NUMBER_OF_AUTHORS_READ = new Statistic("Number of authors read", SINGLE_VALUE);
     static Statistic AVERAGE_RATING = new Statistic("Average rating", SINGLE_VALUE);
 
     //TODO: implement
     public static Statistic AUTHORS_WITH_MOST_FAVOURITES = new Statistic("Average rating", MAP);
 
     //TODO: days not reading books
-    //TODO: number of authors read
 
 }
