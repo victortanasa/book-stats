@@ -90,7 +90,7 @@ public class StatisticsService {
 
     private Map<String, ?> getPagesReadPerMonthMedian() {
         return library.stream()
-                .map(this::getPairs)
+                .map(this::getPagesReadPerMonths)
                 .flatMap(Collection::stream)
                 .collect(Collectors.groupingBy(Pair::getKey, Collectors.summingDouble(Pair::getValue)));
     }
@@ -179,27 +179,27 @@ public class StatisticsService {
                 .orElse(-1);
     }
 
-    private ArrayList<Pair<String, Double>> getPairs(final Book book) {
-        final Integer pageNumber = book.getPageNumber();
-        final LocalDate dateStarted = book.getDateStarted();
-        final LocalDate dateFinished = book.getDateFinished();
+    private List<Pair<String, Double>> getPagesReadPerMonths(final Book book) {
+        return !book.getDateStarted().getMonth().equals(book.getDateFinished().getMonth()) ?
+                getPagesReadForDifferentMonths(book) : getPagesReadForOneMonth(book);
+    }
 
-        if (!dateStarted.getMonth().equals(dateFinished.getMonth())) {
-            final long daysUntilLastOfMonth = DAYS.between(dateStarted, dateStarted.with(lastDayOfMonth())) + 1;
-            final long daysSinceFirstOfMonth = DAYS.between(dateFinished.with(firstDayOfMonth()), dateFinished) + 1;
+    private ArrayList<Pair<String, Double>> getPagesReadForOneMonth(final Book book) {
+        return newArrayList(Pair.of(getMonth(book.getDateFinished()), new Double(book.getPageNumber())));
+    }
 
-            final double pagesPerDay = ((double) pageNumber / (daysUntilLastOfMonth + daysSinceFirstOfMonth));
+    private List<Pair<String, Double>> getPagesReadForDifferentMonths(final Book book) {
+        final long daysUntilLastOfMonth = DAYS.between(book.getDateStarted(), book.getDateStarted().with(lastDayOfMonth())) + 1;
+        final long daysSinceFirstOfMonth = DAYS.between(book.getDateFinished().with(firstDayOfMonth()), book.getDateFinished()) + 1;
 
-            final double toAddForPrev = pagesPerDay * daysUntilLastOfMonth;
-            final double toAddForNext = pagesPerDay * daysSinceFirstOfMonth;
+        final double pagesPerDay = ((double) book.getPageNumber() / (daysUntilLastOfMonth + daysSinceFirstOfMonth));
 
-            final Pair<String, Double> prevMonth = Pair.of(getMonth(dateStarted), toAddForPrev);
-            final Pair<String, Double> nextMonth = Pair.of(getMonth(dateFinished), toAddForNext);
+        final double pageCountForMonthStarted = pagesPerDay * daysUntilLastOfMonth;
+        final double pageCountForMonthFinished = pagesPerDay * daysSinceFirstOfMonth;
 
-            return newArrayList(prevMonth, nextMonth);
-        } else {
-            return newArrayList(Pair.of(getMonth(dateFinished), new Double(pageNumber)));
-        }
+        return newArrayList(
+                Pair.of(getMonth(book.getDateStarted()), pageCountForMonthStarted),
+                Pair.of(getMonth(book.getDateFinished()), pageCountForMonthFinished));
     }
 
     private static Map<String, ?> sortDescendingByValue(final Map<String, ?> map) {
