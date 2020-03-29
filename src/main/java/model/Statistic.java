@@ -6,6 +6,8 @@ import model.enums.sort.SortOrder;
 
 public class Statistic {
 
+    private static final int DEFAULT_RESULT_LIMIT = 1000;
+
     private String name;
 
     private StatisticType type;
@@ -14,12 +16,15 @@ public class Statistic {
 
     private SortOrder sortOrder;
 
+    private Integer resultLimit;
+
     public Statistic(final String name, final StatisticType type) {
         this.name = name;
         this.type = type;
     }
 
     public Statistic(final String name, final StatisticType type, final SortBy sortBy, final SortOrder sortOrder) {
+        this.resultLimit = DEFAULT_RESULT_LIMIT;
         this.sortOrder = sortOrder;
         this.sortBy = sortBy;
         this.name = name;
@@ -42,4 +47,12 @@ public class Statistic {
         return sortOrder;
     }
 
+    public Integer getResultLimit() {
+        return resultLimit;
+    }
+
+    public Statistic withResultLimit(final Integer resultLimit) {
+        this.resultLimit = resultLimit;
+        return this;
+    }
 }

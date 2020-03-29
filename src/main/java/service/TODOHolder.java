@@ -20,4 +20,6 @@ public class TODOHolder {
     //TODO:     "title": "The Fall of Hyperion", - radu has duplicates
 
     //TODO: ilie Isaac Asimov: 2 average rating
+
+    //TODO: store all shelves?
 }

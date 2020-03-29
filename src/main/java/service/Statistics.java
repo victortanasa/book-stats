@@ -11,7 +11,7 @@ import model.Statistic;
 
 public class Statistics {
 
-    static Statistic MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS = new Statistic("Most popular authors by average number of ratings", MAP, VALUE, DESC);
+    static Statistic MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS = new Statistic("Most popular authors by average number of ratings", MAP, VALUE, DESC).withResultLimit(20);
     static Statistic AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR = new Statistic("Average days to read a book per author", MAP, VALUE, DESC);
     static Statistic MOST_BOOKS_READ_BY_PUBLISHED_DECADE = new Statistic("Most books read by published decade", MAP, VALUE, DESC);
     static Statistic MOST_READ_AUTHORS_BY_BOOK_COUNT = new Statistic("Most read authors by book count", MAP, VALUE, DESC);
@@ -19,7 +19,7 @@ public class Statistics {
     static Statistic AVERAGE_PAGE_NUMBER_FOR_AUTHORS = new Statistic("Average page number for authors", MAP, VALUE, DESC);
     static Statistic PAGES_READ_PER_MONTH_MEDIAN = new Statistic("Pages red per month median", MAP, KEY, ASC);
     static Statistic AVERAGE_RATING_FOR_AUTHORS = new Statistic("Average rating for authors", MAP, VALUE, DESC);
-    static Statistic MOST_POPULAR_SHELVES = new Statistic("Most popular shelves", MAP, VALUE, DESC);
+    static Statistic MOST_POPULAR_SHELVES = new Statistic("Most popular shelves", MAP, VALUE, DESC).withResultLimit(12);
     static Statistic RATINGS_DISTRIBUTION = new Statistic("Ratings distribution", MAP, KEY, DESC);
     static Statistic FORMATS_DISTRIBUTION = new Statistic("Formats distribution", MAP, VALUE, DESC);
     static Statistic BOOKS_READ_PER_MONTH = new Statistic("Books read per month", MAP, KEY, ASC);
