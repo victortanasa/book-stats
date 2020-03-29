@@ -67,7 +67,6 @@ public class StatisticsService {
         singleValueStatistics.put(AVERAGE_BOOKS_READ_PER_MONTH, this::getAverageBooksReadPerMonth);
     }
 
-    //TODO: sortMapByValue sort order
     public Map<String, ?> getMapStatistic(final Statistic statistic) {
         final Map<String, ?> statistics = mapStatistic.get(statistic).get();
 
@@ -229,8 +228,11 @@ public class StatisticsService {
     }
 
     private static Map<String, ?> sortMapByValue(final Map<String, ?> map, final SortOrder sortOrder) {
+        final Comparator<Map.Entry<String, ?>> comparator = DESC.equals(sortOrder) ?
+                Collections.reverseOrder(getDescendingEntryComparator()) : getDescendingEntryComparator();
+
         return map.entrySet().stream()
-                .sorted(Collections.reverseOrder(getDescendingEntryComparator()))
+                .sorted(comparator)
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
     }
 
