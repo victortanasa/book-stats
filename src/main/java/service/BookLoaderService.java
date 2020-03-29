@@ -7,7 +7,7 @@ import static service.BookLoaderService.Source.GOODREADS;
 import model.Book;
 import model.MissingDetails;
 import model.enums.BookField;
-import model.enums.Shelve;
+import model.enums.ShelveName;
 import org.apache.commons.lang3.tuple.Pair;
 import service.api.GoodReadsAPIService;
 import service.processing.BookFieldFiller;
@@ -36,12 +36,12 @@ public class BookLoaderService {
         this.userId = userId;
     }
 
-    public Map<Shelve, List<Book>> loadBooks(final Source source) {
+    public Map<ShelveName, List<Book>> loadBooks(final Source source) {
         return source.equals(GOODREADS) ? getBooksFromGoodReads(userId) : getBooksFromStorage(userId);
     }
 
-    private Map<Shelve, List<Book>> getBooksFromGoodReads(final String userId) {
-        final Map<Shelve, Integer> shelveMap = GOOD_READS_API_SERVICE.getBookCountToRetrievePerShelf(userId);
+    private Map<ShelveName, List<Book>> getBooksFromGoodReads(final String userId) {
+        final Map<ShelveName, Integer> shelveMap = GOOD_READS_API_SERVICE.getBookCountToRetrievePerShelf(userId);
 
         shelveMap.forEach((shelve, bookCount) -> {
             final List<Book> books = GOOD_READS_API_SERVICE.getBooksForShelve(userId, shelve, bookCount);
@@ -62,11 +62,11 @@ public class BookLoaderService {
         return getBooksPerShelve(userId, shelveMap.keySet());
     }
 
-    private Map<Shelve, List<Book>> getBooksFromStorage(final String userId) {
-        return getBooksPerShelve(userId, Stream.of(Shelve.values()).collect(toSet()));
+    private Map<ShelveName, List<Book>> getBooksFromStorage(final String userId) {
+        return getBooksPerShelve(userId, Stream.of(ShelveName.values()).collect(toSet()));
     }
 
-    private Map<Shelve, List<Book>> getBooksPerShelve(final String userId, final Set<Shelve> shelves) {
+    private Map<ShelveName, List<Book>> getBooksPerShelve(final String userId, final Set<ShelveName> shelves) {
         return shelves.stream()
                 .map(shelf -> Pair.of(shelf, STORAGE_SERVICE.loadBooks(userId, shelf)))
                 .collect(Collectors.toMap(Pair::getKey, Pair::getValue));

@@ -6,7 +6,7 @@ import static utils.TransformationUtils.*;
 import model.Book;
 import model.MissingDetails;
 import model.UserShelve;
-import model.enums.Shelve;
+import model.enums.ShelveName;
 import org.apache.commons.lang3.tuple.Pair;
 import org.jdom2.Document;
 import org.jdom2.Element;
@@ -47,14 +47,14 @@ class ResponseParser {
                 .collect(toList());
     }
 
-    Map<Shelve, Integer> getBookCountToRetrievePerShelf(final String response) {
+    Map<ShelveName, Integer> getBookCountToRetrievePerShelf(final String response) {
         final Document document = buildDocument(response);
 
         final List<Element> userShelves = document.getRootElement()
                 .getChild("shelves")
                 .getChildren("user_shelf");
 
-        return Stream.of(Shelve.values())
+        return Stream.of(ShelveName.values())
                 .map(shelve -> Pair.of(shelve, getBookCountForShelve(shelve.getValue(), userShelves)))
                 .filter(pair -> Objects.nonNull(pair.getValue()))
                 .collect(Collectors.toMap(Pair::getKey, Pair::getValue));

@@ -6,7 +6,7 @@ import static model.enums.BookField.*;
 import model.Book;
 import model.Statistic;
 import model.enums.BookField;
-import model.enums.Shelve;
+import model.enums.ShelveName;
 import model.enums.sort.SortOrder;
 import org.apache.commons.lang3.StringUtils;
 
@@ -72,12 +72,12 @@ public class PrinterUtils {
         System.out.println(SEPARATOR_LARGE);
     }
 
-    public static void printMissingData(final Shelve shelve, final Map<Book, List<BookField>> bookMissingFieldMap) {
+    public static void printMissingData(final ShelveName shelveName, final Map<Book, List<BookField>> bookMissingFieldMap) {
         final Map<Book, List<BookField>> mapWithValues = bookMissingFieldMap.entrySet().stream()
                 .filter(entry -> !entry.getValue().isEmpty())
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
 
-        System.out.println(String.format(MISSING_DATA, shelve, mapWithValues.size()) + NEWLINE);
+        System.out.println(String.format(MISSING_DATA, shelveName, mapWithValues.size()) + NEWLINE);
 
         mapWithValues.forEach((book, missingFields) -> System.out.println(book.toStringShort()
                 + NEWLINE

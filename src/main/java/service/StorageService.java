@@ -9,7 +9,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import model.Book;
 import model.ShelveMapping;
 import model.StoredBookData;
-import model.enums.Shelve;
+import model.enums.ShelveName;
 import utils.PrinterUtils;
 
 import java.io.FileReader;
@@ -46,18 +46,18 @@ public class StorageService {
         loadProperties();
     }
 
-    void saveBooks(final String userId, final Shelve shelve, final List<Book> books) {
+    void saveBooks(final String userId, final ShelveName shelveName, final List<Book> books) {
         try {
             final String booksJson = OBJECT_MAPPER.writeValueAsString(books);
-            Files.write(Paths.get(STORAGE_LOCATION + String.format(BOOKS_FILE, userId, shelve.getValue())), booksJson.getBytes(), CREATE, TRUNCATE_EXISTING);
+            Files.write(Paths.get(STORAGE_LOCATION + String.format(BOOKS_FILE, userId, shelveName.getValue())), booksJson.getBytes(), CREATE, TRUNCATE_EXISTING);
         } catch (final Exception e) {
             PrinterUtils.printSimple(String.format(COULD_NOT_SAVE_BOOKS_MESSAGE, e));
         }
     }
 
-    List<Book> loadBooks(final String userId, final Shelve shelve) {
+    List<Book> loadBooks(final String userId, final ShelveName shelveName) {
         try {
-            final String booksJson = new String(Files.readAllBytes(Paths.get(STORAGE_LOCATION + String.format(BOOKS_FILE, userId, shelve.getValue()))));
+            final String booksJson = new String(Files.readAllBytes(Paths.get(STORAGE_LOCATION + String.format(BOOKS_FILE, userId, shelveName.getValue()))));
             return OBJECT_MAPPER.readValue(booksJson, new TypeReference<List<Book>>() {
             });
         } catch (IOException e) {

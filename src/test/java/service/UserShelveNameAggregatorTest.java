@@ -10,7 +10,7 @@ import service.processing.ShelveAggregator;
 
 import java.util.List;
 
-public class UserShelveAggregatorTest {
+public class UserShelveNameAggregatorTest {
 
     private static final ShelveAggregator SHELVE_AGGREGATOR = new ShelveAggregator();
 

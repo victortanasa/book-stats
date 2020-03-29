@@ -3,7 +3,7 @@ import static model.enums.StatisticType.SINGLE_VALUE;
 
 import model.Book;
 import model.Statistic;
-import model.enums.Shelve;
+import model.enums.ShelveName;
 import service.AvailableStatisticsService;
 import service.BookLoaderService;
 import service.StatisticsService;
@@ -25,11 +25,11 @@ public class BookStats {
     private static final BookLoaderService BOOK_LOADER_SERVICE = new BookLoaderService(MY_USER_ID);
 
     public static void main(final String[] args) {
-        final Map<Shelve, List<Book>> shelvesAndBook = BOOK_LOADER_SERVICE.loadBooks(BookLoaderService.Source.STORAGE);
+        final Map<ShelveName, List<Book>> shelvesAndBook = BOOK_LOADER_SERVICE.loadBooks(BookLoaderService.Source.STORAGE);
 
-        final List<Statistic> availableStatistics = AVAILABLE_STATISTICS_SERVICE.getAvailableStatistics(shelvesAndBook.get(Shelve.READ));
+        final List<Statistic> availableStatistics = AVAILABLE_STATISTICS_SERVICE.getAvailableStatistics(shelvesAndBook.get(ShelveName.READ));
 
-        final StatisticsService statisticsService = new StatisticsService(shelvesAndBook.get(Shelve.READ));
+        final StatisticsService statisticsService = new StatisticsService(shelvesAndBook.get(ShelveName.READ));
 
         availableStatistics.stream()
                 .filter(statistic -> MAP.equals(statistic.getType()))

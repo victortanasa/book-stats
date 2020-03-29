@@ -1,6 +1,6 @@
 package model.enums;
 
-public enum Shelve {
+public enum ShelveName {
 
     READ("read"),
     FAVORITES("favorites"),
@@ -10,7 +10,7 @@ public enum Shelve {
 
     private String name;
 
-    Shelve(final String name) {
+    ShelveName(final String name) {
         this.name = name;
     }
 
