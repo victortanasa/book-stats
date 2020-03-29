@@ -6,11 +6,16 @@ import static java.time.temporal.ChronoUnit.DAYS;
 import static java.time.temporal.TemporalAdjusters.firstDayOfMonth;
 import static java.time.temporal.TemporalAdjusters.lastDayOfMonth;
 import static java.util.stream.Collectors.toSet;
+import static model.enums.sort.SortOrder.DESC;
 import static service.Statistics.*;
 
 import com.google.common.base.Supplier;
+import com.google.common.collect.Maps;
+import com.google.common.collect.Ordering;
 import model.Book;
 import model.Statistic;
+import model.enums.sort.SortBy;
+import model.enums.sort.SortOrder;
 import org.apache.commons.lang3.tuple.Pair;
 
 import java.time.LocalDate;
@@ -62,8 +67,12 @@ public class StatisticsService {
         singleValueStatistics.put(AVERAGE_BOOKS_READ_PER_MONTH, this::getAverageBooksReadPerMonth);
     }
 
+    //TODO: sortMapByValue sort order
     public Map<String, ?> getMapStatistic(final Statistic statistic) {
-        return sortDescendingByValue(mapStatistic.get(statistic).get());
+        final Map<String, ?> statistics = mapStatistic.get(statistic).get();
+
+        return SortBy.KEY.equals(statistic.getSortBy()) ?
+                sortMapByKey(statistics, statistic.getSortOrder()) : sortMapByValue(statistics, statistic.getSortOrder());
     }
 
     public Number getSingeValueStatistic(final Statistic statistic) {
@@ -211,7 +220,15 @@ public class StatisticsService {
                 Pair.of(getMonth(book.getDateFinished()), pageCountForMonthFinished));
     }
 
-    private static Map<String, ?> sortDescendingByValue(final Map<String, ?> map) {
+    private static Map<String, ?> sortMapByKey(final Map<String, ?> map, final SortOrder sortOrder) {
+        final Map<String, Object> sortedMap = Maps.newTreeMap(DESC.equals(sortOrder)
+                ? Ordering.natural().reverse() : Ordering.natural());
+
+        sortedMap.putAll(map);
+        return sortedMap;
+    }
+
+    private static Map<String, ?> sortMapByValue(final Map<String, ?> map, final SortOrder sortOrder) {
         return map.entrySet().stream()
                 .sorted(Collections.reverseOrder(getDescendingEntryComparator()))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));

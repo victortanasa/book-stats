@@ -1,12 +1,12 @@
 package utils;
 
 import static com.google.common.collect.Maps.newHashMap;
+import static model.enums.BookField.*;
 
 import model.Book;
 import model.Statistic;
 import model.enums.BookField;
 import model.enums.Shelve;
-import model.enums.sort.SortBy;
 import model.enums.sort.SortOrder;
 import org.apache.commons.lang3.StringUtils;
 
@@ -27,19 +27,19 @@ public class PrinterUtils {
     private static final String STATISTIC_PRINT_FORMAT = "%s: %s";
     private static final String NEWLINE = "\n";
 
-    private static final Map<SortBy, Comparator<Book>> SORT_FUNCTIONS;
+    private static final Map<BookField, Comparator<Book>> SORT_FUNCTIONS;
 
     static {
         SORT_FUNCTIONS = newHashMap();
-        SORT_FUNCTIONS.put(SortBy.DATE_FINISHED, Comparator.comparing(Book::getDateFinished));
-        SORT_FUNCTIONS.put(SortBy.PUBLICATION_YEAR, Comparator.comparing(Book::getPublicationYear));
-        SORT_FUNCTIONS.put(SortBy.PAGE_NUMBER, Comparator.comparing(Book::getPageNumber));
-        SORT_FUNCTIONS.put(SortBy.AUTHOR, Comparator.comparing(Book::getAuthorAsString));
-        SORT_FUNCTIONS.put(SortBy.RATING, Comparator.comparing(Book::getRating));
-        SORT_FUNCTIONS.put(SortBy.TITLE, Comparator.comparing(Book::getTitle));
+        SORT_FUNCTIONS.put(DATE_FINISHED, Comparator.comparing(Book::getDateFinished));
+        SORT_FUNCTIONS.put(PUBLICATION_YEAR, Comparator.comparing(Book::getPublicationYear));
+        SORT_FUNCTIONS.put(PAGE_NUMBER, Comparator.comparing(Book::getPageNumber));
+        SORT_FUNCTIONS.put(AUTHORS, Comparator.comparing(Book::getAuthorAsString));
+        SORT_FUNCTIONS.put(RATING, Comparator.comparing(Book::getRating));
+        SORT_FUNCTIONS.put(TITLE, Comparator.comparing(Book::getTitle));
     }
 
-    public static void printBooks(final List<Book> books, final SortBy sortBy, final SortOrder sortOrder) {
+    public static void printBooks(final List<Book> books, final BookField sortBy, final SortOrder sortOrder) {
         final Comparator<Book> comparator = SortOrder.ASC.equals(sortOrder) ?
                 SORT_FUNCTIONS.get(sortBy) : SORT_FUNCTIONS.get(sortBy).reversed();
 
