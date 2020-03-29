@@ -26,8 +26,8 @@ public class GoodReadsAPIService {
 
     private static final String API_KEY = "aB9VcY1rOGCzxMONqjk8Ug";
 
-    private static final int BOOK_LIMIT_PER_CALL = 100;
     private static final int DEFAULT_TIMEOUT_IN_SECONDS = 20;
+    private static final int BOOK_LIMIT_PER_CALL = 100;
 
     private static final String GOOD_READS_BASE_URL = "https://www.goodreads.com/";
 

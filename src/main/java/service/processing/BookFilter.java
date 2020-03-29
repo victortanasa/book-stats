@@ -16,4 +16,5 @@ public class BookFilter {
                 .filter(book -> !EXCLUDED_BOOK_IDS.contains(book.getId()))
                 .collect(toList());
     }
+
 }

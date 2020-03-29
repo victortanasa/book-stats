@@ -60,14 +60,12 @@ public class AvailableStatisticsService {
     }
 
     public List<Statistic> getAvailableStatistics(final List<Book> books) {
-        final Map<Book, List<BookField>> missingFieldsMap = BOOK_FIELD_VALIDATOR.getMissingFields(books);
-
-        final List<BookField> missingFields = missingFieldsMap.values().stream()
+        final List<BookField> missingFields = BOOK_FIELD_VALIDATOR.getMissingFields(books).values().stream()
                 .flatMap(Collection::stream)
                 .distinct()
                 .collect(toList());
 
-        final List<Statistic> availableStatisticNames = REQUIRED_FIELDS_FOR_STATISTICS.entrySet().stream()
+        final List<Statistic> availableStatistics = REQUIRED_FIELDS_FOR_STATISTICS.entrySet().stream()
                 .filter(entry -> !missingFields.contains(entry.getKey()))
                 .map(Map.Entry::getValue)
                 .flatMap(Collection::stream)
@@ -75,7 +73,7 @@ public class AvailableStatisticsService {
                 .collect(toList());
 
         return Stream.concat(
-                availableStatisticNames.stream(),
+                availableStatistics.stream(),
                 ALWAYS_AVAILABLE_STATISTIC_NAMES.stream())
                 .collect(toList());
     }

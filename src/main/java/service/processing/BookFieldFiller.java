@@ -5,8 +5,8 @@ import static utils.TransformationUtils.getDate;
 import static utils.TransformationUtils.getInteger;
 
 import model.Book;
-import model.enums.BookField;
 import model.StoredBookData;
+import model.enums.BookField;
 import service.StorageService;
 
 import java.time.format.DateTimeFormatter;
@@ -34,7 +34,6 @@ public class BookFieldFiller {
 
     private static final StorageService STORAGE_SERVICE = new StorageService();
 
-    //TODO: better code, passing that user id a lot
     public List<Book> fillMissingFieldsForBooks(final String userId, final Map<Book, List<BookField>> books) {
         return books.entrySet().stream()
                 .map(entry -> fillMissingBookFields(userId, entry.getKey(), entry.getValue()))
@@ -44,7 +43,7 @@ public class BookFieldFiller {
     private Book fillMissingBookFields(final String userId, final Book book, final List<BookField> missingFields) {
         final Optional<StoredBookData> storedDataForBook = getStoredDataForBook(userId, book);
 
-        storedDataForBook.ifPresent(data -> fillMissingFields(book, missingFields, storedDataForBook.get()));
+        storedDataForBook.ifPresent(data -> fillMissingFields(book, storedDataForBook.get(), missingFields));
 
         return book;
     }
@@ -55,7 +54,7 @@ public class BookFieldFiller {
                 .findFirst();
     }
 
-    private void fillMissingFields(final Book book, final List<BookField> missingFields, final StoredBookData storedBookData) {
+    private void fillMissingFields(final Book book, final StoredBookData storedBookData, final List<BookField> missingFields) {
         missingFields.forEach(field -> {
             final Object fieldValue = storedBookData.getFieldValue(field);
             if (!Objects.isNull(fieldValue)) {

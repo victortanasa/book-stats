@@ -24,8 +24,6 @@ public class ShelveAggregator {
     private List<String> shelveToExcludeThatStartWith;
 
     //TODO: Docs
-    //TODO: maybe top category, sub-category
-    //TODO: initialize list of authors from get all Books step and compose authors shelves; maybe series name? (foundation)
     public ShelveAggregator() {
         shelveMappings = STORAGE_SERVICE.loadShelveMappings();
         shelveToExclude = STORAGE_SERVICE.getShelvesToExclude();
