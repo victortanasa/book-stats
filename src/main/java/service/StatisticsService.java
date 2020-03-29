@@ -31,7 +31,7 @@ public class StatisticsService {
     private static final String DECADE_FORMAT = "%d's";
 
     private Map<Statistic, Supplier<Number>> singleValueStatistics;
-    private Map<Statistic, Supplier<Map<String, ?>>> mapStatistic;
+    private Map<Statistic, Supplier<Map<String, ? extends Comparable<?>>>> mapStatistic;
 
     private List<Book> library;
 
@@ -68,89 +68,89 @@ public class StatisticsService {
     }
 
     public Map<String, ?> getMapStatistic(final Statistic statistic) {
-        final Map<String, ?> statistics = mapStatistic.get(statistic).get();
+        final Map<String, ? extends Comparable<?>> statistics = mapStatistic.get(statistic).get();
 
         return SortBy.KEY.equals(statistic.getSortBy()) ?
-                sortMapByKey(statistics, statistic.getSortOrder()) : sortMapByValue(statistics, statistic.getSortOrder());
+                sortMapByKey(statistics, statistic.getSortOrder()) : sortByValue(statistics, statistic.getSortOrder());
     }
 
     public Number getSingeValueStatistic(final Statistic statistic) {
         return singleValueStatistics.get(statistic).get();
     }
 
-    private Map<String, ?> getMostReadAuthorsByPageCount() {
+    private Map<String, ? extends Comparable<?>> getMostReadAuthorsByPageCount() {
         return library.stream()
                 .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.summingInt(Book::getPageNumber)));
     }
 
-    private Map<String, ?> getMostReadAuthorsBookCount() {
+    private Map<String, ? extends Comparable<?>> getMostReadAuthorsBookCount() {
         return library.stream()
                 .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.counting()));
     }
 
-    private Map<String, ?> getBooksReadPerMonth() {
+    private Map<String, ? extends Comparable<?>> getBooksReadPerMonth() {
         return library.stream()
                 .collect(Collectors.groupingBy(book -> getMonth(book.getDateFinished()), Collectors.counting()));
     }
 
-    private Map<String, ?> getPagesReadPerMonth() {
+    private Map<String, ? extends Comparable<?>> getPagesReadPerMonth() {
         return library.stream()
                 .collect(Collectors.groupingBy(book -> getMonth(book.getDateFinished()), Collectors.summingInt(Book::getPageNumber)));
     }
 
-    private Map<String, ?> getPagesReadPerMonthMedian() {
+    private Map<String, ? extends Comparable<?>> getPagesReadPerMonthMedian() {
         return library.stream()
                 .map(this::getPagesReadPerMonths)
                 .flatMap(Collection::stream)
                 .collect(Collectors.groupingBy(Pair::getKey, Collectors.summingDouble(Pair::getValue)));
     }
 
-    private Map<String, ?> getBooksReadPerYear() {
+    private Map<String, ? extends Comparable<?>> getBooksReadPerYear() {
         return library.stream()
                 .collect(Collectors.groupingBy(book -> getYear(book.getDateFinished()), Collectors.counting()));
     }
 
-    private Map<String, ?> getPagesReadPerYear() {
+    private Map<String, ? extends Comparable<?>> getPagesReadPerYear() {
         return library.stream()
                 .collect(Collectors.groupingBy(book -> getYear(book.getDateFinished()), Collectors.summingInt(Book::getPageNumber)));
     }
 
-    private Map<String, ?> getAverageRatingsForAuthors() {
+    private Map<String, ? extends Comparable<?>> getAverageRatingsForAuthors() {
         return library.stream()
                 .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingInt(Book::getRating)));
     }
 
-    private Map<String, ?> getAveragePageCountForAuthors() {
+    private Map<String, ? extends Comparable<?>> getAveragePageCountForAuthors() {
         return library.stream()
                 .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingInt(Book::getPageNumber)));
     }
 
-    private Map<String, ?> getAverageDaysToReadABookPerAuthor() {
+    private Map<String, ? extends Comparable<?>> getAverageDaysToReadABookPerAuthor() {
         return library.stream()
                 .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingLong(Book::getDaysReadIn)));
     }
 
-    private Map<String, ?> getMostBooksReadByPublishedDecade() {
+    private Map<String, ? extends Comparable<?>> getMostBooksReadByPublishedDecade() {
         return library.stream()
                 .collect(Collectors.groupingBy(book -> getDecade(book.getPublicationYear()), Collectors.counting()));
     }
 
-    private Map<String, ?> getMostPopularAuthorsByAverageNumberOfRatings() {
+    private Map<String, ? extends Comparable<?>> getMostPopularAuthorsByAverageNumberOfRatings() {
         return library.stream()
                 .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingInt(Book::getRatingsCount)));
     }
 
-    private Map<String, ?> getRatingsDistribution() {
+    private Map<String, ? extends Comparable<?>> getRatingsDistribution() {
         return library.stream()
                 .collect(Collectors.groupingBy(book -> book.getRating().toString(), Collectors.counting()));
     }
 
-    private Map<String, ?> getFormatsDistribution() {
+    private Map<String, ? extends Comparable<?>> getFormatsDistribution() {
         return library.stream()
                 .collect(Collectors.groupingBy(Book::getFormat, Collectors.counting()));
     }
 
-    private Map<String, ?> getMostPopularShelves() {
+    private Map<String, ? extends Comparable<?>> getMostPopularShelves() {
         final List<String> shelves = library.stream()
                 .map(Book::getShelves)
                 .flatMap(Collection::stream)
@@ -227,22 +227,18 @@ public class StatisticsService {
         return sortedMap;
     }
 
-    private static Map<String, ?> sortMapByValue(final Map<String, ?> map, final SortOrder sortOrder) {
-        final Comparator<Map.Entry<String, ?>> comparator = DESC.equals(sortOrder) ?
-                Collections.reverseOrder(getDescendingEntryComparator()) : getDescendingEntryComparator();
+    @SuppressWarnings("unchecked")
+    private static <V extends Comparable> Map<String, V> sortByValue(final Map<String, V> map, final SortOrder sortOrder) {
+        final Map<String, V> result = new LinkedHashMap<>();
 
-        return map.entrySet().stream()
-                .sorted(comparator)
-                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
-    }
+        final Comparator<Map.Entry<String, V>> reversed = DESC.equals(sortOrder) ?
+                Map.Entry.<String, V>comparingByValue().reversed() : Map.Entry.comparingByValue();
 
-    private static Comparator<Map.Entry<String, ?>> getDescendingEntryComparator() {
-        return (o1, o2) -> {
-            final Double firstDouble = new Double(o1.getValue().toString());
-            final Double secondDouble = new Double(o2.getValue().toString());
+        map.entrySet().stream()
+                .sorted(reversed)
+                .forEachOrdered(element -> result.put(element.getKey(), element.getValue()));
 
-            return firstDouble.equals(secondDouble) ? 0 : firstDouble > secondDouble ? 1 : -1;
-        };
+        return result;
     }
 
     private static String getDecade(final Integer releaseYear) {
