@@ -21,5 +21,4 @@ public class TODOHolder {
 
     //TODO: ilie Isaac Asimov: 2 average rating
 
-    //TODO: store all shelves?
 }

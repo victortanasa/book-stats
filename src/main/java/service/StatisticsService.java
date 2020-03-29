@@ -47,8 +47,9 @@ public class StatisticsService {
         mapStatistic.put(PAGES_READ_PER_YEAR, this::getPagesReadPerYear);
 
         mapStatistic.put(AVERAGE_RATING_FOR_AUTHORS, this::getAverageRatingsForAuthors);
-        mapStatistic.put(AVERAGE_PAGE_NUMBER_FOR_AUTHORS, this::getAveragePageCountForAuthors);
+        mapStatistic.put(AVERAGE_PAGE_NUMBER_FOR_AUTHORS, this::getAveragePageNumberForAuthors);
         mapStatistic.put(AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR, this::getAverageDaysToReadABookPerAuthor);
+        mapStatistic.put(AVERAGE_PAGE_NUMBER_PER_YEAR, this::getAveragePageNumberPerYear);
 
         mapStatistic.put(MOST_BOOKS_READ_BY_PUBLISHED_DECADE, this::getMostBooksReadByPublishedDecade);
         mapStatistic.put(MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS, this::getMostPopularAuthorsByAverageNumberOfRatings);
@@ -119,7 +120,7 @@ public class StatisticsService {
                 .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingInt(Book::getRating)));
     }
 
-    private Map<String, ? extends Comparable<?>> getAveragePageCountForAuthors() {
+    private Map<String, ? extends Comparable<?>> getAveragePageNumberForAuthors() {
         return library.stream()
                 .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingInt(Book::getPageNumber)));
     }
@@ -127,6 +128,11 @@ public class StatisticsService {
     private Map<String, ? extends Comparable<?>> getAverageDaysToReadABookPerAuthor() {
         return library.stream()
                 .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingLong(Book::getDaysReadIn)));
+    }
+
+    private Map<String, ? extends Comparable<?>> getAveragePageNumberPerYear() {
+        return library.stream()
+                .collect(Collectors.groupingBy(book -> getYear(book.getDateFinished()), Collectors.averagingInt(Book::getPageNumber)));
     }
 
     private Map<String, ? extends Comparable<?>> getMostBooksReadByPublishedDecade() {

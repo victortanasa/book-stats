@@ -18,6 +18,8 @@ public class Statistic {
 
     private Integer resultLimit;
 
+    //TODO: filter -> authors have more than x books for Average page number for authors
+
     public Statistic(final String name, final StatisticType type) {
         this.name = name;
         this.type = type;

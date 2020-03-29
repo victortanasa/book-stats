@@ -17,8 +17,9 @@ public class Statistics {
     static Statistic MOST_READ_AUTHORS_BY_BOOK_COUNT = new Statistic("Most read authors by book count", MAP, VALUE, DESC);
     static Statistic MOST_READ_AUTHORS_BY_PAGE_COUNT = new Statistic("Most read authors by page count", MAP, VALUE, DESC);
     static Statistic AVERAGE_PAGE_NUMBER_FOR_AUTHORS = new Statistic("Average page number for authors", MAP, VALUE, DESC);
-    static Statistic PAGES_READ_PER_MONTH_MEDIAN = new Statistic("Pages red per month median", MAP, KEY, ASC);
+    static Statistic AVERAGE_PAGE_NUMBER_PER_YEAR = new Statistic("Average page number per year", MAP, KEY, ASC);
     static Statistic AVERAGE_RATING_FOR_AUTHORS = new Statistic("Average rating for authors", MAP, VALUE, DESC);
+    static Statistic PAGES_READ_PER_MONTH_MEDIAN = new Statistic("Pages red per month median", MAP, KEY, ASC);
     static Statistic MOST_POPULAR_SHELVES = new Statistic("Most popular shelves", MAP, VALUE, DESC).withResultLimit(12);
     static Statistic RATINGS_DISTRIBUTION = new Statistic("Ratings distribution", MAP, KEY, DESC);
     static Statistic FORMATS_DISTRIBUTION = new Statistic("Formats distribution", MAP, VALUE, DESC);
