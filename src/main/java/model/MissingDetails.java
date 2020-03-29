@@ -6,9 +6,9 @@ public class MissingDetails {
 
     private Integer publicationYear;
 
-    private List<String> shelves;
+    private List<Shelve> shelves;
 
-    public MissingDetails(final Integer publicationYear, final List<String> shelves) {
+    public MissingDetails(final Integer publicationYear, final List<Shelve> shelves) {
         this.publicationYear = publicationYear;
         this.shelves = shelves;
     }
@@ -17,7 +17,7 @@ public class MissingDetails {
         return publicationYear;
     }
 
-    public List<String> getShelves() {
+    public List<Shelve> getShelves() {
         return shelves;
     }
 }

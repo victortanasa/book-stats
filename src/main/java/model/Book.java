@@ -45,7 +45,7 @@ public class Book {
 
     private List<String> authors;
 
-    private List<String> shelves;
+    private List<Shelve> shelves;
 
     public Book() {
     }
@@ -189,11 +189,11 @@ public class Book {
         this.authors = authors;
     }
 
-    public List<String> getShelves() {
+    public List<Shelve> getShelves() {
         return shelves;
     }
 
-    public void setShelves(final List<String> shelves) {
+    public void setShelves(final List<Shelve> shelves) {
         this.shelves = shelves;
     }
 
@@ -202,7 +202,7 @@ public class Book {
         return this;
     }
 
-    public Book withShelves(final List<String> shelves) {
+    public Book withShelves(final List<Shelve> shelves) {
         this.shelves = shelves;
         return this;
     }

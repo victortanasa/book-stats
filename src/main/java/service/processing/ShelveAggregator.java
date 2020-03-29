@@ -4,8 +4,8 @@ import static java.util.Comparator.comparing;
 import static java.util.Comparator.reverseOrder;
 import static java.util.stream.Collectors.toList;
 
+import model.Shelve;
 import model.ShelveMapping;
-import model.UserShelve;
 import service.StorageService;
 
 import java.util.List;
@@ -32,15 +32,15 @@ public class ShelveAggregator {
         shelveToExcludeThatStartWith = STORAGE_SERVICE.getShelvesToExcludeThatStartWith();
     }
 
-    public List<String> getTopShelves(final List<UserShelve> allShelves) {
-        final List<UserShelve> normalizedAndFilteredShelves = allShelves.stream()
+    public List<String> getTopShelves(final List<Shelve> allShelves) {
+        final List<Shelve> normalizedAndFilteredShelves = allShelves.stream()
                 .filter(this::shelveNotExcluded)
                 .filter(this::shelveNotInStartsWithFilterList)
                 .map(this::normalizeShelveName)
                 .collect(toList());
 
         final Map<String, Integer> shelvesPopularityMap = normalizedAndFilteredShelves.stream()
-                .collect(Collectors.groupingBy(UserShelve::getName, Collectors.summingInt(UserShelve::getPopularity)));
+                .collect(Collectors.groupingBy(Shelve::getName, Collectors.summingInt(Shelve::getPopularity)));
 
         return shelvesPopularityMap.entrySet().stream()
                 .sorted(comparing(Map.Entry::getValue, reverseOrder()))
@@ -49,22 +49,22 @@ public class ShelveAggregator {
                 .collect(toList());
     }
 
-    private UserShelve normalizeShelveName(final UserShelve userShelve) {
+    private Shelve normalizeShelveName(final Shelve shelve) {
         shelveMappings.stream()
-                .filter(mapping -> mapping.getAlternateValues().contains(userShelve.getName()))
+                .filter(mapping -> mapping.getAlternateValues().contains(shelve.getName()))
                 .findFirst()
-                .ifPresent(mapping -> userShelve.setName(mapping.getNormalizedValue()));
+                .ifPresent(mapping -> shelve.setName(mapping.getNormalizedValue()));
 
-        return userShelve;
+        return shelve;
     }
 
-    private boolean shelveNotExcluded(final UserShelve userShelve) {
-        return !shelveToExclude.contains(userShelve.getName());
+    private boolean shelveNotExcluded(final Shelve shelve) {
+        return !shelveToExclude.contains(shelve.getName());
     }
 
-    private boolean shelveNotInStartsWithFilterList(final UserShelve userShelve) {
+    private boolean shelveNotInStartsWithFilterList(final Shelve shelve) {
         return shelveToExcludeThatStartWith.stream()
-                .noneMatch(shelveNameToFilter -> userShelve.getName().startsWith(shelveNameToFilter));
+                .noneMatch(shelveNameToFilter -> shelve.getName().startsWith(shelveNameToFilter));
     }
 
 }

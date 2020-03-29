@@ -4,26 +4,26 @@ import static com.google.common.collect.Lists.newArrayList;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 
-import model.UserShelve;
+import model.Shelve;
 import org.junit.Test;
 import service.processing.ShelveAggregator;
 
 import java.util.List;
 
-public class UserShelveNameAggregatorTest {
+public class ShelveNameAggregatorTest {
 
     private static final ShelveAggregator SHELVE_AGGREGATOR = new ShelveAggregator();
 
     @Test
     public void clean() {
-        final List<UserShelve> shelvesToClean = newArrayList(
-                new UserShelve("currently-reading", 2000),
-                new UserShelve("science-fiction", 4500),
-                new UserShelve("scifi", 3200),
-                new UserShelve("sf", 300),
-                new UserShelve("sci-fi", 4600),
-                new UserShelve("fantasy", 2000),
-                new UserShelve("post-apocalyptic", 1000));
+        final List<Shelve> shelvesToClean = newArrayList(
+                new Shelve("currently-reading", 2000),
+                new Shelve("science-fiction", 4500),
+                new Shelve("scifi", 3200),
+                new Shelve("sf", 300),
+                new Shelve("sci-fi", 4600),
+                new Shelve("fantasy", 2000),
+                new Shelve("post-apocalyptic", 1000));
 
         final List<String> strings = SHELVE_AGGREGATOR.getTopShelves(shelvesToClean);
 

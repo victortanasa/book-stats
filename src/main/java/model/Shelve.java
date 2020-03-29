@@ -3,14 +3,16 @@ package model;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
-//TODO: replace with Pair<>
-public class UserShelve {
+public class Shelve {
 
     private String name;
 
     private Integer popularity;
 
-    public UserShelve(final String name, final Integer popularity) {
+    public Shelve() {
+    }
+
+    public Shelve(final String name, final Integer popularity) {
         this.popularity = popularity;
         this.name = name;
     }

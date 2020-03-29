@@ -15,6 +15,7 @@ import model.Statistic;
 import model.enums.sort.SortBy;
 import model.enums.sort.SortOrder;
 import org.apache.commons.lang3.tuple.Pair;
+import service.processing.ShelveAggregator;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -31,9 +32,11 @@ public class StatisticsService {
     private Map<Statistic, Supplier<Number>> singleValueStatistics;
     private Map<Statistic, Supplier<Map<String, ? extends Comparable<?>>>> mapStatistic;
 
+    private ShelveAggregator shelveAggregator;
     private List<Book> library;
 
     public StatisticsService(final List<Book> library) {
+        this.shelveAggregator = new ShelveAggregator();
         this.library = library;
 
         mapStatistic = newHashMap();
@@ -156,12 +159,13 @@ public class StatisticsService {
     }
 
     private Map<String, ? extends Comparable<?>> getMostPopularShelves() {
-        final List<String> shelves = library.stream()
+        final List<String> mostPopularShelves = library.stream()
                 .map(Book::getShelves)
+                .map(shelves -> shelveAggregator.getTopShelves(shelves))
                 .flatMap(Collection::stream)
                 .collect(Collectors.toList());
 
-        return shelves.stream()
+        return mostPopularShelves.stream()
                 .collect(Collectors.groupingBy(shelve -> shelve, Collectors.counting()));
     }
 

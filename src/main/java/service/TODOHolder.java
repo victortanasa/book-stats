@@ -12,8 +12,6 @@ public class TODOHolder {
 //    Authors: [Dennis E. Taylor]
 //    Missing Fields: [FORMAT, PAGE_NUMBER]
 
-    //TODO: replace UserShelve with Pair?
-
     //TODO: Most popular shelves, Most read authors by book count - limit number
     //TODO: Average rating for authors - more than x books
 

@@ -5,13 +5,12 @@ import static utils.TransformationUtils.*;
 
 import model.Book;
 import model.MissingDetails;
-import model.UserShelve;
+import model.Shelve;
 import model.enums.ShelveName;
 import org.apache.commons.lang3.tuple.Pair;
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.input.SAXBuilder;
-import service.processing.ShelveAggregator;
 import utils.PrinterUtils;
 import utils.TransformationUtils;
 
@@ -32,7 +31,6 @@ class ResponseParser {
 
     private static final int SHELF_LIMIT = 100;
 
-    private static final ShelveAggregator SHELVE_AGGREGATOR = new ShelveAggregator();
     private static final SAXBuilder SAX_BUILDER = new SAXBuilder();
 
     List<Book> getBooks(final String response) {
@@ -83,12 +81,12 @@ class ResponseParser {
                 .getChild("popular_shelves")
                 .getChildren("shelf");
 
-        final List<UserShelve> popularShelves = allShelves.stream()
+        final List<Shelve> popularShelves = allShelves.stream()
                 .map(this::toUserShelve)
                 .limit(SHELF_LIMIT)
                 .collect(toList());
 
-        return new MissingDetails(getInteger(publicationYear), SHELVE_AGGREGATOR.getTopShelves(popularShelves));
+        return new MissingDetails(getInteger(publicationYear), popularShelves);
     }
 
     private Document buildDocument(final String response) {
@@ -100,10 +98,10 @@ class ResponseParser {
         }
     }
 
-    private UserShelve toUserShelve(final Element shelve) {
+    private Shelve toUserShelve(final Element shelve) {
         final String name = shelve.getAttribute("name").getValue();
         final Integer popularity = getInteger(shelve.getAttribute("count").getValue());
-        return new UserShelve(name, popularity);
+        return new Shelve(name, popularity);
     }
 
     private Book toBook(final Element element) {
