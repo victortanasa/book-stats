@@ -229,16 +229,12 @@ public class StatisticsService {
 
     @SuppressWarnings("unchecked")
     private static <V extends Comparable> Map<String, V> sortByValue(final Map<String, V> map, final SortOrder sortOrder) {
-        final Map<String, V> result = new LinkedHashMap<>();
-
         final Comparator<Map.Entry<String, V>> reversed = DESC.equals(sortOrder) ?
                 Map.Entry.<String, V>comparingByValue().reversed() : Map.Entry.comparingByValue();
 
-        map.entrySet().stream()
+        return map.entrySet().stream()
                 .sorted(reversed)
-                .forEachOrdered(element -> result.put(element.getKey(), element.getValue()));
-
-        return result;
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
     }
 
     private static String getDecade(final Integer releaseYear) {
