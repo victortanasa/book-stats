@@ -38,14 +38,14 @@ public class AvailableStatisticsService {
                 MOST_READ_AUTHORS_BY_PAGE_COUNT,
                 AVERAGE_PAGE_NUMBER_FOR_AUTHORS,
                 AVERAGE_PAGES_READ_PER_MONTH,
-                AVERAGE_PAGE_NUMBER_PER_YEAR));
+                AVERAGE_BOOK_LENGTH_PER_YEAR));
         REQUIRED_FIELDS_FOR_STATISTICS.put(BookField.DATE_FINISHED, newArrayList(
                 AVERAGE_DAYS_TO_READ_A_BOOK,
                 AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR,
                 AVERAGE_BOOKS_READ_PER_MONTH,
                 BOOKS_READ_PER_MONTH,
                 BOOKS_READ_PER_YEAR,
-                AVERAGE_PAGE_NUMBER_PER_YEAR));
+                AVERAGE_BOOK_LENGTH_PER_YEAR));
         REQUIRED_FIELDS_FOR_STATISTICS.put(BookField.DATE_STARTED, newArrayList(
                 AVERAGE_DAYS_TO_READ_A_BOOK,
                 AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR,

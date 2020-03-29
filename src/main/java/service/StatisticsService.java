@@ -49,7 +49,7 @@ public class StatisticsService {
         mapStatistic.put(AVERAGE_RATING_FOR_AUTHORS, this::getAverageRatingsForAuthors);
         mapStatistic.put(AVERAGE_PAGE_NUMBER_FOR_AUTHORS, this::getAveragePageNumberForAuthors);
         mapStatistic.put(AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR, this::getAverageDaysToReadABookPerAuthor);
-        mapStatistic.put(AVERAGE_PAGE_NUMBER_PER_YEAR, this::getAveragePageNumberPerYear);
+        mapStatistic.put(AVERAGE_BOOK_LENGTH_PER_YEAR, this::getAverageBookLengthPerYear);
 
         mapStatistic.put(MOST_BOOKS_READ_BY_PUBLISHED_DECADE, this::getMostBooksReadByPublishedDecade);
         mapStatistic.put(MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS, this::getMostPopularAuthorsByAverageNumberOfRatings);
@@ -130,7 +130,7 @@ public class StatisticsService {
                 .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingLong(Book::getDaysReadIn)));
     }
 
-    private Map<String, ? extends Comparable<?>> getAveragePageNumberPerYear() {
+    private Map<String, ? extends Comparable<?>> getAverageBookLengthPerYear() {
         return library.stream()
                 .collect(Collectors.groupingBy(book -> getYear(book.getDateFinished()), Collectors.averagingInt(Book::getPageNumber)));
     }
@@ -226,22 +226,22 @@ public class StatisticsService {
 
     @SuppressWarnings("unchecked")
     private static <K extends Comparable, V> Map<K, V> sortMapByKey(final Map<K, V> map, final SortOrder sortOrder, final Integer limit) {
-        final Comparator<Map.Entry<K, V>> entryComparator = DESC.equals(sortOrder) ?
+        final Comparator<Map.Entry<K, V>> comparator = DESC.equals(sortOrder) ?
                 Map.Entry.<K, V>comparingByKey().reversed() : Map.Entry.comparingByKey();
 
         return map.entrySet().stream()
-                .sorted(entryComparator)
+                .sorted(comparator)
                 .limit(limit)
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
     }
 
     @SuppressWarnings("unchecked")
     private static <K, V extends Comparable> Map<K, V> sortMapByValue(final Map<K, V> map, final SortOrder sortOrder, final Integer limit) {
-        final Comparator<Map.Entry<K, V>> reversed = DESC.equals(sortOrder) ?
+        final Comparator<Map.Entry<K, V>> comparator = DESC.equals(sortOrder) ?
                 Map.Entry.<K, V>comparingByValue().reversed() : Map.Entry.comparingByValue();
 
         return map.entrySet().stream()
-                .sorted(reversed)
+                .sorted(comparator)
                 .limit(limit)
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
     }
