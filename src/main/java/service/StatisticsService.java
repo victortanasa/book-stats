@@ -65,12 +65,12 @@ public class StatisticsService {
         singleValueStatistics.put(AVERAGE_BOOKS_READ_PER_MONTH, this::getAverageBooksReadPerMonth);
     }
 
-    public Map<String, ?> getMapStatistic(final Statistic statistic) {
+    public Map<String, ? extends Comparable<?>> getMapStatistic(final Statistic statistic) {
         final Map<String, ? extends Comparable<?>> statistics = mapStatistic.get(statistic).get();
 
         return SortBy.KEY.equals(statistic.getSortBy()) ?
                 sortMapByKey(statistics, statistic.getSortOrder(), statistic.getResultLimit()) :
-                sortByValue(statistics, statistic.getSortOrder(), statistic.getResultLimit());
+                sortMapByValue(statistics, statistic.getSortOrder(), statistic.getResultLimit());
     }
 
     public Number getSingeValueStatistic(final Statistic statistic) {
@@ -230,9 +230,9 @@ public class StatisticsService {
     }
 
     @SuppressWarnings("unchecked")
-    private static <V extends Comparable> Map<String, V> sortByValue(final Map<String, V> map, final SortOrder sortOrder, final Integer limit) {
-        final Comparator<Map.Entry<String, V>> reversed = DESC.equals(sortOrder) ?
-                Map.Entry.<String, V>comparingByValue().reversed() : Map.Entry.comparingByValue();
+    private static <K, V extends Comparable> Map<K, V> sortMapByValue(final Map<K, V> map, final SortOrder sortOrder, final Integer limit) {
+        final Comparator<Map.Entry<K, V>> reversed = DESC.equals(sortOrder) ?
+                Map.Entry.<K, V>comparingByValue().reversed() : Map.Entry.comparingByValue();
 
         return map.entrySet().stream()
                 .sorted(reversed)
