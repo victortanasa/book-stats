@@ -29,6 +29,7 @@ public class StorageService {
 
     private static final String RESOURCES_LOCATION = "src/main/resources/";
     private static final String STORAGE_LOCATION = RESOURCES_LOCATION + "storage/";
+    private static final String LIBRARY_LOCATION = STORAGE_LOCATION + "library/";
 
     private static final String BOOK_STATS_PROPERTIES_FILE = "bookStats.properties";
     private static final String STORED_BOOK_DATA_FILE = "storedBookData-%s.json";
@@ -49,7 +50,7 @@ public class StorageService {
     void saveBooks(final String userId, final ShelveName shelveName, final List<Book> books) {
         try {
             final String booksJson = OBJECT_MAPPER.writeValueAsString(books);
-            Files.write(Paths.get(STORAGE_LOCATION + String.format(BOOKS_FILE, userId, shelveName.getValue())), booksJson.getBytes(), CREATE, TRUNCATE_EXISTING);
+            Files.write(Paths.get(LIBRARY_LOCATION + String.format(BOOKS_FILE, userId, shelveName.getValue())), booksJson.getBytes(), CREATE, TRUNCATE_EXISTING);
         } catch (final Exception e) {
             PrinterUtils.printSimple(String.format(COULD_NOT_SAVE_BOOKS_MESSAGE, e));
         }
@@ -57,7 +58,7 @@ public class StorageService {
 
     List<Book> loadBooks(final String userId, final ShelveName shelveName) {
         try {
-            final String booksJson = new String(Files.readAllBytes(Paths.get(STORAGE_LOCATION + String.format(BOOKS_FILE, userId, shelveName.getValue()))));
+            final String booksJson = new String(Files.readAllBytes(Paths.get(LIBRARY_LOCATION + String.format(BOOKS_FILE, userId, shelveName.getValue()))));
             return OBJECT_MAPPER.readValue(booksJson, new TypeReference<List<Book>>() {
             });
         } catch (IOException e) {
