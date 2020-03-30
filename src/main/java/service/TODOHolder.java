@@ -19,4 +19,9 @@ public class TODOHolder {
 
     //TODO: ilie Isaac Asimov: 2 average rating
 
+    //TODO: to csv; !!!!! what month was the book read? similar to median
+
+    //Books vs Pages Read -> nu invers
+
+    //todo: do stats for top authors!
 }
