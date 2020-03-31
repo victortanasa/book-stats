@@ -10,6 +10,9 @@ public class Statistic {
     private static final int DEFAULT_RESULT_LIMIT = 1000;
 
     private String name;
+    //TODO: add to constructor
+    private String keyLabel;
+    private String valueLabel;
 
     private StatisticType type;
 
@@ -18,10 +21,6 @@ public class Statistic {
     private SortOrder sortOrder;
 
     private Integer resultLimit;
-
-    //TODO: maybe a better way?
-    private String statisticKeyName;
-    private String statisticValueName;
 
     public Statistic(final String name, final StatisticType type) {
         this.name = name;
@@ -60,12 +59,12 @@ public class Statistic {
         return TransformationUtils.getCamelCase(name);
     }
 
-    public String getStatisticKeyName() {
-        return statisticKeyName;
+    public String getKeyLabel() {
+        return keyLabel;
     }
 
-    public String getStatisticValueName() {
-        return statisticValueName;
+    public String getValueLabel() {
+        return valueLabel;
     }
 
     public Statistic withResultLimit(final Integer resultLimit) {
@@ -73,13 +72,13 @@ public class Statistic {
         return this;
     }
 
-    public Statistic withStatisticKeyName(final String statisticKeyName) {
-        this.statisticKeyName = statisticKeyName;
+    public Statistic withStatisticKeyName(final String keyLabel) {
+        this.keyLabel = keyLabel;
         return this;
     }
 
-    public Statistic withStatisticValueName(final String statisticValueName) {
-        this.statisticValueName = statisticValueName;
+    public Statistic withStatisticValueName(final String valueLabel) {
+        this.valueLabel = valueLabel;
         return this;
     }
 
