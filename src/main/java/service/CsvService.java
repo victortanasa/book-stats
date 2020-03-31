@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.DecimalFormat;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -21,6 +22,8 @@ public class CsvService {
     private static final String CANNOT_COMBINE_DIFFERENT_KEYS_MESSAGE = "Cannot combine statistics with different keys! First key: %s | Second key: %s";
     private static final String COULD_NOT_LOAD_STATISTICS_MESSAGE = "Could not load statistics from file, cannot compute. Exception was: %s";
     private static final String COULD_NOT_WRITE_STATISTIC_MESSAGE = "Could not write statistic to file %s. Exception was: %s";
+
+    private static final DecimalFormat DECIMAL_FORMAT = new DecimalFormat("###.##");
 
     private static final String RESOURCES_LOCATION = "src/main/resources/";
     private static final String CSV_LOCATION = RESOURCES_LOCATION + "csv/";
@@ -72,7 +75,7 @@ public class CsvService {
 
     private static List<String> getCsvLines(final Map<String, ?> map, final int limit) {
         return map.entrySet().stream()
-                .map(entry -> String.format(STATISTIC_FORMAT, entry.getKey(), entry.getValue()))
+                .map(entry -> String.format(STATISTIC_FORMAT, entry.getKey(), formatDoubleIfNecessary(entry.getValue())))
                 .limit(limit)
                 .collect(toList());
     }
@@ -112,6 +115,10 @@ public class CsvService {
             throw new IllegalArgumentException(String.format(CANNOT_COMBINE_DIFFERENT_KEYS_MESSAGE,
                     firstStatistic.getKeyLabel(), secondStatistic.getKeyLabel()));
         }
+    }
+
+    private static Object formatDoubleIfNecessary(final Object value) {
+        return value instanceof Double ? Double.parseDouble(DECIMAL_FORMAT.format(value)) : value;
     }
 
 }

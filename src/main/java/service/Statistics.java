@@ -30,10 +30,12 @@ public class Statistics {
             .withStatisticValueName("Books");
 
     static Statistic MOST_READ_AUTHORS_BY_BOOK_COUNT = new Statistic("Most read authors by book count", MAP, VALUE, DESC)
+            .withResultLimit(20)
             .withStatisticKeyName("Author")
             .withStatisticValueName("Book Count");
 
     static Statistic MOST_READ_AUTHORS_BY_PAGE_COUNT = new Statistic("Most read authors by page count", MAP, VALUE, DESC)
+            .withResultLimit(20)
             .withStatisticKeyName("Author")
             .withStatisticValueName("Page Count");
 
