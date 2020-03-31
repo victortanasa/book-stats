@@ -45,9 +45,25 @@ public class Statistics {
             .withStatisticKeyName("Author")
             .withStatisticValueName("Average Rating");
 
-    static Statistic PAGES_READ_PER_MONTH_MEDIAN = new Statistic("Pages red per month median", MAP, KEY, ASC)
+    public static Statistic PAGES_READ_PER_MONTH_MEDIAN = new Statistic("Pages red per month median", MAP, KEY, ASC)
             .withStatisticKeyName("Month")
             .withStatisticValueName("Pages Read Median");
+
+    public static Statistic PAGES_READ_PER_MONTH = new Statistic("Pages red per month", MAP, KEY, ASC)
+            .withStatisticKeyName("Month")
+            .withStatisticValueName("Pages Read");
+
+    static Statistic BOOKS_READ_PER_MONTH = new Statistic("Books read per month", MAP, KEY, ASC)
+            .withStatisticKeyName("Month")
+            .withStatisticValueName("Books");
+
+    static Statistic BOOKS_READ_PER_YEAR = new Statistic("Books read per year", MAP, KEY, ASC)
+            .withStatisticKeyName("Year")
+            .withStatisticValueName("Books");
+
+    static Statistic PAGES_READ_PER_YEAR = new Statistic("Pages read per year", MAP, KEY, ASC)
+            .withStatisticKeyName("Year")
+            .withStatisticValueName("Pages");
 
     static Statistic MOST_POPULAR_SHELVES = new Statistic("Most popular shelves", MAP, VALUE, DESC).withResultLimit(12)
             .withStatisticKeyName("Shelve")
@@ -60,22 +76,6 @@ public class Statistics {
     static Statistic FORMATS_DISTRIBUTION = new Statistic("Formats distribution", MAP, VALUE, DESC)
             .withStatisticKeyName("Format")
             .withStatisticValueName("Number");
-
-    static Statistic BOOKS_READ_PER_MONTH = new Statistic("Books read per month", MAP, KEY, ASC)
-            .withStatisticKeyName("Month")
-            .withStatisticValueName("Books");
-
-    static Statistic PAGES_READ_PER_MONTH = new Statistic("Pages red per month", MAP, KEY, ASC)
-            .withStatisticKeyName("Month")
-            .withStatisticValueName("Pages Read");
-
-    static Statistic BOOKS_READ_PER_YEAR = new Statistic("Books read per year", MAP, KEY, ASC)
-            .withStatisticKeyName("Year")
-            .withStatisticValueName("Books");
-
-    static Statistic PAGES_READ_PER_YEAR = new Statistic("Pages read per year", MAP, KEY, ASC)
-            .withStatisticKeyName("Year")
-            .withStatisticValueName("Pages");
 
     static Statistic AVERAGE_PAGES_READ_PER_MONTH = new Statistic("Average pages read per month", SINGLE_VALUE);
     static Statistic AVERAGE_BOOKS_READ_PER_MONTH = new Statistic("Average books read per month", SINGLE_VALUE);

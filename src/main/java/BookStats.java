@@ -1,6 +1,5 @@
 import static model.enums.StatisticType.MAP;
-import static service.Statistics.MOST_READ_AUTHORS_BY_BOOK_COUNT;
-import static service.Statistics.MOST_READ_AUTHORS_BY_PAGE_COUNT;
+import static service.Statistics.*;
 
 import model.Book;
 import model.Statistic;
@@ -42,10 +41,19 @@ public class BookStats {
 //                .filter(statistic -> SINGLE_VALUE.equals(statistic.getType()))
 //                .forEach(statistic -> PrinterUtils.printSingleValueStatistic(statistic, statisticsService.getSingeValueStatistic(statistic)));
 
+        //TODO: save combined stats, load again for merge
         final Map<String, ? extends Comparable<?>> authorsByBookCount = statisticsService.getMapStatistic(MOST_READ_AUTHORS_BY_BOOK_COUNT);
         final Map<String, ? extends Comparable<?>> authorsByPageCount = statisticsService.getMapStatistic(MOST_READ_AUTHORS_BY_PAGE_COUNT);
-        new StorageService().saveAndMergeStatisticToCsv(MOST_READ_AUTHORS_BY_BOOK_COUNT, MOST_READ_AUTHORS_BY_PAGE_COUNT,
+
+        STORAGE_SERVICE.saveAndMergeStatisticToCsv(MOST_READ_AUTHORS_BY_BOOK_COUNT, MOST_READ_AUTHORS_BY_PAGE_COUNT,
                 authorsByBookCount, authorsByPageCount);
+
+        final Map<String, ? extends Comparable<?>> pages = statisticsService.getMapStatistic(PAGES_READ_PER_MONTH);
+        final Map<String, ? extends Comparable<?>> pagesMedian = statisticsService.getMapStatistic(PAGES_READ_PER_MONTH_MEDIAN);
+
+        STORAGE_SERVICE.saveAndMergeStatisticToCsv(PAGES_READ_PER_MONTH, PAGES_READ_PER_MONTH_MEDIAN,
+                pages, pagesMedian);
+
     }
 
 }
