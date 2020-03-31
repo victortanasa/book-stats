@@ -1,16 +1,13 @@
 package service;
 
 import static com.google.common.collect.Lists.newArrayList;
-import static com.google.common.collect.Maps.newLinkedHashMap;
 import static java.nio.file.StandardOpenOption.CREATE;
 import static java.nio.file.StandardOpenOption.TRUNCATE_EXISTING;
-import static java.util.stream.Collectors.toList;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import model.Book;
 import model.ShelveMapping;
-import model.Statistic;
 import model.StoredBookData;
 import model.enums.ShelveName;
 import utils.PrinterUtils;
@@ -20,10 +17,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
-import java.util.Map;
-import java.util.Objects;
 import java.util.Properties;
-import java.util.stream.Stream;
 
 public class StorageService {
 
@@ -33,13 +27,9 @@ public class StorageService {
     private static final String COULD_NOT_SAVE_BOOKS_MESSAGE = "Could not save books. Exception was: %s";
     private static final String COULD_NOT_LOAD_BOOKS_MESSAGE = "Could not load books. Exception was: %s";
 
-    private static final String CSV_FILE_NAME_FORMAT = "%s.csv";
-    private static final String STATISTIC_FORMAT = "%s,%s";
-
     private static final String RESOURCES_LOCATION = "src/main/resources/";
     private static final String STORAGE_LOCATION = RESOURCES_LOCATION + "storage/";
     private static final String LIBRARY_LOCATION = STORAGE_LOCATION + "library/";
-    private static final String CSV_LOCATION = RESOURCES_LOCATION + "csv/";
 
     private static final String BOOK_STATS_PROPERTIES_FILE = "bookStats.properties";
     private static final String STORED_BOOK_DATA_FILE = "storedBookData-%s.json";
@@ -105,56 +95,6 @@ public class StorageService {
 
     public List<String> getShelvesToExcludeThatStartWith() {
         return newArrayList(PROPERTIES.getProperty(SHELVES_TO_EXCLUDE_THAT_START_WITH).split(COMMA));
-    }
-
-    public void saveStatisticToCsv(final Statistic statistic, final Map<String, ? extends Comparable<?>> map) {
-        final List<String> csv = getCsvLines(map);
-
-        addLabels(csv, statistic.getStatisticKeyName(), statistic.getStatisticValueName());
-
-        writeStatistic(statistic.getFileName(), csv);
-    }
-
-    public void saveAndMergeStatisticToCsv(final Statistic firstStatistic, final Statistic secondStatistic,
-                                           final Map<String, ?> firstMap, final Map<String, ?> secondMap) {
-        final Map<String, String> resultMap = newLinkedHashMap();
-
-        Stream.of(secondMap, firstMap)
-                .flatMap(m -> m.entrySet().stream())
-                .forEach(entry -> mergeValues(resultMap, entry));
-
-        final List<String> csv = getCsvLines(resultMap);
-        addLabels(csv, firstStatistic.getStatisticKeyName(), secondStatistic.getStatisticValueName(), firstStatistic.getStatisticValueName());
-
-        writeStatistic(firstStatistic.getFileName() + secondStatistic.getFileName(), csv);
-    }
-
-    private void writeStatistic(final String fileName, final List<String> csvLines) {
-        try {
-            Files.write(Paths.get(CSV_LOCATION + String.format(CSV_FILE_NAME_FORMAT, fileName)), csvLines, CREATE, TRUNCATE_EXISTING);
-        } catch (final Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void mergeValues(final Map<String, String> resultMap, final Map.Entry<String, ?> entry) {
-        final Object value = resultMap.get(entry.getKey());
-        if (Objects.isNull(value)) {
-            resultMap.put(entry.getKey(), entry.getValue().toString());
-        } else {
-            resultMap.put(entry.getKey(), String.format(STATISTIC_FORMAT, value, entry.getValue()));
-        }
-    }
-
-    private List<String> getCsvLines(final Map<String, ?> map) {
-        return map.entrySet().stream()
-                .map(entry -> String.format(STATISTIC_FORMAT, entry.getKey(), entry.getValue()))
-                .limit(15) //TODO: not like this
-                .collect(toList());
-    }
-
-    private void addLabels(final List<String> csv, final String... labels) {
-        csv.add(0, String.join(",", labels));
     }
 
     private String readFileContent(final String fileName) throws IOException {

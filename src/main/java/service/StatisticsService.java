@@ -21,6 +21,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class StatisticsService {
 
@@ -28,6 +29,7 @@ public class StatisticsService {
     private static final DateTimeFormatter YEAR_ONLY_FORMATTER = DateTimeFormatter.ofPattern("yyyy");
 
     private static final String DECADE_FORMAT = "%d's";
+    private static final int AUTHOR_LIMIT = 20;
 
     private Map<Statistic, Supplier<Number>> singleValueStatistics;
     private Map<Statistic, Supplier<Map<String, ? extends Comparable<?>>>> mapStatistic;
@@ -79,6 +81,16 @@ public class StatisticsService {
 
     public Number getSingeValueStatistic(final Statistic statistic) {
         return singleValueStatistics.get(statistic).get();
+    }
+
+    public Set<String> getMostPopularAuthors() {
+        final List<String> topAuthorsByPageCount = getKeys(getMapStatistic(MOST_READ_AUTHORS_BY_PAGE_COUNT));
+        final List<String> topAuthorsByBookCount = getKeys(getMapStatistic(MOST_READ_AUTHORS_BY_BOOK_COUNT));
+
+        return Stream.of(topAuthorsByBookCount, topAuthorsByPageCount)
+                .flatMap(Collection::stream)
+                .limit(AUTHOR_LIMIT)
+                .collect(toSet());
     }
 
     private Map<String, ? extends Comparable<?>> getMostReadAuthorsByPageCount() {
@@ -226,6 +238,12 @@ public class StatisticsService {
         return newArrayList(
                 Pair.of(getMonth(book.getDateStarted()), pageCountForMonthStarted),
                 Pair.of(getMonth(book.getDateFinished()), pageCountForMonthFinished));
+    }
+
+    private List<String> getKeys(final Map<String, ?> map) {
+        return map.keySet().stream()
+                .map(Object::toString)
+                .collect(Collectors.toList());
     }
 
     @SuppressWarnings("unchecked")

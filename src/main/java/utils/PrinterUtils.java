@@ -94,7 +94,7 @@ public class PrinterUtils {
     }
 
     private static Object formatNumber(final Object value) {
-        return DECIMAL_FORMAT.format(value);
+        return Double.parseDouble(DECIMAL_FORMAT.format(value));
     }
 
 }
