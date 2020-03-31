@@ -149,7 +149,7 @@ public class StorageService {
     private List<String> getCsvLines(final Map<String, ?> map) {
         return map.entrySet().stream()
                 .map(entry -> String.format(STATISTIC_FORMAT, entry.getKey(), entry.getValue()))
-                .limit(15)
+                .limit(15) //TODO: not like this
                 .collect(toList());
     }
 

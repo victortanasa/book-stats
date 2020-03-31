@@ -42,6 +42,7 @@ public class BookStats {
 //                .forEach(statistic -> PrinterUtils.printSingleValueStatistic(statistic, statisticsService.getSingeValueStatistic(statistic)));
 
         //TODO: save combined stats, load again for merge
+        //TODO: for top authors, check storage limit 15
         final Map<String, ? extends Comparable<?>> authorsByBookCount = statisticsService.getMapStatistic(MOST_READ_AUTHORS_BY_BOOK_COUNT);
         final Map<String, ? extends Comparable<?>> authorsByPageCount = statisticsService.getMapStatistic(MOST_READ_AUTHORS_BY_PAGE_COUNT);
 
