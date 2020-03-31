@@ -34,7 +34,6 @@ public class CsvService {
     private static final String NEWLINE = "\n";
     private static final String COMMA = ",";
 
-    //TODO: double formatting
     public void singleAxisStatisticToCsv(final Statistic statistic, final Map<String, ?> map) {
         final List<String> csvLines = getCsvLines(map, statistic.getResultLimit());
 
