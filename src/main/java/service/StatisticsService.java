@@ -18,6 +18,7 @@ import org.apache.commons.lang3.tuple.Pair;
 import service.processing.ShelveAggregator;
 
 import java.time.LocalDate;
+import java.time.YearMonth;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -55,6 +56,7 @@ public class StatisticsService {
         mapStatistic.put(AVERAGE_PAGE_NUMBER_FOR_AUTHORS, this::getAveragePageNumberForAuthors);
         mapStatistic.put(AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR, this::getAverageDaysToReadABookPerAuthor);
         mapStatistic.put(AVERAGE_BOOK_LENGTH_PER_YEAR, this::getAverageBookLengthPerYear);
+        mapStatistic.put(AVERAGE_PAGES_READ_PER_DAY_PER_MONTH, this::getAveragePagesReadPerDayPerMonth);
 
         mapStatistic.put(MOST_BOOKS_READ_BY_PUBLISHED_DECADE, this::getMostBooksReadByPublishedDecade);
         mapStatistic.put(MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS, this::getMostPopularAuthorsByAverageNumberOfRatings);
@@ -148,6 +150,13 @@ public class StatisticsService {
     private Map<String, ? extends Comparable<?>> getAverageBookLengthPerYear() {
         return library.stream()
                 .collect(Collectors.groupingBy(book -> getYear(book.getDateFinished()), Collectors.averagingInt(Book::getPageNumber)));
+    }
+
+    //TODO: pretty?
+    private Map<String, ? extends Comparable<?>> getAveragePagesReadPerDayPerMonth() {
+        return getPagesReadPerMonth().entrySet().stream()
+                .map(entry -> Pair.of(entry.getKey(), new Integer(entry.getValue().toString()) / getNumberOfDaysInAMonth(entry.getKey())))
+                .collect(Collectors.toMap(Pair::getKey, Pair::getValue));
     }
 
     private Map<String, ? extends Comparable<?>> getMostBooksReadByPublishedDecade() {
@@ -278,6 +287,10 @@ public class StatisticsService {
 
     private static String getYear(final LocalDate dateRead) {
         return YEAR_ONLY_FORMATTER.format(dateRead);
+    }
+
+    private static Integer getNumberOfDaysInAMonth(final String month) {
+        return YearMonth.parse(month, MONTH_ONLY_FORMATTER).atDay(1).lengthOfMonth();
     }
 
 }

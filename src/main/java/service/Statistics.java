@@ -52,6 +52,10 @@ public class Statistics {
             .withStatisticKeyName("Author")
             .withStatisticValueName("Average Rating");
 
+    public static Statistic AVERAGE_PAGES_READ_PER_DAY_PER_MONTH = new Statistic("Average pages per day per month", MAP, KEY, ASC)
+            .withStatisticKeyName("Month")
+            .withStatisticValueName("Average Pages Read Per Day");
+
     static Statistic PAGES_READ_PER_MONTH_MEDIAN = new Statistic("Pages red per month median", MAP, KEY, ASC)
             .withStatisticKeyName("Month")
             .withStatisticValueName("Pages Read Median");
@@ -94,7 +98,7 @@ public class Statistics {
 
     static Statistic AVERAGE_RATING = new Statistic("Average rating", SINGLE_VALUE);
 
-    //TODO: implement
+    //TODO: implement && add in AvailableStatisticsService
     public static Statistic AUTHORS_WITH_MOST_FAVOURITES = new Statistic("Average rating", MAP, VALUE, DESC);
 
     public static List<Pair<Statistic, Statistic>> DOUBLE_AXIS_STATISTICS = newArrayList(
