@@ -152,10 +152,9 @@ public class StatisticsService {
                 .collect(Collectors.groupingBy(book -> getYear(book.getDateFinished()), Collectors.averagingInt(Book::getPageNumber)));
     }
 
-    //TODO: pretty?
     private Map<String, ? extends Comparable<?>> getAveragePagesReadPerDayPerMonth() {
-        return getPagesReadPerMonth().entrySet().stream()
-                .map(entry -> Pair.of(entry.getKey(), new Integer(entry.getValue().toString()) / getNumberOfDaysInAMonth(entry.getKey())))
+        return getPagesReadPerMonthMedian().entrySet().stream()
+                .map(entry -> Pair.of(entry.getKey(), new Double(entry.getValue().toString()) / getNumberOfDaysInAMonth(entry.getKey())))
                 .collect(Collectors.toMap(Pair::getKey, Pair::getValue));
     }
 
