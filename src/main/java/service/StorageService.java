@@ -89,19 +89,19 @@ public class StorageService {
         }
     }
 
-    public List<String> getShelvesToExclude() {
+    public static List<String> getShelvesToExclude() {
         return newArrayList(PROPERTIES.getProperty(SHELVES_TO_EXCLUDE).split(COMMA));
     }
 
-    public List<String> getShelvesToExcludeThatStartWith() {
+    public static List<String> getShelvesToExcludeThatStartWith() {
         return newArrayList(PROPERTIES.getProperty(SHELVES_TO_EXCLUDE_THAT_START_WITH).split(COMMA));
     }
 
-    private String readFileContent(final String fileName) throws IOException {
+    private static String readFileContent(final String fileName) throws IOException {
         return new String(Files.readAllBytes(Paths.get(STORAGE_LOCATION + fileName)));
     }
 
-    private void loadProperties() {
+    private static void loadProperties() {
         try {
             PROPERTIES.load(new FileReader(RESOURCES_LOCATION + BOOK_STATS_PROPERTIES_FILE));
         } catch (final IOException e) {
