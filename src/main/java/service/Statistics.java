@@ -15,6 +15,8 @@ import java.util.List;
 
 public class Statistics {
 
+    //TODO: arrange by average, most popular etc
+
     static Statistic MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS = new Statistic("Most popular authors by average number of ratings", MAP, VALUE, DESC)
             .withResultLimit(20)
             .withStatisticKeyName("Author")

@@ -24,6 +24,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+@SuppressWarnings("all")
 public class StatisticsService {
 
     private static final DateTimeFormatter MONTH_ONLY_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM");
@@ -36,12 +37,19 @@ public class StatisticsService {
     private Map<Statistic, Supplier<Map<String, ? extends Comparable<?>>>> mapStatistic;
 
     private ShelveAggregator shelveAggregator;
+    private Set<String> authorsToInclude;
     private List<Book> library;
 
     public StatisticsService(final List<Book> library) {
-        this.shelveAggregator = new ShelveAggregator();
         this.library = library;
+        this.shelveAggregator = new ShelveAggregator();
 
+        initStatisticsMap();
+
+        this.authorsToInclude = getAuthorsToInclude();
+    }
+
+    private void initStatisticsMap() {
         mapStatistic = newHashMap();
         mapStatistic.put(MOST_READ_AUTHORS_BY_PAGE_COUNT, this::getMostReadAuthorsByPageCount);
         mapStatistic.put(MOST_READ_AUTHORS_BY_BOOK_COUNT, this::getMostReadAuthorsBookCount);
@@ -85,7 +93,7 @@ public class StatisticsService {
         return singleValueStatistics.get(statistic).get();
     }
 
-    public Set<String> getMostPopularAuthors() {
+    public Set<String> getAuthorsToInclude() {
         final List<String> topAuthorsByPageCount = getKeys(getMapStatistic(MOST_READ_AUTHORS_BY_PAGE_COUNT));
         final List<String> topAuthorsByBookCount = getKeys(getMapStatistic(MOST_READ_AUTHORS_BY_BOOK_COUNT));
 
@@ -134,16 +142,19 @@ public class StatisticsService {
 
     private Map<String, ? extends Comparable<?>> getAverageRatingsForAuthors() {
         return library.stream()
+                .filter(book -> authorsToInclude.contains(book.getAuthorAsString()))
                 .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingInt(Book::getRating)));
     }
 
     private Map<String, ? extends Comparable<?>> getAveragePageNumberForAuthors() {
         return library.stream()
+                .filter(book -> authorsToInclude.contains(book.getAuthorAsString()))
                 .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingInt(Book::getPageNumber)));
     }
 
     private Map<String, ? extends Comparable<?>> getAverageDaysToReadABookPerAuthor() {
         return library.stream()
+                .filter(book -> authorsToInclude.contains(book.getAuthorAsString()))
                 .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingLong(Book::getDaysReadIn)));
     }
 

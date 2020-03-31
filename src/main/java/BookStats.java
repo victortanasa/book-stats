@@ -1,5 +1,4 @@
 import static model.enums.StatisticType.MAP;
-import static service.Statistics.AVERAGE_PAGES_READ_PER_DAY_PER_MONTH;
 
 import model.Book;
 import model.Statistic;
@@ -32,11 +31,10 @@ public class BookStats {
 
         availableStatistics.stream()
                 .filter(statistic -> MAP.equals(statistic.getType()))
-                //TODO: final Set<String> includedKeys for single stats
                 .forEach(statistic -> CSV_SERVICE.singleAxisStatisticToCsv(statistic, statisticsService.getMapStatistic(statistic)));
 
         Statistics.DOUBLE_AXIS_STATISTICS.forEach(pair ->
-                CSV_SERVICE.dualAxisStatisticToCsv(pair.getLeft(), pair.getRight(), statisticsService.getMostPopularAuthors()));
+                CSV_SERVICE.dualAxisStatisticToCsv(pair.getLeft(), pair.getRight(), statisticsService.getAuthorsToInclude()));
 //
 //        availableStatistics.stream()
 //                .filter(statistic -> SINGLE_VALUE.equals(statistic.getType()))
