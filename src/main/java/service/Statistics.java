@@ -40,6 +40,7 @@ public class Statistics {
             .withStatisticValueName("Page Count");
 
     static Statistic AVERAGE_PAGE_NUMBER_FOR_AUTHORS = new Statistic("Average page number for authors", MAP, VALUE, DESC)
+            .withResultLimit(20)
             .withStatisticKeyName("Author")
             .withStatisticValueName("Average Page Count");
 
