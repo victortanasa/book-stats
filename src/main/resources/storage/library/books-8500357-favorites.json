@@ -1,0 +1,8374 @@
+[
+  {
+    "id": 23807,
+    "isbn": "0099446782",
+    "isbn13": "9780099446781",
+    "title": "The Silence of the Lambs",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 421,
+    "ratingsCount": 436964,
+    "publicationYear": 1988,
+    "averageRating": 4.19,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Thomas  Harris"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 173717
+      },
+      {
+        "name": "horror",
+        "popularity": 3234
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 3076
+      },
+      {
+        "name": "fiction",
+        "popularity": 2811
+      },
+      {
+        "name": "thriller",
+        "popularity": 2261
+      },
+      {
+        "name": "favorites",
+        "popularity": 2088
+      },
+      {
+        "name": "mystery",
+        "popularity": 1394
+      },
+      {
+        "name": "crime",
+        "popularity": 1286
+      },
+      {
+        "name": "owned",
+        "popularity": 927
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 591
+      },
+      {
+        "name": "suspense",
+        "popularity": 522
+      },
+      {
+        "name": "mystery-thriller",
+        "popularity": 365
+      },
+      {
+        "name": "series",
+        "popularity": 361
+      },
+      {
+        "name": "classics",
+        "popularity": 323
+      },
+      {
+        "name": "novels",
+        "popularity": 305
+      },
+      {
+        "name": "thrillers",
+        "popularity": 274
+      },
+      {
+        "name": "ebook",
+        "popularity": 251
+      },
+      {
+        "name": "crime-thriller",
+        "popularity": 241
+      },
+      {
+        "name": "default",
+        "popularity": 239
+      },
+      {
+        "name": "drama",
+        "popularity": 235
+      },
+      {
+        "name": "psychological-thriller",
+        "popularity": 204
+      },
+      {
+        "name": "thriller-suspense",
+        "popularity": 201
+      },
+      {
+        "name": "favourites",
+        "popularity": 201
+      },
+      {
+        "name": "adult-fiction",
+        "popularity": 198
+      },
+      {
+        "name": "owned-books",
+        "popularity": 195
+      },
+      {
+        "name": "5-stars",
+        "popularity": 186
+      },
+      {
+        "name": "all-time-favorites",
+        "popularity": 182
+      },
+      {
+        "name": "thomas-harris",
+        "popularity": 174
+      },
+      {
+        "name": "adult",
+        "popularity": 173
+      },
+      {
+        "name": "faves",
+        "popularity": 169
+      },
+      {
+        "name": "my-favorites",
+        "popularity": 165
+      },
+      {
+        "name": "must-read",
+        "popularity": 158
+      },
+      {
+        "name": "five-stars",
+        "popularity": 155
+      },
+      {
+        "name": "recommended",
+        "popularity": 155
+      },
+      {
+        "name": "kindle",
+        "popularity": 154
+      },
+      {
+        "name": "library",
+        "popularity": 149
+      },
+      {
+        "name": "read-more-than-once",
+        "popularity": 148
+      },
+      {
+        "name": "favorite",
+        "popularity": 144
+      },
+      {
+        "name": "crime-fiction",
+        "popularity": 141
+      },
+      {
+        "name": "page-turner",
+        "popularity": 138
+      },
+      {
+        "name": "best-books",
+        "popularity": 138
+      },
+      {
+        "name": "recommend",
+        "popularity": 138
+      },
+      {
+        "name": "excellent",
+        "popularity": 136
+      },
+      {
+        "name": "best-ever",
+        "popularity": 134
+      },
+      {
+        "name": "serial-killers",
+        "popularity": 132
+      },
+      {
+        "name": "to-buy",
+        "popularity": 130
+      },
+      {
+        "name": "novel",
+        "popularity": 114
+      },
+      {
+        "name": "my-books",
+        "popularity": 108
+      },
+      {
+        "name": "detective",
+        "popularity": 108
+      },
+      {
+        "name": "contemporary",
+        "popularity": 106
+      },
+      {
+        "name": "dark",
+        "popularity": 102
+      },
+      {
+        "name": "my-library",
+        "popularity": 101
+      },
+      {
+        "name": "horror-thriller",
+        "popularity": 101
+      },
+      {
+        "name": "american",
+        "popularity": 98
+      },
+      {
+        "name": "crime-mystery",
+        "popularity": 98
+      },
+      {
+        "name": "audiobook",
+        "popularity": 94
+      },
+      {
+        "name": "serial-killer",
+        "popularity": 92
+      },
+      {
+        "name": "mystery-suspense",
+        "popularity": 89
+      },
+      {
+        "name": "psychological",
+        "popularity": 86
+      },
+      {
+        "name": "general-fiction",
+        "popularity": 84
+      },
+      {
+        "name": "hannibal-lecter",
+        "popularity": 83
+      },
+      {
+        "name": "psychology",
+        "popularity": 78
+      },
+      {
+        "name": "mystery-crime",
+        "popularity": 76
+      },
+      {
+        "name": "audiobooks",
+        "popularity": 75
+      },
+      {
+        "name": "suspense-thriller",
+        "popularity": 74
+      },
+      {
+        "name": "i-own",
+        "popularity": 71
+      },
+      {
+        "name": "movies",
+        "popularity": 68
+      },
+      {
+        "name": "classic",
+        "popularity": 67
+      },
+      {
+        "name": "thriller-mystery",
+        "popularity": 67
+      },
+      {
+        "name": "20th-century",
+        "popularity": 66
+      },
+      {
+        "name": "movie",
+        "popularity": 66
+      },
+      {
+        "name": "hannibal",
+        "popularity": 65
+      },
+      {
+        "name": "wish-list",
+        "popularity": 62
+      },
+      {
+        "name": "usa",
+        "popularity": 61
+      },
+      {
+        "name": "books",
+        "popularity": 60
+      },
+      {
+        "name": "mysteries",
+        "popularity": 58
+      },
+      {
+        "name": "english",
+        "popularity": 57
+      },
+      {
+        "name": "ebooks",
+        "popularity": 56
+      },
+      {
+        "name": "literature",
+        "popularity": 54
+      },
+      {
+        "name": "american-literature",
+        "popularity": 53
+      },
+      {
+        "name": "thriller-horror",
+        "popularity": 53
+      },
+      {
+        "name": "contemporary-fiction",
+        "popularity": 51
+      },
+      {
+        "name": "murder",
+        "popularity": 51
+      },
+      {
+        "name": "audio",
+        "popularity": 49
+      },
+      {
+        "name": "tbr",
+        "popularity": 48
+      },
+      {
+        "name": "saw-the-movie",
+        "popularity": 48
+      },
+      {
+        "name": "re-read",
+        "popularity": 48
+      },
+      {
+        "name": "scary",
+        "popularity": 46
+      },
+      {
+        "name": "favorite-books",
+        "popularity": 45
+      },
+      {
+        "name": "murder-mystery",
+        "popularity": 43
+      },
+      {
+        "name": "paperback",
+        "popularity": 41
+      },
+      {
+        "name": "book-club",
+        "popularity": 41
+      },
+      {
+        "name": "have",
+        "popularity": 40
+      },
+      {
+        "name": "creepy",
+        "popularity": 40
+      },
+      {
+        "name": "horror-suspense",
+        "popularity": 39
+      },
+      {
+        "name": "book-to-movie",
+        "popularity": 39
+      },
+      {
+        "name": "4-stars",
+        "popularity": 38
+      },
+      {
+        "name": "borrowed",
+        "popularity": 38
+      },
+      {
+        "name": "audible",
+        "popularity": 37
+      },
+      {
+        "name": "own-it",
+        "popularity": 37
+      }
+    ]
+  },
+  {
+    "id": 4214,
+    "isbn": "0770430074",
+    "isbn13": "9780770430078",
+    "title": "Life of Pi",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 460,
+    "ratingsCount": 1271440,
+    "publicationYear": 2001,
+    "averageRating": 3.91,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Yann Martel"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 552503
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 20963
+      },
+      {
+        "name": "fiction",
+        "popularity": 12676
+      },
+      {
+        "name": "favorites",
+        "popularity": 7828
+      },
+      {
+        "name": "fantasy",
+        "popularity": 2475
+      },
+      {
+        "name": "owned",
+        "popularity": 1967
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 1934
+      },
+      {
+        "name": "classics",
+        "popularity": 1701
+      },
+      {
+        "name": "book-club",
+        "popularity": 1673
+      },
+      {
+        "name": "adventure",
+        "popularity": 1493
+      },
+      {
+        "name": "contemporary",
+        "popularity": 1250
+      },
+      {
+        "name": "novels",
+        "popularity": 876
+      },
+      {
+        "name": "literature",
+        "popularity": 870
+      },
+      {
+        "name": "favourites",
+        "popularity": 870
+      },
+      {
+        "name": "magical-realism",
+        "popularity": 733
+      },
+      {
+        "name": "india",
+        "popularity": 726
+      },
+      {
+        "name": "philosophy",
+        "popularity": 665
+      },
+      {
+        "name": "contemporary-fiction",
+        "popularity": 628
+      },
+      {
+        "name": "young-adult",
+        "popularity": 615
+      },
+      {
+        "name": "owned-books",
+        "popularity": 594
+      },
+      {
+        "name": "animals",
+        "popularity": 575
+      },
+      {
+        "name": "kindle",
+        "popularity": 567
+      },
+      {
+        "name": "literary-fiction",
+        "popularity": 548
+      },
+      {
+        "name": "adult-fiction",
+        "popularity": 513
+      },
+      {
+        "name": "general-fiction",
+        "popularity": 510
+      },
+      {
+        "name": "canadian",
+        "popularity": 507
+      },
+      {
+        "name": "1001-books",
+        "popularity": 507
+      },
+      {
+        "name": "adult",
+        "popularity": 480
+      },
+      {
+        "name": "religion",
+        "popularity": 477
+      },
+      {
+        "name": "novel",
+        "popularity": 467
+      },
+      {
+        "name": "survival",
+        "popularity": 456
+      },
+      {
+        "name": "audiobook",
+        "popularity": 450
+      },
+      {
+        "name": "library",
+        "popularity": 447
+      },
+      {
+        "name": "school",
+        "popularity": 422
+      },
+      {
+        "name": "abandoned",
+        "popularity": 402
+      },
+      {
+        "name": "bookclub",
+        "popularity": 386
+      },
+      {
+        "name": "audiobooks",
+        "popularity": 386
+      },
+      {
+        "name": "my-books",
+        "popularity": 343
+      },
+      {
+        "name": "booker-prize",
+        "popularity": 338
+      },
+      {
+        "name": "to-buy",
+        "popularity": 336
+      },
+      {
+        "name": "my-library",
+        "popularity": 327
+      },
+      {
+        "name": "did-not-finish",
+        "popularity": 315
+      },
+      {
+        "name": "1001",
+        "popularity": 300
+      },
+      {
+        "name": "default",
+        "popularity": 296
+      },
+      {
+        "name": "classic",
+        "popularity": 283
+      },
+      {
+        "name": "dnf",
+        "popularity": 278
+      },
+      {
+        "name": "audio",
+        "popularity": 273
+      },
+      {
+        "name": "all-time-favorites",
+        "popularity": 269
+      },
+      {
+        "name": "canada",
+        "popularity": 253
+      },
+      {
+        "name": "man-booker",
+        "popularity": 249
+      },
+      {
+        "name": "spirituality",
+        "popularity": 245
+      },
+      {
+        "name": "ebook",
+        "popularity": 233
+      },
+      {
+        "name": "literary",
+        "popularity": 231
+      },
+      {
+        "name": "english",
+        "popularity": 229
+      },
+      {
+        "name": "i-own",
+        "popularity": 227
+      },
+      {
+        "name": "man-booker-prize",
+        "popularity": 222
+      },
+      {
+        "name": "ya",
+        "popularity": 222
+      },
+      {
+        "name": "drama",
+        "popularity": 220
+      },
+      {
+        "name": "book-club-books",
+        "popularity": 218
+      },
+      {
+        "name": "1001-books-to-read-before-you-die",
+        "popularity": 208
+      },
+      {
+        "name": "rory-gilmore-reading-challenge",
+        "popularity": 204
+      },
+      {
+        "name": "unfinished",
+        "popularity": 201
+      },
+      {
+        "name": "booker",
+        "popularity": 200
+      },
+      {
+        "name": "modern-fiction",
+        "popularity": 198
+      },
+      {
+        "name": "read-in-2013",
+        "popularity": 198
+      },
+      {
+        "name": "favorite-books",
+        "popularity": 197
+      },
+      {
+        "name": "own-it",
+        "popularity": 192
+      },
+      {
+        "name": "books",
+        "popularity": 184
+      },
+      {
+        "name": "book-group",
+        "popularity": 183
+      },
+      {
+        "name": "asia",
+        "popularity": 173
+      },
+      {
+        "name": "audible",
+        "popularity": 172
+      },
+      {
+        "name": "favorite",
+        "popularity": 170
+      },
+      {
+        "name": "bookshelf",
+        "popularity": 165
+      },
+      {
+        "name": "ebooks",
+        "popularity": 164
+      },
+      {
+        "name": "shelfari-favorites",
+        "popularity": 160
+      },
+      {
+        "name": "realistic-fiction",
+        "popularity": 158
+      },
+      {
+        "name": "audio-books",
+        "popularity": 158
+      },
+      {
+        "name": "coming-of-age",
+        "popularity": 157
+      },
+      {
+        "name": "movies",
+        "popularity": 156
+      },
+      {
+        "name": "read-for-school",
+        "popularity": 155
+      },
+      {
+        "name": "spiritual",
+        "popularity": 154
+      },
+      {
+        "name": "couldn-t-finish",
+        "popularity": 153
+      },
+      {
+        "name": "didn-t-finish",
+        "popularity": 152
+      },
+      {
+        "name": "travel",
+        "popularity": 145
+      },
+      {
+        "name": "read-in-2012",
+        "popularity": 142
+      },
+      {
+        "name": "booker-prize-winners",
+        "popularity": 141
+      },
+      {
+        "name": "high-school",
+        "popularity": 138
+      },
+      {
+        "name": "for-school",
+        "popularity": 136
+      },
+      {
+        "name": "audio-book",
+        "popularity": 135
+      },
+      {
+        "name": "school-books",
+        "popularity": 134
+      },
+      {
+        "name": "21st-century",
+        "popularity": 134
+      },
+      {
+        "name": "tbr",
+        "popularity": 133
+      },
+      {
+        "name": "borrowed",
+        "popularity": 132
+      },
+      {
+        "name": "must-read",
+        "popularity": 132
+      },
+      {
+        "name": "never-finished",
+        "popularity": 131
+      },
+      {
+        "name": "re-read",
+        "popularity": 131
+      },
+      {
+        "name": "on-my-shelf",
+        "popularity": 129
+      },
+      {
+        "name": "home-library",
+        "popularity": 128
+      },
+      {
+        "name": "canadian-literature",
+        "popularity": 126
+      },
+      {
+        "name": "wish-list",
+        "popularity": 125
+      }
+    ]
+  },
+  {
+    "id": 29127,
+    "isbn": "0451450523",
+    "isbn13": "9780451450524",
+    "title": "The Last Unicorn",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 294,
+    "ratingsCount": 92178,
+    "publicationYear": 1968,
+    "averageRating": 4.17,
+    "dateStarted": null,
+    "dateFinished": [
+      2015,
+      4,
+      26
+    ],
+    "owned": false,
+    "authors": [
+      "Peter S. Beagle"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 96694
+      },
+      {
+        "name": "fantasy",
+        "popularity": 6037
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 1915
+      },
+      {
+        "name": "favorites",
+        "popularity": 1904
+      },
+      {
+        "name": "fiction",
+        "popularity": 990
+      },
+      {
+        "name": "classics",
+        "popularity": 987
+      },
+      {
+        "name": "young-adult",
+        "popularity": 583
+      },
+      {
+        "name": "owned",
+        "popularity": 335
+      },
+      {
+        "name": "ya",
+        "popularity": 251
+      },
+      {
+        "name": "classic",
+        "popularity": 228
+      },
+      {
+        "name": "childrens",
+        "popularity": 226
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 209
+      },
+      {
+        "name": "sci-fi-fantasy",
+        "popularity": 199
+      },
+      {
+        "name": "favourites",
+        "popularity": 167
+      },
+      {
+        "name": "magic",
+        "popularity": 166
+      },
+      {
+        "name": "unicorns",
+        "popularity": 165
+      },
+      {
+        "name": "adventure",
+        "popularity": 161
+      },
+      {
+        "name": "fantasy-sci-fi",
+        "popularity": 143
+      },
+      {
+        "name": "children",
+        "popularity": 140
+      },
+      {
+        "name": "fairy-tales",
+        "popularity": 131
+      },
+      {
+        "name": "to-buy",
+        "popularity": 123
+      },
+      {
+        "name": "high-fantasy",
+        "popularity": 122
+      },
+      {
+        "name": "library",
+        "popularity": 118
+      },
+      {
+        "name": "scifi-fantasy",
+        "popularity": 99
+      },
+      {
+        "name": "kindle",
+        "popularity": 92
+      },
+      {
+        "name": "children-s",
+        "popularity": 84
+      },
+      {
+        "name": "ebook",
+        "popularity": 83
+      },
+      {
+        "name": "animals",
+        "popularity": 82
+      },
+      {
+        "name": "fairy-tale",
+        "popularity": 79
+      },
+      {
+        "name": "romance",
+        "popularity": 79
+      },
+      {
+        "name": "childhood",
+        "popularity": 78
+      },
+      {
+        "name": "series",
+        "popularity": 76
+      },
+      {
+        "name": "children-s-books",
+        "popularity": 73
+      },
+      {
+        "name": "default",
+        "popularity": 71
+      },
+      {
+        "name": "wish-list",
+        "popularity": 71
+      },
+      {
+        "name": "owned-books",
+        "popularity": 69
+      },
+      {
+        "name": "book-club",
+        "popularity": 68
+      },
+      {
+        "name": "to-read-fantasy",
+        "popularity": 63
+      },
+      {
+        "name": "novels",
+        "popularity": 62
+      },
+      {
+        "name": "all-time-favorites",
+        "popularity": 60
+      },
+      {
+        "name": "fantasy-scifi",
+        "popularity": 56
+      },
+      {
+        "name": "ebooks",
+        "popularity": 56
+      },
+      {
+        "name": "my-library",
+        "popularity": 53
+      },
+      {
+        "name": "fantasy-to-read",
+        "popularity": 50
+      },
+      {
+        "name": "science-fiction-fantasy",
+        "popularity": 50
+      },
+      {
+        "name": "dnf",
+        "popularity": 49
+      },
+      {
+        "name": "sff",
+        "popularity": 49
+      },
+      {
+        "name": "re-read",
+        "popularity": 49
+      },
+      {
+        "name": "childrens-books",
+        "popularity": 48
+      },
+      {
+        "name": "middle-grade",
+        "popularity": 47
+      },
+      {
+        "name": "adult",
+        "popularity": 47
+      },
+      {
+        "name": "speculative-fiction",
+        "popularity": 47
+      },
+      {
+        "name": "kids",
+        "popularity": 46
+      },
+      {
+        "name": "abandoned",
+        "popularity": 43
+      },
+      {
+        "name": "maybe",
+        "popularity": 42
+      },
+      {
+        "name": "epic-fantasy",
+        "popularity": 42
+      },
+      {
+        "name": "genre-fantasy",
+        "popularity": 41
+      },
+      {
+        "name": "childhood-favorites",
+        "popularity": 41
+      },
+      {
+        "name": "audiobooks",
+        "popularity": 40
+      },
+      {
+        "name": "fairytales",
+        "popularity": 40
+      },
+      {
+        "name": "novel",
+        "popularity": 40
+      },
+      {
+        "name": "my-books",
+        "popularity": 39
+      },
+      {
+        "name": "ya-fantasy",
+        "popularity": 39
+      },
+      {
+        "name": "science-fiction",
+        "popularity": 38
+      },
+      {
+        "name": "favorite",
+        "popularity": 38
+      },
+      {
+        "name": "sword-and-laser",
+        "popularity": 37
+      },
+      {
+        "name": "fairytale",
+        "popularity": 37
+      },
+      {
+        "name": "own-it",
+        "popularity": 36
+      },
+      {
+        "name": "humble-bundle",
+        "popularity": 35
+      },
+      {
+        "name": "literature",
+        "popularity": 35
+      },
+      {
+        "name": "20th-century",
+        "popularity": 35
+      },
+      {
+        "name": "fantasy-and-sci-fi",
+        "popularity": 34
+      },
+      {
+        "name": "sci-fi-and-fantasy",
+        "popularity": 33
+      },
+      {
+        "name": "unicorn",
+        "popularity": 33
+      },
+      {
+        "name": "sf-fantasy",
+        "popularity": 33
+      },
+      {
+        "name": "audiobook",
+        "popularity": 32
+      },
+      {
+        "name": "fiction-fantasy",
+        "popularity": 32
+      },
+      {
+        "name": "did-not-finish",
+        "popularity": 32
+      },
+      {
+        "name": "favorite-books",
+        "popularity": 32
+      },
+      {
+        "name": "reviewed",
+        "popularity": 28
+      },
+      {
+        "name": "e-book",
+        "popularity": 28
+      },
+      {
+        "name": "5-stars",
+        "popularity": 28
+      },
+      {
+        "name": "1960s",
+        "popularity": 28
+      },
+      {
+        "name": "sci-fi",
+        "popularity": 28
+      },
+      {
+        "name": "stand-alone",
+        "popularity": 27
+      },
+      {
+        "name": "reread",
+        "popularity": 27
+      },
+      {
+        "name": "to-reread",
+        "popularity": 27
+      },
+      {
+        "name": "faves",
+        "popularity": 27
+      },
+      {
+        "name": "mythology",
+        "popularity": 27
+      },
+      {
+        "name": "adult-fiction",
+        "popularity": 27
+      },
+      {
+        "name": "fantastical",
+        "popularity": 26
+      },
+      {
+        "name": "fantasia",
+        "popularity": 25
+      },
+      {
+        "name": "books",
+        "popularity": 25
+      },
+      {
+        "name": "classic-fantasy",
+        "popularity": 25
+      },
+      {
+        "name": "youth",
+        "popularity": 25
+      },
+      {
+        "name": "children-s-literature",
+        "popularity": 24
+      },
+      {
+        "name": "peter-s-beagle",
+        "popularity": 24
+      },
+      {
+        "name": "need-to-buy",
+        "popularity": 24
+      },
+      {
+        "name": "classic-literature",
+        "popularity": 24
+      },
+      {
+        "name": "signed",
+        "popularity": 24
+      }
+    ]
+  },
+  {
+    "id": 17182126,
+    "isbn": "0385743564",
+    "isbn13": "9780385743563",
+    "title": "Steelheart",
+    "format": "Hardcover",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 386,
+    "ratingsCount": 138681,
+    "publicationYear": 2013,
+    "averageRating": 4.15,
+    "dateStarted": null,
+    "dateFinished": [
+      2015,
+      9,
+      18
+    ],
+    "owned": false,
+    "authors": [
+      "Brandon Sanderson"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 100823
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 4623
+      },
+      {
+        "name": "fantasy",
+        "popularity": 4323
+      },
+      {
+        "name": "young-adult",
+        "popularity": 2072
+      },
+      {
+        "name": "science-fiction",
+        "popularity": 1604
+      },
+      {
+        "name": "favorites",
+        "popularity": 1561
+      },
+      {
+        "name": "sci-fi",
+        "popularity": 1551
+      },
+      {
+        "name": "ya",
+        "popularity": 968
+      },
+      {
+        "name": "dystopian",
+        "popularity": 873
+      },
+      {
+        "name": "fiction",
+        "popularity": 779
+      },
+      {
+        "name": "dystopia",
+        "popularity": 769
+      },
+      {
+        "name": "owned",
+        "popularity": 605
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 458
+      },
+      {
+        "name": "urban-fantasy",
+        "popularity": 453
+      },
+      {
+        "name": "series",
+        "popularity": 434
+      },
+      {
+        "name": "brandon-sanderson",
+        "popularity": 391
+      },
+      {
+        "name": "audiobook",
+        "popularity": 390
+      },
+      {
+        "name": "superheroes",
+        "popularity": 343
+      },
+      {
+        "name": "kindle",
+        "popularity": 302
+      },
+      {
+        "name": "audiobooks",
+        "popularity": 271
+      },
+      {
+        "name": "audible",
+        "popularity": 243
+      },
+      {
+        "name": "scifi",
+        "popularity": 229
+      },
+      {
+        "name": "superhero",
+        "popularity": 228
+      },
+      {
+        "name": "ebook",
+        "popularity": 212
+      },
+      {
+        "name": "adventure",
+        "popularity": 197
+      },
+      {
+        "name": "audio",
+        "popularity": 188
+      },
+      {
+        "name": "sci-fi-fantasy",
+        "popularity": 182
+      },
+      {
+        "name": "library",
+        "popularity": 179
+      },
+      {
+        "name": "post-apocalyptic",
+        "popularity": 169
+      },
+      {
+        "name": "to-buy",
+        "popularity": 161
+      },
+      {
+        "name": "action",
+        "popularity": 159
+      },
+      {
+        "name": "ya-fantasy",
+        "popularity": 138
+      },
+      {
+        "name": "owned-books",
+        "popularity": 135
+      },
+      {
+        "name": "fantasy-sci-fi",
+        "popularity": 130
+      },
+      {
+        "name": "sanderson",
+        "popularity": 128
+      },
+      {
+        "name": "favourites",
+        "popularity": 126
+      },
+      {
+        "name": "dnf",
+        "popularity": 122
+      },
+      {
+        "name": "tbr",
+        "popularity": 118
+      },
+      {
+        "name": "teen",
+        "popularity": 114
+      },
+      {
+        "name": "paranormal",
+        "popularity": 110
+      },
+      {
+        "name": "book-club",
+        "popularity": 108
+      },
+      {
+        "name": "superpowers",
+        "popularity": 102
+      },
+      {
+        "name": "ebooks",
+        "popularity": 101
+      },
+      {
+        "name": "reckoners",
+        "popularity": 98
+      },
+      {
+        "name": "read-in-2014",
+        "popularity": 96
+      },
+      {
+        "name": "read-in-2016",
+        "popularity": 92
+      },
+      {
+        "name": "wish-list",
+        "popularity": 91
+      },
+      {
+        "name": "read-in-2015",
+        "popularity": 87
+      },
+      {
+        "name": "read-in-2013",
+        "popularity": 80
+      },
+      {
+        "name": "audio-books",
+        "popularity": 79
+      },
+      {
+        "name": "supernatural",
+        "popularity": 78
+      },
+      {
+        "name": "scifi-fantasy",
+        "popularity": 78
+      },
+      {
+        "name": "read-2015",
+        "popularity": 77
+      },
+      {
+        "name": "maybe",
+        "popularity": 77
+      },
+      {
+        "name": "action-adventure",
+        "popularity": 73
+      },
+      {
+        "name": "default",
+        "popularity": 72
+      },
+      {
+        "name": "did-not-finish",
+        "popularity": 69
+      },
+      {
+        "name": "read-2014",
+        "popularity": 68
+      },
+      {
+        "name": "i-own",
+        "popularity": 67
+      },
+      {
+        "name": "ya-fiction",
+        "popularity": 67
+      },
+      {
+        "name": "reviewed",
+        "popularity": 66
+      },
+      {
+        "name": "read-in-2017",
+        "popularity": 65
+      },
+      {
+        "name": "fictión",
+        "popularity": 64
+      },
+      {
+        "name": "magic",
+        "popularity": 64
+      },
+      {
+        "name": "books-1-12",
+        "popularity": 63
+      },
+      {
+        "name": "first-in-series",
+        "popularity": 61
+      },
+      {
+        "name": "audio-book",
+        "popularity": 61
+      },
+      {
+        "name": "5-stars",
+        "popularity": 58
+      },
+      {
+        "name": "sf",
+        "popularity": 57
+      },
+      {
+        "name": "abandoned",
+        "popularity": 57
+      },
+      {
+        "name": "my-books",
+        "popularity": 57
+      },
+      {
+        "name": "super-heroes",
+        "popularity": 53
+      },
+      {
+        "name": "my-library",
+        "popularity": 53
+      },
+      {
+        "name": "e-book",
+        "popularity": 53
+      },
+      {
+        "name": "books",
+        "popularity": 53
+      },
+      {
+        "name": "owned-tbr",
+        "popularity": 52
+      },
+      {
+        "name": "4-stars",
+        "popularity": 50
+      },
+      {
+        "name": "own-it",
+        "popularity": 47
+      },
+      {
+        "name": "thriller",
+        "popularity": 47
+      },
+      {
+        "name": "novels",
+        "popularity": 46
+      },
+      {
+        "name": "favorite",
+        "popularity": 45
+      },
+      {
+        "name": "apocalyptic",
+        "popularity": 45
+      },
+      {
+        "name": "romance",
+        "popularity": 45
+      },
+      {
+        "name": "recommended",
+        "popularity": 45
+      },
+      {
+        "name": "fantasy-scifi",
+        "popularity": 45
+      },
+      {
+        "name": "epic-fantasy",
+        "popularity": 45
+      },
+      {
+        "name": "speculative-fiction",
+        "popularity": 44
+      },
+      {
+        "name": "physical-tbr",
+        "popularity": 44
+      },
+      {
+        "name": "young-adult-fantasy",
+        "popularity": 43
+      },
+      {
+        "name": "e-books",
+        "popularity": 42
+      },
+      {
+        "name": "young-adult-fiction",
+        "popularity": 42
+      },
+      {
+        "name": "read-in-2019",
+        "popularity": 41
+      },
+      {
+        "name": "read-2016",
+        "popularity": 41
+      },
+      {
+        "name": "signed",
+        "popularity": 41
+      },
+      {
+        "name": "super-powers",
+        "popularity": 41
+      },
+      {
+        "name": "read-2013",
+        "popularity": 40
+      },
+      {
+        "name": "male-pov",
+        "popularity": 40
+      },
+      {
+        "name": "ya-books",
+        "popularity": 40
+      },
+      {
+        "name": "read-in-2018",
+        "popularity": 39
+      },
+      {
+        "name": "all-time-favorites",
+        "popularity": 39
+      }
+    ]
+  },
+  {
+    "id": 16304,
+    "isbn": "0425200450",
+    "isbn13": "9780425200452",
+    "title": "Murder on the Orient Express",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 322,
+    "ratingsCount": 337814,
+    "publicationYear": 1934,
+    "averageRating": 4.17,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Agatha Christie"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 169573
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 12193
+      },
+      {
+        "name": "mystery",
+        "popularity": 9610
+      },
+      {
+        "name": "classics",
+        "popularity": 4588
+      },
+      {
+        "name": "fiction",
+        "popularity": 3980
+      },
+      {
+        "name": "favorites",
+        "popularity": 3174
+      },
+      {
+        "name": "agatha-christie",
+        "popularity": 2348
+      },
+      {
+        "name": "crime",
+        "popularity": 1941
+      },
+      {
+        "name": "owned",
+        "popularity": 1225
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 1182
+      },
+      {
+        "name": "mystery-thriller",
+        "popularity": 932
+      },
+      {
+        "name": "audiobook",
+        "popularity": 868
+      },
+      {
+        "name": "mysteries",
+        "popularity": 835
+      },
+      {
+        "name": "classic",
+        "popularity": 795
+      },
+      {
+        "name": "audiobooks",
+        "popularity": 759
+      },
+      {
+        "name": "book-club",
+        "popularity": 744
+      },
+      {
+        "name": "detective",
+        "popularity": 614
+      },
+      {
+        "name": "thriller",
+        "popularity": 587
+      },
+      {
+        "name": "series",
+        "popularity": 433
+      },
+      {
+        "name": "read-in-2017",
+        "popularity": 433
+      },
+      {
+        "name": "adult",
+        "popularity": 426
+      },
+      {
+        "name": "audio",
+        "popularity": 405
+      },
+      {
+        "name": "library",
+        "popularity": 372
+      },
+      {
+        "name": "kindle",
+        "popularity": 352
+      },
+      {
+        "name": "british",
+        "popularity": 349
+      },
+      {
+        "name": "favourites",
+        "popularity": 339
+      },
+      {
+        "name": "owned-books",
+        "popularity": 335
+      },
+      {
+        "name": "novels",
+        "popularity": 321
+      },
+      {
+        "name": "murder-mystery",
+        "popularity": 297
+      },
+      {
+        "name": "crime-mystery",
+        "popularity": 276
+      },
+      {
+        "name": "read-in-2018",
+        "popularity": 265
+      },
+      {
+        "name": "mystery-suspense",
+        "popularity": 256
+      },
+      {
+        "name": "hercule-poirot",
+        "popularity": 246
+      },
+      {
+        "name": "adult-fiction",
+        "popularity": 245
+      },
+      {
+        "name": "read-2017",
+        "popularity": 238
+      },
+      {
+        "name": "mystery-crime",
+        "popularity": 233
+      },
+      {
+        "name": "crime-fiction",
+        "popularity": 225
+      },
+      {
+        "name": "suspense",
+        "popularity": 223
+      },
+      {
+        "name": "ebook",
+        "popularity": 212
+      },
+      {
+        "name": "english",
+        "popularity": 211
+      },
+      {
+        "name": "default",
+        "popularity": 209
+      },
+      {
+        "name": "my-books",
+        "popularity": 206
+      },
+      {
+        "name": "poirot",
+        "popularity": 201
+      },
+      {
+        "name": "historical-fiction",
+        "popularity": 201
+      },
+      {
+        "name": "to-buy",
+        "popularity": 199
+      },
+      {
+        "name": "my-library",
+        "popularity": 195
+      },
+      {
+        "name": "audio-books",
+        "popularity": 186
+      },
+      {
+        "name": "read-2018",
+        "popularity": 183
+      },
+      {
+        "name": "audible",
+        "popularity": 177
+      },
+      {
+        "name": "20th-century",
+        "popularity": 176
+      },
+      {
+        "name": "christie",
+        "popularity": 171
+      },
+      {
+        "name": "historical",
+        "popularity": 166
+      },
+      {
+        "name": "murder",
+        "popularity": 164
+      },
+      {
+        "name": "2017-reads",
+        "popularity": 160
+      },
+      {
+        "name": "audio-book",
+        "popularity": 156
+      },
+      {
+        "name": "read-in-2019",
+        "popularity": 154
+      },
+      {
+        "name": "british-literature",
+        "popularity": 153
+      },
+      {
+        "name": "agatha",
+        "popularity": 145
+      },
+      {
+        "name": "thriller-mystery",
+        "popularity": 143
+      },
+      {
+        "name": "i-own",
+        "popularity": 143
+      },
+      {
+        "name": "novel",
+        "popularity": 141
+      },
+      {
+        "name": "literature",
+        "popularity": 133
+      },
+      {
+        "name": "re-read",
+        "popularity": 133
+      },
+      {
+        "name": "tbr",
+        "popularity": 129
+      },
+      {
+        "name": "5-stars",
+        "popularity": 128
+      },
+      {
+        "name": "crime-thriller",
+        "popularity": 127
+      },
+      {
+        "name": "ebooks",
+        "popularity": 119
+      },
+      {
+        "name": "female-author",
+        "popularity": 118
+      },
+      {
+        "name": "gialli",
+        "popularity": 116
+      },
+      {
+        "name": "books",
+        "popularity": 111
+      },
+      {
+        "name": "read-2019",
+        "popularity": 109
+      },
+      {
+        "name": "detectives",
+        "popularity": 107
+      },
+      {
+        "name": "mistery",
+        "popularity": 105
+      },
+      {
+        "name": "borrowed",
+        "popularity": 105
+      },
+      {
+        "name": "detective-fiction",
+        "popularity": 103
+      },
+      {
+        "name": "4-stars",
+        "popularity": 102
+      },
+      {
+        "name": "2018-reads",
+        "popularity": 101
+      },
+      {
+        "name": "1930s",
+        "popularity": 100
+      },
+      {
+        "name": "read-in-2016",
+        "popularity": 97
+      },
+      {
+        "name": "cozy-mystery",
+        "popularity": 96
+      },
+      {
+        "name": "bookclub",
+        "popularity": 94
+      },
+      {
+        "name": "read-in-2015",
+        "popularity": 93
+      },
+      {
+        "name": "2017-books",
+        "popularity": 93
+      },
+      {
+        "name": "school",
+        "popularity": 92
+      },
+      {
+        "name": "on-my-shelf",
+        "popularity": 91
+      },
+      {
+        "name": "favorite-books",
+        "popularity": 88
+      },
+      {
+        "name": "england",
+        "popularity": 88
+      },
+      {
+        "name": "crime-and-mystery",
+        "popularity": 88
+      },
+      {
+        "name": "thrillers",
+        "popularity": 87
+      },
+      {
+        "name": "female-authors",
+        "popularity": 87
+      },
+      {
+        "name": "europe",
+        "popularity": 83
+      },
+      {
+        "name": "bookshelf",
+        "popularity": 83
+      },
+      {
+        "name": "mystery-detective",
+        "popularity": 83
+      },
+      {
+        "name": "own-it",
+        "popularity": 80
+      },
+      {
+        "name": "reread",
+        "popularity": 79
+      },
+      {
+        "name": "crime-mystery-thriller",
+        "popularity": 78
+      },
+      {
+        "name": "dnf",
+        "popularity": 78
+      },
+      {
+        "name": "2018-books",
+        "popularity": 76
+      },
+      {
+        "name": "e-book",
+        "popularity": 76
+      },
+      {
+        "name": "read-in-english",
+        "popularity": 75
+      }
+    ]
+  },
+  {
+    "id": 3103,
+    "isbn": "0393310329",
+    "isbn13": "9780393310320",
+    "title": "Maurice",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 256,
+    "ratingsCount": 25741,
+    "publicationYear": 1971,
+    "averageRating": 4.03,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "E.M. Forster"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 32557
+      },
+      {
+        "name": "classics",
+        "popularity": 1092
+      },
+      {
+        "name": "fiction",
+        "popularity": 767
+      },
+      {
+        "name": "lgbt",
+        "popularity": 733
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 723
+      },
+      {
+        "name": "favorites",
+        "popularity": 551
+      },
+      {
+        "name": "lgbtq",
+        "popularity": 374
+      },
+      {
+        "name": "romance",
+        "popularity": 266
+      },
+      {
+        "name": "queer",
+        "popularity": 249
+      },
+      {
+        "name": "gay",
+        "popularity": 171
+      },
+      {
+        "name": "classic",
+        "popularity": 158
+      },
+      {
+        "name": "owned",
+        "popularity": 133
+      },
+      {
+        "name": "historical-fiction",
+        "popularity": 126
+      },
+      {
+        "name": "lgbtqia",
+        "popularity": 116
+      },
+      {
+        "name": "favourites",
+        "popularity": 116
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 108
+      },
+      {
+        "name": "glbt",
+        "popularity": 96
+      },
+      {
+        "name": "historical",
+        "popularity": 95
+      },
+      {
+        "name": "novels",
+        "popularity": 92
+      },
+      {
+        "name": "m-m",
+        "popularity": 80
+      },
+      {
+        "name": "british",
+        "popularity": 75
+      },
+      {
+        "name": "literature",
+        "popularity": 73
+      },
+      {
+        "name": "20th-century",
+        "popularity": 72
+      },
+      {
+        "name": "to-buy",
+        "popularity": 57
+      },
+      {
+        "name": "england",
+        "popularity": 52
+      },
+      {
+        "name": "english",
+        "popularity": 47
+      },
+      {
+        "name": "adult",
+        "popularity": 40
+      },
+      {
+        "name": "british-literature",
+        "popularity": 38
+      },
+      {
+        "name": "owned-books",
+        "popularity": 37
+      },
+      {
+        "name": "literary-fiction",
+        "popularity": 36
+      },
+      {
+        "name": "novel",
+        "popularity": 36
+      },
+      {
+        "name": "queer-lit",
+        "popularity": 35
+      },
+      {
+        "name": "gay-fiction",
+        "popularity": 35
+      },
+      {
+        "name": "dark-academia",
+        "popularity": 34
+      },
+      {
+        "name": "library",
+        "popularity": 34
+      },
+      {
+        "name": "read-in-2018",
+        "popularity": 29
+      },
+      {
+        "name": "lgbt-fiction",
+        "popularity": 29
+      },
+      {
+        "name": "coming-of-age",
+        "popularity": 29
+      },
+      {
+        "name": "lgbtqa",
+        "popularity": 28
+      },
+      {
+        "name": "adult-fiction",
+        "popularity": 27
+      },
+      {
+        "name": "m-m-romance",
+        "popularity": 27
+      },
+      {
+        "name": "mm",
+        "popularity": 27
+      },
+      {
+        "name": "english-literature",
+        "popularity": 27
+      },
+      {
+        "name": "audiobook",
+        "popularity": 26
+      },
+      {
+        "name": "uk",
+        "popularity": 26
+      },
+      {
+        "name": "book-club",
+        "popularity": 25
+      },
+      {
+        "name": "modern-classics",
+        "popularity": 25
+      },
+      {
+        "name": "maybe",
+        "popularity": 23
+      },
+      {
+        "name": "classic-literature",
+        "popularity": 23
+      },
+      {
+        "name": "audible",
+        "popularity": 22
+      },
+      {
+        "name": "audiobooks",
+        "popularity": 22
+      },
+      {
+        "name": "kindle",
+        "popularity": 22
+      },
+      {
+        "name": "tbr",
+        "popularity": 22
+      },
+      {
+        "name": "read-in-english",
+        "popularity": 22
+      },
+      {
+        "name": "queer-books",
+        "popularity": 21
+      },
+      {
+        "name": "tbr-classics",
+        "popularity": 21
+      },
+      {
+        "name": "classics-to-read",
+        "popularity": 21
+      },
+      {
+        "name": "e-m-forster",
+        "popularity": 21
+      },
+      {
+        "name": "sexuality",
+        "popularity": 21
+      },
+      {
+        "name": "default",
+        "popularity": 20
+      },
+      {
+        "name": "wish-list",
+        "popularity": 20
+      },
+      {
+        "name": "ebook",
+        "popularity": 20
+      },
+      {
+        "name": "british-lit",
+        "popularity": 20
+      },
+      {
+        "name": "lgbt-books",
+        "popularity": 19
+      },
+      {
+        "name": "to-read-fiction",
+        "popularity": 19
+      },
+      {
+        "name": "literary",
+        "popularity": 19
+      },
+      {
+        "name": "queer-fiction",
+        "popularity": 19
+      },
+      {
+        "name": "general-fiction",
+        "popularity": 19
+      },
+      {
+        "name": "edwardian",
+        "popularity": 18
+      },
+      {
+        "name": "britain",
+        "popularity": 18
+      },
+      {
+        "name": "abandoned",
+        "popularity": 17
+      },
+      {
+        "name": "classic-lit",
+        "popularity": 17
+      },
+      {
+        "name": "5-stars",
+        "popularity": 17
+      },
+      {
+        "name": "classic-fiction",
+        "popularity": 17
+      },
+      {
+        "name": "brit-lit",
+        "popularity": 17
+      },
+      {
+        "name": "read-2019",
+        "popularity": 15
+      },
+      {
+        "name": "read-2018",
+        "popularity": 15
+      },
+      {
+        "name": "queer-literature",
+        "popularity": 15
+      },
+      {
+        "name": "mm-romance",
+        "popularity": 15
+      },
+      {
+        "name": "contemporary",
+        "popularity": 15
+      },
+      {
+        "name": "drama",
+        "popularity": 15
+      },
+      {
+        "name": "gay-lit",
+        "popularity": 15
+      },
+      {
+        "name": "read-in-2019",
+        "popularity": 14
+      },
+      {
+        "name": "mlm",
+        "popularity": 14
+      },
+      {
+        "name": "home-library",
+        "popularity": 14
+      },
+      {
+        "name": "to-read-classics",
+        "popularity": 14
+      },
+      {
+        "name": "to-re-read",
+        "popularity": 14
+      },
+      {
+        "name": "lgbtqi",
+        "popularity": 14
+      },
+      {
+        "name": "love",
+        "popularity": 14
+      },
+      {
+        "name": "glbtq",
+        "popularity": 14
+      },
+      {
+        "name": "read-in-2017",
+        "popularity": 13
+      },
+      {
+        "name": "dnf",
+        "popularity": 13
+      },
+      {
+        "name": "audio",
+        "popularity": 13
+      },
+      {
+        "name": "homosexuality",
+        "popularity": 13
+      },
+      {
+        "name": "history",
+        "popularity": 13
+      },
+      {
+        "name": "faves",
+        "popularity": 12
+      },
+      {
+        "name": "modernism",
+        "popularity": 12
+      },
+      {
+        "name": "1910s",
+        "popularity": 12
+      },
+      {
+        "name": "my-books",
+        "popularity": 11
+      },
+      {
+        "name": "realistic-fiction",
+        "popularity": 11
+      }
+    ]
+  },
+  {
+    "id": 2657,
+    "isbn": null,
+    "isbn13": null,
+    "title": "To Kill a Mockingbird",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 324,
+    "ratingsCount": 4238904,
+    "publicationYear": 1960,
+    "averageRating": 4.27,
+    "dateStarted": null,
+    "dateFinished": [
+      2013,
+      4,
+      9
+    ],
+    "owned": false,
+    "authors": [
+      "Harper Lee"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 1313765
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 55644
+      },
+      {
+        "name": "classics",
+        "popularity": 41773
+      },
+      {
+        "name": "favorites",
+        "popularity": 35629
+      },
+      {
+        "name": "fiction",
+        "popularity": 21091
+      },
+      {
+        "name": "classic",
+        "popularity": 7347
+      },
+      {
+        "name": "historical-fiction",
+        "popularity": 6338
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 4743
+      },
+      {
+        "name": "owned",
+        "popularity": 4483
+      },
+      {
+        "name": "school",
+        "popularity": 3617
+      },
+      {
+        "name": "favourites",
+        "popularity": 3331
+      },
+      {
+        "name": "literature",
+        "popularity": 2881
+      },
+      {
+        "name": "young-adult",
+        "popularity": 2780
+      },
+      {
+        "name": "book-club",
+        "popularity": 1711
+      },
+      {
+        "name": "historical",
+        "popularity": 1675
+      },
+      {
+        "name": "novels",
+        "popularity": 1665
+      },
+      {
+        "name": "read-for-school",
+        "popularity": 1642
+      },
+      {
+        "name": "owned-books",
+        "popularity": 1419
+      },
+      {
+        "name": "all-time-favorites",
+        "popularity": 1316
+      },
+      {
+        "name": "re-read",
+        "popularity": 1278
+      },
+      {
+        "name": "school-books",
+        "popularity": 1247
+      },
+      {
+        "name": "high-school",
+        "popularity": 1168
+      },
+      {
+        "name": "for-school",
+        "popularity": 1162
+      },
+      {
+        "name": "coming-of-age",
+        "popularity": 1088
+      },
+      {
+        "name": "to-buy",
+        "popularity": 990
+      },
+      {
+        "name": "american",
+        "popularity": 988
+      },
+      {
+        "name": "classic-literature",
+        "popularity": 986
+      },
+      {
+        "name": "favorite-books",
+        "popularity": 967
+      },
+      {
+        "name": "american-literature",
+        "popularity": 921
+      },
+      {
+        "name": "pulitzer",
+        "popularity": 901
+      },
+      {
+        "name": "novel",
+        "popularity": 863
+      },
+      {
+        "name": "adult",
+        "popularity": 857
+      },
+      {
+        "name": "ya",
+        "popularity": 838
+      },
+      {
+        "name": "my-books",
+        "popularity": 835
+      },
+      {
+        "name": "library",
+        "popularity": 809
+      },
+      {
+        "name": "literary-fiction",
+        "popularity": 791
+      },
+      {
+        "name": "favorite",
+        "popularity": 724
+      },
+      {
+        "name": "1001-books",
+        "popularity": 712
+      },
+      {
+        "name": "adult-fiction",
+        "popularity": 707
+      },
+      {
+        "name": "my-library",
+        "popularity": 691
+      },
+      {
+        "name": "to-re-read",
+        "popularity": 688
+      },
+      {
+        "name": "english",
+        "popularity": 683
+      },
+      {
+        "name": "drama",
+        "popularity": 677
+      },
+      {
+        "name": "realistic-fiction",
+        "popularity": 676
+      },
+      {
+        "name": "audiobook",
+        "popularity": 657
+      },
+      {
+        "name": "pulitzer-prize",
+        "popularity": 623
+      },
+      {
+        "name": "modern-classics",
+        "popularity": 603
+      },
+      {
+        "name": "5-stars",
+        "popularity": 600
+      },
+      {
+        "name": "audiobooks",
+        "popularity": 592
+      },
+      {
+        "name": "20th-century",
+        "popularity": 590
+      },
+      {
+        "name": "general-fiction",
+        "popularity": 580
+      },
+      {
+        "name": "school-reads",
+        "popularity": 558
+      },
+      {
+        "name": "default",
+        "popularity": 554
+      },
+      {
+        "name": "reread",
+        "popularity": 552
+      },
+      {
+        "name": "southern",
+        "popularity": 525
+      },
+      {
+        "name": "read-in-2015",
+        "popularity": 524
+      },
+      {
+        "name": "racism",
+        "popularity": 506
+      },
+      {
+        "name": "read-in-school",
+        "popularity": 504
+      },
+      {
+        "name": "my-favorites",
+        "popularity": 498
+      },
+      {
+        "name": "history",
+        "popularity": 498
+      },
+      {
+        "name": "i-own",
+        "popularity": 497
+      },
+      {
+        "name": "books",
+        "popularity": 489
+      },
+      {
+        "name": "classic-fiction",
+        "popularity": 479
+      },
+      {
+        "name": "childhood",
+        "popularity": 465
+      },
+      {
+        "name": "kindle",
+        "popularity": 464
+      },
+      {
+        "name": "banned-books",
+        "popularity": 459
+      },
+      {
+        "name": "american-lit",
+        "popularity": 458
+      },
+      {
+        "name": "audio",
+        "popularity": 457
+      },
+      {
+        "name": "read-again",
+        "popularity": 456
+      },
+      {
+        "name": "faves",
+        "popularity": 441
+      },
+      {
+        "name": "classics-to-read",
+        "popularity": 439
+      },
+      {
+        "name": "must-read",
+        "popularity": 429
+      },
+      {
+        "name": "classic-lit",
+        "popularity": 424
+      },
+      {
+        "name": "school-reading",
+        "popularity": 416
+      },
+      {
+        "name": "shelfari-favorites",
+        "popularity": 412
+      },
+      {
+        "name": "1001",
+        "popularity": 407
+      },
+      {
+        "name": "to-reread",
+        "popularity": 394
+      },
+      {
+        "name": "race",
+        "popularity": 392
+      },
+      {
+        "name": "tbr",
+        "popularity": 384
+      },
+      {
+        "name": "required-reading",
+        "popularity": 378
+      },
+      {
+        "name": "crime",
+        "popularity": 372
+      },
+      {
+        "name": "literary",
+        "popularity": 363
+      },
+      {
+        "name": "contemporary",
+        "popularity": 362
+      },
+      {
+        "name": "own-it",
+        "popularity": 339
+      },
+      {
+        "name": "usa",
+        "popularity": 337
+      },
+      {
+        "name": "the-classics",
+        "popularity": 337
+      },
+      {
+        "name": "on-my-shelf",
+        "popularity": 331
+      },
+      {
+        "name": "to-read-again",
+        "popularity": 328
+      },
+      {
+        "name": "bookshelf",
+        "popularity": 323
+      },
+      {
+        "name": "family",
+        "popularity": 313
+      },
+      {
+        "name": "ebook",
+        "popularity": 312
+      },
+      {
+        "name": "harper-lee",
+        "popularity": 312
+      },
+      {
+        "name": "favs",
+        "popularity": 311
+      },
+      {
+        "name": "all-time-favourites",
+        "popularity": 306
+      },
+      {
+        "name": "bookclub",
+        "popularity": 302
+      },
+      {
+        "name": "great-american-read",
+        "popularity": 294
+      },
+      {
+        "name": "female-authors",
+        "popularity": 282
+      },
+      {
+        "name": "read-in-english",
+        "popularity": 277
+      },
+      {
+        "name": "read-in-2016",
+        "popularity": 276
+      },
+      {
+        "name": "favourite",
+        "popularity": 276
+      }
+    ]
+  },
+  {
+    "id": 18966819,
+    "isbn": "0345539826",
+    "isbn13": "9780345539823",
+    "title": "Golden Son",
+    "format": "ebook",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 430,
+    "ratingsCount": 135650,
+    "publicationYear": 2015,
+    "averageRating": 4.45,
+    "dateStarted": null,
+    "dateFinished": [
+      2015,
+      3,
+      20
+    ],
+    "owned": false,
+    "authors": [
+      "Pierce Brown"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 87383
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 7555
+      },
+      {
+        "name": "sci-fi",
+        "popularity": 2525
+      },
+      {
+        "name": "favorites",
+        "popularity": 2507
+      },
+      {
+        "name": "science-fiction",
+        "popularity": 2358
+      },
+      {
+        "name": "fantasy",
+        "popularity": 1321
+      },
+      {
+        "name": "dystopian",
+        "popularity": 1004
+      },
+      {
+        "name": "fiction",
+        "popularity": 952
+      },
+      {
+        "name": "dystopia",
+        "popularity": 876
+      },
+      {
+        "name": "young-adult",
+        "popularity": 874
+      },
+      {
+        "name": "owned",
+        "popularity": 459
+      },
+      {
+        "name": "series",
+        "popularity": 453
+      },
+      {
+        "name": "scifi",
+        "popularity": 446
+      },
+      {
+        "name": "ya",
+        "popularity": 442
+      },
+      {
+        "name": "audiobook",
+        "popularity": 383
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 382
+      },
+      {
+        "name": "audiobooks",
+        "popularity": 282
+      },
+      {
+        "name": "favourites",
+        "popularity": 235
+      },
+      {
+        "name": "kindle",
+        "popularity": 215
+      },
+      {
+        "name": "audible",
+        "popularity": 199
+      },
+      {
+        "name": "sci-fi-fantasy",
+        "popularity": 190
+      },
+      {
+        "name": "audio",
+        "popularity": 166
+      },
+      {
+        "name": "read-in-2016",
+        "popularity": 165
+      },
+      {
+        "name": "adult",
+        "popularity": 165
+      },
+      {
+        "name": "to-buy",
+        "popularity": 158
+      },
+      {
+        "name": "library",
+        "popularity": 149
+      },
+      {
+        "name": "ebook",
+        "popularity": 143
+      },
+      {
+        "name": "adventure",
+        "popularity": 142
+      },
+      {
+        "name": "space",
+        "popularity": 136
+      },
+      {
+        "name": "read-in-2015",
+        "popularity": 133
+      },
+      {
+        "name": "red-rising",
+        "popularity": 128
+      },
+      {
+        "name": "owned-books",
+        "popularity": 126
+      },
+      {
+        "name": "war",
+        "popularity": 121
+      },
+      {
+        "name": "space-opera",
+        "popularity": 116
+      },
+      {
+        "name": "read-2016",
+        "popularity": 115
+      },
+      {
+        "name": "sf",
+        "popularity": 115
+      },
+      {
+        "name": "read-in-2017",
+        "popularity": 113
+      },
+      {
+        "name": "read-in-2018",
+        "popularity": 109
+      },
+      {
+        "name": "dnf",
+        "popularity": 108
+      },
+      {
+        "name": "fantasy-sci-fi",
+        "popularity": 105
+      },
+      {
+        "name": "5-stars",
+        "popularity": 95
+      },
+      {
+        "name": "action",
+        "popularity": 95
+      },
+      {
+        "name": "tbr",
+        "popularity": 90
+      },
+      {
+        "name": "scifi-fantasy",
+        "popularity": 85
+      },
+      {
+        "name": "read-2015",
+        "popularity": 84
+      },
+      {
+        "name": "all-time-favorites",
+        "popularity": 83
+      },
+      {
+        "name": "read-2017",
+        "popularity": 81
+      },
+      {
+        "name": "romance",
+        "popularity": 79
+      },
+      {
+        "name": "ebooks",
+        "popularity": 79
+      },
+      {
+        "name": "audio-books",
+        "popularity": 77
+      },
+      {
+        "name": "read-2018",
+        "popularity": 74
+      },
+      {
+        "name": "read-in-2019",
+        "popularity": 72
+      },
+      {
+        "name": "favorite",
+        "popularity": 71
+      },
+      {
+        "name": "adult-fiction",
+        "popularity": 71
+      },
+      {
+        "name": "wish-list",
+        "popularity": 70
+      },
+      {
+        "name": "re-read",
+        "popularity": 67
+      },
+      {
+        "name": "did-not-finish",
+        "popularity": 65
+      },
+      {
+        "name": "pierce-brown",
+        "popularity": 61
+      },
+      {
+        "name": "séries",
+        "popularity": 59
+      },
+      {
+        "name": "owned-tbr",
+        "popularity": 59
+      },
+      {
+        "name": "my-books",
+        "popularity": 57
+      },
+      {
+        "name": "audio-book",
+        "popularity": 56
+      },
+      {
+        "name": "futuristic",
+        "popularity": 54
+      },
+      {
+        "name": "2016-reads",
+        "popularity": 53
+      },
+      {
+        "name": "novels",
+        "popularity": 53
+      },
+      {
+        "name": "2015-releases",
+        "popularity": 52
+      },
+      {
+        "name": "science-fiction-fantasy",
+        "popularity": 51
+      },
+      {
+        "name": "epic",
+        "popularity": 50
+      },
+      {
+        "name": "favorite-books",
+        "popularity": 49
+      },
+      {
+        "name": "2015-reads",
+        "popularity": 49
+      },
+      {
+        "name": "my-library",
+        "popularity": 48
+      },
+      {
+        "name": "thriller",
+        "popularity": 48
+      },
+      {
+        "name": "arc",
+        "popularity": 48
+      },
+      {
+        "name": "read-2019",
+        "popularity": 46
+      },
+      {
+        "name": "5-star",
+        "popularity": 46
+      },
+      {
+        "name": "reread",
+        "popularity": 43
+      },
+      {
+        "name": "military",
+        "popularity": 43
+      },
+      {
+        "name": "speculative-fiction",
+        "popularity": 42
+      },
+      {
+        "name": "e-book",
+        "popularity": 42
+      },
+      {
+        "name": "future",
+        "popularity": 41
+      },
+      {
+        "name": "mythology",
+        "popularity": 41
+      },
+      {
+        "name": "abandoned",
+        "popularity": 40
+      },
+      {
+        "name": "favorite-series",
+        "popularity": 40
+      },
+      {
+        "name": "e-books",
+        "popularity": 39
+      },
+      {
+        "name": "physical-tbr",
+        "popularity": 38
+      },
+      {
+        "name": "i-own",
+        "popularity": 38
+      },
+      {
+        "name": "2018-reads",
+        "popularity": 37
+      },
+      {
+        "name": "books",
+        "popularity": 37
+      },
+      {
+        "name": "fantasy-scifi",
+        "popularity": 37
+      },
+      {
+        "name": "new-adult",
+        "popularity": 37
+      },
+      {
+        "name": "action-adventure",
+        "popularity": 36
+      },
+      {
+        "name": "have",
+        "popularity": 35
+      },
+      {
+        "name": "series-to-finish",
+        "popularity": 34
+      },
+      {
+        "name": "ya-fantasy",
+        "popularity": 34
+      },
+      {
+        "name": "2015-release",
+        "popularity": 34
+      },
+      {
+        "name": "on-my-shelf",
+        "popularity": 33
+      },
+      {
+        "name": "english",
+        "popularity": 33
+      },
+      {
+        "name": "dark",
+        "popularity": 33
+      },
+      {
+        "name": "politics",
+        "popularity": 33
+      },
+      {
+        "name": "own-it",
+        "popularity": 33
+      }
+    ]
+  },
+  {
+    "id": 15839976,
+    "isbn": "0345539788",
+    "isbn13": "9780345539786",
+    "title": "Red Rising",
+    "format": "Hardcover",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 382,
+    "ratingsCount": 219026,
+    "publicationYear": 2014,
+    "averageRating": 4.27,
+    "dateStarted": [
+      2015,
+      1,
+      23
+    ],
+    "dateFinished": [
+      2015,
+      2,
+      15
+    ],
+    "owned": false,
+    "authors": [
+      "Pierce Brown"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 272096
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 14400
+      },
+      {
+        "name": "sci-fi",
+        "popularity": 4447
+      },
+      {
+        "name": "science-fiction",
+        "popularity": 4314
+      },
+      {
+        "name": "favorites",
+        "popularity": 4236
+      },
+      {
+        "name": "fantasy",
+        "popularity": 2789
+      },
+      {
+        "name": "young-adult",
+        "popularity": 2386
+      },
+      {
+        "name": "dystopian",
+        "popularity": 2140
+      },
+      {
+        "name": "fiction",
+        "popularity": 1975
+      },
+      {
+        "name": "dystopia",
+        "popularity": 1905
+      },
+      {
+        "name": "ya",
+        "popularity": 1179
+      },
+      {
+        "name": "series",
+        "popularity": 965
+      },
+      {
+        "name": "owned",
+        "popularity": 943
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 858
+      },
+      {
+        "name": "scifi",
+        "popularity": 791
+      },
+      {
+        "name": "audiobook",
+        "popularity": 676
+      },
+      {
+        "name": "dnf",
+        "popularity": 604
+      },
+      {
+        "name": "kindle",
+        "popularity": 574
+      },
+      {
+        "name": "audiobooks",
+        "popularity": 496
+      },
+      {
+        "name": "favourites",
+        "popularity": 383
+      },
+      {
+        "name": "sci-fi-fantasy",
+        "popularity": 375
+      },
+      {
+        "name": "to-buy",
+        "popularity": 362
+      },
+      {
+        "name": "did-not-finish",
+        "popularity": 358
+      },
+      {
+        "name": "library",
+        "popularity": 352
+      },
+      {
+        "name": "adult",
+        "popularity": 324
+      },
+      {
+        "name": "ebook",
+        "popularity": 304
+      },
+      {
+        "name": "audible",
+        "popularity": 301
+      },
+      {
+        "name": "audio",
+        "popularity": 299
+      },
+      {
+        "name": "tbr",
+        "popularity": 283
+      },
+      {
+        "name": "book-club",
+        "popularity": 283
+      },
+      {
+        "name": "owned-books",
+        "popularity": 274
+      },
+      {
+        "name": "abandoned",
+        "popularity": 273
+      },
+      {
+        "name": "adventure",
+        "popularity": 254
+      },
+      {
+        "name": "read-in-2016",
+        "popularity": 233
+      },
+      {
+        "name": "read-in-2015",
+        "popularity": 220
+      },
+      {
+        "name": "fantasy-sci-fi",
+        "popularity": 210
+      },
+      {
+        "name": "maybe",
+        "popularity": 200
+      },
+      {
+        "name": "sf",
+        "popularity": 195
+      },
+      {
+        "name": "ebooks",
+        "popularity": 186
+      },
+      {
+        "name": "read-in-2017",
+        "popularity": 178
+      },
+      {
+        "name": "wish-list",
+        "popularity": 170
+      },
+      {
+        "name": "read-in-2018",
+        "popularity": 168
+      },
+      {
+        "name": "space",
+        "popularity": 162
+      },
+      {
+        "name": "owned-tbr",
+        "popularity": 159
+      },
+      {
+        "name": "scifi-fantasy",
+        "popularity": 146
+      },
+      {
+        "name": "read-2016",
+        "popularity": 145
+      },
+      {
+        "name": "war",
+        "popularity": 143
+      },
+      {
+        "name": "read-in-2019",
+        "popularity": 142
+      },
+      {
+        "name": "red-rising",
+        "popularity": 138
+      },
+      {
+        "name": "action",
+        "popularity": 135
+      },
+      {
+        "name": "read-2015",
+        "popularity": 131
+      },
+      {
+        "name": "all-time-favorites",
+        "popularity": 131
+      },
+      {
+        "name": "audio-books",
+        "popularity": 124
+      },
+      {
+        "name": "adult-fiction",
+        "popularity": 123
+      },
+      {
+        "name": "5-stars",
+        "popularity": 122
+      },
+      {
+        "name": "space-opera",
+        "popularity": 120
+      },
+      {
+        "name": "my-books",
+        "popularity": 116
+      },
+      {
+        "name": "read-2017",
+        "popularity": 113
+      },
+      {
+        "name": "re-read",
+        "popularity": 110
+      },
+      {
+        "name": "read-in-2014",
+        "popularity": 108
+      },
+      {
+        "name": "read-2018",
+        "popularity": 105
+      },
+      {
+        "name": "on-hold",
+        "popularity": 105
+      },
+      {
+        "name": "must-read",
+        "popularity": 104
+      },
+      {
+        "name": "e-book",
+        "popularity": 104
+      },
+      {
+        "name": "first-reads",
+        "popularity": 104
+      },
+      {
+        "name": "audio-book",
+        "popularity": 103
+      },
+      {
+        "name": "recommended",
+        "popularity": 103
+      },
+      {
+        "name": "favorite",
+        "popularity": 102
+      },
+      {
+        "name": "giveaways",
+        "popularity": 101
+      },
+      {
+        "name": "romance",
+        "popularity": 101
+      },
+      {
+        "name": "novels",
+        "popularity": 99
+      },
+      {
+        "name": "ya-fantasy",
+        "popularity": 97
+      },
+      {
+        "name": "futuristic",
+        "popularity": 97
+      },
+      {
+        "name": "didn-t-finish",
+        "popularity": 96
+      },
+      {
+        "name": "unfinished",
+        "popularity": 92
+      },
+      {
+        "name": "favorite-books",
+        "popularity": 91
+      },
+      {
+        "name": "reviewed",
+        "popularity": 91
+      },
+      {
+        "name": "i-own",
+        "popularity": 89
+      },
+      {
+        "name": "my-library",
+        "popularity": 86
+      },
+      {
+        "name": "first-in-series",
+        "popularity": 84
+      },
+      {
+        "name": "on-my-shelf",
+        "popularity": 82
+      },
+      {
+        "name": "science-fiction-fantasy",
+        "popularity": 82
+      },
+      {
+        "name": "thriller",
+        "popularity": 81
+      },
+      {
+        "name": "mythology",
+        "popularity": 81
+      },
+      {
+        "name": "fantasy-scifi",
+        "popularity": 80
+      },
+      {
+        "name": "teen",
+        "popularity": 80
+      },
+      {
+        "name": "e-books",
+        "popularity": 79
+      },
+      {
+        "name": "read-2019",
+        "popularity": 77
+      },
+      {
+        "name": "pierce-brown",
+        "popularity": 76
+      },
+      {
+        "name": "physical-tbr",
+        "popularity": 75
+      },
+      {
+        "name": "speculative-fiction",
+        "popularity": 74
+      },
+      {
+        "name": "own-it",
+        "popularity": 74
+      },
+      {
+        "name": "reread",
+        "popularity": 71
+      },
+      {
+        "name": "post-apocalyptic",
+        "popularity": 71
+      },
+      {
+        "name": "trilogy",
+        "popularity": 71
+      },
+      {
+        "name": "new-adult",
+        "popularity": 71
+      },
+      {
+        "name": "kindle-books",
+        "popularity": 70
+      },
+      {
+        "name": "male-pov",
+        "popularity": 69
+      },
+      {
+        "name": "2018-reads",
+        "popularity": 66
+      },
+      {
+        "name": "2015-reading-challenge",
+        "popularity": 66
+      }
+    ]
+  },
+  {
+    "id": 23333026,
+    "isbn": "1939424127",
+    "isbn13": "9781939424129",
+    "title": "The Gifted: Books 1 & 2",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 174,
+    "ratingsCount": 74,
+    "publicationYear": 2014,
+    "averageRating": 4.12,
+    "dateStarted": null,
+    "dateFinished": [
+      2016,
+      3,
+      12
+    ],
+    "owned": false,
+    "authors": [
+      "Damian A. Wassel"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 35
+      },
+      {
+        "name": "graphic-novels",
+        "popularity": 16
+      },
+      {
+        "name": "comics",
+        "popularity": 5
+      },
+      {
+        "name": "favorites",
+        "popularity": 5
+      },
+      {
+        "name": "graphic-novel",
+        "popularity": 4
+      },
+      {
+        "name": "comic-books",
+        "popularity": 3
+      },
+      {
+        "name": "animals",
+        "popularity": 2
+      },
+      {
+        "name": "dystopian",
+        "popularity": 2
+      },
+      {
+        "name": "fiction",
+        "popularity": 2
+      },
+      {
+        "name": "speculative-fiction",
+        "popularity": 2
+      },
+      {
+        "name": "sci-fi",
+        "popularity": 1
+      },
+      {
+        "name": "post-apocalyptic",
+        "popularity": 1
+      },
+      {
+        "name": "borrowed-from-portage-county-public",
+        "popularity": 1
+      },
+      {
+        "name": "the-future-doesn-t-look-so-bright-f",
+        "popularity": 1
+      },
+      {
+        "name": "talking-animals",
+        "popularity": 1
+      },
+      {
+        "name": "no-words",
+        "popularity": 1
+      },
+      {
+        "name": "main-character-is-awesome",
+        "popularity": 1
+      },
+      {
+        "name": "found-family",
+        "popularity": 1
+      },
+      {
+        "name": "fantasy",
+        "popularity": 1
+      },
+      {
+        "name": "being-human",
+        "popularity": 1
+      },
+      {
+        "name": "anti-hero",
+        "popularity": 1
+      },
+      {
+        "name": "graphic-novel-manga",
+        "popularity": 1
+      },
+      {
+        "name": "gtcc",
+        "popularity": 1
+      },
+      {
+        "name": "graphic-novels-manga",
+        "popularity": 1
+      },
+      {
+        "name": "apocalypse-how",
+        "popularity": 1
+      },
+      {
+        "name": "other-comics",
+        "popularity": 1
+      },
+      {
+        "name": "graphic-novels-comic-collections",
+        "popularity": 1
+      },
+      {
+        "name": "2018-to-read",
+        "popularity": 1
+      },
+      {
+        "name": "comics-read",
+        "popularity": 1
+      },
+      {
+        "name": "comic",
+        "popularity": 1
+      },
+      {
+        "name": "library-finds",
+        "popularity": 1
+      },
+      {
+        "name": "picture-books",
+        "popularity": 1
+      },
+      {
+        "name": "need-to-buy",
+        "popularity": 1
+      },
+      {
+        "name": "dystopia",
+        "popularity": 1
+      },
+      {
+        "name": "big-themes",
+        "popularity": 1
+      },
+      {
+        "name": "beautiful",
+        "popularity": 1
+      },
+      {
+        "name": "art",
+        "popularity": 1
+      },
+      {
+        "name": "action",
+        "popularity": 1
+      },
+      {
+        "name": "grades-9-12",
+        "popularity": 1
+      },
+      {
+        "name": "grades-6-8",
+        "popularity": 1
+      },
+      {
+        "name": "owned",
+        "popularity": 1
+      },
+      {
+        "name": "xenofiction",
+        "popularity": 1
+      },
+      {
+        "name": "magical-realism",
+        "popularity": 1
+      },
+      {
+        "name": "dogs-wolves-and-foxes",
+        "popularity": 1
+      },
+      {
+        "name": "bears",
+        "popularity": 1
+      },
+      {
+        "name": "awesome-illustrations",
+        "popularity": 1
+      },
+      {
+        "name": "animal-fiction",
+        "popularity": 1
+      },
+      {
+        "name": "4-star",
+        "popularity": 1
+      },
+      {
+        "name": "2016-bookshelf",
+        "popularity": 1
+      },
+      {
+        "name": "animal-stories",
+        "popularity": 1
+      },
+      {
+        "name": "animal-pov",
+        "popularity": 1
+      },
+      {
+        "name": "adventure",
+        "popularity": 1
+      },
+      {
+        "name": "beautiful-gn",
+        "popularity": 1
+      },
+      {
+        "name": "readharder-2016",
+        "popularity": 1
+      },
+      {
+        "name": "grahic-novel",
+        "popularity": 1
+      },
+      {
+        "name": "animals-other-than-cats",
+        "popularity": 1
+      },
+      {
+        "name": "comic-book-collections",
+        "popularity": 1
+      },
+      {
+        "name": "read-2015",
+        "popularity": 1
+      },
+      {
+        "name": "from-my-public-library",
+        "popularity": 1
+      },
+      {
+        "name": "library-book",
+        "popularity": 1
+      },
+      {
+        "name": "2014-releases",
+        "popularity": 1
+      },
+      {
+        "name": "its-the-end-of-the-world-as-we-know",
+        "popularity": 1
+      },
+      {
+        "name": "apl-ill",
+        "popularity": 1
+      },
+      {
+        "name": "anthropomorphic",
+        "popularity": 1
+      },
+      {
+        "name": "plot-device-clearence-sale",
+        "popularity": 1
+      },
+      {
+        "name": "yateen-lit",
+        "popularity": 1
+      },
+      {
+        "name": "gn",
+        "popularity": 1
+      },
+      {
+        "name": "ya",
+        "popularity": 1
+      },
+      {
+        "name": "dystopias-and-the-post-apocoplyptic",
+        "popularity": 1
+      },
+      {
+        "name": "books-for-grownups",
+        "popularity": 1
+      },
+      {
+        "name": "2015-reads",
+        "popularity": 1
+      },
+      {
+        "name": "read-in-2015",
+        "popularity": 1
+      },
+      {
+        "name": "wordless",
+        "popularity": 1
+      },
+      {
+        "name": "graphic-novels-comic-books",
+        "popularity": 1
+      },
+      {
+        "name": "comics-manga-graphic-novels",
+        "popularity": 1
+      },
+      {
+        "name": "comics-w",
+        "popularity": 1
+      }
+    ]
+  },
+  {
+    "id": 23919,
+    "isbn": "0385074077",
+    "isbn13": "9780385074070",
+    "title": "The Complete Stories and Poems",
+    "format": "Hardcover",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 821,
+    "ratingsCount": 205159,
+    "publicationYear": 1849,
+    "averageRating": 4.39,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Edgar Allan Poe"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 139428
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 9196
+      },
+      {
+        "name": "classics",
+        "popularity": 3423
+      },
+      {
+        "name": "poetry",
+        "popularity": 2903
+      },
+      {
+        "name": "horror",
+        "popularity": 1939
+      },
+      {
+        "name": "favorites",
+        "popularity": 1805
+      },
+      {
+        "name": "fiction",
+        "popularity": 1463
+      },
+      {
+        "name": "short-stories",
+        "popularity": 1050
+      },
+      {
+        "name": "owned",
+        "popularity": 859
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 771
+      },
+      {
+        "name": "classic",
+        "popularity": 517
+      },
+      {
+        "name": "mystery",
+        "popularity": 372
+      },
+      {
+        "name": "gothic",
+        "popularity": 359
+      },
+      {
+        "name": "literature",
+        "popularity": 338
+      },
+      {
+        "name": "fantasy",
+        "popularity": 298
+      },
+      {
+        "name": "owned-books",
+        "popularity": 238
+      },
+      {
+        "name": "default",
+        "popularity": 200
+      },
+      {
+        "name": "my-library",
+        "popularity": 166
+      },
+      {
+        "name": "kindle",
+        "popularity": 162
+      },
+      {
+        "name": "rory-gilmore-reading-challenge",
+        "popularity": 151
+      },
+      {
+        "name": "my-books",
+        "popularity": 129
+      },
+      {
+        "name": "library",
+        "popularity": 118
+      },
+      {
+        "name": "classic-literature",
+        "popularity": 115
+      },
+      {
+        "name": "favourites",
+        "popularity": 111
+      },
+      {
+        "name": "american",
+        "popularity": 106
+      },
+      {
+        "name": "19th-century",
+        "popularity": 96
+      },
+      {
+        "name": "american-literature",
+        "popularity": 95
+      },
+      {
+        "name": "anthology",
+        "popularity": 94
+      },
+      {
+        "name": "to-buy",
+        "popularity": 90
+      },
+      {
+        "name": "poems",
+        "popularity": 90
+      },
+      {
+        "name": "i-own",
+        "popularity": 81
+      },
+      {
+        "name": "short-story",
+        "popularity": 81
+      },
+      {
+        "name": "rory-gilmore-challenge",
+        "popularity": 72
+      },
+      {
+        "name": "collections",
+        "popularity": 67
+      },
+      {
+        "name": "thriller",
+        "popularity": 65
+      },
+      {
+        "name": "edgar-allan-poe",
+        "popularity": 63
+      },
+      {
+        "name": "own-it",
+        "popularity": 59
+      },
+      {
+        "name": "anthologies",
+        "popularity": 56
+      },
+      {
+        "name": "rory-gilmore-reading-list",
+        "popularity": 54
+      },
+      {
+        "name": "classics-to-read",
+        "popularity": 54
+      },
+      {
+        "name": "all-time-favorites",
+        "popularity": 54
+      },
+      {
+        "name": "rory-gilmore",
+        "popularity": 53
+      },
+      {
+        "name": "dark",
+        "popularity": 53
+      },
+      {
+        "name": "collection",
+        "popularity": 53
+      },
+      {
+        "name": "adult",
+        "popularity": 53
+      },
+      {
+        "name": "personal-library",
+        "popularity": 52
+      },
+      {
+        "name": "home-library",
+        "popularity": 50
+      },
+      {
+        "name": "classic-lit",
+        "popularity": 50
+      },
+      {
+        "name": "english",
+        "popularity": 49
+      },
+      {
+        "name": "books",
+        "popularity": 48
+      },
+      {
+        "name": "poe",
+        "popularity": 48
+      },
+      {
+        "name": "classic-fiction",
+        "popularity": 48
+      },
+      {
+        "name": "science-fiction",
+        "popularity": 47
+      },
+      {
+        "name": "tbr",
+        "popularity": 46
+      },
+      {
+        "name": "american-lit",
+        "popularity": 45
+      },
+      {
+        "name": "ebook",
+        "popularity": 44
+      },
+      {
+        "name": "gilmore-girls",
+        "popularity": 43
+      },
+      {
+        "name": "favorite-books",
+        "popularity": 43
+      },
+      {
+        "name": "halloween",
+        "popularity": 43
+      },
+      {
+        "name": "the-classics",
+        "popularity": 42
+      },
+      {
+        "name": "have",
+        "popularity": 42
+      },
+      {
+        "name": "school",
+        "popularity": 42
+      },
+      {
+        "name": "crime",
+        "popularity": 41
+      },
+      {
+        "name": "bookshelf",
+        "popularity": 41
+      },
+      {
+        "name": "terror",
+        "popularity": 40
+      },
+      {
+        "name": "stories",
+        "popularity": 40
+      },
+      {
+        "name": "short-fiction",
+        "popularity": 40
+      },
+      {
+        "name": "mystery-thriller",
+        "popularity": 39
+      },
+      {
+        "name": "paranormal",
+        "popularity": 39
+      },
+      {
+        "name": "novels",
+        "popularity": 39
+      },
+      {
+        "name": "adult-fiction",
+        "popularity": 39
+      },
+      {
+        "name": "supernatural",
+        "popularity": 38
+      },
+      {
+        "name": "my-bookshelf",
+        "popularity": 37
+      },
+      {
+        "name": "short-story-collections",
+        "popularity": 37
+      },
+      {
+        "name": "suspense",
+        "popularity": 35
+      },
+      {
+        "name": "favorite",
+        "popularity": 35
+      },
+      {
+        "name": "wish-list",
+        "popularity": 34
+      },
+      {
+        "name": "literary",
+        "popularity": 34
+      },
+      {
+        "name": "gothic-horror",
+        "popularity": 34
+      },
+      {
+        "name": "on-my-shelf",
+        "popularity": 33
+      },
+      {
+        "name": "unread",
+        "popularity": 33
+      },
+      {
+        "name": "other",
+        "popularity": 33
+      },
+      {
+        "name": "must-read",
+        "popularity": 32
+      },
+      {
+        "name": "ebooks",
+        "popularity": 31
+      },
+      {
+        "name": "on-hold",
+        "popularity": 31
+      },
+      {
+        "name": "books-owned",
+        "popularity": 30
+      },
+      {
+        "name": "literary-fiction",
+        "popularity": 30
+      },
+      {
+        "name": "unfinished",
+        "popularity": 30
+      },
+      {
+        "name": "horror-thriller",
+        "popularity": 30
+      },
+      {
+        "name": "partially-read",
+        "popularity": 29
+      },
+      {
+        "name": "to-read-classics",
+        "popularity": 28
+      },
+      {
+        "name": "want-to-buy",
+        "popularity": 28
+      },
+      {
+        "name": "mine",
+        "popularity": 28
+      },
+      {
+        "name": "spooky",
+        "popularity": 27
+      },
+      {
+        "name": "owned-unread",
+        "popularity": 26
+      },
+      {
+        "name": "own-to-read",
+        "popularity": 26
+      },
+      {
+        "name": "historical-fiction",
+        "popularity": 26
+      },
+      {
+        "name": "general-fiction",
+        "popularity": 26
+      },
+      {
+        "name": "owned-to-read",
+        "popularity": 25
+      },
+      {
+        "name": "owned-tbr",
+        "popularity": 24
+      }
+    ]
+  },
+  {
+    "id": 10692,
+    "isbn": "0751537284",
+    "isbn13": "9780751537284",
+    "title": "The Historian",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 704,
+    "ratingsCount": 234452,
+    "publicationYear": 2005,
+    "averageRating": 3.78,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Elizabeth Kostova"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 138246
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 6616
+      },
+      {
+        "name": "fiction",
+        "popularity": 3620
+      },
+      {
+        "name": "historical-fiction",
+        "popularity": 3384
+      },
+      {
+        "name": "favorites",
+        "popularity": 2366
+      },
+      {
+        "name": "fantasy",
+        "popularity": 1882
+      },
+      {
+        "name": "horror",
+        "popularity": 1555
+      },
+      {
+        "name": "mystery",
+        "popularity": 1274
+      },
+      {
+        "name": "vampires",
+        "popularity": 1213
+      },
+      {
+        "name": "owned",
+        "popularity": 792
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 775
+      },
+      {
+        "name": "historical",
+        "popularity": 738
+      },
+      {
+        "name": "paranormal",
+        "popularity": 507
+      },
+      {
+        "name": "gothic",
+        "popularity": 485
+      },
+      {
+        "name": "thriller",
+        "popularity": 367
+      },
+      {
+        "name": "vampire",
+        "popularity": 367
+      },
+      {
+        "name": "book-club",
+        "popularity": 350
+      },
+      {
+        "name": "supernatural",
+        "popularity": 300
+      },
+      {
+        "name": "history",
+        "popularity": 293
+      },
+      {
+        "name": "abandoned",
+        "popularity": 254
+      },
+      {
+        "name": "adult",
+        "popularity": 236
+      },
+      {
+        "name": "default",
+        "popularity": 229
+      },
+      {
+        "name": "owned-books",
+        "popularity": 224
+      },
+      {
+        "name": "library",
+        "popularity": 221
+      },
+      {
+        "name": "audiobook",
+        "popularity": 207
+      },
+      {
+        "name": "adult-fiction",
+        "popularity": 195
+      },
+      {
+        "name": "did-not-finish",
+        "popularity": 194
+      },
+      {
+        "name": "dnf",
+        "popularity": 190
+      },
+      {
+        "name": "novels",
+        "popularity": 185
+      },
+      {
+        "name": "suspense",
+        "popularity": 173
+      },
+      {
+        "name": "audio",
+        "popularity": 168
+      },
+      {
+        "name": "books-about-books",
+        "popularity": 161
+      },
+      {
+        "name": "favourites",
+        "popularity": 158
+      },
+      {
+        "name": "adventure",
+        "popularity": 156
+      },
+      {
+        "name": "my-library",
+        "popularity": 151
+      },
+      {
+        "name": "audiobooks",
+        "popularity": 150
+      },
+      {
+        "name": "mystery-thriller",
+        "popularity": 146
+      },
+      {
+        "name": "contemporary",
+        "popularity": 146
+      },
+      {
+        "name": "general-fiction",
+        "popularity": 145
+      },
+      {
+        "name": "my-books",
+        "popularity": 130
+      },
+      {
+        "name": "kindle",
+        "popularity": 129
+      },
+      {
+        "name": "literature",
+        "popularity": 124
+      },
+      {
+        "name": "dracula",
+        "popularity": 118
+      },
+      {
+        "name": "literary-fiction",
+        "popularity": 115
+      },
+      {
+        "name": "didn-t-finish",
+        "popularity": 115
+      },
+      {
+        "name": "unfinished",
+        "popularity": 111
+      },
+      {
+        "name": "europe",
+        "popularity": 102
+      },
+      {
+        "name": "contemporary-fiction",
+        "popularity": 101
+      },
+      {
+        "name": "i-own",
+        "popularity": 100
+      },
+      {
+        "name": "sci-fi-fantasy",
+        "popularity": 100
+      },
+      {
+        "name": "novel",
+        "popularity": 92
+      },
+      {
+        "name": "mysteries",
+        "popularity": 83
+      },
+      {
+        "name": "ebook",
+        "popularity": 81
+      },
+      {
+        "name": "romance",
+        "popularity": 79
+      },
+      {
+        "name": "all-time-favorites",
+        "popularity": 78
+      },
+      {
+        "name": "own-it",
+        "popularity": 77
+      },
+      {
+        "name": "audio-book",
+        "popularity": 75
+      },
+      {
+        "name": "bookclub",
+        "popularity": 75
+      },
+      {
+        "name": "recommended",
+        "popularity": 74
+      },
+      {
+        "name": "to-buy",
+        "popularity": 73
+      },
+      {
+        "name": "elizabeth-kostova",
+        "popularity": 72
+      },
+      {
+        "name": "home-library",
+        "popularity": 70
+      },
+      {
+        "name": "favorite-books",
+        "popularity": 70
+      },
+      {
+        "name": "gave-up-on",
+        "popularity": 67
+      },
+      {
+        "name": "mystery-suspense",
+        "popularity": 66
+      },
+      {
+        "name": "travel",
+        "popularity": 65
+      },
+      {
+        "name": "re-read",
+        "popularity": 65
+      },
+      {
+        "name": "drama",
+        "popularity": 64
+      },
+      {
+        "name": "epistolary",
+        "popularity": 61
+      },
+      {
+        "name": "2006",
+        "popularity": 61
+      },
+      {
+        "name": "own-to-read",
+        "popularity": 60
+      },
+      {
+        "name": "female-author",
+        "popularity": 59
+      },
+      {
+        "name": "fantasy-sci-fi",
+        "popularity": 59
+      },
+      {
+        "name": "audible",
+        "popularity": 58
+      },
+      {
+        "name": "urban-fantasy",
+        "popularity": 58
+      },
+      {
+        "name": "eastern-europe",
+        "popularity": 58
+      },
+      {
+        "name": "never-finished",
+        "popularity": 57
+      },
+      {
+        "name": "couldn-t-finish",
+        "popularity": 56
+      },
+      {
+        "name": "audio-books",
+        "popularity": 55
+      },
+      {
+        "name": "my-favorites",
+        "popularity": 55
+      },
+      {
+        "name": "tbr",
+        "popularity": 54
+      },
+      {
+        "name": "ebooks",
+        "popularity": 54
+      },
+      {
+        "name": "wish-list",
+        "popularity": 54
+      },
+      {
+        "name": "on-my-shelf",
+        "popularity": 53
+      },
+      {
+        "name": "magical-realism",
+        "popularity": 53
+      },
+      {
+        "name": "faves",
+        "popularity": 53
+      },
+      {
+        "name": "american",
+        "popularity": 51
+      },
+      {
+        "name": "maybe",
+        "popularity": 51
+      },
+      {
+        "name": "modern-fiction",
+        "popularity": 51
+      },
+      {
+        "name": "favorite",
+        "popularity": 51
+      },
+      {
+        "name": "book-club-books",
+        "popularity": 51
+      },
+      {
+        "name": "2005",
+        "popularity": 51
+      },
+      {
+        "name": "shelfari-favorites",
+        "popularity": 50
+      },
+      {
+        "name": "21st-century",
+        "popularity": 50
+      },
+      {
+        "name": "to-read-fiction",
+        "popularity": 50
+      },
+      {
+        "name": "thrillers",
+        "popularity": 49
+      },
+      {
+        "name": "personal-library",
+        "popularity": 49
+      },
+      {
+        "name": "could-not-finish",
+        "popularity": 49
+      },
+      {
+        "name": "fiction-historical",
+        "popularity": 48
+      },
+      {
+        "name": "borrowed",
+        "popularity": 48
+      }
+    ]
+  },
+  {
+    "id": 13530981,
+    "isbn": "0771064861",
+    "isbn13": "9780771064869",
+    "title": "Dear Life",
+    "format": "Hardcover",
+    "rating": 4,
+    "readCount": 1,
+    "pageNumber": 336,
+    "ratingsCount": 29548,
+    "publicationYear": 2012,
+    "averageRating": 3.75,
+    "dateStarted": null,
+    "dateFinished": [
+      2015,
+      6,
+      27
+    ],
+    "owned": false,
+    "authors": [
+      "Alice Munro"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 34890
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 2580
+      },
+      {
+        "name": "short-stories",
+        "popularity": 1425
+      },
+      {
+        "name": "fiction",
+        "popularity": 795
+      },
+      {
+        "name": "book-club",
+        "popularity": 232
+      },
+      {
+        "name": "favorites",
+        "popularity": 162
+      },
+      {
+        "name": "canadian",
+        "popularity": 150
+      },
+      {
+        "name": "canada",
+        "popularity": 129
+      },
+      {
+        "name": "owned",
+        "popularity": 110
+      },
+      {
+        "name": "literary-fiction",
+        "popularity": 101
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 89
+      },
+      {
+        "name": "short-story",
+        "popularity": 81
+      },
+      {
+        "name": "literature",
+        "popularity": 74
+      },
+      {
+        "name": "contemporary",
+        "popularity": 71
+      },
+      {
+        "name": "abandoned",
+        "popularity": 70
+      },
+      {
+        "name": "nobel-prize",
+        "popularity": 70
+      },
+      {
+        "name": "nobel",
+        "popularity": 69
+      },
+      {
+        "name": "library",
+        "popularity": 66
+      },
+      {
+        "name": "short-story-collections",
+        "popularity": 58
+      },
+      {
+        "name": "canadian-literature",
+        "popularity": 52
+      },
+      {
+        "name": "kindle",
+        "popularity": 51
+      },
+      {
+        "name": "audio",
+        "popularity": 49
+      },
+      {
+        "name": "ebook",
+        "popularity": 46
+      },
+      {
+        "name": "contemporary-fiction",
+        "popularity": 43
+      },
+      {
+        "name": "did-not-finish",
+        "popularity": 42
+      },
+      {
+        "name": "read-in-2013",
+        "popularity": 40
+      },
+      {
+        "name": "audiobook",
+        "popularity": 40
+      },
+      {
+        "name": "stories",
+        "popularity": 39
+      },
+      {
+        "name": "adult-fiction",
+        "popularity": 39
+      },
+      {
+        "name": "to-buy",
+        "popularity": 38
+      },
+      {
+        "name": "alice-munro",
+        "popularity": 37
+      },
+      {
+        "name": "bookclub",
+        "popularity": 37
+      },
+      {
+        "name": "my-library",
+        "popularity": 36
+      },
+      {
+        "name": "owned-books",
+        "popularity": 34
+      },
+      {
+        "name": "short-fiction",
+        "popularity": 34
+      },
+      {
+        "name": "audiobooks",
+        "popularity": 33
+      },
+      {
+        "name": "didn-t-finish",
+        "popularity": 33
+      },
+      {
+        "name": "book-group",
+        "popularity": 32
+      },
+      {
+        "name": "unfinished",
+        "popularity": 32
+      },
+      {
+        "name": "read-in-2014",
+        "popularity": 30
+      },
+      {
+        "name": "female-authors",
+        "popularity": 30
+      },
+      {
+        "name": "literary",
+        "popularity": 29
+      },
+      {
+        "name": "english",
+        "popularity": 27
+      },
+      {
+        "name": "dnf",
+        "popularity": 25
+      },
+      {
+        "name": "adult",
+        "popularity": 25
+      },
+      {
+        "name": "short-stories-essays",
+        "popularity": 24
+      },
+      {
+        "name": "to-read-fiction",
+        "popularity": 24
+      },
+      {
+        "name": "women-authors",
+        "popularity": 23
+      },
+      {
+        "name": "memoir",
+        "popularity": 23
+      },
+      {
+        "name": "my-books",
+        "popularity": 22
+      },
+      {
+        "name": "women",
+        "popularity": 22
+      },
+      {
+        "name": "read-2013",
+        "popularity": 22
+      },
+      {
+        "name": "shortstories",
+        "popularity": 22
+      },
+      {
+        "name": "canlit",
+        "popularity": 22
+      },
+      {
+        "name": "nobel-prize-winners",
+        "popularity": 21
+      },
+      {
+        "name": "short-story-collection",
+        "popularity": 21
+      },
+      {
+        "name": "read-in-2015",
+        "popularity": 20
+      },
+      {
+        "name": "read-2014",
+        "popularity": 20
+      },
+      {
+        "name": "nobel-laureates",
+        "popularity": 20
+      },
+      {
+        "name": "women-writers",
+        "popularity": 19
+      },
+      {
+        "name": "canadian-lit",
+        "popularity": 19
+      },
+      {
+        "name": "female-author",
+        "popularity": 18
+      },
+      {
+        "name": "shorts",
+        "popularity": 18
+      },
+      {
+        "name": "wish-list",
+        "popularity": 18
+      },
+      {
+        "name": "21st-century",
+        "popularity": 17
+      },
+      {
+        "name": "classics",
+        "popularity": 17
+      },
+      {
+        "name": "novels",
+        "popularity": 17
+      },
+      {
+        "name": "favourites",
+        "popularity": 17
+      },
+      {
+        "name": "canadian-authors",
+        "popularity": 17
+      },
+      {
+        "name": "default",
+        "popularity": 16
+      },
+      {
+        "name": "gave-up",
+        "popularity": 16
+      },
+      {
+        "name": "canadian-fiction",
+        "popularity": 16
+      },
+      {
+        "name": "canadiana",
+        "popularity": 16
+      },
+      {
+        "name": "tob-2013",
+        "popularity": 16
+      },
+      {
+        "name": "can-lit",
+        "popularity": 16
+      },
+      {
+        "name": "gave-up-on",
+        "popularity": 15
+      },
+      {
+        "name": "audio-books",
+        "popularity": 15
+      },
+      {
+        "name": "tournament-of-books",
+        "popularity": 15
+      },
+      {
+        "name": "general-fiction",
+        "popularity": 15
+      },
+      {
+        "name": "couldn-t-finish",
+        "popularity": 14
+      },
+      {
+        "name": "own-to-read",
+        "popularity": 14
+      },
+      {
+        "name": "historical-fiction",
+        "popularity": 14
+      },
+      {
+        "name": "ebooks",
+        "popularity": 13
+      },
+      {
+        "name": "feminism",
+        "popularity": 13
+      },
+      {
+        "name": "home-library",
+        "popularity": 13
+      },
+      {
+        "name": "modern-fiction",
+        "popularity": 13
+      },
+      {
+        "name": "never-finished",
+        "popularity": 13
+      },
+      {
+        "name": "fiction-short-stories",
+        "popularity": 13
+      },
+      {
+        "name": "read-in-2018",
+        "popularity": 12
+      },
+      {
+        "name": "read-in-2016",
+        "popularity": 12
+      },
+      {
+        "name": "e-book",
+        "popularity": 12
+      },
+      {
+        "name": "tbr",
+        "popularity": 12
+      },
+      {
+        "name": "anthology",
+        "popularity": 12
+      },
+      {
+        "name": "family",
+        "popularity": 12
+      },
+      {
+        "name": "library-books",
+        "popularity": 12
+      },
+      {
+        "name": "canadian-author",
+        "popularity": 12
+      },
+      {
+        "name": "maybe",
+        "popularity": 11
+      },
+      {
+        "name": "audio-book",
+        "popularity": 11
+      },
+      {
+        "name": "collection",
+        "popularity": 11
+      },
+      {
+        "name": "book-club-books",
+        "popularity": 11
+      }
+    ]
+  },
+  {
+    "id": 12296,
+    "isbn": "0142437263",
+    "isbn13": "9780142437261",
+    "title": "The Scarlet Letter",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 279,
+    "ratingsCount": 675000,
+    "publicationYear": 1850,
+    "averageRating": 3.4,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Nathaniel Hawthorne"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 250187
+      },
+      {
+        "name": "classics",
+        "popularity": 18891
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 9933
+      },
+      {
+        "name": "fiction",
+        "popularity": 6563
+      },
+      {
+        "name": "classic",
+        "popularity": 2882
+      },
+      {
+        "name": "historical-fiction",
+        "popularity": 2630
+      },
+      {
+        "name": "favorites",
+        "popularity": 1858
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 1649
+      },
+      {
+        "name": "owned",
+        "popularity": 1635
+      },
+      {
+        "name": "school",
+        "popularity": 1576
+      },
+      {
+        "name": "literature",
+        "popularity": 1296
+      },
+      {
+        "name": "high-school",
+        "popularity": 764
+      },
+      {
+        "name": "read-for-school",
+        "popularity": 749
+      },
+      {
+        "name": "historical",
+        "popularity": 711
+      },
+      {
+        "name": "classic-literature",
+        "popularity": 616
+      },
+      {
+        "name": "kindle",
+        "popularity": 552
+      },
+      {
+        "name": "for-school",
+        "popularity": 541
+      },
+      {
+        "name": "american-literature",
+        "popularity": 533
+      },
+      {
+        "name": "novels",
+        "popularity": 527
+      },
+      {
+        "name": "school-books",
+        "popularity": 522
+      },
+      {
+        "name": "owned-books",
+        "popularity": 467
+      },
+      {
+        "name": "romance",
+        "popularity": 409
+      },
+      {
+        "name": "1001-books",
+        "popularity": 408
+      },
+      {
+        "name": "american",
+        "popularity": 407
+      },
+      {
+        "name": "adult",
+        "popularity": 394
+      },
+      {
+        "name": "19th-century",
+        "popularity": 377
+      },
+      {
+        "name": "my-library",
+        "popularity": 317
+      },
+      {
+        "name": "adult-fiction",
+        "popularity": 307
+      },
+      {
+        "name": "american-lit",
+        "popularity": 304
+      },
+      {
+        "name": "default",
+        "popularity": 303
+      },
+      {
+        "name": "classics-to-read",
+        "popularity": 289
+      },
+      {
+        "name": "library",
+        "popularity": 281
+      },
+      {
+        "name": "classic-lit",
+        "popularity": 255
+      },
+      {
+        "name": "my-books",
+        "popularity": 253
+      },
+      {
+        "name": "classic-fiction",
+        "popularity": 234
+      },
+      {
+        "name": "read-in-school",
+        "popularity": 233
+      },
+      {
+        "name": "school-reads",
+        "popularity": 231
+      },
+      {
+        "name": "novel",
+        "popularity": 229
+      },
+      {
+        "name": "1001",
+        "popularity": 227
+      },
+      {
+        "name": "literary-fiction",
+        "popularity": 220
+      },
+      {
+        "name": "to-buy",
+        "popularity": 216
+      },
+      {
+        "name": "history",
+        "popularity": 214
+      },
+      {
+        "name": "required-reading",
+        "popularity": 210
+      },
+      {
+        "name": "rory-gilmore-reading-challenge",
+        "popularity": 199
+      },
+      {
+        "name": "school-reading",
+        "popularity": 190
+      },
+      {
+        "name": "religion",
+        "popularity": 186
+      },
+      {
+        "name": "1001-books-to-read-before-you-die",
+        "popularity": 180
+      },
+      {
+        "name": "book-club",
+        "popularity": 178
+      },
+      {
+        "name": "young-adult",
+        "popularity": 178
+      },
+      {
+        "name": "ebook",
+        "popularity": 177
+      },
+      {
+        "name": "drama",
+        "popularity": 174
+      },
+      {
+        "name": "re-read",
+        "popularity": 173
+      },
+      {
+        "name": "i-own",
+        "popularity": 164
+      },
+      {
+        "name": "the-classics",
+        "popularity": 162
+      },
+      {
+        "name": "english",
+        "popularity": 153
+      },
+      {
+        "name": "audiobook",
+        "popularity": 147
+      },
+      {
+        "name": "read-in-high-school",
+        "popularity": 147
+      },
+      {
+        "name": "own-it",
+        "popularity": 145
+      },
+      {
+        "name": "general-fiction",
+        "popularity": 142
+      },
+      {
+        "name": "ebooks",
+        "popularity": 141
+      },
+      {
+        "name": "dnf",
+        "popularity": 139
+      },
+      {
+        "name": "literary",
+        "popularity": 136
+      },
+      {
+        "name": "to-read-classics",
+        "popularity": 131
+      },
+      {
+        "name": "american-classics",
+        "popularity": 131
+      },
+      {
+        "name": "clàssics",
+        "popularity": 130
+      },
+      {
+        "name": "audiobooks",
+        "popularity": 124
+      },
+      {
+        "name": "ap-lit",
+        "popularity": 124
+      },
+      {
+        "name": "abandoned",
+        "popularity": 122
+      },
+      {
+        "name": "to-re-read",
+        "popularity": 121
+      },
+      {
+        "name": "usa",
+        "popularity": 121
+      },
+      {
+        "name": "rory-gilmore-challenge",
+        "popularity": 120
+      },
+      {
+        "name": "home-library",
+        "popularity": 119
+      },
+      {
+        "name": "on-my-shelf",
+        "popularity": 115
+      },
+      {
+        "name": "tbr",
+        "popularity": 110
+      },
+      {
+        "name": "have",
+        "popularity": 110
+      },
+      {
+        "name": "feminism",
+        "popularity": 107
+      },
+      {
+        "name": "did-not-finish",
+        "popularity": 105
+      },
+      {
+        "name": "classics-read",
+        "popularity": 100
+      },
+      {
+        "name": "america",
+        "popularity": 100
+      },
+      {
+        "name": "new-england",
+        "popularity": 100
+      },
+      {
+        "name": "classici",
+        "popularity": 99
+      },
+      {
+        "name": "women",
+        "popularity": 99
+      },
+      {
+        "name": "books",
+        "popularity": 99
+      },
+      {
+        "name": "bookshelf",
+        "popularity": 98
+      },
+      {
+        "name": "books-for-school",
+        "popularity": 96
+      },
+      {
+        "name": "nook",
+        "popularity": 95
+      },
+      {
+        "name": "lit",
+        "popularity": 92
+      },
+      {
+        "name": "kindle-books",
+        "popularity": 92
+      },
+      {
+        "name": "banned-books",
+        "popularity": 91
+      },
+      {
+        "name": "fiction-classics",
+        "popularity": 90
+      },
+      {
+        "name": "personal-library",
+        "popularity": 88
+      },
+      {
+        "name": "high-school-reads",
+        "popularity": 88
+      },
+      {
+        "name": "adultery",
+        "popularity": 86
+      },
+      {
+        "name": "nathaniel-hawthorne",
+        "popularity": 86
+      },
+      {
+        "name": "classics-tbr",
+        "popularity": 85
+      },
+      {
+        "name": "rory-gilmore",
+        "popularity": 83
+      },
+      {
+        "name": "highschool",
+        "popularity": 83
+      },
+      {
+        "name": "unfinished",
+        "popularity": 80
+      },
+      {
+        "name": "my-bookshelf",
+        "popularity": 80
+      },
+      {
+        "name": "college",
+        "popularity": 78
+      }
+    ]
+  },
+  {
+    "id": 402013,
+    "isbn": "0060288140",
+    "isbn13": "9780060288143",
+    "title": "Angus, Thongs and Full-Frontal Snogging",
+    "format": "Hardcover",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 247,
+    "ratingsCount": 127075,
+    "publicationYear": 1999,
+    "averageRating": 3.75,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Louise Rennison"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 49930
+      },
+      {
+        "name": "young-adult",
+        "popularity": 2320
+      },
+      {
+        "name": "ya",
+        "popularity": 1160
+      },
+      {
+        "name": "favorites",
+        "popularity": 779
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 664
+      },
+      {
+        "name": "humor",
+        "popularity": 614
+      },
+      {
+        "name": "fiction",
+        "popularity": 585
+      },
+      {
+        "name": "romance",
+        "popularity": 493
+      },
+      {
+        "name": "chick-lit",
+        "popularity": 458
+      },
+      {
+        "name": "contemporary",
+        "popularity": 425
+      },
+      {
+        "name": "series",
+        "popularity": 395
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 322
+      },
+      {
+        "name": "teen",
+        "popularity": 313
+      },
+      {
+        "name": "funny",
+        "popularity": 227
+      },
+      {
+        "name": "owned",
+        "popularity": 220
+      },
+      {
+        "name": "realistic-fiction",
+        "popularity": 179
+      },
+      {
+        "name": "humour",
+        "popularity": 157
+      },
+      {
+        "name": "ya-fiction",
+        "popularity": 140
+      },
+      {
+        "name": "childhood",
+        "popularity": 139
+      },
+      {
+        "name": "comedy",
+        "popularity": 138
+      },
+      {
+        "name": "young-adult-fiction",
+        "popularity": 91
+      },
+      {
+        "name": "favourites",
+        "popularity": 89
+      },
+      {
+        "name": "teen-fiction",
+        "popularity": 83
+      },
+      {
+        "name": "british",
+        "popularity": 80
+      },
+      {
+        "name": "ya-lit",
+        "popularity": 80
+      },
+      {
+        "name": "high-school",
+        "popularity": 77
+      },
+      {
+        "name": "owned-books",
+        "popularity": 72
+      },
+      {
+        "name": "printz",
+        "popularity": 64
+      },
+      {
+        "name": "realistic",
+        "popularity": 61
+      },
+      {
+        "name": "coming-of-age",
+        "popularity": 60
+      },
+      {
+        "name": "ya-books",
+        "popularity": 58
+      },
+      {
+        "name": "library",
+        "popularity": 58
+      },
+      {
+        "name": "my-books",
+        "popularity": 52
+      },
+      {
+        "name": "middle-school",
+        "popularity": 51
+      },
+      {
+        "name": "to-buy",
+        "popularity": 50
+      },
+      {
+        "name": "england",
+        "popularity": 50
+      },
+      {
+        "name": "diary",
+        "popularity": 50
+      },
+      {
+        "name": "ya-contemporary",
+        "popularity": 49
+      },
+      {
+        "name": "re-read",
+        "popularity": 48
+      },
+      {
+        "name": "hilarious",
+        "popularity": 48
+      },
+      {
+        "name": "humorous",
+        "popularity": 47
+      },
+      {
+        "name": "louise-rennison",
+        "popularity": 46
+      },
+      {
+        "name": "audiobook",
+        "popularity": 46
+      },
+      {
+        "name": "friendship",
+        "popularity": 45
+      },
+      {
+        "name": "audio",
+        "popularity": 44
+      },
+      {
+        "name": "childrens",
+        "popularity": 43
+      },
+      {
+        "name": "kindle",
+        "popularity": 42
+      },
+      {
+        "name": "childhood-books",
+        "popularity": 42
+      },
+      {
+        "name": "childhood-favorites",
+        "popularity": 40
+      },
+      {
+        "name": "ebook",
+        "popularity": 37
+      },
+      {
+        "name": "ebooks",
+        "popularity": 36
+      },
+      {
+        "name": "i-own",
+        "popularity": 36
+      },
+      {
+        "name": "audiobooks",
+        "popularity": 36
+      },
+      {
+        "name": "middle-grade",
+        "popularity": 35
+      },
+      {
+        "name": "epistolary",
+        "popularity": 35
+      },
+      {
+        "name": "banned-books",
+        "popularity": 35
+      },
+      {
+        "name": "youth",
+        "popularity": 32
+      },
+      {
+        "name": "read-in-2015",
+        "popularity": 31
+      },
+      {
+        "name": "dnf",
+        "popularity": 31
+      },
+      {
+        "name": "3-stars",
+        "popularity": 31
+      },
+      {
+        "name": "borrowed",
+        "popularity": 31
+      },
+      {
+        "name": "chicklit",
+        "popularity": 31
+      },
+      {
+        "name": "youngadult",
+        "popularity": 31
+      },
+      {
+        "name": "contemporary-fiction",
+        "popularity": 30
+      },
+      {
+        "name": "default",
+        "popularity": 29
+      },
+      {
+        "name": "y-a",
+        "popularity": 29
+      },
+      {
+        "name": "read-in-2014",
+        "popularity": 28
+      },
+      {
+        "name": "female-authors",
+        "popularity": 28
+      },
+      {
+        "name": "read-in-2012",
+        "popularity": 28
+      },
+      {
+        "name": "read-in-2011",
+        "popularity": 28
+      },
+      {
+        "name": "children-s-books",
+        "popularity": 28
+      },
+      {
+        "name": "first-in-series",
+        "popularity": 28
+      },
+      {
+        "name": "family",
+        "popularity": 27
+      },
+      {
+        "name": "novels",
+        "popularity": 27
+      },
+      {
+        "name": "teen-books",
+        "popularity": 27
+      },
+      {
+        "name": "girly",
+        "popularity": 27
+      },
+      {
+        "name": "young-adult-books",
+        "popularity": 27
+      },
+      {
+        "name": "5-stars",
+        "popularity": 26
+      },
+      {
+        "name": "wish-list",
+        "popularity": 26
+      },
+      {
+        "name": "read-more-than-once",
+        "popularity": 26
+      },
+      {
+        "name": "uk",
+        "popularity": 25
+      },
+      {
+        "name": "chic-lit",
+        "popularity": 25
+      },
+      {
+        "name": "young-adults",
+        "popularity": 25
+      },
+      {
+        "name": "teens",
+        "popularity": 25
+      },
+      {
+        "name": "children",
+        "popularity": 25
+      },
+      {
+        "name": "kids",
+        "popularity": 25
+      },
+      {
+        "name": "contemporary-ya",
+        "popularity": 24
+      },
+      {
+        "name": "reread",
+        "popularity": 24
+      },
+      {
+        "name": "ya-romance",
+        "popularity": 24
+      },
+      {
+        "name": "book-to-movie",
+        "popularity": 24
+      },
+      {
+        "name": "children-s",
+        "popularity": 24
+      },
+      {
+        "name": "favorite-books",
+        "popularity": 24
+      },
+      {
+        "name": "lol",
+        "popularity": 24
+      },
+      {
+        "name": "printz-honor",
+        "popularity": 24
+      },
+      {
+        "name": "reviewed",
+        "popularity": 23
+      },
+      {
+        "name": "confessions-of-georgia-nicolson",
+        "popularity": 23
+      },
+      {
+        "name": "my-library",
+        "popularity": 23
+      },
+      {
+        "name": "printz-award",
+        "popularity": 23
+      },
+      {
+        "name": "bbc-big-read",
+        "popularity": 23
+      },
+      {
+        "name": "teen-lit",
+        "popularity": 23
+      }
+    ]
+  },
+  {
+    "id": 1953,
+    "isbn": "0141439602",
+    "isbn13": "9780141439600",
+    "title": "A Tale of Two Cities",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 489,
+    "ratingsCount": 778683,
+    "publicationYear": 1859,
+    "averageRating": 3.84,
+    "dateStarted": [
+      2015,
+      1,
+      2
+    ],
+    "dateFinished": [
+      2015,
+      1,
+      4
+    ],
+    "owned": false,
+    "authors": [
+      "Charles Dickens"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 534448
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 46271
+      },
+      {
+        "name": "classics",
+        "popularity": 19768
+      },
+      {
+        "name": "fiction",
+        "popularity": 6759
+      },
+      {
+        "name": "favorites",
+        "popularity": 4712
+      },
+      {
+        "name": "classic",
+        "popularity": 3317
+      },
+      {
+        "name": "historical-fiction",
+        "popularity": 3159
+      },
+      {
+        "name": "owned",
+        "popularity": 1900
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 1735
+      },
+      {
+        "name": "literature",
+        "popularity": 1422
+      },
+      {
+        "name": "kindle",
+        "popularity": 825
+      },
+      {
+        "name": "historical",
+        "popularity": 797
+      },
+      {
+        "name": "novels",
+        "popularity": 680
+      },
+      {
+        "name": "school",
+        "popularity": 654
+      },
+      {
+        "name": "classic-literature",
+        "popularity": 587
+      },
+      {
+        "name": "owned-books",
+        "popularity": 536
+      },
+      {
+        "name": "classics-to-read",
+        "popularity": 517
+      },
+      {
+        "name": "charles-dickens",
+        "popularity": 444
+      },
+      {
+        "name": "19th-century",
+        "popularity": 444
+      },
+      {
+        "name": "british",
+        "popularity": 439
+      },
+      {
+        "name": "history",
+        "popularity": 424
+      },
+      {
+        "name": "dickens",
+        "popularity": 399
+      },
+      {
+        "name": "france",
+        "popularity": 376
+      },
+      {
+        "name": "my-ebooks",
+        "popularity": 374
+      },
+      {
+        "name": "to-buy",
+        "popularity": 339
+      },
+      {
+        "name": "library",
+        "popularity": 328
+      },
+      {
+        "name": "novel",
+        "popularity": 322
+      },
+      {
+        "name": "1001-books",
+        "popularity": 321
+      },
+      {
+        "name": "my-library",
+        "popularity": 317
+      },
+      {
+        "name": "english",
+        "popularity": 315
+      },
+      {
+        "name": "audiobook",
+        "popularity": 313
+      },
+      {
+        "name": "high-school",
+        "popularity": 312
+      },
+      {
+        "name": "favourites",
+        "popularity": 303
+      },
+      {
+        "name": "audiobooks",
+        "popularity": 302
+      },
+      {
+        "name": "read-for-school",
+        "popularity": 299
+      },
+      {
+        "name": "my-books",
+        "popularity": 287
+      },
+      {
+        "name": "book-club",
+        "popularity": 283
+      },
+      {
+        "name": "romance",
+        "popularity": 281
+      },
+      {
+        "name": "british-literature",
+        "popularity": 277
+      },
+      {
+        "name": "adult",
+        "popularity": 272
+      },
+      {
+        "name": "classic-fiction",
+        "popularity": 269
+      },
+      {
+        "name": "ebook",
+        "popularity": 266
+      },
+      {
+        "name": "default",
+        "popularity": 263
+      },
+      {
+        "name": "victorian",
+        "popularity": 258
+      },
+      {
+        "name": "england",
+        "popularity": 251
+      },
+      {
+        "name": "to-read-classics",
+        "popularity": 244
+      },
+      {
+        "name": "school-books",
+        "popularity": 244
+      },
+      {
+        "name": "ebooks",
+        "popularity": 242
+      },
+      {
+        "name": "classic-lit",
+        "popularity": 234
+      },
+      {
+        "name": "audible",
+        "popularity": 228
+      },
+      {
+        "name": "english-literature",
+        "popularity": 226
+      },
+      {
+        "name": "for-school",
+        "popularity": 224
+      },
+      {
+        "name": "french-revolution",
+        "popularity": 223
+      },
+      {
+        "name": "literary-fiction",
+        "popularity": 223
+      },
+      {
+        "name": "all-time-favorites",
+        "popularity": 219
+      },
+      {
+        "name": "tbr",
+        "popularity": 215
+      },
+      {
+        "name": "audio",
+        "popularity": 213
+      },
+      {
+        "name": "re-read",
+        "popularity": 207
+      },
+      {
+        "name": "abandoned",
+        "popularity": 205
+      },
+      {
+        "name": "i-own",
+        "popularity": 200
+      },
+      {
+        "name": "1001",
+        "popularity": 190
+      },
+      {
+        "name": "adult-fiction",
+        "popularity": 187
+      },
+      {
+        "name": "the-classics",
+        "popularity": 187
+      },
+      {
+        "name": "rory-gilmore-reading-challenge",
+        "popularity": 184
+      },
+      {
+        "name": "drama",
+        "popularity": 160
+      },
+      {
+        "name": "literary",
+        "popularity": 156
+      },
+      {
+        "name": "did-not-finish",
+        "popularity": 150
+      },
+      {
+        "name": "to-re-read",
+        "popularity": 148
+      },
+      {
+        "name": "unfinished",
+        "popularity": 147
+      },
+      {
+        "name": "dnf",
+        "popularity": 141
+      },
+      {
+        "name": "e-books",
+        "popularity": 141
+      },
+      {
+        "name": "british-lit",
+        "popularity": 136
+      },
+      {
+        "name": "kindle-books",
+        "popularity": 135
+      },
+      {
+        "name": "general-fiction",
+        "popularity": 135
+      },
+      {
+        "name": "europe",
+        "popularity": 135
+      },
+      {
+        "name": "books",
+        "popularity": 135
+      },
+      {
+        "name": "classics-tbr",
+        "popularity": 133
+      },
+      {
+        "name": "1001-books-to-read-before-you-die",
+        "popularity": 132
+      },
+      {
+        "name": "own-it",
+        "popularity": 131
+      },
+      {
+        "name": "on-my-shelf",
+        "popularity": 128
+      },
+      {
+        "name": "home-library",
+        "popularity": 128
+      },
+      {
+        "name": "on-hold",
+        "popularity": 126
+      },
+      {
+        "name": "brit-lit",
+        "popularity": 121
+      },
+      {
+        "name": "have",
+        "popularity": 120
+      },
+      {
+        "name": "fiction-classics",
+        "popularity": 115
+      },
+      {
+        "name": "favorite-books",
+        "popularity": 114
+      },
+      {
+        "name": "war",
+        "popularity": 114
+      },
+      {
+        "name": "rory-gilmore-challenge",
+        "popularity": 114
+      },
+      {
+        "name": "bookshelf",
+        "popularity": 112
+      },
+      {
+        "name": "must-read",
+        "popularity": 111
+      },
+      {
+        "name": "read-in-school",
+        "popularity": 107
+      },
+      {
+        "name": "nook",
+        "popularity": 106
+      },
+      {
+        "name": "e-book",
+        "popularity": 106
+      },
+      {
+        "name": "tbr-classics",
+        "popularity": 105
+      },
+      {
+        "name": "favorite",
+        "popularity": 105
+      },
+      {
+        "name": "paris",
+        "popularity": 104
+      },
+      {
+        "name": "london",
+        "popularity": 102
+      },
+      {
+        "name": "required-reading",
+        "popularity": 101
+      },
+      {
+        "name": "to-reread",
+        "popularity": 98
+      },
+      {
+        "name": "owned-tbr",
+        "popularity": 98
+      }
+    ]
+  },
+  {
+    "id": 5439,
+    "isbn": "0618101365",
+    "isbn13": "9780618101368",
+    "title": "Interpreter of Maladies",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 198,
+    "ratingsCount": 153593,
+    "publicationYear": 1999,
+    "averageRating": 4.15,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Jhumpa Lahiri"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 77564
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 6023
+      },
+      {
+        "name": "short-stories",
+        "popularity": 3308
+      },
+      {
+        "name": "fiction",
+        "popularity": 3202
+      },
+      {
+        "name": "favorites",
+        "popularity": 1804
+      },
+      {
+        "name": "india",
+        "popularity": 753
+      },
+      {
+        "name": "pulitzer",
+        "popularity": 605
+      },
+      {
+        "name": "book-club",
+        "popularity": 373
+      },
+      {
+        "name": "owned",
+        "popularity": 348
+      },
+      {
+        "name": "pulitzer-prize",
+        "popularity": 333
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 309
+      },
+      {
+        "name": "contemporary",
+        "popularity": 291
+      },
+      {
+        "name": "literature",
+        "popularity": 225
+      },
+      {
+        "name": "literary-fiction",
+        "popularity": 218
+      },
+      {
+        "name": "short-story",
+        "popularity": 204
+      },
+      {
+        "name": "contemporary-fiction",
+        "popularity": 192
+      },
+      {
+        "name": "indian",
+        "popularity": 182
+      },
+      {
+        "name": "short-story-collections",
+        "popularity": 174
+      },
+      {
+        "name": "kindle",
+        "popularity": 161
+      },
+      {
+        "name": "asia",
+        "popularity": 149
+      },
+      {
+        "name": "pulitzer-prize-winners",
+        "popularity": 147
+      },
+      {
+        "name": "adult-fiction",
+        "popularity": 132
+      },
+      {
+        "name": "pulitzer-winners",
+        "popularity": 124
+      },
+      {
+        "name": "library",
+        "popularity": 119
+      },
+      {
+        "name": "adult",
+        "popularity": 118
+      },
+      {
+        "name": "pulitzers",
+        "popularity": 116
+      },
+      {
+        "name": "school",
+        "popularity": 108
+      },
+      {
+        "name": "owned-books",
+        "popularity": 102
+      },
+      {
+        "name": "stories",
+        "popularity": 102
+      },
+      {
+        "name": "shortstories",
+        "popularity": 102
+      },
+      {
+        "name": "audiobooks",
+        "popularity": 98
+      },
+      {
+        "name": "indian-authors",
+        "popularity": 94
+      },
+      {
+        "name": "favourites",
+        "popularity": 93
+      },
+      {
+        "name": "audiobook",
+        "popularity": 91
+      },
+      {
+        "name": "to-buy",
+        "popularity": 89
+      },
+      {
+        "name": "short-fiction",
+        "popularity": 87
+      },
+      {
+        "name": "literary",
+        "popularity": 80
+      },
+      {
+        "name": "cultural",
+        "popularity": 80
+      },
+      {
+        "name": "pulitzer-fiction",
+        "popularity": 80
+      },
+      {
+        "name": "audio",
+        "popularity": 79
+      },
+      {
+        "name": "female-authors",
+        "popularity": 78
+      },
+      {
+        "name": "novels",
+        "popularity": 75
+      },
+      {
+        "name": "classics",
+        "popularity": 75
+      },
+      {
+        "name": "indian-literature",
+        "popularity": 73
+      },
+      {
+        "name": "general-fiction",
+        "popularity": 72
+      },
+      {
+        "name": "bookclub",
+        "popularity": 71
+      },
+      {
+        "name": "short-story-collection",
+        "popularity": 66
+      },
+      {
+        "name": "south-asia",
+        "popularity": 64
+      },
+      {
+        "name": "my-library",
+        "popularity": 64
+      },
+      {
+        "name": "american",
+        "popularity": 63
+      },
+      {
+        "name": "ebook",
+        "popularity": 62
+      },
+      {
+        "name": "immigrant-experience",
+        "popularity": 60
+      },
+      {
+        "name": "my-books",
+        "popularity": 56
+      },
+      {
+        "name": "all-time-favorites",
+        "popularity": 56
+      },
+      {
+        "name": "women-authors",
+        "popularity": 56
+      },
+      {
+        "name": "award-winners",
+        "popularity": 54
+      },
+      {
+        "name": "women",
+        "popularity": 53
+      },
+      {
+        "name": "short",
+        "popularity": 53
+      },
+      {
+        "name": "female-author",
+        "popularity": 52
+      },
+      {
+        "name": "anthology",
+        "popularity": 52
+      },
+      {
+        "name": "indian-fiction",
+        "popularity": 51
+      },
+      {
+        "name": "pulitzer-prize-winner",
+        "popularity": 51
+      },
+      {
+        "name": "jhumpa-lahiri",
+        "popularity": 51
+      },
+      {
+        "name": "short-stories-essays",
+        "popularity": 51
+      },
+      {
+        "name": "20th-century",
+        "popularity": 50
+      },
+      {
+        "name": "pulitzer-prize-fiction",
+        "popularity": 49
+      },
+      {
+        "name": "read-for-school",
+        "popularity": 48
+      },
+      {
+        "name": "own-it",
+        "popularity": 48
+      },
+      {
+        "name": "english",
+        "popularity": 48
+      },
+      {
+        "name": "book-group",
+        "popularity": 48
+      },
+      {
+        "name": "realistic-fiction",
+        "popularity": 47
+      },
+      {
+        "name": "to-read-fiction",
+        "popularity": 46
+      },
+      {
+        "name": "usa",
+        "popularity": 44
+      },
+      {
+        "name": "pulitzer-winner",
+        "popularity": 44
+      },
+      {
+        "name": "novel",
+        "popularity": 44
+      },
+      {
+        "name": "audible",
+        "popularity": 44
+      },
+      {
+        "name": "abandoned",
+        "popularity": 44
+      },
+      {
+        "name": "south-asian",
+        "popularity": 44
+      },
+      {
+        "name": "read-in-2018",
+        "popularity": 43
+      },
+      {
+        "name": "favorite-books",
+        "popularity": 43
+      },
+      {
+        "name": "indian-lit",
+        "popularity": 43
+      },
+      {
+        "name": "shorts",
+        "popularity": 43
+      },
+      {
+        "name": "recommended",
+        "popularity": 42
+      },
+      {
+        "name": "poc",
+        "popularity": 42
+      },
+      {
+        "name": "asian-american",
+        "popularity": 41
+      },
+      {
+        "name": "read-in-2019",
+        "popularity": 40
+      },
+      {
+        "name": "for-school",
+        "popularity": 40
+      },
+      {
+        "name": "asian",
+        "popularity": 40
+      },
+      {
+        "name": "ebooks",
+        "popularity": 40
+      },
+      {
+        "name": "immigration",
+        "popularity": 40
+      },
+      {
+        "name": "international",
+        "popularity": 40
+      },
+      {
+        "name": "american-literature",
+        "popularity": 39
+      },
+      {
+        "name": "i-own",
+        "popularity": 39
+      },
+      {
+        "name": "historical-fiction",
+        "popularity": 39
+      },
+      {
+        "name": "default",
+        "popularity": 38
+      },
+      {
+        "name": "modern-fiction",
+        "popularity": 38
+      },
+      {
+        "name": "college",
+        "popularity": 37
+      },
+      {
+        "name": "read-in-2016",
+        "popularity": 37
+      },
+      {
+        "name": "read-in-2015",
+        "popularity": 37
+      },
+      {
+        "name": "shelfari-favorites",
+        "popularity": 36
+      }
+    ]
+  },
+  {
+    "id": 968,
+    "isbn": "0307277674",
+    "isbn13": "9780307277671",
+    "title": "The Da Vinci Code",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 489,
+    "ratingsCount": 1831355,
+    "publicationYear": 2003,
+    "averageRating": 3.84,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Dan Brown"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 292157
+      },
+      {
+        "name": "fiction",
+        "popularity": 16166
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 15260
+      },
+      {
+        "name": "mystery",
+        "popularity": 8889
+      },
+      {
+        "name": "favorites",
+        "popularity": 6825
+      },
+      {
+        "name": "thriller",
+        "popularity": 6598
+      },
+      {
+        "name": "owned",
+        "popularity": 3043
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 2778
+      },
+      {
+        "name": "dan-brown",
+        "popularity": 2482
+      },
+      {
+        "name": "suspense",
+        "popularity": 1783
+      },
+      {
+        "name": "historical-fiction",
+        "popularity": 1551
+      },
+      {
+        "name": "mystery-thriller",
+        "popularity": 1518
+      },
+      {
+        "name": "adventure",
+        "popularity": 1371
+      },
+      {
+        "name": "novels",
+        "popularity": 1226
+      },
+      {
+        "name": "series",
+        "popularity": 1221
+      },
+      {
+        "name": "default",
+        "popularity": 1149
+      },
+      {
+        "name": "crime",
+        "popularity": 1119
+      },
+      {
+        "name": "adult",
+        "popularity": 1015
+      },
+      {
+        "name": "contemporary",
+        "popularity": 916
+      },
+      {
+        "name": "owned-books",
+        "popularity": 893
+      },
+      {
+        "name": "adult-fiction",
+        "popularity": 819
+      },
+      {
+        "name": "thrillers",
+        "popularity": 796
+      },
+      {
+        "name": "religion",
+        "popularity": 721
+      },
+      {
+        "name": "novel",
+        "popularity": 718
+      },
+      {
+        "name": "my-books",
+        "popularity": 632
+      },
+      {
+        "name": "general-fiction",
+        "popularity": 596
+      },
+      {
+        "name": "favourites",
+        "popularity": 591
+      },
+      {
+        "name": "to-read",
+        "popularity": 564
+      },
+      {
+        "name": "my-library",
+        "popularity": 531
+      },
+      {
+        "name": "mystery-suspense",
+        "popularity": 499
+      },
+      {
+        "name": "mysteries",
+        "popularity": 441
+      },
+      {
+        "name": "fantasy",
+        "popularity": 438
+      },
+      {
+        "name": "library",
+        "popularity": 426
+      },
+      {
+        "name": "contemporary-fiction",
+        "popularity": 422
+      },
+      {
+        "name": "historical",
+        "popularity": 418
+      },
+      {
+        "name": "book-club",
+        "popularity": 406
+      },
+      {
+        "name": "history",
+        "popularity": 401
+      },
+      {
+        "name": "drama",
+        "popularity": 382
+      },
+      {
+        "name": "i-own",
+        "popularity": 375
+      },
+      {
+        "name": "action",
+        "popularity": 374
+      },
+      {
+        "name": "classics",
+        "popularity": 338
+      },
+      {
+        "name": "kindle",
+        "popularity": 332
+      },
+      {
+        "name": "robert-langdon",
+        "popularity": 328
+      },
+      {
+        "name": "literature",
+        "popularity": 321
+      },
+      {
+        "name": "books",
+        "popularity": 314
+      },
+      {
+        "name": "ebook",
+        "popularity": 299
+      },
+      {
+        "name": "english",
+        "popularity": 295
+      },
+      {
+        "name": "action-adventure",
+        "popularity": 292
+      },
+      {
+        "name": "american",
+        "popularity": 286
+      },
+      {
+        "name": "conspiracy",
+        "popularity": 283
+      },
+      {
+        "name": "crime-mystery",
+        "popularity": 282
+      },
+      {
+        "name": "thriller-mystery",
+        "popularity": 278
+      },
+      {
+        "name": "crime-thriller",
+        "popularity": 276
+      },
+      {
+        "name": "rory-gilmore-reading-challenge",
+        "popularity": 267
+      },
+      {
+        "name": "art",
+        "popularity": 265
+      },
+      {
+        "name": "suspense-thriller",
+        "popularity": 261
+      },
+      {
+        "name": "audiobook",
+        "popularity": 259
+      },
+      {
+        "name": "borrowed",
+        "popularity": 253
+      },
+      {
+        "name": "finished",
+        "popularity": 243
+      },
+      {
+        "name": "favorite",
+        "popularity": 238
+      },
+      {
+        "name": "great-american-read",
+        "popularity": 235
+      },
+      {
+        "name": "own-it",
+        "popularity": 233
+      },
+      {
+        "name": "thriller-suspense",
+        "popularity": 233
+      },
+      {
+        "name": "detective",
+        "popularity": 223
+      },
+      {
+        "name": "audiobooks",
+        "popularity": 222
+      },
+      {
+        "name": "mystery-crime",
+        "popularity": 214
+      },
+      {
+        "name": "bookshelf",
+        "popularity": 213
+      },
+      {
+        "name": "brown-dan",
+        "popularity": 205
+      },
+      {
+        "name": "روايات",
+        "popularity": 204
+      },
+      {
+        "name": "all-time-favorites",
+        "popularity": 203
+      },
+      {
+        "name": "5-stars",
+        "popularity": 202
+      },
+      {
+        "name": "shelfari-favorites",
+        "popularity": 199
+      },
+      {
+        "name": "home-library",
+        "popularity": 197
+      },
+      {
+        "name": "other",
+        "popularity": 194
+      },
+      {
+        "name": "have",
+        "popularity": 194
+      },
+      {
+        "name": "france",
+        "popularity": 188
+      },
+      {
+        "name": "favorite-books",
+        "popularity": 187
+      },
+      {
+        "name": "to-buy",
+        "popularity": 186
+      },
+      {
+        "name": "modern-fiction",
+        "popularity": 184
+      },
+      {
+        "name": "2004",
+        "popularity": 184
+      },
+      {
+        "name": "2006",
+        "popularity": 178
+      },
+      {
+        "name": "ebooks",
+        "popularity": 177
+      },
+      {
+        "name": "my-favorites",
+        "popularity": 171
+      },
+      {
+        "name": "re-read",
+        "popularity": 164
+      },
+      {
+        "name": "popular-fiction",
+        "popularity": 163
+      },
+      {
+        "name": "on-my-shelf",
+        "popularity": 162
+      },
+      {
+        "name": "american-literature",
+        "popularity": 160
+      },
+      {
+        "name": "movie",
+        "popularity": 156
+      },
+      {
+        "name": "movies",
+        "popularity": 155
+      },
+      {
+        "name": "rory-gilmore-challenge",
+        "popularity": 155
+      },
+      {
+        "name": "2005",
+        "popularity": 152
+      },
+      {
+        "name": "brown",
+        "popularity": 140
+      },
+      {
+        "name": "tbr",
+        "popularity": 140
+      },
+      {
+        "name": "my-bookshelf",
+        "popularity": 140
+      },
+      {
+        "name": "audio",
+        "popularity": 139
+      },
+      {
+        "name": "21st-century",
+        "popularity": 139
+      },
+      {
+        "name": "abandoned",
+        "popularity": 139
+      },
+      {
+        "name": "read-fiction",
+        "popularity": 132
+      },
+      {
+        "name": "dnf",
+        "popularity": 132
+      },
+      {
+        "name": "realistic-fiction",
+        "popularity": 130
+      }
+    ]
+  },
+  {
+    "id": 23228,
+    "isbn": "0375832998",
+    "isbn13": "9780375832994",
+    "title": "Boy Meets Boy",
+    "format": "Paperback",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 185,
+    "ratingsCount": 62781,
+    "publicationYear": 2003,
+    "averageRating": 3.84,
+    "dateStarted": null,
+    "dateFinished": [
+      2014,
+      3,
+      15
+    ],
+    "owned": false,
+    "authors": [
+      "David Levithan"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 89768
+      },
+      {
+        "name": "young-adult",
+        "popularity": 1611
+      },
+      {
+        "name": "lgbt",
+        "popularity": 1288
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 1225
+      },
+      {
+        "name": "ya",
+        "popularity": 982
+      },
+      {
+        "name": "lgbtq",
+        "popularity": 828
+      },
+      {
+        "name": "romance",
+        "popularity": 812
+      },
+      {
+        "name": "favorites",
+        "popularity": 551
+      },
+      {
+        "name": "contemporary",
+        "popularity": 510
+      },
+      {
+        "name": "fiction",
+        "popularity": 474
+      },
+      {
+        "name": "lgbtqia",
+        "popularity": 295
+      },
+      {
+        "name": "queer",
+        "popularity": 293
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 235
+      },
+      {
+        "name": "owned",
+        "popularity": 191
+      },
+      {
+        "name": "glbt",
+        "popularity": 183
+      },
+      {
+        "name": "gay",
+        "popularity": 174
+      },
+      {
+        "name": "realistic-fiction",
+        "popularity": 163
+      },
+      {
+        "name": "teen",
+        "popularity": 152
+      },
+      {
+        "name": "to-buy",
+        "popularity": 114
+      },
+      {
+        "name": "m-m",
+        "popularity": 103
+      },
+      {
+        "name": "audiobook",
+        "popularity": 102
+      },
+      {
+        "name": "audiobooks",
+        "popularity": 95
+      },
+      {
+        "name": "ya-fiction",
+        "popularity": 94
+      },
+      {
+        "name": "library",
+        "popularity": 90
+      },
+      {
+        "name": "glbtq",
+        "popularity": 71
+      },
+      {
+        "name": "coming-of-age",
+        "popularity": 70
+      },
+      {
+        "name": "lgbtqa",
+        "popularity": 67
+      },
+      {
+        "name": "ya-lit",
+        "popularity": 67
+      },
+      {
+        "name": "audio",
+        "popularity": 62
+      },
+      {
+        "name": "kindle",
+        "popularity": 61
+      },
+      {
+        "name": "humor",
+        "popularity": 61
+      },
+      {
+        "name": "high-school",
+        "popularity": 60
+      },
+      {
+        "name": "ebook",
+        "popularity": 59
+      },
+      {
+        "name": "young-adult-fiction",
+        "popularity": 55
+      },
+      {
+        "name": "wish-list",
+        "popularity": 54
+      },
+      {
+        "name": "david-levithan",
+        "popularity": 54
+      },
+      {
+        "name": "stand-alone",
+        "popularity": 52
+      },
+      {
+        "name": "mm",
+        "popularity": 52
+      },
+      {
+        "name": "favourites",
+        "popularity": 52
+      },
+      {
+        "name": "owned-books",
+        "popularity": 50
+      },
+      {
+        "name": "dnf",
+        "popularity": 49
+      },
+      {
+        "name": "realistic",
+        "popularity": 48
+      },
+      {
+        "name": "read-in-english",
+        "popularity": 47
+      },
+      {
+        "name": "read-in-2014",
+        "popularity": 44
+      },
+      {
+        "name": "lgbt-books",
+        "popularity": 44
+      },
+      {
+        "name": "friendship",
+        "popularity": 43
+      },
+      {
+        "name": "queer-lit",
+        "popularity": 43
+      },
+      {
+        "name": "teen-fiction",
+        "popularity": 43
+      },
+      {
+        "name": "ebooks",
+        "popularity": 42
+      },
+      {
+        "name": "novels",
+        "popularity": 42
+      },
+      {
+        "name": "read-in-2013",
+        "popularity": 41
+      },
+      {
+        "name": "english",
+        "popularity": 41
+      },
+      {
+        "name": "read-in-2016",
+        "popularity": 38
+      },
+      {
+        "name": "ya-contemporary",
+        "popularity": 38
+      },
+      {
+        "name": "my-books",
+        "popularity": 37
+      },
+      {
+        "name": "m-m-romance",
+        "popularity": 36
+      },
+      {
+        "name": "contemporary-fiction",
+        "popularity": 35
+      },
+      {
+        "name": "borrowed",
+        "popularity": 33
+      },
+      {
+        "name": "ya-books",
+        "popularity": 33
+      },
+      {
+        "name": "read-in-2015",
+        "popularity": 32
+      },
+      {
+        "name": "lgbtqiap",
+        "popularity": 31
+      },
+      {
+        "name": "reviewed",
+        "popularity": 30
+      },
+      {
+        "name": "mlm",
+        "popularity": 29
+      },
+      {
+        "name": "books",
+        "popularity": 29
+      },
+      {
+        "name": "ya-romance",
+        "popularity": 28
+      },
+      {
+        "name": "love",
+        "popularity": 28
+      },
+      {
+        "name": "i-own",
+        "popularity": 28
+      },
+      {
+        "name": "read-in-2012",
+        "popularity": 27
+      },
+      {
+        "name": "diversity",
+        "popularity": 27
+      },
+      {
+        "name": "maybe",
+        "popularity": 27
+      },
+      {
+        "name": "did-not-finish",
+        "popularity": 26
+      },
+      {
+        "name": "mm-romance",
+        "popularity": 26
+      },
+      {
+        "name": "funny",
+        "popularity": 26
+      },
+      {
+        "name": "need-to-buy",
+        "popularity": 26
+      },
+      {
+        "name": "audio-books",
+        "popularity": 25
+      },
+      {
+        "name": "gay-fiction",
+        "popularity": 25
+      },
+      {
+        "name": "tenho",
+        "popularity": 24
+      },
+      {
+        "name": "3-stars",
+        "popularity": 24
+      },
+      {
+        "name": "want-to-buy",
+        "popularity": 24
+      },
+      {
+        "name": "school",
+        "popularity": 24
+      },
+      {
+        "name": "abandoned",
+        "popularity": 23
+      },
+      {
+        "name": "standalone",
+        "popularity": 23
+      },
+      {
+        "name": "y-a",
+        "popularity": 23
+      },
+      {
+        "name": "queer-books",
+        "popularity": 23
+      },
+      {
+        "name": "relationships",
+        "popularity": 23
+      },
+      {
+        "name": "read-in-2018",
+        "popularity": 22
+      },
+      {
+        "name": "want-to-read",
+        "popularity": 22
+      },
+      {
+        "name": "library-books",
+        "popularity": 22
+      },
+      {
+        "name": "lgbt-fiction",
+        "popularity": 22
+      },
+      {
+        "name": "stand-alones",
+        "popularity": 22
+      },
+      {
+        "name": "own-voices",
+        "popularity": 21
+      },
+      {
+        "name": "read-2014",
+        "popularity": 21
+      },
+      {
+        "name": "4-stars",
+        "popularity": 21
+      },
+      {
+        "name": "e-books",
+        "popularity": 21
+      },
+      {
+        "name": "read-in-2011",
+        "popularity": 21
+      },
+      {
+        "name": "novel",
+        "popularity": 21
+      },
+      {
+        "name": "read-in-2017",
+        "popularity": 20
+      },
+      {
+        "name": "book-club",
+        "popularity": 20
+      },
+      {
+        "name": "american",
+        "popularity": 20
+      },
+      {
+        "name": "e-book",
+        "popularity": 19
+      }
+    ]
+  },
+  {
+    "id": 18966806,
+    "isbn": "0345539842",
+    "isbn13": "9780345539847",
+    "title": "Morning Star",
+    "format": "Hardcover",
+    "rating": 5,
+    "readCount": 1,
+    "pageNumber": 524,
+    "ratingsCount": 111741,
+    "publicationYear": 2016,
+    "averageRating": 4.49,
+    "dateStarted": null,
+    "dateFinished": [
+      2016,
+      3,
+      4
+    ],
+    "owned": false,
+    "authors": [
+      "Pierce Brown"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 78795
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 6230
+      },
+      {
+        "name": "sci-fi",
+        "popularity": 2144
+      },
+      {
+        "name": "favorites",
+        "popularity": 2072
+      },
+      {
+        "name": "science-fiction",
+        "popularity": 1919
+      },
+      {
+        "name": "fantasy",
+        "popularity": 1007
+      },
+      {
+        "name": "fiction",
+        "popularity": 770
+      },
+      {
+        "name": "dystopian",
+        "popularity": 702
+      },
+      {
+        "name": "dystopia",
+        "popularity": 607
+      },
+      {
+        "name": "young-adult",
+        "popularity": 602
+      },
+      {
+        "name": "series",
+        "popularity": 391
+      },
+      {
+        "name": "scifi",
+        "popularity": 383
+      },
+      {
+        "name": "owned",
+        "popularity": 352
+      },
+      {
+        "name": "audiobook",
+        "popularity": 323
+      },
+      {
+        "name": "ya",
+        "popularity": 297
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 280
+      },
+      {
+        "name": "audiobooks",
+        "popularity": 239
+      },
+      {
+        "name": "favourites",
+        "popularity": 207
+      },
+      {
+        "name": "read-in-2016",
+        "popularity": 203
+      },
+      {
+        "name": "audible",
+        "popularity": 169
+      },
+      {
+        "name": "sci-fi-fantasy",
+        "popularity": 148
+      },
+      {
+        "name": "to-buy",
+        "popularity": 147
+      },
+      {
+        "name": "adult",
+        "popularity": 144
+      },
+      {
+        "name": "read-2016",
+        "popularity": 141
+      },
+      {
+        "name": "kindle",
+        "popularity": 138
+      },
+      {
+        "name": "red-rising",
+        "popularity": 117
+      },
+      {
+        "name": "space-opera",
+        "popularity": 116
+      },
+      {
+        "name": "audio",
+        "popularity": 112
+      },
+      {
+        "name": "space",
+        "popularity": 111
+      },
+      {
+        "name": "war",
+        "popularity": 109
+      },
+      {
+        "name": "adventure",
+        "popularity": 106
+      },
+      {
+        "name": "ebook",
+        "popularity": 105
+      },
+      {
+        "name": "read-in-2017",
+        "popularity": 99
+      },
+      {
+        "name": "read-in-2018",
+        "popularity": 95
+      },
+      {
+        "name": "fantasy-sci-fi",
+        "popularity": 94
+      },
+      {
+        "name": "library",
+        "popularity": 93
+      },
+      {
+        "name": "sf",
+        "popularity": 88
+      },
+      {
+        "name": "owned-books",
+        "popularity": 84
+      },
+      {
+        "name": "5-stars",
+        "popularity": 84
+      },
+      {
+        "name": "2016-reads",
+        "popularity": 77
+      },
+      {
+        "name": "scifi-fantasy",
+        "popularity": 76
+      },
+      {
+        "name": "read-2017",
+        "popularity": 72
+      },
+      {
+        "name": "2016-releases",
+        "popularity": 72
+      },
+      {
+        "name": "all-time-favorites",
+        "popularity": 71
+      },
+      {
+        "name": "action",
+        "popularity": 69
+      },
+      {
+        "name": "read-2018",
+        "popularity": 65
+      },
+      {
+        "name": "romance",
+        "popularity": 65
+      },
+      {
+        "name": "wish-list",
+        "popularity": 65
+      },
+      {
+        "name": "tbr",
+        "popularity": 64
+      },
+      {
+        "name": "audio-books",
+        "popularity": 62
+      },
+      {
+        "name": "read-in-2019",
+        "popularity": 61
+      },
+      {
+        "name": "adult-fiction",
+        "popularity": 61
+      },
+      {
+        "name": "ebooks",
+        "popularity": 59
+      },
+      {
+        "name": "favorite",
+        "popularity": 55
+      },
+      {
+        "name": "favorite-books",
+        "popularity": 52
+      },
+      {
+        "name": "read-2019",
+        "popularity": 50
+      },
+      {
+        "name": "my-books",
+        "popularity": 47
+      },
+      {
+        "name": "owned-tbr",
+        "popularity": 44
+      },
+      {
+        "name": "novels",
+        "popularity": 44
+      },
+      {
+        "name": "pierce-brown",
+        "popularity": 43
+      },
+      {
+        "name": "2016-books",
+        "popularity": 42
+      },
+      {
+        "name": "epic",
+        "popularity": 41
+      },
+      {
+        "name": "audio-book",
+        "popularity": 41
+      },
+      {
+        "name": "2016-read",
+        "popularity": 40
+      },
+      {
+        "name": "military",
+        "popularity": 40
+      },
+      {
+        "name": "futuristic",
+        "popularity": 40
+      },
+      {
+        "name": "thriller",
+        "popularity": 39
+      },
+      {
+        "name": "5-star",
+        "popularity": 38
+      },
+      {
+        "name": "science-fiction-fantasy",
+        "popularity": 38
+      },
+      {
+        "name": "favorite-series",
+        "popularity": 38
+      },
+      {
+        "name": "dnf",
+        "popularity": 37
+      },
+      {
+        "name": "speculative-fiction",
+        "popularity": 35
+      },
+      {
+        "name": "e-book",
+        "popularity": 34
+      },
+      {
+        "name": "2016-release",
+        "popularity": 34
+      },
+      {
+        "name": "2018-reads",
+        "popularity": 33
+      },
+      {
+        "name": "i-own",
+        "popularity": 33
+      },
+      {
+        "name": "need-to-buy",
+        "popularity": 33
+      },
+      {
+        "name": "re-read",
+        "popularity": 32
+      },
+      {
+        "name": "favs",
+        "popularity": 32
+      },
+      {
+        "name": "action-adventure",
+        "popularity": 32
+      },
+      {
+        "name": "2016-reading-challenge",
+        "popularity": 32
+      },
+      {
+        "name": "my-library",
+        "popularity": 32
+      },
+      {
+        "name": "signed",
+        "popularity": 31
+      },
+      {
+        "name": "new-adult",
+        "popularity": 30
+      },
+      {
+        "name": "physical-tbr",
+        "popularity": 29
+      },
+      {
+        "name": "reread",
+        "popularity": 29
+      },
+      {
+        "name": "made-me-cry",
+        "popularity": 29
+      },
+      {
+        "name": "finished-series",
+        "popularity": 29
+      },
+      {
+        "name": "2017-reads",
+        "popularity": 28
+      },
+      {
+        "name": "did-not-finish",
+        "popularity": 28
+      },
+      {
+        "name": "faves",
+        "popularity": 28
+      },
+      {
+        "name": "trilogy",
+        "popularity": 28
+      },
+      {
+        "name": "series-to-finish",
+        "popularity": 28
+      },
+      {
+        "name": "future",
+        "popularity": 28
+      },
+      {
+        "name": "library-books",
+        "popularity": 27
+      },
+      {
+        "name": "friendship",
+        "popularity": 27
+      },
+      {
+        "name": "books",
+        "popularity": 27
+      },
+      {
+        "name": "2019-reads",
+        "popularity": 26
+      },
+      {
+        "name": "ya-fantasy",
+        "popularity": 26
+      },
+      {
+        "name": "on-hold",
+        "popularity": 26
+      }
+    ]
+  }
+]

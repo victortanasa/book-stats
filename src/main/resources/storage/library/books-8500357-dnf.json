@@ -1,0 +1,848 @@
+[
+  {
+    "id": 42123790,
+    "isbn": "1473563259",
+    "isbn13": "9781473563254",
+    "title": "Frankissstein: A Love Story",
+    "format": "ebook",
+    "rating": 2,
+    "readCount": 1,
+    "pageNumber": 344,
+    "ratingsCount": 5175,
+    "publicationYear": 2019,
+    "averageRating": 3.72,
+    "dateStarted": null,
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Jeanette Winterson"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 11810
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 558
+      },
+      {
+        "name": "fiction",
+        "popularity": 231
+      },
+      {
+        "name": "science-fiction",
+        "popularity": 106
+      },
+      {
+        "name": "lgbtq",
+        "popularity": 99
+      },
+      {
+        "name": "sci-fi",
+        "popularity": 93
+      },
+      {
+        "name": "lgbt",
+        "popularity": 93
+      },
+      {
+        "name": "historical-fiction",
+        "popularity": 57
+      },
+      {
+        "name": "literary-fiction",
+        "popularity": 50
+      },
+      {
+        "name": "read-in-2019",
+        "popularity": 44
+      },
+      {
+        "name": "library",
+        "popularity": 44
+      },
+      {
+        "name": "queer",
+        "popularity": 41
+      },
+      {
+        "name": "2019-releases",
+        "popularity": 38
+      },
+      {
+        "name": "lgbtqia",
+        "popularity": 34
+      },
+      {
+        "name": "retellings",
+        "popularity": 28
+      },
+      {
+        "name": "contemporary",
+        "popularity": 26
+      },
+      {
+        "name": "booker-2019",
+        "popularity": 25
+      },
+      {
+        "name": "netgalley",
+        "popularity": 25
+      },
+      {
+        "name": "read-2019",
+        "popularity": 24
+      },
+      {
+        "name": "audiobook",
+        "popularity": 23
+      },
+      {
+        "name": "favorites",
+        "popularity": 23
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 22
+      },
+      {
+        "name": "owned",
+        "popularity": 21
+      },
+      {
+        "name": "adult",
+        "popularity": 21
+      },
+      {
+        "name": "2019-reads",
+        "popularity": 21
+      },
+      {
+        "name": "audiobooks",
+        "popularity": 20
+      },
+      {
+        "name": "man-booker-2019",
+        "popularity": 19
+      },
+      {
+        "name": "scifi",
+        "popularity": 19
+      },
+      {
+        "name": "novels",
+        "popularity": 19
+      },
+      {
+        "name": "dnf",
+        "popularity": 18
+      },
+      {
+        "name": "fantasy",
+        "popularity": 18
+      },
+      {
+        "name": "adult-fiction",
+        "popularity": 18
+      },
+      {
+        "name": "audio",
+        "popularity": 17
+      },
+      {
+        "name": "retelling",
+        "popularity": 17
+      },
+      {
+        "name": "contemporary-fiction",
+        "popularity": 17
+      },
+      {
+        "name": "speculative-fiction",
+        "popularity": 16
+      },
+      {
+        "name": "literary",
+        "popularity": 16
+      },
+      {
+        "name": "historical",
+        "popularity": 15
+      },
+      {
+        "name": "to-buy",
+        "popularity": 15
+      },
+      {
+        "name": "literature",
+        "popularity": 12
+      },
+      {
+        "name": "england",
+        "popularity": 12
+      },
+      {
+        "name": "booker-prize-2019",
+        "popularity": 12
+      },
+      {
+        "name": "feminism",
+        "popularity": 12
+      },
+      {
+        "name": "21st-century",
+        "popularity": 12
+      },
+      {
+        "name": "book-club",
+        "popularity": 12
+      },
+      {
+        "name": "favourites",
+        "popularity": 12
+      },
+      {
+        "name": "english",
+        "popularity": 12
+      },
+      {
+        "name": "read-in-2020",
+        "popularity": 11
+      },
+      {
+        "name": "booker-prize",
+        "popularity": 11
+      },
+      {
+        "name": "booker",
+        "popularity": 11
+      },
+      {
+        "name": "sci-fi-fantasy",
+        "popularity": 11
+      },
+      {
+        "name": "2019-read",
+        "popularity": 11
+      },
+      {
+        "name": "abandoned",
+        "popularity": 11
+      },
+      {
+        "name": "gothic",
+        "popularity": 11
+      },
+      {
+        "name": "romance",
+        "popularity": 10
+      },
+      {
+        "name": "2019-booker-longlist",
+        "popularity": 10
+      },
+      {
+        "name": "man-booker",
+        "popularity": 10
+      },
+      {
+        "name": "kindle",
+        "popularity": 10
+      },
+      {
+        "name": "did-not-finish",
+        "popularity": 10
+      },
+      {
+        "name": "ebook",
+        "popularity": 10
+      },
+      {
+        "name": "trans",
+        "popularity": 10
+      },
+      {
+        "name": "library-book",
+        "popularity": 10
+      },
+      {
+        "name": "british",
+        "popularity": 10
+      },
+      {
+        "name": "novel",
+        "popularity": 9
+      },
+      {
+        "name": "best-of-2019",
+        "popularity": 9
+      },
+      {
+        "name": "to-read-fiction",
+        "popularity": 9
+      },
+      {
+        "name": "maybe",
+        "popularity": 9
+      },
+      {
+        "name": "man-booker-prize",
+        "popularity": 8
+      },
+      {
+        "name": "artificial-intelligence",
+        "popularity": 8
+      },
+      {
+        "name": "2019-books",
+        "popularity": 8
+      },
+      {
+        "name": "dystopian",
+        "popularity": 8
+      },
+      {
+        "name": "gender",
+        "popularity": 8
+      },
+      {
+        "name": "sf",
+        "popularity": 8
+      },
+      {
+        "name": "popsugar-2020",
+        "popularity": 7
+      },
+      {
+        "name": "horror",
+        "popularity": 7
+      },
+      {
+        "name": "unfinished",
+        "popularity": 7
+      },
+      {
+        "name": "2019-booker",
+        "popularity": 7
+      },
+      {
+        "name": "booker-longlist-2019",
+        "popularity": 7
+      },
+      {
+        "name": "library-books",
+        "popularity": 7
+      },
+      {
+        "name": "women",
+        "popularity": 7
+      },
+      {
+        "name": "tbr",
+        "popularity": 7
+      },
+      {
+        "name": "owned-tbr",
+        "popularity": 7
+      },
+      {
+        "name": "arc",
+        "popularity": 7
+      },
+      {
+        "name": "uk",
+        "popularity": 7
+      },
+      {
+        "name": "wish-list",
+        "popularity": 7
+      },
+      {
+        "name": "read-2020",
+        "popularity": 6
+      },
+      {
+        "name": "2020-books",
+        "popularity": 6
+      },
+      {
+        "name": "philosophy",
+        "popularity": 6
+      },
+      {
+        "name": "scifi-fantasy",
+        "popularity": 6
+      },
+      {
+        "name": "fantasy-sci-fi",
+        "popularity": 6
+      },
+      {
+        "name": "feminist",
+        "popularity": 6
+      },
+      {
+        "name": "booker-longlist",
+        "popularity": 6
+      },
+      {
+        "name": "women-authors",
+        "popularity": 6
+      },
+      {
+        "name": "arcs",
+        "popularity": 6
+      },
+      {
+        "name": "reading-women-challenge-2020",
+        "popularity": 5
+      },
+      {
+        "name": "woman-author",
+        "popularity": 5
+      },
+      {
+        "name": "gay",
+        "popularity": 5
+      },
+      {
+        "name": "fiction-to-read",
+        "popularity": 5
+      },
+      {
+        "name": "man-booker-longlist-2019",
+        "popularity": 5
+      },
+      {
+        "name": "technology",
+        "popularity": 5
+      }
+    ]
+  },
+  {
+    "id": 36723246,
+    "isbn": "0525521194",
+    "isbn13": "9780525521198",
+    "title": "Warlight",
+    "format": "Hardcover",
+    "rating": 0,
+    "readCount": 1,
+    "pageNumber": 285,
+    "ratingsCount": 32151,
+    "publicationYear": 2018,
+    "averageRating": 3.63,
+    "dateStarted": [
+      2018,
+      9,
+      26
+    ],
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Michael Ondaatje"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 61593
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 7132
+      },
+      {
+        "name": "historical-fiction",
+        "popularity": 890
+      },
+      {
+        "name": "fiction",
+        "popularity": 811
+      },
+      {
+        "name": "book-club",
+        "popularity": 175
+      },
+      {
+        "name": "war",
+        "popularity": 131
+      },
+      {
+        "name": "historical",
+        "popularity": 125
+      },
+      {
+        "name": "literary-fiction",
+        "popularity": 118
+      },
+      {
+        "name": "library",
+        "popularity": 105
+      },
+      {
+        "name": "wwii",
+        "popularity": 97
+      },
+      {
+        "name": "audiobook",
+        "popularity": 93
+      },
+      {
+        "name": "abandoned",
+        "popularity": 84
+      },
+      {
+        "name": "dnf",
+        "popularity": 77
+      },
+      {
+        "name": "audiobooks",
+        "popularity": 76
+      },
+      {
+        "name": "england",
+        "popularity": 73
+      },
+      {
+        "name": "did-not-finish",
+        "popularity": 72
+      },
+      {
+        "name": "canadian",
+        "popularity": 69
+      },
+      {
+        "name": "audio",
+        "popularity": 67
+      },
+      {
+        "name": "read-in-2018",
+        "popularity": 66
+      },
+      {
+        "name": "read-in-2019",
+        "popularity": 62
+      },
+      {
+        "name": "read-2019",
+        "popularity": 60
+      },
+      {
+        "name": "favorites",
+        "popularity": 59
+      },
+      {
+        "name": "owned",
+        "popularity": 58
+      },
+      {
+        "name": "ww2",
+        "popularity": 56
+      },
+      {
+        "name": "world-war-ii",
+        "popularity": 56
+      },
+      {
+        "name": "read-2018",
+        "popularity": 52
+      },
+      {
+        "name": "novels",
+        "popularity": 51
+      },
+      {
+        "name": "kindle",
+        "popularity": 49
+      },
+      {
+        "name": "mystery",
+        "popularity": 45
+      },
+      {
+        "name": "adult-fiction",
+        "popularity": 45
+      },
+      {
+        "name": "coming-of-age",
+        "popularity": 45
+      },
+      {
+        "name": "history",
+        "popularity": 45
+      },
+      {
+        "name": "to-buy",
+        "popularity": 43
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 42
+      },
+      {
+        "name": "literature",
+        "popularity": 42
+      },
+      {
+        "name": "adult",
+        "popularity": 41
+      },
+      {
+        "name": "2018-reads",
+        "popularity": 39
+      },
+      {
+        "name": "man-booker-2018",
+        "popularity": 37
+      },
+      {
+        "name": "canada",
+        "popularity": 35
+      },
+      {
+        "name": "literary",
+        "popularity": 33
+      },
+      {
+        "name": "london",
+        "popularity": 33
+      },
+      {
+        "name": "bookclub",
+        "popularity": 33
+      },
+      {
+        "name": "2019-books",
+        "popularity": 32
+      },
+      {
+        "name": "contemporary-fiction",
+        "popularity": 32
+      },
+      {
+        "name": "2019-reads",
+        "popularity": 30
+      },
+      {
+        "name": "audio-book",
+        "popularity": 30
+      },
+      {
+        "name": "novel",
+        "popularity": 30
+      },
+      {
+        "name": "didn-t-finish",
+        "popularity": 29
+      },
+      {
+        "name": "espionage",
+        "popularity": 29
+      },
+      {
+        "name": "british",
+        "popularity": 28
+      },
+      {
+        "name": "obama",
+        "popularity": 27
+      },
+      {
+        "name": "2018-books",
+        "popularity": 26
+      },
+      {
+        "name": "audio-books",
+        "popularity": 25
+      },
+      {
+        "name": "to-read-fiction",
+        "popularity": 25
+      },
+      {
+        "name": "tob-2019",
+        "popularity": 24
+      },
+      {
+        "name": "family",
+        "popularity": 24
+      },
+      {
+        "name": "tournament-of-books",
+        "popularity": 22
+      },
+      {
+        "name": "audible",
+        "popularity": 22
+      },
+      {
+        "name": "world-war-2",
+        "popularity": 22
+      },
+      {
+        "name": "wish-list",
+        "popularity": 22
+      },
+      {
+        "name": "2018-read",
+        "popularity": 20
+      },
+      {
+        "name": "2018-releases",
+        "popularity": 20
+      },
+      {
+        "name": "book-group",
+        "popularity": 19
+      },
+      {
+        "name": "library-book",
+        "popularity": 19
+      },
+      {
+        "name": "maybe",
+        "popularity": 19
+      },
+      {
+        "name": "fiction-to-read",
+        "popularity": 18
+      },
+      {
+        "name": "can-lit",
+        "popularity": 17
+      },
+      {
+        "name": "ebook",
+        "popularity": 17
+      },
+      {
+        "name": "best-of-2018",
+        "popularity": 17
+      },
+      {
+        "name": "fiction-historical",
+        "popularity": 17
+      },
+      {
+        "name": "booker-2018",
+        "popularity": 16
+      },
+      {
+        "name": "general-fiction",
+        "popularity": 16
+      },
+      {
+        "name": "owned-books",
+        "popularity": 16
+      },
+      {
+        "name": "english",
+        "popularity": 16
+      },
+      {
+        "name": "book-club-reads",
+        "popularity": 16
+      },
+      {
+        "name": "canadian-literature",
+        "popularity": 16
+      },
+      {
+        "name": "canadian-author",
+        "popularity": 16
+      },
+      {
+        "name": "overdrive",
+        "popularity": 15
+      },
+      {
+        "name": "2019-read",
+        "popularity": 15
+      },
+      {
+        "name": "canlit",
+        "popularity": 15
+      },
+      {
+        "name": "tob",
+        "popularity": 14
+      },
+      {
+        "name": "booker",
+        "popularity": 14
+      },
+      {
+        "name": "couldn-t-finish",
+        "popularity": 13
+      },
+      {
+        "name": "library-books",
+        "popularity": 13
+      },
+      {
+        "name": "ebooks",
+        "popularity": 13
+      },
+      {
+        "name": "contemporary",
+        "popularity": 13
+      },
+      {
+        "name": "gave-up-on",
+        "popularity": 12
+      },
+      {
+        "name": "2019-tob",
+        "popularity": 12
+      },
+      {
+        "name": "books-read-in-2018",
+        "popularity": 12
+      },
+      {
+        "name": "could-not-finish",
+        "popularity": 12
+      },
+      {
+        "name": "recommended",
+        "popularity": 12
+      },
+      {
+        "name": "21st-century",
+        "popularity": 12
+      },
+      {
+        "name": "giveaways",
+        "popularity": 12
+      },
+      {
+        "name": "read-in-2020",
+        "popularity": 11
+      },
+      {
+        "name": "tournament-of-books-2019",
+        "popularity": 11
+      },
+      {
+        "name": "man-booker-longlist-2018",
+        "popularity": 11
+      },
+      {
+        "name": "man-booker",
+        "popularity": 11
+      },
+      {
+        "name": "booker-prize",
+        "popularity": 11
+      },
+      {
+        "name": "gave-up",
+        "popularity": 11
+      },
+      {
+        "name": "e-books",
+        "popularity": 11
+      }
+    ]
+  }
+]
