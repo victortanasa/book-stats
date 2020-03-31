@@ -89,11 +89,11 @@ public class StorageService {
         }
     }
 
-    public static List<String> getShelvesToExclude() {
+    public List<String> getShelvesToExclude() {
         return newArrayList(PROPERTIES.getProperty(SHELVES_TO_EXCLUDE).split(COMMA));
     }
 
-    public static List<String> getShelvesToExcludeThatStartWith() {
+    public List<String> getShelvesToExcludeThatStartWith() {
         return newArrayList(PROPERTIES.getProperty(SHELVES_TO_EXCLUDE_THAT_START_WITH).split(COMMA));
     }
 
