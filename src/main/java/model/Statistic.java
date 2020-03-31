@@ -7,7 +7,6 @@ import utils.TransformationUtils;
 
 public class Statistic {
 
-    private static final String FILE_NAME_FORMAT = "%s%s";
     private static final int DEFAULT_RESULT_LIMIT = 1000;
 
     private String name;
@@ -23,8 +22,6 @@ public class Statistic {
     //TODO: maybe a better way?
     private String statisticKeyName;
     private String statisticValueName;
-
-    //TODO: filter -> authors have more than x books for Average page number for authors
 
     public Statistic(final String name, final StatisticType type) {
         this.name = name;
@@ -60,8 +57,7 @@ public class Statistic {
     }
 
     public String getFileName() {
-        return String.format(FILE_NAME_FORMAT,
-                TransformationUtils.getCamelCase(statisticKeyName), TransformationUtils.getCamelCase(statisticValueName));
+        return TransformationUtils.getCamelCase(name);
     }
 
     public String getStatisticKeyName() {
