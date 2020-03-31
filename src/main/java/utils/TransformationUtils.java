@@ -1,6 +1,7 @@
 package utils;
 
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.text.WordUtils;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -31,5 +32,9 @@ public class TransformationUtils {
             }
         }
         return null;
+    }
+
+    public static String getCamelCase(final String value) {
+        return StringUtils.removeAll(WordUtils.capitalizeFully(value), StringUtils.SPACE);
     }
 }

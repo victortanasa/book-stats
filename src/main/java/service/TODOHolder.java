@@ -24,4 +24,6 @@ public class TODOHolder {
     //Books vs Pages Read -> nu invers
 
     //todo: do stats for top authors!
+
+    //TODO: percentage of missing date -> 85% there -> filter ->do stats
 }
