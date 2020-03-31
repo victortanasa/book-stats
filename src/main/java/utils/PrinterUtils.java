@@ -19,6 +19,7 @@ import java.util.stream.Collectors;
 public class PrinterUtils {
 
     private static final DecimalFormat DECIMAL_FORMAT = new DecimalFormat("###,###.##");
+
     private static final String MISSING_DATA = "Books with missing data in shelf [%s]: %s";
     private static final String MISSING_FIELDS = "Missing Fields: ";
 
