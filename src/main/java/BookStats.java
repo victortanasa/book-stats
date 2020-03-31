@@ -3,10 +3,7 @@ import static model.enums.StatisticType.MAP;
 import model.Book;
 import model.Statistic;
 import model.enums.ShelveName;
-import service.AvailableStatisticsService;
-import service.BookLoaderService;
-import service.CsvService;
-import service.StatisticsService;
+import service.*;
 
 import java.util.List;
 import java.util.Map;
@@ -34,15 +31,14 @@ public class BookStats {
 
         availableStatistics.stream()
                 .filter(statistic -> MAP.equals(statistic.getType()))
-                .forEach(statistic -> CSV_SERVICE.singleAxisStatisticToCsv(statistic, statisticsService.getMapStatistic(statistic), 15));
+                .forEach(statistic -> CSV_SERVICE.singleAxisStatisticToCsv(statistic, statisticsService.getMapStatistic(statistic)));
+
+        Statistics.DOUBLE_AXIS_STATISTICS.forEach(pair ->
+                CSV_SERVICE.dualAxisStatisticToCsv(pair.getLeft(), pair.getRight(), statisticsService.getMostPopularAuthors()));
 //
 //        availableStatistics.stream()
 //                .filter(statistic -> SINGLE_VALUE.equals(statistic.getType()))
 //                .forEach(statistic -> PrinterUtils.printSingleValueStatistic(statistic, statisticsService.getSingeValueStatistic(statistic)));
-
-        //TODO: save combined stats, load again for merge
-        //TODO: for top authors, check storage limit 15
-        //TODO: double format for stats
     }
 
 }

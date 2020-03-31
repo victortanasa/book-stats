@@ -1,5 +1,6 @@
 package service;
 
+import static com.google.common.collect.Lists.newArrayList;
 import static model.enums.StatisticType.MAP;
 import static model.enums.StatisticType.SINGLE_VALUE;
 import static model.enums.sort.SortBy.KEY;
@@ -8,6 +9,9 @@ import static model.enums.sort.SortOrder.ASC;
 import static model.enums.sort.SortOrder.DESC;
 
 import model.Statistic;
+import org.apache.commons.lang3.tuple.Pair;
+
+import java.util.List;
 
 public class Statistics {
 
@@ -25,11 +29,11 @@ public class Statistics {
             .withStatisticKeyName("Decade")
             .withStatisticValueName("Books");
 
-    public static Statistic MOST_READ_AUTHORS_BY_BOOK_COUNT = new Statistic("Most read authors by book count", MAP, VALUE, DESC)
+    static Statistic MOST_READ_AUTHORS_BY_BOOK_COUNT = new Statistic("Most read authors by book count", MAP, VALUE, DESC)
             .withStatisticKeyName("Author")
             .withStatisticValueName("Book Count");
 
-    public static Statistic MOST_READ_AUTHORS_BY_PAGE_COUNT = new Statistic("Most read authors by page count", MAP, VALUE, DESC)
+    static Statistic MOST_READ_AUTHORS_BY_PAGE_COUNT = new Statistic("Most read authors by page count", MAP, VALUE, DESC)
             .withStatisticKeyName("Author")
             .withStatisticValueName("Page Count");
 
@@ -45,11 +49,11 @@ public class Statistics {
             .withStatisticKeyName("Author")
             .withStatisticValueName("Average Rating");
 
-    public static Statistic PAGES_READ_PER_MONTH_MEDIAN = new Statistic("Pages red per month median", MAP, KEY, ASC)
+    static Statistic PAGES_READ_PER_MONTH_MEDIAN = new Statistic("Pages red per month median", MAP, KEY, ASC)
             .withStatisticKeyName("Month")
             .withStatisticValueName("Pages Read Median");
 
-    public static Statistic PAGES_READ_PER_MONTH = new Statistic("Pages red per month", MAP, KEY, ASC)
+    static Statistic PAGES_READ_PER_MONTH = new Statistic("Pages red per month", MAP, KEY, ASC)
             .withStatisticKeyName("Month")
             .withStatisticValueName("Pages Read");
 
@@ -78,14 +82,18 @@ public class Statistics {
             .withStatisticValueName("Number");
 
     static Statistic AVERAGE_PAGES_READ_PER_MONTH = new Statistic("Average pages read per month", SINGLE_VALUE);
+
     static Statistic AVERAGE_BOOKS_READ_PER_MONTH = new Statistic("Average books read per month", SINGLE_VALUE);
+
     static Statistic AVERAGE_DAYS_TO_READ_A_BOOK = new Statistic("Average days to read a book", SINGLE_VALUE);
+
     static Statistic NUMBER_OF_AUTHORS_READ = new Statistic("Number of authors read", SINGLE_VALUE);
+
     static Statistic AVERAGE_RATING = new Statistic("Average rating", SINGLE_VALUE);
 
     //TODO: implement
     public static Statistic AUTHORS_WITH_MOST_FAVOURITES = new Statistic("Average rating", MAP, VALUE, DESC);
 
-    //TODO: days not reading books
-
+    public static List<Pair<Statistic, Statistic>> DOUBLE_AXIS_STATISTICS = newArrayList(
+            Pair.of(MOST_READ_AUTHORS_BY_BOOK_COUNT, MOST_READ_AUTHORS_BY_PAGE_COUNT));
 }
