@@ -40,7 +40,8 @@ public class StatisticsService {
     private Set<String> authorsToInclude;
     private List<Book> library;
 
-    //TODO: don't init authors if page number null; or get by book numer
+    //TODO: don't init authors if page number null; or get by book number
+    //TODO: scatter plot - date read + release year + don't filter by author
     public StatisticsService(final List<Book> library) {
         this.library = library;
         this.shelveAggregator = new ShelveAggregator();

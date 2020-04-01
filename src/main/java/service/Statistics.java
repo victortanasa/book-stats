@@ -54,7 +54,7 @@ public class Statistics {
             .withStatisticKeyName("Author")
             .withStatisticValueName("Average Rating");
 
-    public static Statistic AVERAGE_PAGES_READ_PER_DAY_PER_MONTH = new Statistic("Average pages read per day per month", MAP, KEY, ASC)
+    static Statistic AVERAGE_PAGES_READ_PER_DAY_PER_MONTH = new Statistic("Average pages read per day per month", MAP, KEY, ASC)
             .withStatisticKeyName("Month")
             .withStatisticValueName("Average Pages Read Per Day");
 
