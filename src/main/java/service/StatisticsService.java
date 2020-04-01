@@ -40,6 +40,7 @@ public class StatisticsService {
     private Set<String> authorsToInclude;
     private List<Book> library;
 
+    //TODO: don't init authors if page number null; or get by book numer
     public StatisticsService(final List<Book> library) {
         this.library = library;
         this.shelveAggregator = new ShelveAggregator();
@@ -94,6 +95,9 @@ public class StatisticsService {
     }
 
     public Set<String> getAuthorsToInclude() {
+//        final AvailableStatisticsService availableStatisticsService = new AvailableStatisticsService();
+//        availableStatisticsService.getAvailableStatistics(library).contains(MOST_READ_AUTHORS_BY_PAGE_COUNT)
+
         final List<String> topAuthorsByPageCount = getKeys(getMapStatistic(MOST_READ_AUTHORS_BY_PAGE_COUNT));
         final List<String> topAuthorsByBookCount = getKeys(getMapStatistic(MOST_READ_AUTHORS_BY_BOOK_COUNT));
 
