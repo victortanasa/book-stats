@@ -21,10 +21,6 @@ public class TODOHolder {
 
     //TODO: to csv; !!!!! what month was the book read? similar to median
 
-    //Books vs Pages Read -> nu invers
-
-    //todo: do stats for top authors!
-
     //TODO: percentage of missing date -> 85% there -> filter ->do stats
 
     //TODO: I, robot -> unparseable
