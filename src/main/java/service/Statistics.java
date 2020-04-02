@@ -90,6 +90,14 @@ public class Statistics {
             .withStatisticKeyName("Format")
             .withStatisticValueName("Number");
 
+    static Statistic AUTHOR_TITLE_AND_PUBLICATION_YEAR = new Statistic("Author title and publication year", MAP, VALUE, ASC)
+            .withStatisticKeyName("Book")
+            .withStatisticValueName("Publication Year");
+
+    static Statistic AUTHOR_TITLE_AND_DATE_FINISHED = new Statistic("Author title and date finished", MAP, VALUE, ASC)
+            .withStatisticKeyName("Book")
+            .withStatisticValueName("Date Finished");
+
     static Statistic AVERAGE_PAGES_READ_PER_MONTH = new Statistic("Average pages read per month", SINGLE_VALUE);
 
     static Statistic AVERAGE_BOOKS_READ_PER_MONTH = new Statistic("Average books read per month", SINGLE_VALUE);
@@ -104,5 +112,6 @@ public class Statistics {
     public static Statistic AUTHORS_WITH_MOST_FAVOURITES = new Statistic("Average rating", MAP, VALUE, DESC);
 
     public static List<Pair<Statistic, Statistic>> DOUBLE_AXIS_STATISTICS = newArrayList(
-            Pair.of(MOST_READ_AUTHORS_BY_BOOK_COUNT, MOST_READ_AUTHORS_BY_PAGE_COUNT));
+            Pair.of(MOST_READ_AUTHORS_BY_BOOK_COUNT, MOST_READ_AUTHORS_BY_PAGE_COUNT),
+            Pair.of(AUTHOR_TITLE_AND_PUBLICATION_YEAR, AUTHOR_TITLE_AND_DATE_FINISHED));
 }

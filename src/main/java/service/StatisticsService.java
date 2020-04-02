@@ -77,6 +77,9 @@ public class StatisticsService {
         mapStatistic.put(FORMATS_DISTRIBUTION, this::getFormatsDistribution);
         mapStatistic.put(MOST_POPULAR_SHELVES, this::getMostPopularShelves);
 
+        mapStatistic.put(AUTHOR_TITLE_AND_PUBLICATION_YEAR, this::getAuthorTitleAndPublicationYear);
+        mapStatistic.put(AUTHOR_TITLE_AND_DATE_FINISHED, this::getAuthorTitleAndDateFinished);
+
         singleValueStatistics = newHashMap();
         singleValueStatistics.put(AVERAGE_RATING, this::getAverageRating);
         singleValueStatistics.put(NUMBER_OF_AUTHORS_READ, this::getNumberOfAuthorsRead);
@@ -198,6 +201,16 @@ public class StatisticsService {
     private Map<String, ? extends Comparable<?>> getFormatsDistribution() {
         return library.stream()
                 .collect(Collectors.groupingBy(Book::getFormat, Collectors.counting()));
+    }
+
+    private Map<String, ? extends Comparable<?>> getAuthorTitleAndPublicationYear() {
+        return library.stream()
+                .collect(Collectors.toMap(Book::getAuthorAndTitle, Book::getPublicationYear));
+    }
+
+    private Map<String, ? extends Comparable<?>> getAuthorTitleAndDateFinished() {
+        return library.stream()
+                .collect(Collectors.toMap(Book::getAuthorAndTitle, Book::getDateFinished));
     }
 
     private Map<String, ? extends Comparable<?>> getMostPopularShelves() {

@@ -18,6 +18,7 @@ import java.util.List;
 public class Book {
 
     private static final String TO_STRING_SHORT_FORMAT = "Id: %s\nTitle: %s\nAuthors: %s";
+    private static final String AUTHOR_AND_TITLE_FORMAT = "%s by %s";
 
     private Long id;
 
@@ -221,6 +222,11 @@ public class Book {
     public long getDaysReadIn() {
         final long difference = DAYS.between(dateStarted, dateFinished);
         return difference == 0 ? 1 : difference;
+    }
+
+    @JsonIgnore
+    public String getAuthorAndTitle() {
+        return String.format(AUTHOR_AND_TITLE_FORMAT, title, getAuthorAsString());
     }
 
     @Override

@@ -13,7 +13,10 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.text.DecimalFormat;
-import java.util.*;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -42,8 +45,7 @@ public class CsvService {
         writeStatistic(statistic.getFileName(), csvLines);
     }
 
-    public void dualAxisStatisticToCsv(final Statistic firstStatistic, final Statistic secondStatistic,
-                                       final Set<String> includedKeys) {
+    public void dualAxisStatisticToCsv(final Statistic firstStatistic, final Statistic secondStatistic) {
         validateKeys(firstStatistic, secondStatistic);
 
         final Map<String, ?> firstMap = getStatisticFromFile(String.format(CSV_FILE_NAME_FORMAT, firstStatistic.getFileName()));
@@ -53,12 +55,9 @@ public class CsvService {
 
         Stream.of(secondMap, firstMap)
                 .flatMap(m -> m.entrySet().stream())
-                .filter(entry -> includedKeys.contains(entry.getKey()))
                 .forEach(entry -> mergeValues(resultMap, entry));
 
-        final List<String> csv = getCsvLines(resultMap, includedKeys.size());
-
-        addLabels(csv, firstStatistic.getKeyLabel(), secondStatistic.getValueLabel(), firstStatistic.getValueLabel());
+        final List<String> csv = getCsvLines(resultMap, firstStatistic.getResultLimit());
 
         writeStatistic(firstStatistic.getFileName() + secondStatistic.getFileName(), csv);
     }
