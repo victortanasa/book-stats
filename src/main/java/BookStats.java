@@ -34,7 +34,7 @@ public class BookStats {
                 .forEach(statistic -> CSV_SERVICE.singleAxisStatisticToCsv(statistic, statisticsService.getMapStatistic(statistic)));
 
         Statistics.DOUBLE_AXIS_STATISTICS.forEach(pair ->
-                CSV_SERVICE.dualAxisStatisticToCsv(pair.getLeft(), pair.getRight(), statisticsService.getAuthorsToInclude()));
+                CSV_SERVICE.dualAxisStatisticToCsv(pair.getLeft(), pair.getRight(), statisticsService.getTopAuthors()));
 //
 //        availableStatistics.stream()
 //                .filter(statistic -> SINGLE_VALUE.equals(statistic.getType()))

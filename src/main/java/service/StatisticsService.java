@@ -36,8 +36,9 @@ public class StatisticsService {
     private Map<Statistic, Supplier<Number>> singleValueStatistics;
     private Map<Statistic, Supplier<Map<String, ? extends Comparable<?>>>> mapStatistic;
 
+    private AvailableStatisticsService availableStatisticsService;
     private ShelveAggregator shelveAggregator;
-    private Set<String> authorsToInclude;
+    private Set<String> topAuthors;
     private List<Book> library;
 
     //TODO: don't init authors if page number null; or get by book number
@@ -45,10 +46,11 @@ public class StatisticsService {
     public StatisticsService(final List<Book> library) {
         this.library = library;
         this.shelveAggregator = new ShelveAggregator();
+        this.availableStatisticsService = new AvailableStatisticsService();
 
         initStatisticsMap();
 
-        this.authorsToInclude = getAuthorsToInclude();
+        this.topAuthors = getTopAuthors();
     }
 
     private void initStatisticsMap() {
@@ -95,17 +97,21 @@ public class StatisticsService {
         return singleValueStatistics.get(statistic).get();
     }
 
-    public Set<String> getAuthorsToInclude() {
-//        final AvailableStatisticsService availableStatisticsService = new AvailableStatisticsService();
-//        availableStatisticsService.getAvailableStatistics(library).contains(MOST_READ_AUTHORS_BY_PAGE_COUNT)
+    public Set<String> getTopAuthors() {
+        final List<String> topAuthorsByPageCount = pageCountIsAvailable() ?
+                getKeys(getMapStatistic(MOST_READ_AUTHORS_BY_PAGE_COUNT)) :
+                newArrayList();
 
-        final List<String> topAuthorsByPageCount = getKeys(getMapStatistic(MOST_READ_AUTHORS_BY_PAGE_COUNT));
         final List<String> topAuthorsByBookCount = getKeys(getMapStatistic(MOST_READ_AUTHORS_BY_BOOK_COUNT));
 
         return Stream.of(topAuthorsByBookCount, topAuthorsByPageCount)
                 .flatMap(Collection::stream)
                 .limit(AUTHOR_LIMIT)
                 .collect(toSet());
+    }
+
+    private boolean pageCountIsAvailable() {
+        return availableStatisticsService.getAvailableStatistics(library).contains(MOST_READ_AUTHORS_BY_PAGE_COUNT);
     }
 
     private Map<String, ? extends Comparable<?>> getMostReadAuthorsByPageCount() {
@@ -147,19 +153,19 @@ public class StatisticsService {
 
     private Map<String, ? extends Comparable<?>> getAverageRatingsForAuthors() {
         return library.stream()
-                .filter(book -> authorsToInclude.contains(book.getAuthorAsString()))
+                .filter(book -> topAuthors.contains(book.getAuthorAsString()))
                 .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingInt(Book::getRating)));
     }
 
     private Map<String, ? extends Comparable<?>> getAveragePageNumberForAuthors() {
         return library.stream()
-                .filter(book -> authorsToInclude.contains(book.getAuthorAsString()))
+                .filter(book -> topAuthors.contains(book.getAuthorAsString()))
                 .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingInt(Book::getPageNumber)));
     }
 
     private Map<String, ? extends Comparable<?>> getAverageDaysToReadABookPerAuthor() {
         return library.stream()
-                .filter(book -> authorsToInclude.contains(book.getAuthorAsString()))
+                .filter(book -> topAuthors.contains(book.getAuthorAsString()))
                 .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingLong(Book::getDaysReadIn)));
     }
 
