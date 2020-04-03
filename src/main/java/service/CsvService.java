@@ -50,7 +50,10 @@ public class CsvService {
 
         final Map<String, ?> firstMap = getStatisticFromFile(String.format(CSV_FILE_NAME_FORMAT, firstStatistic.getFileName()));
         final Map<String, ?> secondMap = getStatisticFromFile(String.format(CSV_FILE_NAME_FORMAT, secondStatistic.getFileName()));
-
+        //todo: different authors in different maps ->
+//        "Alfred Bester" -> "494,2"
+//        25 = {LinkedHashMap$Entry@2733} "Robert Charles Wilson" -> "464"
+//        26 = {LinkedHashMap$Entry@2734} "Madeline Miller" -> "1"
         final Map<String, String> resultMap = newLinkedHashMap();
 
         Stream.of(secondMap, firstMap)

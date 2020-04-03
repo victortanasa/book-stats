@@ -17,13 +17,15 @@ public class Statistics {
 
     //TODO: arrange by average, most popular etc
 
+    private static final int AUTHOR_RESULT_LIMIT = 25;
+
     static Statistic MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS = new Statistic("Most popular authors by average number of ratings", MAP, VALUE, DESC)
-            .withResultLimit(20)
+            .withResultLimit(AUTHOR_RESULT_LIMIT)
             .withStatisticKeyName("Author")
             .withStatisticValueName("Number of Ratings");
 
     static Statistic AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR = new Statistic("Average days to read a book per author", MAP, VALUE, DESC)
-            .withResultLimit(20)
+            .withResultLimit(AUTHOR_RESULT_LIMIT)
             .withStatisticKeyName("Author")
             .withStatisticValueName("Days");
 
@@ -32,17 +34,17 @@ public class Statistics {
             .withStatisticValueName("Books");
 
     static Statistic MOST_READ_AUTHORS_BY_BOOK_COUNT = new Statistic("Most read authors by book count", MAP, VALUE, DESC)
-            .withResultLimit(20)
+            .withResultLimit(AUTHOR_RESULT_LIMIT)
             .withStatisticKeyName("Author")
             .withStatisticValueName("Book Count");
 
     static Statistic MOST_READ_AUTHORS_BY_PAGE_COUNT = new Statistic("Most read authors by page count", MAP, VALUE, DESC)
-            .withResultLimit(20)
+            .withResultLimit(AUTHOR_RESULT_LIMIT)
             .withStatisticKeyName("Author")
             .withStatisticValueName("Page Count");
 
     static Statistic AVERAGE_PAGE_NUMBER_FOR_AUTHORS = new Statistic("Average page number for authors", MAP, VALUE, DESC)
-            .withResultLimit(20)
+            .withResultLimit(AUTHOR_RESULT_LIMIT)
             .withStatisticKeyName("Author")
             .withStatisticValueName("Average Page Count");
 
