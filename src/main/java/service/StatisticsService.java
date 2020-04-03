@@ -41,8 +41,6 @@ public class StatisticsService {
     private Set<String> topAuthors;
     private List<Book> library;
 
-    //TODO: don't init authors if page number null; or get by book number
-    //TODO: scatter plot - date read + release year + don't filter by author
     public StatisticsService(final List<Book> library) {
         this.library = library;
         this.shelveAggregator = new ShelveAggregator();
@@ -92,8 +90,8 @@ public class StatisticsService {
         final Map<String, ? extends Comparable<?>> statistics = mapStatistic.get(statistic).get();
 
         return SortBy.KEY.equals(statistic.getSortBy()) ?
-                sortMapByKey(statistics, statistic.getSortOrder(), statistic.getResultLimit()) :
-                sortMapByValue(statistics, statistic.getSortOrder(), statistic.getResultLimit());
+                sortMapByKey(statistics, statistic.getSortOrder()) :
+                sortMapByValue(statistics, statistic.getSortOrder());
     }
 
     public Number getSingeValueStatistic(final Statistic statistic) {
@@ -290,24 +288,22 @@ public class StatisticsService {
     }
 
     @SuppressWarnings("unchecked")
-    private static <K extends Comparable, V> Map<K, V> sortMapByKey(final Map<K, V> map, final SortOrder sortOrder, final Integer limit) {
+    private static <K extends Comparable, V> Map<K, V> sortMapByKey(final Map<K, V> map, final SortOrder sortOrder) {
         final Comparator<Map.Entry<K, V>> comparator = DESC.equals(sortOrder) ?
                 Map.Entry.<K, V>comparingByKey().reversed() : Map.Entry.comparingByKey();
 
         return map.entrySet().stream()
                 .sorted(comparator)
-                .limit(limit)
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
     }
 
     @SuppressWarnings("unchecked")
-    private static <K, V extends Comparable> Map<K, V> sortMapByValue(final Map<K, V> map, final SortOrder sortOrder, final Integer limit) {
+    private static <K, V extends Comparable> Map<K, V> sortMapByValue(final Map<K, V> map, final SortOrder sortOrder) {
         final Comparator<Map.Entry<K, V>> comparator = DESC.equals(sortOrder) ?
                 Map.Entry.<K, V>comparingByValue().reversed() : Map.Entry.comparingByValue();
 
         return map.entrySet().stream()
                 .sorted(comparator)
-                .limit(limit)
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
     }
 

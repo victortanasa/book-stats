@@ -37,7 +37,7 @@ public class CsvService {
     private static final String COMMA = ",";
 
     public void singleAxisStatisticToCsv(final Statistic statistic, final Map<String, ?> map) {
-        final List<String[]> csvLines = getCsvLines(map, statistic.getResultLimit());
+        final List<String[]> csvLines = getCsvLines(map);
 
         addLabels(csvLines, statistic.getKeyLabel(), statistic.getValueLabel());
 
@@ -49,17 +49,14 @@ public class CsvService {
 
         final Map<String, ?> firstMap = getStatisticFromFile(String.format(CSV_FILE_NAME_FORMAT, firstStatistic.getFileName()));
         final Map<String, ?> secondMap = getStatisticFromFile(String.format(CSV_FILE_NAME_FORMAT, secondStatistic.getFileName()));
-        //todo: different authors in different maps ->
-//        "Alfred Bester" -> "494,2"
-//        25 = {LinkedHashMap$Entry@2733} "Robert Charles Wilson" -> "464"
-//        26 = {LinkedHashMap$Entry@2734} "Madeline Miller" -> "1"
+
         final Map<String, String> resultMap = newLinkedHashMap();
 
         Stream.of(secondMap, firstMap)
                 .flatMap(m -> m.entrySet().stream())
                 .forEach(entry -> mergeValues(resultMap, entry));
 
-        final List<String[]> csv = getCsvLines(resultMap, firstStatistic.getResultLimit());
+        final List<String[]> csv = getCsvLines(resultMap);
 
         writeStatistic(firstStatistic.getFileName() + secondStatistic.getFileName(), csv);
     }
@@ -77,10 +74,9 @@ public class CsvService {
         }
     }
 
-    private static List<String[]> getCsvLines(final Map<String, ?> map, final int limit) {
+    private static List<String[]> getCsvLines(final Map<String, ?> map) {
         return map.entrySet().stream()
                 .map(CsvService::toCsvLine)
-                .limit(limit)
                 .collect(toList());
     }
 
