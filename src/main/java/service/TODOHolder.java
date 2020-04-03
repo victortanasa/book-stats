@@ -12,27 +12,13 @@ public class TODOHolder {
 //    Authors: [Dennis E. Taylor]
 //    Missing Fields: [FORMAT, PAGE_NUMBER]
 
-    //TODO: Most popular shelves, Most read authors by book count - limit number
-    //TODO: Average rating for authors - more than x books
-
     //TODO:     "title": "The Fall of Hyperion", - radu has duplicates
 
     //TODO: ilie Isaac Asimov: 2 average rating
 
-    //TODO: to csv; !!!!! what month was the book read? similar to median
+    //TODO: what month was the book read? similar to median
 
     //TODO: percentage of missing date -> 85% there -> filter ->do stats
-
-    //TODO: I, robot -> unparseable
-
-    //TODO: more authors, stats can take it
-
-    //TODO: SOMETHING WRONG WITH STATS:
-//    Frank Herbert,577
-//    Hugh Howey,537
-//    Alfred Bester,494,2
-
-//    MostReadAuthorsByBookCountMostReadAuthorsByPageCount.csv
 
     //TODO: get rid of dual axis???
 }
