@@ -23,15 +23,12 @@ public class TransformationUtils {
     }
 
     public static LocalDate getDate(final DateTimeFormatter formatter, final String value) {
-        if (!StringUtils.isBlank(value)) {
-            try {
-                return LocalDate.parse(value, formatter);
-            } catch (final Exception e) {
-                PrinterUtils.printSimple(String.format(COULD_NOT_EXTRACT_DATE_MESSAGE, value, e.getMessage()));
-                return null;
-            }
+        try {
+            return LocalDate.parse(value, formatter);
+        } catch (final Exception e) {
+            PrinterUtils.printSimple(String.format(COULD_NOT_EXTRACT_DATE_MESSAGE, value, e.getMessage()));
+            return null;
         }
-        return null;
     }
 
     public static String getCamelCase(final String value) {
