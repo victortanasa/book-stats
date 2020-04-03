@@ -15,19 +15,11 @@ import java.util.List;
 
 public class Statistics {
 
-    //TODO: arrange by average, most popular etc
+    //Author statistics
 
     static Statistic MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS = new Statistic("Most popular authors by average number of ratings", MAP, VALUE, DESC)
             .withStatisticKeyName("Author")
             .withStatisticValueName("Number of Ratings");
-
-    static Statistic AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR = new Statistic("Average days to read a book per author", MAP, VALUE, DESC)
-            .withStatisticKeyName("Author")
-            .withStatisticValueName("Days");
-
-    static Statistic MOST_BOOKS_READ_BY_PUBLISHED_DECADE = new Statistic("Most books read by published decade", MAP, VALUE, DESC)
-            .withStatisticKeyName("Decade")
-            .withStatisticValueName("Books");
 
     static Statistic MOST_READ_AUTHORS_BY_BOOK_COUNT = new Statistic("Most read authors by book count", MAP, VALUE, DESC)
             .withStatisticKeyName("Author")
@@ -37,18 +29,45 @@ public class Statistics {
             .withStatisticKeyName("Author")
             .withStatisticValueName("Page Count");
 
+    static Statistic AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR = new Statistic("Average days to read a book per author", MAP, VALUE, DESC)
+            .withStatisticKeyName("Author")
+            .withStatisticValueName("Days");
+
     static Statistic AVERAGE_PAGE_NUMBER_FOR_AUTHORS = new Statistic("Average page number for authors", MAP, VALUE, DESC)
             .withStatisticKeyName("Author")
             .withStatisticValueName("Average Page Count");
-
-    static Statistic AVERAGE_BOOK_LENGTH_PER_YEAR = new Statistic("Average book length per year", MAP, KEY, ASC)
-            .withStatisticKeyName("Year")
-            .withStatisticValueName("Average Book Length");
 
     static Statistic AVERAGE_RATING_FOR_AUTHORS = new Statistic("Average rating for authors", MAP, VALUE, DESC)
             .withStatisticKeyName("Author")
             .withStatisticValueName("Average Rating");
 
+    //Book statistics
+
+    static Statistic MOST_BOOKS_READ_BY_PUBLISHED_DECADE = new Statistic("Most books read by published decade", MAP, VALUE, DESC)
+            .withStatisticKeyName("Decade")
+            .withStatisticValueName("Books");
+
+    static Statistic AVERAGE_BOOK_LENGTH_PER_YEAR = new Statistic("Average book length per year", MAP, KEY, ASC)
+            .withStatisticKeyName("Year")
+            .withStatisticValueName("Average Book Length");
+
+    static Statistic BOOKS_READ_PER_MONTH = new Statistic("Books read per month", MAP, KEY, ASC)
+            .withStatisticKeyName("Month")
+            .withStatisticValueName("Books");
+
+    static Statistic BOOKS_READ_PER_YEAR = new Statistic("Books read per year", MAP, KEY, ASC)
+            .withStatisticKeyName("Year")
+            .withStatisticValueName("Books");
+
+    static Statistic BOOK_AND_PUBLICATION_YEAR = new Statistic("Book and publication year", MAP, VALUE, ASC)
+            .withStatisticKeyName("Book")
+            .withStatisticValueName("Publication Year");
+
+    static Statistic BOOK_AND_DATE_FINISHED = new Statistic("Book and date finished", MAP, VALUE, ASC)
+            .withStatisticKeyName("Book")
+            .withStatisticValueName("Date Finished");
+
+    //Page statistics
     static Statistic AVERAGE_PAGES_READ_PER_DAY_PER_MONTH = new Statistic("Average pages read per day per month", MAP, KEY, ASC)
             .withStatisticKeyName("Month")
             .withStatisticValueName("Average Pages Read Per Day");
@@ -61,17 +80,11 @@ public class Statistics {
             .withStatisticKeyName("Month")
             .withStatisticValueName("Pages Read");
 
-    static Statistic BOOKS_READ_PER_MONTH = new Statistic("Books read per month", MAP, KEY, ASC)
-            .withStatisticKeyName("Month")
-            .withStatisticValueName("Books");
-
-    static Statistic BOOKS_READ_PER_YEAR = new Statistic("Books read per year", MAP, KEY, ASC)
-            .withStatisticKeyName("Year")
-            .withStatisticValueName("Books");
-
     static Statistic PAGES_READ_PER_YEAR = new Statistic("Pages read per year", MAP, KEY, ASC)
             .withStatisticKeyName("Year")
             .withStatisticValueName("Pages");
+
+    //Various statistics
 
     static Statistic MOST_POPULAR_SHELVES = new Statistic("Most popular shelves", MAP, VALUE, DESC)
             .withStatisticKeyName("Shelve")
@@ -85,13 +98,7 @@ public class Statistics {
             .withStatisticKeyName("Format")
             .withStatisticValueName("Number");
 
-    static Statistic AUTHOR_TITLE_AND_PUBLICATION_YEAR = new Statistic("Author title and publication year", MAP, VALUE, ASC)
-            .withStatisticKeyName("Book")
-            .withStatisticValueName("Publication Year");
-
-    static Statistic AUTHOR_TITLE_AND_DATE_FINISHED = new Statistic("Author title and date finished", MAP, VALUE, ASC)
-            .withStatisticKeyName("Book")
-            .withStatisticValueName("Date Finished");
+    //Single value statistics
 
     static Statistic AVERAGE_PAGES_READ_PER_MONTH = new Statistic("Average pages read per month", SINGLE_VALUE);
 
@@ -108,5 +115,5 @@ public class Statistics {
 
     public static List<Pair<Statistic, Statistic>> DOUBLE_AXIS_STATISTICS = newArrayList(
             Pair.of(MOST_READ_AUTHORS_BY_BOOK_COUNT, MOST_READ_AUTHORS_BY_PAGE_COUNT),
-            Pair.of(AUTHOR_TITLE_AND_PUBLICATION_YEAR, AUTHOR_TITLE_AND_DATE_FINISHED));
+            Pair.of(BOOK_AND_PUBLICATION_YEAR, BOOK_AND_DATE_FINISHED));
 }

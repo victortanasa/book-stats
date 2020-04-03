@@ -53,37 +53,42 @@ public class StatisticsService {
 
     private void initStatisticsMap() {
         mapStatistic = newHashMap();
+
+        //Author statistics
+        mapStatistic.put(MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS, this::getMostPopularAuthorsByAverageNumberOfRatings);
+        mapStatistic.put(AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR, this::getAverageDaysToReadABookPerAuthor);
+        mapStatistic.put(AVERAGE_PAGE_NUMBER_FOR_AUTHORS, this::getAveragePageNumberForAuthors);
         mapStatistic.put(MOST_READ_AUTHORS_BY_PAGE_COUNT, this::getMostReadAuthorsByPageCount);
         mapStatistic.put(MOST_READ_AUTHORS_BY_BOOK_COUNT, this::getMostReadAuthorsBookCount);
+        mapStatistic.put(AVERAGE_RATING_FOR_AUTHORS, this::getAverageRatingsForAuthors);
 
+        //Book statistics
+        mapStatistic.put(MOST_BOOKS_READ_BY_PUBLISHED_DECADE, this::getMostBooksReadByPublishedDecade);
+        mapStatistic.put(AVERAGE_BOOK_LENGTH_PER_YEAR, this::getAverageBookLengthPerYear);
+        mapStatistic.put(BOOK_AND_PUBLICATION_YEAR, this::getBookAndPublicationYear);
+        mapStatistic.put(BOOK_AND_DATE_FINISHED, this::getBookAndDateFinished);
         mapStatistic.put(BOOKS_READ_PER_MONTH, this::getBooksReadPerMonth);
-        mapStatistic.put(PAGES_READ_PER_MONTH, this::getPagesReadPerMonth);
-        mapStatistic.put(PAGES_READ_PER_MONTH_MEDIAN, this::getPagesReadPerMonthMedian);
         mapStatistic.put(BOOKS_READ_PER_YEAR, this::getBooksReadPerYear);
+
+        //Page statistics
+        mapStatistic.put(AVERAGE_PAGES_READ_PER_DAY_PER_MONTH, this::getAveragePagesReadPerDayPerMonth);
+        mapStatistic.put(PAGES_READ_PER_MONTH_MEDIAN, this::getPagesReadPerMonthMedian);
+        mapStatistic.put(PAGES_READ_PER_MONTH, this::getPagesReadPerMonth);
         mapStatistic.put(PAGES_READ_PER_YEAR, this::getPagesReadPerYear);
 
-        mapStatistic.put(AVERAGE_RATING_FOR_AUTHORS, this::getAverageRatingsForAuthors);
-        mapStatistic.put(AVERAGE_PAGE_NUMBER_FOR_AUTHORS, this::getAveragePageNumberForAuthors);
-        mapStatistic.put(AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR, this::getAverageDaysToReadABookPerAuthor);
-        mapStatistic.put(AVERAGE_BOOK_LENGTH_PER_YEAR, this::getAverageBookLengthPerYear);
-        mapStatistic.put(AVERAGE_PAGES_READ_PER_DAY_PER_MONTH, this::getAveragePagesReadPerDayPerMonth);
-
-        mapStatistic.put(MOST_BOOKS_READ_BY_PUBLISHED_DECADE, this::getMostBooksReadByPublishedDecade);
-        mapStatistic.put(MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS, this::getMostPopularAuthorsByAverageNumberOfRatings);
-
+        //Various statistics
         mapStatistic.put(RATINGS_DISTRIBUTION, this::getRatingsDistribution);
         mapStatistic.put(FORMATS_DISTRIBUTION, this::getFormatsDistribution);
         mapStatistic.put(MOST_POPULAR_SHELVES, this::getMostPopularShelves);
 
-        mapStatistic.put(AUTHOR_TITLE_AND_PUBLICATION_YEAR, this::getAuthorTitleAndPublicationYear);
-        mapStatistic.put(AUTHOR_TITLE_AND_DATE_FINISHED, this::getAuthorTitleAndDateFinished);
-
+        //Single value statistics
         singleValueStatistics = newHashMap();
-        singleValueStatistics.put(AVERAGE_RATING, this::getAverageRating);
-        singleValueStatistics.put(NUMBER_OF_AUTHORS_READ, this::getNumberOfAuthorsRead);
-        singleValueStatistics.put(AVERAGE_DAYS_TO_READ_A_BOOK, this::getAverageDaysToReadABook);
-        singleValueStatistics.put(AVERAGE_PAGES_READ_PER_MONTH, this::getAveragePagesReadPerMonth);
+
         singleValueStatistics.put(AVERAGE_BOOKS_READ_PER_MONTH, this::getAverageBooksReadPerMonth);
+        singleValueStatistics.put(AVERAGE_PAGES_READ_PER_MONTH, this::getAveragePagesReadPerMonth);
+        singleValueStatistics.put(AVERAGE_DAYS_TO_READ_A_BOOK, this::getAverageDaysToReadABook);
+        singleValueStatistics.put(NUMBER_OF_AUTHORS_READ, this::getNumberOfAuthorsRead);
+        singleValueStatistics.put(AVERAGE_RATING, this::getAverageRating);
     }
 
     public Map<String, ? extends Comparable<?>> getMapStatistic(final Statistic statistic) {
@@ -98,7 +103,143 @@ public class StatisticsService {
         return singleValueStatistics.get(statistic).get();
     }
 
-    public Set<String> getTopAuthors() {
+    private Map<String, ? extends Comparable<?>> getMostPopularAuthorsByAverageNumberOfRatings() {
+        return library.stream()
+                .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingInt(Book::getRatingsCount)));
+    }
+
+    private Map<String, ? extends Comparable<?>> getAverageDaysToReadABookPerAuthor() {
+        return library.stream()
+                .filter(book -> topAuthors.contains(book.getAuthorAsString()))
+                .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingLong(Book::getDaysReadIn)));
+    }
+
+    private Map<String, ? extends Comparable<?>> getAveragePageNumberForAuthors() {
+        return library.stream()
+                .filter(book -> topAuthors.contains(book.getAuthorAsString()))
+                .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingInt(Book::getPageNumber)));
+    }
+
+    private Map<String, ? extends Comparable<?>> getMostReadAuthorsByPageCount() {
+        return library.stream()
+                .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.summingInt(Book::getPageNumber)));
+    }
+
+    private Map<String, ? extends Comparable<?>> getMostReadAuthorsBookCount() {
+        return library.stream()
+                .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.counting()));
+    }
+
+    private Map<String, ? extends Comparable<?>> getAverageRatingsForAuthors() {
+        return library.stream()
+                .filter(book -> topAuthors.contains(book.getAuthorAsString()))
+                .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingInt(Book::getRating)));
+    }
+
+    private Map<String, ? extends Comparable<?>> getMostBooksReadByPublishedDecade() {
+        return library.stream()
+                .collect(Collectors.groupingBy(book -> getDecade(book.getPublicationYear()), Collectors.counting()));
+    }
+
+    private Map<String, ? extends Comparable<?>> getAverageBookLengthPerYear() {
+        return library.stream()
+                .collect(Collectors.groupingBy(book -> getYear(book.getDateFinished()), Collectors.averagingInt(Book::getPageNumber)));
+    }
+
+    private Map<String, ? extends Comparable<?>> getBookAndPublicationYear() {
+        return library.stream()
+                .collect(Collectors.toMap(Book::getAuthorAndTitle, Book::getPublicationYear));
+    }
+
+    private Map<String, ? extends Comparable<?>> getBookAndDateFinished() {
+        return library.stream()
+                .collect(Collectors.toMap(Book::getAuthorAndTitle, Book::getDateFinished));
+    }
+
+    private Map<String, ? extends Comparable<?>> getBooksReadPerMonth() {
+        return library.stream()
+                .collect(Collectors.groupingBy(book -> getMonth(book.getDateFinished()), Collectors.counting()));
+    }
+
+    private Map<String, ? extends Comparable<?>> getBooksReadPerYear() {
+        return library.stream()
+                .collect(Collectors.groupingBy(book -> getYear(book.getDateFinished()), Collectors.counting()));
+    }
+
+    private Map<String, ? extends Comparable<?>> getAveragePagesReadPerDayPerMonth() {
+        return getPagesReadPerMonthMedian().entrySet().stream()
+                .map(entry -> Pair.of(entry.getKey(), new Double(entry.getValue().toString()) / getNumberOfDaysInAMonth(entry.getKey())))
+                .collect(Collectors.toMap(Pair::getKey, Pair::getValue));
+    }
+
+    private Map<String, ? extends Comparable<?>> getPagesReadPerMonthMedian() {
+        return library.stream()
+                .map(this::getPagesReadPerMonths)
+                .flatMap(Collection::stream)
+                .collect(Collectors.groupingBy(Pair::getKey, Collectors.summingDouble(Pair::getValue)));
+    }
+
+    private Map<String, ? extends Comparable<?>> getPagesReadPerMonth() {
+        return library.stream()
+                .collect(Collectors.groupingBy(book -> getMonth(book.getDateFinished()), Collectors.summingInt(Book::getPageNumber)));
+    }
+
+    private Map<String, ? extends Comparable<?>> getPagesReadPerYear() {
+        return library.stream()
+                .collect(Collectors.groupingBy(book -> getYear(book.getDateFinished()), Collectors.summingInt(Book::getPageNumber)));
+    }
+
+    private Map<String, ? extends Comparable<?>> getRatingsDistribution() {
+        return library.stream()
+                .collect(Collectors.groupingBy(book -> book.getRating().toString(), Collectors.counting()));
+    }
+
+    private Map<String, ? extends Comparable<?>> getFormatsDistribution() {
+        return library.stream()
+                .collect(Collectors.groupingBy(Book::getFormat, Collectors.counting()));
+    }
+
+    private Map<String, ? extends Comparable<?>> getMostPopularShelves() {
+        final List<String> mostPopularShelves = library.stream()
+                .map(Book::getShelves)
+                .map(shelves -> shelveAggregator.getTopShelves(shelves))
+                .flatMap(Collection::stream)
+                .collect(Collectors.toList());
+
+        return mostPopularShelves.stream()
+                .collect(Collectors.groupingBy(shelve -> shelve, Collectors.counting()));
+    }
+
+    private Double getAverageBooksReadPerMonth() {
+        return getAverageFromMapValues(getBooksReadPerMonth());
+    }
+
+    private Double getAveragePagesReadPerMonth() {
+        return getAverageFromMapValues(getPagesReadPerMonth());
+    }
+
+    private Double getAverageDaysToReadABook() {
+        return library.stream()
+                .mapToLong(Book::getDaysReadIn)
+                .average()
+                .orElse(-1);
+    }
+
+    private Integer getNumberOfAuthorsRead() {
+        return library.stream()
+                .map(Book::getAuthorAsString)
+                .collect(toSet())
+                .size();
+    }
+
+    private Double getAverageRating() {
+        return library.stream()
+                .mapToInt(Book::getRating)
+                .average()
+                .orElse(-1);
+    }
+
+    private Set<String> getTopAuthors() {
         final List<String> topAuthorsByPageCount = pageCountIsAvailable() ?
                 getKeys(getMapStatistic(MOST_READ_AUTHORS_BY_PAGE_COUNT)) :
                 newArrayList();
@@ -113,142 +254,6 @@ public class StatisticsService {
 
     private boolean pageCountIsAvailable() {
         return availableStatisticsService.getAvailableStatistics(library).contains(MOST_READ_AUTHORS_BY_PAGE_COUNT);
-    }
-
-    private Map<String, ? extends Comparable<?>> getMostReadAuthorsByPageCount() {
-        return library.stream()
-                .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.summingInt(Book::getPageNumber)));
-    }
-
-    private Map<String, ? extends Comparable<?>> getMostReadAuthorsBookCount() {
-        return library.stream()
-                .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.counting()));
-    }
-
-    private Map<String, ? extends Comparable<?>> getBooksReadPerMonth() {
-        return library.stream()
-                .collect(Collectors.groupingBy(book -> getMonth(book.getDateFinished()), Collectors.counting()));
-    }
-
-    private Map<String, ? extends Comparable<?>> getPagesReadPerMonth() {
-        return library.stream()
-                .collect(Collectors.groupingBy(book -> getMonth(book.getDateFinished()), Collectors.summingInt(Book::getPageNumber)));
-    }
-
-    private Map<String, ? extends Comparable<?>> getPagesReadPerMonthMedian() {
-        return library.stream()
-                .map(this::getPagesReadPerMonths)
-                .flatMap(Collection::stream)
-                .collect(Collectors.groupingBy(Pair::getKey, Collectors.summingDouble(Pair::getValue)));
-    }
-
-    private Map<String, ? extends Comparable<?>> getBooksReadPerYear() {
-        return library.stream()
-                .collect(Collectors.groupingBy(book -> getYear(book.getDateFinished()), Collectors.counting()));
-    }
-
-    private Map<String, ? extends Comparable<?>> getPagesReadPerYear() {
-        return library.stream()
-                .collect(Collectors.groupingBy(book -> getYear(book.getDateFinished()), Collectors.summingInt(Book::getPageNumber)));
-    }
-
-    private Map<String, ? extends Comparable<?>> getAverageRatingsForAuthors() {
-        return library.stream()
-                .filter(book -> topAuthors.contains(book.getAuthorAsString()))
-                .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingInt(Book::getRating)));
-    }
-
-    private Map<String, ? extends Comparable<?>> getAveragePageNumberForAuthors() {
-        return library.stream()
-                .filter(book -> topAuthors.contains(book.getAuthorAsString()))
-                .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingInt(Book::getPageNumber)));
-    }
-
-    private Map<String, ? extends Comparable<?>> getAverageDaysToReadABookPerAuthor() {
-        return library.stream()
-                .filter(book -> topAuthors.contains(book.getAuthorAsString()))
-                .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingLong(Book::getDaysReadIn)));
-    }
-
-    private Map<String, ? extends Comparable<?>> getAverageBookLengthPerYear() {
-        return library.stream()
-                .collect(Collectors.groupingBy(book -> getYear(book.getDateFinished()), Collectors.averagingInt(Book::getPageNumber)));
-    }
-
-    private Map<String, ? extends Comparable<?>> getAveragePagesReadPerDayPerMonth() {
-        return getPagesReadPerMonthMedian().entrySet().stream()
-                .map(entry -> Pair.of(entry.getKey(), new Double(entry.getValue().toString()) / getNumberOfDaysInAMonth(entry.getKey())))
-                .collect(Collectors.toMap(Pair::getKey, Pair::getValue));
-    }
-
-    private Map<String, ? extends Comparable<?>> getMostBooksReadByPublishedDecade() {
-        return library.stream()
-                .collect(Collectors.groupingBy(book -> getDecade(book.getPublicationYear()), Collectors.counting()));
-    }
-
-    private Map<String, ? extends Comparable<?>> getMostPopularAuthorsByAverageNumberOfRatings() {
-        return library.stream()
-                .collect(Collectors.groupingBy(Book::getAuthorAsString, Collectors.averagingInt(Book::getRatingsCount)));
-    }
-
-    private Map<String, ? extends Comparable<?>> getRatingsDistribution() {
-        return library.stream()
-                .collect(Collectors.groupingBy(book -> book.getRating().toString(), Collectors.counting()));
-    }
-
-    private Map<String, ? extends Comparable<?>> getFormatsDistribution() {
-        return library.stream()
-                .collect(Collectors.groupingBy(Book::getFormat, Collectors.counting()));
-    }
-
-    private Map<String, ? extends Comparable<?>> getAuthorTitleAndPublicationYear() {
-        return library.stream()
-                .collect(Collectors.toMap(Book::getAuthorAndTitle, Book::getPublicationYear));
-    }
-
-    private Map<String, ? extends Comparable<?>> getAuthorTitleAndDateFinished() {
-        return library.stream()
-                .collect(Collectors.toMap(Book::getAuthorAndTitle, Book::getDateFinished));
-    }
-
-    private Map<String, ? extends Comparable<?>> getMostPopularShelves() {
-        final List<String> mostPopularShelves = library.stream()
-                .map(Book::getShelves)
-                .map(shelves -> shelveAggregator.getTopShelves(shelves))
-                .flatMap(Collection::stream)
-                .collect(Collectors.toList());
-
-        return mostPopularShelves.stream()
-                .collect(Collectors.groupingBy(shelve -> shelve, Collectors.counting()));
-    }
-
-    private Double getAverageRating() {
-        return library.stream()
-                .mapToInt(Book::getRating)
-                .average()
-                .orElse(-1);
-    }
-
-    private Integer getNumberOfAuthorsRead() {
-        return library.stream()
-                .map(Book::getAuthorAsString)
-                .collect(toSet())
-                .size();
-    }
-
-    private Double getAverageDaysToReadABook() {
-        return library.stream()
-                .mapToLong(Book::getDaysReadIn)
-                .average()
-                .orElse(-1);
-    }
-
-    private Double getAveragePagesReadPerMonth() {
-        return getAverageFromMapValues(getPagesReadPerMonth());
-    }
-
-    private Double getAverageBooksReadPerMonth() {
-        return getAverageFromMapValues(getBooksReadPerMonth());
     }
 
     private static Double getAverageFromMapValues(final Map<String, ?> map) {
