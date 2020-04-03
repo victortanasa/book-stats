@@ -8,6 +8,7 @@ import model.MissingDetails;
 import model.Shelve;
 import model.enums.ShelveName;
 import org.apache.commons.lang3.tuple.Pair;
+import org.apache.commons.text.StringEscapeUtils;
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.input.SAXBuilder;
@@ -112,7 +113,7 @@ class ResponseParser {
         final String isbn13 = book.getChild("isbn13").getValue();
         final String format = book.getChild("format").getValue();
         final String pageNumber = book.getChild("num_pages").getValue();
-        final String title = book.getChild("title_without_series").getValue();
+        final String title = StringEscapeUtils.escapeCsv(book.getChild("title_without_series").getValue());
         final String ratingsCount = book.getChild("ratings_count").getValue();
         final String averageRating = book.getChild("average_rating").getValue();
 
