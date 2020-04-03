@@ -25,12 +25,15 @@ public class AvailableStatisticsService {
     //TODO: unavailable stats?
     static {
         ALWAYS_AVAILABLE_STATISTIC_NAMES = newArrayList();
+
         ALWAYS_AVAILABLE_STATISTIC_NAMES.add(MOST_READ_AUTHORS_BY_BOOK_COUNT);
         ALWAYS_AVAILABLE_STATISTIC_NAMES.add(MOST_POPULAR_SHELVES);
         ALWAYS_AVAILABLE_STATISTIC_NAMES.add(NUMBER_OF_AUTHORS_READ);
 
         REQUIRED_FIELDS_FOR_STATISTICS = newHashMap();
+
         REQUIRED_FIELDS_FOR_STATISTICS.put(BookField.FORMAT, newArrayList(FORMATS_DISTRIBUTION));
+
         REQUIRED_FIELDS_FOR_STATISTICS.put(BookField.PAGE_NUMBER, newArrayList(
                 PAGES_READ_PER_MONTH,
                 PAGES_READ_PER_MONTH_MEDIAN,
@@ -40,6 +43,7 @@ public class AvailableStatisticsService {
                 AVERAGE_PAGES_READ_PER_MONTH,
                 AVERAGE_BOOK_LENGTH_PER_YEAR,
                 AVERAGE_PAGES_READ_PER_DAY_PER_MONTH));
+
         REQUIRED_FIELDS_FOR_STATISTICS.put(BookField.DATE_FINISHED, newArrayList(
                 AVERAGE_DAYS_TO_READ_A_BOOK,
                 AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR,
@@ -49,18 +53,23 @@ public class AvailableStatisticsService {
                 AVERAGE_BOOK_LENGTH_PER_YEAR,
                 AVERAGE_PAGES_READ_PER_DAY_PER_MONTH,
                 BOOK_AND_DATE_FINISHED));
+
         REQUIRED_FIELDS_FOR_STATISTICS.put(BookField.DATE_STARTED, newArrayList(
                 AVERAGE_DAYS_TO_READ_A_BOOK,
                 AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR,
                 AVERAGE_BOOKS_READ_PER_MONTH));
+
         REQUIRED_FIELDS_FOR_STATISTICS.put(BookField.RATING, newArrayList(
                 AVERAGE_RATING,
                 RATINGS_DISTRIBUTION,
                 AVERAGE_RATING_FOR_AUTHORS));
+
         REQUIRED_FIELDS_FOR_STATISTICS.put(BookField.PUBLICATION_YEAR, newArrayList(
                 MOST_BOOKS_READ_BY_PUBLISHED_DECADE,
                 BOOK_AND_PUBLICATION_YEAR));
+
         REQUIRED_FIELDS_FOR_STATISTICS.put(BookField.RATINGS_COUNT, newArrayList(MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS));
+
         REQUIRED_FIELDS_FOR_STATISTICS.put(BookField.AVERAGE_RATING, newArrayList(MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS));
     }
 
