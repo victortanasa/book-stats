@@ -21,4 +21,6 @@ public class TODOHolder {
     //TODO: percentage of missing date -> 85% there -> filter ->do stats
 
     //TODO: get rid of dual axis???
+
+    //TODO: books started vs books finished
 }
