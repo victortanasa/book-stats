@@ -87,5 +87,11 @@
     "fieldValues": {
       "FORMAT": "Paperback"
     }
+  },
+  {
+    "bookId": 31380440,
+    "fieldValues": {
+      "DATE_STARTED": "2018-09-30"
+    }
   }
 ]
