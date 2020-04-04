@@ -1,859 +1,5 @@
 [
   {
-    "id": 21005523,
-    "isbn": "1473208297",
-    "isbn13": "9781473208292",
-    "title": "Hard to Be a God",
-    "format": null,
-    "rating": 0,
-    "readCount": 0,
-    "pageNumber": 256,
-    "ratingsCount": 9503,
-    "publicationYear": 1964,
-    "averageRating": 4.19,
-    "dateStarted": [
-      2019,
-      3,
-      31
-    ],
-    "dateFinished": null,
-    "owned": false,
-    "authors": [
-      "Arkady Strugatsky"
-    ],
-    "shelves": [
-      {
-        "name": "to-read",
-        "popularity": 7788
-      },
-      {
-        "name": "currently-reading",
-        "popularity": 479
-      },
-      {
-        "name": "science-fiction",
-        "popularity": 318
-      },
-      {
-        "name": "sci-fi",
-        "popularity": 297
-      },
-      {
-        "name": "fiction",
-        "popularity": 186
-      },
-      {
-        "name": "russian",
-        "popularity": 124
-      },
-      {
-        "name": "favorites",
-        "popularity": 109
-      },
-      {
-        "name": "fantasy",
-        "popularity": 92
-      },
-      {
-        "name": "scifi",
-        "popularity": 50
-      },
-      {
-        "name": "owned",
-        "popularity": 49
-      },
-      {
-        "name": "russian-literature",
-        "popularity": 44
-      },
-      {
-        "name": "russia",
-        "popularity": 42
-      },
-      {
-        "name": "sf",
-        "popularity": 35
-      },
-      {
-        "name": "sf-masterworks",
-        "popularity": 33
-      },
-      {
-        "name": "classics",
-        "popularity": 26
-      },
-      {
-        "name": "russian-lit",
-        "popularity": 18
-      },
-      {
-        "name": "books-i-own",
-        "popularity": 15
-      },
-      {
-        "name": "default",
-        "popularity": 14
-      },
-      {
-        "name": "to-buy",
-        "popularity": 14
-      },
-      {
-        "name": "translated",
-        "popularity": 13
-      },
-      {
-        "name": "sci-fi-fantasy",
-        "popularity": 13
-      },
-      {
-        "name": "novel",
-        "popularity": 13
-      },
-      {
-        "name": "favourites",
-        "popularity": 13
-      },
-      {
-        "name": "books",
-        "popularity": 13
-      },
-      {
-        "name": "фантастика",
-        "popularity": 12
-      },
-      {
-        "name": "owned-books",
-        "popularity": 12
-      },
-      {
-        "name": "read-in-russian",
-        "popularity": 10
-      },
-      {
-        "name": "ciencia-ficción",
-        "popularity": 10
-      },
-      {
-        "name": "novels",
-        "popularity": 10
-      },
-      {
-        "name": "literature",
-        "popularity": 10
-      },
-      {
-        "name": "classic",
-        "popularity": 10
-      },
-      {
-        "name": "library",
-        "popularity": 9
-      },
-      {
-        "name": "my-library",
-        "popularity": 9
-      },
-      {
-        "name": "speculative-fiction",
-        "popularity": 9
-      },
-      {
-        "name": "20th-century",
-        "popularity": 9
-      },
-      {
-        "name": "adventure",
-        "popularity": 8
-      },
-      {
-        "name": "book-club",
-        "popularity": 8
-      },
-      {
-        "name": "strugatsky",
-        "popularity": 8
-      },
-      {
-        "name": "dnf",
-        "popularity": 8
-      },
-      {
-        "name": "audio",
-        "popularity": 8
-      },
-      {
-        "name": "translation",
-        "popularity": 8
-      },
-      {
-        "name": "favorite",
-        "popularity": 8
-      },
-      {
-        "name": "dystopia",
-        "popularity": 8
-      },
-      {
-        "name": "dystopian",
-        "popularity": 7
-      },
-      {
-        "name": "ebook",
-        "popularity": 7
-      },
-      {
-        "name": "fantasy-sci-fi",
-        "popularity": 7
-      },
-      {
-        "name": "sff",
-        "popularity": 7
-      },
-      {
-        "name": "sci-fi-and-fantasy",
-        "popularity": 7
-      },
-      {
-        "name": "my-books",
-        "popularity": 7
-      },
-      {
-        "name": "bilim-kurgu",
-        "popularity": 6
-      },
-      {
-        "name": "ithaki-bilimkurgu-klasikleri",
-        "popularity": 6
-      },
-      {
-        "name": "have",
-        "popularity": 6
-      },
-      {
-        "name": "audiobook",
-        "popularity": 6
-      },
-      {
-        "name": "to-read-fiction",
-        "popularity": 6
-      },
-      {
-        "name": "re-read",
-        "popularity": 6
-      },
-      {
-        "name": "philosophy",
-        "popularity": 6
-      },
-      {
-        "name": "in-translation",
-        "popularity": 6
-      },
-      {
-        "name": "fantascienza",
-        "popularity": 6
-      },
-      {
-        "name": "e-book",
-        "popularity": 5
-      },
-      {
-        "name": "bilimkurgu-klasikleri",
-        "popularity": 5
-      },
-      {
-        "name": "sci-fi-masterworks",
-        "popularity": 5
-      },
-      {
-        "name": "kindle",
-        "popularity": 5
-      },
-      {
-        "name": "medieval",
-        "popularity": 5
-      },
-      {
-        "name": "read-in-2015",
-        "popularity": 5
-      },
-      {
-        "name": "ebooks",
-        "popularity": 5
-      },
-      {
-        "name": "soviet",
-        "popularity": 5
-      },
-      {
-        "name": "sf-fantasy",
-        "popularity": 5
-      },
-      {
-        "name": "sf-f",
-        "popularity": 5
-      },
-      {
-        "name": "satire",
-        "popularity": 5
-      },
-      {
-        "name": "favourite",
-        "popularity": 5
-      },
-      {
-        "name": "ciencia-ficcion",
-        "popularity": 4
-      },
-      {
-        "name": "russian-sci-fi",
-        "popularity": 4
-      },
-      {
-        "name": "did-not-finish",
-        "popularity": 4
-      },
-      {
-        "name": "politics",
-        "popularity": 4
-      },
-      {
-        "name": "in-russian",
-        "popularity": 4
-      },
-      {
-        "name": "backlog",
-        "popularity": 4
-      },
-      {
-        "name": "bilimkurgu",
-        "popularity": 4
-      },
-      {
-        "name": "kütüphanem",
-        "popularity": 4
-      },
-      {
-        "name": "ru",
-        "popularity": 4
-      },
-      {
-        "name": "1960s",
-        "popularity": 4
-      },
-      {
-        "name": "ussr",
-        "popularity": 4
-      },
-      {
-        "name": "male-author",
-        "popularity": 4
-      },
-      {
-        "name": "english",
-        "popularity": 4
-      },
-      {
-        "name": "russian-author",
-        "popularity": 4
-      },
-      {
-        "name": "unfinished",
-        "popularity": 4
-      },
-      {
-        "name": "to-read-sci-fi",
-        "popularity": 4
-      },
-      {
-        "name": "scifi-fantasy",
-        "popularity": 4
-      },
-      {
-        "name": "read-in-2014",
-        "popularity": 4
-      },
-      {
-        "name": "modern",
-        "popularity": 4
-      },
-      {
-        "name": "maybe",
-        "popularity": 4
-      },
-      {
-        "name": "rusia",
-        "popularity": 3
-      },
-      {
-        "name": "1960-s",
-        "popularity": 3
-      },
-      {
-        "name": "i-thaki-bilim-kurgu-klasikleri",
-        "popularity": 3
-      },
-      {
-        "name": "kindle-unlimited",
-        "popularity": 3
-      },
-      {
-        "name": "really-want-to-read",
-        "popularity": 3
-      },
-      {
-        "name": "science-fiction-and-fantasy",
-        "popularity": 3
-      },
-      {
-        "name": "syfy",
-        "popularity": 3
-      },
-      {
-        "name": "genre-science-fiction",
-        "popularity": 3
-      },
-      {
-        "name": "own-it",
-        "popularity": 3
-      },
-      {
-        "name": "read-in-2018",
-        "popularity": 3
-      }
-    ]
-  },
-  {
-    "id": 1281518,
-    "isbn": "0575082097",
-    "isbn13": "9780575082090",
-    "title": "Diaspora",
-    "format": "Paperback",
-    "rating": 0,
-    "readCount": 1,
-    "pageNumber": 346,
-    "ratingsCount": 6685,
-    "publicationYear": 1997,
-    "averageRating": 4.13,
-    "dateStarted": [
-      2018,
-      12,
-      23
-    ],
-    "dateFinished": [
-      2018,
-      12,
-      26
-    ],
-    "owned": true,
-    "authors": [
-      "Greg Egan"
-    ],
-    "shelves": [
-      {
-        "name": "to-read",
-        "popularity": 10840
-      },
-      {
-        "name": "science-fiction",
-        "popularity": 475
-      },
-      {
-        "name": "currently-reading",
-        "popularity": 451
-      },
-      {
-        "name": "sci-fi",
-        "popularity": 352
-      },
-      {
-        "name": "fiction",
-        "popularity": 178
-      },
-      {
-        "name": "scifi",
-        "popularity": 118
-      },
-      {
-        "name": "favorites",
-        "popularity": 105
-      },
-      {
-        "name": "sf",
-        "popularity": 74
-      },
-      {
-        "name": "cyberpunk",
-        "popularity": 60
-      },
-      {
-        "name": "owned",
-        "popularity": 42
-      },
-      {
-        "name": "to-buy",
-        "popularity": 24
-      },
-      {
-        "name": "default",
-        "popularity": 23
-      },
-      {
-        "name": "science",
-        "popularity": 23
-      },
-      {
-        "name": "hard-sf",
-        "popularity": 22
-      },
-      {
-        "name": "kindle",
-        "popularity": 21
-      },
-      {
-        "name": "hard-sci-fi",
-        "popularity": 20
-      },
-      {
-        "name": "hard-science-fiction",
-        "popularity": 20
-      },
-      {
-        "name": "speculative-fiction",
-        "popularity": 20
-      },
-      {
-        "name": "transhumanism",
-        "popularity": 16
-      },
-      {
-        "name": "ebook",
-        "popularity": 15
-      },
-      {
-        "name": "space",
-        "popularity": 15
-      },
-      {
-        "name": "sci-fi-fantasy",
-        "popularity": 14
-      },
-      {
-        "name": "to-read-fiction",
-        "popularity": 14
-      },
-      {
-        "name": "novels",
-        "popularity": 13
-      },
-      {
-        "name": "abandoned",
-        "popularity": 12
-      },
-      {
-        "name": "to-read-sci-fi",
-        "popularity": 12
-      },
-      {
-        "name": "sci-fi-to-read",
-        "popularity": 11
-      },
-      {
-        "name": "space-opera",
-        "popularity": 11
-      },
-      {
-        "name": "ai",
-        "popularity": 11
-      },
-      {
-        "name": "audiobook",
-        "popularity": 11
-      },
-      {
-        "name": "sff",
-        "popularity": 10
-      },
-      {
-        "name": "favourites",
-        "popularity": 10
-      },
-      {
-        "name": "novel",
-        "popularity": 10
-      },
-      {
-        "name": "hard-scifi",
-        "popularity": 10
-      },
-      {
-        "name": "fantasy",
-        "popularity": 9
-      },
-      {
-        "name": "library",
-        "popularity": 9
-      },
-      {
-        "name": "philosophy",
-        "popularity": 9
-      },
-      {
-        "name": "maybe",
-        "popularity": 9
-      },
-      {
-        "name": "australian",
-        "popularity": 9
-      },
-      {
-        "name": "literature",
-        "popularity": 8
-      },
-      {
-        "name": "wish-list",
-        "popularity": 8
-      },
-      {
-        "name": "ciencia-ficcion",
-        "popularity": 7
-      },
-      {
-        "name": "books-i-own",
-        "popularity": 7
-      },
-      {
-        "name": "scifi-fantasy",
-        "popularity": 7
-      },
-      {
-        "name": "ciencia-ficción",
-        "popularity": 7
-      },
-      {
-        "name": "1990s",
-        "popularity": 6
-      },
-      {
-        "name": "fantascienza",
-        "popularity": 6
-      },
-      {
-        "name": "artificial-intelligence",
-        "popularity": 6
-      },
-      {
-        "name": "audible",
-        "popularity": 6
-      },
-      {
-        "name": "physical",
-        "popularity": 6
-      },
-      {
-        "name": "english",
-        "popularity": 6
-      },
-      {
-        "name": "mathematics",
-        "popularity": 6
-      },
-      {
-        "name": "singularity",
-        "popularity": 6
-      },
-      {
-        "name": "to-get",
-        "popularity": 6
-      },
-      {
-        "name": "dnf",
-        "popularity": 5
-      },
-      {
-        "name": "audio",
-        "popularity": 5
-      },
-      {
-        "name": "fiction-to-read",
-        "popularity": 5
-      },
-      {
-        "name": "not-owned",
-        "popularity": 5
-      },
-      {
-        "name": "ebooks",
-        "popularity": 5
-      },
-      {
-        "name": "science-fiction-fantasy",
-        "popularity": 5
-      },
-      {
-        "name": "owned-books",
-        "popularity": 5
-      },
-      {
-        "name": "e-book",
-        "popularity": 5
-      },
-      {
-        "name": "1",
-        "popularity": 5
-      },
-      {
-        "name": "australia",
-        "popularity": 5
-      },
-      {
-        "name": "future",
-        "popularity": 5
-      },
-      {
-        "name": "scanned",
-        "popularity": 5
-      },
-      {
-        "name": "books",
-        "popularity": 5
-      },
-      {
-        "name": "i-own",
-        "popularity": 5
-      },
-      {
-        "name": "unfinished",
-        "popularity": 5
-      },
-      {
-        "name": "transhuman",
-        "popularity": 5
-      },
-      {
-        "name": "priority",
-        "popularity": 4
-      },
-      {
-        "name": "did-not-finish",
-        "popularity": 4
-      },
-      {
-        "name": "read-next",
-        "popularity": 4
-      },
-      {
-        "name": "didn-t-finish",
-        "popularity": 4
-      },
-      {
-        "name": "fantasy-sci-fi",
-        "popularity": 4
-      },
-      {
-        "name": "to-read-sf",
-        "popularity": 4
-      },
-      {
-        "name": "to-read-scifi",
-        "popularity": 4
-      },
-      {
-        "name": "physics",
-        "popularity": 4
-      },
-      {
-        "name": "biopunk",
-        "popularity": 4
-      },
-      {
-        "name": "audiobooks",
-        "popularity": 4
-      },
-      {
-        "name": "standalone",
-        "popularity": 4
-      },
-      {
-        "name": "must-read",
-        "popularity": 4
-      },
-      {
-        "name": "own-kindle",
-        "popularity": 4
-      },
-      {
-        "name": "my-books",
-        "popularity": 4
-      },
-      {
-        "name": "wanted",
-        "popularity": 4
-      },
-      {
-        "name": "greg-egan",
-        "popularity": 4
-      },
-      {
-        "name": "technology",
-        "popularity": 4
-      },
-      {
-        "name": "shelved",
-        "popularity": 4
-      },
-      {
-        "name": "paperback",
-        "popularity": 4
-      },
-      {
-        "name": "sci-fi-and-fantasy",
-        "popularity": 4
-      },
-      {
-        "name": "reviewed",
-        "popularity": 4
-      },
-      {
-        "name": "not-read",
-        "popularity": 4
-      },
-      {
-        "name": "genre-sci-fi",
-        "popularity": 3
-      },
-      {
-        "name": "dropped",
-        "popularity": 3
-      },
-      {
-        "name": "next",
-        "popularity": 3
-      },
-      {
-        "name": "my-library",
-        "popularity": 3
-      },
-      {
-        "name": "tbr-sci-fi",
-        "popularity": 3
-      },
-      {
-        "name": "not-finished",
-        "popularity": 3
-      },
-      {
-        "name": "posthumanism",
-        "popularity": 3
-      },
-      {
-        "name": "ready-to-read",
-        "popularity": 3
-      }
-    ]
-  },
-  {
     "id": 325344,
     "isbn": "1857231791",
     "isbn13": "9781857231793",
@@ -862,7 +8,7 @@
     "rating": 0,
     "readCount": 0,
     "pageNumber": 487,
-    "ratingsCount": 14205,
+    "ratingsCount": 14209,
     "publicationYear": 1993,
     "averageRating": 4.11,
     "dateStarted": [
@@ -890,7 +36,7 @@
       },
       {
         "name": "currently-reading",
-        "popularity": 258
+        "popularity": 256
       },
       {
         "name": "fiction",
@@ -1279,6 +425,1710 @@
     ]
   },
   {
+    "id": 1281518,
+    "isbn": "0575082097",
+    "isbn13": "9780575082090",
+    "title": "Diaspora",
+    "format": "Paperback",
+    "rating": 0,
+    "readCount": 1,
+    "pageNumber": 346,
+    "ratingsCount": 6685,
+    "publicationYear": 1997,
+    "averageRating": 4.13,
+    "dateStarted": [
+      2018,
+      12,
+      23
+    ],
+    "dateFinished": [
+      2018,
+      12,
+      26
+    ],
+    "owned": true,
+    "authors": [
+      "Greg Egan"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 10844
+      },
+      {
+        "name": "science-fiction",
+        "popularity": 476
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 450
+      },
+      {
+        "name": "sci-fi",
+        "popularity": 352
+      },
+      {
+        "name": "fiction",
+        "popularity": 178
+      },
+      {
+        "name": "scifi",
+        "popularity": 118
+      },
+      {
+        "name": "favorites",
+        "popularity": 105
+      },
+      {
+        "name": "sf",
+        "popularity": 74
+      },
+      {
+        "name": "cyberpunk",
+        "popularity": 61
+      },
+      {
+        "name": "owned",
+        "popularity": 42
+      },
+      {
+        "name": "to-buy",
+        "popularity": 24
+      },
+      {
+        "name": "default",
+        "popularity": 23
+      },
+      {
+        "name": "science",
+        "popularity": 23
+      },
+      {
+        "name": "hard-sf",
+        "popularity": 22
+      },
+      {
+        "name": "kindle",
+        "popularity": 21
+      },
+      {
+        "name": "hard-sci-fi",
+        "popularity": 20
+      },
+      {
+        "name": "hard-science-fiction",
+        "popularity": 20
+      },
+      {
+        "name": "speculative-fiction",
+        "popularity": 20
+      },
+      {
+        "name": "transhumanism",
+        "popularity": 16
+      },
+      {
+        "name": "ebook",
+        "popularity": 15
+      },
+      {
+        "name": "space",
+        "popularity": 15
+      },
+      {
+        "name": "sci-fi-fantasy",
+        "popularity": 14
+      },
+      {
+        "name": "to-read-fiction",
+        "popularity": 14
+      },
+      {
+        "name": "novels",
+        "popularity": 13
+      },
+      {
+        "name": "abandoned",
+        "popularity": 12
+      },
+      {
+        "name": "to-read-sci-fi",
+        "popularity": 12
+      },
+      {
+        "name": "sci-fi-to-read",
+        "popularity": 11
+      },
+      {
+        "name": "space-opera",
+        "popularity": 11
+      },
+      {
+        "name": "ai",
+        "popularity": 11
+      },
+      {
+        "name": "audiobook",
+        "popularity": 11
+      },
+      {
+        "name": "sff",
+        "popularity": 10
+      },
+      {
+        "name": "favourites",
+        "popularity": 10
+      },
+      {
+        "name": "novel",
+        "popularity": 10
+      },
+      {
+        "name": "hard-scifi",
+        "popularity": 10
+      },
+      {
+        "name": "fantasy",
+        "popularity": 9
+      },
+      {
+        "name": "library",
+        "popularity": 9
+      },
+      {
+        "name": "philosophy",
+        "popularity": 9
+      },
+      {
+        "name": "maybe",
+        "popularity": 9
+      },
+      {
+        "name": "australian",
+        "popularity": 9
+      },
+      {
+        "name": "literature",
+        "popularity": 8
+      },
+      {
+        "name": "wish-list",
+        "popularity": 8
+      },
+      {
+        "name": "ciencia-ficcion",
+        "popularity": 7
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 7
+      },
+      {
+        "name": "scifi-fantasy",
+        "popularity": 7
+      },
+      {
+        "name": "ciencia-ficción",
+        "popularity": 7
+      },
+      {
+        "name": "1990s",
+        "popularity": 6
+      },
+      {
+        "name": "fantascienza",
+        "popularity": 6
+      },
+      {
+        "name": "artificial-intelligence",
+        "popularity": 6
+      },
+      {
+        "name": "audible",
+        "popularity": 6
+      },
+      {
+        "name": "physical",
+        "popularity": 6
+      },
+      {
+        "name": "english",
+        "popularity": 6
+      },
+      {
+        "name": "mathematics",
+        "popularity": 6
+      },
+      {
+        "name": "singularity",
+        "popularity": 6
+      },
+      {
+        "name": "to-get",
+        "popularity": 6
+      },
+      {
+        "name": "dnf",
+        "popularity": 5
+      },
+      {
+        "name": "audio",
+        "popularity": 5
+      },
+      {
+        "name": "fiction-to-read",
+        "popularity": 5
+      },
+      {
+        "name": "not-owned",
+        "popularity": 5
+      },
+      {
+        "name": "ebooks",
+        "popularity": 5
+      },
+      {
+        "name": "science-fiction-fantasy",
+        "popularity": 5
+      },
+      {
+        "name": "owned-books",
+        "popularity": 5
+      },
+      {
+        "name": "e-book",
+        "popularity": 5
+      },
+      {
+        "name": "1",
+        "popularity": 5
+      },
+      {
+        "name": "australia",
+        "popularity": 5
+      },
+      {
+        "name": "future",
+        "popularity": 5
+      },
+      {
+        "name": "scanned",
+        "popularity": 5
+      },
+      {
+        "name": "books",
+        "popularity": 5
+      },
+      {
+        "name": "i-own",
+        "popularity": 5
+      },
+      {
+        "name": "unfinished",
+        "popularity": 5
+      },
+      {
+        "name": "transhuman",
+        "popularity": 5
+      },
+      {
+        "name": "priority",
+        "popularity": 4
+      },
+      {
+        "name": "did-not-finish",
+        "popularity": 4
+      },
+      {
+        "name": "read-next",
+        "popularity": 4
+      },
+      {
+        "name": "didn-t-finish",
+        "popularity": 4
+      },
+      {
+        "name": "fantasy-sci-fi",
+        "popularity": 4
+      },
+      {
+        "name": "to-read-sf",
+        "popularity": 4
+      },
+      {
+        "name": "to-read-scifi",
+        "popularity": 4
+      },
+      {
+        "name": "physics",
+        "popularity": 4
+      },
+      {
+        "name": "biopunk",
+        "popularity": 4
+      },
+      {
+        "name": "audiobooks",
+        "popularity": 4
+      },
+      {
+        "name": "standalone",
+        "popularity": 4
+      },
+      {
+        "name": "must-read",
+        "popularity": 4
+      },
+      {
+        "name": "own-kindle",
+        "popularity": 4
+      },
+      {
+        "name": "my-books",
+        "popularity": 4
+      },
+      {
+        "name": "wanted",
+        "popularity": 4
+      },
+      {
+        "name": "greg-egan",
+        "popularity": 4
+      },
+      {
+        "name": "technology",
+        "popularity": 4
+      },
+      {
+        "name": "shelved",
+        "popularity": 4
+      },
+      {
+        "name": "paperback",
+        "popularity": 4
+      },
+      {
+        "name": "sci-fi-and-fantasy",
+        "popularity": 4
+      },
+      {
+        "name": "reviewed",
+        "popularity": 4
+      },
+      {
+        "name": "not-read",
+        "popularity": 4
+      },
+      {
+        "name": "genre-sci-fi",
+        "popularity": 3
+      },
+      {
+        "name": "dropped",
+        "popularity": 3
+      },
+      {
+        "name": "next",
+        "popularity": 3
+      },
+      {
+        "name": "my-library",
+        "popularity": 3
+      },
+      {
+        "name": "tbr-sci-fi",
+        "popularity": 3
+      },
+      {
+        "name": "not-finished",
+        "popularity": 3
+      },
+      {
+        "name": "posthumanism",
+        "popularity": 3
+      },
+      {
+        "name": "ready-to-read",
+        "popularity": 3
+      }
+    ]
+  },
+  {
+    "id": 38337005,
+    "isbn": "1473223679",
+    "isbn13": "9781473223677",
+    "title": "Altered Carbon",
+    "format": "Paperback",
+    "rating": 0,
+    "readCount": 0,
+    "pageNumber": 471,
+    "ratingsCount": 81588,
+    "publicationYear": 2002,
+    "averageRating": 4.05,
+    "dateStarted": [
+      2019,
+      4,
+      9
+    ],
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Richard K. Morgan"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 74229
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 6642
+      },
+      {
+        "name": "science-fiction",
+        "popularity": 3010
+      },
+      {
+        "name": "sci-fi",
+        "popularity": 2499
+      },
+      {
+        "name": "fiction",
+        "popularity": 988
+      },
+      {
+        "name": "cyberpunk",
+        "popularity": 887
+      },
+      {
+        "name": "scifi",
+        "popularity": 609
+      },
+      {
+        "name": "favorites",
+        "popularity": 538
+      },
+      {
+        "name": "mystery",
+        "popularity": 497
+      },
+      {
+        "name": "owned",
+        "popularity": 345
+      },
+      {
+        "name": "sf",
+        "popularity": 309
+      },
+      {
+        "name": "audiobook",
+        "popularity": 254
+      },
+      {
+        "name": "kindle",
+        "popularity": 173
+      },
+      {
+        "name": "crime",
+        "popularity": 168
+      },
+      {
+        "name": "noir",
+        "popularity": 164
+      },
+      {
+        "name": "thriller",
+        "popularity": 157
+      },
+      {
+        "name": "sci-fi-fantasy",
+        "popularity": 152
+      },
+      {
+        "name": "audiobooks",
+        "popularity": 145
+      },
+      {
+        "name": "series",
+        "popularity": 142
+      },
+      {
+        "name": "library",
+        "popularity": 123
+      },
+      {
+        "name": "fantasy",
+        "popularity": 122
+      },
+      {
+        "name": "abandoned",
+        "popularity": 122
+      },
+      {
+        "name": "dystopia",
+        "popularity": 119
+      },
+      {
+        "name": "ebook",
+        "popularity": 118
+      },
+      {
+        "name": "dnf",
+        "popularity": 107
+      },
+      {
+        "name": "audio",
+        "popularity": 107
+      },
+      {
+        "name": "audible",
+        "popularity": 105
+      },
+      {
+        "name": "to-buy",
+        "popularity": 100
+      },
+      {
+        "name": "dystopian",
+        "popularity": 98
+      },
+      {
+        "name": "detective",
+        "popularity": 97
+      },
+      {
+        "name": "scifi-fantasy",
+        "popularity": 85
+      },
+      {
+        "name": "default",
+        "popularity": 82
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 78
+      },
+      {
+        "name": "read-in-2018",
+        "popularity": 77
+      },
+      {
+        "name": "sword-and-laser",
+        "popularity": 77
+      },
+      {
+        "name": "book-club",
+        "popularity": 71
+      },
+      {
+        "name": "speculative-fiction",
+        "popularity": 67
+      },
+      {
+        "name": "did-not-finish",
+        "popularity": 65
+      },
+      {
+        "name": "read-2018",
+        "popularity": 60
+      },
+      {
+        "name": "novels",
+        "popularity": 57
+      },
+      {
+        "name": "audio-books",
+        "popularity": 56
+      },
+      {
+        "name": "audio-book",
+        "popularity": 52
+      },
+      {
+        "name": "books",
+        "popularity": 50
+      },
+      {
+        "name": "mystery-thriller",
+        "popularity": 49
+      },
+      {
+        "name": "wish-list",
+        "popularity": 49
+      },
+      {
+        "name": "science-fiction-fantasy",
+        "popularity": 49
+      },
+      {
+        "name": "favourites",
+        "popularity": 43
+      },
+      {
+        "name": "sff",
+        "popularity": 43
+      },
+      {
+        "name": "ebooks",
+        "popularity": 43
+      },
+      {
+        "name": "séries",
+        "popularity": 42
+      },
+      {
+        "name": "novel",
+        "popularity": 42
+      },
+      {
+        "name": "cyber-punk",
+        "popularity": 42
+      },
+      {
+        "name": "maybe",
+        "popularity": 40
+      },
+      {
+        "name": "fantasy-sci-fi",
+        "popularity": 40
+      },
+      {
+        "name": "science",
+        "popularity": 40
+      },
+      {
+        "name": "action",
+        "popularity": 39
+      },
+      {
+        "name": "takeshi-kovacs",
+        "popularity": 36
+      },
+      {
+        "name": "unfinished",
+        "popularity": 35
+      },
+      {
+        "name": "sci-fi-and-fantasy",
+        "popularity": 34
+      },
+      {
+        "name": "fantascienza",
+        "popularity": 33
+      },
+      {
+        "name": "e-book",
+        "popularity": 33
+      },
+      {
+        "name": "sf-fantasy",
+        "popularity": 33
+      },
+      {
+        "name": "owned-books",
+        "popularity": 32
+      },
+      {
+        "name": "to-read-sci-fi",
+        "popularity": 32
+      },
+      {
+        "name": "english",
+        "popularity": 31
+      },
+      {
+        "name": "recommended",
+        "popularity": 31
+      },
+      {
+        "name": "sci-fi-to-read",
+        "popularity": 29
+      },
+      {
+        "name": "sciencefiction",
+        "popularity": 29
+      },
+      {
+        "name": "to-read-fiction",
+        "popularity": 28
+      },
+      {
+        "name": "sword-laser",
+        "popularity": 27
+      },
+      {
+        "name": "adult",
+        "popularity": 27
+      },
+      {
+        "name": "space-opera",
+        "popularity": 26
+      },
+      {
+        "name": "have",
+        "popularity": 26
+      },
+      {
+        "name": "adventure",
+        "popularity": 26
+      },
+      {
+        "name": "my-library",
+        "popularity": 25
+      },
+      {
+        "name": "sf-f",
+        "popularity": 25
+      },
+      {
+        "name": "on-hold",
+        "popularity": 24
+      },
+      {
+        "name": "ciencia-ficción",
+        "popularity": 24
+      },
+      {
+        "name": "2018-reading-challenge",
+        "popularity": 23
+      },
+      {
+        "name": "on-kindle",
+        "popularity": 23
+      },
+      {
+        "name": "fantasy-scifi",
+        "popularity": 23
+      },
+      {
+        "name": "reviewed",
+        "popularity": 23
+      },
+      {
+        "name": "my-books",
+        "popularity": 23
+      },
+      {
+        "name": "2018-reads",
+        "popularity": 22
+      },
+      {
+        "name": "tbr",
+        "popularity": 22
+      },
+      {
+        "name": "future",
+        "popularity": 22
+      },
+      {
+        "name": "2000s",
+        "popularity": 22
+      },
+      {
+        "name": "read-2019",
+        "popularity": 21
+      },
+      {
+        "name": "need-to-buy",
+        "popularity": 21
+      },
+      {
+        "name": "didn-t-finish",
+        "popularity": 21
+      },
+      {
+        "name": "hard-sci-fi",
+        "popularity": 21
+      },
+      {
+        "name": "richard-morgan",
+        "popularity": 21
+      },
+      {
+        "name": "futuristic",
+        "popularity": 21
+      },
+      {
+        "name": "bookclub",
+        "popularity": 21
+      },
+      {
+        "name": "want-to-buy",
+        "popularity": 19
+      },
+      {
+        "name": "calibre",
+        "popularity": 19
+      },
+      {
+        "name": "to-read-scifi",
+        "popularity": 19
+      },
+      {
+        "name": "dark",
+        "popularity": 19
+      },
+      {
+        "name": "2018-read",
+        "popularity": 18
+      },
+      {
+        "name": "richard-k-morgan",
+        "popularity": 18
+      }
+    ]
+  },
+  {
+    "id": 21005523,
+    "isbn": "1473208297",
+    "isbn13": "9781473208292",
+    "title": "Hard to Be a God",
+    "format": null,
+    "rating": 0,
+    "readCount": 0,
+    "pageNumber": 256,
+    "ratingsCount": 9507,
+    "publicationYear": 1964,
+    "averageRating": 4.19,
+    "dateStarted": [
+      2019,
+      3,
+      31
+    ],
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Arkady Strugatsky"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 7796
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 477
+      },
+      {
+        "name": "science-fiction",
+        "popularity": 319
+      },
+      {
+        "name": "sci-fi",
+        "popularity": 297
+      },
+      {
+        "name": "fiction",
+        "popularity": 187
+      },
+      {
+        "name": "russian",
+        "popularity": 125
+      },
+      {
+        "name": "favorites",
+        "popularity": 109
+      },
+      {
+        "name": "fantasy",
+        "popularity": 93
+      },
+      {
+        "name": "scifi",
+        "popularity": 50
+      },
+      {
+        "name": "owned",
+        "popularity": 49
+      },
+      {
+        "name": "russian-literature",
+        "popularity": 44
+      },
+      {
+        "name": "russia",
+        "popularity": 42
+      },
+      {
+        "name": "sf",
+        "popularity": 35
+      },
+      {
+        "name": "sf-masterworks",
+        "popularity": 33
+      },
+      {
+        "name": "classics",
+        "popularity": 26
+      },
+      {
+        "name": "russian-lit",
+        "popularity": 18
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 15
+      },
+      {
+        "name": "default",
+        "popularity": 14
+      },
+      {
+        "name": "to-buy",
+        "popularity": 14
+      },
+      {
+        "name": "translated",
+        "popularity": 13
+      },
+      {
+        "name": "sci-fi-fantasy",
+        "popularity": 13
+      },
+      {
+        "name": "novel",
+        "popularity": 13
+      },
+      {
+        "name": "favourites",
+        "popularity": 13
+      },
+      {
+        "name": "books",
+        "popularity": 13
+      },
+      {
+        "name": "фантастика",
+        "popularity": 12
+      },
+      {
+        "name": "owned-books",
+        "popularity": 12
+      },
+      {
+        "name": "read-in-russian",
+        "popularity": 10
+      },
+      {
+        "name": "my-library",
+        "popularity": 10
+      },
+      {
+        "name": "ciencia-ficción",
+        "popularity": 10
+      },
+      {
+        "name": "novels",
+        "popularity": 10
+      },
+      {
+        "name": "literature",
+        "popularity": 10
+      },
+      {
+        "name": "classic",
+        "popularity": 10
+      },
+      {
+        "name": "library",
+        "popularity": 9
+      },
+      {
+        "name": "speculative-fiction",
+        "popularity": 9
+      },
+      {
+        "name": "20th-century",
+        "popularity": 9
+      },
+      {
+        "name": "adventure",
+        "popularity": 8
+      },
+      {
+        "name": "book-club",
+        "popularity": 8
+      },
+      {
+        "name": "strugatsky",
+        "popularity": 8
+      },
+      {
+        "name": "dnf",
+        "popularity": 8
+      },
+      {
+        "name": "audio",
+        "popularity": 8
+      },
+      {
+        "name": "translation",
+        "popularity": 8
+      },
+      {
+        "name": "favorite",
+        "popularity": 8
+      },
+      {
+        "name": "dystopia",
+        "popularity": 8
+      },
+      {
+        "name": "dystopian",
+        "popularity": 7
+      },
+      {
+        "name": "ebook",
+        "popularity": 7
+      },
+      {
+        "name": "fantasy-sci-fi",
+        "popularity": 7
+      },
+      {
+        "name": "sff",
+        "popularity": 7
+      },
+      {
+        "name": "sci-fi-and-fantasy",
+        "popularity": 7
+      },
+      {
+        "name": "my-books",
+        "popularity": 7
+      },
+      {
+        "name": "bilim-kurgu",
+        "popularity": 6
+      },
+      {
+        "name": "ithaki-bilimkurgu-klasikleri",
+        "popularity": 6
+      },
+      {
+        "name": "have",
+        "popularity": 6
+      },
+      {
+        "name": "audiobook",
+        "popularity": 6
+      },
+      {
+        "name": "to-read-fiction",
+        "popularity": 6
+      },
+      {
+        "name": "re-read",
+        "popularity": 6
+      },
+      {
+        "name": "philosophy",
+        "popularity": 6
+      },
+      {
+        "name": "in-translation",
+        "popularity": 6
+      },
+      {
+        "name": "fantascienza",
+        "popularity": 6
+      },
+      {
+        "name": "e-book",
+        "popularity": 5
+      },
+      {
+        "name": "bilimkurgu-klasikleri",
+        "popularity": 5
+      },
+      {
+        "name": "sci-fi-masterworks",
+        "popularity": 5
+      },
+      {
+        "name": "kindle",
+        "popularity": 5
+      },
+      {
+        "name": "medieval",
+        "popularity": 5
+      },
+      {
+        "name": "read-in-2015",
+        "popularity": 5
+      },
+      {
+        "name": "ebooks",
+        "popularity": 5
+      },
+      {
+        "name": "soviet",
+        "popularity": 5
+      },
+      {
+        "name": "sf-fantasy",
+        "popularity": 5
+      },
+      {
+        "name": "sf-f",
+        "popularity": 5
+      },
+      {
+        "name": "satire",
+        "popularity": 5
+      },
+      {
+        "name": "favourite",
+        "popularity": 5
+      },
+      {
+        "name": "ciencia-ficcion",
+        "popularity": 4
+      },
+      {
+        "name": "russian-sci-fi",
+        "popularity": 4
+      },
+      {
+        "name": "did-not-finish",
+        "popularity": 4
+      },
+      {
+        "name": "politics",
+        "popularity": 4
+      },
+      {
+        "name": "in-russian",
+        "popularity": 4
+      },
+      {
+        "name": "backlog",
+        "popularity": 4
+      },
+      {
+        "name": "bilimkurgu",
+        "popularity": 4
+      },
+      {
+        "name": "kütüphanem",
+        "popularity": 4
+      },
+      {
+        "name": "ru",
+        "popularity": 4
+      },
+      {
+        "name": "1960s",
+        "popularity": 4
+      },
+      {
+        "name": "ussr",
+        "popularity": 4
+      },
+      {
+        "name": "male-author",
+        "popularity": 4
+      },
+      {
+        "name": "english",
+        "popularity": 4
+      },
+      {
+        "name": "russian-author",
+        "popularity": 4
+      },
+      {
+        "name": "unfinished",
+        "popularity": 4
+      },
+      {
+        "name": "to-read-sci-fi",
+        "popularity": 4
+      },
+      {
+        "name": "scifi-fantasy",
+        "popularity": 4
+      },
+      {
+        "name": "read-in-2014",
+        "popularity": 4
+      },
+      {
+        "name": "modern",
+        "popularity": 4
+      },
+      {
+        "name": "maybe",
+        "popularity": 4
+      },
+      {
+        "name": "rusia",
+        "popularity": 3
+      },
+      {
+        "name": "1960-s",
+        "popularity": 3
+      },
+      {
+        "name": "i-thaki-bilim-kurgu-klasikleri",
+        "popularity": 3
+      },
+      {
+        "name": "kindle-unlimited",
+        "popularity": 3
+      },
+      {
+        "name": "really-want-to-read",
+        "popularity": 3
+      },
+      {
+        "name": "science-fiction-and-fantasy",
+        "popularity": 3
+      },
+      {
+        "name": "syfy",
+        "popularity": 3
+      },
+      {
+        "name": "genre-science-fiction",
+        "popularity": 3
+      },
+      {
+        "name": "own-it",
+        "popularity": 3
+      },
+      {
+        "name": "read-in-2018",
+        "popularity": 3
+      }
+    ]
+  },
+  {
+    "id": 31363503,
+    "isbn": "0756412749",
+    "isbn13": "9780756412746",
+    "title": "Terminal Alliance",
+    "format": "Hardcover",
+    "rating": 0,
+    "readCount": 0,
+    "pageNumber": 358,
+    "ratingsCount": 2016,
+    "publicationYear": 2017,
+    "averageRating": 4.04,
+    "dateStarted": [
+      2019,
+      9,
+      5
+    ],
+    "dateFinished": null,
+    "owned": false,
+    "authors": [
+      "Jim C. Hines"
+    ],
+    "shelves": [
+      {
+        "name": "to-read",
+        "popularity": 3047
+      },
+      {
+        "name": "currently-reading",
+        "popularity": 218
+      },
+      {
+        "name": "science-fiction",
+        "popularity": 186
+      },
+      {
+        "name": "sci-fi",
+        "popularity": 150
+      },
+      {
+        "name": "humor",
+        "popularity": 66
+      },
+      {
+        "name": "fiction",
+        "popularity": 40
+      },
+      {
+        "name": "space-opera",
+        "popularity": 37
+      },
+      {
+        "name": "scifi",
+        "popularity": 31
+      },
+      {
+        "name": "series",
+        "popularity": 25
+      },
+      {
+        "name": "space",
+        "popularity": 22
+      },
+      {
+        "name": "sf",
+        "popularity": 19
+      },
+      {
+        "name": "aliens",
+        "popularity": 18
+      },
+      {
+        "name": "humour",
+        "popularity": 18
+      },
+      {
+        "name": "kindle",
+        "popularity": 17
+      },
+      {
+        "name": "ebook",
+        "popularity": 13
+      },
+      {
+        "name": "favorites",
+        "popularity": 13
+      },
+      {
+        "name": "adult",
+        "popularity": 13
+      },
+      {
+        "name": "fantasy",
+        "popularity": 12
+      },
+      {
+        "name": "funny",
+        "popularity": 11
+      },
+      {
+        "name": "owned",
+        "popularity": 10
+      },
+      {
+        "name": "dnf",
+        "popularity": 10
+      },
+      {
+        "name": "post-apocalyptic",
+        "popularity": 10
+      },
+      {
+        "name": "comedy",
+        "popularity": 10
+      },
+      {
+        "name": "adventure",
+        "popularity": 10
+      },
+      {
+        "name": "audiobooks",
+        "popularity": 10
+      },
+      {
+        "name": "library",
+        "popularity": 10
+      },
+      {
+        "name": "to-buy",
+        "popularity": 10
+      },
+      {
+        "name": "humorous",
+        "popularity": 9
+      },
+      {
+        "name": "science-fiction-fantasy",
+        "popularity": 9
+      },
+      {
+        "name": "read-in-2017",
+        "popularity": 9
+      },
+      {
+        "name": "netgalley",
+        "popularity": 9
+      },
+      {
+        "name": "sci-fi-fantasy",
+        "popularity": 8
+      },
+      {
+        "name": "read-in-2019",
+        "popularity": 7
+      },
+      {
+        "name": "read-2018",
+        "popularity": 7
+      },
+      {
+        "name": "audiobook",
+        "popularity": 7
+      },
+      {
+        "name": "read-in-2018",
+        "popularity": 7
+      },
+      {
+        "name": "audio",
+        "popularity": 7
+      },
+      {
+        "name": "ebooks",
+        "popularity": 7
+      },
+      {
+        "name": "default",
+        "popularity": 6
+      },
+      {
+        "name": "zombies",
+        "popularity": 6
+      },
+      {
+        "name": "did-not-finish",
+        "popularity": 6
+      },
+      {
+        "name": "action",
+        "popularity": 6
+      },
+      {
+        "name": "dystopian",
+        "popularity": 6
+      },
+      {
+        "name": "sff",
+        "popularity": 6
+      },
+      {
+        "name": "maybe",
+        "popularity": 6
+      },
+      {
+        "name": "audio-book",
+        "popularity": 5
+      },
+      {
+        "name": "military",
+        "popularity": 5
+      },
+      {
+        "name": "janitors-of-the-post-apocalypse",
+        "popularity": 5
+      },
+      {
+        "name": "books-i-own",
+        "popularity": 5
+      },
+      {
+        "name": "wish-list",
+        "popularity": 5
+      },
+      {
+        "name": "read-2019",
+        "popularity": 4
+      },
+      {
+        "name": "military-scifi",
+        "popularity": 4
+      },
+      {
+        "name": "scifi-fantasy",
+        "popularity": 4
+      },
+      {
+        "name": "military-science-fiction",
+        "popularity": 4
+      },
+      {
+        "name": "mystery",
+        "popularity": 4
+      },
+      {
+        "name": "2017-releases",
+        "popularity": 4
+      },
+      {
+        "name": "writing-excuses",
+        "popularity": 3
+      },
+      {
+        "name": "recommended",
+        "popularity": 3
+      },
+      {
+        "name": "post-apoc",
+        "popularity": 3
+      },
+      {
+        "name": "tbr-sci-fi",
+        "popularity": 3
+      },
+      {
+        "name": "gave-up-on",
+        "popularity": 3
+      },
+      {
+        "name": "sf-fantasy",
+        "popularity": 3
+      },
+      {
+        "name": "want",
+        "popularity": 3
+      },
+      {
+        "name": "military-sci-fi",
+        "popularity": 3
+      },
+      {
+        "name": "alien",
+        "popularity": 3
+      },
+      {
+        "name": "have",
+        "popularity": 3
+      },
+      {
+        "name": "speculative-fiction",
+        "popularity": 3
+      },
+      {
+        "name": "book-club",
+        "popularity": 3
+      },
+      {
+        "name": "fantasy-sci-fi",
+        "popularity": 3
+      },
+      {
+        "name": "2018-laser",
+        "popularity": 3
+      },
+      {
+        "name": "2018-read",
+        "popularity": 3
+      },
+      {
+        "name": "male-author",
+        "popularity": 3
+      },
+      {
+        "name": "fantasy-sf",
+        "popularity": 3
+      },
+      {
+        "name": "action-adventure",
+        "popularity": 3
+      },
+      {
+        "name": "e-book",
+        "popularity": 3
+      },
+      {
+        "name": "genre-sci-fi",
+        "popularity": 3
+      },
+      {
+        "name": "adult-fiction",
+        "popularity": 3
+      },
+      {
+        "name": "dystopia",
+        "popularity": 3
+      },
+      {
+        "name": "to-get",
+        "popularity": 3
+      },
+      {
+        "name": "arc",
+        "popularity": 3
+      },
+      {
+        "name": "consideration",
+        "popularity": 2
+      },
+      {
+        "name": "apocalyptic",
+        "popularity": 2
+      },
+      {
+        "name": "on-deck",
+        "popularity": 2
+      },
+      {
+        "name": "my-bookshelves",
+        "popularity": 2
+      },
+      {
+        "name": "to-read-pile",
+        "popularity": 2
+      },
+      {
+        "name": "sci-fi-and-fantasy",
+        "popularity": 2
+      },
+      {
+        "name": "to-read-owned",
+        "popularity": 2
+      },
+      {
+        "name": "new-series",
+        "popularity": 2
+      },
+      {
+        "name": "age-adult",
+        "popularity": 2
+      },
+      {
+        "name": "writing-excuses-recommendations",
+        "popularity": 2
+      },
+      {
+        "name": "2019-reading-challenge",
+        "popularity": 2
+      },
+      {
+        "name": "2019-read",
+        "popularity": 2
+      },
+      {
+        "name": "library-ebook",
+        "popularity": 2
+      },
+      {
+        "name": "to-read-sci-fi",
+        "popularity": 2
+      },
+      {
+        "name": "series-starters",
+        "popularity": 2
+      },
+      {
+        "name": "2019-books",
+        "popularity": 2
+      },
+      {
+        "name": "readers-choice",
+        "popularity": 2
+      },
+      {
+        "name": "hardcover",
+        "popularity": 2
+      },
+      {
+        "name": "fiction-scifi",
+        "popularity": 2
+      },
+      {
+        "name": "tbr",
+        "popularity": 2
+      }
+    ]
+  },
+  {
     "id": 6276734,
     "isbn": "0099519976",
     "isbn13": "9780099519973",
@@ -1287,7 +2137,7 @@
     "rating": 0,
     "readCount": 0,
     "pageNumber": 584,
-    "ratingsCount": 11318,
+    "ratingsCount": 11321,
     "publicationYear": 2008,
     "averageRating": 4.12,
     "dateStarted": null,
@@ -1299,11 +2149,11 @@
     "shelves": [
       {
         "name": "to-read",
-        "popularity": 18802
+        "popularity": 18807
       },
       {
         "name": "currently-reading",
-        "popularity": 657
+        "popularity": 658
       },
       {
         "name": "science-fiction",
@@ -1315,7 +2165,7 @@
       },
       {
         "name": "sci-fi",
-        "popularity": 317
+        "popularity": 318
       },
       {
         "name": "favorites",
@@ -1708,7 +2558,7 @@
     "rating": 0,
     "readCount": 0,
     "pageNumber": 384,
-    "ratingsCount": 497276,
+    "ratingsCount": 497539,
     "publicationYear": 1990,
     "averageRating": 4.25,
     "dateStarted": [
@@ -1724,31 +2574,31 @@
     "shelves": [
       {
         "name": "to-read",
-        "popularity": 331202
+        "popularity": 331384
       },
       {
         "name": "currently-reading",
-        "popularity": 30937
+        "popularity": 30953
       },
       {
         "name": "fantasy",
-        "popularity": 16360
+        "popularity": 16365
       },
       {
         "name": "favorites",
-        "popularity": 8679
+        "popularity": 8683
       },
       {
         "name": "fiction",
-        "popularity": 5752
+        "popularity": 5753
       },
       {
         "name": "humor",
-        "popularity": 3692
+        "popularity": 3693
       },
       {
         "name": "owned",
-        "popularity": 2153
+        "popularity": 2152
       },
       {
         "name": "books-i-own",
@@ -1756,11 +2606,11 @@
       },
       {
         "name": "humour",
-        "popularity": 1161
+        "popularity": 1162
       },
       {
         "name": "urban-fantasy",
-        "popularity": 1143
+        "popularity": 1142
       },
       {
         "name": "comedy",
@@ -1768,11 +2618,11 @@
       },
       {
         "name": "favourites",
-        "popularity": 1015
+        "popularity": 1014
       },
       {
         "name": "audiobook",
-        "popularity": 945
+        "popularity": 947
       },
       {
         "name": "audiobooks",
@@ -1792,7 +2642,7 @@
       },
       {
         "name": "book-club",
-        "popularity": 579
+        "popularity": 580
       },
       {
         "name": "adult",
@@ -1808,11 +2658,11 @@
       },
       {
         "name": "audio",
-        "popularity": 501
+        "popularity": 502
       },
       {
         "name": "supernatural",
-        "popularity": 443
+        "popularity": 444
       },
       {
         "name": "read-in-2019",
@@ -1828,15 +2678,15 @@
       },
       {
         "name": "owned-books",
-        "popularity": 424
+        "popularity": 425
       },
       {
         "name": "dnf",
-        "popularity": 423
+        "popularity": 425
       },
       {
         "name": "sci-fi",
-        "popularity": 423
+        "popularity": 424
       },
       {
         "name": "fantasy-sci-fi",
@@ -1852,15 +2702,15 @@
       },
       {
         "name": "pratchett",
-        "popularity": 386
+        "popularity": 387
       },
       {
         "name": "paranormal",
-        "popularity": 383
+        "popularity": 384
       },
       {
         "name": "default",
-        "popularity": 346
+        "popularity": 345
       },
       {
         "name": "abandoned",
@@ -1868,11 +2718,11 @@
       },
       {
         "name": "to-buy",
-        "popularity": 328
+        "popularity": 329
       },
       {
         "name": "angels",
-        "popularity": 323
+        "popularity": 324
       },
       {
         "name": "scifi-fantasy",
@@ -1924,7 +2774,7 @@
       },
       {
         "name": "magic",
-        "popularity": 238
+        "popularity": 239
       },
       {
         "name": "english",
@@ -1944,7 +2794,7 @@
       },
       {
         "name": "all-time-favorites",
-        "popularity": 197
+        "popularity": 198
       },
       {
         "name": "books",
@@ -2008,7 +2858,7 @@
       },
       {
         "name": "ebooks",
-        "popularity": 165
+        "popularity": 166
       },
       {
         "name": "tbr",
@@ -2059,11 +2909,11 @@
         "popularity": 131
       },
       {
-        "name": "read-in-2018",
-        "popularity": 127
+        "name": "england",
+        "popularity": 128
       },
       {
-        "name": "england",
+        "name": "read-in-2018",
         "popularity": 127
       },
       {
@@ -2091,12 +2941,12 @@
         "popularity": 116
       },
       {
-        "name": "genre-fantasy",
+        "name": "20th-century",
         "popularity": 115
       },
       {
-        "name": "20th-century",
-        "popularity": 115
+        "name": "genre-fantasy",
+        "popularity": 114
       },
       {
         "name": "magical-realism",
@@ -2107,870 +2957,20 @@
         "popularity": 110
       },
       {
-        "name": "standalone",
-        "popularity": 107
-      },
-      {
         "name": "discworld",
         "popularity": 107
       },
       {
+        "name": "standalone",
+        "popularity": 106
+      },
+      {
         "name": "didn-t-finish",
-        "popularity": 107
+        "popularity": 106
       },
       {
         "name": "own-it",
         "popularity": 106
-      }
-    ]
-  },
-  {
-    "id": 38337005,
-    "isbn": "1473223679",
-    "isbn13": "9781473223677",
-    "title": "Altered Carbon",
-    "format": "Paperback",
-    "rating": 0,
-    "readCount": 0,
-    "pageNumber": 471,
-    "ratingsCount": 81551,
-    "publicationYear": 2002,
-    "averageRating": 4.05,
-    "dateStarted": [
-      2019,
-      4,
-      9
-    ],
-    "dateFinished": null,
-    "owned": false,
-    "authors": [
-      "Richard K. Morgan"
-    ],
-    "shelves": [
-      {
-        "name": "to-read",
-        "popularity": 74202
-      },
-      {
-        "name": "currently-reading",
-        "popularity": 6630
-      },
-      {
-        "name": "science-fiction",
-        "popularity": 3009
-      },
-      {
-        "name": "sci-fi",
-        "popularity": 2497
-      },
-      {
-        "name": "fiction",
-        "popularity": 988
-      },
-      {
-        "name": "cyberpunk",
-        "popularity": 887
-      },
-      {
-        "name": "scifi",
-        "popularity": 609
-      },
-      {
-        "name": "favorites",
-        "popularity": 538
-      },
-      {
-        "name": "mystery",
-        "popularity": 497
-      },
-      {
-        "name": "owned",
-        "popularity": 345
-      },
-      {
-        "name": "sf",
-        "popularity": 309
-      },
-      {
-        "name": "audiobook",
-        "popularity": 254
-      },
-      {
-        "name": "kindle",
-        "popularity": 173
-      },
-      {
-        "name": "crime",
-        "popularity": 168
-      },
-      {
-        "name": "noir",
-        "popularity": 164
-      },
-      {
-        "name": "thriller",
-        "popularity": 157
-      },
-      {
-        "name": "sci-fi-fantasy",
-        "popularity": 152
-      },
-      {
-        "name": "audiobooks",
-        "popularity": 145
-      },
-      {
-        "name": "series",
-        "popularity": 142
-      },
-      {
-        "name": "library",
-        "popularity": 123
-      },
-      {
-        "name": "fantasy",
-        "popularity": 122
-      },
-      {
-        "name": "abandoned",
-        "popularity": 122
-      },
-      {
-        "name": "dystopia",
-        "popularity": 119
-      },
-      {
-        "name": "ebook",
-        "popularity": 118
-      },
-      {
-        "name": "dnf",
-        "popularity": 107
-      },
-      {
-        "name": "audio",
-        "popularity": 107
-      },
-      {
-        "name": "audible",
-        "popularity": 105
-      },
-      {
-        "name": "to-buy",
-        "popularity": 100
-      },
-      {
-        "name": "detective",
-        "popularity": 97
-      },
-      {
-        "name": "dystopian",
-        "popularity": 97
-      },
-      {
-        "name": "scifi-fantasy",
-        "popularity": 85
-      },
-      {
-        "name": "default",
-        "popularity": 82
-      },
-      {
-        "name": "books-i-own",
-        "popularity": 78
-      },
-      {
-        "name": "read-in-2018",
-        "popularity": 77
-      },
-      {
-        "name": "sword-and-laser",
-        "popularity": 77
-      },
-      {
-        "name": "book-club",
-        "popularity": 71
-      },
-      {
-        "name": "speculative-fiction",
-        "popularity": 67
-      },
-      {
-        "name": "did-not-finish",
-        "popularity": 65
-      },
-      {
-        "name": "read-2018",
-        "popularity": 60
-      },
-      {
-        "name": "audio-books",
-        "popularity": 56
-      },
-      {
-        "name": "novels",
-        "popularity": 56
-      },
-      {
-        "name": "audio-book",
-        "popularity": 52
-      },
-      {
-        "name": "books",
-        "popularity": 50
-      },
-      {
-        "name": "mystery-thriller",
-        "popularity": 49
-      },
-      {
-        "name": "wish-list",
-        "popularity": 49
-      },
-      {
-        "name": "science-fiction-fantasy",
-        "popularity": 49
-      },
-      {
-        "name": "favourites",
-        "popularity": 43
-      },
-      {
-        "name": "sff",
-        "popularity": 43
-      },
-      {
-        "name": "ebooks",
-        "popularity": 43
-      },
-      {
-        "name": "séries",
-        "popularity": 42
-      },
-      {
-        "name": "novel",
-        "popularity": 42
-      },
-      {
-        "name": "cyber-punk",
-        "popularity": 42
-      },
-      {
-        "name": "maybe",
-        "popularity": 40
-      },
-      {
-        "name": "fantasy-sci-fi",
-        "popularity": 40
-      },
-      {
-        "name": "science",
-        "popularity": 40
-      },
-      {
-        "name": "action",
-        "popularity": 39
-      },
-      {
-        "name": "takeshi-kovacs",
-        "popularity": 36
-      },
-      {
-        "name": "unfinished",
-        "popularity": 35
-      },
-      {
-        "name": "sci-fi-and-fantasy",
-        "popularity": 34
-      },
-      {
-        "name": "fantascienza",
-        "popularity": 33
-      },
-      {
-        "name": "e-book",
-        "popularity": 33
-      },
-      {
-        "name": "sf-fantasy",
-        "popularity": 33
-      },
-      {
-        "name": "owned-books",
-        "popularity": 32
-      },
-      {
-        "name": "to-read-sci-fi",
-        "popularity": 32
-      },
-      {
-        "name": "english",
-        "popularity": 31
-      },
-      {
-        "name": "recommended",
-        "popularity": 31
-      },
-      {
-        "name": "sci-fi-to-read",
-        "popularity": 29
-      },
-      {
-        "name": "sciencefiction",
-        "popularity": 29
-      },
-      {
-        "name": "to-read-fiction",
-        "popularity": 28
-      },
-      {
-        "name": "sword-laser",
-        "popularity": 27
-      },
-      {
-        "name": "adult",
-        "popularity": 27
-      },
-      {
-        "name": "space-opera",
-        "popularity": 26
-      },
-      {
-        "name": "have",
-        "popularity": 26
-      },
-      {
-        "name": "adventure",
-        "popularity": 26
-      },
-      {
-        "name": "my-library",
-        "popularity": 25
-      },
-      {
-        "name": "sf-f",
-        "popularity": 25
-      },
-      {
-        "name": "on-hold",
-        "popularity": 24
-      },
-      {
-        "name": "ciencia-ficción",
-        "popularity": 24
-      },
-      {
-        "name": "2018-reading-challenge",
-        "popularity": 23
-      },
-      {
-        "name": "on-kindle",
-        "popularity": 23
-      },
-      {
-        "name": "fantasy-scifi",
-        "popularity": 23
-      },
-      {
-        "name": "reviewed",
-        "popularity": 23
-      },
-      {
-        "name": "my-books",
-        "popularity": 23
-      },
-      {
-        "name": "2018-reads",
-        "popularity": 22
-      },
-      {
-        "name": "tbr",
-        "popularity": 22
-      },
-      {
-        "name": "future",
-        "popularity": 22
-      },
-      {
-        "name": "2000s",
-        "popularity": 22
-      },
-      {
-        "name": "read-2019",
-        "popularity": 21
-      },
-      {
-        "name": "need-to-buy",
-        "popularity": 21
-      },
-      {
-        "name": "didn-t-finish",
-        "popularity": 21
-      },
-      {
-        "name": "richard-morgan",
-        "popularity": 21
-      },
-      {
-        "name": "futuristic",
-        "popularity": 21
-      },
-      {
-        "name": "bookclub",
-        "popularity": 21
-      },
-      {
-        "name": "hard-sci-fi",
-        "popularity": 20
-      },
-      {
-        "name": "want-to-buy",
-        "popularity": 19
-      },
-      {
-        "name": "calibre",
-        "popularity": 19
-      },
-      {
-        "name": "to-read-scifi",
-        "popularity": 19
-      },
-      {
-        "name": "dark",
-        "popularity": 19
-      },
-      {
-        "name": "2018-read",
-        "popularity": 18
-      },
-      {
-        "name": "richard-k-morgan",
-        "popularity": 18
-      }
-    ]
-  },
-  {
-    "id": 31363503,
-    "isbn": "0756412749",
-    "isbn13": "9780756412746",
-    "title": "Terminal Alliance",
-    "format": "Hardcover",
-    "rating": 0,
-    "readCount": 0,
-    "pageNumber": 358,
-    "ratingsCount": 2014,
-    "publicationYear": 2017,
-    "averageRating": 4.04,
-    "dateStarted": [
-      2019,
-      9,
-      5
-    ],
-    "dateFinished": null,
-    "owned": false,
-    "authors": [
-      "Jim C. Hines"
-    ],
-    "shelves": [
-      {
-        "name": "to-read",
-        "popularity": 3046
-      },
-      {
-        "name": "currently-reading",
-        "popularity": 219
-      },
-      {
-        "name": "science-fiction",
-        "popularity": 185
-      },
-      {
-        "name": "sci-fi",
-        "popularity": 150
-      },
-      {
-        "name": "humor",
-        "popularity": 66
-      },
-      {
-        "name": "fiction",
-        "popularity": 40
-      },
-      {
-        "name": "space-opera",
-        "popularity": 37
-      },
-      {
-        "name": "scifi",
-        "popularity": 31
-      },
-      {
-        "name": "series",
-        "popularity": 25
-      },
-      {
-        "name": "space",
-        "popularity": 22
-      },
-      {
-        "name": "sf",
-        "popularity": 19
-      },
-      {
-        "name": "aliens",
-        "popularity": 18
-      },
-      {
-        "name": "humour",
-        "popularity": 18
-      },
-      {
-        "name": "kindle",
-        "popularity": 17
-      },
-      {
-        "name": "ebook",
-        "popularity": 13
-      },
-      {
-        "name": "favorites",
-        "popularity": 13
-      },
-      {
-        "name": "adult",
-        "popularity": 13
-      },
-      {
-        "name": "fantasy",
-        "popularity": 12
-      },
-      {
-        "name": "funny",
-        "popularity": 11
-      },
-      {
-        "name": "owned",
-        "popularity": 10
-      },
-      {
-        "name": "dnf",
-        "popularity": 10
-      },
-      {
-        "name": "post-apocalyptic",
-        "popularity": 10
-      },
-      {
-        "name": "comedy",
-        "popularity": 10
-      },
-      {
-        "name": "adventure",
-        "popularity": 10
-      },
-      {
-        "name": "audiobooks",
-        "popularity": 10
-      },
-      {
-        "name": "library",
-        "popularity": 10
-      },
-      {
-        "name": "to-buy",
-        "popularity": 10
-      },
-      {
-        "name": "humorous",
-        "popularity": 9
-      },
-      {
-        "name": "science-fiction-fantasy",
-        "popularity": 9
-      },
-      {
-        "name": "read-in-2017",
-        "popularity": 9
-      },
-      {
-        "name": "netgalley",
-        "popularity": 9
-      },
-      {
-        "name": "sci-fi-fantasy",
-        "popularity": 8
-      },
-      {
-        "name": "read-in-2019",
-        "popularity": 7
-      },
-      {
-        "name": "read-2018",
-        "popularity": 7
-      },
-      {
-        "name": "audiobook",
-        "popularity": 7
-      },
-      {
-        "name": "read-in-2018",
-        "popularity": 7
-      },
-      {
-        "name": "audio",
-        "popularity": 7
-      },
-      {
-        "name": "ebooks",
-        "popularity": 7
-      },
-      {
-        "name": "default",
-        "popularity": 6
-      },
-      {
-        "name": "zombies",
-        "popularity": 6
-      },
-      {
-        "name": "did-not-finish",
-        "popularity": 6
-      },
-      {
-        "name": "action",
-        "popularity": 6
-      },
-      {
-        "name": "dystopian",
-        "popularity": 6
-      },
-      {
-        "name": "sff",
-        "popularity": 6
-      },
-      {
-        "name": "maybe",
-        "popularity": 6
-      },
-      {
-        "name": "audio-book",
-        "popularity": 5
-      },
-      {
-        "name": "military",
-        "popularity": 5
-      },
-      {
-        "name": "janitors-of-the-post-apocalypse",
-        "popularity": 5
-      },
-      {
-        "name": "books-i-own",
-        "popularity": 5
-      },
-      {
-        "name": "wish-list",
-        "popularity": 5
-      },
-      {
-        "name": "read-2019",
-        "popularity": 4
-      },
-      {
-        "name": "military-scifi",
-        "popularity": 4
-      },
-      {
-        "name": "scifi-fantasy",
-        "popularity": 4
-      },
-      {
-        "name": "military-science-fiction",
-        "popularity": 4
-      },
-      {
-        "name": "mystery",
-        "popularity": 4
-      },
-      {
-        "name": "2017-releases",
-        "popularity": 4
-      },
-      {
-        "name": "writing-excuses",
-        "popularity": 3
-      },
-      {
-        "name": "recommended",
-        "popularity": 3
-      },
-      {
-        "name": "post-apoc",
-        "popularity": 3
-      },
-      {
-        "name": "tbr-sci-fi",
-        "popularity": 3
-      },
-      {
-        "name": "gave-up-on",
-        "popularity": 3
-      },
-      {
-        "name": "sf-fantasy",
-        "popularity": 3
-      },
-      {
-        "name": "want",
-        "popularity": 3
-      },
-      {
-        "name": "military-sci-fi",
-        "popularity": 3
-      },
-      {
-        "name": "alien",
-        "popularity": 3
-      },
-      {
-        "name": "have",
-        "popularity": 3
-      },
-      {
-        "name": "speculative-fiction",
-        "popularity": 3
-      },
-      {
-        "name": "book-club",
-        "popularity": 3
-      },
-      {
-        "name": "fantasy-sci-fi",
-        "popularity": 3
-      },
-      {
-        "name": "2018-laser",
-        "popularity": 3
-      },
-      {
-        "name": "2018-read",
-        "popularity": 3
-      },
-      {
-        "name": "male-author",
-        "popularity": 3
-      },
-      {
-        "name": "fantasy-sf",
-        "popularity": 3
-      },
-      {
-        "name": "action-adventure",
-        "popularity": 3
-      },
-      {
-        "name": "e-book",
-        "popularity": 3
-      },
-      {
-        "name": "genre-sci-fi",
-        "popularity": 3
-      },
-      {
-        "name": "adult-fiction",
-        "popularity": 3
-      },
-      {
-        "name": "dystopia",
-        "popularity": 3
-      },
-      {
-        "name": "to-get",
-        "popularity": 3
-      },
-      {
-        "name": "arc",
-        "popularity": 3
-      },
-      {
-        "name": "consideration",
-        "popularity": 2
-      },
-      {
-        "name": "apocalyptic",
-        "popularity": 2
-      },
-      {
-        "name": "on-deck",
-        "popularity": 2
-      },
-      {
-        "name": "my-bookshelves",
-        "popularity": 2
-      },
-      {
-        "name": "to-read-pile",
-        "popularity": 2
-      },
-      {
-        "name": "sci-fi-and-fantasy",
-        "popularity": 2
-      },
-      {
-        "name": "to-read-owned",
-        "popularity": 2
-      },
-      {
-        "name": "new-series",
-        "popularity": 2
-      },
-      {
-        "name": "age-adult",
-        "popularity": 2
-      },
-      {
-        "name": "writing-excuses-recommendations",
-        "popularity": 2
-      },
-      {
-        "name": "2019-reading-challenge",
-        "popularity": 2
-      },
-      {
-        "name": "2019-read",
-        "popularity": 2
-      },
-      {
-        "name": "library-ebook",
-        "popularity": 2
-      },
-      {
-        "name": "to-read-sci-fi",
-        "popularity": 2
-      },
-      {
-        "name": "series-starters",
-        "popularity": 2
-      },
-      {
-        "name": "2019-books",
-        "popularity": 2
-      },
-      {
-        "name": "readers-choice",
-        "popularity": 2
-      },
-      {
-        "name": "hardcover",
-        "popularity": 2
-      },
-      {
-        "name": "fiction-scifi",
-        "popularity": 2
-      },
-      {
-        "name": "tbr",
-        "popularity": 2
       }
     ]
   }
