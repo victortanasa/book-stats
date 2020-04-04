@@ -220,8 +220,7 @@ public class Book {
 
     @JsonIgnore
     public long getDaysReadIn() {
-        final long difference = DAYS.between(dateStarted, dateFinished);
-        return difference == 0 ? 1 : difference;
+        return  DAYS.between(dateStarted, dateFinished) + 1;
     }
 
     @JsonIgnore

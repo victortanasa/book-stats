@@ -3,6 +3,7 @@ package service;
 import static com.google.common.collect.Lists.newArrayList;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
+import static service.Statistics.AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR;
 import static service.Statistics.PAGES_READ_PER_MONTH_MEDIAN;
 
 import model.Book;
@@ -24,6 +25,14 @@ public class StatisticsServiceTest {
         assertThat(mapStatistic.get("2020-03"), is(150D));
     }
 
+    @Test
+    public void averageDaysToReadABookPerAuthorTest() {
+        final StatisticsService statisticsService = new StatisticsService(getBooksWithDatesAndPageNumber());
+
+        final Map<String, ?> mapStatistic = statisticsService.getMapStatistic(AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR);
+        assertThat(mapStatistic.get("author"), is(3.6666666666666665));
+    }
+
     private static List<Book> getBooksWithDatesAndPageNumber() {
         final Book book_1 = new Book();
 
@@ -31,6 +40,7 @@ public class StatisticsServiceTest {
         book_1.setPageNumber(100);
         book_1.setDateStarted(LocalDate.of(2020, 1, 30));
         book_1.setDateFinished(LocalDate.of(2020, 2, 3));
+        book_1.setAuthors(newArrayList("author"));
 
         final Book book_2 = new Book();
 
@@ -38,6 +48,7 @@ public class StatisticsServiceTest {
         book_2.setPageNumber(100);
         book_2.setDateStarted(LocalDate.of(2020, 2, 29));
         book_2.setDateFinished(LocalDate.of(2020, 3, 1));
+        book_2.setAuthors(newArrayList("author"));
 
         final Book book_3 = new Book();
 
@@ -45,6 +56,7 @@ public class StatisticsServiceTest {
         book_3.setPageNumber(100);
         book_3.setDateStarted(LocalDate.of(2020, 3, 3));
         book_3.setDateFinished(LocalDate.of(2020, 3, 6));
+        book_3.setAuthors(newArrayList("author"));
 
         return newArrayList(book_1, book_2, book_3);
     }
