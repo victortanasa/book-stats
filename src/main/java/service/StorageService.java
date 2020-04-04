@@ -9,15 +9,20 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import model.Book;
 import model.ShelveMapping;
 import model.StoredBookData;
+import model.enums.BookField;
 import model.enums.ShelveName;
+import org.apache.commons.lang3.tuple.Pair;
 import utils.PrinterUtils;
+import utils.TransformationUtils;
 
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.Map;
 import java.util.Properties;
+import java.util.stream.Collectors;
 
 public class StorageService {
 
@@ -37,7 +42,10 @@ public class StorageService {
     private static final String BOOKS_FILE = "books-%s-%s.json";
 
     private static final String SHELVES_TO_EXCLUDE_THAT_START_WITH = "shelvesToExcludeThatStartWith";
+    private static final String BOOK_FIELDS_TO_OVERRIDE = "bookFieldsToOverride";
     private static final String SHELVES_TO_EXCLUDE = "shelvesToExclude";
+
+    private static final String EQUALS = "=";
     private static final String COMMA = ",";
 
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
@@ -95,6 +103,20 @@ public class StorageService {
 
     public List<String> getShelvesToExcludeThatStartWith() {
         return newArrayList(PROPERTIES.getProperty(SHELVES_TO_EXCLUDE_THAT_START_WITH).split(COMMA));
+    }
+
+    public Map<Long, BookField> getBooksFieldsToOverride() {
+        final String property = PROPERTIES.getProperty(BOOK_FIELDS_TO_OVERRIDE);
+        return newArrayList(property.split(COMMA)).stream()
+                .map(this::toPair)
+                .collect(Collectors.toMap(Pair::getKey, Pair::getValue));
+    }
+
+    private Pair<Long, BookField> toPair(final String string) {
+        final Long bookId = TransformationUtils.getLong(string.split(EQUALS)[0]);
+        final BookField bookField = BookField.valueOf(string.split(EQUALS)[1]);
+
+        return Pair.of(bookId, bookField);
     }
 
     private static String readFileContent(final String fileName) throws IOException {

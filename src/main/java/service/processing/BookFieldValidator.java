@@ -7,6 +7,7 @@ import static java.util.stream.Collectors.toMap;
 import com.google.common.base.Function;
 import model.Book;
 import model.enums.BookField;
+import service.StorageService;
 
 import java.util.List;
 import java.util.Map;
@@ -33,16 +34,32 @@ public class BookFieldValidator {
         FIELD_GETTERS.put(BookField.PUBLICATION_YEAR, Book::getPublicationYear);
     }
 
+    private Map<Long, BookField> booksFieldsToOverride;
+
+    public BookFieldValidator() {
+        booksFieldsToOverride = new StorageService().getBooksFieldsToOverride();
+    }
+
     public Map<Book, List<BookField>> getMissingFields(final List<Book> books) {
         return books.stream()
                 .collect(toMap(Book::getThis, this::getFieldsWithNoValue));
     }
 
     private List<BookField> getFieldsWithNoValue(final Book book) {
-        return FIELD_GETTERS.entrySet().stream()
+        final List<BookField> fields = FIELD_GETTERS.entrySet().stream()
                 .filter(getter -> Objects.isNull(getter.getValue().apply(book)))
                 .map(Map.Entry::getKey)
                 .collect(toList());
+
+        if (Objects.nonNull(getBookFieldToOverride(book.getId()))) {
+            fields.add(getBookFieldToOverride(book.getId()));
+        }
+
+        return fields;
+    }
+
+    private BookField getBookFieldToOverride(final Long bookId) {
+        return booksFieldsToOverride.get(bookId);
     }
 
 }

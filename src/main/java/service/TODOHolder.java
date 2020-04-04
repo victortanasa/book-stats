@@ -23,4 +23,11 @@ public class TODOHolder {
     //TODO: get rid of dual axis???
 
     //TODO: books started vs books finished
+
+    //TODO: Books with missing data in shelf Id: 31380440
+    //Title: Foundation
+    //Authors: [Isaac Asimov]
+    //Missing Fields: [DATE_STARTED]
+
+    //although it's overridden
 }

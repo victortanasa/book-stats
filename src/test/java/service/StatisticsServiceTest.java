@@ -1,12 +1,14 @@
 package service;
 
 import static com.google.common.collect.Lists.newArrayList;
+import static java.util.stream.Collectors.toList;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static service.Statistics.AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR;
 import static service.Statistics.PAGES_READ_PER_MONTH_MEDIAN;
 
 import model.Book;
+import model.enums.ShelveName;
 import org.junit.Test;
 
 import java.time.LocalDate;
@@ -14,6 +16,8 @@ import java.util.List;
 import java.util.Map;
 
 public class StatisticsServiceTest {
+
+    private static final String MY_USER_ID = "60626198";
 
     @Test
     public void pagesReadPerMonthMedianTest() {
@@ -31,6 +35,19 @@ public class StatisticsServiceTest {
 
         final Map<String, ?> mapStatistic = statisticsService.getMapStatistic(AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR);
         assertThat(mapStatistic.get("author"), is(3.6666666666666665));
+    }
+
+    @Test
+    public void asimovTest() {
+        final BookLoaderService bookLoaderService = new BookLoaderService(MY_USER_ID);
+        final Map<ShelveName, List<Book>> shelves = bookLoaderService.loadBooks(BookLoaderService.Source.STORAGE);
+        final List<Book> readBooks = shelves.get(ShelveName.READ);
+        final List<Book> asimovBooks = readBooks.stream()
+                .filter(book -> "Isaac Asimov".equalsIgnoreCase(book.getAuthorAsString()))
+                .collect(toList());
+        asimovBooks.forEach(book -> System.out.println(String.format("Title: %s, Read duration: %s", book.getTitle(), book.getDaysReadIn())));
+
+        //"Isaac Asimov","8.79"
     }
 
     private static List<Book> getBooksWithDatesAndPageNumber() {
