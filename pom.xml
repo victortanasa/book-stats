@@ -5,8 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
+        <jackson-databind.version>2.9.10.1</jackson-databind.version>
+        <commons-text.version>1.8</commons-text.version>
+        <open-csv.version>4.0</open-csv.version>
         <guava.version>27.1-jre</guava.version>
         <commons.version>3.9</commons.version>
+        <junit.version>4.12</junit.version>
+        <jdom.version>2.0.2</jdom.version>
     </properties>
 
     <parent>
@@ -49,31 +54,31 @@
         <dependency>
             <groupId>org.jdom</groupId>
             <artifactId>jdom</artifactId>
-            <version>2.0.2</version>
+            <version>${jdom.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.9.8</version>
+            <version>${jackson-databind.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-text</artifactId>
-            <version>1.8</version>
+            <version>${commons-text.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.opencsv</groupId>
             <artifactId>opencsv</artifactId>
-            <version>4.0</version>
+            <version>${open-csv.version}</version>
         </dependency>
 
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
 
