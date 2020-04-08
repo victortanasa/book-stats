@@ -16,6 +16,7 @@ public class ShelveAggregator {
 
     private static final int SHELVE_LIMIT = 3;
 
+    //TODO: something about constructors - consistency
     private static final StorageService STORAGE_SERVICE = new StorageService();
 
     private List<ShelveMapping> shelveMappings;
@@ -33,7 +34,7 @@ public class ShelveAggregator {
     public List<String> getTopShelves(final List<Shelve> allShelves) {
         final List<Shelve> normalizedAndFilteredShelves = allShelves.stream()
                 .filter(this::shelveNotExcluded)
-                .filter(this::shelveNotInStartsWithFilterList)
+                .filter(this::shelveDoesNotStartWithExcludedWord)
                 .map(this::normalizeShelveName)
                 .collect(toList());
 
@@ -60,7 +61,7 @@ public class ShelveAggregator {
         return !shelveToExclude.contains(shelve.getName());
     }
 
-    private boolean shelveNotInStartsWithFilterList(final Shelve shelve) {
+    private boolean shelveDoesNotStartWithExcludedWord(final Shelve shelve) {
         return shelveToExcludeThatStartWith.stream()
                 .noneMatch(shelveNameToFilter -> shelve.getName().startsWith(shelveNameToFilter));
     }

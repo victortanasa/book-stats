@@ -24,7 +24,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-@SuppressWarnings("all")
+@SuppressWarnings("Duplicates")
 public class StatisticsService {
 
     private static final DateTimeFormatter MONTH_ONLY_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM");
@@ -34,7 +34,7 @@ public class StatisticsService {
     private static final int AUTHOR_LIMIT = 20;
 
     private Map<Statistic, Supplier<Number>> singleValueStatistics;
-    private Map<Statistic, Supplier<Map<String, ? extends Comparable<?>>>> mapStatistic;
+    private Map<Statistic, Supplier<Map<String, ? extends Comparable<?>>>> mapStatistics;
 
     private AvailableStatisticsService availableStatisticsService;
     private ShelveAggregator shelveAggregator;
@@ -52,34 +52,34 @@ public class StatisticsService {
     }
 
     private void initStatisticsMap() {
-        mapStatistic = newHashMap();
+        mapStatistics = newHashMap();
 
         //Author statistics
-        mapStatistic.put(MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS, this::getMostPopularAuthorsByAverageNumberOfRatings);
-        mapStatistic.put(AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR, this::getAverageDaysToReadABookPerAuthor);
-        mapStatistic.put(AVERAGE_PAGE_NUMBER_FOR_AUTHORS, this::getAveragePageNumberForAuthors);
-        mapStatistic.put(MOST_READ_AUTHORS_BY_PAGE_COUNT, this::getMostReadAuthorsByPageCount);
-        mapStatistic.put(MOST_READ_AUTHORS_BY_BOOK_COUNT, this::getMostReadAuthorsBookCount);
-        mapStatistic.put(AVERAGE_RATING_FOR_AUTHORS, this::getAverageRatingsForAuthors);
+        mapStatistics.put(MOST_POPULAR_AUTHORS_BY_AVERAGE_NUMBER_OF_RATINGS, this::getMostPopularAuthorsByAverageNumberOfRatings);
+        mapStatistics.put(AVERAGE_DAYS_TO_READ_A_BOOK_PER_AUTHOR, this::getAverageDaysToReadABookPerAuthor);
+        mapStatistics.put(AVERAGE_PAGE_NUMBER_FOR_AUTHORS, this::getAveragePageNumberForAuthors);
+        mapStatistics.put(MOST_READ_AUTHORS_BY_PAGE_COUNT, this::getMostReadAuthorsByPageCount);
+        mapStatistics.put(MOST_READ_AUTHORS_BY_BOOK_COUNT, this::getMostReadAuthorsBookCount);
+        mapStatistics.put(AVERAGE_RATING_FOR_AUTHORS, this::getAverageRatingsForAuthors);
 
         //Book statistics
-        mapStatistic.put(MOST_BOOKS_READ_BY_PUBLISHED_DECADE, this::getMostBooksReadByPublishedDecade);
-        mapStatistic.put(AVERAGE_BOOK_LENGTH_PER_YEAR, this::getAverageBookLengthPerYear);
-        mapStatistic.put(BOOK_AND_PUBLICATION_YEAR, this::getBookAndPublicationYear);
-        mapStatistic.put(BOOK_AND_DATE_FINISHED, this::getBookAndDateFinished);
-        mapStatistic.put(BOOKS_READ_PER_MONTH, this::getBooksReadPerMonth);
-        mapStatistic.put(BOOKS_READ_PER_YEAR, this::getBooksReadPerYear);
+        mapStatistics.put(MOST_BOOKS_READ_BY_PUBLISHED_DECADE, this::getMostBooksReadByPublishedDecade);
+        mapStatistics.put(AVERAGE_BOOK_LENGTH_PER_YEAR, this::getAverageBookLengthPerYear);
+        mapStatistics.put(BOOK_AND_PUBLICATION_YEAR, this::getBookAndPublicationYear);
+        mapStatistics.put(BOOK_AND_DATE_FINISHED, this::getBookAndDateFinished);
+        mapStatistics.put(BOOKS_READ_PER_MONTH, this::getBooksReadPerMonth);
+        mapStatistics.put(BOOKS_READ_PER_YEAR, this::getBooksReadPerYear);
 
         //Page statistics
-        mapStatistic.put(AVERAGE_PAGES_READ_PER_DAY_PER_MONTH, this::getAveragePagesReadPerDayPerMonth);
-        mapStatistic.put(PAGES_READ_PER_MONTH_MEDIAN, this::getPagesReadPerMonthMedian);
-        mapStatistic.put(PAGES_READ_PER_MONTH, this::getPagesReadPerMonth);
-        mapStatistic.put(PAGES_READ_PER_YEAR, this::getPagesReadPerYear);
+        mapStatistics.put(AVERAGE_PAGES_READ_PER_DAY_PER_MONTH, this::getAveragePagesReadPerDayPerMonth);
+        mapStatistics.put(PAGES_READ_PER_MONTH_MEDIAN, this::getPagesReadPerMonthMedian);
+        mapStatistics.put(PAGES_READ_PER_MONTH, this::getPagesReadPerMonth);
+        mapStatistics.put(PAGES_READ_PER_YEAR, this::getPagesReadPerYear);
 
         //Various statistics
-        mapStatistic.put(RATINGS_DISTRIBUTION, this::getRatingsDistribution);
-        mapStatistic.put(FORMATS_DISTRIBUTION, this::getFormatsDistribution);
-        mapStatistic.put(MOST_POPULAR_SHELVES, this::getMostPopularShelves);
+        mapStatistics.put(RATINGS_DISTRIBUTION, this::getRatingsDistribution);
+        mapStatistics.put(FORMATS_DISTRIBUTION, this::getFormatsDistribution);
+        mapStatistics.put(MOST_POPULAR_SHELVES, this::getMostPopularShelves);
 
         //Single value statistics
         singleValueStatistics = newHashMap();
@@ -92,7 +92,7 @@ public class StatisticsService {
     }
 
     public Map<String, ? extends Comparable<?>> getMapStatistic(final Statistic statistic) {
-        final Map<String, ? extends Comparable<?>> statistics = mapStatistic.get(statistic).get();
+        final Map<String, ? extends Comparable<?>> statistics = mapStatistics.get(statistic).get();
 
         return SortBy.KEY.equals(statistic.getSortBy()) ?
                 sortMapByKey(statistics, statistic.getSortOrder()) :
@@ -291,6 +291,8 @@ public class StatisticsService {
                 .map(Object::toString)
                 .collect(Collectors.toList());
     }
+
+    //TODO: unify? k and v extends comparable
 
     @SuppressWarnings("unchecked")
     private static <K extends Comparable, V> Map<K, V> sortMapByKey(final Map<K, V> map, final SortOrder sortOrder) {

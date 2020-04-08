@@ -28,7 +28,8 @@ class ResponseParser {
 
     private static final String COULD_NOT_BUILD_RESPONSE_MESSAGE = "Could not build document from response  %s. Exception was: %s";
 
-    private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("EEE MMM dd HH:mm:ss Z yyyy").withLocale(Locale.US);
+    private static final String GOOD_READS_DATE_FORMAT = "EEE MMM dd HH:mm:ss Z yyyy";
+    private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern(GOOD_READS_DATE_FORMAT).withLocale(Locale.US);
 
     private static final int SHELF_LIMIT = 100;
 
@@ -94,8 +95,9 @@ class ResponseParser {
         try {
             return SAX_BUILDER.build(new ByteArrayInputStream(response.getBytes()));
         } catch (final Exception e) {
-            PrinterUtils.printSimple(String.format(COULD_NOT_BUILD_RESPONSE_MESSAGE, response, e.getMessage()));
-            throw new IllegalStateException(String.format(COULD_NOT_BUILD_RESPONSE_MESSAGE, response, e.getMessage()), e);
+            final String message = String.format(COULD_NOT_BUILD_RESPONSE_MESSAGE, response, e.getMessage());
+            PrinterUtils.printSimple(message);
+            throw new IllegalStateException(message, e);
         }
     }
 
