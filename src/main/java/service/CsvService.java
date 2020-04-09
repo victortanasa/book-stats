@@ -33,7 +33,6 @@ public class CsvService {
     private static final String CSV_FILE_NAME_FORMAT = "%s.csv";
     private static final String STATISTIC_FORMAT = "%s,%s";
 
-    private static final String NEWLINE = "\n";
     private static final String COMMA = ",";
 
     public void singleAxisStatisticToCsv(final Statistic statistic, final Map<String, ?> map) {
@@ -84,8 +83,7 @@ public class CsvService {
         final ArrayList<String> list = newArrayList(entry.getKey());
 
         if (entry.getValue().toString().contains(COMMA)) {
-            list.addAll(Arrays
-                    .stream(entry.getValue().toString().split(COMMA))
+            list.addAll(Arrays.stream(entry.getValue().toString().split(COMMA))
                     .map(value -> formatDoubleIfNecessary(value).toString())
                     .collect(toList()));
         } else {

@@ -34,12 +34,11 @@ public class StorageService {
 
     private static final String RESOURCES_LOCATION = "src/main/resources/";
     private static final String STORAGE_LOCATION = RESOURCES_LOCATION + "storage/";
-    private static final String LIBRARY_LOCATION = STORAGE_LOCATION + "library/";
 
     private static final String BOOK_STATS_PROPERTIES_FILE = "bookStats.properties";
     private static final String STORED_BOOK_DATA_FILE = "storedBookData-%s.json";
     private static final String SHELVE_MAPPING_FILE = "shelveMappings.json";
-    private static final String BOOKS_FILE = "books-%s-%s.json";
+    private static final String BOOKS_FILE = "library/books-%s-%s.json";
 
     private static final String SHELVES_TO_EXCLUDE_THAT_START_WITH = "shelvesToExcludeThatStartWith";
     private static final String BOOK_FIELDS_TO_OVERRIDE = "bookFieldsToOverride";
@@ -58,7 +57,7 @@ public class StorageService {
     void saveBooks(final String userId, final ShelveName shelveName, final List<Book> books) {
         try {
             final String booksJson = OBJECT_MAPPER.writeValueAsString(books);
-            Files.write(Paths.get(LIBRARY_LOCATION + String.format(BOOKS_FILE, userId, shelveName.getValue())), booksJson.getBytes(), CREATE, TRUNCATE_EXISTING);
+            Files.write(Paths.get(String.format(BOOKS_FILE, userId, shelveName.getValue())), booksJson.getBytes(), CREATE, TRUNCATE_EXISTING);
         } catch (final Exception e) {
             PrinterUtils.printSimple(String.format(COULD_NOT_SAVE_BOOKS_MESSAGE, e));
         }
@@ -66,7 +65,7 @@ public class StorageService {
 
     List<Book> loadBooks(final String userId, final ShelveName shelveName) {
         try {
-            final String booksJson = new String(Files.readAllBytes(Paths.get(LIBRARY_LOCATION + String.format(BOOKS_FILE, userId, shelveName.getValue()))));
+            final String booksJson = new String(Files.readAllBytes(Paths.get(String.format(BOOKS_FILE, userId, shelveName.getValue()))));
             return OBJECT_MAPPER.readValue(booksJson, new TypeReference<List<Book>>() {
             });
         } catch (IOException e) {
@@ -108,11 +107,11 @@ public class StorageService {
     public Map<Long, BookField> getBooksFieldsToOverride() {
         final String property = PROPERTIES.getProperty(BOOK_FIELDS_TO_OVERRIDE);
         return newArrayList(property.split(COMMA)).stream()
-                .map(this::toPair)
+                .map(this::toBookIdBookFieldPair)
                 .collect(Collectors.toMap(Pair::getKey, Pair::getValue));
     }
 
-    private Pair<Long, BookField> toPair(final String string) {
+    private Pair<Long, BookField> toBookIdBookFieldPair(final String string) {
         final Long bookId = TransformationUtils.getLong(string.split(EQUALS)[0]);
         final BookField bookField = BookField.valueOf(string.split(EQUALS)[1]);
 
