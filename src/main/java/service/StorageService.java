@@ -38,7 +38,8 @@ public class StorageService {
     private static final String BOOK_STATS_PROPERTIES_FILE = "bookStats.properties";
     private static final String STORED_BOOK_DATA_FILE = "storedBookData-%s.json";
     private static final String SHELVE_MAPPING_FILE = "shelveMappings.json";
-    private static final String BOOKS_FILE = "library/books-%s-%s.json";
+    private static final String LIBRARY_LOCATION = STORAGE_LOCATION + "library/";
+    private static final String BOOKS_FILE = LIBRARY_LOCATION + "/books-%s-%s.json";
 
     private static final String SHELVES_TO_EXCLUDE_THAT_START_WITH = "shelvesToExcludeThatStartWith";
     private static final String BOOK_FIELDS_TO_OVERRIDE = "bookFieldsToOverride";
