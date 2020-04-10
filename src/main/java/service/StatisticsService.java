@@ -292,23 +292,23 @@ public class StatisticsService {
                 .collect(Collectors.toList());
     }
 
-    //TODO: unify? k and v extends comparable
-
     @SuppressWarnings("unchecked")
-    private static <K extends Comparable, V> Map<K, V> sortMapByKey(final Map<K, V> map, final SortOrder sortOrder) {
+    private static <K extends Comparable, V extends Comparable> Map<K, V> sortMapByKey(final Map<K, V> map, final SortOrder sortOrder) {
         final Comparator<Map.Entry<K, V>> comparator = DESC.equals(sortOrder) ?
                 Map.Entry.<K, V>comparingByKey().reversed() : Map.Entry.comparingByKey();
 
-        return map.entrySet().stream()
-                .sorted(comparator)
-                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
+        return sort(map, comparator);
     }
 
     @SuppressWarnings("unchecked")
-    private static <K, V extends Comparable> Map<K, V> sortMapByValue(final Map<K, V> map, final SortOrder sortOrder) {
+    private static <K extends Comparable, V extends Comparable> Map<K, V> sortMapByValue(final Map<K, V> map, final SortOrder sortOrder) {
         final Comparator<Map.Entry<K, V>> comparator = DESC.equals(sortOrder) ?
                 Map.Entry.<K, V>comparingByValue().reversed() : Map.Entry.comparingByValue();
 
+        return sort(map, comparator);
+    }
+
+    private static <K extends Comparable, V extends Comparable> LinkedHashMap<K, V> sort(final Map<K, V> map, final Comparator<Map.Entry<K, V>> comparator) {
         return map.entrySet().stream()
                 .sorted(comparator)
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
