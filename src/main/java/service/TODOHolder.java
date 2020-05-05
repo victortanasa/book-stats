@@ -30,4 +30,6 @@ public class TODOHolder {
     //Missing Fields: [DATE_STARTED]
 
     //although it's overridden
+
+    //TODO: remove author filtering
 }

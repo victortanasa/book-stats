@@ -23,7 +23,7 @@ public class BookStats {
     private static final CsvService CSV_SERVICE = new CsvService();
 
     public static void main(final String[] args) {
-        final Map<ShelveName, List<Book>> shelvesAndBook = BOOK_LOADER_SERVICE.loadBooks(BookLoaderService.Source.STORAGE);
+        final Map<ShelveName, List<Book>> shelvesAndBook = BOOK_LOADER_SERVICE.loadBooks(BookLoaderService.Source.GOODREADS);
 
         final List<Statistic> availableStatistics = AVAILABLE_STATISTICS_SERVICE.getAvailableStatistics(shelvesAndBook.get(ShelveName.READ));
 
