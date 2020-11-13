@@ -93,5 +93,55 @@
     "fieldValues": {
       "DATE_STARTED": "2018-09-30"
     }
+  },
+  {
+    "bookId": 28363668,
+    "fieldValues": {
+      "FORMAT": "Paperback",
+      "PAGE_NUMBER": "336"
+    }
+  },
+  {
+    "bookId": 44644857,
+    "fieldValues": {
+      "FORMAT": "Paperback"
+    }
+  },
+  {
+    "bookId": 51047606,
+    "fieldValues": {
+      "FORMAT": "Paperback"
+    }
+  },
+  {
+    "bookId": 944995,
+    "fieldValues": {
+      "FORMAT": "Paperback"
+    }
+  },
+  {
+    "bookId": 29064670,
+    "fieldValues": {
+      "FORMAT": "Paperback"
+    }
+  },
+  {
+    "bookId": 25955842,
+    "fieldValues": {
+      "FORMAT": "Paperback"
+    }
+  },
+  {
+    "bookId": 48926978,
+    "fieldValues": {
+      "FORMAT": "Paperback",
+      "PAGE_NUMBER": "336"
+    }
+  },
+  {
+    "bookId": 50624715,
+    "fieldValues": {
+      "FORMAT": "Paperback"
+    }
   }
 ]
