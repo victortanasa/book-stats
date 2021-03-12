@@ -143,5 +143,29 @@
     "fieldValues": {
       "FORMAT": "Paperback"
     }
+  },
+  {
+    "bookId": 30127768,
+    "fieldValues": {
+      "FORMAT": "Paperback"
+    }
+  },
+  {
+    "bookId": 49988275,
+    "fieldValues": {
+      "FORMAT": "Paperback"
+    }
+  },
+  {
+    "bookId": 567700,
+    "fieldValues": {
+      "FORMAT": "Paperback"
+    }
+  },
+  {
+    "bookId": 37906604,
+    "fieldValues": {
+      "FORMAT": "Paperback"
+    }
   }
 ]
